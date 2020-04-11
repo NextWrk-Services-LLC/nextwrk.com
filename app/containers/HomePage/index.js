@@ -1,7 +1,7 @@
 /*
  * HomePage
  *
- * This is the first thing users see of our App, at the '/' route
+ * Homepage of NextWrk.com, displays all featured gigs, services, deals and freelance networks
  */
 
 import React, { useEffect, memo } from 'react';
@@ -60,11 +60,8 @@ export function HomePage({
   return (
     <article>
       <Helmet>
-        <title>Home Page</title>
-        <meta
-          name="description"
-          content="A React.js Boilerplate application homepage"
-        />
+        <title>Make Faster Easier Money</title>
+        <meta name="Homepage" content="Homepage for NextWrk.com" />
       </Helmet>
       <div>
         <CenteredSection>

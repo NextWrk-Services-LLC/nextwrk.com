@@ -35,10 +35,10 @@ function NavBar() {
         <LogoLink to="/">
           <Img src={Logo} alt="NextWrk - Logo" />
         </LogoLink>
-        <NavBarLink to="/">Gigs</NavBarLink>
-        <NavBarLink to="/features">Services</NavBarLink>
-        <NavBarLink to="/">Deals</NavBarLink>
-        <NavBarLink to="/features">Freelance</NavBarLink>
+        <NavBarLink to="/gigs">Gigs</NavBarLink>
+        <NavBarLink to="/services">Services</NavBarLink>
+        <NavBarLink to="/deals">Deals</NavBarLink>
+        <NavBarLink to="/freelance">Freelance</NavBarLink>
       </ContentWrapper>
     </Wrapper>
   );

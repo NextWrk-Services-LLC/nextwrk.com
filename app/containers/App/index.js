@@ -14,6 +14,10 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import DealsPage from 'containers/DealsPage/Loadable';
+import ServicesPage from 'containers/ServicesPage/Loadable';
+import GigsPage from 'containers/GigsPage/Loadable';
+import FreelancePage from 'containers/FreelancePage/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 
@@ -32,7 +36,7 @@ export default function App() {
     <AppWrapper>
       <Helmet titleTemplate="%s - NextWrk" defaultTitle="NextWrk">
         <meta
-          name="description"
+          name="NextWrk App"
           content="Connecting professionals to their best avenues for success in the gig economy"
         />
       </Helmet>
@@ -40,6 +44,10 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/features" component={FeaturePage} />
+        <Route path="/deals" component={DealsPage} />
+        <Route path="/services" component={ServicesPage} />
+        <Route path="/gigs" component={GigsPage} />
+        <Route path="/freelance" component={FreelancePage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
       <Footer />

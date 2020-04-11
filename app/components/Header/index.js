@@ -4,7 +4,7 @@ import Img from './Img';
 import Banner from './banner.png';
 
 function Header() {
-  return <Img src={Banner} alt="react-boilerplate - Logo" />;
+  return <Img src={Banner} alt="NextWrk - Logo" />;
 }
 
 export default Header;
