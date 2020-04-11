@@ -12,7 +12,7 @@ import styled from 'styled-components';
 import NavBarLink from './NavBarLink';
 import LogoLink from './LogoLink';
 import Img from './Img';
-import Logo from './whitelogo.png';
+import Logo from './nwlogo.png';
 
 const Wrapper = styled.div`
   width: 100%;

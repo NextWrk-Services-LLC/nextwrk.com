@@ -19,11 +19,18 @@ import {
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
+import H1 from 'components/H1';
 import H2 from 'components/H2';
+import H3 from 'components/H3';
 import ReposList from 'components/ReposList';
+import GigItem from 'components/GigItem/Loadable';
+import ServiceItem from 'components/ServiceItem/Loadable';
+import DealItem from 'components/DealItem/Loadable';
+import FreelanceItem from 'components/FreelanceItem/Loadable';
 import AtPrefix from './AtPrefix';
 import CenteredSection from './CenteredSection';
 import Form from './Form';
+import FeaturedTitle from './FeaturedTitle';
 import Input from './Input';
 import Section from './Section';
 import messages from './messages';
@@ -65,13 +72,22 @@ export function HomePage({
       </Helmet>
       <div>
         <CenteredSection>
-          <H2>
-            <FormattedMessage {...messages.startProjectHeader} />
-          </H2>
-          <p>
-            <FormattedMessage {...messages.startProjectMessage} />
-          </p>
+          <H1>Make Faster, Easier Money on Your Own Time</H1>
+          <H3>
+            Discover new opportunities for gig work, services to make jobs
+            easier and more lucrative, and deals to maximize your returns
+          </H3>
         </CenteredSection>
+        <Section>
+          <H2>Featured Gigs</H2>
+          <GigItem />
+          <FeaturedTitle>Featured Services</FeaturedTitle>
+          <ServiceItem />
+          <FeaturedTitle>Featured Deals</FeaturedTitle>
+          <DealItem />
+          <FeaturedTitle>Featured Freelance Networks</FeaturedTitle>
+          <FreelanceItem />
+        </Section>
         <Section>
           <H2>
             <FormattedMessage {...messages.trymeHeader} />
