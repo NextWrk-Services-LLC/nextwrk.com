@@ -1,22 +1,49 @@
 /**
  *
- * Img.js
+ * NavBar
  *
- * Renders an image, enforcing the usage of the alt="" tag
+ * This component is the top Navigation Bar for the entire website
+ *
  */
 
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { memo } from 'react';
+import styled from 'styled-components';
 
-function Img(props) {
-  return <img className={props.className} src={props.src} alt={props.alt} />;
+import NavBarLink from './NavBarLink';
+import LogoLink from './LogoLink';
+import Img from './Img';
+import Logo from './whitelogo.png';
+
+const Wrapper = styled.div`
+  width: 100%;
+  height: 64px;
+  background: #3b9ad5;
+  border-bottom: 1px solid #070600;
+  position: fixed;
+  z-index: 2;
+`;
+
+const ContentWrapper = styled.div`
+  width: 1100px;
+  margin: auto;
+`;
+
+function NavBar() {
+  return (
+    <Wrapper>
+      <ContentWrapper>
+        <LogoLink to="/">
+          <Img src={Logo} alt="NextWrk - Logo" />
+        </LogoLink>
+        <NavBarLink to="/">Gigs</NavBarLink>
+        <NavBarLink to="/features">Services</NavBarLink>
+        <NavBarLink to="/">Deals</NavBarLink>
+        <NavBarLink to="/features">Freelance</NavBarLink>
+      </ContentWrapper>
+    </Wrapper>
+  );
 }
 
-// We require the use of src and alt, only enforced by react in dev mode
-Img.propTypes = {
-  src: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
-  alt: PropTypes.string.isRequired,
-  className: PropTypes.string,
-};
+NavBar.propTypes = {};
 
-export default Img;
+export default memo(NavBar);
