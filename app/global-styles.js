@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #app {
-    background-color: #fafafa;
+    background-color: #eDf6fb;
     min-height: 100%;
     min-width: 100%;
   }
