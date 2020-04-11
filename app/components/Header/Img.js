@@ -6,7 +6,6 @@ const Img = styled(NormalImg)`
   width: 100%;
   margin: 0 auto;
   display: block;
-  box-shadow: 1px 1px 3px grey;
 `;
 
 export default Img;

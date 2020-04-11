@@ -19,6 +19,8 @@ const Wrapper = styled.div`
   background: #ffffff;
   border: 1px solid #070600;
   border-radius: 5px;
+  -moz-box-shadow: 1px 1px 3px grey;
+  -webkit-box-shadow: 1px 1px 3px grey;
   box-shadow: 1px 1px 3px grey;
 `;
 

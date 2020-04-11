@@ -80,12 +80,16 @@ export function HomePage({
         </CenteredSection>
         <Section>
           <H2>Featured Gigs</H2>
+          <hr />
           <GigItem />
           <FeaturedTitle>Featured Services</FeaturedTitle>
+          <hr />
           <ServiceItem />
           <FeaturedTitle>Featured Deals</FeaturedTitle>
+          <hr />
           <DealItem />
           <FeaturedTitle>Featured Freelance Networks</FeaturedTitle>
+          <hr />
           <FreelanceItem />
         </Section>
         <Section>
