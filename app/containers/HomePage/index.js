@@ -22,6 +22,7 @@ import {
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 import H3 from 'components/H3';
+import Header from 'components/Header';
 import ReposList from 'components/ReposList';
 import GigItem from 'components/GigItem/Loadable';
 import ServiceItem from 'components/ServiceItem/Loadable';
@@ -30,7 +31,6 @@ import FreelanceItem from 'components/FreelanceItem/Loadable';
 import AtPrefix from './AtPrefix';
 import CenteredSection from './CenteredSection';
 import Form from './Form';
-import FeaturedTitle from './FeaturedTitle';
 import Input from './Input';
 import Section from './Section';
 import messages from './messages';
@@ -70,6 +70,7 @@ export function HomePage({
         <title>Make Faster Easier Money</title>
         <meta name="Homepage" content="Homepage for NextWrk.com" />
       </Helmet>
+      <Header />
       <div>
         <CenteredSection>
           <H1>Make Faster, Easier Money on Your Own Time</H1>
@@ -82,13 +83,13 @@ export function HomePage({
           <H2>Featured Gigs</H2>
           <hr />
           <GigItem />
-          <FeaturedTitle>Featured Services</FeaturedTitle>
+          <H2>Featured Services</H2>
           <hr />
           <ServiceItem />
-          <FeaturedTitle>Featured Deals</FeaturedTitle>
+          <H2>Featured Deals</H2>
           <hr />
           <DealItem />
-          <FeaturedTitle>Featured Freelance Networks</FeaturedTitle>
+          <H2>Featured Freelance Networks</H2>
           <hr />
           <FreelanceItem />
         </Section>

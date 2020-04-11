@@ -14,7 +14,8 @@ import Img from './Img';
 import Logo from './company.png';
 
 const Wrapper = styled.div`
-  width: 25%;
+  min-width: 25%;
+  max-width: 275px;
   padding: 1% 2%;
   background: #ffffff;
   border: 1px solid #070600;

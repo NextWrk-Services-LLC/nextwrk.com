@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export default styled(Link)`
+export default styled.p`
   display: inline-block;
   padding: 0.25em 0.25em;
   margin: 0.5em 0.25em;
@@ -14,10 +13,10 @@ export default styled(Link)`
   outline: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
-  color: #ffffff;
+  color: #070600;
 
   &:hover {
-    background: #ffffff;
-    color: #3b9ad5;
+    background: #3b9ad5;
+    color: #ffffff;
   }
 `;

@@ -18,7 +18,6 @@ import DealsPage from 'containers/DealsPage/Loadable';
 import ServicesPage from 'containers/ServicesPage/Loadable';
 import GigsPage from 'containers/GigsPage/Loadable';
 import FreelancePage from 'containers/FreelancePage/Loadable';
-import Header from 'components/Header';
 import Footer from 'components/Footer';
 
 import GlobalStyle from '../../global-styles';
@@ -27,7 +26,7 @@ const AppWrapper = styled.div`
   max-width: 1140px;
   margin: 0 auto;
   display: flex;
-  padding: 84px 16px;
+  padding: calc(64px + 1%) 16px;
   flex-direction: column;
 `;
 
@@ -40,7 +39,6 @@ export default function App() {
           content="Connecting professionals to their best avenues for success in the gig economy"
         />
       </Helmet>
-      <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/features" component={FeaturePage} />

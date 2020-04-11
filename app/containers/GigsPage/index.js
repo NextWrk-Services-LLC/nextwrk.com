@@ -14,6 +14,10 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+import GigItem from 'components/GigItem';
+import H2 from 'components/H2';
+import NavBar from './NavBar';
+import Header from './Header';
 import makeSelectGigsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -28,6 +32,10 @@ export function GigsPage() {
         <title>Find New Gigs</title>
         <meta name="GigsPage" content="Displays All Gigs" />
       </Helmet>
+      <NavBar />
+      <Header />
+      <H2>Featured Gigs</H2>
+      <GigItem />
     </div>
   );
 }

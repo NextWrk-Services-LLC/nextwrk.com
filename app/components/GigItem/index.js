@@ -8,13 +8,16 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import CenterText from 'components/CenterText';
 import A from 'components/A';
 import H3 from 'components/H3';
+import P from './P';
 import Img from './Img';
 import Logo from './company.png';
 
 const Wrapper = styled.div`
-  width: 25%;
+  min-width: 25%;
+  max-width: 275px;
   padding: 1% 2%;
   background: #ffffff;
   border: 1px solid #070600;
@@ -29,19 +32,28 @@ function GigItem() {
     <Wrapper>
       <Img src={Logo} alt="Company - Logo" />
       <H3>Uber Driver</H3>
-      <p>Uber Technologies</p>
-      <p>
+      <P>Uber Technologies</P>
+      <P>
         Uber drivers move around town, transpoarting customers to their
         requested desitinations.
-      </p>
-      <A
-        href="https://www.indeed.com/cmp/Uber/reviews"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        See what others have to say about this gig
-      </A>
-      <p>Sign Up With Promo Code PRGREY and Get $20</p>
+      </P>
+      <CenterText>
+        <A
+          href="https://www.indeed.com/cmp/Uber/reviews"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          See what others have to say
+        </A>
+        <p>Sign Up With Promo Code PRGREY and Get $20</p>
+        <A
+          href="https://www.uber.com/us/en/drive/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          TRY IT OUT
+        </A>
+      </CenterText>
     </Wrapper>
   );
 }
