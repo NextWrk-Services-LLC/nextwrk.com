@@ -1,10 +1,10 @@
 {
-  "name": "react-boilerplate",
-  "version": "4.0.0",
-  "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
+  "name": "nextwrk",
+  "version": "1.0.0",
+  "description": "Service connecting professionals to their best avenues for success in the gig economy",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+    "url": "git://github.com/markfoster314/nextwrk.com.git"
   },
   "engines": {
     "npm": ">=5",
