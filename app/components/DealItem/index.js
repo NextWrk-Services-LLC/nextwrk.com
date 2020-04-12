@@ -36,7 +36,7 @@ function DealItem() {
         requested desitinations.
       </p>
       <A
-        href="https://www.indeed.com/cmp/Uber/reviews"
+        href={'https://www.indeed.com/cmp/'.concat('Uber', '/reviews')}
         target="_blank"
         rel="noopener noreferrer"
       >

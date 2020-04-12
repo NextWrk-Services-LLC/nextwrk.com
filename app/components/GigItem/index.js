@@ -5,7 +5,6 @@
  */
 
 import React from 'react';
-// import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import CenterText from 'components/CenterText';
@@ -32,22 +31,21 @@ function GigItem() {
     <Wrapper>
       <Img src={Logo} alt="Company - Logo" />
       <H3>Uber Driver</H3>
-      <P>Uber Technologies</P>
       <P>
-        Uber drivers move around town, transpoarting customers to their
-        requested desitinations.
+        Drive around town, transporting customers to their requested
+        destinations.
       </P>
       <CenterText>
         <A
-          href="https://www.indeed.com/cmp/Uber/reviews"
+          href={'https://www.indeed.com/cmp/'.concat('Uber', '/reviews')}
           target="_blank"
           rel="noopener noreferrer"
         >
           See what others have to say
         </A>
-        <p>Sign Up With Promo Code PRGREY and Get $20</p>
+        <p>{'Sign Up With Promo Code '.concat('PRGREY', ' and Get ', '$20')}</p>
         <A
-          href="https://www.uber.com/us/en/drive/"
+          href={'https://www.'.concat('uber.com/drive')}
           target="_blank"
           rel="noopener noreferrer"
         >

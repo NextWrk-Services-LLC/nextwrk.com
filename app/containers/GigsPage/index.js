@@ -26,6 +26,14 @@ export function GigsPage() {
   useInjectReducer({ key: 'gigsPage', reducer });
   useInjectSaga({ key: 'gigsPage', saga });
 
+  // const taglines = [
+  //   'Discover Your Next Gig',
+  //   'Get Paid to Cruise Around Town',
+  //   'No Car? No Problem!',
+  //   'Let Your Stuff Work For You',
+  //   "There's All Sorts of Stuff You Can Get Paid For!",
+  // ];
+
   return (
     <div>
       <Helmet>

@@ -7,7 +7,6 @@
 import React, { useEffect, memo } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
@@ -21,19 +20,17 @@ import {
 } from 'containers/App/selectors';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
-import H3 from 'components/H3';
 import Header from 'components/Header';
 import ReposList from 'components/ReposList';
 import GigItem from 'components/GigItem/Loadable';
 import ServiceItem from 'components/ServiceItem/Loadable';
 import DealItem from 'components/DealItem/Loadable';
 import FreelanceItem from 'components/FreelanceItem/Loadable';
-import AtPrefix from './AtPrefix';
+import H3 from './H3';
 import CenteredSection from './CenteredSection';
 import Form from './Form';
 import Input from './Input';
 import Section from './Section';
-import messages from './messages';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
@@ -55,7 +52,7 @@ export function HomePage({
 
   useEffect(() => {
     // When initial state username is not null, submit the form to load repos
-    if (username && username.trim().length > 0) onSubmitForm();
+    onSubmitForm();
   }, []);
 
   const reposListProps = {
@@ -94,15 +91,8 @@ export function HomePage({
           <FreelanceItem />
         </Section>
         <Section>
-          <H2>
-            <FormattedMessage {...messages.trymeHeader} />
-          </H2>
           <Form onSubmit={onSubmitForm}>
             <label htmlFor="username">
-              <FormattedMessage {...messages.trymeMessage} />
-              <AtPrefix>
-                <FormattedMessage {...messages.trymeAtPrefix} />
-              </AtPrefix>
               <Input
                 id="username"
                 type="text"

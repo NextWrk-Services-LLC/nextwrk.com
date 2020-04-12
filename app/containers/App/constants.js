@@ -12,3 +12,7 @@
 export const LOAD_REPOS = 'boilerplate/App/LOAD_REPOS';
 export const LOAD_REPOS_SUCCESS = 'boilerplate/App/LOAD_REPOS_SUCCESS';
 export const LOAD_REPOS_ERROR = 'boilerplate/App/LOAD_REPOS_ERROR';
+
+export const LOAD_GIGS = 'nextwrk/App/LOAD_GIGS';
+export const LOAD_GIGS_SUCCESS = 'nextwrk/App/LOAD_GIGS_SUCCESS';
+export const LOAD_GIGS_ERROR = 'nextwrk/App/LOAD_GIGS_ERROR';
