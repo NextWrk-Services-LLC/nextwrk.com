@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
-  min-width: 25%;
-  max-width: 275px;
-  padding: 1% 2%;
+const Wrapper = styled.li`
+  min-width: 23%;
+  max-width: 270px;
+  padding: 10px 15px;
   background: #ffffff;
   border: 1px solid #070600;
   border-radius: 5px;

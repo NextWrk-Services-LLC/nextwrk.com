@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /*
  * HomePage
  *
@@ -14,39 +15,25 @@ import { createStructuredSelector } from 'reselect';
 import { useInjectReducer } from 'utils/injectReducer';
 import { useInjectSaga } from 'utils/injectSaga';
 import {
-  makeSelectRepos,
+  makeSelectGigs,
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 import Header from 'components/Header';
-import ReposList from 'components/ReposList';
-import GigItem from 'components/GigItem/Loadable';
-import ServiceItem from 'components/ServiceItem/Loadable';
-import DealItem from 'components/DealItem/Loadable';
-import FreelanceItem from 'components/FreelanceItem/Loadable';
+import GigsList from 'components/GigsList';
 import H3 from './H3';
 import CenteredSection from './CenteredSection';
-import Form from './Form';
-import Input from './Input';
 import Section from './Section';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
-import { makeSelectUsername } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
 const key = 'home';
 
-export function HomePage({
-  username,
-  loading,
-  error,
-  repos,
-  onSubmitForm,
-  onChangeUsername,
-}) {
+export function HomePage({ loading, error, gigs, onSubmitForm }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
@@ -55,10 +42,10 @@ export function HomePage({
     onSubmitForm();
   }, []);
 
-  const reposListProps = {
+  const gigsListProps = {
     loading,
     error,
-    repos,
+    gigs,
   };
 
   return (
@@ -77,32 +64,22 @@ export function HomePage({
           </H3>
         </CenteredSection>
         <Section>
-          <H2>Featured Gigs</H2>
+          {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+          <a name="gigs" />
+          <H2>Gigs</H2>
           <hr />
-          <GigItem />
-          <H2>Featured Services</H2>
+          <GigsList {...gigsListProps} />
+          {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+          <a name="services" />
+          <H2>Services</H2>
           <hr />
-          <ServiceItem />
-          <H2>Featured Deals</H2>
+          <GigsList {...gigsListProps} />
+          {/* <H2>Featured Deals</H2>
           <hr />
           <DealItem />
           <H2>Featured Freelance Networks</H2>
           <hr />
-          <FreelanceItem />
-        </Section>
-        <Section>
-          <Form onSubmit={onSubmitForm}>
-            <label htmlFor="username">
-              <Input
-                id="username"
-                type="text"
-                placeholder="mxstbr"
-                value={username}
-                onChange={onChangeUsername}
-              />
-            </label>
-          </Form>
-          <ReposList {...reposListProps} />
+          <FreelanceItem /> */}
         </Section>
       </div>
     </article>
@@ -112,15 +89,12 @@ export function HomePage({
 HomePage.propTypes = {
   loading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
-  repos: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
+  gigs: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
   onSubmitForm: PropTypes.func,
-  username: PropTypes.string,
-  onChangeUsername: PropTypes.func,
 };
 
 const mapStateToProps = createStructuredSelector({
-  repos: makeSelectRepos(),
-  username: makeSelectUsername(),
+  gigs: makeSelectGigs(),
   loading: makeSelectLoading(),
   error: makeSelectError(),
 });

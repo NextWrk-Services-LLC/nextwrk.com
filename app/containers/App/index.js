@@ -12,12 +12,11 @@ import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
-import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import DealsPage from 'containers/DealsPage/Loadable';
-import ServicesPage from 'containers/ServicesPage/Loadable';
-import GigsPage from 'containers/GigsPage/Loadable';
-import FreelancePage from 'containers/FreelancePage/Loadable';
+// import DealsPage from 'containers/DealsPage/Loadable';
+// import ServicesPage from 'containers/ServicesPage/Loadable';
+// import GigsPage from 'containers/GigsPage/Loadable';
+// import FreelancePage from 'containers/FreelancePage/Loadable';
 import Footer from 'components/Footer';
 
 import GlobalStyle from '../../global-styles';
@@ -41,11 +40,11 @@ export default function App() {
       </Helmet>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route path="/features" component={FeaturePage} />
+        {/* <Route path="/features" component={FeaturePage} />
         <Route path="/deals" component={DealsPage} />
         <Route path="/services" component={ServicesPage} />
         <Route path="/gigs" component={GigsPage} />
-        <Route path="/freelance" component={FreelancePage} />
+        <Route path="/freelance" component={FreelancePage} /> */}
         <Route path="" component={NotFoundPage} />
       </Switch>
       <Footer />
