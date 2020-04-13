@@ -49,13 +49,13 @@ export function HomePage({ loading, error, gigs }) {
   return (
     <article>
       <Helmet>
-        <title>Make Faster Easier Money</title>
+        <title>Make Easier Money</title>
         <meta name="Homepage" content="Homepage for NextWrk.com" />
       </Helmet>
       <Header />
       <div>
         <CenteredSection>
-          <H1>Make Faster, Easier Money on Your Own Time</H1>
+          <H1>Make Easier Money on Your Own Time</H1>
           <H3>
             Discover new opportunities for gig work, services to make jobs
             easier and more lucrative, and deals to maximize your returns

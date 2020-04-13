@@ -109,5 +109,4 @@ Now you're ready to rumble!
 
 ## License
 
-This project is licensed under the MIT license, Copyright (c) 2019 Maximilian
-Stoiber. For more information see `LICENSE.md`.
+This project is licensed under the MIT license, Copyright (c) 2020 Mark Foster. For more information see `LICENSE.md`.
