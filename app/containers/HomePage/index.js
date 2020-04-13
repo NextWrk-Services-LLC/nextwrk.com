@@ -64,13 +64,18 @@ export function HomePage({ loading, error, gigs }) {
         <Section>
           {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
           <a name="gigs" />
-          <H2>Gigs</H2>
+          <H2>Gig Jobs</H2>
           <hr />
+          <H3>
+            Jobs that let you come and go as you please. Work as much, or as
+            little, as you want
+          </H3>
           <GigsList {...gigsListProps} />
           {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
           <a name="services" />
           <H2>Services</H2>
           <hr />
+          <H3>Apps designed to make gig jobs easier and more lucractive</H3>
           <GigsList {...gigsListProps} />
           {/* <H2>Featured Deals</H2>
           <hr />
