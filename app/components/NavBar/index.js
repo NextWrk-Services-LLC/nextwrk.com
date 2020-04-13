@@ -28,6 +28,7 @@ const Wrapper = styled.div`
 const ContentWrapper = styled.div`
   width: min(1100px, 100vw);
   margin: auto;
+  text-align: center;
 `;
 
 function NavBar() {
@@ -38,14 +39,16 @@ function NavBar() {
           <Img src={Logo} alt="NextWrk - Logo" />
         </LogoLink>
         <NavBarLink href="#services">
-          <img src={services} alt="Services Icon" />
-          {'Services'}
+          <div style={{ paddingTop: '5px' }}>
+            <img src={services} alt="Services Icon" />
+            <br />
+            <div style={{ paddingTop: '5px' }}>Services</div>
+          </div>
         </NavBarLink>
         <NavBarLink href="#gigs">
           <img src={gigs} alt="Gigs Icon" />
           {'Gigs'}
         </NavBarLink>
-
         {/* <NavBarLink to="/">Gigs</NavBarLink>
         <NavBarLink to="/services">Services</NavBarLink>
         <NavBarLink to="/deals">Deals</NavBarLink>
