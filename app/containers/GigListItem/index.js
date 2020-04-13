@@ -1,7 +1,10 @@
 /**
  *
- * GigListItem
+ * GigListItem.js
  *
+ * This container renders our gig list items, displaying the company icon,
+ * gig type, description, promo code and links to review websites and the
+ * sign up website
  */
 
 import React from 'react';

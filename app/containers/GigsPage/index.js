@@ -14,7 +14,6 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
-import GigItem from 'components/GigItem';
 import H2 from 'components/H2';
 import NavBar from './NavBar';
 import Header from './Header';
@@ -43,7 +42,6 @@ export function GigsPage() {
       <NavBar />
       <Header />
       <H2>Featured Gigs</H2>
-      <GigItem />
     </div>
   );
 }

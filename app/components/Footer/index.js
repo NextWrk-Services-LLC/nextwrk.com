@@ -1,3 +1,10 @@
+/**
+ *
+ * Footer
+ *
+ * Footer component for NextWrk.com
+ */
+
 import React from 'react';
 
 import A from 'components/A';

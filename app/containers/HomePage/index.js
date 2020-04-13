@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /*
- * HomePage
+ * HomePage.js
  *
  * Homepage of NextWrk.com, displays all featured gigs, services, deals and freelance networks
  */

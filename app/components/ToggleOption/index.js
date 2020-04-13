@@ -1,7 +1,8 @@
 /**
  *
- * ToggleOption
+ * ToggleOption.js
  *
+ * Creates language option to toggle
  */
 
 import React from 'react';

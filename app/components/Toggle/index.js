@@ -1,7 +1,8 @@
 /**
  *
- * LocaleToggle
+ * LocaleToggle.js
  *
+ * Toggle for selecting location to translate messages
  */
 
 import React from 'react';

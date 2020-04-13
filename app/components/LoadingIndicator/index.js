@@ -1,3 +1,10 @@
+/**
+ *
+ * LoadingIndicator.js
+ *
+ * Renders loading animation
+ */
+
 import React from 'react';
 
 import Circle from './Circle';

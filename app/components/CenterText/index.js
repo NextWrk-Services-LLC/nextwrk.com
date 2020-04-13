@@ -2,6 +2,7 @@
  *
  * CenterText
  *
+ * <div> that centers text inside
  */
 
 import styled from 'styled-components';

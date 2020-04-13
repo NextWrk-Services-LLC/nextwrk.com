@@ -1,3 +1,10 @@
+/**
+ *
+ * GigsList
+ *
+ * Creates list of item previews
+ */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 

@@ -1,6 +1,6 @@
 /**
  *
- * NavBar
+ * NavBar.js
  *
  * This component is the top Navigation Bar for the entire website
  *

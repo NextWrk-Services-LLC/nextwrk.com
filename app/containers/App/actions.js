@@ -2,9 +2,9 @@
  * App Actions
  *
  * Actions change things in your application
- * Since this boilerplate uses a uni-directional data flow, specifically redux,
- * we have these actions which are the only way your application interacts with
- * your application state. This guarantees that your state is up to date and nobody
+ * Since react boilerplate uses a uni-directional data flow, specifically redux,
+ * we have these actions which are the only way NextWrk.com interacts with
+ * its application state. This guarantees that the state is up to date and nobody
  * messes it up weirdly somewhere.
  *
  * To add a new Action:
@@ -18,9 +18,9 @@
 import { LOAD_GIGS, LOAD_GIGS_SUCCESS, LOAD_GIGS_ERROR } from './constants';
 
 /**
- * Load the repositories, this action starts the request saga
+ * Load the gigs, this action starts the request saga
  *
- * @return {object} An action object with a type of LOAD_REPOS
+ * @return {object} An action object with a type of LOAD_GIGS
  */
 export function loadGigs() {
   return {
@@ -29,12 +29,11 @@ export function loadGigs() {
 }
 
 /**
- * Dispatched when the repositories are loaded by the request saga
+ * Dispatched when the gigs are loaded by the request saga
  *
- * @param  {array} repos The repository data
- * @param  {string} username The current username
+ * @param  {array} gigs The gig data
  *
- * @return {object}      An action object with a type of LOAD_REPOS_SUCCESS passing the repos
+ * @return {object}      An action object with a type of LOAD_GIGS_SUCCESS passing the gigs
  */
 export function gigsLoaded(gigs) {
   return {
@@ -44,11 +43,11 @@ export function gigsLoaded(gigs) {
 }
 
 /**
- * Dispatched when loading the repositories fails
+ * Dispatched when loading the gigs fails
  *
  * @param  {object} error The error
  *
- * @return {object}       An action object with a type of LOAD_REPOS_ERROR passing the error
+ * @return {object}       An action object with a type of LOAD_GIGS_ERROR passing the error
  */
 export function gigsLoadingError(error) {
   return {

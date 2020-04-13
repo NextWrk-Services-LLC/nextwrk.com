@@ -1,3 +1,10 @@
+/**
+ *
+ * List.js
+ *
+ * Renders our list for displaying gig information
+ */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 

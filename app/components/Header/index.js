@@ -1,3 +1,10 @@
+/**
+ *
+ * Header
+ *
+ * Displays NextWrk.com's header image
+ */
+
 import React from 'react';
 
 import Img from './Img';
