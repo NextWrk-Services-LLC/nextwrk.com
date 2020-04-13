@@ -2,7 +2,7 @@
 
 ## Apache
 
-This boilerplate includes an `app/.htaccess` file that does three things:
+React boilerplate includes an `app/.htaccess` file that does three things:
 
 1.  Redirect all traffic to HTTPS because ServiceWorker only works for encrypted
     traffic.

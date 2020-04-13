@@ -67,7 +67,7 @@ WebStorm is a powerful IDE, and why not also use it as debugger tool? Here are t
 
 ### Enable ESLint
 
-ESLint helps developers on a team follow the same coding format. It's highly recommended to set it up in your IDE to avoid failing the linting step in tests.
+ESLint helps us follow the same coding format. It's highly recommended to set it up in your IDE to avoid failing the linting step in tests.
 
 1.  Go to WebStorm Preferences
 2.  Search for `ESLint`

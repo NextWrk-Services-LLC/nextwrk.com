@@ -1,6 +1,6 @@
 # Gotchas
 
-These are some things to be aware of when using this boilerplate.
+These are some things to be aware of when using react boilerplate.
 
 - [Special images in HTML files](#special-images-in-html-files)
 - [Load reducers optimistically](#load-reducers-optimistically)

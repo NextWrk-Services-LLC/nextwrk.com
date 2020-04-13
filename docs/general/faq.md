@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+# React Boilerplate Frequently Asked Questions
 
 - [Where are Babel, Prettier and ESLint configured?](#where-are-babel-prettier-and-eslint-configured)
 - [Where are the files coming from when I run `npm start`?](#where-are-the-files-coming-from-when-i-run-npm-start)
