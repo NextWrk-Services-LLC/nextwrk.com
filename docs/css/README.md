@@ -18,7 +18,7 @@
 
 ## Next Generation CSS
 
-This boilerplate uses [`styled-components`](https://github.com/styled-components/styled-components) :nail_care:
+We use [`styled-components`](https://github.com/styled-components/styled-components) :nail_care:
 for styling react components. `styled-components` allows you to write actual CSS inside your JavaScript,
 enabling you to use the [full power of CSS](https://github.com/styled-components/styled-components/blob/master/docs/css-we-support.md) :muscle:
 without mapping between styles and components.
@@ -30,21 +30,21 @@ Watch this video for a comparison and to see how it enforces best practices!
 
 ### Linting
 
-To complement `styled-components`, this boilerplate also has a CSS linting setup. It uses `stylelint` which will help you stay consistent with modern CSS standards. Read about it [here](linting.md).
+To complement `styled-components`, we also have a CSS linting setup. It uses `stylelint` which will help you stay consistent with modern CSS standards. Read about it [here](linting.md).
 
 ### sanitize.css
 
-In addition, this boilerplate also uses
+In addition, we also use
 [`sanitize.css`](https://github.com/jonathantneal/sanitize.css)
 to make browsers render all elements more consistently and in line with modern standards,
 it's a modern alternative to CSS resets. More info available on the [`sanitize.css` page](sanitize.md).
 
 ## CSS Support
 
-We support and recommend the use of [`styled-components`](#components).
-We also support the use of CSS [stylesheets](#stylesheet).
+The boilerplate supports and recommends the use of [`styled-components`](#components).
+It also supports the use of CSS [stylesheets](#stylesheet).
 
-There are many ways to style web applications, unfortunately, we cannot support them all.
+There are many ways to style web applications, unfortunately, the boilerplate doesn't support them all.
 However, you can integrate the following by using the guides below:
 
 - [CSS Modules](#css-modules)

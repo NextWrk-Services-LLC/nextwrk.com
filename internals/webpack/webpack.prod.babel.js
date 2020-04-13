@@ -116,11 +116,12 @@ module.exports = require('./webpack.base.babel')({
     }),
 
     new WebpackPwaManifest({
-      name: 'React Boilerplate',
-      short_name: 'React BP',
-      description: 'My React Boilerplate-based project!',
-      background_color: '#fafafa',
-      theme_color: '#b1624d',
+      name: 'NextWrk.com',
+      short_name: 'NextWrk',
+      description:
+        'Service connecting professionals to their best avenues for success in the gig economy',
+      background_color: '#edf6fb',
+      theme_color: '#3b9ad5',
       inject: true,
       ios: true,
       icons: [
