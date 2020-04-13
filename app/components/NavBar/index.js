@@ -13,6 +13,8 @@ import NavBarLink from './NavBarLink';
 import LogoLink from './LogoLink';
 import Img from './Img';
 import Logo from './nwlogo.png';
+import gigs from './gigs.svg';
+import services from './services.svg';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -24,7 +26,7 @@ const Wrapper = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-  width: 1100px;
+  width: min(1100px, 100vw);
   margin: auto;
 `;
 
@@ -35,8 +37,15 @@ function NavBar() {
         <LogoLink to="/">
           <Img src={Logo} alt="NextWrk - Logo" />
         </LogoLink>
-        <NavBarLink href="#gigs">Gigs</NavBarLink>
-        <NavBarLink href="#services">Services</NavBarLink>
+        <NavBarLink href="#services">
+          <img src={services} alt="Services Icon" />
+          {'Services'}
+        </NavBarLink>
+        <NavBarLink href="#gigs">
+          <img src={gigs} alt="Gigs Icon" />
+          {'Gigs'}
+        </NavBarLink>
+
         {/* <NavBarLink to="/">Gigs</NavBarLink>
         <NavBarLink to="/services">Services</NavBarLink>
         <NavBarLink to="/deals">Deals</NavBarLink>

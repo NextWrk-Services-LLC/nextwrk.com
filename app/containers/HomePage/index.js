@@ -57,8 +57,9 @@ export function HomePage({ loading, error, gigs }) {
         <CenteredSection>
           <H1>Make Easier Money on Your Own Time</H1>
           <H3>
-            Discover new opportunities for gig work, services to make jobs
-            easier and more lucrative, and deals to maximize your returns
+            {
+              "Discover new opportunities for gig work, services to make jobs easier and more lucrative, and deals to make sure you aren't leaving any money on the table."
+            }
           </H3>
         </CenteredSection>
         <Section>
@@ -68,14 +69,17 @@ export function HomePage({ loading, error, gigs }) {
           <hr />
           <H3>
             Jobs that let you come and go as you please. Work as much, or as
-            little, as you want
+            little, as you want!
           </H3>
           <GigsList {...gigsListProps} />
           {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
           <a name="services" />
           <H2>Services</H2>
           <hr />
-          <H3>Apps designed to make gig jobs easier and more lucractive</H3>
+          <H3>
+            Apps designed to make gig jobs easier and more lucractive. Work
+            smarter not harder!
+          </H3>
           <GigsList {...gigsListProps} />
           {/* <H2>Featured Deals</H2>
           <hr />

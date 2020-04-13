@@ -13,6 +13,7 @@ import CenterText from '../CenterText';
 import Wrapper from './Wrapper';
 import Img from './Img';
 import Ul from './Ul';
+import SocialLink from './SocialLink';
 import youtube from './youtube.png';
 import twitter from './twitter.png';
 import linkedin from './linkedin.png';
@@ -35,41 +36,26 @@ function Footer() {
       </div>
       <CenterText>
         <H2>Social</H2>
-        <a
-          href="https://www.facebook.com/NextWrk-110063513968010"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Img src={facebook} alt="NextWrk Facebook" />
-        </a>
-        <a
-          href="https://www.instagram.com/nextwrkapp/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Img src={instagram} alt="NextWrk Instagram" />
-        </a>
-        <a
-          href="https://www.linkedin.com/company/nextwrkapp"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Img src={linkedin} alt="NextWrk Linkedin" />
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCqY2NC8ksD_tkDLxJ_xvakA"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Img src={youtube} alt="NextWrk YouTube" />
-        </a>
-        <a
-          href="https://twitter.com/WrkNext"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Img src={twitter} alt="NextWrk Twitter" />
-        </a>
+        <SocialLink
+          link="https://www.facebook.com/NextWrk-110063513968010"
+          content={<Img src={facebook} alt="NextWrk Facebook" />}
+        />
+        <SocialLink
+          link="https://www.instagram.com/nextwrkapp/"
+          content={<Img src={instagram} alt="NextWrk Instagram" />}
+        />
+        <SocialLink
+          link="https://www.linkedin.com/company/nextwrkapp"
+          content={<Img src={linkedin} alt="NextWrk Linkedin" />}
+        />
+        <SocialLink
+          link="https://www.youtube.com/channel/UCqY2NC8ksD_tkDLxJ_xvakA"
+          content={<Img src={youtube} alt="NextWrk YouTube" />}
+        />
+        <SocialLink
+          link="https://twitter.com/WrkNext"
+          content={<Img src={twitter} alt="NextWrk Twitter" />}
+        />
       </CenterText>
       <div>
         <p>Made with love by Georgia Tech students</p>
