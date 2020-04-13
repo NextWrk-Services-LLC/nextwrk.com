@@ -1,5 +1,6 @@
 The MIT License (MIT)
 
+Copyright (c) 2020 Mark Foster
 Copyright (c) 2019 Maximilian Stoiber
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
