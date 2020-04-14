@@ -38,6 +38,8 @@ export const initialState = {
   userData: {
     gigs: [
       // Gigs
+      //
+      //
       //    Driving Gigs
       {
         id: 'G0001', // Rideshare
@@ -98,9 +100,20 @@ export const initialState = {
         type: 'gig',
       },
       {
+        id: 'G0163',
+        logo: uber,
+        gig: 'GroundLink Chauffeur',
+        description: '',
+        indeed: '',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      {
         id: 'G0007', // Delivery
         logo: roadie,
-        gig: 'Roadie Driver',
+        gig: 'Roadie Driver', // Last mile
         description:
           'Going on a roadtrip soon? Roadie will pay you to fill your empty space and complete deliveries on the way',
         indeed: 'https://www.indeed.com/cmp/Roadie/reviews',
@@ -122,8 +135,52 @@ export const initialState = {
         type: 'gig',
       },
       {
+        id: 'G0143',
+        logo: uber,
+        gig: 'Skipcart',
+        description: '',
+        indeed: '',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0155',
+        logo: uber,
+        gig: 'PICKUP',
+        description: '',
+        indeed: '',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0157',
+        logo: uber,
+        gig: 'TommyRun',
+        description: '',
+        indeed: '',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0161',
+        logo: uber,
+        gig: 'uShip',
+        description: '',
+        indeed: '',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      {
         id: 'G0013',
-        logo: postmates,
+        logo: postmates, // Food
         gig: 'Postmates Courier',
         description:
           'Postmates drivers earn a living by delivering food, convenience items, and small office goods to local consumers.',
@@ -193,6 +250,29 @@ export const initialState = {
         type: 'gig',
       },
       {
+        id: 'G0144',
+        logo: uber,
+        gig: 'Hungr',
+        description: '',
+        indeed: '',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0148',
+        logo: uber,
+        gig: 'Zifty Driver',
+        description:
+          'Delivery drivers. Zifty is an online delivery company that partners with local restaurants and brands to bring their goods straight to clients’ doors. Zifty is looking for enthusiastic delivery providers to make deliveries of food, movies, and other items to customers. ',
+        indeed: '',
+        promo: '',
+        gigsite: 'http://jobs.zifty.com/',
+        featured: false,
+        type: 'gig',
+      },
+      {
         id: 'G0008', // Shopping
         logo: instacart,
         gig: 'Instacart Shopper',
@@ -216,6 +296,8 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
+      //
+      //
       //    Property (Rental) Gigs
       {
         id: 'G0002', // Home rentals
@@ -391,6 +473,34 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
+      {
+        id: 'G0067',
+        logo: uber,
+        gig: 'Boatsetter',
+        description:
+          'If you own a boat, then Boatsetter lets you rent it out — either with or without a captain.',
+        indeed: '',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      //
+      //
+      // Scooter Chargers
+      {
+        id: 'G0153',
+        logo: uber,
+        gig: 'Bird Scooter Charger',
+        description: '',
+        indeed: '',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      //
+      //
       //    Dog Walking Gigs
       {
         id: 'G0003',
@@ -417,6 +527,8 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
+      //
+      //
       //    Anybody can do it labor
       {
         id: 'G0005', // Manual labor
@@ -444,6 +556,17 @@ export const initialState = {
         type: 'gig',
       },
       {
+        id: 'G0021',
+        logo: uber,
+        gig: 'Wonolo',
+        description: '',
+        indeed: '',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      {
         id: 'G0022',
         logo: uber,
         gig: 'Bellhops',
@@ -456,10 +579,11 @@ export const initialState = {
         type: 'gig',
       },
       {
-        id: 'G0021',
+        id: 'G0027',
         logo: uber,
-        gig: 'Wonolo',
-        description: '',
+        gig: 'Dolly',
+        description:
+          'The Dolly service uses people that have vehicles for moving, or movers to do the heavy lifting if they don’t have a vehicle. ',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -467,11 +591,10 @@ export const initialState = {
         type: 'gig',
       },
       {
-        id: 'G0027',
+        id: 'G0151',
         logo: uber,
-        gig: 'Dolly',
-        description:
-          'The Dolly service uses people that have vehicles for moving, or movers to do the heavy lifting if they don’t have a vehicle. ',
+        gig: 'GoShare Delivery',
+        description: '',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -502,9 +625,53 @@ export const initialState = {
         type: 'gig',
       },
       {
+        id: 'G0149',
+        logo: uber,
+        gig: 'LawnStarter',
+        description: '',
+        indeed: '',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0150',
+        logo: uber,
+        gig: 'Plowz and Mowz',
+        description: '',
+        indeed: '',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0152',
+        logo: uber,
+        gig: 'Lawn Love',
+        description: '',
+        indeed: '',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0162', // Cleaning
+        logo: uber,
+        gig: 'Homeaglow',
+        description: '',
+        indeed: 'https://www.indeed.com/cmp/Homeaglow/reviews',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      {
         id: 'G0023', // Less intensive labor
         logo: uber,
-        gig: 'Care.com',
+        gig: 'Care.com', // Childcare
         description:
           'Primarily a place to find work in child or pet care, Care.com also offers gigs for housekeepers, gardeners, tutors, and those caring for the elderly.',
         indeed: '',
@@ -525,6 +692,19 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
+      {
+        id: 'G0154',
+        logo: uber,
+        gig: 'UrbanSitter',
+        description: '',
+        indeed: '',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      //
+      //
       // Technical gigs
       {
         id: 'G0026',
@@ -549,6 +729,20 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
+      {
+        id: 'G0159',
+        logo: uber,
+        gig: 'iCracked',
+        description:
+          'Phone repair. iCracked provides local on-demand iPhone, iPad, and Galaxy repair services. iCracked specializes in on-site screen replacements.',
+        indeed: '',
+        promo: '',
+        gigsite: '',
+        featured: false,
+        type: 'gig',
+      },
+      //
+      //
       // Artsy Gigs
       {
         id: 'G0028',
@@ -562,6 +756,8 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
+      //
+      //
       // Virtual Assistant Gigs
       {
         id: 'G0029',
@@ -574,6 +770,8 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
+      //
+      //
       // Cooking Gigs
       {
         id: 'G0031',
@@ -587,6 +785,8 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
+      //
+      //
       // Mystery Shoppers
       {
         id: 'G0033',
@@ -594,79 +794,6 @@ export const initialState = {
         gig: 'Gigwalk',
         description:
           'Work for Gigwalk usually involves gathering data for companies about their products and stores. For example, you might be checking what’s on the shelves in a particular shop, and whether it’s correctly priced and labeled.',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      // Bullshit work
-      {
-        id: 'G0048',
-        logo: uber,
-        gig: 'Spare5',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      // Mechanics
-      {
-        id: 'G0055',
-        logo: uber,
-        gig: 'YourMechanic',
-        description:
-          'Providing car repairs and maintenance carried out at customers’ homes, YourMechanic is a way for people with auto repair skills to leverage the gig economy.',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      // Massages
-      {
-        id: 'G0056',
-        logo: uber,
-        gig: 'Zeel',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0064',
-        logo: uber,
-        gig: 'Soothe',
-        description:
-          'Gig work for massage therapists, including deep tissue, sports, and couples massage work. ',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0067',
-        logo: uber,
-        gig: 'Boatsetter',
-        description:
-          'If you own a boat, then Boatsetter lets you rent it out — either with or without a captain.',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0068',
-        logo: uber,
-        gig: 'Printed Village',
-        description:
-          'Printed Village is a fabric design company. As a designer, you earn a commission on products that choose your design.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -795,54 +922,11 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
+      // Bullshit work
       {
-        id: 'G0142',
+        id: 'G0048',
         logo: uber,
-        gig: 'Veryable',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0143',
-        logo: uber,
-        gig: 'Skipcart',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0144',
-        logo: uber,
-        gig: 'Hungr',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0145',
-        logo: uber,
-        gig: 'Skooli',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0146',
-        logo: uber,
-        gig: 'Literably',
+        gig: 'Spare5',
         description: '',
         indeed: '',
         promo: '',
@@ -862,22 +946,24 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
+      // Mechanics
       {
-        id: 'G0148',
+        id: 'G0055',
         logo: uber,
-        gig: 'Zifty Driver',
+        gig: 'YourMechanic',
         description:
-          'Delivery drivers. Zifty is an online delivery company that partners with local restaurants and brands to bring their goods straight to clients’ doors. Zifty is looking for enthusiastic delivery providers to make deliveries of food, movies, and other items to customers. ',
+          'Providing car repairs and maintenance carried out at customers’ homes, YourMechanic is a way for people with auto repair skills to leverage the gig economy.',
         indeed: '',
         promo: '',
-        gigsite: 'http://jobs.zifty.com/',
+        gigsite: '',
         featured: false,
         type: 'gig',
       },
+      // Massages
       {
-        id: 'G0149',
+        id: 'G0056',
         logo: uber,
-        gig: 'LawnStarter',
+        gig: 'Zeel',
         description: '',
         indeed: '',
         promo: '',
@@ -886,116 +972,18 @@ export const initialState = {
         type: 'gig',
       },
       {
-        id: 'G0150',
+        id: 'G0064',
         logo: uber,
-        gig: 'Plowz and Mowz',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0151',
-        logo: uber,
-        gig: 'GoShare Delivery',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0152',
-        logo: uber,
-        gig: 'Lawn Love',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0153',
-        logo: uber,
-        gig: 'Bird Scooter Charger',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0154',
-        logo: uber,
-        gig: 'UrbanSitter',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0155',
-        logo: uber,
-        gig: 'PICKUP',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0156',
-        logo: uber,
-        gig: 'SnapNurse',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0157',
-        logo: uber,
-        gig: 'TommyRun',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0158',
-        logo: uber,
-        gig: 'MyPeopleNow',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0159',
-        logo: uber,
-        gig: 'iCracked',
+        gig: 'Soothe',
         description:
-          'Phone repair. iCracked provides local on-demand iPhone, iPad, and Galaxy repair services. iCracked specializes in on-site screen replacements.',
+          'Gig work for massage therapists, including deep tissue, sports, and couples massage work. ',
         indeed: '',
         promo: '',
         gigsite: '',
         featured: false,
         type: 'gig',
       },
+      // Beauty
       {
         id: 'G0160',
         logo: uber,
@@ -1008,10 +996,11 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
+      // Manufacturing
       {
-        id: 'G0161',
+        id: 'G0142',
         logo: uber,
-        gig: 'uShip',
+        gig: 'Veryable',
         description: '',
         indeed: '',
         promo: '',
@@ -1019,10 +1008,11 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
+      // Nurses
       {
-        id: 'G0162',
+        id: 'G0156',
         logo: uber,
-        gig: 'Homeaglow',
+        gig: 'SnapNurse',
         description: '',
         indeed: '',
         promo: '',
@@ -1030,33 +1020,28 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
-      {
-        id: 'G0163',
-        logo: uber,
-        gig: 'GroundLink Chauffeur',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
+      //
+      //
+      //
+      //
+      //
+      // Unsorted (need to be sorted)
       {
         id: 'G0164',
         logo: uber,
-        gig: '',
+        gig: 'EasyMove',
         description: '',
         indeed: '',
         promo: '',
-        gigsite: '',
+        gigsite: 'https://geteasymove.com/',
         featured: false,
         type: 'gig',
       },
       {
         id: 'G0165',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Lime Juicer',
+        description: 'charge lime scooter',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -1066,19 +1051,19 @@ export const initialState = {
       {
         id: 'G0166',
         logo: uber,
-        gig: '',
+        gig: 'Pet Sitters International',
         description: '',
         indeed: '',
         promo: '',
-        gigsite: '',
+        gigsite: 'https://www.petsit.com/',
         featured: false,
         type: 'gig',
       },
       {
         id: 'G0167',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'SitterCity',
+        description: 'Babysitters',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -1088,18 +1073,18 @@ export const initialState = {
       {
         id: 'G0168',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Zum',
+        description: 'Child rideshare',
         indeed: '',
         promo: '',
-        gigsite: '',
+        gigsite: 'https://www.ridezum.com/',
         featured: false,
         type: 'gig',
       },
       {
         id: 'G0169',
         logo: uber,
-        gig: '',
+        gig: 'GoPuff',
         description: '',
         indeed: '',
         promo: '',
@@ -1110,7 +1095,7 @@ export const initialState = {
       {
         id: 'G0170',
         logo: uber,
-        gig: '',
+        gig: 'DeLiv',
         description: '',
         indeed: '',
         promo: '',
@@ -1121,7 +1106,7 @@ export const initialState = {
       {
         id: 'G0171',
         logo: uber,
-        gig: '',
+        gig: 'Doorman',
         description: '',
         indeed: '',
         promo: '',
@@ -1132,8 +1117,8 @@ export const initialState = {
       {
         id: 'G0172',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Booking.com',
+        description: 'Home thing, they have affiliate',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -1143,7 +1128,7 @@ export const initialState = {
       {
         id: 'G0173',
         logo: uber,
-        gig: '',
+        gig: 'VacationRentals',
         description: '',
         indeed: '',
         promo: '',
@@ -1154,7 +1139,7 @@ export const initialState = {
       {
         id: 'G0174',
         logo: uber,
-        gig: '',
+        gig: 'Jump Scooter Charger',
         description: '',
         indeed: '',
         promo: '',
@@ -1165,7 +1150,7 @@ export const initialState = {
       {
         id: 'G0175',
         logo: uber,
-        gig: '',
+        gig: 'Spin Scooter Charger',
         description: '',
         indeed: '',
         promo: '',
@@ -1176,7 +1161,7 @@ export const initialState = {
       {
         id: 'G0176',
         logo: uber,
-        gig: '',
+        gig: 'Skip Scooter Charger',
         description: '',
         indeed: '',
         promo: '',
@@ -1187,7 +1172,7 @@ export const initialState = {
       {
         id: 'G0177',
         logo: uber,
-        gig: '',
+        gig: 'Hyrecar',
         description: '',
         indeed: '',
         promo: '',
@@ -1198,7 +1183,7 @@ export const initialState = {
       {
         id: 'G0178',
         logo: uber,
-        gig: '',
+        gig: 'Slingshot Health',
         description: '',
         indeed: '',
         promo: '',
@@ -1209,7 +1194,7 @@ export const initialState = {
       {
         id: 'G0179',
         logo: uber,
-        gig: '',
+        gig: 'Heal.com',
         description: '',
         indeed: '',
         promo: '',
@@ -1220,7 +1205,7 @@ export const initialState = {
       {
         id: 'G0180',
         logo: uber,
-        gig: '',
+        gig: 'Fetch MD',
         description: '',
         indeed: '',
         promo: '',
@@ -1232,7 +1217,7 @@ export const initialState = {
         id: 'G0181',
         logo: uber,
         gig: '',
-        description: '',
+        description: 'Deliveroo',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -1393,7 +1378,10 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
-
+      //
+      //
+      //
+      //
       // Services
       {
         id: 'S0001',
@@ -1469,19 +1457,19 @@ export const initialState = {
       {
         id: 'S0030',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Grabb-it',
+        description: 'Advertising for rideshare drivers to make more',
         indeed: '',
         promo: '',
-        gigsite: '',
+        gigsite: 'https://grabb.io/',
         featured: false,
         type: 'service',
       },
       {
         id: 'S0031',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Hurdlr',
+        description: 'Mileage and expense tracker',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -1491,8 +1479,8 @@ export const initialState = {
       {
         id: 'S0032',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Packir',
+        description: 'Delivery backpack for food',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -1502,8 +1490,8 @@ export const initialState = {
       {
         id: 'S0033',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Play Octopus',
+        description: 'rideshare advertising and entertainment',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -1513,7 +1501,7 @@ export const initialState = {
       {
         id: 'S0034',
         logo: uber,
-        gig: '',
+        gig: 'Dash Cam',
         description: '',
         indeed: '',
         promo: '',
@@ -1524,11 +1512,13 @@ export const initialState = {
       {
         id: 'S0035',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Home Dog Care Business: Dog Boarding, Walking & Pet Sitting',
+        description:
+          'Market your dog care services: pet sitting, dog walking, dog training, pet boarding & dog kennel locally with Google SEO Udemy Course for Pet Sitting Gigs',
         indeed: '',
         promo: '',
-        gigsite: '',
+        gigsite:
+          'https://www.udemy.com/course/rover-how-to-start-your-dog-walking-business-from-home',
         featured: false,
         type: 'service',
       },
