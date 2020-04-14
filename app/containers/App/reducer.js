@@ -18,6 +18,9 @@ import thumbtack from './img/thumbtack.png';
 import roadie from './img/roadie.png';
 import instacart from './img/instacart.png';
 import lyft from './img/lyft.png';
+import gridwise from './img/gridwise.png';
+import mystro from './img/mystro.jpg';
+import surge from './img/surge.png';
 
 // The initial state of the App
 export const initialState = {
@@ -276,41 +279,40 @@ export const initialState = {
       // Services
       {
         id: 'S0001',
-        logo:
-          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAACHUlEQVRoQ+2b246CMBCG24eR6IUBo77/vRpOMSb6MmxKBCpZl84J3Dpeeehhvvl/ClPEGu/VNE3jf47lvbXWdiz9m1hhe9AndAvcwXqJiEXclqMzrlPaxg7bKddDK3BUZh5gVOFYFyw9hnXR0kUrjgwsskofj0dzOp1eMui+u1wu4lmdDRhaj0idLUSBt9utqeuapNp+vzd5npPGGFWC7Uf2a2moolNEXIqLKMwN65V2U3mZ/J0VeLPZmNvtNjkppcF6vTb3+x09BCuwlLJjOoq92YDngqXamwV4blgKNBk4yzJTFAX6mKJ0TNMUfNojAy+lLlZlBYasgEuri1GZpDAUODSZUuO+bNViNgCkApMalwSMWZ2lFHaxVFUVtOCTLB00A6IRVOG2+hluG/05owKHZgohXHAXVTggVaFCoS3tLuvKsgwIZWgCDSp0cMh+GBrYX+JDA5MCDh2XdFpS4FCZBdrNpjBGZW5eCCzZ0l8JvNvtWPeNIQ5w+97X6xXSZfifB6Z46GbCXCiAonzTGGpnFksvBY2BZQWe83jGwrIDr1Yr83g8ONz6doyP2oiXtjdF2XFsejONw5dJkpDuA7kY/s3t0nHCoKcuDvv+JhqpWsK64HA4mPP5/NLdXcBAy03M/IsAYwLl6qPAUscOl0LUcVRhVZjqoQ/rr5ZWS3+YJanh9JZ+1ortA1qxqtzD+k9sfdWDWl7NGP2jeD9/hTOD+R2rtgAAAABJRU5ErkJggg==',
-        gig: 'Uber Driver',
+        logo: gridwise,
+        gig: 'Gridwise',
         description:
-          'Drive around town, transporting customers to their requested destinations.',
-        indeed: '',
-        promo: 'Sign Up With Promo Code PRGREY and Get $20',
-        gigsite: 'uber.com/drive/',
+          'Gridwise is an intelligence platform which provides information on ridesharing insights to customers, including both rideshare and taxi drivers, to help drivers improve efficiency and profits on the road.',
+        indeed:
+          'https://appgrooves.com/app/gridwise-earn-more-by-driving-smarter-by-swerv-technologies-llc/negative',
+        promo: '',
+        gigsite: 'https://gridwise.io/',
         featured: true,
         type: 'service',
       },
       {
         id: 'S0002',
-        logo:
-          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAACHUlEQVRoQ+2b246CMBCG24eR6IUBo77/vRpOMSb6MmxKBCpZl84J3Dpeeehhvvl/ClPEGu/VNE3jf47lvbXWdiz9m1hhe9AndAvcwXqJiEXclqMzrlPaxg7bKddDK3BUZh5gVOFYFyw9hnXR0kUrjgwsskofj0dzOp1eMui+u1wu4lmdDRhaj0idLUSBt9utqeuapNp+vzd5npPGGFWC7Uf2a2moolNEXIqLKMwN65V2U3mZ/J0VeLPZmNvtNjkppcF6vTb3+x09BCuwlLJjOoq92YDngqXamwV4blgKNBk4yzJTFAX6mKJ0TNMUfNojAy+lLlZlBYasgEuri1GZpDAUODSZUuO+bNViNgCkApMalwSMWZ2lFHaxVFUVtOCTLB00A6IRVOG2+hluG/05owKHZgohXHAXVTggVaFCoS3tLuvKsgwIZWgCDSp0cMh+GBrYX+JDA5MCDh2XdFpS4FCZBdrNpjBGZW5eCCzZ0l8JvNvtWPeNIQ5w+97X6xXSZfifB6Z46GbCXCiAonzTGGpnFksvBY2BZQWe83jGwrIDr1Yr83g8ONz6doyP2oiXtjdF2XFsejONw5dJkpDuA7kY/s3t0nHCoKcuDvv+JhqpWsK64HA4mPP5/NLdXcBAy03M/IsAYwLl6qPAUscOl0LUcVRhVZjqoQ/rr5ZWS3+YJanh9JZ+1ortA1qxqtzD+k9sfdWDWl7NGP2jeD9/hTOD+R2rtgAAAABJRU5ErkJggg==',
-        gig: 'Uber Driver',
+        logo: mystro,
+        gig: 'Mystro',
         description:
-          'Drive around town, transporting customers to their requested destinations.',
-        indeed: 'https://www.indeed.com/cmp/Uber/reviews',
-        promo: 'Sign Up With Promo Code PRGREY and Get $20',
-        gigsite: 'uber.com/drive/',
-        featured: true,
+          'Mystro is an app that orchestrates incoming passenger requests between the Uber and Lyft rideshare apps, so you can stop clicking back and forth',
+        indeed:
+          'https://play.google.com/store/apps/details?id=partners.driver.mystro&hl=en_US',
+        promo: '',
+        gigsite: 'https://mystrodriver.com/download',
+        featured: false,
         type: 'service',
       },
       {
         id: 'S0003',
-        logo:
-          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAACHUlEQVRoQ+2b246CMBCG24eR6IUBo77/vRpOMSb6MmxKBCpZl84J3Dpeeehhvvl/ClPEGu/VNE3jf47lvbXWdiz9m1hhe9AndAvcwXqJiEXclqMzrlPaxg7bKddDK3BUZh5gVOFYFyw9hnXR0kUrjgwsskofj0dzOp1eMui+u1wu4lmdDRhaj0idLUSBt9utqeuapNp+vzd5npPGGFWC7Uf2a2moolNEXIqLKMwN65V2U3mZ/J0VeLPZmNvtNjkppcF6vTb3+x09BCuwlLJjOoq92YDngqXamwV4blgKNBk4yzJTFAX6mKJ0TNMUfNojAy+lLlZlBYasgEuri1GZpDAUODSZUuO+bNViNgCkApMalwSMWZ2lFHaxVFUVtOCTLB00A6IRVOG2+hluG/05owKHZgohXHAXVTggVaFCoS3tLuvKsgwIZWgCDSp0cMh+GBrYX+JDA5MCDh2XdFpS4FCZBdrNpjBGZW5eCCzZ0l8JvNvtWPeNIQ5w+97X6xXSZfifB6Z46GbCXCiAonzTGGpnFksvBY2BZQWe83jGwrIDr1Yr83g8ONz6doyP2oiXtjdF2XFsejONw5dJkpDuA7kY/s3t0nHCoKcuDvv+JhqpWsK64HA4mPP5/NLdXcBAy03M/IsAYwLl6qPAUscOl0LUcVRhVZjqoQ/rr5ZWS3+YJanh9JZ+1ortA1qxqtzD+k9sfdWDWl7NGP2jeD9/hTOD+R2rtgAAAABJRU5ErkJggg==',
-        gig: 'Uber Driver',
+        logo: surge,
+        gig: 'Surge 2x',
         description:
-          'Drive around town, transporting customers to their requested destinations.',
-        indeed: 'https://www.indeed.com/cmp/Uber/reviews',
-        promo: 'Sign Up With Promo Code PRGREY and Get $20',
-        gigsite: 'uber.com/drive/',
-        featured: false,
+          'By using Surge you are able to only drive during surges. You will be able to out perform other top drivers in your city, drastically increasing your profit.',
+        indeed: 'https://apps.apple.com/us/app/surge-2x/id986581500',
+        promo: '',
+        gigsite: 'http://www.surgeapp.org/',
+        featured: true,
         type: 'service',
       },
     ],
