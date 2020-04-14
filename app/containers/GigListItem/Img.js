@@ -6,7 +6,6 @@ const Img = styled(NormalImg)`
   height: 50px;
   margin: 0 auto;
   display: block;
-  border-radius: 20px;
 `;
 
 export default Img;
