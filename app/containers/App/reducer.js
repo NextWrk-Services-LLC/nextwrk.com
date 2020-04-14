@@ -11,6 +11,8 @@ import produce from 'immer';
 import { LOAD_GIGS_SUCCESS, LOAD_GIGS, LOAD_GIGS_ERROR } from './constants';
 import rlac from './img/rlac.png';
 import rover from './img/rover.png';
+import hsnd from './img/hsnd.png';
+import wingz from './img/wingz.png';
 import uber from './img/uber.png';
 import neighbor from './img/neighbor.png';
 import taskrabbit from './img/taskrabbit.png';
@@ -68,7 +70,7 @@ export const initialState = {
       },
       {
         id: 'G0037',
-        logo: uber,
+        logo: hsnd,
         gig: 'HopSkipDrive',
         description:
           'HopSkipDrive is the safe, dependable transportation solution schools and families can count on to get kids where they need to go.',
@@ -81,7 +83,7 @@ export const initialState = {
       },
       {
         id: 'G0054',
-        logo: uber,
+        logo: wingz,
         gig: 'Wingz',
         description:
           'Rideshare app, as a peer-to-peer marketplace Wingz allows passengers to rebook their favorite driver when using the Wingz mobile app, website or toll-free number.',
@@ -370,19 +372,6 @@ export const initialState = {
         indeed: 'https://www.sitejabber.com/reviews/booking.com',
         promo: '',
         gigsite: 'https://join.booking.com/',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0173',
-        logo: uber,
-        gig: 'VacationRentals',
-        description:
-          'Vacationrentals.com lets you book your vacation property for rent',
-        indeed:
-          'https://www.consumeraffairs.com/travel/vacationrentals-com.html',
-        promo: '',
-        gigsite: 'https://www.vacationrentals.com/en-us/list',
         featured: false,
         type: 'gig',
       },
