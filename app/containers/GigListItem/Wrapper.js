@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.li`
-  min-width: 23%;
-  max-width: 270px;
-  padding: 10px 15px;
-  background: #ffffff;
+  min-width: 27%;
+  max-width: 330px;
+  height: 100%;
+  padding: 10px 20px;
+  background: #fff;
   border: 1px solid #070600;
   border-radius: 5px;
   -moz-box-shadow: 1px 1px 3px grey;

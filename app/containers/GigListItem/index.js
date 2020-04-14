@@ -17,13 +17,12 @@ import { makeSelectCurrentUser } from 'containers/App/selectors';
 import CenterText from 'components/CenterText';
 import ListItem from 'components/ListItem';
 import A from 'components/A';
-import H3 from 'components/H3';
 import P from './P';
 import Img from './Img';
 import Wrapper from './Wrapper';
 
 const Spacing = styled.div`
-  padding: 3px;
+  padding: 15px;
 `;
 
 export function GigsListItem(props) {
@@ -34,19 +33,20 @@ export function GigsListItem(props) {
     <Spacing>
       <Wrapper>
         <Img src={item.logo} alt="Company - Logo" />
-        <H3>{item.gig}</H3>
-        <P>{item.description}</P>
         <CenterText>
-          <A href={item.indeed} target="_blank" rel="noopener noreferrer">
-            See what others have to say
-          </A>
-          <p>
-            {'Sign Up With Promo Code '.concat(
-              item.promocode,
-              ' and Get ',
-              item.promo,
-            )}
-          </p>
+          <h2 style={{ fontWeight: 'normal', marginTop: '5px' }}>{item.gig}</h2>
+        </CenterText>
+        <P>{item.description}</P>
+        <hr />
+        <CenterText>
+          {item.indeed ? (
+            <A href={item.indeed} target="_blank" rel="noopener noreferrer">
+              See what others have to say
+            </A>
+          ) : (
+            ''
+          )}
+          {item.promo ? <p>{item.promo}</p> : <p />}
           <A href={item.gigsite} target="_blank" rel="noopener noreferrer">
             TRY IT OUT
           </A>

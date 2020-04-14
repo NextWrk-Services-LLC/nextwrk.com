@@ -9,6 +9,9 @@
 
 import produce from 'immer';
 import { LOAD_GIGS_SUCCESS, LOAD_GIGS, LOAD_GIGS_ERROR } from './constants';
+import rlac from './img/rlac.png';
+import rover from './img/rover.jpg';
+import uber from './img/uber.png';
 
 // The initial state of the App
 export const initialState = {
@@ -18,39 +21,42 @@ export const initialState = {
     gigs: [
       {
         id: '0001',
-        logo:
-          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAACHUlEQVRoQ+2b246CMBCG24eR6IUBo77/vRpOMSb6MmxKBCpZl84J3Dpeeehhvvl/ClPEGu/VNE3jf47lvbXWdiz9m1hhe9AndAvcwXqJiEXclqMzrlPaxg7bKddDK3BUZh5gVOFYFyw9hnXR0kUrjgwsskofj0dzOp1eMui+u1wu4lmdDRhaj0idLUSBt9utqeuapNp+vzd5npPGGFWC7Uf2a2moolNEXIqLKMwN65V2U3mZ/J0VeLPZmNvtNjkppcF6vTb3+x09BCuwlLJjOoq92YDngqXamwV4blgKNBk4yzJTFAX6mKJ0TNMUfNojAy+lLlZlBYasgEuri1GZpDAUODSZUuO+bNViNgCkApMalwSMWZ2lFHaxVFUVtOCTLB00A6IRVOG2+hluG/05owKHZgohXHAXVTggVaFCoS3tLuvKsgwIZWgCDSp0cMh+GBrYX+JDA5MCDh2XdFpS4FCZBdrNpjBGZW5eCCzZ0l8JvNvtWPeNIQ5w+97X6xXSZfifB6Z46GbCXCiAonzTGGpnFksvBY2BZQWe83jGwrIDr1Yr83g8ONz6doyP2oiXtjdF2XFsejONw5dJkpDuA7kY/s3t0nHCoKcuDvv+JhqpWsK64HA4mPP5/NLdXcBAy03M/IsAYwLl6qPAUscOl0LUcVRhVZjqoQ/rr5ZWS3+YJanh9JZ+1ortA1qxqtzD+k9sfdWDWl7NGP2jeD9/hTOD+R2rtgAAAABJRU5ErkJggg==',
+        logo: uber,
         gig: 'Uber Driver',
         description:
-          'Drive around town, transporting customers to their requested destinations.',
+          'The taxi of the 21st century. Drive around town, picking up and dropping off passengers.',
         indeed: 'https://www.indeed.com/cmp/Uber/reviews',
-        promocode: 'PRGREY',
-        promo: '$20',
+        promo:
+          'Sign Up With Promo Code PRGREY and Get $20 When You Complete a Trip',
         gigsite: 'uber.com/drive/',
+        featured: true,
+        type: 'gig',
       },
       {
         id: '0002',
-        logo:
-          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAACHUlEQVRoQ+2b246CMBCG24eR6IUBo77/vRpOMSb6MmxKBCpZl84J3Dpeeehhvvl/ClPEGu/VNE3jf47lvbXWdiz9m1hhe9AndAvcwXqJiEXclqMzrlPaxg7bKddDK3BUZh5gVOFYFyw9hnXR0kUrjgwsskofj0dzOp1eMui+u1wu4lmdDRhaj0idLUSBt9utqeuapNp+vzd5npPGGFWC7Uf2a2moolNEXIqLKMwN65V2U3mZ/J0VeLPZmNvtNjkppcF6vTb3+x09BCuwlLJjOoq92YDngqXamwV4blgKNBk4yzJTFAX6mKJ0TNMUfNojAy+lLlZlBYasgEuri1GZpDAUODSZUuO+bNViNgCkApMalwSMWZ2lFHaxVFUVtOCTLB00A6IRVOG2+hluG/05owKHZgohXHAXVTggVaFCoS3tLuvKsgwIZWgCDSp0cMh+GBrYX+JDA5MCDh2XdFpS4FCZBdrNpjBGZW5eCCzZ0l8JvNvtWPeNIQ5w+97X6xXSZfifB6Z46GbCXCiAonzTGGpnFksvBY2BZQWe83jGwrIDr1Yr83g8ONz6doyP2oiXtjdF2XFsejONw5dJkpDuA7kY/s3t0nHCoKcuDvv+JhqpWsK64HA4mPP5/NLdXcBAy03M/IsAYwLl6qPAUscOl0LUcVRhVZjqoQ/rr5ZWS3+YJanh9JZ+1ortA1qxqtzD+k9sfdWDWl7NGP2jeD9/hTOD+R2rtgAAAABJRU5ErkJggg==',
-        gig: 'Uber Driver',
+        logo: rlac,
+        gig: 'Rent Like a Champion',
         description:
-          'Drive around town, transporting customers to their requested destinations.',
-        indeed: 'https://www.indeed.com/cmp/Uber/reviews',
-        promocode: 'PRGREY',
-        promo: '$20',
-        gigsite: 'uber.com/drive/',
+          'AirBnb for sporting events! Rent your home out to eager fans traveling for games in your hometown.',
+        indeed: 'https://www.trustpilot.com/review/rentlikeachampion.com',
+        promo:
+          'Sign Up With Promo Code XXXXX and Get $20 After Your First Rental',
+        gigsite: 'https://rentlikeachampion.com/',
+        featured: true,
+        type: 'gig',
       },
       {
         id: '0003',
-        logo:
-          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAACHUlEQVRoQ+2b246CMBCG24eR6IUBo77/vRpOMSb6MmxKBCpZl84J3Dpeeehhvvl/ClPEGu/VNE3jf47lvbXWdiz9m1hhe9AndAvcwXqJiEXclqMzrlPaxg7bKddDK3BUZh5gVOFYFyw9hnXR0kUrjgwsskofj0dzOp1eMui+u1wu4lmdDRhaj0idLUSBt9utqeuapNp+vzd5npPGGFWC7Uf2a2moolNEXIqLKMwN65V2U3mZ/J0VeLPZmNvtNjkppcF6vTb3+x09BCuwlLJjOoq92YDngqXamwV4blgKNBk4yzJTFAX6mKJ0TNMUfNojAy+lLlZlBYasgEuri1GZpDAUODSZUuO+bNViNgCkApMalwSMWZ2lFHaxVFUVtOCTLB00A6IRVOG2+hluG/05owKHZgohXHAXVTggVaFCoS3tLuvKsgwIZWgCDSp0cMh+GBrYX+JDA5MCDh2XdFpS4FCZBdrNpjBGZW5eCCzZ0l8JvNvtWPeNIQ5w+97X6xXSZfifB6Z46GbCXCiAonzTGGpnFksvBY2BZQWe83jGwrIDr1Yr83g8ONz6doyP2oiXtjdF2XFsejONw5dJkpDuA7kY/s3t0nHCoKcuDvv+JhqpWsK64HA4mPP5/NLdXcBAy03M/IsAYwLl6qPAUscOl0LUcVRhVZjqoQ/rr5ZWS3+YJanh9JZ+1ortA1qxqtzD+k9sfdWDWl7NGP2jeD9/hTOD+R2rtgAAAABJRU5ErkJggg==',
-        gig: 'Uber Driver',
+        logo: rover,
+        gig: 'Rover Walker',
         description:
-          'Drive around town, transporting customers to their requested destinations.',
-        indeed: 'https://www.indeed.com/cmp/Uber/reviews',
-        promocode: 'PRGREY',
-        promo: '$20',
-        gigsite: 'uber.com/drive/',
+          'Love animals? Get paid to watch dogs as a Sitter or walk dogs as a Walker through Rover!',
+        indeed:
+          'https://www.indeed.com/cmp/Rover.com/reviews?fcountry=ALL&fjobtitle=Dog+Walker',
+        promo: 'Sign Up Through the Link Below and Get $20!',
+        gigsite: 'http://share.rover.com/SWhzJ',
+        featured: true,
+        type: 'gig',
       },
       {
         id: '0004',
@@ -60,9 +66,10 @@ export const initialState = {
         description:
           'Drive around town, transporting customers to their requested destinations.',
         indeed: 'https://www.indeed.com/cmp/Uber/reviews',
-        promocode: 'PRGREY',
-        promo: '$20',
+        promo: 'Sign Up With Promo Code PRGREY and Get $20',
         gigsite: 'uber.com/drive/',
+        featured: true,
+        type: 'gig',
       },
       {
         id: '0005',
@@ -72,9 +79,10 @@ export const initialState = {
         description:
           'Drive around town, transporting customers to their requested destinations.',
         indeed: 'https://www.indeed.com/cmp/Uber/reviews',
-        promocode: 'PRGREY',
-        promo: '$20',
+        promo: '',
         gigsite: 'uber.com/drive/',
+        featured: true,
+        type: 'gig',
       },
       {
         id: '0006',
@@ -83,10 +91,11 @@ export const initialState = {
         gig: 'Uber Driver',
         description:
           'Drive around town, transporting customers to their requested destinations.',
-        indeed: 'https://www.indeed.com/cmp/Uber/reviews',
-        promocode: 'PRGREY',
-        promo: '$20',
+        indeed: '',
+        promo: 'Sign Up With Promo Code PRGREY and Get $20',
         gigsite: 'uber.com/drive/',
+        featured: true,
+        type: 'service',
       },
       {
         id: '0007',
@@ -96,9 +105,10 @@ export const initialState = {
         description:
           'Drive around town, transporting customers to their requested destinations.',
         indeed: 'https://www.indeed.com/cmp/Uber/reviews',
-        promocode: 'PRGREY',
-        promo: '$20',
+        promo: 'Sign Up With Promo Code PRGREY and Get $20',
         gigsite: 'uber.com/drive/',
+        featured: true,
+        type: 'service',
       },
       {
         id: '0008',
@@ -108,9 +118,10 @@ export const initialState = {
         description:
           'Drive around town, transporting customers to their requested destinations.',
         indeed: 'https://www.indeed.com/cmp/Uber/reviews',
-        promocode: 'PRGREY',
-        promo: '$20',
+        promo: 'Sign Up With Promo Code PRGREY and Get $20',
         gigsite: 'uber.com/drive/',
+        featured: false,
+        type: 'service',
       },
     ],
   },
