@@ -290,7 +290,7 @@ export const initialState = {
       {
         id: 'G0021',
         logo: uber,
-        gig: '',
+        gig: 'Wonolo',
         description: '',
         indeed: '',
         promo: '',
@@ -301,8 +301,9 @@ export const initialState = {
       {
         id: 'G0022',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Bellhops',
+        description:
+          'Get paid to pack boxes and move people into their new digs.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -312,8 +313,9 @@ export const initialState = {
       {
         id: 'G0023',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Care.com',
+        description:
+          'Primarily a place to find work in child or pet care, Care.com also offers gigs for housekeepers, gardeners, tutors, and those caring for the elderly.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -323,7 +325,7 @@ export const initialState = {
       {
         id: 'G0024',
         logo: uber,
-        gig: '',
+        gig: 'Caviar',
         description: '',
         indeed: '',
         promo: '',
@@ -334,8 +336,9 @@ export const initialState = {
       {
         id: 'G0025',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Closet Collective',
+        description:
+          'Are you a fashionista with a closet full of designer clothes? If so, Closet Collective will provide the venue for renting your $200 plus designer pieces.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -345,7 +348,7 @@ export const initialState = {
       {
         id: 'G0026',
         logo: uber,
-        gig: '',
+        gig: 'CrowdFlower',
         description: '',
         indeed: '',
         promo: '',
@@ -356,8 +359,9 @@ export const initialState = {
       {
         id: 'G0027',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Dolly',
+        description:
+          'The Dolly service uses people that have vehicles for moving, or movers to do the heavy lifting if they don’t have a vehicle. ',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -367,8 +371,9 @@ export const initialState = {
       {
         id: 'G0028',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Etsy',
+        description:
+          'Etsy provides a marketplace for people to sell their handmade, vintage, or creative goods online.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -378,7 +383,7 @@ export const initialState = {
       {
         id: 'G0029',
         logo: uber,
-        gig: '',
+        gig: 'Fancy Hands',
         description: '',
         indeed: '',
         promo: '',
@@ -389,7 +394,7 @@ export const initialState = {
       {
         id: 'G0030',
         logo: uber,
-        gig: '',
+        gig: 'Favor',
         description: '',
         indeed: '',
         promo: '',
@@ -400,8 +405,9 @@ export const initialState = {
       {
         id: 'G0031',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Feastly',
+        description:
+          'If you are a chef and want to host meals and you are a foodie looking for great chef, Feastly is a platform that brings them both together. ',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -411,8 +417,9 @@ export const initialState = {
       {
         id: 'G0032',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Freelancer',
+        description:
+          'Freelancer has posted almost 11 million jobs for tens of thousands of its members. ',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -422,8 +429,9 @@ export const initialState = {
       {
         id: 'G0033',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Gigwalk',
+        description:
+          'Work for Gigwalk usually involves gathering data for companies about their products and stores. For example, you might be checking what’s on the shelves in a particular shop, and whether it’s correctly priced and labeled.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -433,8 +441,9 @@ export const initialState = {
       {
         id: 'G0034',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Grubhub',
+        description:
+          'A food delivery service, similar to DoorDash and other options on this website.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -444,8 +453,9 @@ export const initialState = {
       {
         id: 'G0035',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'HelloTech',
+        description:
+          'HelloTech gives experts in the tech industry a platform to provide services for individuals in their homes and businesses. ',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -455,7 +465,7 @@ export const initialState = {
       {
         id: 'G0036',
         logo: uber,
-        gig: '',
+        gig: 'HomeAway',
         description: '',
         indeed: '',
         promo: '',
@@ -466,7 +476,7 @@ export const initialState = {
       {
         id: 'G0037',
         logo: uber,
-        gig: '',
+        gig: 'HopSkipDrive',
         description: '',
         indeed: '',
         promo: '',
@@ -477,7 +487,7 @@ export const initialState = {
       {
         id: 'G0038',
         logo: uber,
-        gig: '',
+        gig: 'Hubstaff Talent',
         description: '',
         indeed: '',
         promo: '',
@@ -488,7 +498,7 @@ export const initialState = {
       {
         id: 'G0039',
         logo: uber,
-        gig: '',
+        gig: 'Juno',
         description: '',
         indeed: '',
         promo: '',
@@ -499,7 +509,7 @@ export const initialState = {
       {
         id: 'G0040',
         logo: uber,
-        gig: '',
+        gig: 'Moonlighting',
         description: '',
         indeed: '',
         promo: '',
@@ -510,7 +520,7 @@ export const initialState = {
       {
         id: 'G0041',
         logo: uber,
-        gig: '',
+        gig: 'onefinestay',
         description: '',
         indeed: '',
         promo: '',
@@ -521,7 +531,7 @@ export const initialState = {
       {
         id: 'G0042',
         logo: uber,
-        gig: '',
+        gig: 'OpenAirplane',
         description: '',
         indeed: '',
         promo: '',
@@ -532,7 +542,7 @@ export const initialState = {
       {
         id: 'G0043',
         logo: uber,
-        gig: '',
+        gig: 'PeoplePerHour',
         description: '',
         indeed: '',
         promo: '',
@@ -543,7 +553,7 @@ export const initialState = {
       {
         id: 'G0044',
         logo: uber,
-        gig: '',
+        gig: 'Prefer',
         description: '',
         indeed: '',
         promo: '',
@@ -554,7 +564,7 @@ export const initialState = {
       {
         id: 'G0045',
         logo: uber,
-        gig: '',
+        gig: 'Rentah',
         description: '',
         indeed: '',
         promo: '',
@@ -565,8 +575,9 @@ export const initialState = {
       {
         id: 'G0046',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Shipt',
+        description:
+          'Delivering groceries, home products, and some electronics for a company owned by Target.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -576,7 +587,7 @@ export const initialState = {
       {
         id: 'G0047',
         logo: uber,
-        gig: '',
+        gig: 'Snagajob',
         description: '',
         indeed: '',
         promo: '',
@@ -587,7 +598,7 @@ export const initialState = {
       {
         id: 'G0048',
         logo: uber,
-        gig: '',
+        gig: 'Spare5',
         description: '',
         indeed: '',
         promo: '',
@@ -598,7 +609,7 @@ export const initialState = {
       {
         id: 'G0049',
         logo: uber,
-        gig: '',
+        gig: 'SpotHero',
         description: '',
         indeed: '',
         promo: '',
@@ -609,7 +620,7 @@ export const initialState = {
       {
         id: 'G0050',
         logo: uber,
-        gig: '',
+        gig: 'Takl',
         description: '',
         indeed: '',
         promo: '',
@@ -620,8 +631,9 @@ export const initialState = {
       {
         id: 'G0051',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'TaskEasy',
+        description:
+          'TaskEasy freelancers offer lawnmowing, gardening, and landscaping services.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -631,7 +643,7 @@ export const initialState = {
       {
         id: 'G0052',
         logo: uber,
-        gig: '',
+        gig: 'Upwork',
         description: '',
         indeed: '',
         promo: '',
@@ -642,7 +654,7 @@ export const initialState = {
       {
         id: 'G0053',
         logo: uber,
-        gig: '',
+        gig: 'VRBO',
         description: '',
         indeed: '',
         promo: '',
@@ -653,7 +665,7 @@ export const initialState = {
       {
         id: 'G0054',
         logo: uber,
-        gig: '',
+        gig: 'Wingz',
         description: '',
         indeed: '',
         promo: '',
@@ -664,8 +676,9 @@ export const initialState = {
       {
         id: 'G0055',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'YourMechanic',
+        description:
+          'Providing car repairs and maintenance carried out at customers’ homes, YourMechanic is a way for people with auto repair skills to leverage the gig economy.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -675,7 +688,7 @@ export const initialState = {
       {
         id: 'G0056',
         logo: uber,
-        gig: '',
+        gig: 'Zeel',
         description: '',
         indeed: '',
         promo: '',
@@ -686,8 +699,9 @@ export const initialState = {
       {
         id: 'G0057',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'ToolLocker',
+        description:
+          'Whether you have light or heavy equipment, ToolLocker lets you rent them with a great user interface that filters equipment by category, availability, location and more.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -697,8 +711,9 @@ export const initialState = {
       {
         id: 'G0058',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'ParkingPanda',
+        description:
+          'A parking space is a premium product in many major cities across the country. ParkingPanda is an app that brings owners and customers together seamlessly. You can post a free listing with the app to start earning cash whenever anyone books your space.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -708,8 +723,9 @@ export const initialState = {
       {
         id: 'G0059',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Udemy',
+        description:
+          'Udemy has more than 45,000 courses taught by expert instructors in a wide range of subjects. If you want to earn money from your expertise, you can create your video lesson and post it on Udemy.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -719,19 +735,21 @@ export const initialState = {
       {
         id: 'G0060',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'LinkedIn ProFinder',
+        description:
+          'LinkedIn ProFinder connects top freelance professionals like you with high quality leads.',
         indeed: '',
         promo: '',
-        gigsite: '',
+        gigsite: 'https://www.linkedin.com/profinder/pros',
         featured: false,
         type: 'gig',
       },
       {
         id: 'G0061',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Helpr',
+        description:
+          'An app that connects parents with reliable childcare help (i.e., babysitting), Helpr is ideal for those with relevant experience looking for occasional part-time work.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -741,8 +759,9 @@ export const initialState = {
       {
         id: 'G0062',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'VIPKid',
+        description:
+          'VIPKid is an online portal through which English language tutors around the world teach pupils (primarily in China).',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -752,8 +771,9 @@ export const initialState = {
       {
         id: 'G0063',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: '99 Designs',
+        description:
+          'A company that provides graphic design services, ranging from book covers to company logos.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -763,8 +783,9 @@ export const initialState = {
       {
         id: 'G0064',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Soothe',
+        description:
+          'Gig work for massage therapists, including deep tissue, sports, and couples massage work. ',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -774,8 +795,9 @@ export const initialState = {
       {
         id: 'G0065',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Guru',
+        description:
+          'Another site for freelancing professionals, covering everything from writing to marketing to legal advice. Like Upwork, it allows you to work for people all around the world without moving from your desk.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -785,8 +807,8 @@ export const initialState = {
       {
         id: 'G0066',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'RVShare',
+        description: 'A site that lets you rent out your RV',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -796,8 +818,9 @@ export const initialState = {
       {
         id: 'G0067',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Boatsetter',
+        description:
+          'If you own a boat, then Boatsetter lets you rent it out — either with or without a captain.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -807,8 +830,9 @@ export const initialState = {
       {
         id: 'G0068',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Printed Village',
+        description:
+          'Printed Village is a fabric design company. As a designer, you earn a commission on products that choose your design.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -818,7 +842,7 @@ export const initialState = {
       {
         id: 'G0069',
         logo: uber,
-        gig: '',
+        gig: 'Secret Shopper',
         description: '',
         indeed: '',
         promo: '',
@@ -829,8 +853,9 @@ export const initialState = {
       {
         id: 'G0070',
         logo: uber,
-        gig: '',
-        description: '',
+        gig: 'Market Force',
+        description:
+          'At Market Force, you’ll complete mystery shops for banks, restaurants, and stores in order to help those businesses thrive.',
         indeed: '',
         promo: '',
         gigsite: '',
@@ -840,7 +865,7 @@ export const initialState = {
       {
         id: 'G0071',
         logo: uber,
-        gig: '',
+        gig: 'GBW',
         description: '',
         indeed: '',
         promo: '',
@@ -851,7 +876,7 @@ export const initialState = {
       {
         id: 'G0072',
         logo: uber,
-        gig: '',
+        gig: 'Pinnacle',
         description: '',
         indeed: '',
         promo: '',
@@ -862,7 +887,7 @@ export const initialState = {
       {
         id: 'G0073',
         logo: uber,
-        gig: '',
+        gig: 'A Closer Look',
         description: '',
         indeed: '',
         promo: '',
@@ -873,7 +898,7 @@ export const initialState = {
       {
         id: 'G0074',
         logo: uber,
-        gig: '',
+        gig: 'Quest for the Best',
         description: '',
         indeed: '',
         promo: '',
@@ -884,7 +909,7 @@ export const initialState = {
       {
         id: 'G0075',
         logo: uber,
-        gig: '',
+        gig: 'Intellishop',
         description: '',
         indeed: '',
         promo: '',
@@ -895,7 +920,7 @@ export const initialState = {
       {
         id: 'G0076',
         logo: uber,
-        gig: '',
+        gig: 'Perception Strategies',
         description: '',
         indeed: '',
         promo: '',
@@ -906,7 +931,7 @@ export const initialState = {
       {
         id: 'G0077',
         logo: uber,
-        gig: '',
+        gig: 'Sinclair Customer Metrics',
         description: '',
         indeed: '',
         promo: '',
@@ -917,7 +942,7 @@ export const initialState = {
       {
         id: 'G0078',
         logo: uber,
-        gig: '',
+        gig: 'Call Center QA',
         description: '',
         indeed: '',
         promo: '',
@@ -928,7 +953,7 @@ export const initialState = {
       {
         id: 'G0079',
         logo: uber,
-        gig: '',
+        gig: 'ARC Consulting',
         description: '',
         indeed: '',
         promo: '',
@@ -1517,7 +1542,7 @@ export const initialState = {
       {
         id: 'S0004',
         logo: uber,
-        gig: '',
+        gig: 'SherpaShare',
         description: '',
         indeed: '',
         promo: '',
@@ -1528,7 +1553,7 @@ export const initialState = {
       {
         id: 'S0005',
         logo: uber,
-        gig: '',
+        gig: 'TripLog',
         description: '',
         indeed: '',
         promo: '',
@@ -1539,7 +1564,7 @@ export const initialState = {
       {
         id: 'S0006',
         logo: uber,
-        gig: '',
+        gig: 'Everlance',
         description: '',
         indeed: '',
         promo: '',
