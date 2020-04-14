@@ -18,6 +18,18 @@ import thumbtack from './img/thumbtack.png';
 import roadie from './img/roadie.png';
 import instacart from './img/instacart.png';
 import lyft from './img/lyft.png';
+import amazon from './img/amazon.png';
+import airbnb from './img/airbnb.png';
+import graphite from './img/graphite.png';
+import postmates from './img/postmates.png';
+import doordash from './img/doordash.png';
+import wag from './img/wag.png';
+import ubereats from './img/ubereats.png';
+import turo from './img/turo.png';
+import getaround from './img/getaround.png';
+import fiverr from './img/fiverr.png';
+import handy from './img/handy.png';
+// Services
 import gridwise from './img/gridwise.png';
 import mystro from './img/mystro.jpg';
 import surge from './img/surge.png';
@@ -144,7 +156,7 @@ export const initialState = {
       },
       {
         id: 'G0010',
-        logo: neighbor,
+        logo: amazon,
         gig: 'Amazon Flex Driver',
         description:
           'Perform the "last mile" of Amazon delivery, moving packages from regional centers to customers.',
@@ -156,7 +168,7 @@ export const initialState = {
       },
       {
         id: 'G0011',
-        logo: uber,
+        logo: graphite,
         gig: 'Graphite Freelancer',
         description:
           'Graphite is a freelance network of 5,200 independent experts, consultants, executives and boutique firms',
@@ -168,7 +180,7 @@ export const initialState = {
       },
       {
         id: 'G0012',
-        logo: rlac,
+        logo: airbnb,
         gig: 'AirBnB Host',
         description:
           'Rent out your home and/or rooms to travelers. AirBnB gives you full control of your availability, prices and house rules.',
@@ -180,7 +192,7 @@ export const initialState = {
       },
       {
         id: 'G0013',
-        logo: rover,
+        logo: postmates,
         gig: 'Postmates Courier',
         description:
           'Postmates drivers earn a living by delivering food, convenience items, and small office goods to local consumers.',
@@ -192,7 +204,7 @@ export const initialState = {
       },
       {
         id: 'G0014',
-        logo: neighbor,
+        logo: doordash,
         gig: 'DoorDash Dasher',
         description:
           'Doordash is a food delivery app that employs Dashers to Deliver goods.',
@@ -204,7 +216,7 @@ export const initialState = {
       },
       {
         id: 'G0015',
-        logo: taskrabbit,
+        logo: wag,
         gig: 'Wag Walker',
         description:
           'Wag! is the #1 dog walking app to book a dog walker on-demand, or at your convenience.',
@@ -216,7 +228,7 @@ export const initialState = {
       },
       {
         id: 'G0016',
-        logo: thumbtack,
+        logo: ubereats,
         gig: 'Uber Delivery Driver',
         description:
           'UberEats drivers pick up food from local restaurants and deliver the orders to customers.',
@@ -229,7 +241,7 @@ export const initialState = {
       },
       {
         id: 'G0017',
-        logo: roadie,
+        logo: turo,
         gig: 'Turo Car Rental',
         description:
           'Instead of leaving your car in the garage all day, rent it out! Turo is a car rental service that connects renters with car owners.',
@@ -241,7 +253,7 @@ export const initialState = {
       },
       {
         id: 'G0018',
-        logo: instacart,
+        logo: getaround,
         gig: 'Getaround Car Rental',
         description:
           'Instead of leaving your car in the garage all day, rent it out! Getaround is a car rental service that connects renters with car owners.',
@@ -253,7 +265,7 @@ export const initialState = {
       },
       {
         id: 'G0019',
-        logo: rover,
+        logo: fiverr,
         gig: 'Fiverr Freelancer',
         description:
           'Fiverr is one of the easiest ways to make money in the gig economy. No matter what skills you have, with a little creativity you sell your services to a platform of motivated buyers.',
@@ -265,7 +277,7 @@ export const initialState = {
       },
       {
         id: 'G0020',
-        logo: neighbor,
+        logo: handy,
         gig: 'Handy Worker',
         description:
           'Handy pays for being a home cleaner and handymen. It covers over 20 cities in North America, Canada, and the UK.',
