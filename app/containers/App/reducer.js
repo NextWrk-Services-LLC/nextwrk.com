@@ -28,6 +28,20 @@ import ubereats from './img/ubereats.png';
 import turo from './img/turo.png';
 import getaround from './img/getaround.png';
 import handy from './img/handy.png';
+import groundlink from './img/groundlink.png';
+import skipcart from './img/skipcart.png';
+import PICKUP from './img/PICKUP.png';
+import tommyrun from './img/tommyrun.png';
+import vrbo from './img/vrbo.png';
+import booking from './img/booking.png';
+import upship from './img/upship.png';
+import grubhub from './img/grubhub.png';
+import caviar from './img/caviar.png';
+import favor from './img/favor.png';
+import zifty from './img/zifty.png';
+import shipt from './img/shipt.png';
+import homeaway from './img/homeaway.png';
+import ofs from './img/ofs.png';
 // Services
 import gridwise from './img/gridwise.png';
 import mystro from './img/mystro.png';
@@ -95,7 +109,7 @@ export const initialState = {
       },
       {
         id: 'G0163',
-        logo: uber,
+        logo: groundlink,
         gig: 'GroundLink Chauffeur',
         description:
           'GroundLink is a black-car vehicle service that uses a network of professional drivers to provide transportation to riders.',
@@ -131,7 +145,7 @@ export const initialState = {
       },
       {
         id: 'G0143',
-        logo: uber,
+        logo: skipcart,
         gig: 'Skipcart',
         description:
           'Skipcart is an on-demand platform providing last-mile delivery for all retailers and restaurants currently offering a Curbside or Pickup solution but lacking same-day delivery.',
@@ -143,7 +157,7 @@ export const initialState = {
       },
       {
         id: 'G0155',
-        logo: uber,
+        logo: PICKUP,
         gig: 'PICKUP',
         description:
           'PICKUP is an on-demand and same day delivery service of big & heavy items for national and area businesses.',
@@ -156,7 +170,7 @@ export const initialState = {
       },
       {
         id: 'G0157',
-        logo: uber,
+        logo: tommyrun,
         gig: 'TommyRun',
         description:
           'TommyRun is an app that allows you to order building materials and have them delivered within hours .',
@@ -168,7 +182,7 @@ export const initialState = {
       },
       {
         id: 'G0161',
-        logo: uber,
+        logo: upship,
         gig: 'uShip',
         description:
           'uShip makes shipping motorcycles, boats, and other large items fast and affordable by connecting you to our network of carriers who compete for your shipment.',
@@ -217,7 +231,7 @@ export const initialState = {
       },
       {
         id: 'G0034',
-        logo: uber,
+        logo: grubhub,
         gig: 'Grubhub',
         description:
           'A food delivery service, similar to DoorDash and other options on this website.',
@@ -229,7 +243,7 @@ export const initialState = {
       },
       {
         id: 'G0024',
-        logo: uber,
+        logo: caviar,
         gig: 'Caviar',
         description:
           'Deliver food in your city and earn some extra cash. Experience the freedom of working whenever you want.',
@@ -241,7 +255,7 @@ export const initialState = {
       },
       {
         id: 'G0030',
-        logo: uber,
+        logo: favor,
         gig: 'Favor',
         description:
           'With Favor, you can deliver just about anything to customers and get paid for it.',
@@ -253,7 +267,7 @@ export const initialState = {
       },
       {
         id: 'G0148',
-        logo: uber,
+        logo: zifty,
         gig: 'Zifty Driver',
         description:
           'Delivery drivers. Zifty is an online delivery company that partners with local restaurants and brands to bring their goods straight to clients’ doors. Zifty is looking for enthusiastic delivery providers to make deliveries of food, movies, and other items to customers. ',
@@ -277,7 +291,7 @@ export const initialState = {
       },
       {
         id: 'G0046',
-        logo: uber,
+        logo: shipt,
         gig: 'Shipt',
         description:
           'Delivering groceries, home products, and some electronics for a company owned by Target.',
@@ -329,7 +343,7 @@ export const initialState = {
       },
       {
         id: 'G0036',
-        logo: uber,
+        logo: homeaway,
         gig: 'HomeAway',
         description:
           'HomeAway is a vacation rental marketplace with more than 2,000,000 vacation rentals in 190 countries listed on its website.',
@@ -341,7 +355,7 @@ export const initialState = {
       },
       {
         id: 'G0041',
-        logo: uber,
+        logo: ofs,
         gig: 'onefinestay',
         description:
           'onefinestay offers high-end home-stays across the world with currently 5,000 homes and villas in its portfolio divided between two collections, City and Villa.',
@@ -353,7 +367,7 @@ export const initialState = {
       },
       {
         id: 'G0053',
-        logo: uber,
+        logo: vrbo,
         gig: 'VRBO',
         description:
           'VRBO is a service for homeowners to list their properties for short term rental',
@@ -365,7 +379,7 @@ export const initialState = {
       },
       {
         id: 'G0172',
-        logo: uber,
+        logo: booking,
         gig: 'Booking.com',
         description:
           'Booking.com is a travel metasearch engine for lodging reservations.',
