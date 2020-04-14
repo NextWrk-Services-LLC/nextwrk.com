@@ -17,6 +17,7 @@ import taskrabbit from './img/taskrabbit.png';
 import thumbtack from './img/thumbtack.png';
 import roadie from './img/roadie.png';
 import instacart from './img/instacart.png';
+import lyft from './img/lyft.png';
 
 // The initial state of the App
 export const initialState = {
@@ -128,7 +129,7 @@ export const initialState = {
       },
       {
         id: 'G0009',
-        logo: rover,
+        logo: lyft,
         gig: 'Lyft Driver',
         description:
           'Lyft is a ridesharing app. Get paid to drive passengers around town',
