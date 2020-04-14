@@ -26,7 +26,7 @@ export const initialState = {
     gigs: [
       // Gigs
       {
-        id: '0001',
+        id: 'G0001',
         logo: uber,
         gig: 'Uber Driver',
         description:
@@ -39,7 +39,7 @@ export const initialState = {
         type: 'gig',
       },
       {
-        id: '0002',
+        id: 'G0002',
         logo: rlac,
         gig: 'Rent Like a Champion',
         description:
@@ -52,7 +52,7 @@ export const initialState = {
         type: 'gig',
       },
       {
-        id: '0003',
+        id: 'G0003',
         logo: rover,
         gig: 'Rover Walker',
         description:
@@ -65,7 +65,7 @@ export const initialState = {
         type: 'gig',
       },
       {
-        id: '0004',
+        id: 'G0004',
         logo: neighbor,
         gig: 'Neighbor Storage',
         description:
@@ -77,7 +77,7 @@ export const initialState = {
         type: 'gig',
       },
       {
-        id: '0005',
+        id: 'G0005',
         logo: taskrabbit,
         gig: 'TaskRabbit Tasker',
         description:
@@ -90,7 +90,7 @@ export const initialState = {
         type: 'gig',
       },
       {
-        id: '0006',
+        id: 'G0006',
         logo: thumbtack,
         gig: 'Thumbtack Pro',
         description:
@@ -103,7 +103,7 @@ export const initialState = {
         type: 'gig',
       },
       {
-        id: '0007',
+        id: 'G0007',
         logo: roadie,
         gig: 'Roadie Driver',
         description:
@@ -115,7 +115,7 @@ export const initialState = {
         type: 'gig',
       },
       {
-        id: '0008',
+        id: 'G0008',
         logo: instacart,
         gig: 'Instacart Shopper',
         description:
@@ -127,160 +127,154 @@ export const initialState = {
         type: 'gig',
       },
       {
-        id: '0009',
+        id: 'G0009',
         logo: rover,
-        gig: 'Rover Walker',
+        gig: 'Lyft Driver',
         description:
-          'Love animals? Get paid to watch dogs as a Sitter or walk dogs as a Walker through Rover!',
-        indeed:
-          'https://www.indeed.com/cmp/Rover.com/reviews?fcountry=ALL&fjobtitle=Dog+Walker',
-        promo: 'Sign Up Through the Link Below and Get $20!',
-        gigsite: 'http://share.rover.com/SWhzJ',
+          'Lyft is a ridesharing app. Get paid to drive passengers around town',
+        indeed: 'https://www.indeed.com/cmp/Lyft/reviews',
+        promo: '',
+        gigsite: 'https://www.lyft.com/drive-with-lyft',
         featured: false,
         type: 'gig',
       },
       {
-        id: '0010',
+        id: 'G0010',
         logo: neighbor,
-        gig: 'Neighbor Storage',
+        gig: 'Amazon Flex Driver',
         description:
-          'Earn money by giving your empty storage space a job. Rent out your basement, garage and even closets!',
-        indeed: 'https://www.trustpilot.com/review/neighbor.com',
-        promo: 'Sign Up Through the Link Below and Get $50!',
-        gigsite: 'https://www.neighbor.com/invited/nextwrk-39640',
+          'Perform the "last mile" of Amazon delivery, moving packages from regional centers to customers.',
+        indeed: 'https://www.indeed.com/cmp/Amazon.com/reviews?fcountry=ALL',
+        promo: '',
+        gigsite: 'https://flex.amazon.com/',
         featured: false,
         type: 'gig',
       },
       {
-        id: '0011',
+        id: 'G0011',
         logo: uber,
-        gig: 'Uber Driver',
+        gig: 'Graphite Freelancer',
         description:
-          'The taxi of the 21st century. Drive around town, picking up and dropping off passengers.',
-        indeed: 'https://www.indeed.com/cmp/Uber/reviews',
-        promo:
-          'Sign Up With Promo Code PRGREY and Get $20 When You Complete a Trip',
-        gigsite: 'uber.com/drive/',
+          'Graphite is a freelance network of 5,200 independent experts, consultants, executives and boutique firms',
+        indeed: '',
+        promo: '',
+        gigsite: 'https://www.graphite.com/professional/signup',
         featured: false,
         type: 'gig',
       },
       {
-        id: '0012',
+        id: 'G0012',
         logo: rlac,
-        gig: 'Rent Like a Champion',
+        gig: 'AirBnB Host',
         description:
-          'AirBnb for sporting events! Rent your home out to eager fans traveling for games in your hometown.',
-        indeed: 'https://www.trustpilot.com/review/rentlikeachampion.com',
-        promo:
-          'Sign Up With Promo Code XXXXX and Get $20 After Your First Rental',
-        gigsite: 'https://rentlikeachampion.com/',
+          'Rent out your home and/or rooms to travelers. AirBnB gives you full control of your availability, prices and house rules.',
+        indeed: 'https://www.indeed.com/cmp/Airbnb/reviews',
+        promo: '',
+        gigsite: 'https://www.airbnb.com/host/homes',
         featured: false,
         type: 'gig',
       },
       {
-        id: '0013',
+        id: 'G0013',
         logo: rover,
-        gig: 'Rover Walker',
+        gig: 'Postmates Courier',
         description:
-          'Love animals? Get paid to watch dogs as a Sitter or walk dogs as a Walker through Rover!',
-        indeed:
-          'https://www.indeed.com/cmp/Rover.com/reviews?fcountry=ALL&fjobtitle=Dog+Walker',
-        promo: 'Sign Up Through the Link Below and Get $20!',
-        gigsite: 'http://share.rover.com/SWhzJ',
+          'Postmates drivers earn a living by delivering food, convenience items, and small office goods to local consumers.',
+        indeed: 'https://www.indeed.com/cmp/Postmates/reviews',
+        promo: '',
+        gigsite: 'https://fleet.postmates.com/',
         featured: false,
         type: 'gig',
       },
       {
-        id: '0014',
+        id: 'G0014',
         logo: neighbor,
-        gig: 'Neighbor Storage',
+        gig: 'DoorDash Dasher',
         description:
-          'Earn money by giving your empty storage space a job. Rent out your basement, garage and even closets!',
-        indeed: 'https://www.trustpilot.com/review/neighbor.com',
-        promo: 'Sign Up Through the Link Below and Get $50!',
-        gigsite: 'https://www.neighbor.com/invited/nextwrk-39640',
+          'Doordash is a food delivery app that employs Dashers to Deliver goods.',
+        indeed: 'https://www.indeed.com/cmp/Doordash/reviews',
+        promo: '',
+        gigsite: 'https://www.doordash.com/dasher/signup/',
         featured: false,
         type: 'gig',
       },
       {
-        id: '0015',
+        id: 'G0015',
         logo: taskrabbit,
-        gig: 'TaskRabbit Tasker',
+        gig: 'Wag Walker',
         description:
-          'TaskRabbit is a marketplace that matches freelance labor with local demand. Get paid to help with everyday tasks, like cleaning, moving, delivery and handyman work',
-        indeed: 'https://www.indeed.com/cmp/Taskrabbit/reviews',
+          'Wag! is the #1 dog walking app to book a dog walker on-demand, or at your convenience.',
+        indeed: 'https://www.indeed.com/cmp/Wag!-1/reviews',
         promo: '',
-        gigsite:
-          'https://support.taskrabbit.com/hc/en-us/articles/360031918292-How-Do-I-Become-a-Tasker-',
+        gigsite: 'https://wagwalking.com/dog-walker',
         featured: false,
         type: 'gig',
       },
       {
-        id: '0016',
+        id: 'G0016',
         logo: thumbtack,
-        gig: 'Thumbtack Pro',
+        gig: 'Uber Delivery Driver',
         description:
-          'Thumbtack matches customers with local professionals in categories such as home, wellness, events, and lessons.',
-        indeed: 'https://www.indeed.com/cmp/Thumbtack/reviews',
-        promo: '',
-        gigsite:
-          'https://help.thumbtack.com/article/signing-up-as-a-professional',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: '0017',
-        logo: roadie,
-        gig: 'Roadie Driver',
-        description:
-          'Going on a roadtrip soon? Roadie will pay you to fill your empty space and complete deliveries on the way',
-        indeed: 'https://www.indeed.com/cmp/Roadie/reviews',
-        promo: '',
-        gigsite: 'https://my.roadie.com/drive/sign-up/basic-info',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: '0018',
-        logo: instacart,
-        gig: 'Instacart Shopper',
-        description:
-          'Shoppers are independent contractors that use the Instacart platform to shop and deliver orders for their customers.',
-        indeed: 'https://www.indeed.com/cmp/Instacart/reviews',
-        promo: '',
-        gigsite: 'https://shoppers.instacart.com/',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: '0019',
-        logo: rover,
-        gig: 'Rover Walker',
-        description:
-          'Love animals? Get paid to watch dogs as a Sitter or walk dogs as a Walker through Rover!',
+          'UberEats drivers pick up food from local restaurants and deliver the orders to customers.',
         indeed:
-          'https://www.indeed.com/cmp/Rover.com/reviews?fcountry=ALL&fjobtitle=Dog+Walker',
-        promo: 'Sign Up Through the Link Below and Get $20!',
-        gigsite: 'http://share.rover.com/SWhzJ',
+          'https://www.indeed.com/cmp/Uber-Partner-Drivers/reviews?fjobtitle=Delivery+Driver',
+        promo: '',
+        gigsite: 'https://www.uber.com/a/signup/drive/deliver/',
         featured: false,
         type: 'gig',
       },
       {
-        id: '0020',
-        logo: neighbor,
-        gig: 'Neighbor Storage',
+        id: 'G0017',
+        logo: roadie,
+        gig: 'Turo Car Rental',
         description:
-          'Earn money by giving your empty storage space a job. Rent out your basement, garage and even closets!',
-        indeed: 'https://www.trustpilot.com/review/neighbor.com',
-        promo: 'Sign Up Through the Link Below and Get $50!',
-        gigsite: 'https://www.neighbor.com/invited/nextwrk-39640',
+          'Instead of leaving your car in the garage all day, rent it out! Turo is a car rental service that connects renters with car owners.',
+        indeed: 'https://www.trustpilot.com/review/turo.com',
+        promo: '',
+        gigsite: 'https://turo.com/us/en/list-your-car',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0018',
+        logo: instacart,
+        gig: 'Getaround Car Rental',
+        description:
+          'Instead of leaving your car in the garage all day, rent it out! Getaround is a car rental service that connects renters with car owners.',
+        indeed: 'https://www.yelp.com/biz/getaround-san-francisco',
+        promo: '',
+        gigsite: 'https://www.getaround.com/list',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0019',
+        logo: rover,
+        gig: 'Fiverr Freelancer',
+        description:
+          'Fiverr is one of the easiest ways to make money in the gig economy. No matter what skills you have, with a little creativity you sell your services to a platform of motivated buyers.',
+        indeed: 'https://www.indeed.com/cmp/Fiverr/reviews',
+        promo: '',
+        gigsite: 'https://www.fiverr.com/start_selling',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0020',
+        logo: neighbor,
+        gig: 'Handy Worker',
+        description:
+          'Handy pays for being a home cleaner and handymen. It covers over 20 cities in North America, Canada, and the UK.',
+        indeed: 'https://www.indeed.com/cmp/Handy/reviews',
+        promo: '',
+        gigsite: 'https://www.handy.com/apply',
         featured: false,
         type: 'gig',
       },
 
       // Services
       {
-        id: '000001',
+        id: 'S0001',
         logo:
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAACHUlEQVRoQ+2b246CMBCG24eR6IUBo77/vRpOMSb6MmxKBCpZl84J3Dpeeehhvvl/ClPEGu/VNE3jf47lvbXWdiz9m1hhe9AndAvcwXqJiEXclqMzrlPaxg7bKddDK3BUZh5gVOFYFyw9hnXR0kUrjgwsskofj0dzOp1eMui+u1wu4lmdDRhaj0idLUSBt9utqeuapNp+vzd5npPGGFWC7Uf2a2moolNEXIqLKMwN65V2U3mZ/J0VeLPZmNvtNjkppcF6vTb3+x09BCuwlLJjOoq92YDngqXamwV4blgKNBk4yzJTFAX6mKJ0TNMUfNojAy+lLlZlBYasgEuri1GZpDAUODSZUuO+bNViNgCkApMalwSMWZ2lFHaxVFUVtOCTLB00A6IRVOG2+hluG/05owKHZgohXHAXVTggVaFCoS3tLuvKsgwIZWgCDSp0cMh+GBrYX+JDA5MCDh2XdFpS4FCZBdrNpjBGZW5eCCzZ0l8JvNvtWPeNIQ5w+97X6xXSZfifB6Z46GbCXCiAonzTGGpnFksvBY2BZQWe83jGwrIDr1Yr83g8ONz6doyP2oiXtjdF2XFsejONw5dJkpDuA7kY/s3t0nHCoKcuDvv+JhqpWsK64HA4mPP5/NLdXcBAy03M/IsAYwLl6qPAUscOl0LUcVRhVZjqoQ/rr5ZWS3+YJanh9JZ+1ortA1qxqtzD+k9sfdWDWl7NGP2jeD9/hTOD+R2rtgAAAABJRU5ErkJggg==',
         gig: 'Uber Driver',
@@ -293,7 +287,7 @@ export const initialState = {
         type: 'service',
       },
       {
-        id: '00002',
+        id: 'S0002',
         logo:
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAACHUlEQVRoQ+2b246CMBCG24eR6IUBo77/vRpOMSb6MmxKBCpZl84J3Dpeeehhvvl/ClPEGu/VNE3jf47lvbXWdiz9m1hhe9AndAvcwXqJiEXclqMzrlPaxg7bKddDK3BUZh5gVOFYFyw9hnXR0kUrjgwsskofj0dzOp1eMui+u1wu4lmdDRhaj0idLUSBt9utqeuapNp+vzd5npPGGFWC7Uf2a2moolNEXIqLKMwN65V2U3mZ/J0VeLPZmNvtNjkppcF6vTb3+x09BCuwlLJjOoq92YDngqXamwV4blgKNBk4yzJTFAX6mKJ0TNMUfNojAy+lLlZlBYasgEuri1GZpDAUODSZUuO+bNViNgCkApMalwSMWZ2lFHaxVFUVtOCTLB00A6IRVOG2+hluG/05owKHZgohXHAXVTggVaFCoS3tLuvKsgwIZWgCDSp0cMh+GBrYX+JDA5MCDh2XdFpS4FCZBdrNpjBGZW5eCCzZ0l8JvNvtWPeNIQ5w+97X6xXSZfifB6Z46GbCXCiAonzTGGpnFksvBY2BZQWe83jGwrIDr1Yr83g8ONz6doyP2oiXtjdF2XFsejONw5dJkpDuA7kY/s3t0nHCoKcuDvv+JhqpWsK64HA4mPP5/NLdXcBAy03M/IsAYwLl6qPAUscOl0LUcVRhVZjqoQ/rr5ZWS3+YJanh9JZ+1ortA1qxqtzD+k9sfdWDWl7NGP2jeD9/hTOD+R2rtgAAAABJRU5ErkJggg==',
         gig: 'Uber Driver',
@@ -306,7 +300,7 @@ export const initialState = {
         type: 'service',
       },
       {
-        id: '00003',
+        id: 'S0003',
         logo:
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAACHUlEQVRoQ+2b246CMBCG24eR6IUBo77/vRpOMSb6MmxKBCpZl84J3Dpeeehhvvl/ClPEGu/VNE3jf47lvbXWdiz9m1hhe9AndAvcwXqJiEXclqMzrlPaxg7bKddDK3BUZh5gVOFYFyw9hnXR0kUrjgwsskofj0dzOp1eMui+u1wu4lmdDRhaj0idLUSBt9utqeuapNp+vzd5npPGGFWC7Uf2a2moolNEXIqLKMwN65V2U3mZ/J0VeLPZmNvtNjkppcF6vTb3+x09BCuwlLJjOoq92YDngqXamwV4blgKNBk4yzJTFAX6mKJ0TNMUfNojAy+lLlZlBYasgEuri1GZpDAUODSZUuO+bNViNgCkApMalwSMWZ2lFHaxVFUVtOCTLB00A6IRVOG2+hluG/05owKHZgohXHAXVTggVaFCoS3tLuvKsgwIZWgCDSp0cMh+GBrYX+JDA5MCDh2XdFpS4FCZBdrNpjBGZW5eCCzZ0l8JvNvtWPeNIQ5w+97X6xXSZfifB6Z46GbCXCiAonzTGGpnFksvBY2BZQWe83jGwrIDr1Yr83g8ONz6doyP2oiXtjdF2XFsejONw5dJkpDuA7kY/s3t0nHCoKcuDvv+JhqpWsK64HA4mPP5/NLdXcBAy03M/IsAYwLl6qPAUscOl0LUcVRhVZjqoQ/rr5ZWS3+YJanh9JZ+1ortA1qxqtzD+k9sfdWDWl7NGP2jeD9/hTOD+R2rtgAAAABJRU5ErkJggg==',
         gig: 'Uber Driver',
