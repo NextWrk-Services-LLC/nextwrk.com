@@ -43,6 +43,8 @@ export function HomePage({ loading, error, gigs }) {
   const featured = gigs.filter(obj => obj.featured === true);
   const featuredServices = featured.filter(obj => obj.type === 'service');
   const featuredGigs = featured.filter(obj => obj.type === 'gig');
+  const allServices = gigs.filter(obj => obj.type === 'service');
+  const allGigs = gigs.filter(obj => obj.type === 'gig');
 
   const gigsFeaturedProps = {
     loading,
@@ -54,6 +56,18 @@ export function HomePage({ loading, error, gigs }) {
     loading,
     error,
     gigs: featuredServices,
+  };
+
+  const gigsProps = {
+    loading,
+    error,
+    gigs: allGigs,
+  };
+
+  const servicesProps = {
+    loading,
+    error,
+    gigs: allServices,
   };
 
   return (
@@ -73,8 +87,6 @@ export function HomePage({ loading, error, gigs }) {
           </H3>
         </CenteredSection>
         <Section>
-          {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-          <a name="gigs" />
           <H2>Featured Gig Jobs</H2>
           <hr />
           <H3>
@@ -82,8 +94,6 @@ export function HomePage({ loading, error, gigs }) {
             little, as you want!
           </H3>
           <GigsList {...gigsFeaturedProps} />
-          {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-          <a name="services" />
           <H2>Featured Services</H2>
           <hr />
           <H3>
@@ -91,6 +101,17 @@ export function HomePage({ loading, error, gigs }) {
             smarter not harder!
           </H3>
           <GigsList {...servicesFeaturedProps} />
+          <hr />
+          {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+          <a name="gigs" />
+          <H2>Gig Jobs</H2>
+          <hr />
+          <GigsList {...gigsProps} />
+          {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+          <a name="services" />
+          <H2>Services</H2>
+          <hr />
+          <GigsList {...servicesProps} />
           {/* <H2>Featured Deals</H2>
           <hr />
           <DealItem />
