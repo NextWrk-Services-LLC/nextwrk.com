@@ -102,7 +102,7 @@ import skip from './img/skip.png';
 import fancyhands from './img/fancyhands.png';
 import wrapify from './img/wrapify.png';
 import marketforce from './img/marketforce1.png';
-import secretshopper from './img/secretshopper.jpg';
+import secretshopper from './img/secretshopper.png';
 import lugg from './img/lugg.png';
 import heal from './img/heal.png';
 import veryable from './img/veryable.png';
