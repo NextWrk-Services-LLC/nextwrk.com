@@ -150,7 +150,7 @@ export const initialState = {
         logo: uber,
         gig: 'Uber Driver',
         description:
-          'The taxi of the 21st century. Drive around town, picking up and dropping off passengers.',
+          'The grandaddy of all gig jobs. The taxi of the 21st century. As one of the largest ridesharing apps, Uber can turn your daily commute into a money maker, or help you score some extra cash while you cruise around town.',
         indeed: 'https://www.indeed.com/cmp/Uber/reviews',
         promo:
           'Sign Up With Promo Code PRGREY and Get $20 When You Complete a Trip',
@@ -163,7 +163,7 @@ export const initialState = {
         logo: lyft,
         gig: 'Lyft Driver',
         description:
-          'Lyft is a ridesharing app. Get paid to drive passengers around town',
+          'Another behemoth ridesharing app. Lyft boasts a lower barrier of entry and higher tips on average than Uber (although Uber can offer more through higher surges). Give it a shot!',
         indeed: 'https://www.indeed.com/cmp/Lyft/reviews',
         promo: '',
         gigsite: 'https://www.lyft.com/drive-with-lyft',
@@ -175,7 +175,7 @@ export const initialState = {
         logo: hsnd,
         gig: 'HopSkipDrive',
         description:
-          'HopSkipDrive is the safe, dependable transportation solution schools and families can count on to get kids where they need to go.',
+          'HopSkipDrive drivers offer carpooling services for youth in your community. There is a more stringent application process because of this, but if you want to make a positive impact in the community while at the same time earning some money, this app is for you!',
         indeed:
           'https://www.indeed.com/cmp/Hopskipdrive/reviews?fjobtitle=Driver',
         promo: '',
@@ -188,7 +188,7 @@ export const initialState = {
         logo: zum,
         gig: 'Zum',
         description:
-          'Zum Mission: Build the world’s largest and most-trusted platform for kids transportation and care.',
+          'Zum is another ridesharing app offering a platform for kids transportation and care. Available in California, Arizona, Texas, Illinois, Florida, Washington and Washington DC, if you want to brighten kids days and make extra money, Zum is for you!',
         indeed: 'https://www.indeed.com/cmp/Ridezum/reviews',
         promo: 'Receive up to $500 sign up bonus!',
         gigsite: 'https://www.ridezum.com/drive.html',
@@ -200,7 +200,7 @@ export const initialState = {
         logo: wingz,
         gig: 'Wingz',
         description:
-          'Rideshare app, as a peer-to-peer marketplace Wingz allows passengers to rebook their favorite driver when using the Wingz mobile app, website or toll-free number.',
+          'A rideshare app with a twist. Wingz specializes in airport pickup and drop off and allows customers to select their favorite drivers for repeat rides. If you live near an airport and have a keen sense for customer service, Wingz is the rideshare app for you.',
         indeed: 'https://www.yelp.com/biz/wingz-san-francisco-4',
         promo: '',
         gigsite: 'https://www.wingz.me/drivers-2/',
@@ -212,7 +212,7 @@ export const initialState = {
         logo: groundlink,
         gig: 'GroundLink Chauffeur',
         description:
-          'GroundLink is a black-car vehicle service that uses a network of professional drivers to provide transportation to riders.',
+          'GroundLink is a black-car vehicle service that uses a network of professional drivers to provide transportation to riders. If you want to be a rideshare driver with class, sign up as a driver!',
         indeed: 'https://www.yelp.com/biz/groundlink-new-york',
         promo: '',
         gigsite: 'https://driver.groundlink.com/',
@@ -224,7 +224,7 @@ export const initialState = {
         logo: roadie,
         gig: 'Roadie Driver', // Last mile
         description:
-          'Going on a roadtrip soon? Roadie will pay you to fill your empty space and complete deliveries on the way',
+          'Going on a roadtrip soon? Roadie will pay you to fill your empty space and complete deliveries on the way. Roadie is a same day delivery service that connects drivers already headed in the right direction with shipments',
         indeed: 'https://www.indeed.com/cmp/Roadie/reviews',
         promo: '',
         gigsite: 'https://my.roadie.com/drive/sign-up/basic-info',
@@ -236,7 +236,7 @@ export const initialState = {
         logo: amazon,
         gig: 'Amazon Flex Driver',
         description:
-          'Perform the "last mile" of Amazon delivery, moving packages from regional centers to customers.',
+          'Perform the "last mile" of Amazon delivery, moving packages from regional centers to customers. Amazon Flex offers great compensation, and you can easily track your earnings in the Amazon Flex app.',
         indeed: 'https://www.indeed.com/cmp/Amazon.com/reviews?fcountry=ALL',
         promo: '',
         gigsite: 'https://flex.amazon.com/',
@@ -248,7 +248,7 @@ export const initialState = {
         logo: skipcart,
         gig: 'Skipcart',
         description:
-          'Skipcart is an on-demand platform providing last-mile delivery for all retailers and restaurants currently offering a Curbside or Pickup solution but lacking same-day delivery.',
+          'Skipcart is a service that offers last-mile delivery for retailers and restaurants. Skipcart lets you choose your own schedule and make deliveries in the community you already live in. Open the Skipcart app. Choose your hours and start delivering.',
         indeed: 'https://www.indeed.com/cmp/Skipcart/reviews',
         promo: '',
         gigsite: 'https://skipcart.com/drivers/',
@@ -260,7 +260,7 @@ export const initialState = {
         logo: PICKUP,
         gig: 'PICKUP',
         description:
-          'PICKUP is an on-demand and same day delivery service of big & heavy items for national and area businesses.',
+          'PICKUP is an on-demand and same day delivery service of big & heavy items for national and area businesses. If you own a truck or van, put it to good use and start hauling for money',
         indeed:
           'https://www.glassdoor.com/Overview/Working-at-PICKUP-EI_IE1641897.11,17.htm',
         promo: '',
@@ -543,7 +543,7 @@ export const initialState = {
         logo: rlac,
         gig: 'Rent Like a Champion',
         description:
-          'AirBnb for sporting events! Rent your home out to eager fans traveling for games in your hometown.',
+          'AirBnb for sporting events! Live near a college football stadium or major sporting event? Make some extra money renting your home out to eager fans traveling for games in your hometown.',
         indeed: 'https://www.trustpilot.com/review/rentlikeachampion.com',
         promo:
           'Sign Up With Promo Code XXXXX and Get $20 After Your First Rental',
@@ -556,7 +556,7 @@ export const initialState = {
         logo: neighbor,
         gig: 'Neighbor Storage',
         description:
-          'Earn money by giving your empty storage space a job. Rent out your basement, garage and even closets!',
+          'Got empty storage space? Earn money by giving that empty storage space a job. Rent out your basement, garage and even closets!',
         indeed: 'https://www.trustpilot.com/review/neighbor.com',
         promo: 'Sign Up Through the Link Below and Get $50!',
         gigsite: 'https://www.neighbor.com/invited/nextwrk-39640',
