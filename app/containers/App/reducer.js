@@ -181,6 +181,17 @@ export const initialState = {
         type: 'gig',
       },
       {
+        id: 'G0168',
+        logo: zum,
+        gig: 'Zum',
+        description: 'Child rideshare',
+        indeed: '',
+        promo: '',
+        gigsite: 'https://www.ridezum.com/',
+        featured: false,
+        type: 'gig',
+      },
+      {
         id: 'G0054',
         logo: wingz,
         gig: 'Wingz',
@@ -278,6 +289,18 @@ export const initialState = {
         type: 'gig',
       },
       {
+        id: 'G0182',
+        logo: dispatchit,
+        gig: 'DispatchIt',
+        description:
+          'Dispatchit provides reliable local deliveries to customers with real time ETA’s and tracking. Dispatch drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
+        indeed: '',
+        promo: '',
+        gigsite: 'https://www.dispatchit.com/drivers/',
+        featured: false,
+        type: 'gig',
+      },
+      {
         id: 'G0013',
         logo: postmates, // Food
         gig: 'Postmates Courier',
@@ -363,6 +386,30 @@ export const initialState = {
         type: 'gig',
       },
       {
+        id: 'G0181', // Alcohol
+        logo: drizly,
+        gig: 'Drizly',
+        description:
+          'Drizly focuses on the delivery of the fun stuff, alcohol that is. Drizly partners with liquor stores to deliver their fine products to customers. The hiring process is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
+        indeed: '',
+        promo: '',
+        gigsite: 'https://drizly.com/liquor-stores-near-me',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0184',
+        logo: saucey,
+        gig: 'Saucey',
+        description:
+          'Saucey is another Alcohol delivery company. It boasts a flexible schedule and solid pay for drivers.',
+        indeed: '',
+        promo: '',
+        gigsite: 'https://www.saucey.com/apply',
+        featured: false,
+        type: 'gig',
+      },
+      {
         id: 'G0008', // Shopping
         logo: instacart,
         gig: 'Instacart Shopper',
@@ -388,30 +435,6 @@ export const initialState = {
       },
       // Driving unsorted
       {
-        id: 'G0181',
-        logo: drizly,
-        gig: 'Drizly',
-        description:
-          'Drizly focuses on the delivery of the fun stuff, alcohol that is. Drizly partners with liquor stores to deliver their fine products to customers. The hiring process is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
-        indeed: '',
-        promo: '',
-        gigsite: 'https://drizly.com/liquor-stores-near-me',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0182',
-        logo: dispatchit,
-        gig: 'DispatchIt',
-        description:
-          'Dispatchit provides reliable local deliveries to customers with real time ETA’s and tracking. Dispatch drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
-        indeed: '',
-        promo: '',
-        gigsite: 'https://www.dispatchit.com/drivers/',
-        featured: false,
-        type: 'gig',
-      },
-      {
         id: 'G0183',
         logo: deliveroo,
         gig: 'Deliveroo',
@@ -419,18 +442,6 @@ export const initialState = {
         indeed: '',
         promo: '',
         gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0184',
-        logo: saucey,
-        gig: 'Saucey',
-        description:
-          'Saucey is another Alcohol delivery company. It boasts a flexible schedule and solid pay for drivers.',
-        indeed: '',
-        promo: '',
-        gigsite: 'https://www.saucey.com/apply',
         featured: false,
         type: 'gig',
       },
@@ -491,17 +502,6 @@ export const initialState = {
         indeed: '',
         promo: '',
         gigsite: 'https://www.ideliverthat.com/driver',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0168',
-        logo: zum,
-        gig: 'Zum',
-        description: 'Child rideshare',
-        indeed: '',
-        promo: '',
-        gigsite: 'https://www.ridezum.com/',
         featured: false,
         type: 'gig',
       },
