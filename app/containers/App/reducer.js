@@ -75,7 +75,7 @@ import lawnlove from './img/lawnlove.png';
 import networx from './img/networx.png';
 import octopus from './img/octopus.png';
 import peach from './img/peach.png';
-// import pinacle from './img/pinacle.png';
+import pinacle from './img/pinacle.png';
 import priv from './img/priv.png';
 // import RIDE from './img/RIDE.png';
 import ridersshare from './img/ridersshare.png';
@@ -125,6 +125,9 @@ import soothe from './img/soothe1.png';
 import slingshot from './img/slingshot.png';
 import bungii from './img/bungii.png';
 import lime from './img/lime.png';
+import rentah from './img/rentah.png';
+import doorman from './img/doorman.png';
+import hurdlr from './img/hurdlr.png';
 // import bdb from './img/bdb.png';
 // import bdb from './img/bdb.png';
 // Services
@@ -679,7 +682,7 @@ export const initialState = {
       },
       {
         id: 'G0045', // Other rental
-        logo: uber,
+        logo: rentah,
         gig: 'Rentah',
         description: 'Rentah facilitates renting to and from your neighbors',
         indeed:
@@ -832,17 +835,6 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
-      {
-        id: 'G0166',
-        logo: uber,
-        gig: 'Pet Sitters International',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: 'https://www.petsit.com/',
-        featured: false,
-        type: 'gig',
-      },
       //
       //
       //    Anybody can do it labor
@@ -919,7 +911,7 @@ export const initialState = {
       },
       {
         id: 'G0171',
-        logo: uber,
+        logo: doorman,
         gig: 'Doorman',
         description: '',
         indeed: '',
@@ -1060,17 +1052,6 @@ export const initialState = {
         indeed: '',
         promo: '',
         gigsite: 'https://www.carelinx.com/',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0196',
-        logo: uber,
-        gig: 'eldercare.com',
-        description: 'Elder Care',
-        indeed: '',
-        promo: '',
-        gigsite: 'https://eldercare.com/',
         featured: false,
         type: 'gig',
       },
@@ -1230,7 +1211,7 @@ export const initialState = {
       },
       {
         id: 'G0072',
-        logo: uber,
+        logo: pinacle,
         gig: 'Pinnacle',
         description: '',
         indeed: '',
@@ -1337,17 +1318,6 @@ export const initialState = {
         type: 'gig',
       },
       // Nurses
-      {
-        id: 'G0156',
-        logo: uber,
-        gig: 'SnapNurse',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
       {
         id: 'G0179',
         logo: heal,
@@ -1777,7 +1747,7 @@ export const initialState = {
       },
       {
         id: 'S0031',
-        logo: uber,
+        logo: hurdlr,
         gig: 'Hurdlr',
         description: 'Mileage and expense tracker',
         indeed: '',
@@ -1858,41 +1828,7 @@ export const initialState = {
         type: 'service',
       },
       // Products and classes
-      {
-        id: 'S0032',
-        logo: uber,
-        gig: 'Packir',
-        description: 'Delivery backpack for food',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'service',
-      },
-      {
-        id: 'S0034',
-        logo: uber,
-        gig: 'Dash Cam',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'service',
-      },
-      {
-        id: 'S0035',
-        logo: uber,
-        gig: 'Home Dog Care Business: Dog Boarding, Walking & Pet Sitting',
-        description:
-          'Market your dog care services: pet sitting, dog walking, dog training, pet boarding & dog kennel locally with Google SEO Udemy Course for Pet Sitting Gigs',
-        indeed: '',
-        promo: '',
-        gigsite:
-          'https://www.udemy.com/course/rover-how-to-start-your-dog-walking-business-from-home',
-        featured: false,
-        type: 'service',
-      },
+      //
       // {
       //   id: 'S0041',
       //   logo: uber,
