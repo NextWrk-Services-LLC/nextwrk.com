@@ -53,6 +53,57 @@ import figureeight from './img/figureeight.png';
 // import freelancer from './img/freelancer.png';
 import gigwalk from './img/gigwalk.png';
 import hellotech from './img/hellotech.png';
+import bird from './img/bird.png';
+import burro from './img/burro.png';
+// import careguide from './img/careguide.png';
+import carelinx from './img/carelinx.png';
+import census from './img/census.png';
+// import closerlook from './img/closerlook.jpeg';
+import drizly from './img/drizly.png';
+import easymove from './img/easymove.png';
+// import everlance from './img/everlance.jpeg';
+import fetchmd from './img/fetchmd.png';
+import gbw from './img/gbw.png';
+import grabbit from './img/grabbit.png';
+import grabr from './img/grabr.png';
+import helpr from './img/helpr.png';
+import homeaglow from './img/homeaglow.png';
+import hyrecar from './img/hyrecar.png';
+import icracked from './img/icracked.png';
+import jump from './img/jump.png';
+import lawnlove from './img/lawnlove.png';
+import networx from './img/networx.png';
+import octopus from './img/octopus.png';
+import peach from './img/peach.png';
+// import pinacle from './img/pinacle.png';
+import priv from './img/priv.png';
+// import RIDE from './img/RIDE.png';
+import ridersshare from './img/ridersshare.png';
+import saucey from './img/saucey.png';
+import scootermap from './img/scootermap.png';
+import sherpashare from './img/sherpashare.png';
+// import sitter from './img/sitter.png';
+import sittercity from './img/sittercity.png';
+// import snapcare from './img/snapcare.png';
+import spare5 from './img/spare5.png';
+import spin from './img/spin.png';
+import taskeasy from './img/taskeasy.png';
+import urbansitter from './img/urbansitter.png';
+// import wind from './img/wind.png';
+import yourmechanic from './img/yourmechanic.png';
+import zeel from './img/zeel.png';
+import zum from './img/zum.png';
+// import bdb from './img/bdb.png';
+// import bdb from './img/bdb.png';
+// import bdb from './img/bdb.png';
+// import bdb from './img/bdb.png';
+// import bdb from './img/bdb.png';
+// import bdb from './img/bdb.png';
+// import bdb from './img/bdb.png';
+// import bdb from './img/bdb.png';
+// import bdb from './img/bdb.png';
+// import bdb from './img/bdb.png';
+// import bdb from './img/bdb.png';
 // Services
 import gridwise from './img/gridwise.png';
 import mystro from './img/mystro.png';
@@ -507,7 +558,7 @@ export const initialState = {
       },
       {
         id: 'G0194',
-        logo: uber,
+        logo: ridersshare,
         gig: 'Riders Share',
         description:
           'List your motorcycle for free and make an average of $150 per booking. All listings are protected by an A rated insurance provider. We strive to turn only the safest riders into renters by using technology.',
@@ -522,7 +573,7 @@ export const initialState = {
       // Scooter Chargers
       {
         id: 'G0153',
-        logo: uber,
+        logo: bird,
         gig: 'Bird Scooter Charger',
         description: '',
         indeed: '',
@@ -544,7 +595,7 @@ export const initialState = {
       },
       {
         id: 'G0174',
-        logo: uber,
+        logo: jump,
         gig: 'Jump Scooter Charger',
         description: '',
         indeed: '',
@@ -555,7 +606,7 @@ export const initialState = {
       },
       {
         id: 'G0175',
-        logo: uber,
+        logo: spin,
         gig: 'Spin Scooter Charger',
         description: '',
         indeed: '',
@@ -691,7 +742,7 @@ export const initialState = {
       },
       {
         id: 'G0051', // Lawn Care
-        logo: uber,
+        logo: taskeasy,
         gig: 'TaskEasy',
         description:
           'TaskEasy freelancers offer lawnmowing, gardening, and landscaping services.',
@@ -725,7 +776,7 @@ export const initialState = {
       },
       {
         id: 'G0152',
-        logo: uber,
+        logo: lawnlove,
         gig: 'Lawn Love',
         description: '',
         indeed: '',
@@ -736,7 +787,7 @@ export const initialState = {
       },
       {
         id: 'G0162', // Cleaning
-        logo: uber,
+        logo: homeaglow,
         gig: 'Homeaglow',
         description: '',
         indeed: 'https://www.indeed.com/cmp/Homeaglow/reviews',
@@ -759,7 +810,7 @@ export const initialState = {
       },
       {
         id: 'G0195',
-        logo: uber,
+        logo: carelinx,
         gig: 'CareLinx',
         description: 'Elder Care',
         indeed: '',
@@ -781,7 +832,7 @@ export const initialState = {
       },
       {
         id: 'G0061',
-        logo: uber,
+        logo: helpr,
         gig: 'Helpr',
         description:
           'An app that connects parents with reliable childcare help (i.e., babysitting), Helpr is ideal for those with relevant experience looking for occasional part-time work.',
@@ -793,7 +844,7 @@ export const initialState = {
       },
       {
         id: 'G0154',
-        logo: uber,
+        logo: urbansitter,
         gig: 'UrbanSitter',
         description: '',
         indeed: '',
@@ -830,7 +881,7 @@ export const initialState = {
       },
       {
         id: 'G0159',
-        logo: uber,
+        logo: icracked,
         gig: 'iCracked',
         description:
           'Phone repair. iCracked provides local on-demand iPhone, iPad, and Galaxy repair services. iCracked specializes in on-site screen replacements.',
@@ -924,7 +975,7 @@ export const initialState = {
       },
       {
         id: 'G0071',
-        logo: uber,
+        logo: gbw,
         gig: 'GBW',
         description: '',
         indeed: '',
@@ -945,28 +996,6 @@ export const initialState = {
         type: 'gig',
       },
       {
-        id: 'G0073',
-        logo: uber,
-        gig: 'A Closer Look',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0074',
-        logo: uber,
-        gig: 'Quest for the Best',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
         id: 'G0075',
         logo: uber,
         gig: 'Intellishop',
@@ -977,54 +1006,10 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
-      {
-        id: 'G0076',
-        logo: uber,
-        gig: 'Perception Strategies',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0077',
-        logo: uber,
-        gig: 'Sinclair Customer Metrics',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0078',
-        logo: uber,
-        gig: 'Call Center QA',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0079',
-        logo: uber,
-        gig: 'ARC Consulting',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
       // Bullshit work
       {
         id: 'G0048',
-        logo: uber,
+        logo: spare5,
         gig: 'Spare5',
         description: '',
         indeed: '',
@@ -1035,7 +1020,7 @@ export const initialState = {
       },
       {
         id: 'G0147',
-        logo: uber,
+        logo: census,
         gig: 'Census Taker',
         description: '',
         indeed: '',
@@ -1048,7 +1033,7 @@ export const initialState = {
       // Mechanics
       {
         id: 'G0055',
-        logo: uber,
+        logo: yourmechanic,
         gig: 'YourMechanic',
         description:
           'Providing car repairs and maintenance carried out at customers’ homes, YourMechanic is a way for people with auto repair skills to leverage the gig economy.',
@@ -1061,7 +1046,7 @@ export const initialState = {
       // Massages
       {
         id: 'G0056',
-        logo: uber,
+        logo: zeel,
         gig: 'Zeel',
         description: '',
         indeed: '',
@@ -1085,7 +1070,7 @@ export const initialState = {
       // Beauty
       {
         id: 'G0160',
-        logo: uber,
+        logo: priv,
         gig: 'Priv',
         description:
           'Beauty. Priv connects customers on-demand with freelance beauty and wellness professionals, taking a 20% commission. Priv services include makeup, blowout, haircut, nails/manicure, massage, personal training, men’s grooming, spray tan and facials. “Priv Pros” select shifts and kinds of jobs they choose.',
@@ -1132,7 +1117,7 @@ export const initialState = {
       },
       {
         id: 'G0180',
-        logo: uber,
+        logo: fetchmd,
         gig: 'Fetch MD',
         description: '',
         indeed: '',
@@ -1149,7 +1134,7 @@ export const initialState = {
       // Unsorted (need to be sorted)
       {
         id: 'G0164',
-        logo: uber,
+        logo: easymove,
         gig: 'EasyMove',
         description: '',
         indeed: '',
@@ -1172,7 +1157,7 @@ export const initialState = {
       },
       {
         id: 'G0167',
-        logo: uber,
+        logo: sittercity,
         gig: 'SitterCity',
         description: 'Babysitters',
         indeed: '',
@@ -1183,7 +1168,7 @@ export const initialState = {
       },
       {
         id: 'G0168',
-        logo: uber,
+        logo: zum,
         gig: 'Zum',
         description: 'Child rideshare',
         indeed: '',
@@ -1231,7 +1216,7 @@ export const initialState = {
 
       {
         id: 'G0177',
-        logo: uber,
+        logo: hyrecar,
         gig: 'Hyrecar',
         description: '',
         indeed: '',
@@ -1254,7 +1239,7 @@ export const initialState = {
 
       {
         id: 'G0181',
-        logo: uber,
+        logo: drizly,
         gig: 'Drizly',
         description:
           'Drizly focuses on the delivery of the fun stuff, alcohol that is. Drizly partners with liquor stores to deliver their fine products to customers. The hiring process is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
@@ -1289,7 +1274,7 @@ export const initialState = {
       },
       {
         id: 'G0184',
-        logo: uber,
+        logo: saucey,
         gig: 'Saucey',
         description:
           'Saucey is another Alcohol delivery company. It boasts a flexible schedule and solid pay for drivers.',
@@ -1301,7 +1286,7 @@ export const initialState = {
       },
       {
         id: 'G0185',
-        logo: uber,
+        logo: peach,
         gig: 'Peach',
         description:
           'Peach focuses on carefully chosen dishes from the best lunch spots',
@@ -1325,7 +1310,7 @@ export const initialState = {
       },
       {
         id: 'G0187',
-        logo: uber,
+        logo: burro,
         gig: 'Burro',
         description:
           'There are so many ways to deliver on the Burro app. Deliver Craigslist items, make store deliveries even help people move. Set a flexible schedule and make up to $1,400 a week.',
@@ -1337,7 +1322,7 @@ export const initialState = {
       },
       {
         id: 'G0188',
-        logo: uber,
+        logo: grabr,
         gig: 'Grabr',
         description:
           'Earn money while traveling. Travelers subsidize their trips by delivering a handful of items. They make up to $300 a trip and meet interesting locals along the way.',
@@ -1361,7 +1346,7 @@ export const initialState = {
       },
       {
         id: 'G0190',
-        logo: uber,
+        logo: networx,
         gig: 'NetWorx',
         description: '',
         indeed: '',
@@ -1724,7 +1709,7 @@ export const initialState = {
       },
       {
         id: 'S0004',
-        logo: uber,
+        logo: sherpashare,
         gig: 'SherpaShare',
         description: '',
         indeed: '',
@@ -1757,7 +1742,7 @@ export const initialState = {
       },
       {
         id: 'S0030',
-        logo: uber,
+        logo: grabbit,
         gig: 'Grabb-it',
         description: 'Advertising for rideshare drivers to make more',
         indeed: '',
@@ -1790,7 +1775,7 @@ export const initialState = {
       },
       {
         id: 'S0033',
-        logo: uber,
+        logo: octopus,
         gig: 'Play Octopus',
         description: 'rideshare advertising and entertainment',
         indeed: '',
@@ -1825,7 +1810,7 @@ export const initialState = {
       },
       {
         id: 'S0036',
-        logo: uber,
+        logo: scootermap,
         gig: 'ScooterMap',
         description:
           'All scooters on one app. Make more money as a scooter charger',
