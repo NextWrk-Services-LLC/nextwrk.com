@@ -70,7 +70,7 @@ import helpr from './img/helpr1.png';
 import homeaglow from './img/homeaglow.png';
 import hyrecar from './img/hyrecar.png';
 import icracked from './img/icracked.png';
-import jump from './img/jump.png';
+// import jump from './img/jump.png';
 import lawnlove from './img/lawnlove.png';
 import networx from './img/networx.png';
 import octopus from './img/octopus.png';
@@ -187,10 +187,11 @@ export const initialState = {
         id: 'G0168',
         logo: zum,
         gig: 'Zum',
-        description: 'Child rideshare',
-        indeed: '',
-        promo: '',
-        gigsite: 'https://www.ridezum.com/',
+        description:
+          'Zum Mission: Build the world’s largest and most-trusted platform for kids transportation and care.',
+        indeed: 'https://www.indeed.com/cmp/Ridezum/reviews',
+        promo: 'Receive up to $500 sign up bonus!',
+        gigsite: 'https://www.ridezum.com/drive.html',
         featured: false,
         type: 'gig',
       },
@@ -297,7 +298,7 @@ export const initialState = {
         gig: 'DispatchIt',
         description:
           'Dispatchit provides reliable local deliveries to customers with real time ETA’s and tracking. Dispatch drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
-        indeed: '',
+        indeed: 'https://www.facebook.com/pg/dispatchitinc/reviews',
         promo: '',
         gigsite: 'https://www.dispatchit.com/drivers/',
         featured: false,
@@ -389,12 +390,36 @@ export const initialState = {
         type: 'gig',
       },
       {
+        id: 'G0185',
+        logo: peach,
+        gig: 'Peach',
+        description:
+          'Peach focuses on carefully chosen dishes from the best lunch spots',
+        indeed: 'https://www.indeed.com/cmp/Peach/reviews',
+        promo: '',
+        gigsite: 'https://www.peachd.com/jobs/',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0183',
+        logo: deliveroo,
+        gig: 'Deliveroo',
+        description: '',
+        indeed: 'https://www.indeed.com/cmp/Deliveroo/reviews',
+        promo: '',
+        gigsite: 'https://deliveroo.co.uk/apply',
+        featured: false,
+        type: 'gig',
+      },
+      {
         id: 'G0181', // Alcohol
         logo: drizly,
         gig: 'Drizly',
         description:
           'Drizly focuses on the delivery of the fun stuff, alcohol that is. Drizly partners with liquor stores to deliver their fine products to customers. The hiring process is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
-        indeed: '',
+        indeed:
+          'https://www.glassdoor.com/Reviews/Drizly-Delivery-Driver-Reviews-EI_IE1344937.0,6_KO7,22.htm',
         promo: '',
         gigsite: 'https://drizly.com/liquor-stores-near-me',
         featured: false,
@@ -406,7 +431,7 @@ export const initialState = {
         gig: 'Saucey',
         description:
           'Saucey is another Alcohol delivery company. It boasts a flexible schedule and solid pay for drivers.',
-        indeed: '',
+        indeed: 'https://www.indeed.com/cmp/Saucey/reviews?fcountry=ALL',
         promo: '',
         gigsite: 'https://www.saucey.com/apply',
         featured: false,
@@ -436,49 +461,26 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
-      // Driving unsorted
-      {
-        id: 'G0183',
-        logo: deliveroo,
-        gig: 'Deliveroo',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0185',
-        logo: peach,
-        gig: 'Peach',
-        description:
-          'Peach focuses on carefully chosen dishes from the best lunch spots',
-        indeed: '',
-        promo: '',
-        gigsite: 'https://www.peachd.com/jobs/',
-        featured: false,
-        type: 'gig',
-      },
       {
         id: 'G0186',
         logo: burpy,
         gig: 'Burpy',
         description:
           'Burpy offers same day grocery delivery to customers within the hour.',
-        indeed: '',
+        indeed: 'https://www.indeed.com/cmp/Burpy/reviews',
         promo: '',
         gigsite: 'https://shoppers.burpy.com/join-as-shopper',
         featured: false,
         type: 'gig',
       },
+      // Driving unsorted
       {
         id: 'G0187',
         logo: burro,
         gig: 'Burro',
         description:
           'There are so many ways to deliver on the Burro app. Deliver Craigslist items, make store deliveries even help people move. Set a flexible schedule and make up to $1,400 a week.',
-        indeed: '',
+        indeed: 'https://www.indeed.com/cmp/Burro/salaries/Delivery-Driver',
         promo: '',
         gigsite: 'https://getburro.com/drivers.html',
         featured: false,
@@ -490,7 +492,7 @@ export const initialState = {
         gig: 'Grabr',
         description:
           'Earn money while traveling. Travelers subsidize their trips by delivering a handful of items. They make up to $300 a trip and meet interesting locals along the way.',
-        indeed: '',
+        indeed: 'https://www.producthunt.com/posts/grabr-2/reviews',
         promo: '',
         gigsite: 'https://grabr.io/en/travel',
         featured: false,
@@ -502,7 +504,7 @@ export const initialState = {
         gig: 'DeliverThat',
         description:
           'DeliverThat is a food delivery app that has partnered with many well known restaraunts. Drivers earn competitive pay based on distance with tips included.',
-        indeed: '',
+        indeed: 'https://www.indeed.com/cmp/Deliver-That/reviews',
         promo: '',
         gigsite: 'https://www.ideliverthat.com/driver',
         featured: false,
@@ -514,7 +516,7 @@ export const initialState = {
         gig: 'GoPuff',
         description:
           'GoPuff is the largest and fastest convenience delivery app available. Customers order snacks, drinks, alcohol, personal care items and more. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel',
-        indeed: '',
+        indeed: 'https://www.indeed.com/cmp/Gopuff/reviews',
         promo: '',
         gigsite:
           'https://www.fountain.com/gopuff/apply/godrive-delivery-partner',
@@ -527,20 +529,9 @@ export const initialState = {
         gig: 'DeLiv',
         description:
           'Same day delivery service helping retailers deliver their items to customers. Must be 18 Years old, have a car (1998 or newer) and have 1+ years of driving experience.',
-        indeed: '',
+        indeed: 'https://www.indeed.com/cmp/Deliv/reviews',
         promo: '',
         gigsite: 'https://www.deliv.co/drivers/',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0177',
-        logo: hyrecar,
-        gig: 'Hyrecar',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
         featured: false,
         type: 'gig',
       },
@@ -657,6 +648,17 @@ export const initialState = {
         type: 'gig',
       },
       {
+        id: 'G0177',
+        logo: hyrecar,
+        gig: 'Hyrecar',
+        description: 'Rent out your car for others to drive with Uber or Lyft',
+        indeed: 'https://www.trustpilot.com/review/hyrecar.com',
+        promo: '',
+        gigsite: 'https://app.hyrecar.com/login?type=owner&form=signup',
+        featured: false,
+        type: 'gig',
+      },
+      {
         id: 'G0049', // Parking Rental
         logo: spothero,
         gig: 'SpotHero',
@@ -709,9 +711,9 @@ export const initialState = {
         logo: rvshare,
         gig: 'RVShare',
         description: 'A site that lets you rent out your RV',
-        indeed: '',
+        indeed: 'https://www.trustpilot.com/review/rvshare.com',
         promo: '',
-        gigsite: '',
+        gigsite: 'https://rvshare.com/list-your-rv',
         featured: false,
         type: 'gig',
       },
@@ -720,7 +722,7 @@ export const initialState = {
         logo: outdoorsy,
         gig: 'Outdoorsy',
         description: 'RV rental',
-        indeed: '',
+        indeed: 'https://www.trustpilot.com/review/www.outdoorsy.com',
         promo: '',
         gigsite: 'https://www.outdoorsy.com/list-your-rv',
         featured: false,
@@ -731,7 +733,8 @@ export const initialState = {
         logo: bungii,
         gig: 'Bungii',
         description: 'On demand truck rental app',
-        indeed: '',
+        indeed:
+          'https://appgrooves.com/app/bungii-your-friend-w-a-truck-by-bungii-llc',
         promo: '',
         gigsite: 'https://bungii.com/',
         featured: false,
@@ -743,7 +746,7 @@ export const initialState = {
         gig: 'Riders Share',
         description:
           'List your motorcycle for free and make an average of $150 per booking. All listings are protected by an A rated insurance provider. We strive to turn only the safest riders into renters by using technology.',
-        indeed: '',
+        indeed: 'https://www.facebook.com/pg/ridersshare/reviews/',
         promo: '',
         gigsite: 'https://www.riders-share.com/',
         featured: false,
@@ -756,10 +759,10 @@ export const initialState = {
         id: 'G0153',
         logo: bird,
         gig: 'Bird Scooter Charger',
-        description: '',
-        indeed: '',
+        description: 'Become a Bird Flyer, charge scooters',
+        indeed: 'https://www.reddit.com/r/birdcharger/',
         promo: '',
-        gigsite: '',
+        gigsite: 'https://flyers.bird.co/',
         featured: false,
         type: 'gig',
       },
@@ -768,20 +771,10 @@ export const initialState = {
         logo: lime,
         gig: 'Lime Juicer',
         description: 'charge lime scooter',
-        indeed: '',
+        indeed:
+          'https://www.glassdoor.com/Reviews/Lime-Juicer-Reviews-EI_IE1884794.0,4_KO5,11.htm',
         promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0174',
-        logo: jump,
-        gig: 'Jump Scooter Charger',
-        description: '',
-        indeed: '',
-        promo: '',
-        gigsite: '',
+        gigsite: 'https://lime.bike/juicer',
         featured: false,
         type: 'gig',
       },
@@ -789,10 +782,11 @@ export const initialState = {
         id: 'G0175',
         logo: spin,
         gig: 'Spin Scooter Charger',
-        description: '',
-        indeed: '',
+        description: 'Charge Spin Scooters',
+        indeed:
+          'https://www.glassdoor.com/Overview/Working-at-Spin-EI_IE1838792.11,15.htm',
         promo: '',
-        gigsite: '',
+        gigsite: 'https://www.spin.app/charger',
         featured: false,
         type: 'gig',
       },
@@ -800,10 +794,11 @@ export const initialState = {
         id: 'G0176',
         logo: skip,
         gig: 'Skip Scooter Charger',
-        description: '',
-        indeed: '',
+        description: 'Charge Skip Scooters',
+        indeed: 'https://www.yelp.com/biz/skip-scooter-rental-sf-san-francisco',
         promo: '',
-        gigsite: '',
+        gigsite:
+          'https://www.fountain.com/skip-scooters/apply/general-location-ranger',
         featured: false,
         type: 'gig',
       },
