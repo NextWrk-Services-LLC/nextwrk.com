@@ -93,15 +93,38 @@ import urbansitter from './img/urbansitter.png';
 import yourmechanic from './img/yourmechanic.png';
 import zeel from './img/zeel.png';
 import zum from './img/zum.png';
-// import bdb from './img/bdb.png';
-// import bdb from './img/bdb.png';
-// import bdb from './img/bdb.png';
-// import bdb from './img/bdb.png';
-// import bdb from './img/bdb.png';
-// import bdb from './img/bdb.png';
-// import bdb from './img/bdb.png';
-// import bdb from './img/bdb.png';
-// import bdb from './img/bdb.png';
+import plowzandmowz from './img/plowzandmowz.png';
+import stickerride from './img/stickerride.png';
+import dispatchit from './img/dispatchit.png';
+import boatsetter from './img/boatsetter.png';
+import deliv from './img/deliv.png';
+import skip from './img/skip.png';
+import fancyhands from './img/fancyhands.png';
+import wrapify from './img/wrapify.png';
+import marketforce from './img/marketforce.png';
+import secretshopper from './img/secretshopper.jpg';
+import lugg from './img/lugg.png';
+import heal from './img/heal.png';
+import veryable from './img/veryable.png';
+// import migo from './img/migo.png';
+import spothero from './img/spothero.png';
+import adway from './img/adway.png';
+import burpy from './img/burpy.png';
+import takl from './img/takl.png';
+import everlance from './img/everlance.png';
+import triplog from './img/triplog.png';
+import rvshare from './img/rvshare.png';
+import intellishop from './img/intellishop.png';
+import parkingpanda from './img/parkingpanda.png';
+import lawnstarter from './img/lawnstarter.png';
+import nickelytics from './img/nickelytics.png';
+import deliveroo from './img/deliveroo.png';
+import outdoorsy from './img/outdoorsy.png';
+import gopuff from './img/gopuff.png';
+import soothe from './img/soothe.png';
+import slingshot from './img/slingshot.png';
+import bungii from './img/bungii.png';
+import lime from './img/lime.png';
 // import bdb from './img/bdb.png';
 // import bdb from './img/bdb.png';
 // Services
@@ -378,7 +401,7 @@ export const initialState = {
       },
       {
         id: 'G0182',
-        logo: uber,
+        logo: dispatchit,
         gig: 'DispatchIt',
         description:
           'Dispatchit provides reliable local deliveries to customers with real time ETA’s and tracking. Dispatch drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
@@ -390,7 +413,7 @@ export const initialState = {
       },
       {
         id: 'G0183',
-        logo: uber,
+        logo: deliveroo,
         gig: 'Deliveroo',
         description: '',
         indeed: '',
@@ -425,7 +448,7 @@ export const initialState = {
       },
       {
         id: 'G0186',
-        logo: uber,
+        logo: burpy,
         gig: 'Burpy',
         description:
           'Burpy offers same day grocery delivery to customers within the hour.',
@@ -484,7 +507,7 @@ export const initialState = {
       },
       {
         id: 'G0169',
-        logo: uber,
+        logo: gopuff,
         gig: 'GoPuff',
         description:
           'GoPuff is the largest and fastest convenience delivery app available. Customers order snacks, drinks, alcohol, personal care items and more. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel',
@@ -497,7 +520,7 @@ export const initialState = {
       },
       {
         id: 'G0170',
-        logo: uber,
+        logo: deliv,
         gig: 'DeLiv',
         description:
           'Same day delivery service helping retailers deliver their items to customers. Must be 18 Years old, have a car (1998 or newer) and have 1+ years of driving experience.',
@@ -632,7 +655,7 @@ export const initialState = {
       },
       {
         id: 'G0049', // Parking Rental
-        logo: uber,
+        logo: spothero,
         gig: 'SpotHero',
         description:
           'Own a parking space? Turn it into extra income while not in use',
@@ -644,7 +667,7 @@ export const initialState = {
       },
       {
         id: 'G0058',
-        logo: uber,
+        logo: parkingpanda,
         gig: 'ParkingPanda',
         description:
           'A parking space is a premium product in many major cities across the country. ParkingPanda is an app that brings owners and customers together seamlessly. You can post a free listing with the app to start earning cash whenever anyone books your space.',
@@ -668,7 +691,7 @@ export const initialState = {
       },
       {
         id: 'G0067',
-        logo: uber,
+        logo: boatsetter,
         gig: 'Boatsetter',
         description:
           'If you own a boat, then Boatsetter lets you rent it out — either with or without a captain.',
@@ -680,7 +703,7 @@ export const initialState = {
       },
       {
         id: 'G0066',
-        logo: uber,
+        logo: rvshare,
         gig: 'RVShare',
         description: 'A site that lets you rent out your RV',
         indeed: '',
@@ -691,7 +714,7 @@ export const initialState = {
       },
       {
         id: 'G0191',
-        logo: uber,
+        logo: outdoorsy,
         gig: 'Outdoorsy',
         description: 'RV rental',
         indeed: '',
@@ -702,7 +725,7 @@ export const initialState = {
       },
       {
         id: 'G0193',
-        logo: uber,
+        logo: bungii,
         gig: 'Bungii',
         description: 'On demand truck rental app',
         indeed: '',
@@ -739,7 +762,7 @@ export const initialState = {
       },
       {
         id: 'G0165',
-        logo: uber,
+        logo: lime,
         gig: 'Lime Juicer',
         description: 'charge lime scooter',
         indeed: '',
@@ -772,7 +795,7 @@ export const initialState = {
       },
       {
         id: 'G0176',
-        logo: uber,
+        logo: skip,
         gig: 'Skip Scooter Charger',
         description: '',
         indeed: '',
@@ -907,7 +930,7 @@ export const initialState = {
       },
       {
         id: 'G0192',
-        logo: uber,
+        logo: lugg,
         gig: 'Lugg',
         description: 'On demand moving and furniture delivery',
         indeed: '',
@@ -930,7 +953,7 @@ export const initialState = {
       },
       {
         id: 'G0050',
-        logo: uber,
+        logo: takl,
         gig: 'Takl',
         description: '',
         indeed: '',
@@ -964,7 +987,7 @@ export const initialState = {
       },
       {
         id: 'G0149',
-        logo: uber,
+        logo: lawnstarter,
         gig: 'LawnStarter',
         description: '',
         indeed: '',
@@ -975,7 +998,7 @@ export const initialState = {
       },
       {
         id: 'G0150',
-        logo: uber,
+        logo: plowzandmowz,
         gig: 'Plowz and Mowz',
         description: '',
         indeed: '',
@@ -1132,7 +1155,7 @@ export const initialState = {
       // Virtual Assistant Gigs
       {
         id: 'G0029',
-        logo: uber,
+        logo: fancyhands,
         gig: 'Fancy Hands',
         description: '',
         indeed: '',
@@ -1173,7 +1196,7 @@ export const initialState = {
       },
       {
         id: 'G0069',
-        logo: uber,
+        logo: secretshopper,
         gig: 'Secret Shopper',
         description: '',
         indeed: '',
@@ -1184,7 +1207,7 @@ export const initialState = {
       },
       {
         id: 'G0070',
-        logo: uber,
+        logo: marketforce,
         gig: 'Market Force',
         description:
           'At Market Force, you’ll complete mystery shops for banks, restaurants, and stores in order to help those businesses thrive.',
@@ -1218,7 +1241,7 @@ export const initialState = {
       },
       {
         id: 'G0075',
-        logo: uber,
+        logo: intellishop,
         gig: 'Intellishop',
         description: '',
         indeed: '',
@@ -1278,7 +1301,7 @@ export const initialState = {
       },
       {
         id: 'G0064',
-        logo: uber,
+        logo: soothe,
         gig: 'Soothe',
         description:
           'Gig work for massage therapists, including deep tissue, sports, and couples massage work. ',
@@ -1304,7 +1327,7 @@ export const initialState = {
       // Manufacturing
       {
         id: 'G0142',
-        logo: uber,
+        logo: veryable,
         gig: 'Veryable',
         description: '',
         indeed: '',
@@ -1327,7 +1350,7 @@ export const initialState = {
       },
       {
         id: 'G0179',
-        logo: uber,
+        logo: heal,
         gig: 'Heal.com',
         description: '',
         indeed: '',
@@ -1349,7 +1372,7 @@ export const initialState = {
       },
       {
         id: 'G0178',
-        logo: uber,
+        logo: slingshot,
         gig: 'Slingshot Health',
         description: '',
         indeed: '',
@@ -1721,7 +1744,7 @@ export const initialState = {
       },
       {
         id: 'S0005',
-        logo: uber,
+        logo: triplog,
         gig: 'TripLog',
         description: '',
         indeed: '',
@@ -1732,7 +1755,7 @@ export const initialState = {
       },
       {
         id: 'S0006',
-        logo: uber,
+        logo: everlance,
         gig: 'Everlance',
         description: '',
         indeed: '',
@@ -1765,7 +1788,7 @@ export const initialState = {
       },
       {
         id: 'S0038',
-        logo: uber,
+        logo: adway,
         gig: 'ADWAY',
         description:
           'If you are a Lyft, Instacart, Postmates, Doordash or any other driving/delivery company driver, you can make extra money by wrapping up your car in ads.',
@@ -1777,7 +1800,7 @@ export const initialState = {
       },
       {
         id: 'S0039',
-        logo: uber,
+        logo: nickelytics,
         gig: 'Nickelytics',
         description:
           'Nickelytics’ process is simple, we put ads on vehicles that drive through busy city streets. Additionally, we screen these drivers and ensure they hit at least 30 miles a day so your brand is broadcasted everywhere.',
@@ -1789,7 +1812,7 @@ export const initialState = {
       },
       {
         id: 'S0040',
-        logo: uber,
+        logo: wrapify,
         gig: 'Wrapify',
         description: '',
         indeed: '',
@@ -1811,7 +1834,7 @@ export const initialState = {
       },
       {
         id: 'S0037',
-        logo: uber,
+        logo: stickerride,
         gig: 'Sticker Ride',
         description:
           'StickerRide helps you make money as you drive! You can compensate for your vehicle expenses such as gas, car washes, and parking by driving around town.',
