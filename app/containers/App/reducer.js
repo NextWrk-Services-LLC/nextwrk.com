@@ -42,6 +42,17 @@ import zifty from './img/zifty.png';
 import shipt from './img/shipt.png';
 import homeaway from './img/homeaway.png';
 import ofs from './img/ofs.png';
+import dolly from './img/dolly.png';
+import care from './img/care.png';
+import bellhops from './img/bellhops.png';
+import wonolo from './img/wonolo.png';
+import etsy from './img/etsy.png';
+import feastly from './img/feastly.png';
+import goshare from './img/goshare.png';
+import figureeight from './img/figureeight.png';
+// import freelancer from './img/freelancer.png';
+import gigwalk from './img/gigwalk.png';
+import hellotech from './img/hellotech.png';
 // Services
 import gridwise from './img/gridwise.png';
 import mystro from './img/mystro.png';
@@ -622,7 +633,7 @@ export const initialState = {
       },
       {
         id: 'G0021',
-        logo: uber,
+        logo: wonolo,
         gig: 'Wonolo',
         description: '',
         indeed: '',
@@ -633,7 +644,7 @@ export const initialState = {
       },
       {
         id: 'G0022',
-        logo: uber,
+        logo: bellhops,
         gig: 'Bellhops',
         description:
           'Get paid to pack boxes and move people into their new digs.',
@@ -645,7 +656,7 @@ export const initialState = {
       },
       {
         id: 'G0027',
-        logo: uber,
+        logo: dolly,
         gig: 'Dolly',
         description:
           'The Dolly service uses people that have vehicles for moving, or movers to do the heavy lifting if they don’t have a vehicle. ',
@@ -657,7 +668,7 @@ export const initialState = {
       },
       {
         id: 'G0151',
-        logo: uber,
+        logo: goshare,
         gig: 'GoShare Delivery',
         description:
           'GoShare specializes in delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you don’t have a truck you can apply as a helper.',
@@ -736,7 +747,7 @@ export const initialState = {
       },
       {
         id: 'G0023', // Less intensive labor
-        logo: uber,
+        logo: care,
         gig: 'Care.com', // Childcare
         description:
           'Primarily a place to find work in child or pet care, Care.com also offers gigs for housekeepers, gardeners, tutors, and those caring for the elderly.',
@@ -796,7 +807,7 @@ export const initialState = {
       // Technical gigs
       {
         id: 'G0026',
-        logo: uber,
+        logo: figureeight,
         gig: 'Figure Eight',
         description: '',
         indeed: '',
@@ -807,7 +818,7 @@ export const initialState = {
       },
       {
         id: 'G0035',
-        logo: uber,
+        logo: hellotech,
         gig: 'HelloTech',
         description:
           'HelloTech gives experts in the tech industry a platform to provide services for individuals in their homes and businesses. ',
@@ -834,7 +845,7 @@ export const initialState = {
       // Artsy Gigs
       {
         id: 'G0028',
-        logo: uber,
+        logo: etsy,
         gig: 'Etsy',
         description:
           'Etsy provides a marketplace for people to sell their handmade, vintage, or creative goods online.',
@@ -863,7 +874,7 @@ export const initialState = {
       // Cooking Gigs
       {
         id: 'G0031',
-        logo: uber,
+        logo: feastly,
         gig: 'Feastly',
         description:
           'If you are a chef and want to host meals and you are a foodie looking for great chef, Feastly is a platform that brings them both together. ',
@@ -878,7 +889,7 @@ export const initialState = {
       // Mystery Shoppers
       {
         id: 'G0033',
-        logo: uber,
+        logo: gigwalk,
         gig: 'Gigwalk',
         description:
           'Work for Gigwalk usually involves gathering data for companies about their products and stores. For example, you might be checking what’s on the shelves in a particular shop, and whether it’s correctly priced and labeled.',
