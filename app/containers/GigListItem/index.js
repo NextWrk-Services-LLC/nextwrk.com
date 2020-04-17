@@ -40,16 +40,12 @@ export function GigsListItem(props) {
         <hr />
         <CenterText>
           {item.indeed ? (
-            <A href={item.indeed} target="_blank" rel="noopener noreferrer">
-              See what others have to say
-            </A>
+            <A href={item.indeed}>See what others have to say</A>
           ) : (
             ''
           )}
           {item.promo ? <p>{item.promo}</p> : <p />}
-          <A href={item.gigsite} target="_blank" rel="noopener noreferrer">
-            TRY IT OUT
-          </A>
+          <A href={item.gigsite}>TRY IT OUT</A>
         </CenterText>
       </Wrapper>
     </Spacing>

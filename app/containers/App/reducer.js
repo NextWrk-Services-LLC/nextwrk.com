@@ -173,7 +173,7 @@ export const initialState = {
       {
         id: 'G0037',
         logo: hsnd,
-        gig: 'HopSkipDrive',
+        gig: 'HopSkipDrive Driver',
         description:
           'HopSkipDrive drivers offer carpooling services for youth in your community. There is a more stringent application process because of this, but if you want to make a positive impact in the community while at the same time earning some money, this app is for you!',
         indeed:
@@ -186,7 +186,7 @@ export const initialState = {
       {
         id: 'G0168',
         logo: zum,
-        gig: 'Zum',
+        gig: 'Zumer',
         description:
           'Zum is another ridesharing app offering a platform for kids transportation and care. Available in California, Arizona, Texas, Illinois, Florida, Washington and Washington DC, if you want to brighten kids days and make extra money, Zum is for you!',
         indeed: 'https://www.indeed.com/cmp/Ridezum/reviews',
@@ -198,7 +198,7 @@ export const initialState = {
       {
         id: 'G0054',
         logo: wingz,
-        gig: 'Wingz',
+        gig: 'Wingz Driver',
         description:
           'A rideshare app with a twist. Wingz specializes in airport pickup and drop off and allows customers to select their favorite drivers for repeat rides. If you live near an airport and have a keen sense for customer service, Wingz is the rideshare app for you.',
         indeed: 'https://www.yelp.com/biz/wingz-san-francisco-4',
@@ -232,6 +232,18 @@ export const initialState = {
         type: 'gig',
       },
       {
+        id: 'G0188',
+        logo: grabr,
+        gig: 'Grabr Traveler',
+        description:
+          'Earn money while traveling! Grabr lets travelers subsidize their trips by delivering a handful of items. You can earn $200+ every time you travel abroad. If you are taking a trip soon, check out Grabr to see if you can earn some extra cash',
+        indeed: 'https://www.producthunt.com/posts/grabr-2/reviews',
+        promo: '',
+        gigsite: 'https://grabr.io/en/travel',
+        featured: false,
+        type: 'gig',
+      },
+      {
         id: 'G0010',
         logo: amazon,
         gig: 'Amazon Flex Driver',
@@ -246,7 +258,7 @@ export const initialState = {
       {
         id: 'G0143',
         logo: skipcart,
-        gig: 'Skipcart',
+        gig: 'Skipcart Driver',
         description:
           'Skipcart is a service that offers last-mile delivery for retailers and restaurants. Skipcart lets you choose your own schedule and make deliveries in the community you already live in. Open the Skipcart app. Choose your hours and start delivering.',
         indeed: 'https://www.indeed.com/cmp/Skipcart/reviews',
@@ -258,7 +270,7 @@ export const initialState = {
       {
         id: 'G0155',
         logo: PICKUP,
-        gig: 'PICKUP',
+        gig: 'PICKUP Delivery Driver',
         description:
           'PICKUP is an on-demand and same day delivery service of big & heavy items for national and area businesses. If you own a truck or van, put it to good use and start hauling for money',
         indeed:
@@ -271,7 +283,7 @@ export const initialState = {
       {
         id: 'G0157',
         logo: tommyrun,
-        gig: 'TommyRun',
+        gig: 'TommyRun Driver',
         description:
           'TommyRun is an app that allows users to order building materials and have them delivered within hours. If you own a truck or van you can start earning money today as a TommyRunner',
         indeed: 'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
@@ -283,7 +295,7 @@ export const initialState = {
       {
         id: 'G0161',
         logo: upship,
-        gig: 'uShip',
+        gig: 'uShip Shipper',
         description:
           'uShip is a service that makes shipping motorcycles, boats, and other large items both fast and affordable. If you have the type of horsepower that can handles these deliveries, you can start making money as a uShip carrier.',
         indeed: 'https://www.glassdoor.com/Reviews/uShip-Reviews-E200164.htm',
@@ -295,12 +307,24 @@ export const initialState = {
       {
         id: 'G0182',
         logo: dispatchit,
-        gig: 'DispatchIt',
+        gig: 'DispatchIt Driver',
         description:
           'Dispatchit provides reliable local deliveries to customers with real time ETA’s and tracking. Dispatch drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
         indeed: 'https://www.facebook.com/pg/dispatchitinc/reviews',
         promo: '',
         gigsite: 'https://www.dispatchit.com/drivers/',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0189',
+        logo: uber,
+        gig: 'DeliverThat Driver',
+        description:
+          'DeliverThat is a food delivery app that has partnered with well known restaraunts like QDoba, Zoes Kitchen, Boston Market and Firehouse. Delivery comissions start with a base amount, then increase based on distance and size.',
+        indeed: 'https://www.indeed.com/cmp/Deliver-That/reviews',
+        promo: '',
+        gigsite: 'https://www.ideliverthat.com/driver',
         featured: false,
         type: 'gig',
       },
@@ -345,7 +369,7 @@ export const initialState = {
       {
         id: 'G0034',
         logo: grubhub,
-        gig: 'Grubhub',
+        gig: 'Grubhub Driver',
         description:
           'Grubhub is another food-delivery service, similar to DoorDash and other options. Grubhub drivers get guaranteed minimum earnings and additional perks for performance.',
         indeed: 'https://www.indeed.com/cmp/Grubhub/reviews',
@@ -369,7 +393,7 @@ export const initialState = {
       {
         id: 'G0030',
         logo: favor,
-        gig: 'Favor',
+        gig: 'Favor Runner',
         description:
           'With Favor, you can deliver just about anything to customers and get paid for it. Unlike other deliver gigs, Favor provides a $9 per hour base pay, though tips are deducted from this, and is available in 12 cities',
         indeed: 'https://www.indeed.com/cmp/Favor-Delivery/reviews',
@@ -393,7 +417,7 @@ export const initialState = {
       {
         id: 'G0185',
         logo: peach,
-        gig: 'Peach',
+        gig: 'Peach Delivery Driver',
         description:
           'Peach focuses on carefully chosen dishes from the best lunch spots. They offer generous compensation and minimal time commitment. Peach is available in Seattle, San Diego and Boston.',
         indeed: 'https://www.indeed.com/cmp/Peach/reviews',
@@ -405,7 +429,7 @@ export const initialState = {
       {
         id: 'G0183',
         logo: deliveroo,
-        gig: 'Deliveroo',
+        gig: 'Deliveroo Deliverer',
         description:
           'Deliveroo is a UK based food-delivery service.  Unfortunately it is not available in America, but if you live abroad Deliveroo might be right for you',
         indeed: 'https://www.indeed.com/cmp/Deliveroo/reviews',
@@ -415,9 +439,22 @@ export const initialState = {
         type: 'gig',
       },
       {
+        id: 'G0169',
+        logo: gopuff,
+        gig: 'GoPuff Driver',
+        description:
+          'GoPuff is the largest and fastest convenience delivery app available. Customers order snacks, drinks, alcohol, personal care items and more. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel',
+        indeed: 'https://www.indeed.com/cmp/Gopuff/reviews',
+        promo: '',
+        gigsite:
+          'https://www.fountain.com/gopuff/apply/godrive-delivery-partner',
+        featured: false,
+        type: 'gig',
+      },
+      {
         id: 'G0181', // Alcohol
         logo: drizly,
-        gig: 'Drizly',
+        gig: 'Drizly Delivery Driver',
         description:
           'Drizly focuses on the delivery of the fun stuff, alcohol that is. Drizly partners with liquor stores to deliver their fine products to customers. The hiring process is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
         indeed:
@@ -430,9 +467,9 @@ export const initialState = {
       {
         id: 'G0184',
         logo: saucey,
-        gig: 'Saucey',
+        gig: 'Saucey Courier',
         description:
-          'Saucey is another Alcohol delivery company. It boasts a flexible schedule and solid pay for drivers.',
+          'Saucey is another Alcohol delivery company. It boasts a flexible schedule and solid pay for drivers. Sacuey also has a minimum pay for those who commit to working in "core blocks," which means you agree to work on the clock.',
         indeed: 'https://www.indeed.com/cmp/Saucey/reviews?fcountry=ALL',
         promo: '',
         gigsite: 'https://www.saucey.com/apply',
@@ -444,7 +481,7 @@ export const initialState = {
         logo: instacart,
         gig: 'Instacart Shopper',
         description:
-          'Shoppers are independent contractors that use the Instacart platform to shop and deliver orders for their customers.',
+          'Instacart is one of the largest grocery delivery services out there. Shoppers use their platform to shop and deliver orders for their customers. If you have a car and extra time during the week, why not put both to work?',
         indeed: 'https://www.indeed.com/cmp/Instacart/reviews',
         promo: '',
         gigsite: 'https://shoppers.instacart.com/',
@@ -454,9 +491,9 @@ export const initialState = {
       {
         id: 'G0046',
         logo: shipt,
-        gig: 'Shipt',
+        gig: 'Shipt Shopper',
         description:
-          'Delivering groceries, home products, and some electronics for a company owned by Target.',
+          'Shipt is another key player in the grocery delivery game. Unlike Instacart, Shipt is owned solely by Target, which is where you will be doing most of your shopping, but the jobs are similar. Shipt is a great way to get paid to shop.',
         indeed: 'https://www.indeed.com/cmp/Shipt-Shopper/reviews',
         promo: '',
         gigsite: 'https://www.shipt.com/be-a-shopper/',
@@ -466,74 +503,36 @@ export const initialState = {
       {
         id: 'G0186',
         logo: burpy,
-        gig: 'Burpy',
+        gig: 'Burpy Shopper',
         description:
-          'Burpy offers same day grocery delivery to customers within the hour.',
+          'Burpy is another grocery service, offering delivery to customers within the hour. It hires shoppers to shop and deliver for customers, but is only available in the Texas area. If you live in Texas and have some spare time, Burpy will gladly compensate you for it.',
         indeed: 'https://www.indeed.com/cmp/Burpy/reviews',
         promo: '',
         gigsite: 'https://shoppers.burpy.com/join-as-shopper',
         featured: false,
         type: 'gig',
       },
-      // Driving unsorted
-      {
-        id: 'G0187',
-        logo: burro,
-        gig: 'Burro',
-        description:
-          'There are so many ways to deliver on the Burro app. Deliver Craigslist items, make store deliveries even help people move. Set a flexible schedule and make up to $1,400 a week.',
-        indeed: 'https://www.indeed.com/cmp/Burro/salaries/Delivery-Driver',
-        promo: '',
-        gigsite: 'https://getburro.com/drivers.html',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0188',
-        logo: grabr,
-        gig: 'Grabr',
-        description:
-          'Earn money while traveling. Travelers subsidize their trips by delivering a handful of items. They make up to $300 a trip and meet interesting locals along the way.',
-        indeed: 'https://www.producthunt.com/posts/grabr-2/reviews',
-        promo: '',
-        gigsite: 'https://grabr.io/en/travel',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0189',
-        logo: uber,
-        gig: 'DeliverThat',
-        description:
-          'DeliverThat is a food delivery app that has partnered with many well known restaraunts. Drivers earn competitive pay based on distance with tips included.',
-        indeed: 'https://www.indeed.com/cmp/Deliver-That/reviews',
-        promo: '',
-        gigsite: 'https://www.ideliverthat.com/driver',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0169',
-        logo: gopuff,
-        gig: 'GoPuff',
-        description:
-          'GoPuff is the largest and fastest convenience delivery app available. Customers order snacks, drinks, alcohol, personal care items and more. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel',
-        indeed: 'https://www.indeed.com/cmp/Gopuff/reviews',
-        promo: '',
-        gigsite:
-          'https://www.fountain.com/gopuff/apply/godrive-delivery-partner',
-        featured: false,
-        type: 'gig',
-      },
       {
         id: 'G0170',
         logo: deliv,
-        gig: 'DeLiv',
+        gig: 'DeLiv Driver',
         description:
-          'Same day delivery service helping retailers deliver their items to customers. Must be 18 Years old, have a car (1998 or newer) and have 1+ years of driving experience.',
+          'DeLiv is a Same day delivery service helping retailers deliver their items to customers. They have a schedule where you can book hours and deliver packages for up to $22/hr. No passengers or food. No mess or stress.',
         indeed: 'https://www.indeed.com/cmp/Deliv/reviews',
         promo: '',
         gigsite: 'https://www.deliv.co/drivers/',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0187',
+        logo: burro,
+        gig: 'Burro Driver',
+        description:
+          'Burro is an all in one delivery app for the Austin area. Deliver Craigslist items, make store deliveries even help people move. You can set a flexible schedule and they advertise "Drive for Burro and earn $45/hr with your pickup truck."',
+        indeed: 'https://www.indeed.com/cmp/Burro/salaries/Delivery-Driver',
+        promo: '',
+        gigsite: 'https://getburro.com/drivers.html',
         featured: false,
         type: 'gig',
       },
@@ -570,7 +569,7 @@ export const initialState = {
         logo: airbnb,
         gig: 'AirBnB Host',
         description:
-          'Rent out your home and/or rooms to travelers. AirBnB gives you full control of your availability, prices and house rules.',
+          'The app connecting millions of homeowners looking to list with millions of renters looking to travel. As a host, AirBnB gives you full control of your availability, prices and house rules. Sign up as a host and AirBnB lets you earn money opneing up your home to travelers.',
         indeed: 'https://www.indeed.com/cmp/Airbnb/reviews',
         promo: '',
         gigsite: 'https://www.airbnb.com/host/homes',

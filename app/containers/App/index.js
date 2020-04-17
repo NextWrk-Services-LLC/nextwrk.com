@@ -32,10 +32,13 @@ const AppWrapper = styled.div`
 export default function App() {
   return (
     <AppWrapper>
-      <Helmet titleTemplate="%s - NextWrk" defaultTitle="NextWrk">
+      <Helmet
+        titleTemplate="%s - Discover the Best Gig Jobs, Services and Deals to Make Faster, Easier Money"
+        defaultTitle="NextWrk"
+      >
         <meta
-          name="NextWrk App"
-          content="Connecting professionals to their best avenues for success in the gig economy"
+          name="description"
+          content="NextWrk connects professionals to their best avenues for success in the gig economy, be it through big names, like Uber, Lyft, DoorDash, Postmates and AirBnB, or lesser known gigs like Rent Like a Champion, HyreCar and SpotHero. We also expose our users to new Services and Deals to make the Gig Economy work for them!"
         />
       </Helmet>
       <Switch>

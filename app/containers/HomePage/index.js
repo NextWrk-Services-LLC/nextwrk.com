@@ -73,8 +73,11 @@ export function HomePage({ loading, error, gigs }) {
   return (
     <article>
       <Helmet>
-        <title>Make Easier Money</title>
-        <meta name="Homepage" content="Homepage for NextWrk.com" />
+        <title>Featured Gigs</title>
+        <meta
+          name="description"
+          content="NextWrk's Featured Gigs and Services. Discover the best gigs for developing extra streams of income, and the best services for maximizing your returns!"
+        />
       </Helmet>
       <Header />
       <div>
