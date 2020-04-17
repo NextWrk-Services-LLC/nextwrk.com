@@ -273,7 +273,7 @@ export const initialState = {
         logo: tommyrun,
         gig: 'TommyRun',
         description:
-          'TommyRun is an app that allows you to order building materials and have them delivered within hours .',
+          'TommyRun is an app that allows users to order building materials and have them delivered within hours. If you own a truck or van you can start earning money today as a TommyRunner',
         indeed: 'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
         promo: '',
         gigsite: 'https://tommyrun.com/become-a-driver/',
@@ -285,7 +285,7 @@ export const initialState = {
         logo: upship,
         gig: 'uShip',
         description:
-          'uShip makes shipping motorcycles, boats, and other large items fast and affordable by connecting you to our network of carriers who compete for your shipment.',
+          'uShip is a service that makes shipping motorcycles, boats, and other large items both fast and affordable. If you have the type of horsepower that can handles these deliveries, you can start making money as a uShip carrier.',
         indeed: 'https://www.glassdoor.com/Reviews/uShip-Reviews-E200164.htm',
         promo: '',
         gigsite: 'https://www.uship.com/register/',
@@ -309,9 +309,10 @@ export const initialState = {
         logo: postmates, // Food
         gig: 'Postmates Courier',
         description:
-          'Postmates drivers earn a living by delivering food, convenience items, and small office goods to local consumers.',
+          'Postmates is one of the fastest growing food-delivery apps, and is hiring delivery drivers! Get delivery requests from the Postmates app, navigate to the store or restaurant and deliver to the customer location.',
         indeed: 'https://www.indeed.com/cmp/Postmates/reviews',
-        promo: '',
+        promo:
+          'Complete a certain number of deliveries within 14 days and earn a guaranteed minimum payout (varies by location).',
         gigsite: 'https://fleet.postmates.com/',
         featured: false,
         type: 'gig',
@@ -321,7 +322,7 @@ export const initialState = {
         logo: doordash,
         gig: 'DoorDash Dasher',
         description:
-          'Doordash is a food delivery app that employs Dashers to Deliver goods.',
+          'Doordash is another gigantic food-delivery app hiring delivery drivers. Doordash Dashers schedule shifts and fulfill delivery requests from the DoorDash app',
         indeed: 'https://www.indeed.com/cmp/Doordash/reviews',
         promo: '',
         gigsite: 'https://www.doordash.com/dasher/signup/',
@@ -333,7 +334,7 @@ export const initialState = {
         logo: ubereats,
         gig: 'Uber Delivery Driver',
         description:
-          'UberEats drivers pick up food from local restaurants and deliver the orders to customers.',
+          'Another big player in the food-delivery scene, UberEats drivers pick up food from local restaurants and deliver the orders to customers. Some cities offer bike and scooter delivery in addition to driving delivery.',
         indeed:
           'https://www.indeed.com/cmp/Uber-Partner-Drivers/reviews?fjobtitle=Delivery+Driver',
         promo: '',
@@ -346,7 +347,7 @@ export const initialState = {
         logo: grubhub,
         gig: 'Grubhub',
         description:
-          'A food delivery service, similar to DoorDash and other options on this website.',
+          'Grubhub is another food-delivery service, similar to DoorDash and other options. Grubhub drivers get guaranteed minimum earnings and additional perks for performance.',
         indeed: 'https://www.indeed.com/cmp/Grubhub/reviews',
         promo: '',
         gigsite: 'https://driver.grubhub.com/',
@@ -356,9 +357,9 @@ export const initialState = {
       {
         id: 'G0024',
         logo: caviar,
-        gig: 'Caviar',
+        gig: 'Caviar Courier',
         description:
-          'Deliver food in your city and earn some extra cash. Experience the freedom of working whenever you want.',
+          'Caviar is a food-delivery service operating in over a dozen markets with a focus on higher end restaurants that they can develop seamless partnerships with, allowing them to fulfill orders faster. Caviar has no driver rating system, and compensates couriers on an "effort-based" algorithm',
         indeed: 'https://www.indeed.com/cmp/Caviar/reviews?fjobtitle=Courier',
         promo: '',
         gigsite: 'https://www.trycaviar.com/apply',
@@ -370,7 +371,7 @@ export const initialState = {
         logo: favor,
         gig: 'Favor',
         description:
-          'With Favor, you can deliver just about anything to customers and get paid for it.',
+          'With Favor, you can deliver just about anything to customers and get paid for it. Unlike other deliver gigs, Favor provides a $9 per hour base pay, though tips are deducted from this, and is available in 12 cities',
         indeed: 'https://www.indeed.com/cmp/Favor-Delivery/reviews',
         promo: '',
         gigsite: 'https://apply.favordelivery.com/',
@@ -382,7 +383,7 @@ export const initialState = {
         logo: zifty,
         gig: 'Zifty Driver',
         description:
-          'Delivery drivers. Zifty is an online delivery company that partners with local restaurants and brands to bring their goods straight to clients’ doors. Zifty is looking for enthusiastic delivery providers to make deliveries of food, movies, and other items to customers. ',
+          'Zifty is an online delivery company that partners with local restaurants and brands to bring their goods straight to clients’ doors. Zifty is looking for enthusiastic delivery providers to make deliveries of food, movies, and other items to customers.',
         indeed: 'https://www.indeed.com/cmp/Zifty.com/reviews',
         promo: '',
         gigsite: 'http://jobs.zifty.com/',
@@ -394,7 +395,7 @@ export const initialState = {
         logo: peach,
         gig: 'Peach',
         description:
-          'Peach focuses on carefully chosen dishes from the best lunch spots',
+          'Peach focuses on carefully chosen dishes from the best lunch spots. They offer generous compensation and minimal time commitment. Peach is available in Seattle, San Diego and Boston.',
         indeed: 'https://www.indeed.com/cmp/Peach/reviews',
         promo: '',
         gigsite: 'https://www.peachd.com/jobs/',
@@ -405,7 +406,8 @@ export const initialState = {
         id: 'G0183',
         logo: deliveroo,
         gig: 'Deliveroo',
-        description: '',
+        description:
+          'Deliveroo is a UK based food-delivery service.  Unfortunately it is not available in America, but if you live abroad Deliveroo might be right for you',
         indeed: 'https://www.indeed.com/cmp/Deliveroo/reviews',
         promo: '',
         gigsite: 'https://deliveroo.co.uk/apply',
@@ -556,9 +558,9 @@ export const initialState = {
         logo: neighbor,
         gig: 'Neighbor Storage',
         description:
-          'Got empty storage space? Earn money by giving that empty storage space a job. Rent out your basement, garage and even closets!',
+          'Got empty storage space? Earn money by giving that empty storage space a job. Start renting out your basement, garage and even closets to your neighbors today!',
         indeed: 'https://www.trustpilot.com/review/neighbor.com',
-        promo: 'Sign Up Through the Link Below and Get $50!',
+        promo: 'Sign Up for Neighbor Today and Get $50!',
         gigsite: 'https://www.neighbor.com/invited/nextwrk-39640',
         featured: true,
         type: 'gig',
