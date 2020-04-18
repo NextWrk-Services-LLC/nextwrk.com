@@ -33,7 +33,7 @@ import skipcart from './img/skipcart.png';
 import PICKUP from './img/PICKUP.png';
 import tommyrun from './img/tommyrun.png';
 import vrbo from './img/vrbo.png';
-import booking from './img/booking.png';
+// import booking from './img/booking.png';
 import upship from './img/upship.png';
 import grubhub from './img/grubhub.png';
 import caviar from './img/caviar.png';
@@ -277,6 +277,19 @@ export const initialState = {
           'https://www.glassdoor.com/Overview/Working-at-PICKUP-EI_IE1641897.11,17.htm',
         promo: '',
         gigsite: 'https://pickupnow.com/requirements/',
+        featured: false,
+        type: 'gig',
+      },
+      {
+        id: 'G0193',
+        logo: bungii,
+        gig: 'Bungii Driver',
+        description:
+          'If you own a truck and can do some heavy lifting, Bungii will help you earn up to $40/hour doing deliveries for people in your community. They ask for you to own a 2005 or newer and rachet straps, bungee cords and moving blankets to secure your deliveries.',
+        indeed:
+          'https://appgrooves.com/app/bungii-your-friend-w-a-truck-by-bungii-llc',
+        promo: '',
+        gigsite: 'https://bungii.com/',
         featured: false,
         type: 'gig',
       },
@@ -581,7 +594,7 @@ export const initialState = {
         logo: homeaway,
         gig: 'HomeAway',
         description:
-          'HomeAway is a vacation rental marketplace with more than 2,000,000 vacation rentals in 190 countries listed on its website.',
+          'HomeAway is a vacation rental marketplace with more than 2,000,000 vacation rentals in 190 countries listed on its website. Instead of leaving your vacation property vacant rent it out on HomeAway.',
         indeed: 'https://www.trustpilot.com/review/www.homeaway.com',
         promo: '',
         gigsite: 'https://www.homeaway.com/lyp',
@@ -593,7 +606,7 @@ export const initialState = {
         logo: ofs,
         gig: 'onefinestay',
         description:
-          'onefinestay offers high-end home-stays across the world with currently 5,000 homes and villas in its portfolio divided between two collections, City and Villa.',
+          'onefinestay offers high-end home-stays across the world with currently 5,000 homes and villas in its portfolio divided between two collections, City and Villa. Put that high end vacation property to work for you.',
         indeed: 'https://www.trustpilot.com/review/www.onefinestay.com',
         promo: '',
         gigsite: 'https://www.onefinestay.com/list-your-home/',
@@ -605,22 +618,10 @@ export const initialState = {
         logo: vrbo,
         gig: 'VRBO',
         description:
-          'VRBO is a service for homeowners to list their properties for short term rental',
+          'VRBO is a service for homeowners to list their properties for short term rental. If you have a vacation beach house, condo, cabin, or other property, quit wasting money while not in use. List is on VRBO and start earning.',
         indeed: 'https://www.consumeraffairs.com/online/vrbo.html',
         promo: '',
         gigsite: 'https://help.vrbo.com/category/List_Your_Property',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0172',
-        logo: booking,
-        gig: 'Booking.com',
-        description:
-          'Booking.com is a travel metasearch engine for lodging reservations.',
-        indeed: 'https://www.sitejabber.com/reviews/booking.com',
-        promo: '',
-        gigsite: 'https://join.booking.com/',
         featured: false,
         type: 'gig',
       },
@@ -629,7 +630,7 @@ export const initialState = {
         logo: turo,
         gig: 'Turo Car Rental',
         description:
-          'Instead of leaving your car in the garage all day, rent it out! Turo is a car rental service that connects renters with car owners.',
+          'Instead of leaving your car in the garage all day, rent it out! Turo is a car rental service that connects renters with car owners, and is available worldwide!',
         indeed: 'https://www.trustpilot.com/review/turo.com',
         promo: '',
         gigsite: 'https://turo.com/us/en/list-your-car',
@@ -641,7 +642,7 @@ export const initialState = {
         logo: getaround,
         gig: 'Getaround Car Rental',
         description:
-          'Instead of leaving your car in the garage all day, rent it out! Getaround is a car rental service that connects renters with car owners.',
+          'Getaround is another car rental service that connects renters with car owners. It is available in most major cities, and is a great way to make money with little effort.',
         indeed: 'https://www.yelp.com/biz/getaround-san-francisco',
         promo: '',
         gigsite: 'https://www.getaround.com/list',
@@ -652,7 +653,8 @@ export const initialState = {
         id: 'G0177',
         logo: hyrecar,
         gig: 'Hyrecar',
-        description: 'Rent out your car for others to drive with Uber or Lyft',
+        description:
+          'HyreCar is a service that allows ridesharers without a ride to rent cars. Because of this, your car is likely to rent quickly and for a long time. Check out HyreCar if you have a car collecting space in your driveway, or want to start ridesharing.',
         indeed: 'https://www.trustpilot.com/review/hyrecar.com',
         promo: '',
         gigsite: 'https://app.hyrecar.com/login?type=owner&form=signup',
@@ -664,7 +666,7 @@ export const initialState = {
         logo: spothero,
         gig: 'SpotHero',
         description:
-          'Own a parking space? Turn it into extra income while not in use',
+          'Own a parking space? Is it empty a majority of the day? Turn it into extra income with SpotHero. They simplify the process of parking in the city by allowing owners to rent out their empty spots!',
         indeed: 'https://www.trustpilot.com/review/spothero.com',
         promo: '',
         gigsite: 'https://spothero.com/sell-parking/rent-my-parking-space/',
@@ -687,7 +689,8 @@ export const initialState = {
         id: 'G0045', // Other rental
         logo: rentah,
         gig: 'Rentah',
-        description: 'Rentah facilitates renting to and from your neighbors',
+        description:
+          'Rentah facilitates renting to and from your neighbors! If you have some high price items, you can turn them into income by posting on Rentah. They mainly deal in the New York area, but offer services nationwide.',
         indeed:
           'https://www.glassdoor.com/Overview/Working-at-Rentah-EI_IE1432411.11,17.htm',
         promo: '',
@@ -698,9 +701,9 @@ export const initialState = {
       {
         id: 'G0067',
         logo: boatsetter,
-        gig: 'Boatsetter',
+        gig: 'Boatsetter Boat Rental',
         description:
-          'If you own a boat, then Boatsetter lets you rent it out — either with or without a captain.',
+          'If you own a boat, then Boatsetter lets you rent it out — either with or without a captain. Peace of mind and insurance is included in every rental, and you choose who rents your boat!',
         indeed: 'https://www.facebook.com/pg/Boatsetter/reviews/',
         promo: '',
         gigsite: 'https://www.boatsetter.com/boats/new',
@@ -710,8 +713,9 @@ export const initialState = {
       {
         id: 'G0066',
         logo: rvshare,
-        gig: 'RVShare',
-        description: 'A site that lets you rent out your RV',
+        gig: 'RVShare RV Rental',
+        description:
+          'Are you an outdoorsy person who owns an RV? RVshare will connect you with individuals looking to rent it out! Their platform reaches millions of users, they give you complete control of your rental and you could earn up to $40,000 in additional income per year!',
         indeed: 'https://www.trustpilot.com/review/rvshare.com',
         promo: '',
         gigsite: 'https://rvshare.com/list-your-rv',
@@ -721,8 +725,9 @@ export const initialState = {
       {
         id: 'G0191',
         logo: outdoorsy,
-        gig: 'Outdoorsy',
-        description: 'RV rental',
+        gig: 'Outdoorsy RV Rental',
+        description:
+          'Outdoorsy is another RV rental marketplace. They perform DMV checks on all driver, provide 24/7 roadside assistance and have a dedicated customer support team.',
         indeed: 'https://www.trustpilot.com/review/www.outdoorsy.com',
         promo: '',
         gigsite: 'https://www.outdoorsy.com/list-your-rv',
@@ -730,23 +735,11 @@ export const initialState = {
         type: 'gig',
       },
       {
-        id: 'G0193',
-        logo: bungii,
-        gig: 'Bungii',
-        description: 'On demand truck rental app',
-        indeed:
-          'https://appgrooves.com/app/bungii-your-friend-w-a-truck-by-bungii-llc',
-        promo: '',
-        gigsite: 'https://bungii.com/',
-        featured: false,
-        type: 'gig',
-      },
-      {
         id: 'G0194',
         logo: ridersshare,
-        gig: 'Riders Share',
+        gig: 'Riders Share Rental',
         description:
-          'List your motorcycle for free and make an average of $150 per booking. All listings are protected by an A rated insurance provider. We strive to turn only the safest riders into renters by using technology.',
+          'If you own a motercycle, and and it spends most of its time in your garage, Riders Share will connect you with drivers looking to rent it out. List your motorcycle for free and make an average of $150 per booking! All listings are protected by an A rated insurance provider.',
         indeed: 'https://www.facebook.com/pg/ridersshare/reviews/',
         promo: '',
         gigsite: 'https://www.riders-share.com/',
@@ -759,8 +752,9 @@ export const initialState = {
       {
         id: 'G0153',
         logo: bird,
-        gig: 'Bird Scooter Charger',
-        description: 'Become a Bird Flyer, charge scooters',
+        gig: 'Bird Flyer',
+        description:
+          'If you noticed Bird Scooters littering the streets of you city, you can turn that clutter into cash! Bird Flyers are paid to collect scooters at the end of the night, charge them, then disperse them in the morning. All you need is some free time and something to transport them.',
         indeed: 'https://www.reddit.com/r/birdcharger/',
         promo: '',
         gigsite: 'https://flyers.bird.co/',
@@ -771,7 +765,8 @@ export const initialState = {
         id: 'G0165',
         logo: lime,
         gig: 'Lime Juicer',
-        description: 'charge lime scooter',
+        description:
+          'Scooter charging is a popular, and lucrative, gig. If there are Lime Scooters in your area, Lime will pay you to become a juicer. Just collect them, charge them, and disperse them!',
         indeed:
           'https://www.glassdoor.com/Reviews/Lime-Juicer-Reviews-EI_IE1884794.0,4_KO5,11.htm',
         promo: '',
@@ -782,8 +777,9 @@ export const initialState = {
       {
         id: 'G0175',
         logo: spin,
-        gig: 'Spin Scooter Charger',
-        description: 'Charge Spin Scooters',
+        gig: 'Spin Charger',
+        description:
+          'Another player in the scooter game, Spin Chargers work like other charging gigs: collect, charge and disperse the scooters. You get paid for every scooter you charge.',
         indeed:
           'https://www.glassdoor.com/Overview/Working-at-Spin-EI_IE1838792.11,15.htm',
         promo: '',
@@ -794,8 +790,9 @@ export const initialState = {
       {
         id: 'G0176',
         logo: skip,
-        gig: 'Skip Scooter Charger',
-        description: 'Charge Skip Scooters',
+        gig: 'Skip Ranger',
+        description:
+          'Skip Scooters are located mainly in Virginia and Washington D.C, but if you live in that area they are willing to pay you to collect, charge and disperse their scooters.',
         indeed: 'https://www.yelp.com/biz/skip-scooter-rental-sf-san-francisco',
         promo: '',
         gigsite:
@@ -809,9 +806,9 @@ export const initialState = {
       {
         id: 'G0003',
         logo: rover,
-        gig: 'Rover Walker',
+        gig: 'Rover Walker/Sitter',
         description:
-          'Love animals? Get paid to watch dogs as a Sitter or walk dogs as a Walker through Rover!',
+          'Love animals? Wanna earn some extra money? Rover will pay you to watch dogs as a Sitter or walk dogs as a Walker. They offer flexibility and can help you earn up to $1,000 a month working with animals!',
         indeed:
           'https://www.indeed.com/cmp/Rover.com/reviews?fcountry=ALL&fjobtitle=Dog+Walker',
         promo: 'Sign Up Through the Link Below and Get $20!',
@@ -824,7 +821,7 @@ export const initialState = {
         logo: wag,
         gig: 'Wag Walker',
         description:
-          'Wag! is the #1 dog walking app to book a dog walker on-demand, or at your convenience.',
+          'Wag! is one of the largest dog walking apps. They offer flexibility, secure payment through Stripe, and donates money from 30 minute walks to feed shelter dogs.',
         indeed: 'https://www.indeed.com/cmp/Wag!-1/reviews',
         promo: '',
         gigsite: 'https://wagwalking.com/dog-walker',
@@ -839,7 +836,7 @@ export const initialState = {
         logo: taskrabbit,
         gig: 'TaskRabbit Tasker',
         description:
-          'TaskRabbit is a marketplace that matches freelance labor with local demand. Get paid to help with everyday tasks, like cleaning, moving, delivery and handyman work',
+          'TaskRabbit is a marketplace that matches freelance labor with local demand. You can get paid to help with everyday tasks, like cleaning, moving, delivery and handyman work, for individuals in your community.',
         indeed: 'https://www.indeed.com/cmp/Taskrabbit/reviews',
         promo: '',
         gigsite:
@@ -852,7 +849,7 @@ export const initialState = {
         logo: handy,
         gig: 'Handy Worker',
         description:
-          'Handy pays for being a home cleaner and handymen. It covers over 20 cities in North America, Canada, and the UK.',
+          'Handy pays for being a home cleaner and handymen. It covers over 20 cities in North America, Canada, and the UK. However, unlike TaskRabbit, they only accept applicants with professional experience in cleaning or handyman services.',
         indeed: 'https://www.indeed.com/cmp/Handy/reviews',
         promo: '',
         gigsite: 'https://www.handy.com/apply',
@@ -862,9 +859,9 @@ export const initialState = {
       {
         id: 'G0021',
         logo: wonolo,
-        gig: 'Wonolo',
+        gig: 'Wonolo Worker',
         description:
-          'Let Wonolo help fill your next shift from an on-demand pool of high-quality, local workers. Pricing is always transparent.',
+          'Wonolo hires workers to perform certain jobs, like Warehouse Operations, General Labor, Food Production, Cleaning and Merchandising, for different Employers. They are quickly expanding across the US and are available in most major cities.',
         indeed: 'https://www.indeed.com/cmp/Wonolo/reviews',
         promo: '',
         gigsite: 'https://www.wonolo.com/find-work',
@@ -874,9 +871,9 @@ export const initialState = {
       {
         id: 'G0022',
         logo: bellhops,
-        gig: 'Bellhops',
+        gig: 'Bellhops Mover',
         description:
-          'Get paid to pack boxes and move people into their new digs.',
+          'Bellhops is a moving service that eases the demands of moving by connecting capable workers with clients looking to pack up and move. As a mover, you will get paid to pack boxes and move people into their new digs.',
         indeed: 'https://www.indeed.com/cmp/Bellhops/reviews',
         promo: '',
         gigsite: 'https://www.getbellhops.com/being-a-bellhop/',
@@ -886,9 +883,9 @@ export const initialState = {
       {
         id: 'G0027',
         logo: dolly,
-        gig: 'Dolly',
+        gig: 'Dolly Helper',
         description:
-          'The Dolly service uses people that have vehicles for moving, or movers to do the heavy lifting if they don’t have a vehicle. ',
+          'The Dolly service is another moving service that pays people that have vehicles for moving, and movers to do the heavy lifting if they don’t have a vehicle, to help individuals in your community move in or out.',
         indeed: 'https://www.indeed.com/cmp/Dolly/reviews',
         promo: '',
         gigsite: 'https://dolly.com/helpers/',
@@ -898,8 +895,9 @@ export const initialState = {
       {
         id: 'G0164',
         logo: easymove,
-        gig: 'EasyMove',
-        description: 'Earn at least $2500 weekly Join Easymove partner program',
+        gig: 'EasyMove Driver',
+        description:
+          'Easymove is a delivery service offering to help users move bulky items from point A to point B. If you have a big car and can do some heavy lifting, they advertise you can make $2,500 a week as an Easymove partner.',
         indeed: 'https://www.trustpilot.com/review/www.easymove.co.uk',
         promo: '',
         gigsite: 'https://geteasymove.com/',
@@ -909,20 +907,21 @@ export const initialState = {
       {
         id: 'G0192',
         logo: lugg,
-        gig: 'Lugg',
-        description: 'On demand moving and furniture delivery',
+        gig: 'Lugg Lugger',
+        description:
+          'Convenient Moving and Delivering is what Lugg offers. If you own a truck, you can sign up to become a Lugger and earn up to $2.5k a week! No truck? No problem! If you can do some heavy lifting you can still sign up.',
         indeed: 'https://www.indeed.com/cmp/Lugg/reviews',
         promo: '',
-        gigsite: 'https://lugg.com/',
+        gigsite: 'https://lugg.com/become-a-lugger',
         featured: false,
         type: 'gig',
       },
       {
         id: 'G0151',
         logo: goshare,
-        gig: 'GoShare Delivery',
+        gig: 'GoShare Helper',
         description:
-          'GoShare specializes in delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you don’t have a truck you can apply as a helper.',
+          'GoShare specializes in delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you don’t have a truck you can apply as a helper. Depender on your driving situation, this gig can prove very lucrative.',
         indeed:
           'https://www.glassdoor.com/Reviews/GoShare-Reviews-E1779925.htm',
         promo: '',
@@ -1671,7 +1670,7 @@ export const initialState = {
         logo: mystro,
         gig: 'Mystro',
         description:
-          'Mystro is an app that orchestrates incoming passenger requests between the Uber and Lyft rideshare apps, so you can stop clicking back and forth',
+          'Mystro is an app that orchestrates incoming passenger requests between the Uber and Lyft rideshare apps, so you can stop clicking back and forth between the apps.',
         indeed:
           'https://play.google.com/store/apps/details?id=partners.driver.mystro&hl=en_US',
         promo: '',

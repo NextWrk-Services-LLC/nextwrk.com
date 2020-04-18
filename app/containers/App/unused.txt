@@ -1,4 +1,16 @@
       {
+        id: 'G0172',
+        logo: booking,
+        gig: 'Booking.com',
+        description:
+          'Booking.com is a travel metasearch engine for lodging reservations.',
+        indeed: 'https://www.sitejabber.com/reviews/booking.com',
+        promo: '',
+        gigsite: 'https://join.booking.com/',
+        featured: false,
+        type: 'gig',
+      },
+      {
         id: 'S0032',
         logo: uber,
         gig: 'Packir',
