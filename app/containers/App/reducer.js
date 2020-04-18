@@ -33,7 +33,6 @@ import skipcart from './img/skipcart.png';
 import PICKUP from './img/PICKUP.png';
 import tommyrun from './img/tommyrun.png';
 import vrbo from './img/vrbo.png';
-// import booking from './img/booking.png';
 import upship from './img/upship.png';
 import grubhub from './img/grubhub.png';
 import caviar from './img/caviar.png';
@@ -47,49 +46,36 @@ import care from './img/care.png';
 import bellhops from './img/bellhops.png';
 import wonolo from './img/wonolo.png';
 import etsy from './img/etsy.png';
-// import feastly from './img/feastly.png';
 import goshare from './img/goshare.png';
 import figureeight from './img/figureeight.png';
-// import freelancer from './img/freelancer.png';
 import gigwalk from './img/gigwalk.png';
 import hellotech from './img/hellotech.png';
 import bird from './img/bird.png';
 import burro from './img/burro.png';
-// import careguide from './img/careguide.png';
 import carelinx from './img/carelinx.png';
 import census from './img/census.png';
-// import closerlook from './img/closerlook.jpeg';
 import drizly from './img/drizly.png';
 import easymove from './img/easymove.png';
-// import everlance from './img/everlance.jpeg';
-import fetchmd from './img/fetchmd.png';
 import gbw from './img/gbw1.png';
 import grabbit from './img/grabbit.png';
 import grabr from './img/grabr.png';
 import helpr from './img/helpr1.png';
 import homeaglow from './img/homeaglow.png';
 import hyrecar from './img/hyrecar.png';
-import icracked from './img/icracked.png';
-// import jump from './img/jump.png';
 import lawnlove from './img/lawnlove.png';
 import networx from './img/networx.png';
 import octopus from './img/octopus.png';
 import peach from './img/peach.png';
-import pinacle from './img/pinacle.png';
 import priv from './img/priv.png';
-// import RIDE from './img/RIDE.png';
 import ridersshare from './img/ridersshare.png';
 import saucey from './img/saucey.png';
 import scootermap from './img/scootermap.png';
 import sherpashare from './img/sherpashare.png';
-// import sitter from './img/sitter.png';
 import sittercity from './img/sittercity.png';
-// import snapcare from './img/snapcare.png';
 import spare5 from './img/spare51.png';
 import spin from './img/spin.png';
 import taskeasy from './img/taskeasy1.png';
 import urbansitter from './img/urbansitter.png';
-// import wind from './img/wind.png';
 import yourmechanic from './img/yourmechanic1.png';
 import zeel from './img/zeel1.png';
 import zum from './img/zum.png';
@@ -102,11 +88,9 @@ import skip from './img/skip.png';
 import fancyhands from './img/fancyhands.png';
 import wrapify from './img/wrapify.png';
 import marketforce from './img/marketforce1.png';
-// import secretshopper from './img/secretshopper.png';
 import lugg from './img/lugg.png';
 import heal from './img/heal.png';
 import veryable from './img/veryable.png';
-// import migo from './img/migo.png';
 import spothero from './img/spothero1.png';
 import adway from './img/adway.png';
 import burpy from './img/burpy.png';
@@ -114,7 +98,6 @@ import takl from './img/takl1.png';
 import everlance from './img/everlance.png';
 import triplog from './img/triplog.png';
 import rvshare from './img/rvshare1.png';
-import intellishop from './img/intellishop1.png';
 import parkingpanda from './img/parkingpanda1.png';
 import lawnstarter from './img/lawnstarter.png';
 import nickelytics from './img/nickelytics.png';
@@ -126,11 +109,7 @@ import slingshot from './img/slingshot.png';
 import bungii from './img/bungii.png';
 import lime from './img/lime.png';
 import rentah from './img/rentah.png';
-// import doorman from './img/doorman.png';
 import hurdlr from './img/hurdlr.png';
-// import bdb from './img/bdb.png';
-// import bdb from './img/bdb.png';
-// Services
 import gridwise from './img/gridwise.png';
 import mystro from './img/mystro.png';
 import surge from './img/surge.png';
@@ -932,31 +911,33 @@ export const initialState = {
       {
         id: 'G0050',
         logo: takl,
-        gig: 'Takl',
-        description: 'Work chores and get paid',
+        gig: 'Takl Provider',
+        description:
+          'At Takl, you get paid to help others in your community complete small jobs and household chores. You can perform chores in twelve categories on your own time, and get paid fast through direct deposit.',
         indeed: 'https://www.indeed.com/cmp/Takl/reviews',
         promo: '',
         gigsite: 'https://app.takl.com/providers/register',
-        featured: false,
+        featured: true,
         type: 'gig',
       },
       {
         id: 'G0190',
         logo: networx,
-        gig: 'NetWorx',
-        description: 'Find local contractors and home improvement',
+        gig: 'NetWorx Pro',
+        description:
+          'NetWorx is looking for professionals offering contracting services like Carpentry, Pest Control, Fencing and Roofing. They connect you with local demand for these services, and help boost your bottom line.',
         indeed: 'https://www.glassdoor.com/Reviews/Networx-Reviews-E368391.htm',
         promo: '',
-        gigsite: 'https://www.networx.com/',
+        gigsite: 'https://www.networx.com/signup',
         featured: false,
         type: 'gig',
       },
       {
         id: 'G0051', // Lawn Care
         logo: taskeasy,
-        gig: 'TaskEasy',
+        gig: 'TaskEasy Contractor',
         description:
-          'TaskEasy freelancers offer lawnmowing, gardening, and landscaping services.',
+          'TaskEasy employs landscaping professionals to provide lawnmowing, gardening, and landscaping services for individuals in the community. If you know your way around a lawn, and are looking to gain more customers, TaskEasy will help out.',
         indeed:
           'https://www.glassdoor.com/Overview/Working-at-TaskEasy-EI_IE1030594.11,19.htm',
         promo: '',
@@ -968,7 +949,8 @@ export const initialState = {
         id: 'G0149',
         logo: lawnstarter,
         gig: 'LawnStarter',
-        description: 'Yard work for proessionals in the lawn care industry',
+        description:
+          'LawnStarter can grow your lawn care business by over 30%. By connecting you with new customers in your area at no cost, you can put a stop to slow days and grow your revenue.',
         indeed:
           'https://www.indeed.com/cmp/Lawnstarter/reviews?ftopic=paybenefits',
         promo: '',
@@ -979,8 +961,9 @@ export const initialState = {
       {
         id: 'G0150',
         logo: plowzandmowz,
-        gig: 'Plowz and Mowz',
-        description: 'Gig Site for lawncare professionals',
+        gig: 'Plowz & Mowz Provider',
+        description:
+          'Plowz & Mowz is another service offering more customers to lawncare professionals. They require $1M in General Liability Insurance and professional equipment, but if you have that they advertise they can grow your business by 30%',
         indeed: 'https://www.trustpilot.com/review/www.plowzandmowz.com',
         promo: '',
         gigsite: 'https://order.plowzandmowz.com/provider-onboard',
@@ -990,8 +973,9 @@ export const initialState = {
       {
         id: 'G0152',
         logo: lawnlove,
-        gig: 'Lawn Love',
-        description: 'Lawn care gig website',
+        gig: 'Lawn Love Pro',
+        description:
+          'If you have a truck and equipment, sign up to be a Lawn Pro and get connected with Lawn Care jobs in your community. You can choose which ones to work and get paid through the app within 72 hours.',
         indeed: 'https://www.indeed.com/cmp/Lawn-Love/reviews',
         promo: '',
         gigsite: 'https://lawnlove.com/apply',
@@ -999,10 +983,24 @@ export const initialState = {
         type: 'gig',
       },
       {
+        id: 'G0142', // Manufacturing
+        logo: veryable,
+        gig: 'Veryable',
+        description:
+          'Veryable is a great way for manufacturing workers the leverage the gig economy. When clients book a project through their service, the labor is filled from their pool of workers. Flexible work, daily pay',
+        indeed:
+          'https://www.indeed.com/cmp/Veryable-3/reviews?ftopic=paybenefits',
+        promo: '',
+        gigsite: 'https://veryableops.com/',
+        featured: false,
+        type: 'gig',
+      },
+      {
         id: 'G0162', // Cleaning
         logo: homeaglow,
-        gig: 'Homeaglow',
-        description: 'Clean houses',
+        gig: 'Homeaglow Cleaner',
+        description:
+          'Homeaglow connects residential cleaners with clients in their community. You can set your own rates, make your own schedule, and get paid weekly.',
         indeed: 'https://www.indeed.com/cmp/Homeaglow/reviews',
         promo: '',
         gigsite: 'https://www.homeaglow.com/apply',
@@ -1024,8 +1022,9 @@ export const initialState = {
       {
         id: 'G0167',
         logo: sittercity,
-        gig: 'SitterCity',
-        description: 'Babysitters',
+        gig: 'Sittercity Child Care',
+        description:
+          'If you are a babysitter, nanny or child care professional, Sittercity can connect you with individuals in your community looking for your services.',
         indeed: 'https://www.indeed.com/cmp/Sittercity/reviews',
         promo: '',
         gigsite: 'https://www.sittercity.com/sitter/account',
@@ -1035,11 +1034,12 @@ export const initialState = {
       {
         id: 'G0195',
         logo: carelinx,
-        gig: 'CareLinx',
-        description: 'Elder Care',
+        gig: 'CareLinx Caregiver',
+        description:
+          'CareLinx connects Caregivers with elders seeking care nearby. They have a network of over 300,000 caregivers and offer flexible hours, great pay and professional development.',
         indeed: 'https://www.indeed.com/cmp/Carelinx/reviews',
         promo: '',
-        gigsite: 'https://www.carelinx.com/',
+        gigsite: 'https://www.carelinx.com/register/caregiver',
         featured: false,
         type: 'gig',
       },
@@ -1048,7 +1048,7 @@ export const initialState = {
         logo: helpr,
         gig: 'Helpr',
         description:
-          'An app that connects parents with reliable childcare help (i.e., babysitting), Helpr is ideal for those with relevant experience looking for occasional part-time work.',
+          'Helpr is an app that connects parents with reliable childcare help (i.e., babysitting), It is is ideal for those with relevant experience looking for occasional part-time work.',
         indeed: 'https://www.glassdoor.com/Reviews/Helpr-Reviews-E1305149.htm',
         promo: '',
         gigsite: 'https://www.helpr-app.com/become-a-helpr-now',
@@ -1060,11 +1060,11 @@ export const initialState = {
         logo: urbansitter,
         gig: 'UrbanSitter',
         description:
-          'UrbanSitter lets you find and book babysitters and nannies of people you know and trust.',
+          'UrbanSitter lets users find and book babysitters and nannies in their communities. If you are a nanny or babysitter, it is a great way to pick up new clients!',
         indeed: 'https://www.indeed.com/cmp/Urbansitter/reviews',
         promo: '',
         gigsite: 'https://www.urbansitter.com/signup/sitter',
-        featured: false,
+        featured: true,
         type: 'gig',
       },
       //
@@ -1073,9 +1073,9 @@ export const initialState = {
       {
         id: 'G0026',
         logo: figureeight,
-        gig: 'Figure Eight',
+        gig: 'Figure Eight Contributor',
         description:
-          'If you need labels and annotations for your machine learning project, we can help. You upload your unlabeled data, with the rules you need for your machine learning project, and launch.',
+          'When someone need labels and annotations for a machine learning project, Figure Eight steps up. Users upload unlabeled data, with the rules they need for the project, and contributers get paid to mold the data for the model.',
         indeed:
           'https://www.glassdoor.com/Reviews/Figure-Eight-Reviews-E553483.htm',
         promo: '',
@@ -1086,24 +1086,12 @@ export const initialState = {
       {
         id: 'G0035',
         logo: hellotech,
-        gig: 'HelloTech',
+        gig: 'HelloTech Tech',
         description:
-          'HelloTech gives experts in the tech industry a platform to provide services for individuals in their homes and businesses. ',
+          'Have a plethora of technical knowledge? Wanna get paid to help those less technically advanced? HelloTech connects you with users in your area looking for tech help. You set your own schedule, and get paid weekly',
         indeed: 'https://www.indeed.com/cmp/Hellotech/reviews?fcountry=ALL',
         promo: '',
         gigsite: 'https://us.hellotech.com/techs',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0159',
-        logo: icracked,
-        gig: 'iCracked',
-        description:
-          'Phone repair. iCracked provides local on-demand iPhone, iPad, and Galaxy repair services. iCracked specializes in on-site screen replacements.',
-        indeed: 'https://www.indeed.com/cmp/Icracked/reviews',
-        promo: '',
-        gigsite: '',
         featured: false,
         type: 'gig',
       },
@@ -1113,9 +1101,9 @@ export const initialState = {
       {
         id: 'G0028',
         logo: etsy,
-        gig: 'Etsy',
+        gig: 'Etsy Seller',
         description:
-          'Etsy provides a marketplace for people to sell their handmade, vintage, or creative goods online.',
+          'Etsy provides a marketplace for people to sell their handmade, vintage, or creative goods online. If you have an artsy side, look into getting paid for it on Etsy!',
         indeed: 'https://www.consumeraffairs.com/online/etsy.html',
         promo: '',
         gigsite: 'https://www.etsy.com/join',
@@ -1128,9 +1116,9 @@ export const initialState = {
       {
         id: 'G0029',
         logo: fancyhands,
-        gig: 'Fancy Hands',
+        gig: 'Fancy Hands Assistant',
         description:
-          'Fancy Hands is a team of US-based assistants at your fingertips. Use any device, at any time of day, and our assistants will tackle anything on your to-do list!',
+          'Want to become a virtual assistant, offering services to entrepenuers and businesses from wherever you want? Fancy Hands is a team of US-based virtual assistants, and a great place to start!',
         indeed: 'https://www.indeed.com/cmp/Fancy-Hands/reviews',
         promo: '',
         gigsite: 'https://www.fancyhands.com/jobs',
@@ -1140,18 +1128,6 @@ export const initialState = {
       //
       //
       // Cooking Gigs
-      {
-        id: 'G0031',
-        logo: uber,
-        gig: 'ChefsFeed',
-        description:
-          'If you are a chef and want to host meals and you are a foodie looking for great chef, Feastly is a platform that brings them both together. ',
-        indeed: 'https://www.indeed.com/cmp/Feastly/reviews',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
       //
       //
       // Mystery Shoppers
@@ -1172,7 +1148,7 @@ export const initialState = {
         logo: marketforce,
         gig: 'Market Force',
         description:
-          'At Market Force, you’ll complete mystery shops for banks, restaurants, and stores in order to help those businesses thrive.',
+          'At Market Force, you’ll complete mystery shops for banks, restaurants, and stores. You get paid to provide feedback on your visits, which those companies then use to improve.',
         indeed: 'https://www.indeed.com/cmp/Market-Force/reviews',
         promo: '',
         gigsite: 'https://www.marketforce.com/become-a-mystery-shopper',
@@ -1182,35 +1158,12 @@ export const initialState = {
       {
         id: 'G0071',
         logo: gbw,
-        gig: 'GBW',
-        description: 'GBW Mystery Shopping',
+        gig: 'GBW Evaluator',
+        description:
+          'GBW pays individuals to shop at globally recognized brands and provide feedback on the experience. They have organized over 14 million mystery shops for some of the largest brands.',
         indeed: 'https://www.trustpilot.com/review/www.gapbuster.com',
         promo: '',
         gigsite: 'https://gbw.solutions/becomeanevaluator',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0072',
-        logo: pinacle,
-        gig: 'Pinnacle',
-        description: 'Pinnacle Mystery Shopping',
-        indeed: 'https://www.facebook.com/pg/PinnacleMysteryShopping/reviews/',
-        promo: '',
-        gigsite:
-          'https://www.sassieshop.com/sassie/SassieShopperSignup/Signup.php?EmsID=WlA%2BdrA%2Fwt4%3D',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0075',
-        logo: intellishop,
-        gig: 'Intellishop',
-        description: 'Intellishop Mystery Shopping',
-        indeed:
-          'https://www.glassdoor.com/Reviews/IntelliShop-Reviews-E676994.htm',
-        promo: '',
-        gigsite: 'https://www.intelli-shop.com/shoppers/get-started',
         featured: false,
         type: 'gig',
       },
@@ -1220,7 +1173,7 @@ export const initialState = {
         logo: spare5,
         gig: 'Spare5',
         description:
-          'Spare5 is an app which pays you small amounts of money by completing micro-tasks on your phone. Most tasks only take a few seconds, and the app pays on average $0.02 – $0.05 per task.',
+          'Spare5 is an app which pays you small amounts of money for completing micro-tasks on your phone. Most tasks only take a few seconds, and the app pays on average $0.02 – $0.05 per task.',
         indeed: 'https://onlinezerotohero.com/spare5-review',
         promo: '',
         gigsite: 'https://app.spare5.com/fives/sign_in',
@@ -1231,12 +1184,12 @@ export const initialState = {
         id: 'G0147',
         logo: census,
         gig: 'Census Taker',
-        description: 'Sign up to be a census taker',
+        description:
+          'The United States Government needs a lot of help taking the census every year. Sign up to be a census taker and you can earn between $12 and $30 an hour, depending on your location.',
         indeed:
           'https://www.indeed.com/cmp/U.S.-Census-Bureau/reviews?fcountry=ALL&fjobtitle=Census+Taker',
         promo: '',
-        gigsite:
-          'https://recruitment.2020census.gov/ats/careersite/createprofilelite.aspx?c=census&site=1',
+        gigsite: 'https://2020census.gov/en/jobs.html',
         featured: false,
         type: 'gig',
       },
@@ -1244,9 +1197,9 @@ export const initialState = {
       {
         id: 'G0055',
         logo: yourmechanic,
-        gig: 'YourMechanic',
+        gig: 'YourMechanic Mechanic',
         description:
-          'Providing car repairs and maintenance carried out at customers’ homes, YourMechanic is a way for people with auto repair skills to leverage the gig economy.',
+          'YourMechanic offers at home mechanic services to users, and is a great way for people with auto repair skills to leverage the gig economy. You can make extra money providing car repairs and maitenance at the homes of clients.',
         indeed: 'https://www.trustpilot.com/review/yourmechanic.com',
         promo: '',
         gigsite: 'https://www.yourmechanic.com/automotive-technician-jobs',
@@ -1257,8 +1210,9 @@ export const initialState = {
       {
         id: 'G0056',
         logo: zeel,
-        gig: 'Zeel',
-        description: 'Give massages',
+        gig: 'Zeel Massage Therapist',
+        description:
+          'Zeel is a service offering at home massages to users, and is a phenomenal way for massage therapists to leverage the gig economy. 18% gratuity is added to every in-home appointment and customers pay for late cancelations.',
         indeed: 'https://www.indeed.com/cmp/Zeel/reviews',
         promo: '',
         gigsite: 'https://www.zeel.com/apply',
@@ -1268,9 +1222,9 @@ export const initialState = {
       {
         id: 'G0064',
         logo: soothe,
-        gig: 'Soothe',
+        gig: 'Soothe Therapist',
         description:
-          'Gig work for massage therapists, including deep tissue, sports, and couples massage work. ',
+          'Gig work for massage therapists, including deep tissue, sports, and couples massage work. Soothe advertises 2-3x industry standard pay and schedule flexibility.',
         indeed: 'https://www.indeed.com/cmp/Soothe-Inc/reviews',
         promo: '',
         gigsite: 'https://www.soothe.com/apply',
@@ -1281,7 +1235,7 @@ export const initialState = {
       {
         id: 'G0160',
         logo: priv,
-        gig: 'Priv',
+        gig: 'Priv Pro',
         description:
           'Beauty. Priv connects customers on-demand with freelance beauty and wellness professionals, taking a 20% commission. Priv services include makeup, blowout, haircut, nails/manicure, massage, personal training, men’s grooming, spray tan and facials. “Priv Pros” select shifts and kinds of jobs they choose.',
         indeed: 'https://www.indeed.com/cmp/Priv/reviews?fcountry=ALL',
@@ -1290,40 +1244,16 @@ export const initialState = {
         featured: false,
         type: 'gig',
       },
-      // Manufacturing
-      {
-        id: 'G0142',
-        logo: veryable,
-        gig: 'Veryable',
-        description: 'Flexible work, daily pay',
-        indeed:
-          'https://www.indeed.com/cmp/Veryable-3/reviews?ftopic=paybenefits',
-        promo: '',
-        gigsite: 'https://veryableops.com/',
-        featured: false,
-        type: 'gig',
-      },
       // Nurses
       {
         id: 'G0179',
         logo: heal,
         gig: 'Heal.com',
-        description: 'Healthcare professionals',
+        description:
+          'Gig work for healthcare professionals. Heal.com lets healthcare professionals spend quality time with patients in the privacy, comfort and convenience of their environment with the full capabilities of the doctor’s office',
         indeed: 'https://www.indeed.com/cmp/Heal/reviews',
         promo: '',
         gigsite: 'https://heal.com/medical-team/',
-        featured: false,
-        type: 'gig',
-      },
-      {
-        id: 'G0180',
-        logo: fetchmd,
-        gig: 'Fetch MD',
-        description: 'An Uber app for healthcare',
-        indeed:
-          'https://www.facebook.com/pg/RangerHealth/reviews/?referrer=page_recommendations_see_all',
-        promo: '',
-        gigsite: 'https://www.fetchmd.com/',
         featured: false,
         type: 'gig',
       },
@@ -1332,7 +1262,7 @@ export const initialState = {
         logo: slingshot,
         gig: 'Slingshot Health',
         description:
-          'Slingshot Health helps you find new patients and fill open gaps in your schedule, growing your practice. It’s FREE to sign up.',
+          'Slingshot Health helps healthcare profesionals find new patients and fill open gaps in their schedules, growing their practice. It’s free to sign up.',
         indeed:
           'https://www.glassdoor.com/Reviews/Slingshot-Health-Reviews-E2439803.htm',
         promo: '',
@@ -1657,7 +1587,7 @@ export const initialState = {
         logo: gridwise,
         gig: 'Gridwise',
         description:
-          'Gridwise is an intelligence platform which provides information on ridesharing insights to customers, including both rideshare and taxi drivers, to help drivers improve efficiency and profits on the road.',
+          'Gridwise is an intelligence platform which provides information on ridesharing insights to users, helping drivers improve efficiency and profits on the road.',
         indeed:
           'https://appgrooves.com/app/gridwise-earn-more-by-driving-smarter-by-swerv-technologies-llc/negative',
         promo: '',
@@ -1675,7 +1605,7 @@ export const initialState = {
           'https://play.google.com/store/apps/details?id=partners.driver.mystro&hl=en_US',
         promo: '',
         gigsite: 'https://mystrodriver.com/download',
-        featured: false,
+        featured: true,
         type: 'service',
       },
       {
@@ -1683,10 +1613,11 @@ export const initialState = {
         logo: surge,
         gig: 'Surge 2x',
         description:
-          'By using Surge you are able to only drive during surges. You will be able to out perform other top drivers in your city, drastically increasing your profit.',
+          'Surge tracks Uber surges in your area. By using Surge you are able to only drive during surges, drastically increasing your profit.',
         indeed: 'https://apps.apple.com/us/app/surge-2x/id986581500',
         promo: '',
-        gigsite: 'http://www.surgeapp.org/',
+        gigsite:
+          'https://apps.apple.com/us/app/surge-surge-tracking-for-uber/id986581500',
         featured: true,
         type: 'service',
       },
@@ -1695,7 +1626,7 @@ export const initialState = {
         logo: sherpashare,
         gig: 'SherpaShare',
         description:
-          'SherpaShare is the ultimate rideshare driver assistant that helps drivers reduce taxes, manage expenses, and boost earnings.',
+          'SherpaShare is a rideshare driver assistant that helps drivers reduce taxes, manage expenses, and boost earnings.',
         indeed:
           'https://apps.apple.com/us/app/sherpashare-driver-assistant/id975868991',
         promo: '',
@@ -1712,7 +1643,7 @@ export const initialState = {
         indeed: 'https://reviews.financesonline.com/p/triplog/',
         promo: '',
         gigsite: 'https://triplogmileage.com/',
-        featured: false,
+        featured: true,
         type: 'service',
       },
       {
@@ -1720,7 +1651,7 @@ export const initialState = {
         logo: everlance,
         gig: 'Everlance',
         description:
-          'Automatic mileage tracker and expense log for taxes or reimbursements',
+          'Everlance is another automatic mileage tracker and expense log for taxes or reimbursements for gig workers.',
         indeed:
           'https://appgrooves.com/app/everlance-mileage-log-expense-and-receipt-tracker-by-everlance-inc',
         promo: '',
@@ -1732,7 +1663,8 @@ export const initialState = {
         id: 'S0030',
         logo: grabbit,
         gig: 'Grabb-it',
-        description: 'Advertising for rideshare drivers to make more',
+        description:
+          'Grabb-it helps rideshare drivers make more. Sign up and they give you a free screen to display advertisements outside your window, then pay you for your driving time.',
         indeed: 'https://www.trustpilot.com/review/www.thesocialdelivery.com',
         promo: '',
         gigsite: 'https://grabb.io/',
@@ -1743,7 +1675,8 @@ export const initialState = {
         id: 'S0031',
         logo: hurdlr,
         gig: 'Hurdlr',
-        description: 'Mileage and expense tracker',
+        description:
+          'Hurdlr is an automatic business expenses and mileage tracker. They have cumulatively saved over $300M in taxes.',
         indeed: 'https://investorjunkie.com/reviews/hurdlr/',
         promo: '',
         gigsite: 'https://www.hurdlr.com/',
@@ -1767,7 +1700,7 @@ export const initialState = {
         logo: nickelytics,
         gig: 'Nickelytics',
         description:
-          'Nickelytics’ process is simple, we put ads on vehicles that drive through busy city streets. Additionally, we screen these drivers and ensure they hit at least 30 miles a day so your brand is broadcasted everywhere.',
+          'Nickelytics’ process is simple, they put ads on vehicles that drive through busy city streets. If you are working as a rideshare or delivery driver, you spend a lot of time on the road, Nickelytics helps you earn even more for your time.',
         indeed: '',
         promo: '',
         gigsite: 'https://www.nickelytics.com/',
@@ -1779,7 +1712,7 @@ export const initialState = {
         logo: wrapify,
         gig: 'Wrapify',
         description:
-          'Earn extra income by wrapping your vehicle in eye-catching advertising.',
+          'Wrapify will help you earn extra income if you are frequently driving by wrapping your vehicle in eye-catching advertising.',
         indeed: 'https://appgrooves.com/app/wrapify-by-wrapify-inc/',
         promo: '',
         gigsite: 'https://wrapify.com/',
@@ -1790,11 +1723,12 @@ export const initialState = {
         id: 'S0033',
         logo: octopus,
         gig: 'Play Octopus',
-        description: 'rideshare advertising and entertainment',
+        description:
+          'Octopus provides rideshare drivers with interactive tablets and accessories. Riders enjoy games and cash prizes, and they run short ads so drivers can earn up to $100 extra a month!',
         indeed: 'https://www.playoctopus.com/driver-reviews/',
         promo: '',
         gigsite: 'https://www.playoctopus.com/drivers/',
-        featured: false,
+        featured: true,
         type: 'service',
       },
       {
@@ -1802,7 +1736,7 @@ export const initialState = {
         logo: stickerride,
         gig: 'Sticker Ride',
         description:
-          'StickerRide helps you make money as you drive! You can compensate for your vehicle expenses such as gas, car washes, and parking by driving around town.',
+          'StickerRide helps you make money as you drive! Drive around town and get compensated for your vehicle expenses such as gas, car washes, and parking.',
         indeed: 'https://apps.apple.com/us/app/stickerride/id870548113',
         promo: '',
         gigsite: 'https://stickerride.com/',
@@ -1815,12 +1749,12 @@ export const initialState = {
         logo: scootermap,
         gig: 'ScooterMap',
         description:
-          'All scooters on one app. Make more money as a scooter charger',
+          'Jump Scooters, Limes, Birds, Bolts, Skip... there are so many scooter companies you want to charge for! ScooterMap has a simple solution: all scooters on one app.',
         indeed:
           'https://apps.apple.com/us/app/scooter-map-all-the-scooters/id1437698355',
         promo: '',
         gigsite: 'https://scootermap.com/',
-        featured: false,
+        featured: true,
         type: 'service',
       },
       // Products and classes
