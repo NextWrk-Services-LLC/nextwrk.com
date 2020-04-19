@@ -14,6 +14,7 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+import H1 from 'components/H1';
 import makeSelectFreelancePage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -28,6 +29,7 @@ export function FreelancePage() {
         <title>Find Freelance Jobs</title>
         <meta name="FreelancePage" content="Displays Freelance Networks" />
       </Helmet>
+      <H1>Coming Soon!</H1>
     </div>
   );
 }

@@ -8,9 +8,10 @@
 import React from 'react';
 
 import A from 'components/A';
+import Ul from 'components/Ul';
+import Li from './Li';
 import Wrapper from './Wrapper';
 import Img from './Img';
-import Ul from './Ul';
 import SocialLink from './SocialLink';
 import youtube from './youtube.png';
 import twitter from './twitter.png';
@@ -24,22 +25,26 @@ function Footer() {
       <Wrapper>
         <div>
           <Ul>
-            <li>
+            <Li>
               <A href="/gigs">Gigs</A>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A href="/services">Services</A>
-            </li>
+            </Li>
+            <Li>
+              <A href="/freelance">Freelance Networks</A>
+            </Li>
+            <Li>
+              <A href="/deals">Deals</A>
+            </Li>
           </Ul>
         </div>
         <div>
-          <p>
-            Email: contact@nextwrk.com
-            <br />
-            Phone: (678) 699-6447
-            <br />
-            Atlanta, GA 30313
-          </p>
+          <Ul>
+            <Li>Email: contact@nextwrk.com</Li>
+            <Li>Phone: (678) 699-6447</Li>
+            <Li>Atlanta, GA 30313</Li>
+          </Ul>
         </div>
         <div>
           <SocialLink

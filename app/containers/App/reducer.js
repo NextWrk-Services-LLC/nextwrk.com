@@ -1590,6 +1590,18 @@ export const initialState = {
       //   featured: false,
       //    type: 'service',  subtypes: [''],
       // },
+      {
+        id: 'D0001',
+        logo: uber,
+        gig: 'Acorns',
+        description: '',
+        indeed: '',
+        promo: 'They get $5 and We get $5',
+        gigsite: 'https://acorns.com/invite/SGU9A3',
+        featured: false,
+        type: 'deal',
+        subtypes: [''],
+      },
     ],
   },
 };

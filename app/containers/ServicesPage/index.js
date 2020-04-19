@@ -24,10 +24,10 @@ import reducer from './reducer';
 import saga from './saga';
 import { changeFilter } from './actions';
 import AllServices from './AllServices';
-import Header from './Header';
-import NavBarLink from './NavBarLink';
-import Wrapper from './Wrapper';
-import ContentWrapper from './ContentWrapper';
+// import Header from './Header';
+// import NavBarLink from './NavBarLink';
+// import Wrapper from './Wrapper';
+// import ContentWrapper from './ContentWrapper';
 
 const key = 'servicesPage';
 
@@ -35,11 +35,11 @@ export function ServicesPage({
   loading,
   error,
   gigs,
-  showAll,
-  showDriving,
-  showTaxes,
-  showRental,
-  showOther,
+  // showAll,
+  // showDriving,
+  // showTaxes,
+  // showRental,
+  // showOther,
 }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
@@ -58,7 +58,7 @@ export function ServicesPage({
         <title>Gig Job Services</title>
         <meta name="ServicesPage" content="Displays Gig Services" />
       </Helmet>
-      <Wrapper>
+      {/* <Wrapper>
         <ContentWrapper>
           <NavBarLink onClick={showAll}>All</NavBarLink>
           <NavBarLink onClick={showDriving}>Driving</NavBarLink>
@@ -67,7 +67,7 @@ export function ServicesPage({
           <NavBarLink onClick={showOther}>Other</NavBarLink>
         </ContentWrapper>
       </Wrapper>
-      <Header />
+      <Header /> */}
       <AllServices services={servicesProps} />
     </div>
   );
@@ -77,11 +77,11 @@ ServicesPage.propTypes = {
   loading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   gigs: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
-  showAll: PropTypes.func,
-  showDriving: PropTypes.func,
-  showTaxes: PropTypes.func,
-  showRental: PropTypes.func,
-  showOther: PropTypes.func,
+  // showAll: PropTypes.func,
+  // showDriving: PropTypes.func,
+  // showTaxes: PropTypes.func,
+  // showRental: PropTypes.func,
+  // showOther: PropTypes.func,
 };
 
 const mapStateToProps = createStructuredSelector({

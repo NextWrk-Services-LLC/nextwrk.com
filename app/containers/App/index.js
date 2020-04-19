@@ -13,10 +13,10 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-// import DealsPage from 'containers/DealsPage/Loadable';
+import DealsPage from 'containers/DealsPage/Loadable';
 import ServicesPage from 'containers/ServicesPage/Loadable';
 import GigsPage from 'containers/GigsPage/Loadable';
-// import FreelancePage from 'containers/FreelancePage/Loadable';
+import FreelancePage from 'containers/FreelancePage/Loadable';
 import Footer from 'components/Footer';
 
 import GlobalStyle from '../../global-styles';
@@ -25,8 +25,11 @@ const AppWrapper = styled.div`
   max-width: 1140px;
   margin: 0 auto;
   display: flex;
-  padding: calc(64px + 1%) 16px;
+  padding: 70px 16px;
   flex-direction: column;
+  @media (max-width: 768px) {
+    padding: 5px 8px;
+  }
 `;
 
 export default function App() {
@@ -45,10 +48,8 @@ export default function App() {
         <Route exact path="/" component={HomePage} />
         <Route path="/services" component={ServicesPage} />
         <Route path="/gigs" component={GigsPage} />
-        {/* <Route path="/features" component={FeaturePage} />
         <Route path="/deals" component={DealsPage} />
-
-        <Route path="/freelance" component={FreelancePage} /> */}
+        <Route path="/freelance" component={FreelancePage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
       <Footer />

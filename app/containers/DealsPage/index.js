@@ -14,6 +14,7 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+import H1 from 'components/H1';
 import makeSelectDealsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -28,6 +29,7 @@ export function DealsPage() {
         <title>Get More Money</title>
         <meta name="DealsPage" content="Displays Offered Deals" />
       </Helmet>
+      <H1>Coming Soon!</H1>
     </div>
   );
 }
