@@ -149,7 +149,7 @@ export const initialState = {
         gigsite: 'https://www.lyft.com/drive-with-lyft',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0037',
@@ -163,7 +163,7 @@ export const initialState = {
         gigsite: 'https://www.hopskipdrive.com/driver-sign-up',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0168',
@@ -176,7 +176,7 @@ export const initialState = {
         gigsite: 'https://www.ridezum.com/drive.html',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0054',
@@ -189,7 +189,7 @@ export const initialState = {
         gigsite: 'https://www.wingz.me/drivers-2/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0163',
@@ -202,7 +202,7 @@ export const initialState = {
         gigsite: 'https://driver.groundlink.com/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0007', // Delivery
@@ -215,7 +215,7 @@ export const initialState = {
         gigsite: 'https://my.roadie.com/drive/sign-up/basic-info',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0188',
@@ -229,7 +229,7 @@ export const initialState = {
           'https://grabr.io/invitation/mark-foster?utm_campaign=web&utm_source=referral_program&utm_medium=copy_link',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0010',
@@ -242,7 +242,7 @@ export const initialState = {
         gigsite: 'https://flex.amazon.com/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0143',
@@ -255,7 +255,7 @@ export const initialState = {
         gigsite: 'https://skipcart.com/drivers/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0155',
@@ -269,7 +269,7 @@ export const initialState = {
         gigsite: 'https://pickupnow.com/requirements/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0193',
@@ -283,7 +283,7 @@ export const initialState = {
         gigsite: 'https://bungii.com/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0157',
@@ -296,7 +296,7 @@ export const initialState = {
         gigsite: 'https://tommyrun.app.link/vanKPpCzN5',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0161',
@@ -309,7 +309,7 @@ export const initialState = {
         gigsite: 'https://www.uship.com/register/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0182',
@@ -322,7 +322,7 @@ export const initialState = {
         gigsite: 'https://www.dispatchit.com/drivers/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0189',
@@ -335,7 +335,7 @@ export const initialState = {
         gigsite: 'https://www.ideliverthat.com/driver',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0013',
@@ -349,7 +349,7 @@ export const initialState = {
         gigsite: 'https://fleet.postmates.com/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0014',
@@ -362,7 +362,7 @@ export const initialState = {
         gigsite: 'https://www.doordash.com/dasher/signup/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0016',
@@ -376,7 +376,7 @@ export const initialState = {
         gigsite: 'https://www.uber.com/a/signup/drive/deliver/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0034',
@@ -389,7 +389,7 @@ export const initialState = {
         gigsite: 'https://driver.grubhub.com/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0024',
@@ -402,7 +402,7 @@ export const initialState = {
         gigsite: 'https://www.trycaviar.com/apply',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0030',
@@ -415,7 +415,7 @@ export const initialState = {
         gigsite: 'https://apply.favordelivery.com/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0148',
@@ -428,7 +428,7 @@ export const initialState = {
         gigsite: 'http://jobs.zifty.com/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0185',
@@ -441,7 +441,7 @@ export const initialState = {
         gigsite: 'https://www.peachd.com/jobs/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0183',
@@ -454,7 +454,7 @@ export const initialState = {
         gigsite: 'https://deliveroo.co.uk/apply',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0169',
@@ -468,7 +468,7 @@ export const initialState = {
           'https://www.fountain.com/gopuff/apply/godrive-delivery-partner',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0181', // Alcohol
@@ -482,7 +482,7 @@ export const initialState = {
         gigsite: 'https://drizly.com/liquor-stores-near-me',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0184',
@@ -495,7 +495,7 @@ export const initialState = {
         gigsite: 'https://www.saucey.com/apply',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0008', // Shopping
@@ -508,7 +508,7 @@ export const initialState = {
         gigsite: 'https://shoppers.instacart.com/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0046',
@@ -521,7 +521,7 @@ export const initialState = {
         gigsite: 'https://www.shipt.com/be-a-shopper/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0186',
@@ -534,7 +534,7 @@ export const initialState = {
         gigsite: 'https://shoppers.burpy.com/join-as-shopper',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0170',
@@ -547,7 +547,7 @@ export const initialState = {
         gigsite: 'https://www.deliv.co/drivers/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       {
         id: 'G0187',
@@ -560,7 +560,7 @@ export const initialState = {
         gigsite: 'https://getburro.com/drivers.html',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['driving'],
       },
       //
       //
@@ -576,7 +576,7 @@ export const initialState = {
         gigsite: 'https://rentlikeachampion.com/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0004',
@@ -589,7 +589,7 @@ export const initialState = {
         gigsite: 'https://www.neighbor.com/invited/nextwrk-39640',
         featured: true,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0012',
@@ -602,7 +602,7 @@ export const initialState = {
         gigsite: 'https://www.airbnb.com/host/homes',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0036',
@@ -615,7 +615,7 @@ export const initialState = {
         gigsite: 'https://www.homeaway.com/lyp',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0041',
@@ -628,7 +628,7 @@ export const initialState = {
         gigsite: 'https://www.onefinestay.com/list-your-home/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0053',
@@ -641,7 +641,7 @@ export const initialState = {
         gigsite: 'https://help.vrbo.com/category/List_Your_Property',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0017', // Car rentals
@@ -654,7 +654,7 @@ export const initialState = {
         gigsite: 'https://turo.com/us/en/list-your-car',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0018',
@@ -668,7 +668,7 @@ export const initialState = {
           'https://www.getaround.com/invite/2c776f91-e44f-5695-bae1-784dd3b6ae18',
         featured: true,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0177',
@@ -681,7 +681,7 @@ export const initialState = {
         gigsite: 'https://app.hyrecar.com/login?type=owner&form=signup',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0049', // Parking Rental
@@ -694,7 +694,7 @@ export const initialState = {
         gigsite: 'https://spothero.com/sell-parking/rent-my-parking-space/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0058',
@@ -707,7 +707,7 @@ export const initialState = {
         gigsite: 'https://www.parkingpanda.com/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0045', // Other rental
@@ -721,7 +721,7 @@ export const initialState = {
         gigsite: 'https://www.rentah.com/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0067',
@@ -734,7 +734,7 @@ export const initialState = {
         gigsite: 'https://www.boatsetter.com/referral/o/sqxkrtk',
         featured: true,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0066',
@@ -747,7 +747,7 @@ export const initialState = {
         gigsite: 'https://rvshare.com/list-your-rv',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0191',
@@ -760,7 +760,7 @@ export const initialState = {
         gigsite: 'https://www.outdoorsy.com/invite/g6o1lb',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       {
         id: 'G0194',
@@ -773,7 +773,7 @@ export const initialState = {
         gigsite: 'www.riders-share.com/welcome/markf+QdETy',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['rental'],
       },
       //
       //
@@ -789,7 +789,7 @@ export const initialState = {
         gigsite: 'https://flyers.bird.co/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other', 'scooter'],
       },
       {
         id: 'G0165',
@@ -803,7 +803,7 @@ export const initialState = {
         gigsite: 'https://lime.bike/juicer',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other', 'scooter'],
       },
       {
         id: 'G0175',
@@ -817,7 +817,7 @@ export const initialState = {
         gigsite: 'https://www.spin.app/charger',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other', 'scooter'],
       },
       {
         id: 'G0176',
@@ -831,7 +831,7 @@ export const initialState = {
           'https://www.fountain.com/skip-scooters/apply/general-location-ranger',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other', 'scooter'],
       },
       //
       //
@@ -848,7 +848,7 @@ export const initialState = {
         gigsite: 'http://share.rover.com/SWhzJ',
         featured: true,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor', 'dog'],
       },
       {
         id: 'G0015',
@@ -861,7 +861,7 @@ export const initialState = {
         gigsite: 'https://wagwalking.com/dog-walker',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor', 'dog'],
       },
       //
       //
@@ -878,7 +878,7 @@ export const initialState = {
           'https://support.taskrabbit.com/hc/en-us/articles/360031918292-How-Do-I-Become-a-Tasker-',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0020',
@@ -891,7 +891,7 @@ export const initialState = {
         gigsite: 'https://www.handy.com/apply',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0021',
@@ -904,7 +904,7 @@ export const initialState = {
         gigsite: 'https://www.wonolo.com/find-work',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0022',
@@ -917,7 +917,7 @@ export const initialState = {
         gigsite: 'https://www.getbellhops.com/being-a-bellhop/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0027',
@@ -930,7 +930,7 @@ export const initialState = {
         gigsite: 'https://dolly.com/helpers/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0164',
@@ -943,7 +943,7 @@ export const initialState = {
         gigsite: 'https://geteasymove.com/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0192',
@@ -956,7 +956,7 @@ export const initialState = {
         gigsite: 'https://lugg.com/become-a-lugger',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0151',
@@ -970,7 +970,7 @@ export const initialState = {
         gigsite: 'https://goshare.app.link/Mark_Foster_MF6447',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0050',
@@ -983,7 +983,7 @@ export const initialState = {
         gigsite: 'https://app.takl.com/providers/register',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0190',
@@ -996,7 +996,7 @@ export const initialState = {
         gigsite: 'https://www.networx.com/signup',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0051', // Lawn Care
@@ -1010,7 +1010,7 @@ export const initialState = {
         gigsite: 'https://www.taskeasy.com/contractors',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0149',
@@ -1024,7 +1024,7 @@ export const initialState = {
         gigsite: 'https://www.lawnstarter.com/lawn-care-businesses',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0150',
@@ -1037,7 +1037,7 @@ export const initialState = {
         gigsite: 'https://order.plowzandmowz.com/provider-onboard',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0152',
@@ -1050,7 +1050,7 @@ export const initialState = {
         gigsite: 'https://lawnlove.com/apply',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0142', // Manufacturing
@@ -1064,7 +1064,7 @@ export const initialState = {
         gigsite: 'https://veryable.app.link/pqxf1qmEN5',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0162', // Cleaning
@@ -1077,7 +1077,7 @@ export const initialState = {
         gigsite: 'https://www.homeaglow.com/apply',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0023', // Less intensive labor
@@ -1090,7 +1090,7 @@ export const initialState = {
         gigsite: 'https://www.care.com/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0167',
@@ -1103,7 +1103,7 @@ export const initialState = {
         gigsite: 'https://www.sittercity.com/sitter/account',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0195',
@@ -1116,7 +1116,7 @@ export const initialState = {
         gigsite: 'https://www.carelinx.com/p/nextwrs',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0061',
@@ -1129,7 +1129,7 @@ export const initialState = {
         gigsite: 'https://www.helpr-app.com/become-a-helpr-now',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       {
         id: 'G0154',
@@ -1142,7 +1142,7 @@ export const initialState = {
         gigsite: 'https://link.urbansitter.com/P2JqXJSHN5',
         featured: true,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       //
       //
@@ -1159,7 +1159,7 @@ export const initialState = {
         gigsite: 'https://www.figure-eight.com/contributor/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other'],
       },
       {
         id: 'G0035',
@@ -1172,7 +1172,7 @@ export const initialState = {
         gigsite: 'http://fbuy.me/v/markfoster314',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other'],
       },
       //
       //
@@ -1188,7 +1188,7 @@ export const initialState = {
         gigsite: 'https://www.etsy.com/join',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other'],
       },
       //
       //
@@ -1204,7 +1204,7 @@ export const initialState = {
         gigsite: 'https://www.fancyhands.com/jobs',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other'],
       },
       //
       //
@@ -1223,7 +1223,7 @@ export const initialState = {
         gigsite: 'http://www.gigwalk.com/gigwalkers/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other'],
       },
       {
         id: 'G0070',
@@ -1236,7 +1236,7 @@ export const initialState = {
         gigsite: 'https://www.marketforce.com/become-a-mystery-shopper',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other'],
       },
       {
         id: 'G0071',
@@ -1249,7 +1249,7 @@ export const initialState = {
         gigsite: 'https://gbw.solutions/becomeanevaluator',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other'],
       },
       // Bullshit work
       {
@@ -1263,7 +1263,7 @@ export const initialState = {
         gigsite: 'https://app.spare5.com/fives/sign_in',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other'],
       },
       {
         id: 'G0147',
@@ -1277,7 +1277,7 @@ export const initialState = {
         gigsite: 'https://2020census.gov/en/jobs.html',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other'],
       },
       // Mechanics
       {
@@ -1291,7 +1291,7 @@ export const initialState = {
         gigsite: 'https://www.yourmechanic.com/rl/IyhJRw1860682',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['labor'],
       },
       // Massages
       {
@@ -1305,7 +1305,7 @@ export const initialState = {
         gigsite: 'https://www.zeel.com/apply',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other'],
       },
       {
         id: 'G0064',
@@ -1318,7 +1318,7 @@ export const initialState = {
         gigsite: 'https://www.soothe.com/apply',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other'],
       },
       // Beauty
       {
@@ -1332,7 +1332,7 @@ export const initialState = {
         gigsite: 'https://gopriv.com/pro',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other'],
       },
       // Nurses
       {
@@ -1346,7 +1346,7 @@ export const initialState = {
         gigsite: 'https://heal.com/medical-team/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other'],
       },
       {
         id: 'G0178',
@@ -1360,7 +1360,7 @@ export const initialState = {
         gigsite: 'https://www.slingshothealth.com/providers/',
         featured: false,
         type: 'gig',
-        subtypes: [''],
+        subtypes: ['other'],
       },
       //
       //
@@ -1686,7 +1686,7 @@ export const initialState = {
         gigsite: 'https://gridwise.io/',
         featured: true,
         type: 'service',
-        subtypes: [''],
+        subtypes: ['driver', 'rideshare'],
       },
       {
         id: 'S0002',
@@ -1700,7 +1700,7 @@ export const initialState = {
         gigsite: 'https://mystrodriver.com/registration-page-half-photo',
         featured: true,
         type: 'service',
-        subtypes: [''],
+        subtypes: ['driver', 'rideshare'],
       },
       {
         id: 'S0003',
@@ -1714,7 +1714,7 @@ export const initialState = {
           'https://apps.apple.com/us/app/surge-surge-tracking-for-uber/id986581500',
         featured: true,
         type: 'service',
-        subtypes: [''],
+        subtypes: ['driver', 'rideshare'],
       },
       {
         id: 'S0004',
@@ -1728,7 +1728,7 @@ export const initialState = {
         gigsite: 'https://www.sherpashare.com/',
         featured: false,
         type: 'service',
-        subtypes: [''],
+        subtypes: ['driver', 'rideshare'],
       },
       {
         id: 'S0005',
@@ -1741,7 +1741,7 @@ export const initialState = {
         gigsite: 'http://trplg.co/389373',
         featured: true,
         type: 'service',
-        subtypes: [''],
+        subtypes: ['business'],
       },
       {
         id: 'S0006',
@@ -1755,7 +1755,7 @@ export const initialState = {
         gigsite: 'https://www.everlance.com/',
         featured: false,
         type: 'service',
-        subtypes: [''],
+        subtypes: ['driver', 'business'],
       },
       {
         id: 'S0030',
@@ -1768,7 +1768,7 @@ export const initialState = {
         gigsite: 'https://grabb.io/',
         featured: false,
         type: 'service',
-        subtypes: [''],
+        subtypes: ['driver', 'rideshare'],
       },
       {
         id: 'S0031',
@@ -1781,7 +1781,7 @@ export const initialState = {
         gigsite: 'https://www.hurdlr.com/',
         featured: false,
         type: 'service',
-        subtypes: [''],
+        subtypes: ['driver', 'business'],
       },
       {
         id: 'S0038',
@@ -1794,7 +1794,7 @@ export const initialState = {
         gigsite: 'https://www.adwayusa.com/',
         featured: false,
         type: 'service',
-        subtypes: [''],
+        subtypes: ['driver'],
       },
       {
         id: 'S0039',
@@ -1807,7 +1807,7 @@ export const initialState = {
         gigsite: 'https://www.nickelytics.com/',
         featured: false,
         type: 'service',
-        subtypes: [''],
+        subtypes: ['driver'],
       },
       {
         id: 'S0040',
@@ -1820,7 +1820,7 @@ export const initialState = {
         gigsite: 'https://wrapify.com/',
         featured: false,
         type: 'service',
-        subtypes: [''],
+        subtypes: ['driver'],
       },
       {
         id: 'S0033',
@@ -1833,7 +1833,7 @@ export const initialState = {
         gigsite: 'https://www.playoctopus.com/drivers/',
         featured: true,
         type: 'service',
-        subtypes: [''],
+        subtypes: ['driver'],
       },
       {
         id: 'S0037',
@@ -1846,7 +1846,7 @@ export const initialState = {
         gigsite: 'https://stickerride.com/',
         featured: false,
         type: 'service',
-        subtypes: [''],
+        subtypes: ['driver'],
       },
       // Scooter apps
       {
@@ -1861,7 +1861,7 @@ export const initialState = {
         gigsite: 'https://scootermap.com/?sc_referral=62591ccf',
         featured: true,
         type: 'service',
-        subtypes: [''],
+        subtypes: ['scooter'],
       },
       // Products and classes
       //

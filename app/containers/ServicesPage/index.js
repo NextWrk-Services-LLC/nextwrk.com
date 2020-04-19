@@ -37,7 +37,7 @@ export function ServicesPage({
   gigs,
   showAll,
   showDriving,
-  showLabor,
+  showTaxes,
   showRental,
   showOther,
 }) {
@@ -62,7 +62,7 @@ export function ServicesPage({
         <ContentWrapper>
           <NavBarLink onClick={showAll}>All</NavBarLink>
           <NavBarLink onClick={showDriving}>Driving</NavBarLink>
-          <NavBarLink onClick={showLabor}>Labor</NavBarLink>
+          <NavBarLink onClick={showTaxes}>Taxes</NavBarLink>
           <NavBarLink onClick={showRental}>Rental</NavBarLink>
           <NavBarLink onClick={showOther}>Other</NavBarLink>
         </ContentWrapper>
@@ -79,7 +79,7 @@ ServicesPage.propTypes = {
   gigs: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
   showAll: PropTypes.func,
   showDriving: PropTypes.func,
-  showLabor: PropTypes.func,
+  showTaxes: PropTypes.func,
   showRental: PropTypes.func,
   showOther: PropTypes.func,
 };
@@ -94,8 +94,8 @@ const mapStateToProps = createStructuredSelector({
 function mapDispatchToProps(dispatch) {
   return {
     showAll: () => dispatch(changeFilter('all')),
-    showDriving: () => dispatch(changeFilter('driving')),
-    showLabor: () => dispatch(changeFilter('labor')),
+    showDriving: () => dispatch(changeFilter('driver')),
+    showTaxes: () => dispatch(changeFilter('business')),
     showRental: () => dispatch(changeFilter('rental')),
     showOther: () => dispatch(changeFilter('other')),
   };

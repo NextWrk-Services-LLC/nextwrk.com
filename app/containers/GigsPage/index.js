@@ -28,6 +28,10 @@ import Wrapper from './Wrapper';
 import ContentWrapper from './ContentWrapper';
 import { changeFilter } from './actions';
 import AllGigs from './AllGigs';
+import DrivingGigs from './DrivingGigs';
+import LaborGigs from './LaborGigs';
+import RentalGigs from './RentalGigs';
+import OtherGigs from './OtherGigs';
 
 const key = 'gigsPage';
 
@@ -45,12 +49,57 @@ export function GigsPage({
   useInjectSaga({ key, saga });
 
   const allGigs = gigs.filter(obj => obj.type === 'gig');
+  const drivingGigs = allGigs.filter(obj => obj.subtypes.includes('driving'));
+  const laborGigs = allGigs.filter(obj => obj.subtypes.includes('labor'));
+  const rentalGigs = allGigs.filter(obj => obj.subtypes.includes('rental'));
+  const otherGigs = allGigs.filter(obj => obj.subtypes.includes('other'));
 
   const gigsProps = {
     loading,
     error,
     gigs: allGigs,
   };
+
+  const drivingProps = {
+    loading,
+    error,
+    gigs: drivingGigs,
+  };
+
+  const laborProps = {
+    loading,
+    error,
+    gigs: laborGigs,
+  };
+
+  const rentalProps = {
+    loading,
+    error,
+    gigs: rentalGigs,
+  };
+
+  const otherProps = {
+    loading,
+    error,
+    gigs: otherGigs,
+  };
+
+  function switchGigs(param) {
+    switch (param) {
+      case 'all':
+        return <AllGigs gigs={gigsProps} />;
+      case 'driving':
+        return <DrivingGigs gigs={drivingProps} />;
+      case 'labor':
+        return <LaborGigs gigs={laborProps} />;
+      case 'rental':
+        return <RentalGigs gigs={rentalProps} />;
+      case 'other':
+        return <OtherGigs gigs={otherProps} />;
+      default:
+        return <AllGigs gigs={gigsProps} />;
+    }
+  }
 
   return (
     <div>
@@ -68,7 +117,7 @@ export function GigsPage({
         </ContentWrapper>
       </Wrapper>
       <Header />
-      <AllGigs gigs={gigsProps} />
+      {switchGigs('all')}
     </div>
   );
 }
