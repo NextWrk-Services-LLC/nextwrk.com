@@ -11,6 +11,10 @@ const Wrapper = styled.li`
   -moz-box-shadow: 1px 1px 3px grey;
   -webkit-box-shadow: 1px 1px 3px grey;
   box-shadow: 1px 1px 3px grey;
+  @media (max-width: 768px) {
+    padding: 5px 10px;
+    max-width: 150px;
+  }
 `;
 
 export default Wrapper;
