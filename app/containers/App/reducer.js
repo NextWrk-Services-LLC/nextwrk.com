@@ -113,6 +113,7 @@ import hurdlr from './img/hurdlr.png';
 import gridwise from './img/gridwise.png';
 import mystro from './img/mystro.png';
 import surge from './img/surge.png';
+import deliverthat from './img/deliverthat.png';
 
 // The initial state of the App
 export const initialState = {
@@ -131,9 +132,8 @@ export const initialState = {
         description:
           'The grandaddy of all gig jobs. The taxi of the 21st century. As one of the largest ridesharing apps, Uber can turn your daily commute into a money maker, or help you score some extra cash while you cruise around town.',
         indeed: 'https://www.indeed.com/cmp/Uber/reviews',
-        promo:
-          'Sign Up With Promo Code PRGREY and Get $20 When You Complete a Trip',
-        gigsite: 'uber.com/drive/',
+        promo: '',
+        gigsite: 'https://www.uber.com/us/en/drive/',
         featured: true,
         type: 'gig',
       },
@@ -142,7 +142,7 @@ export const initialState = {
         logo: lyft,
         gig: 'Lyft Driver',
         description:
-          'Another behemoth ridesharing app. Lyft boasts a lower barrier of entry and higher tips on average than Uber (although Uber can offer more through higher surges). Give it a shot!',
+          'Another behemoth ridesharing app. Lyft boasts a lower barrier of entry and higher tips on average than Uber (although Uber can offer more through higher surges). They also have Lyft Express Drive, a car rental service meaning you can be a Lyft driver even if you have no car!',
         indeed: 'https://www.indeed.com/cmp/Lyft/reviews',
         promo: '',
         gigsite: 'https://www.lyft.com/drive-with-lyft',
@@ -217,8 +217,9 @@ export const initialState = {
         description:
           'Earn money while traveling! Grabr lets travelers subsidize their trips by delivering a handful of items. You can earn $200+ every time you travel abroad. If you are taking a trip soon, check out Grabr to see if you can earn some extra cash',
         indeed: 'https://www.producthunt.com/posts/grabr-2/reviews',
-        promo: '',
-        gigsite: 'https://grabr.io/en/travel',
+        promo: 'Sign Up Below and Get $10!',
+        gigsite:
+          'https://grabr.io/invitation/mark-foster?utm_campaign=web&utm_source=referral_program&utm_medium=copy_link',
         featured: false,
         type: 'gig',
       },
@@ -267,7 +268,7 @@ export const initialState = {
           'If you own a truck and can do some heavy lifting, Bungii will help you earn up to $40/hour doing deliveries for people in your community. They ask for you to own a 2005 or newer and rachet straps, bungee cords and moving blankets to secure your deliveries.',
         indeed:
           'https://appgrooves.com/app/bungii-your-friend-w-a-truck-by-bungii-llc',
-        promo: '',
+        promo: 'Sign Up With Promo Code 5XDKA and get $10!',
         gigsite: 'https://bungii.com/',
         featured: false,
         type: 'gig',
@@ -279,8 +280,8 @@ export const initialState = {
         description:
           'TommyRun is an app that allows users to order building materials and have them delivered within hours. If you own a truck or van you can start earning money today as a TommyRunner',
         indeed: 'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
-        promo: '',
-        gigsite: 'https://tommyrun.com/become-a-driver/',
+        promo: 'Sign Up and Get a $25 Credit!',
+        gigsite: 'https://tommyrun.app.link/vanKPpCzN5',
         featured: false,
         type: 'gig',
       },
@@ -310,7 +311,7 @@ export const initialState = {
       },
       {
         id: 'G0189',
-        logo: uber,
+        logo: deliverthat,
         gig: 'DeliverThat Driver',
         description:
           'DeliverThat is a food delivery app that has partnered with well known restaraunts like QDoba, Zoes Kitchen, Boston Market and Firehouse. Delivery comissions start with a base amount, then increase based on distance and size.',
@@ -538,10 +539,9 @@ export const initialState = {
         description:
           'AirBnb for sporting events! Live near a college football stadium or major sporting event? Make some extra money renting your home out to eager fans traveling for games in your hometown.',
         indeed: 'https://www.trustpilot.com/review/rentlikeachampion.com',
-        promo:
-          'Sign Up With Promo Code XXXXX and Get $20 After Your First Rental',
+        promo: '',
         gigsite: 'https://rentlikeachampion.com/',
-        featured: true,
+        featured: false,
         type: 'gig',
       },
       {
@@ -621,11 +621,12 @@ export const initialState = {
         logo: getaround,
         gig: 'Getaround Car Rental',
         description:
-          'Getaround is another car rental service that connects renters with car owners. It is available in most major cities, and is a great way to make money with little effort.',
+          'Getaround is a car rental service that connects renters with car owners. It is available in most major cities, and is a great way to make money with little effort.',
         indeed: 'https://www.yelp.com/biz/getaround-san-francisco',
-        promo: '',
-        gigsite: 'https://www.getaround.com/list',
-        featured: false,
+        promo: 'Sign Up and Get $20 Rental Credit!',
+        gigsite:
+          'https://www.getaround.com/invite/2c776f91-e44f-5695-bae1-784dd3b6ae18',
+        featured: true,
         type: 'gig',
       },
       {
@@ -684,9 +685,9 @@ export const initialState = {
         description:
           'If you own a boat, then Boatsetter lets you rent it out — either with or without a captain. Peace of mind and insurance is included in every rental, and you choose who rents your boat!',
         indeed: 'https://www.facebook.com/pg/Boatsetter/reviews/',
-        promo: '',
-        gigsite: 'https://www.boatsetter.com/boats/new',
-        featured: false,
+        promo: 'List Your Boat and Get $100 Added to Your First Rental!',
+        gigsite: 'https://www.boatsetter.com/referral/o/sqxkrtk',
+        featured: true,
         type: 'gig',
       },
       {
@@ -708,8 +709,8 @@ export const initialState = {
         description:
           'Outdoorsy is another RV rental marketplace. They perform DMV checks on all driver, provide 24/7 roadside assistance and have a dedicated customer support team.',
         indeed: 'https://www.trustpilot.com/review/www.outdoorsy.com',
-        promo: '',
-        gigsite: 'https://www.outdoorsy.com/list-your-rv',
+        promo: 'Sign Up and Get $50 Off Your First Trip!',
+        gigsite: 'https://www.outdoorsy.com/invite/g6o1lb',
         featured: false,
         type: 'gig',
       },
@@ -720,8 +721,8 @@ export const initialState = {
         description:
           'If you own a motercycle, and and it spends most of its time in your garage, Riders Share will connect you with drivers looking to rent it out. List your motorcycle for free and make an average of $150 per booking! All listings are protected by an A rated insurance provider.',
         indeed: 'https://www.facebook.com/pg/ridersshare/reviews/',
-        promo: '',
-        gigsite: 'https://www.riders-share.com/',
+        promo: 'Sign Up and Get $25 Off Your First Trip!',
+        gigsite: 'www.riders-share.com/welcome/markf+QdETy',
         featured: false,
         type: 'gig',
       },
@@ -802,7 +803,7 @@ export const initialState = {
         description:
           'Wag! is one of the largest dog walking apps. They offer flexibility, secure payment through Stripe, and donates money from 30 minute walks to feed shelter dogs.',
         indeed: 'https://www.indeed.com/cmp/Wag!-1/reviews',
-        promo: '',
+        promo: 'Sign Up and Get a Free Walk!',
         gigsite: 'https://wagwalking.com/dog-walker',
         featured: false,
         type: 'gig',
@@ -842,7 +843,7 @@ export const initialState = {
         description:
           'Wonolo hires workers to perform certain jobs, like Warehouse Operations, General Labor, Food Production, Cleaning and Merchandising, for different Employers. They are quickly expanding across the US and are available in most major cities.',
         indeed: 'https://www.indeed.com/cmp/Wonolo/reviews',
-        promo: '',
+        promo: 'Earn a $100 Bonus When You Accept a Job Through Wonolo!',
         gigsite: 'https://www.wonolo.com/find-work',
         featured: false,
         type: 'gig',
@@ -903,8 +904,8 @@ export const initialState = {
           'GoShare specializes in delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you don’t have a truck you can apply as a helper. Depender on your driving situation, this gig can prove very lucrative.',
         indeed:
           'https://www.glassdoor.com/Reviews/GoShare-Reviews-E1779925.htm',
-        promo: '',
-        gigsite: 'https://www.goshare.co/trucks/drivers/apply',
+        promo: 'Sign Up Below and Receieve $10!',
+        gigsite: 'https://goshare.app.link/Mark_Foster_MF6447',
         featured: false,
         type: 'gig',
       },
@@ -917,7 +918,7 @@ export const initialState = {
         indeed: 'https://www.indeed.com/cmp/Takl/reviews',
         promo: '',
         gigsite: 'https://app.takl.com/providers/register',
-        featured: true,
+        featured: false,
         type: 'gig',
       },
       {
@@ -991,7 +992,7 @@ export const initialState = {
         indeed:
           'https://www.indeed.com/cmp/Veryable-3/reviews?ftopic=paybenefits',
         promo: '',
-        gigsite: 'https://veryableops.com/',
+        gigsite: 'https://veryable.app.link/pqxf1qmEN5',
         featured: false,
         type: 'gig',
       },
@@ -1038,8 +1039,8 @@ export const initialState = {
         description:
           'CareLinx connects Caregivers with elders seeking care nearby. They have a network of over 300,000 caregivers and offer flexible hours, great pay and professional development.',
         indeed: 'https://www.indeed.com/cmp/Carelinx/reviews',
-        promo: '',
-        gigsite: 'https://www.carelinx.com/register/caregiver',
+        promo: 'Sign Up Below and Get a Free Background Check!',
+        gigsite: 'https://www.carelinx.com/p/nextwrs',
         featured: false,
         type: 'gig',
       },
@@ -1062,8 +1063,8 @@ export const initialState = {
         description:
           'UrbanSitter lets users find and book babysitters and nannies in their communities. If you are a nanny or babysitter, it is a great way to pick up new clients!',
         indeed: 'https://www.indeed.com/cmp/Urbansitter/reviews',
-        promo: '',
-        gigsite: 'https://www.urbansitter.com/signup/sitter',
+        promo: 'Sign Up and Get $25 Credit!',
+        gigsite: 'https://link.urbansitter.com/P2JqXJSHN5',
         featured: true,
         type: 'gig',
       },
@@ -1090,8 +1091,8 @@ export const initialState = {
         description:
           'Have a plethora of technical knowledge? Wanna get paid to help those less technically advanced? HelloTech connects you with users in your area looking for tech help. You set your own schedule, and get paid weekly',
         indeed: 'https://www.indeed.com/cmp/Hellotech/reviews?fcountry=ALL',
-        promo: '',
-        gigsite: 'https://us.hellotech.com/techs',
+        promo: 'Sign Up and Get $10!',
+        gigsite: 'http://fbuy.me/v/markfoster314',
         featured: false,
         type: 'gig',
       },
@@ -1201,8 +1202,8 @@ export const initialState = {
         description:
           'YourMechanic offers at home mechanic services to users, and is a great way for people with auto repair skills to leverage the gig economy. You can make extra money providing car repairs and maitenance at the homes of clients.',
         indeed: 'https://www.trustpilot.com/review/yourmechanic.com',
-        promo: '',
-        gigsite: 'https://www.yourmechanic.com/automotive-technician-jobs',
+        promo: 'Sign Up Below and Get a $10 Credit!',
+        gigsite: 'https://www.yourmechanic.com/rl/IyhJRw1860682',
         featured: false,
         type: 'gig',
       },
@@ -1214,7 +1215,7 @@ export const initialState = {
         description:
           'Zeel is a service offering at home massages to users, and is a phenomenal way for massage therapists to leverage the gig economy. 18% gratuity is added to every in-home appointment and customers pay for late cancelations.',
         indeed: 'https://www.indeed.com/cmp/Zeel/reviews',
-        promo: '',
+        promo: 'Sign Up With Code PAUSE20 and get $20',
         gigsite: 'https://www.zeel.com/apply',
         featured: false,
         type: 'gig',
@@ -1590,7 +1591,7 @@ export const initialState = {
           'Gridwise is an intelligence platform which provides information on ridesharing insights to users, helping drivers improve efficiency and profits on the road.',
         indeed:
           'https://appgrooves.com/app/gridwise-earn-more-by-driving-smarter-by-swerv-technologies-llc/negative',
-        promo: '',
+        promo: 'Free Download on IOS and Android!',
         gigsite: 'https://gridwise.io/',
         featured: true,
         type: 'service',
@@ -1603,8 +1604,8 @@ export const initialState = {
           'Mystro is an app that orchestrates incoming passenger requests between the Uber and Lyft rideshare apps, so you can stop clicking back and forth between the apps.',
         indeed:
           'https://play.google.com/store/apps/details?id=partners.driver.mystro&hl=en_US',
-        promo: '',
-        gigsite: 'https://mystrodriver.com/download',
+        promo: 'Try Mystro Free for 14 Days!',
+        gigsite: 'https://mystrodriver.com/registration-page-half-photo',
         featured: true,
         type: 'service',
       },
@@ -1641,8 +1642,8 @@ export const initialState = {
         description:
           'As a gig worker, the miles you drive for work are tax deductable. Triplog helps you track those miles so you can maximize your returns!',
         indeed: 'https://reviews.financesonline.com/p/triplog/',
-        promo: '',
-        gigsite: 'https://triplogmileage.com/',
+        promo: 'Sign Up Below for a Free 30 Day Trial and 20% Off!',
+        gigsite: 'http://trplg.co/389373',
         featured: true,
         type: 'service',
       },
@@ -1753,7 +1754,7 @@ export const initialState = {
         indeed:
           'https://apps.apple.com/us/app/scooter-map-all-the-scooters/id1437698355',
         promo: '',
-        gigsite: 'https://scootermap.com/',
+        gigsite: 'https://scootermap.com/?sc_referral=62591ccf',
         featured: true,
         type: 'service',
       },
