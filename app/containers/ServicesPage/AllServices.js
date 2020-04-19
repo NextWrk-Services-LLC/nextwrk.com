@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
+import { compose } from 'redux';
 
 import H2 from 'components/H2';
 import GigsList from 'components/GigsList';
@@ -17,4 +18,4 @@ AllServices.propTypes = {
   services: PropTypes.any,
 };
 
-export default AllServices;
+export default compose(memo)(AllServices);

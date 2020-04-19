@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 import List from 'components/List';
 import ListItem from 'components/ListItem';
 import LoadingIndicator from 'components/LoadingIndicator';
-import GigListItem from 'containers/GigListItem';
+import GigListItem from 'containers/GigListItem/Loadable';
 
 function GigsList({ loading, error, gigs }) {
   if (loading) {
