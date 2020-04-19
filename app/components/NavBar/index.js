@@ -39,14 +39,14 @@ function NavBar() {
         <LogoLink to="/">
           <Img src={Logo} alt="NextWrk - Logo" />
         </LogoLink>
-        <NavBarLink href="#services">
+        <NavBarLink href="/services">
           <div style={{ paddingTop: '4px' }}>
             <img src={services} alt="Services Icon" />
             <br />
             <div style={{ paddingTop: '5px' }}>Services</div>
           </div>
         </NavBarLink>
-        <NavBarLink href="#gigs">
+        <NavBarLink href="/gigs">
           <img src={gigs} alt="Gigs Icon" />
           {'Gigs'}
         </NavBarLink>

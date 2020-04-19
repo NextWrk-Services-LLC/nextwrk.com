@@ -5,7 +5,7 @@
  * Homepage of NextWrk.com, displays all featured gigs, services, deals and freelance networks
  */
 
-import React, { /* useEffect, */ memo } from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
@@ -36,15 +36,9 @@ export function HomePage({ loading, error, gigs }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
-  // useEffect(() => {
-  //   // When initial state username is not null, submit the form to load repos
-  // }, []);
-
   const featured = gigs.filter(obj => obj.featured === true);
   const featuredServices = featured.filter(obj => obj.type === 'service');
   const featuredGigs = featured.filter(obj => obj.type === 'gig');
-  const allServices = gigs.filter(obj => obj.type === 'service');
-  const allGigs = gigs.filter(obj => obj.type === 'gig');
 
   const gigsFeaturedProps = {
     loading,
@@ -56,18 +50,6 @@ export function HomePage({ loading, error, gigs }) {
     loading,
     error,
     gigs: featuredServices,
-  };
-
-  const gigsProps = {
-    loading,
-    error,
-    gigs: allGigs,
-  };
-
-  const servicesProps = {
-    loading,
-    error,
-    gigs: allServices,
   };
 
   return (
@@ -100,21 +82,10 @@ export function HomePage({ loading, error, gigs }) {
           <H2>Featured Services</H2>
           <hr />
           <H3>
-            Apps designed to make gig jobs easier and more lucractive. Work
+            Apps designed to make gig jobs easier and more lucrative. Work
             smarter not harder!
           </H3>
           <GigsList {...servicesFeaturedProps} />
-          <hr />
-          {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-          <a name="gigs" />
-          <H2>Gig Jobs</H2>
-          <hr />
-          <GigsList {...gigsProps} />
-          {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-          <a name="services" />
-          <H2>Services</H2>
-          <hr />
-          <GigsList {...servicesProps} />
           {/* <H2>Featured Deals</H2>
           <hr />
           <DealItem />

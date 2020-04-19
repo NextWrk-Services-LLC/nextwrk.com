@@ -18,7 +18,7 @@ const selectGigsPageDomain = state => state.gigsPage || initialState;
 const makeSelectGigsPage = () =>
   createSelector(
     selectGigsPageDomain,
-    substate => substate,
+    gigsPageState => gigsPageState.showGigs,
   );
 
 export default makeSelectGigsPage;
