@@ -18,7 +18,7 @@ const selectServicesPageDomain = state => state.servicesPage || initialState;
 const makeSelectServicesPage = () =>
   createSelector(
     selectServicesPageDomain,
-    substate => substate,
+    servicesPageState => servicesPageState.showServices,
   );
 
 export default makeSelectServicesPage;

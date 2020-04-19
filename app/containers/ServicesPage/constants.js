@@ -4,4 +4,4 @@
  *
  */
 
-export const DEFAULT_ACTION = 'app/ServicesPage/DEFAULT_ACTION';
+export const FILTER_SERVICES = 'app/ServicesPage/FILTER_SERVICES';
