@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-export default styled.a`
-  float: right;
-  padding: 16px 10px;
+export default styled.p`
+  display: inline-block;
+  padding: 0.25em 0.25em;
+  margin: 0.5em 0.25em;
   text-decoration: none;
   border-radius: 4px;
   -webkit-font-smoothing: antialiased;
@@ -12,13 +13,10 @@ export default styled.a`
   outline: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
-  color: #fff;
-  @media (max-width: 768px) {
-    padding: 8px 5px;
-    font-size: 10px;
-  }
+  color: #070600;
 
   &:hover {
-    background: #9dcdea;
+    background: #3b9ad5;
+    color: #ffffff;
   }
 `;

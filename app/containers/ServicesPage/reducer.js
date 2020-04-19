@@ -4,15 +4,18 @@
  *
  */
 import produce from 'immer';
-import { DEFAULT_ACTION } from './constants';
+import { FILTER_SERVICES } from './constants';
 
-export const initialState = {};
+export const initialState = {
+  showServices: 'all',
+};
 
 /* eslint-disable default-case, no-param-reassign */
 const servicesPageReducer = (state = initialState, action) =>
-  produce(state, (/* draft */) => {
+  produce(state, draft => {
     switch (action.type) {
-      case DEFAULT_ACTION:
+      case FILTER_SERVICES:
+        draft.showServices = action.filter;
         break;
     }
   });
