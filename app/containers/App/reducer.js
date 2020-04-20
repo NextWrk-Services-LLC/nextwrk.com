@@ -9,6 +9,8 @@
 
 import produce from 'immer';
 import { LOAD_GIGS_SUCCESS, LOAD_GIGS, LOAD_GIGS_ERROR } from './constants';
+// import nw from './img/nw.png';
+import acorns from './img/acorns.png';
 import rlac from './img/rlac.png';
 import rover from './img/rover.png';
 import hsnd from './img/hsnd.png';
@@ -1573,7 +1575,7 @@ export const initialState = {
         gigsite: 'https://scootermap.com/?sc_referral=62591ccf',
         featured: true,
         type: 'service',
-        subtypes: ['scooter'],
+        subtypes: ['scooter', 'other'],
       },
       // Products and classes
       //
@@ -1592,11 +1594,12 @@ export const initialState = {
       // },
       {
         id: 'D0001',
-        logo: uber,
+        logo: acorns,
         gig: 'Acorns',
         description: '',
         indeed: '',
-        promo: 'They get $5 and We get $5',
+        promo:
+          'Acorns automatically invests your spare change into a portfolio built by experts. Sign up today and get a free $5 for your account!',
         gigsite: 'https://acorns.com/invite/SGU9A3',
         featured: false,
         type: 'deal',

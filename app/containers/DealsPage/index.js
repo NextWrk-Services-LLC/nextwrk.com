@@ -5,8 +5,8 @@
  * Deals Page of NextWrk.com, displays and lets users search through deals for making more money working gig jobs
  */
 
-import React from 'react';
-// import PropTypes from 'prop-types';
+import React, { memo } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { createStructuredSelector } from 'reselect';
@@ -14,14 +14,30 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
-import H1 from 'components/H1';
+import {
+  makeSelectGigs,
+  makeSelectLoading,
+  makeSelectError,
+} from 'containers/App/selectors';
+import Header from 'components/Header';
 import makeSelectDealsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+import AllDeals from './AllDeals';
 
-export function DealsPage() {
-  useInjectReducer({ key: 'dealsPage', reducer });
-  useInjectSaga({ key: 'dealsPage', saga });
+const key = 'dealsPage';
+
+export function DealsPage({ loading, error, gigs }) {
+  useInjectReducer({ key, reducer });
+  useInjectSaga({ key, saga });
+
+  const allDeals = gigs.filter(obj => obj.type === 'deal');
+
+  const dealsProps = {
+    loading,
+    error,
+    gigs: allDeals,
+  };
 
   return (
     <div>
@@ -29,17 +45,23 @@ export function DealsPage() {
         <title>Get More Money</title>
         <meta name="DealsPage" content="Displays Offered Deals" />
       </Helmet>
-      <H1>Coming Soon!</H1>
+      <Header />
+      <AllDeals deals={dealsProps} />
     </div>
   );
 }
 
-// DealsPage.propTypes = {
-//   dispatch: PropTypes.func.isRequired,
-// };
+DealsPage.propTypes = {
+  loading: PropTypes.bool,
+  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  gigs: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
+};
 
 const mapStateToProps = createStructuredSelector({
   dealsPage: makeSelectDealsPage(),
+  gigs: makeSelectGigs(),
+  loading: makeSelectLoading(),
+  error: makeSelectError(),
 });
 
 function mapDispatchToProps(dispatch) {
@@ -53,4 +75,7 @@ const withConnect = connect(
   mapDispatchToProps,
 );
 
-export default compose(withConnect)(DealsPage);
+export default compose(
+  withConnect,
+  memo,
+)(DealsPage);
