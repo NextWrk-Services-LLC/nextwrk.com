@@ -19,13 +19,14 @@ import {
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
+import Header from 'components/Header';
 // import Header from './Header';
 import makeSelectGigsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
-// import NavBarLink from './NavBarLink';
-// import Wrapper from './Wrapper';
-// import ContentWrapper from './ContentWrapper';
+import NavBarLink from './NavBarLink';
+import Wrapper from './Wrapper';
+import ContentWrapper from './ContentWrapper';
 import { changeFilter } from './actions';
 import AllGigs from './AllGigs';
 import DrivingGigs from './DrivingGigs';
@@ -36,14 +37,15 @@ import OtherGigs from './OtherGigs';
 const key = 'gigsPage';
 
 export function GigsPage({
+  gigsPage,
   loading,
   error,
   gigs,
-  // showAll,
-  // showDriving,
-  // showLabor,
-  // showRental,
-  // showOther,
+  showAll,
+  showDriving,
+  showLabor,
+  showRental,
+  showOther,
 }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
@@ -107,7 +109,8 @@ export function GigsPage({
         <title>Find New Gigs</title>
         <meta name="GigsPage" content="Displays All Gigs" />
       </Helmet>
-      {/* <Wrapper>
+      <Header />
+      <Wrapper>
         <ContentWrapper>
           <NavBarLink onClick={showAll}>All</NavBarLink>
           <NavBarLink onClick={showDriving}>Driving</NavBarLink>
@@ -116,21 +119,22 @@ export function GigsPage({
           <NavBarLink onClick={showOther}>Other</NavBarLink>
         </ContentWrapper>
       </Wrapper>
-      <Header /> */}
-      {switchGigs('all')}
+      <hr />
+      {switchGigs(gigsPage)}
     </div>
   );
 }
 
 GigsPage.propTypes = {
+  gigsPage: PropTypes.string,
   loading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   gigs: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
-  // showAll: PropTypes.func,
-  // showDriving: PropTypes.func,
-  // showLabor: PropTypes.func,
-  // showRental: PropTypes.func,
-  // showOther: PropTypes.func,
+  showAll: PropTypes.func,
+  showDriving: PropTypes.func,
+  showLabor: PropTypes.func,
+  showRental: PropTypes.func,
+  showOther: PropTypes.func,
 };
 
 const mapStateToProps = createStructuredSelector({
