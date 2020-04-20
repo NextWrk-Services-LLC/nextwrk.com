@@ -17,6 +17,8 @@ import DealsPage from 'containers/DealsPage/Loadable';
 import ServicesPage from 'containers/ServicesPage/Loadable';
 import GigsPage from 'containers/GigsPage/Loadable';
 import FreelancePage from 'containers/FreelancePage/Loadable';
+import Privacy from 'containers/Privacy';
+import Tos from 'containers/Tos';
 import Footer from 'components/Footer';
 
 import GlobalStyle from '../../global-styles';
@@ -50,6 +52,8 @@ export default function App() {
         <Route path="/gigs" component={GigsPage} />
         <Route path="/deals" component={DealsPage} />
         <Route path="/freelance" component={FreelancePage} />
+        <Route path="/terms-of-service" component={Tos} />
+        <Route path="/privacy-policy" component={Privacy} />
         <Route path="" component={NotFoundPage} />
       </Switch>
       <Footer />

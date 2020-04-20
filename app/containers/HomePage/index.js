@@ -37,8 +37,8 @@ export function HomePage({ loading, error, gigs }) {
   useInjectSaga({ key, saga });
 
   const featured = gigs.filter(obj => obj.featured === true);
-  const featuredServices = featured.filter(obj => obj.type === 'service');
-  const featuredGigs = featured.filter(obj => obj.type === 'gig');
+  const featuredServices = featured.filter(obj => obj.id.startsWith('S'));
+  const featuredGigs = featured.filter(obj => obj.id.startsWith('G'));
 
   const gigsFeaturedProps = {
     loading,

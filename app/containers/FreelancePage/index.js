@@ -31,7 +31,7 @@ export function FreelancePage({ freelancePage, loading, error, gigs }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
-  const allFreelance = gigs.filter(obj => obj.type === 'freelance');
+  const allFreelance = gigs.filter(obj => obj.id.startsWith('F'));
 
   const freelanceProps = {
     loading,
@@ -52,7 +52,10 @@ export function FreelancePage({ freelancePage, loading, error, gigs }) {
     <div>
       <Helmet>
         <title>Find Freelance Jobs</title>
-        <meta name="FreelancePage" content="Displays Freelance Networks" />
+        <meta
+          name="description"
+          content="NextWrk's goal is to put freedom and autonomy back into the hands of workers. The gig economy is exploding, and becoming a skilled freelancer is quickly becoming a viable option for skilled workers. NextWrk helps users find new avenues for scoring freelance jobs so they can start working how, when and where they want."
+        />
       </Helmet>
       <Header />
       {switchFreelance(freelancePage)}

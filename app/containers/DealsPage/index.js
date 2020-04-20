@@ -31,7 +31,7 @@ export function DealsPage({ loading, error, gigs }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
-  const allDeals = gigs.filter(obj => obj.type === 'deal');
+  const allDeals = gigs.filter(obj => obj.id.startsWith('D'));
 
   const dealsProps = {
     loading,
@@ -42,8 +42,11 @@ export function DealsPage({ loading, error, gigs }) {
   return (
     <div>
       <Helmet>
-        <title>Get More Money</title>
-        <meta name="DealsPage" content="Displays Offered Deals" />
+        <title>Discover New Products</title>
+        <meta
+          name="description"
+          content="Maximize your returns! NextWrk's Deals Page connects users looking for new services with services looking for new users!"
+        />
       </Helmet>
       <Header />
       <AllDeals deals={dealsProps} />

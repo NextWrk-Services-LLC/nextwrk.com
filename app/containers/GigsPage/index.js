@@ -50,7 +50,7 @@ export function GigsPage({
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
-  const allGigs = gigs.filter(obj => obj.type === 'gig');
+  const allGigs = gigs.filter(obj => obj.id.startsWith('G'));
   const drivingGigs = allGigs.filter(obj => obj.subtypes.includes('driving'));
   const laborGigs = allGigs.filter(obj => obj.subtypes.includes('labor'));
   const rentalGigs = allGigs.filter(obj => obj.subtypes.includes('rental'));
@@ -106,8 +106,11 @@ export function GigsPage({
   return (
     <div>
       <Helmet>
-        <title>Find New Gigs</title>
-        <meta name="GigsPage" content="Displays All Gigs" />
+        <title>Discover New Gig Opportunities</title>
+        <meta
+          name="description"
+          content="There are a plethora of jobs available to anyone with a phone, car, and/or skill. NextWrk's Gig Page helps exposes individuals to new opportunities in the gig economy, and helps them find the best jobs for them!"
+        />
       </Helmet>
       <Header />
       <Wrapper>

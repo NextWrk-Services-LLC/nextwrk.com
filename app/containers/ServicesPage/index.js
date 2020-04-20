@@ -50,9 +50,9 @@ export function ServicesPage({
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
-  const allServices = gigs.filter(obj => obj.type === 'service');
+  const allServices = gigs.filter(obj => obj.id.startsWith('S'));
   const drivingServices = allServices.filter(obj =>
-    obj.subtypes.includes('driver'),
+    obj.subtypes.includes('driving'),
   );
   const businessServices = allServices.filter(obj =>
     obj.subtypes.includes('business'),
@@ -98,7 +98,7 @@ export function ServicesPage({
     switch (param) {
       case 'all':
         return <AllServices services={servicesProps} />;
-      case 'driver':
+      case 'driving':
         return <DrivingServices services={drivingProps} />;
       case 'business':
         return <BusinessServices services={businessProps} />;
@@ -114,8 +114,11 @@ export function ServicesPage({
   return (
     <div>
       <Helmet>
-        <title>Gig Job Services</title>
-        <meta name="ServicesPage" content="Displays Gig Services" />
+        <title>Discover Services for Gig Workers</title>
+        <meta
+          name="description"
+          content="Gig workers need help too, and the market definitely realizes this. There are more and more services available to help gig workers improve and maximize their returns. NextWrk's Services Page exposees individuals to new services to ensure they're always a step ahead!"
+        />
       </Helmet>
       <Header />
       <Wrapper>
@@ -155,7 +158,7 @@ const mapStateToProps = createStructuredSelector({
 function mapDispatchToProps(dispatch) {
   return {
     showAll: () => dispatch(changeFilter('all')),
-    showDriving: () => dispatch(changeFilter('driver')),
+    showDriving: () => dispatch(changeFilter('driving')),
     showTaxes: () => dispatch(changeFilter('business')),
     showRental: () => dispatch(changeFilter('rental')),
     showOther: () => dispatch(changeFilter('other')),

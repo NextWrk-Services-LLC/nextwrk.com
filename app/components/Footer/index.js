@@ -9,7 +9,9 @@ import React from 'react';
 
 import A from 'components/A';
 import Ul from 'components/Ul';
+import H2 from 'components/H1';
 import CenterText from 'components/CenterText';
+import AdDisclose from 'components/AdDisclose';
 import Li from './Li';
 import Wrapper from './Wrapper';
 import Img from './Img';
@@ -39,9 +41,27 @@ function Footer() {
             <Li>
               <A href="/deals">Deals</A>
             </Li>
+            <Li>-</Li>
+            <Li>-</Li>
+            <Li />
+            <Li>
+              <AdDisclose />
+            </Li>
+            <Li>
+              <A href="/terms-of-service">terms of service</A>
+            </Li>
+            <Li>
+              <A href="/privacy-policy">privacy policy</A>
+            </Li>
           </Ul>
         </div>
         <div style={{ float: 'left', width: '50%', textAlign: 'left' }}>
+          <H2>Contact Us!</H2>
+          <Ul>
+            <Li>Email: contact@nextwrk.com</Li>
+            <Li>Phone: (678) 699-6447</Li>
+            <Li>Atlanta, GA 30313</Li>
+          </Ul>
           <SocialLink
             link="https://www.facebook.com/NextWrk-110063513968010"
             content={<Img src={facebook} alt="NextWrk Facebook" />}
@@ -62,11 +82,6 @@ function Footer() {
             link="https://twitter.com/WrkNext"
             content={<Img src={twitter} alt="NextWrk Twitter" />}
           />
-          <Ul>
-            <Li>Email: contact@nextwrk.com</Li>
-            <Li>Phone: (678) 699-6447</Li>
-            <Li>Atlanta, GA 30313</Li>
-          </Ul>
         </div>
       </Wrapper>
       <CenterText>
