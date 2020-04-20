@@ -27,7 +27,7 @@ import Wrapper from './Wrapper';
 const Spacing = styled.div`
   margin: 15px;
   @media (max-width: 768px) {
-    margin: 7px;
+    margin: 10px 0px;
   }
 `;
 

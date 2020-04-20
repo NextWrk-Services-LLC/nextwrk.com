@@ -13,7 +13,8 @@ const Wrapper = styled.li`
   box-shadow: 1px 1px 3px grey;
   @media (max-width: 768px) {
     padding: 5px 10px;
-    max-width: 150px;
+    min-width: 80%;
+    max-width: 500px;
   }
 `;
 

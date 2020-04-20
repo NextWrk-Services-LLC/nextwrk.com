@@ -14,8 +14,8 @@ export default styled.a`
   font-size: 20px;
   color: #fff;
   @media (max-width: 768px) {
-    padding: 8px 5px;
-    font-size: 10px;
+    padding: 5px 5px;
+    font-size: 14px;
   }
 
   &:hover {

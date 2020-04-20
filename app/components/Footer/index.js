@@ -9,6 +9,7 @@ import React from 'react';
 
 import A from 'components/A';
 import Ul from 'components/Ul';
+import CenterText from 'components/CenterText';
 import Li from './Li';
 import Wrapper from './Wrapper';
 import Img from './Img';
@@ -18,12 +19,13 @@ import twitter from './twitter.png';
 import linkedin from './linkedin.png';
 import facebook from './facebook.png';
 import instagram from './instagram.svg';
+import nextwrk from './nextwork.png';
 
 function Footer() {
   return (
     <React.Fragment>
       <Wrapper>
-        <div>
+        <div style={{ float: 'left', width: '50%' }}>
           <Ul>
             <Li>
               <A href="/gigs">Gigs</A>
@@ -39,14 +41,7 @@ function Footer() {
             </Li>
           </Ul>
         </div>
-        <div>
-          <Ul>
-            <Li>Email: contact@nextwrk.com</Li>
-            <Li>Phone: (678) 699-6447</Li>
-            <Li>Atlanta, GA 30313</Li>
-          </Ul>
-        </div>
-        <div>
+        <div style={{ float: 'left', width: '50%', textAlign: 'left' }}>
           <SocialLink
             link="https://www.facebook.com/NextWrk-110063513968010"
             content={<Img src={facebook} alt="NextWrk Facebook" />}
@@ -67,11 +62,19 @@ function Footer() {
             link="https://twitter.com/WrkNext"
             content={<Img src={twitter} alt="NextWrk Twitter" />}
           />
+          <Ul>
+            <Li>Email: contact@nextwrk.com</Li>
+            <Li>Phone: (678) 699-6447</Li>
+            <Li>Atlanta, GA 30313</Li>
+          </Ul>
         </div>
       </Wrapper>
-      <p style={{ fontSize: '12px' }}>
-        NextWrk Services LLC © 2020, All Rights Reserved
-      </p>
+      <CenterText>
+        <img src={nextwrk} style={{ width: '200px' }} alt="NextWrk Logo" />
+        <p style={{ fontSize: '12px' }}>
+          NextWrk Services LLC © 2020, All Rights Reserved
+        </p>
+      </CenterText>
     </React.Fragment>
   );
 }

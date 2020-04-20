@@ -6,7 +6,7 @@ const H1 = styled.h1`
   color: #3b9ad5;
   font-weight: normal;
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 24px;
   }
 `;
 

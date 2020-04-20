@@ -5,7 +5,7 @@ const H3 = styled.h3`
   font-weight: normal;
   margin-top: -5px;
   @media (max-width: 768px) {
-    font-size: 10px;
+    font-size: 14px;
   }
 `;
 
