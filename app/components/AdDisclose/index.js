@@ -27,7 +27,7 @@ function AdDisclose() {
 
   return (
     <div>
-      <PLink onClick={() => toggleShow(!show)}>advertiser disclosure</PLink>
+      <PLink onClick={() => toggleShow(!show)}>Advertiser Disclosure</PLink>
       {show ? (
         <div style={{ backgroundColor: `#ffffff`, padding: '5px' }}>
           <P>

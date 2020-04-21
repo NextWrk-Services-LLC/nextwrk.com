@@ -13,10 +13,6 @@ export default styled.a`
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
   color: #fff;
-  @media (max-width: 768px) {
-    padding: 5px 5px;
-    font-size: 14px;
-  }
 
   &:hover {
     background: #9dcdea;

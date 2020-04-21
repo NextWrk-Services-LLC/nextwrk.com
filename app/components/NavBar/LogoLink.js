@@ -10,9 +10,6 @@ export default styled(Link)`
   -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none;
   cursor: pointer;
-  @media (max-width: 768px) {
-    padding: 3px 0px;
-  }
 
   &:active {
     background: #9dcdea;

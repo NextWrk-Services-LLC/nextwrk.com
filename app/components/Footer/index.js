@@ -41,17 +41,15 @@ function Footer() {
             <Li>
               <A href="/deals">Deals</A>
             </Li>
-            <Li>-</Li>
-            <Li>-</Li>
             <Li />
             <Li>
               <AdDisclose />
             </Li>
             <Li>
-              <A href="/terms-of-service">terms of service</A>
+              <A href="/terms-of-service">Terms of Service</A>
             </Li>
             <Li>
-              <A href="/privacy-policy">privacy policy</A>
+              <A href="/privacy-policy">Privacy Policy</A>
             </Li>
           </Ul>
         </div>

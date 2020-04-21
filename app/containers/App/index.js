@@ -30,7 +30,7 @@ const AppWrapper = styled.div`
   padding: 70px 16px;
   flex-direction: column;
   @media (max-width: 768px) {
-    padding: 5px 8px;
+    padding: 0px 0px;
   }
 `;
 

@@ -8,6 +8,7 @@
 
 import React, { memo } from 'react';
 import styled from 'styled-components';
+import { useMediaQuery } from 'react-responsive';
 
 import NavBarLink from './NavBarLink';
 import LogoLink from './LogoLink';
@@ -23,7 +24,7 @@ const Wrapper = styled.div`
   z-index: 2;
   @media (max-width: 768px) {
     position: static;
-    height: 32px;
+    border-bottom: 1px solid #4da3d9;
   }
 `;
 
@@ -35,16 +36,24 @@ const ContentWrapper = styled.div`
 `;
 
 function NavBar() {
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+
   return (
     <Wrapper>
       <ContentWrapper>
         <LogoLink to="/">
           <Img src={Logo} alt="NextWrk - Logo" />
         </LogoLink>
-        <NavBarLink href="/deals">Deals</NavBarLink>
-        <NavBarLink href="/freelance">Freelance</NavBarLink>
-        <NavBarLink href="/services">Services</NavBarLink>
-        <NavBarLink href="/gigs">Gigs</NavBarLink>
+        {isMobile ? (
+          <NavBarLink href="/deals">☰</NavBarLink>
+        ) : (
+          <React.Fragment>
+            <NavBarLink href="/deals">Deals</NavBarLink>
+            <NavBarLink href="/freelance">Freelance</NavBarLink>
+            <NavBarLink href="/services">Services</NavBarLink>
+            <NavBarLink href="/gigs">Gigs</NavBarLink>
+          </React.Fragment>
+        )}
       </ContentWrapper>
     </Wrapper>
   );
