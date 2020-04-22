@@ -7,6 +7,7 @@
 
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
@@ -33,6 +34,11 @@ import Img from './Img';
 import services from './services.png';
 import gig from './gigs.png';
 import deal from './deals.png';
+
+const Table = styled.table`
+  border-collapse: separate;
+  border-spacing: 15px;
+`;
 
 const key = 'home';
 
@@ -72,52 +78,45 @@ export function HomePage({ loading, error, gigs }) {
         </CenteredSection>
         <div style={{ marginTop: '-40px' }}>
           <H2>Discover...</H2>
-          <div style={{ marginLeft: '10px' }}>
-            <table
-              style={{ borderCollapse: 'separate', borderSpacing: '15px' }}
-            >
-              <tbody>
-                <tr>
-                  <td style={{ width: '33%' }}>
-                    <Img src={gig} alt="Services" />{' '}
-                  </td>
-                  <td>
-                    <H1>Gig Work</H1>
-                    <H3>
-                      New opportunities to earn extra money on your own time
-                    </H3>{' '}
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    {' '}
-                    <Img src={services} alt="Services" />
-                  </td>
-                  <td>
-                    {' '}
-                    <H1>New Services</H1>
-                    <H3>
-                      A multitude of apps and services to make your jobs easier
-                      and more lucrative
-                    </H3>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <Img src={deal} alt="Services" />{' '}
-                  </td>
-                  <td>
-                    {' '}
-                    <H1>Deals</H1>
-                    <H3>
-                      Exclusive deals to ensure you are never leaving any money
-                      on the table
-                    </H3>{' '}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <Table>
+            <tbody>
+              <tr>
+                <td style={{ width: '33%' }}>
+                  <Img src={gig} alt="Gig Vector" />
+                </td>
+                <td>
+                  <H1>Gig Work</H1>
+                  <H3>
+                    New opportunities to earn extra money on your own time
+                  </H3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <Img src={services} alt="Services Vector" />
+                </td>
+                <td>
+                  <H1>New Services</H1>
+                  <H3>
+                    A multitude of apps and services to make your jobs easier
+                    and more lucrative
+                  </H3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <Img src={deal} alt="Deals Vector" />
+                </td>
+                <td>
+                  <H1>Deals</H1>
+                  <H3>
+                    Exclusive deals to ensure you are never leaving any money on
+                    the table
+                  </H3>
+                </td>
+              </tr>
+            </tbody>
+          </Table>
         </div>
         <Section>
           <H2>Featured Gig Jobs</H2>
