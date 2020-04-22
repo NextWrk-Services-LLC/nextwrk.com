@@ -62,29 +62,33 @@ export function HomePage({ loading, error, gigs }) {
         />
       </Helmet>
       <Header />
-      <div>
+      <div style={{ padding: '0px 10px' }}>
         <CenteredSection>
           <H1>Make Easier Money on Your Own Time</H1>
-          <H3>
-            {
-              "Discover new opportunities for gig work, services to make jobs easier and more lucrative, and deals to make sure you aren't leaving any money on the table."
-            }
-          </H3>
         </CenteredSection>
+        <div style={{ marginTop: '-40px' }}>
+          <H2>Discover...</H2>
+          <div style={{ marginLeft: '10px' }}>
+            <H1>Gig Work</H1>
+            <H3>New opportunities to earn extra money on your own time</H3>
+            <H1>New Services</H1>
+            <H3>
+              A multitude of apps and services to make your jobs easier and more
+              lucrative
+            </H3>
+            <H1>Deals</H1>
+            <H3>
+              Exclusive deals to ensure you are never leaving any money on the
+              table
+            </H3>
+          </div>
+        </div>
         <Section>
           <H2>Featured Gig Jobs</H2>
           <hr />
-          <H3>
-            Jobs that let you come and go as you please. Work as much, or as
-            little, as you want!
-          </H3>
           <GigsList {...gigsFeaturedProps} />
           <H2>Featured Services</H2>
           <hr />
-          <H3>
-            Apps designed to make gig jobs easier and more lucrative. Work
-            smarter not harder!
-          </H3>
           <GigsList {...servicesFeaturedProps} />
           {/* <H2>Featured Deals</H2>
           <hr />

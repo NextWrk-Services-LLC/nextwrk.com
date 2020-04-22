@@ -45,7 +45,7 @@ const MobNav = styled.a`
 `;
 
 const DropDown = styled.div`
-  text-align: center;
+  text-align: right;
 `;
 
 const Ul = styled.ul`
@@ -54,7 +54,7 @@ const Ul = styled.ul`
 
 const Li = styled.li`
   font-size: 20px;
-  padding: 10px;
+  padding: 10px 40px;
 `;
 
 function NavBar({ onToggleNav }) {
