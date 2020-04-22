@@ -16,6 +16,10 @@ const Wrapper = styled.li`
     min-width: 80%;
     max-width: 500px;
   }
+
+  &:hover {
+    background: #f7f7f7;
+  }
 `;
 
 export default Wrapper;
