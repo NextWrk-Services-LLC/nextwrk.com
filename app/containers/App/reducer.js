@@ -8,7 +8,12 @@
  */
 
 import produce from 'immer';
-import { LOAD_GIGS_SUCCESS, LOAD_GIGS, LOAD_GIGS_ERROR } from './constants';
+import {
+  LOAD_GIGS_SUCCESS,
+  LOAD_GIGS,
+  LOAD_GIGS_ERROR,
+  TOGGLE_MOBNAV,
+} from './constants';
 // import nw from './img/nw.png';
 import acorns from './img/acorns.png';
 import rlac from './img/rlac.png';
@@ -119,6 +124,7 @@ import deliverthat from './img/deliverthat.png';
 
 // The initial state of the App
 export const initialState = {
+  showMobNav: false,
   loading: false,
   error: false,
   userData: {
@@ -1523,6 +1529,9 @@ const appReducer = (state = initialState, action) =>
         draft.error = action.error;
         draft.loading = false;
         break;
+
+      case TOGGLE_MOBNAV:
+        draft.showMobNav = !draft.showMobNav;
     }
   });
 
