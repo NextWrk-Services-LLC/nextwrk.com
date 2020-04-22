@@ -29,6 +29,10 @@ import Section from './Section';
 import { changeUsername } from './actions';
 import reducer from './reducer';
 import saga from './saga';
+import Img from './Img';
+import services from './services.png';
+import gig from './gigs.png';
+import deal from './deals.png';
 
 const key = 'home';
 
@@ -69,18 +73,50 @@ export function HomePage({ loading, error, gigs }) {
         <div style={{ marginTop: '-40px' }}>
           <H2>Discover...</H2>
           <div style={{ marginLeft: '10px' }}>
-            <H1>Gig Work</H1>
-            <H3>New opportunities to earn extra money on your own time</H3>
-            <H1>New Services</H1>
-            <H3>
-              A multitude of apps and services to make your jobs easier and more
-              lucrative
-            </H3>
-            <H1>Deals</H1>
-            <H3>
-              Exclusive deals to ensure you are never leaving any money on the
-              table
-            </H3>
+            <table
+              style={{ borderCollapse: 'separate', borderSpacing: '15px' }}
+            >
+              <tbody>
+                <tr>
+                  <td style={{ width: '33%' }}>
+                    <Img src={gig} alt="Services" />{' '}
+                  </td>
+                  <td>
+                    <H1>Gig Work</H1>
+                    <H3>
+                      New opportunities to earn extra money on your own time
+                    </H3>{' '}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    {' '}
+                    <Img src={services} alt="Services" />
+                  </td>
+                  <td>
+                    {' '}
+                    <H1>New Services</H1>
+                    <H3>
+                      A multitude of apps and services to make your jobs easier
+                      and more lucrative
+                    </H3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <Img src={deal} alt="Services" />{' '}
+                  </td>
+                  <td>
+                    {' '}
+                    <H1>Deals</H1>
+                    <H3>
+                      Exclusive deals to ensure you are never leaving any money
+                      on the table
+                    </H3>{' '}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <Section>
