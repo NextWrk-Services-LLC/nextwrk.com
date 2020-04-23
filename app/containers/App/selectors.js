@@ -39,6 +39,12 @@ const makeSelectGigs = () =>
     globalState => globalState.userData.gigs,
   );
 
+const makeSelectShowMobNav = () =>
+  createSelector(
+    selectGlobal,
+    globalState => globalState.userData.showMobNav,
+  );
+
 export {
   selectGlobal,
   makeSelectCurrentUser,
@@ -46,4 +52,5 @@ export {
   makeSelectError,
   makeSelectGigs,
   makeSelectLocation,
+  makeSelectShowMobNav,
 };

@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 export default styled(Link)`
   float: left;
-  margin: 0.25em 0.25em;
-  padding: 0.3em 1em;
+  padding: 11px 0px;
   max-height: 60px;
   text-decoration: none;
   border-radius: 4px;

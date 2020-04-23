@@ -15,7 +15,12 @@
  *    }
  */
 
-import { LOAD_GIGS, LOAD_GIGS_SUCCESS, LOAD_GIGS_ERROR } from './constants';
+import {
+  LOAD_GIGS,
+  LOAD_GIGS_SUCCESS,
+  LOAD_GIGS_ERROR,
+  TOGGLE_MOBNAV,
+} from './constants';
 
 /**
  * Load the gigs, this action starts the request saga
@@ -53,5 +58,16 @@ export function gigsLoadingError(error) {
   return {
     type: LOAD_GIGS_ERROR,
     error,
+  };
+}
+
+/**
+ * Toggle mobile navigation menu
+ *
+ * @return {object}       An action object with a type of TOGGLE_MOBNAV passing the error
+ */
+export function toggleMobNav() {
+  return {
+    type: TOGGLE_MOBNAV,
   };
 }

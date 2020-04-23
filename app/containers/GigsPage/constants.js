@@ -4,4 +4,4 @@
  *
  */
 
-export const DEFAULT_ACTION = 'app/GigsPage/DEFAULT_ACTION';
+export const FILTER_GIGS = 'app/GigsPage/FILTER_GIGS';

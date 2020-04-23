@@ -5,8 +5,9 @@
  * Homepage of NextWrk.com, displays all featured gigs, services, deals and freelance networks
  */
 
-import React, { /* useEffect, */ memo } from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
@@ -24,11 +25,24 @@ import H2 from 'components/H2';
 import Header from 'components/Header';
 import GigsList from 'components/GigsList';
 import H3 from './H3';
-import CenteredSection from './CenteredSection';
 import Section from './Section';
 import { changeUsername } from './actions';
 import reducer from './reducer';
 import saga from './saga';
+import Img from './Img';
+import services from './services.png';
+import gig from './gigs.png';
+import deal from './deals.png';
+
+const Table = styled.table`
+  border-collapse: separate;
+  border-spacing: 15px;
+`;
+
+const TdImg = styled.td`
+  width: 50%;
+  text-align: center;
+`;
 
 const key = 'home';
 
@@ -36,15 +50,9 @@ export function HomePage({ loading, error, gigs }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
-  // useEffect(() => {
-  //   // When initial state username is not null, submit the form to load repos
-  // }, []);
-
   const featured = gigs.filter(obj => obj.featured === true);
-  const featuredServices = featured.filter(obj => obj.type === 'service');
-  const featuredGigs = featured.filter(obj => obj.type === 'gig');
-  const allServices = gigs.filter(obj => obj.type === 'service');
-  const allGigs = gigs.filter(obj => obj.type === 'gig');
+  const featuredServices = featured.filter(obj => obj.id.startsWith('S'));
+  const featuredGigs = featured.filter(obj => obj.id.startsWith('G'));
 
   const gigsFeaturedProps = {
     loading,
@@ -58,68 +66,62 @@ export function HomePage({ loading, error, gigs }) {
     gigs: featuredServices,
   };
 
-  const gigsProps = {
-    loading,
-    error,
-    gigs: allGigs,
-  };
-
-  const servicesProps = {
-    loading,
-    error,
-    gigs: allServices,
-  };
-
   return (
     <article>
       <Helmet>
-        <title>Make Easier Money</title>
-        <meta name="Homepage" content="Homepage for NextWrk.com" />
+        <title>Featured Gigs</title>
+        <meta
+          name="description"
+          content="NextWrk's Featured Gigs and Services. Discover the best gigs for developing extra streams of income, and the best services for maximizing your returns!"
+        />
       </Helmet>
       <Header />
-      <div>
-        <CenteredSection>
-          <H1>Make Easier Money on Your Own Time</H1>
-          <H3>
-            {
-              "Discover new opportunities for gig work, services to make jobs easier and more lucrative, and deals to make sure you aren't leaving any money on the table."
-            }
-          </H3>
-        </CenteredSection>
-        <Section>
-          <H2>Featured Gig Jobs</H2>
-          <hr />
-          <H3>
-            Jobs that let you come and go as you please. Work as much, or as
-            little, as you want!
-          </H3>
-          <GigsList {...gigsFeaturedProps} />
-          <H2>Featured Services</H2>
-          <hr />
-          <H3>
-            Apps designed to make gig jobs easier and more lucractive. Work
-            smarter not harder!
-          </H3>
-          <GigsList {...servicesFeaturedProps} />
-          <hr />
-          {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-          <a name="gigs" />
-          <H2>Gig Jobs</H2>
-          <hr />
-          <GigsList {...gigsProps} />
-          {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-          <a name="services" />
-          <H2>Services</H2>
-          <hr />
-          <GigsList {...servicesProps} />
-          {/* <H2>Featured Deals</H2>
-          <hr />
-          <DealItem />
-          <H2>Featured Freelance Networks</H2>
-          <hr />
-          <FreelanceItem /> */}
-        </Section>
-      </div>
+      <H2>Discover...</H2>
+      <Table>
+        <tbody>
+          <tr>
+            <TdImg>
+              <Img src={gig} alt="Gig Vector" />
+            </TdImg>
+            <td>
+              <H1>Gig Work</H1>
+              <H3>New opportunities to earn extra money on your own time</H3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <H1>New Services</H1>
+              <H3>
+                A multitude of apps and services to make your jobs easier and
+                more lucrative
+              </H3>
+            </td>
+            <TdImg>
+              <Img src={services} alt="Services Vector" />
+            </TdImg>
+          </tr>
+          <tr>
+            <TdImg>
+              <Img src={deal} alt="Deals Vector" />
+            </TdImg>
+            <td>
+              <H1>Deals</H1>
+              <H3>
+                Exclusive deals to ensure you are never leaving any money on the
+                table
+              </H3>
+            </td>
+          </tr>
+        </tbody>
+      </Table>
+      <Section>
+        <H2>Featured Gigs</H2>
+        <hr />
+        <GigsList {...gigsFeaturedProps} />
+        <H2>Featured Services</H2>
+        <hr />
+        <GigsList {...servicesFeaturedProps} />
+      </Section>
     </article>
   );
 }

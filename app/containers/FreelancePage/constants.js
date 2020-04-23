@@ -4,4 +4,4 @@
  *
  */
 
-export const DEFAULT_ACTION = 'app/FreelancePage/DEFAULT_ACTION';
+export const FILTER_FREELANCE = 'app/FreelancePage/FILTER_FREELANCE';

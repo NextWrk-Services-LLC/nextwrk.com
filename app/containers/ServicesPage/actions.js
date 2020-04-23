@@ -4,10 +4,11 @@
  *
  */
 
-import { DEFAULT_ACTION } from './constants';
+import { FILTER_SERVICES } from './constants';
 
-export function defaultAction() {
+export function changeFilter(filter) {
   return {
-    type: DEFAULT_ACTION,
+    type: FILTER_SERVICES,
+    filter,
   };
 }

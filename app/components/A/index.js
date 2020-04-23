@@ -7,6 +7,9 @@ import styled from 'styled-components';
 const A = styled.a`
   color: #3b9ad5;
   text-decoration: none;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 
   &:hover {
     text-decoration: underline;

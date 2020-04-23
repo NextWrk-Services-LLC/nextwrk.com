@@ -17,39 +17,75 @@ import { makeSelectCurrentUser } from 'containers/App/selectors';
 import CenterText from 'components/CenterText';
 import ListItem from 'components/ListItem';
 import A from 'components/A';
+import H2 from 'components/H2';
+import Ul from 'components/Ul';
+import Li from 'components/Li';
 import P from './P';
 import Img from './Img';
 import Wrapper from './Wrapper';
 
 const Spacing = styled.div`
-  padding: 15px;
+  margin: 15px;
+  @media (max-width: 768px) {
+    margin: 0px;
+    padding: 10px 20px;
+  }
+`;
+
+const LinkSpace = styled.div`
+  margin: 15px;
+  @media (max-width: 768px) {
+    margin: 0px;
+    margin-top: -5px;
+  }
+`;
+
+const Title = styled.div`
+  text-align: left;
+  margin-left: 60px;
+  margin-top: -12px;
+  @media (max-width: 768px) {
+    margin-left: 50px;
+    margin-top: -8px;
+  }
 `;
 
 export function GigsListItem(props) {
   const { item } = props;
 
-  // Put together the content of the repository
   const content = (
     <Spacing>
       <Wrapper>
         <Img src={item.logo} alt="Company - Logo" />
-        <CenterText>
-          <h2 style={{ fontWeight: 'normal', marginTop: '5px' }}>{item.gig}</h2>
-        </CenterText>
-        <P>{item.description}</P>
+        <Ul>
+          <Li>
+            <Title>
+              <H2>{item.gig}</H2>
+            </Title>
+          </Li>
+          <Li>
+            <P>{item.description}</P>
+          </Li>
+        </Ul>
         <hr />
         <CenterText>
-          {item.indeed ? (
-            <A href={item.indeed} target="_blank" rel="noopener noreferrer">
-              See what others have to say
-            </A>
-          ) : (
-            ''
-          )}
-          {item.promo ? <p>{item.promo}</p> : <p />}
-          <A href={item.gigsite} target="_blank" rel="noopener noreferrer">
-            TRY IT OUT
-          </A>
+          <Ul>
+            <Li>
+              <LinkSpace>
+                {item.indeed ? (
+                  <A href={item.indeed}>See what others have to say</A>
+                ) : (
+                  ''
+                )}
+              </LinkSpace>
+            </Li>
+            <Li>{item.promo ? <P>{item.promo}</P> : <p />}</Li>
+            <Li>
+              <LinkSpace>
+                <A href={item.gigsite}>TRY IT OUT</A>
+              </LinkSpace>
+            </Li>
+          </Ul>
         </CenterText>
       </Wrapper>
     </Spacing>
