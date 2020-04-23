@@ -12,3 +12,4 @@
 export const LOAD_GIGS = 'nextwrk/App/LOAD_GIGS';
 export const LOAD_GIGS_SUCCESS = 'nextwrk/App/LOAD_GIGS_SUCCESS';
 export const LOAD_GIGS_ERROR = 'nextwrk/App/LOAD_GIGS_ERROR';
+export const TOGGLE_MOBNAV = 'nextwrk/App/TOGGLE_MOBNAV';

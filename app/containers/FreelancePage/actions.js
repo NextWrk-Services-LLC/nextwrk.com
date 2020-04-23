@@ -4,10 +4,11 @@
  *
  */
 
-import { DEFAULT_ACTION } from './constants';
+import { FILTER_FREELANCE } from './constants';
 
-export function defaultAction() {
+export function changeFreelance(filter) {
   return {
-    type: DEFAULT_ACTION,
+    type: FILTER_FREELANCE,
+    filter,
   };
 }

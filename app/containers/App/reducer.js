@@ -8,7 +8,14 @@
  */
 
 import produce from 'immer';
-import { LOAD_GIGS_SUCCESS, LOAD_GIGS, LOAD_GIGS_ERROR } from './constants';
+import {
+  LOAD_GIGS_SUCCESS,
+  LOAD_GIGS,
+  LOAD_GIGS_ERROR,
+  TOGGLE_MOBNAV,
+} from './constants';
+// import nw from './img/nw.png';
+import acorns from './img/acorns.png';
 import rlac from './img/rlac.png';
 import rover from './img/rover.png';
 import hsnd from './img/hsnd.png';
@@ -48,7 +55,7 @@ import wonolo from './img/wonolo.png';
 import etsy from './img/etsy.png';
 import goshare from './img/goshare.png';
 import figureeight from './img/figureeight.png';
-import gigwalk from './img/gigwalk.png';
+import gigwalk from './img/gigwalk.jpg';
 import hellotech from './img/hellotech.png';
 import bird from './img/bird.png';
 import burro from './img/burro.png';
@@ -117,6 +124,7 @@ import deliverthat from './img/deliverthat.png';
 
 // The initial state of the App
 export const initialState = {
+  showMobNav: false,
   loading: false,
   error: false,
   userData: {
@@ -128,33 +136,31 @@ export const initialState = {
       {
         id: 'G0001', // Rideshare
         logo: uber,
-        gig: 'Uber Driver',
+        gig: 'Uber',
         description:
           'The grandaddy of all gig jobs. The taxi of the 21st century. As one of the largest ridesharing apps, Uber can turn your daily commute into a money maker, or help you score some extra cash while you cruise around town.',
         indeed: 'https://www.indeed.com/cmp/Uber/reviews',
         promo: '',
         gigsite: 'https://www.uber.com/us/en/drive/',
-        featured: true,
-        type: 'gig',
-        subtypes: [''],
+        featured: false,
+        subtypes: ['driving'],
       },
       {
         id: 'G0009',
         logo: lyft,
-        gig: 'Lyft Driver',
+        gig: 'Lyft',
         description:
           'Another behemoth ridesharing app. Lyft boasts a lower barrier of entry and higher tips on average than Uber (although Uber can offer more through higher surges). They also have Lyft Express Drive, a car rental service meaning you can be a Lyft driver even if you have no car!',
         indeed: 'https://www.indeed.com/cmp/Lyft/reviews',
         promo: '',
         gigsite: 'https://www.lyft.com/drive-with-lyft',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0037',
         logo: hsnd,
-        gig: 'HopSkipDrive Driver',
+        gig: 'HopSkipDrive',
         description:
           'HopSkipDrive drivers offer carpooling services for youth in your community. There is a more stringent application process because of this, but if you want to make a positive impact in the community while at the same time earning some money, this app is for you!',
         indeed:
@@ -162,65 +168,60 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.hopskipdrive.com/driver-sign-up',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0168',
         logo: zum,
-        gig: 'Zumer',
+        gig: 'Zum',
         description:
           'Zum is another ridesharing app offering a platform for kids transportation and care. Available in California, Arizona, Texas, Illinois, Florida, Washington and Washington DC, if you want to brighten kids days and make extra money, Zum is for you!',
         indeed: 'https://www.indeed.com/cmp/Ridezum/reviews',
         promo: 'Receive up to $500 sign up bonus!',
         gigsite: 'https://www.ridezum.com/drive.html',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0054',
         logo: wingz,
-        gig: 'Wingz Driver',
+        gig: 'Wingz',
         description:
           'A rideshare app with a twist. Wingz specializes in airport pickup and drop off and allows customers to select their favorite drivers for repeat rides. If you live near an airport and have a keen sense for customer service, Wingz is the rideshare app for you.',
         indeed: 'https://www.yelp.com/biz/wingz-san-francisco-4',
         promo: '',
         gigsite: 'https://www.wingz.me/drivers-2/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0163',
         logo: groundlink,
-        gig: 'GroundLink Chauffeur',
+        gig: 'GroundLink',
         description:
           'GroundLink is a black-car vehicle service that uses a network of professional drivers to provide transportation to riders. If you want to be a rideshare driver with class, sign up as a driver!',
         indeed: 'https://www.yelp.com/biz/groundlink-new-york',
         promo: '',
         gigsite: 'https://driver.groundlink.com/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0007', // Delivery
         logo: roadie,
-        gig: 'Roadie Driver', // Last mile
+        gig: 'Roadie', // Last mile
         description:
           'Going on a roadtrip soon? Roadie will pay you to fill your empty space and complete deliveries on the way. Roadie is a same day delivery service that connects drivers already headed in the right direction with shipments',
         indeed: 'https://www.indeed.com/cmp/Roadie/reviews',
         promo: '',
         gigsite: 'https://my.roadie.com/drive/sign-up/basic-info',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0188',
         logo: grabr,
-        gig: 'Grabr Traveler',
+        gig: 'Grabr',
         description:
           'Earn money while traveling! Grabr lets travelers subsidize their trips by delivering a handful of items. You can earn $200+ every time you travel abroad. If you are taking a trip soon, check out Grabr to see if you can earn some extra cash',
         indeed: 'https://www.producthunt.com/posts/grabr-2/reviews',
@@ -228,39 +229,36 @@ export const initialState = {
         gigsite:
           'https://grabr.io/invitation/mark-foster?utm_campaign=web&utm_source=referral_program&utm_medium=copy_link',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0010',
         logo: amazon,
-        gig: 'Amazon Flex Driver',
+        gig: 'Amazon Flex',
         description:
           'Perform the "last mile" of Amazon delivery, moving packages from regional centers to customers. Amazon Flex offers great compensation, and you can easily track your earnings in the Amazon Flex app.',
         indeed: 'https://www.indeed.com/cmp/Amazon.com/reviews?fcountry=ALL',
         promo: '',
         gigsite: 'https://flex.amazon.com/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0143',
         logo: skipcart,
-        gig: 'Skipcart Driver',
+        gig: 'Skipcart',
         description:
           'Skipcart is a service that offers last-mile delivery for retailers and restaurants. Skipcart lets you choose your own schedule and make deliveries in the community you already live in. Open the Skipcart app. Choose your hours and start delivering.',
         indeed: 'https://www.indeed.com/cmp/Skipcart/reviews',
         promo: '',
         gigsite: 'https://skipcart.com/drivers/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0155',
         logo: PICKUP,
-        gig: 'PICKUP Delivery Driver',
+        gig: 'PICKUP',
         description:
           'PICKUP is an on-demand and same day delivery service of big & heavy items for national and area businesses. If you own a truck or van, put it to good use and start hauling for money',
         indeed:
@@ -268,13 +266,12 @@ export const initialState = {
         promo: '',
         gigsite: 'https://pickupnow.com/requirements/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0193',
         logo: bungii,
-        gig: 'Bungii Driver',
+        gig: 'Bungii',
         description:
           'If you own a truck and can do some heavy lifting, Bungii will help you earn up to $40/hour doing deliveries for people in your community. They ask for you to own a 2005 or newer and rachet straps, bungee cords and moving blankets to secure your deliveries.',
         indeed:
@@ -282,65 +279,60 @@ export const initialState = {
         promo: 'Sign Up With Promo Code 5XDKA and get $10!',
         gigsite: 'https://bungii.com/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0157',
         logo: tommyrun,
-        gig: 'TommyRun Driver',
+        gig: 'TommyRun',
         description:
           'TommyRun is an app that allows users to order building materials and have them delivered within hours. If you own a truck or van you can start earning money today as a TommyRunner',
         indeed: 'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
         promo: 'Sign Up and Get a $25 Credit!',
         gigsite: 'https://tommyrun.app.link/vanKPpCzN5',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0161',
         logo: upship,
-        gig: 'uShip Shipper',
+        gig: 'uShip',
         description:
           'uShip is a service that makes shipping motorcycles, boats, and other large items both fast and affordable. If you have the type of horsepower that can handles these deliveries, you can start making money as a uShip carrier.',
         indeed: 'https://www.glassdoor.com/Reviews/uShip-Reviews-E200164.htm',
         promo: '',
         gigsite: 'https://www.uship.com/register/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0182',
         logo: dispatchit,
-        gig: 'DispatchIt Driver',
+        gig: 'DispatchIt',
         description:
           'Dispatchit provides reliable local deliveries to customers with real time ETA’s and tracking. Dispatch drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
         indeed: 'https://www.facebook.com/pg/dispatchitinc/reviews',
         promo: '',
         gigsite: 'https://www.dispatchit.com/drivers/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0189',
         logo: deliverthat,
-        gig: 'DeliverThat Driver',
+        gig: 'DeliverThat',
         description:
           'DeliverThat is a food delivery app that has partnered with well known restaraunts like QDoba, Zoes Kitchen, Boston Market and Firehouse. Delivery comissions start with a base amount, then increase based on distance and size.',
         indeed: 'https://www.indeed.com/cmp/Deliver-That/reviews',
         promo: '',
         gigsite: 'https://www.ideliverthat.com/driver',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0013',
         logo: postmates, // Food
-        gig: 'Postmates Courier',
+        gig: 'Postmates',
         description:
           'Postmates is one of the fastest growing food-delivery apps, and is hiring delivery drivers! Get delivery requests from the Postmates app, navigate to the store or restaurant and deliver to the customer location.',
         indeed: 'https://www.indeed.com/cmp/Postmates/reviews',
@@ -348,26 +340,24 @@ export const initialState = {
           'Complete a certain number of deliveries within 14 days and earn a guaranteed minimum payout (varies by location).',
         gigsite: 'https://fleet.postmates.com/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0014',
         logo: doordash,
-        gig: 'DoorDash Dasher',
+        gig: 'DoorDash',
         description:
           'Doordash is another gigantic food-delivery app hiring delivery drivers. Doordash Dashers schedule shifts and fulfill delivery requests from the DoorDash app',
         indeed: 'https://www.indeed.com/cmp/Doordash/reviews',
         promo: '',
         gigsite: 'https://www.doordash.com/dasher/signup/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0016',
         logo: ubereats,
-        gig: 'Uber Delivery Driver',
+        gig: 'Uber Eats',
         description:
           'Another big player in the food-delivery scene, UberEats drivers pick up food from local restaurants and deliver the orders to customers. Some cities offer bike and scooter delivery in addition to driving delivery.',
         indeed:
@@ -375,91 +365,84 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.uber.com/a/signup/drive/deliver/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0034',
         logo: grubhub,
-        gig: 'Grubhub Driver',
+        gig: 'Grubhub',
         description:
           'Grubhub is another food-delivery service, similar to DoorDash and other options. Grubhub drivers get guaranteed minimum earnings and additional perks for performance.',
         indeed: 'https://www.indeed.com/cmp/Grubhub/reviews',
         promo: '',
         gigsite: 'https://driver.grubhub.com/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0024',
         logo: caviar,
-        gig: 'Caviar Courier',
+        gig: 'Caviar',
         description:
           'Caviar is a food-delivery service operating in over a dozen markets with a focus on higher end restaurants that they can develop seamless partnerships with, allowing them to fulfill orders faster. Caviar has no driver rating system, and compensates couriers on an "effort-based" algorithm',
         indeed: 'https://www.indeed.com/cmp/Caviar/reviews?fjobtitle=Courier',
         promo: '',
         gigsite: 'https://www.trycaviar.com/apply',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0030',
         logo: favor,
-        gig: 'Favor Runner',
+        gig: 'Favor',
         description:
           'With Favor, you can deliver just about anything to customers and get paid for it. Unlike other deliver gigs, Favor provides a $9 per hour base pay, though tips are deducted from this, and is available in 12 cities',
         indeed: 'https://www.indeed.com/cmp/Favor-Delivery/reviews',
         promo: '',
         gigsite: 'https://apply.favordelivery.com/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0148',
         logo: zifty,
-        gig: 'Zifty Driver',
+        gig: 'Zifty',
         description:
           'Zifty is an online delivery company that partners with local restaurants and brands to bring their goods straight to clients’ doors. Zifty is looking for enthusiastic delivery providers to make deliveries of food, movies, and other items to customers.',
         indeed: 'https://www.indeed.com/cmp/Zifty.com/reviews',
         promo: '',
         gigsite: 'http://jobs.zifty.com/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0185',
         logo: peach,
-        gig: 'Peach Delivery Driver',
+        gig: 'Peach',
         description:
           'Peach focuses on carefully chosen dishes from the best lunch spots. They offer generous compensation and minimal time commitment. Peach is available in Seattle, San Diego and Boston.',
         indeed: 'https://www.indeed.com/cmp/Peach/reviews',
         promo: '',
         gigsite: 'https://www.peachd.com/jobs/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0183',
         logo: deliveroo,
-        gig: 'Deliveroo Deliverer',
+        gig: 'Deliveroo',
         description:
           'Deliveroo is a UK based food-delivery service.  Unfortunately it is not available in America, but if you live abroad Deliveroo might be right for you',
         indeed: 'https://www.indeed.com/cmp/Deliveroo/reviews',
         promo: '',
         gigsite: 'https://deliveroo.co.uk/apply',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0169',
         logo: gopuff,
-        gig: 'GoPuff Driver',
+        gig: 'GoPuff',
         description:
           'GoPuff is the largest and fastest convenience delivery app available. Customers order snacks, drinks, alcohol, personal care items and more. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel',
         indeed: 'https://www.indeed.com/cmp/Gopuff/reviews',
@@ -467,13 +450,12 @@ export const initialState = {
         gigsite:
           'https://www.fountain.com/gopuff/apply/godrive-delivery-partner',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0181', // Alcohol
         logo: drizly,
-        gig: 'Drizly Delivery Driver',
+        gig: 'Drizly',
         description:
           'Drizly focuses on the delivery of the fun stuff, alcohol that is. Drizly partners with liquor stores to deliver their fine products to customers. The hiring process is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
         indeed:
@@ -481,85 +463,78 @@ export const initialState = {
         promo: '',
         gigsite: 'https://drizly.com/liquor-stores-near-me',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0184',
         logo: saucey,
-        gig: 'Saucey Courier',
+        gig: 'Saucey',
         description:
           'Saucey is another Alcohol delivery company. It boasts a flexible schedule and solid pay for drivers. Sacuey also has a minimum pay for those who commit to working in "core blocks," which means you agree to work on the clock.',
         indeed: 'https://www.indeed.com/cmp/Saucey/reviews?fcountry=ALL',
         promo: '',
         gigsite: 'https://www.saucey.com/apply',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0008', // Shopping
         logo: instacart,
-        gig: 'Instacart Shopper',
+        gig: 'Instacart',
         description:
           'Instacart is one of the largest grocery delivery services out there. Shoppers use their platform to shop and deliver orders for their customers. If you have a car and extra time during the week, why not put both to work?',
         indeed: 'https://www.indeed.com/cmp/Instacart/reviews',
         promo: '',
         gigsite: 'https://shoppers.instacart.com/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0046',
         logo: shipt,
-        gig: 'Shipt Shopper',
+        gig: 'Shipt',
         description:
           'Shipt is another key player in the grocery delivery game. Unlike Instacart, Shipt is owned solely by Target, which is where you will be doing most of your shopping, but the jobs are similar. Shipt is a great way to get paid to shop.',
         indeed: 'https://www.indeed.com/cmp/Shipt-Shopper/reviews',
         promo: '',
         gigsite: 'https://www.shipt.com/be-a-shopper/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0186',
         logo: burpy,
-        gig: 'Burpy Shopper',
+        gig: 'Burpy',
         description:
           'Burpy is another grocery service, offering delivery to customers within the hour. It hires shoppers to shop and deliver for customers, but is only available in the Texas area. If you live in Texas and have some spare time, Burpy will gladly compensate you for it.',
         indeed: 'https://www.indeed.com/cmp/Burpy/reviews',
         promo: '',
         gigsite: 'https://shoppers.burpy.com/join-as-shopper',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0170',
         logo: deliv,
-        gig: 'DeLiv Driver',
+        gig: 'DeLiv',
         description:
           'DeLiv is a Same day delivery service helping retailers deliver their items to customers. They have a schedule where you can book hours and deliver packages for up to $22/hr. No passengers or food. No mess or stress.',
         indeed: 'https://www.indeed.com/cmp/Deliv/reviews',
         promo: '',
         gigsite: 'https://www.deliv.co/drivers/',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       {
         id: 'G0187',
         logo: burro,
-        gig: 'Burro Driver',
+        gig: 'Burro',
         description:
           'Burro is an all in one delivery app for the Austin area. Deliver Craigslist items, make store deliveries even help people move. You can set a flexible schedule and they advertise "Drive for Burro and earn $45/hr with your pickup truck."',
         indeed: 'https://www.indeed.com/cmp/Burro/salaries/Delivery-Driver',
         promo: '',
         gigsite: 'https://getburro.com/drivers.html',
         featured: false,
-        type: 'gig',
         subtypes: ['driving'],
       },
       //
@@ -575,33 +550,30 @@ export const initialState = {
         promo: '',
         gigsite: 'https://rentlikeachampion.com/',
         featured: false,
-        type: 'gig',
         subtypes: ['rental'],
       },
       {
         id: 'G0004',
         logo: neighbor,
-        gig: 'Neighbor Storage',
+        gig: 'Neighbor',
         description:
           'Got empty storage space? Earn money by giving that empty storage space a job. Start renting out your basement, garage and even closets to your neighbors today!',
         indeed: 'https://www.trustpilot.com/review/neighbor.com',
         promo: 'Sign Up for Neighbor Today and Get $50!',
         gigsite: 'https://www.neighbor.com/invited/nextwrk-39640',
         featured: true,
-        type: 'gig',
         subtypes: ['rental'],
       },
       {
         id: 'G0012',
         logo: airbnb,
-        gig: 'AirBnB Host',
+        gig: 'AirBnB',
         description:
           'The app connecting millions of homeowners looking to list with millions of renters looking to travel. As a host, AirBnB gives you full control of your availability, prices and house rules. Sign up as a host and AirBnB lets you earn money opneing up your home to travelers.',
         indeed: 'https://www.indeed.com/cmp/Airbnb/reviews',
         promo: '',
         gigsite: 'https://www.airbnb.com/host/homes',
         featured: false,
-        type: 'gig',
         subtypes: ['rental'],
       },
       {
@@ -614,7 +586,6 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.homeaway.com/lyp',
         featured: false,
-        type: 'gig',
         subtypes: ['rental'],
       },
       {
@@ -627,7 +598,6 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.onefinestay.com/list-your-home/',
         featured: false,
-        type: 'gig',
         subtypes: ['rental'],
       },
       {
@@ -640,34 +610,31 @@ export const initialState = {
         promo: '',
         gigsite: 'https://help.vrbo.com/category/List_Your_Property',
         featured: false,
-        type: 'gig',
         subtypes: ['rental'],
       },
       {
         id: 'G0017', // Car rentals
         logo: turo,
-        gig: 'Turo Car Rental',
+        gig: 'Turo',
         description:
           'Instead of leaving your car in the garage all day, rent it out! Turo is a car rental service that connects renters with car owners, and is available worldwide!',
         indeed: 'https://www.trustpilot.com/review/turo.com',
         promo: '',
         gigsite: 'https://turo.com/us/en/list-your-car',
         featured: false,
-        type: 'gig',
         subtypes: ['rental'],
       },
       {
         id: 'G0018',
         logo: getaround,
-        gig: 'Getaround Car Rental',
+        gig: 'Getaround',
         description:
           'Getaround is a car rental service that connects renters with car owners. It is available in most major cities, and is a great way to make money with little effort.',
         indeed: 'https://www.yelp.com/biz/getaround-san-francisco',
         promo: 'Sign Up and Get $20 Rental Credit!',
         gigsite:
           'https://www.getaround.com/invite/2c776f91-e44f-5695-bae1-784dd3b6ae18',
-        featured: true,
-        type: 'gig',
+        featured: false,
         subtypes: ['rental'],
       },
       {
@@ -680,7 +647,6 @@ export const initialState = {
         promo: '',
         gigsite: 'https://app.hyrecar.com/login?type=owner&form=signup',
         featured: false,
-        type: 'gig',
         subtypes: ['rental'],
       },
       {
@@ -693,7 +659,6 @@ export const initialState = {
         promo: '',
         gigsite: 'https://spothero.com/sell-parking/rent-my-parking-space/',
         featured: false,
-        type: 'gig',
         subtypes: ['rental'],
       },
       {
@@ -706,7 +671,6 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.parkingpanda.com/',
         featured: false,
-        type: 'gig',
         subtypes: ['rental'],
       },
       {
@@ -720,59 +684,54 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.rentah.com/',
         featured: false,
-        type: 'gig',
         subtypes: ['rental'],
       },
       {
         id: 'G0067',
         logo: boatsetter,
-        gig: 'Boatsetter Boat Rental',
+        gig: 'Boatsetter',
         description:
           'If you own a boat, then Boatsetter lets you rent it out — either with or without a captain. Peace of mind and insurance is included in every rental, and you choose who rents your boat!',
         indeed: 'https://www.facebook.com/pg/Boatsetter/reviews/',
         promo: 'List Your Boat and Get $100 Added to Your First Rental!',
         gigsite: 'https://www.boatsetter.com/referral/o/sqxkrtk',
         featured: true,
-        type: 'gig',
         subtypes: ['rental'],
       },
       {
         id: 'G0066',
         logo: rvshare,
-        gig: 'RVShare RV Rental',
+        gig: 'RVShare',
         description:
           'Are you an outdoorsy person who owns an RV? RVshare will connect you with individuals looking to rent it out! Their platform reaches millions of users, they give you complete control of your rental and you could earn up to $40,000 in additional income per year!',
         indeed: 'https://www.trustpilot.com/review/rvshare.com',
         promo: '',
         gigsite: 'https://rvshare.com/list-your-rv',
         featured: false,
-        type: 'gig',
         subtypes: ['rental'],
       },
       {
         id: 'G0191',
         logo: outdoorsy,
-        gig: 'Outdoorsy RV Rental',
+        gig: 'Outdoorsy',
         description:
           'Outdoorsy is another RV rental marketplace. They perform DMV checks on all driver, provide 24/7 roadside assistance and have a dedicated customer support team.',
         indeed: 'https://www.trustpilot.com/review/www.outdoorsy.com',
         promo: 'Sign Up and Get $50 Off Your First Trip!',
         gigsite: 'https://www.outdoorsy.com/invite/g6o1lb',
         featured: false,
-        type: 'gig',
         subtypes: ['rental'],
       },
       {
         id: 'G0194',
         logo: ridersshare,
-        gig: 'Riders Share Rental',
+        gig: 'Riders Share',
         description:
           'If you own a motercycle, and and it spends most of its time in your garage, Riders Share will connect you with drivers looking to rent it out. List your motorcycle for free and make an average of $150 per booking! All listings are protected by an A rated insurance provider.',
         indeed: 'https://www.facebook.com/pg/ridersshare/reviews/',
         promo: 'Sign Up and Get $25 Off Your First Trip!',
         gigsite: 'www.riders-share.com/welcome/markf+QdETy',
         featured: false,
-        type: 'gig',
         subtypes: ['rental'],
       },
       //
@@ -781,20 +740,19 @@ export const initialState = {
       {
         id: 'G0153',
         logo: bird,
-        gig: 'Bird Flyer',
+        gig: 'Bird',
         description:
           'If you noticed Bird Scooters littering the streets of you city, you can turn that clutter into cash! Bird Flyers are paid to collect scooters at the end of the night, charge them, then disperse them in the morning. All you need is some free time and something to transport them.',
         indeed: 'https://www.reddit.com/r/birdcharger/',
         promo: '',
         gigsite: 'https://flyers.bird.co/',
         featured: false,
-        type: 'gig',
         subtypes: ['other', 'scooter'],
       },
       {
         id: 'G0165',
         logo: lime,
-        gig: 'Lime Juicer',
+        gig: 'Lime',
         description:
           'Scooter charging is a popular, and lucrative, gig. If there are Lime Scooters in your area, Lime will pay you to become a juicer. Just collect them, charge them, and disperse them!',
         indeed:
@@ -802,13 +760,12 @@ export const initialState = {
         promo: '',
         gigsite: 'https://lime.bike/juicer',
         featured: false,
-        type: 'gig',
         subtypes: ['other', 'scooter'],
       },
       {
         id: 'G0175',
         logo: spin,
-        gig: 'Spin Charger',
+        gig: 'Spin',
         description:
           'Another player in the scooter game, Spin Chargers work like other charging gigs: collect, charge and disperse the scooters. You get paid for every scooter you charge.',
         indeed:
@@ -816,13 +773,12 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.spin.app/charger',
         featured: false,
-        type: 'gig',
         subtypes: ['other', 'scooter'],
       },
       {
         id: 'G0176',
         logo: skip,
-        gig: 'Skip Ranger',
+        gig: 'Skip',
         description:
           'Skip Scooters are located mainly in Virginia and Washington D.C, but if you live in that area they are willing to pay you to collect, charge and disperse their scooters.',
         indeed: 'https://www.yelp.com/biz/skip-scooter-rental-sf-san-francisco',
@@ -830,7 +786,6 @@ export const initialState = {
         gigsite:
           'https://www.fountain.com/skip-scooters/apply/general-location-ranger',
         featured: false,
-        type: 'gig',
         subtypes: ['other', 'scooter'],
       },
       //
@@ -839,7 +794,7 @@ export const initialState = {
       {
         id: 'G0003',
         logo: rover,
-        gig: 'Rover Walker/Sitter',
+        gig: 'Rover',
         description:
           'Love animals? Wanna earn some extra money? Rover will pay you to watch dogs as a Sitter or walk dogs as a Walker. They offer flexibility and can help you earn up to $1,000 a month working with animals!',
         indeed:
@@ -847,20 +802,18 @@ export const initialState = {
         promo: 'Sign Up Through the Link Below and Get $20!',
         gigsite: 'http://share.rover.com/SWhzJ',
         featured: true,
-        type: 'gig',
         subtypes: ['labor', 'dog'],
       },
       {
         id: 'G0015',
         logo: wag,
-        gig: 'Wag Walker',
+        gig: 'Wag!',
         description:
           'Wag! is one of the largest dog walking apps. They offer flexibility, secure payment through Stripe, and donates money from 30 minute walks to feed shelter dogs.',
         indeed: 'https://www.indeed.com/cmp/Wag!-1/reviews',
         promo: 'Sign Up and Get a Free Walk!',
         gigsite: 'https://wagwalking.com/dog-walker',
         featured: false,
-        type: 'gig',
         subtypes: ['labor', 'dog'],
       },
       //
@@ -869,7 +822,7 @@ export const initialState = {
       {
         id: 'G0005', // Manual labor
         logo: taskrabbit,
-        gig: 'TaskRabbit Tasker',
+        gig: 'TaskRabbit',
         description:
           'TaskRabbit is a marketplace that matches freelance labor with local demand. You can get paid to help with everyday tasks, like cleaning, moving, delivery and handyman work, for individuals in your community.',
         indeed: 'https://www.indeed.com/cmp/Taskrabbit/reviews',
@@ -877,91 +830,84 @@ export const initialState = {
         gigsite:
           'https://support.taskrabbit.com/hc/en-us/articles/360031918292-How-Do-I-Become-a-Tasker-',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0020',
         logo: handy,
-        gig: 'Handy Worker',
+        gig: 'Handy',
         description:
           'Handy pays for being a home cleaner and handymen. It covers over 20 cities in North America, Canada, and the UK. However, unlike TaskRabbit, they only accept applicants with professional experience in cleaning or handyman services.',
         indeed: 'https://www.indeed.com/cmp/Handy/reviews',
         promo: '',
         gigsite: 'https://www.handy.com/apply',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0021',
         logo: wonolo,
-        gig: 'Wonolo Worker',
+        gig: 'Wonolo',
         description:
           'Wonolo hires workers to perform certain jobs, like Warehouse Operations, General Labor, Food Production, Cleaning and Merchandising, for different Employers. They are quickly expanding across the US and are available in most major cities.',
         indeed: 'https://www.indeed.com/cmp/Wonolo/reviews',
         promo: 'Earn a $100 Bonus When You Accept a Job Through Wonolo!',
         gigsite: 'https://www.wonolo.com/find-work',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0022',
         logo: bellhops,
-        gig: 'Bellhops Mover',
+        gig: 'Bellhops',
         description:
           'Bellhops is a moving service that eases the demands of moving by connecting capable workers with clients looking to pack up and move. As a mover, you will get paid to pack boxes and move people into their new digs.',
         indeed: 'https://www.indeed.com/cmp/Bellhops/reviews',
         promo: '',
         gigsite: 'https://www.getbellhops.com/being-a-bellhop/',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0027',
         logo: dolly,
-        gig: 'Dolly Helper',
+        gig: 'Dolly',
         description:
           'The Dolly service is another moving service that pays people that have vehicles for moving, and movers to do the heavy lifting if they don’t have a vehicle, to help individuals in your community move in or out.',
         indeed: 'https://www.indeed.com/cmp/Dolly/reviews',
         promo: '',
         gigsite: 'https://dolly.com/helpers/',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0164',
         logo: easymove,
-        gig: 'EasyMove Driver',
+        gig: 'EasyMove',
         description:
           'Easymove is a delivery service offering to help users move bulky items from point A to point B. If you have a big car and can do some heavy lifting, they advertise you can make $2,500 a week as an Easymove partner.',
         indeed: 'https://www.trustpilot.com/review/www.easymove.co.uk',
         promo: '',
         gigsite: 'https://geteasymove.com/',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0192',
         logo: lugg,
-        gig: 'Lugg Lugger',
+        gig: 'Lugg',
         description:
           'Convenient Moving and Delivering is what Lugg offers. If you own a truck, you can sign up to become a Lugger and earn up to $2.5k a week! No truck? No problem! If you can do some heavy lifting you can still sign up.',
         indeed: 'https://www.indeed.com/cmp/Lugg/reviews',
         promo: '',
         gigsite: 'https://lugg.com/become-a-lugger',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0151',
         logo: goshare,
-        gig: 'GoShare Helper',
+        gig: 'GoShare',
         description:
           'GoShare specializes in delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you don’t have a truck you can apply as a helper. Depender on your driving situation, this gig can prove very lucrative.',
         indeed:
@@ -969,39 +915,36 @@ export const initialState = {
         promo: 'Sign Up Below and Receieve $10!',
         gigsite: 'https://goshare.app.link/Mark_Foster_MF6447',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0050',
         logo: takl,
-        gig: 'Takl Provider',
+        gig: 'Takl',
         description:
           'At Takl, you get paid to help others in your community complete small jobs and household chores. You can perform chores in twelve categories on your own time, and get paid fast through direct deposit.',
         indeed: 'https://www.indeed.com/cmp/Takl/reviews',
         promo: '',
         gigsite: 'https://app.takl.com/providers/register',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0190',
         logo: networx,
-        gig: 'NetWorx Pro',
+        gig: 'NetWorx',
         description:
           'NetWorx is looking for professionals offering contracting services like Carpentry, Pest Control, Fencing and Roofing. They connect you with local demand for these services, and help boost your bottom line.',
         indeed: 'https://www.glassdoor.com/Reviews/Networx-Reviews-E368391.htm',
         promo: '',
         gigsite: 'https://www.networx.com/signup',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0051', // Lawn Care
         logo: taskeasy,
-        gig: 'TaskEasy Contractor',
+        gig: 'TaskEasy',
         description:
           'TaskEasy employs landscaping professionals to provide lawnmowing, gardening, and landscaping services for individuals in the community. If you know your way around a lawn, and are looking to gain more customers, TaskEasy will help out.',
         indeed:
@@ -1009,7 +952,6 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.taskeasy.com/contractors',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
@@ -1023,33 +965,30 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.lawnstarter.com/lawn-care-businesses',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0150',
         logo: plowzandmowz,
-        gig: 'Plowz & Mowz Provider',
+        gig: 'Plowz & Mowz',
         description:
           'Plowz & Mowz is another service offering more customers to lawncare professionals. They require $1M in General Liability Insurance and professional equipment, but if you have that they advertise they can grow your business by 30%',
         indeed: 'https://www.trustpilot.com/review/www.plowzandmowz.com',
         promo: '',
         gigsite: 'https://order.plowzandmowz.com/provider-onboard',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0152',
         logo: lawnlove,
-        gig: 'Lawn Love Pro',
+        gig: 'Lawn Love',
         description:
           'If you have a truck and equipment, sign up to be a Lawn Pro and get connected with Lawn Care jobs in your community. You can choose which ones to work and get paid through the app within 72 hours.',
         indeed: 'https://www.indeed.com/cmp/Lawn-Love/reviews',
         promo: '',
         gigsite: 'https://lawnlove.com/apply',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
@@ -1063,59 +1002,54 @@ export const initialState = {
         promo: '',
         gigsite: 'https://veryable.app.link/pqxf1qmEN5',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0162', // Cleaning
         logo: homeaglow,
-        gig: 'Homeaglow Cleaner',
+        gig: 'Homeaglow',
         description:
           'Homeaglow connects residential cleaners with clients in their community. You can set your own rates, make your own schedule, and get paid weekly.',
         indeed: 'https://www.indeed.com/cmp/Homeaglow/reviews',
         promo: '',
         gigsite: 'https://www.homeaglow.com/apply',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0023', // Less intensive labor
         logo: care,
-        gig: 'Care.com', // Childcare
+        gig: 'Care', // Childcare
         description:
           'Primarily a place to find work in child or pet care, Care.com also offers gigs for housekeepers, gardeners, tutors, and those caring for the elderly.',
         indeed: 'https://www.indeed.com/cmp/Care.com/reviews',
         promo: '',
         gigsite: 'https://www.care.com/',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0167',
         logo: sittercity,
-        gig: 'Sittercity Child Care',
+        gig: 'Sittercity',
         description:
           'If you are a babysitter, nanny or child care professional, Sittercity can connect you with individuals in your community looking for your services.',
         indeed: 'https://www.indeed.com/cmp/Sittercity/reviews',
         promo: '',
         gigsite: 'https://www.sittercity.com/sitter/account',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
         id: 'G0195',
         logo: carelinx,
-        gig: 'CareLinx Caregiver',
+        gig: 'CareLinx',
         description:
           'CareLinx connects Caregivers with elders seeking care nearby. They have a network of over 300,000 caregivers and offer flexible hours, great pay and professional development.',
         indeed: 'https://www.indeed.com/cmp/Carelinx/reviews',
         promo: 'Sign Up Below and Get a Free Background Check!',
         gigsite: 'https://www.carelinx.com/p/nextwrs',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
@@ -1128,7 +1062,6 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.helpr-app.com/become-a-helpr-now',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       {
@@ -1140,8 +1073,7 @@ export const initialState = {
         indeed: 'https://www.indeed.com/cmp/Urbansitter/reviews',
         promo: 'Sign Up and Get $25 Credit!',
         gigsite: 'https://link.urbansitter.com/P2JqXJSHN5',
-        featured: true,
-        type: 'gig',
+        featured: false,
         subtypes: ['labor'],
       },
       //
@@ -1150,7 +1082,7 @@ export const initialState = {
       {
         id: 'G0026',
         logo: figureeight,
-        gig: 'Figure Eight Contributor',
+        gig: 'Figure Eight',
         description:
           'When someone need labels and annotations for a machine learning project, Figure Eight steps up. Users upload unlabeled data, with the rules they need for the project, and contributers get paid to mold the data for the model.',
         indeed:
@@ -1158,20 +1090,18 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.figure-eight.com/contributor/',
         featured: false,
-        type: 'gig',
         subtypes: ['other'],
       },
       {
         id: 'G0035',
         logo: hellotech,
-        gig: 'HelloTech Tech',
+        gig: 'HelloTech',
         description:
           'Have a plethora of technical knowledge? Wanna get paid to help those less technically advanced? HelloTech connects you with users in your area looking for tech help. You set your own schedule, and get paid weekly',
         indeed: 'https://www.indeed.com/cmp/Hellotech/reviews?fcountry=ALL',
         promo: 'Sign Up and Get $10!',
         gigsite: 'http://fbuy.me/v/markfoster314',
         featured: false,
-        type: 'gig',
         subtypes: ['other'],
       },
       //
@@ -1187,7 +1117,6 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.etsy.com/join',
         featured: false,
-        type: 'gig',
         subtypes: ['other'],
       },
       //
@@ -1196,14 +1125,13 @@ export const initialState = {
       {
         id: 'G0029',
         logo: fancyhands,
-        gig: 'Fancy Hands Assistant',
+        gig: 'Fancy Hands',
         description:
           'Want to become a virtual assistant, offering services to entrepenuers and businesses from wherever you want? Fancy Hands is a team of US-based virtual assistants, and a great place to start!',
         indeed: 'https://www.indeed.com/cmp/Fancy-Hands/reviews',
         promo: '',
         gigsite: 'https://www.fancyhands.com/jobs',
         featured: false,
-        type: 'gig',
         subtypes: ['other'],
       },
       //
@@ -1222,7 +1150,6 @@ export const initialState = {
         promo: '',
         gigsite: 'http://www.gigwalk.com/gigwalkers/',
         featured: false,
-        type: 'gig',
         subtypes: ['other'],
       },
       {
@@ -1235,20 +1162,18 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.marketforce.com/become-a-mystery-shopper',
         featured: false,
-        type: 'gig',
         subtypes: ['other'],
       },
       {
         id: 'G0071',
         logo: gbw,
-        gig: 'GBW Evaluator',
+        gig: 'GBW',
         description:
           'GBW pays individuals to shop at globally recognized brands and provide feedback on the experience. They have organized over 14 million mystery shops for some of the largest brands.',
         indeed: 'https://www.trustpilot.com/review/www.gapbuster.com',
         promo: '',
         gigsite: 'https://gbw.solutions/becomeanevaluator',
         featured: false,
-        type: 'gig',
         subtypes: ['other'],
       },
       // Bullshit work
@@ -1262,7 +1187,6 @@ export const initialState = {
         promo: '',
         gigsite: 'https://app.spare5.com/fives/sign_in',
         featured: false,
-        type: 'gig',
         subtypes: ['other'],
       },
       {
@@ -1276,76 +1200,70 @@ export const initialState = {
         promo: '',
         gigsite: 'https://2020census.gov/en/jobs.html',
         featured: false,
-        type: 'gig',
         subtypes: ['other'],
       },
       // Mechanics
       {
         id: 'G0055',
         logo: yourmechanic,
-        gig: 'YourMechanic Mechanic',
+        gig: 'YourMechanic',
         description:
           'YourMechanic offers at home mechanic services to users, and is a great way for people with auto repair skills to leverage the gig economy. You can make extra money providing car repairs and maitenance at the homes of clients.',
         indeed: 'https://www.trustpilot.com/review/yourmechanic.com',
         promo: 'Sign Up Below and Get a $10 Credit!',
         gigsite: 'https://www.yourmechanic.com/rl/IyhJRw1860682',
         featured: false,
-        type: 'gig',
         subtypes: ['labor'],
       },
       // Massages
       {
         id: 'G0056',
         logo: zeel,
-        gig: 'Zeel Massage Therapist',
+        gig: 'Zeel',
         description:
           'Zeel is a service offering at home massages to users, and is a phenomenal way for massage therapists to leverage the gig economy. 18% gratuity is added to every in-home appointment and customers pay for late cancelations.',
         indeed: 'https://www.indeed.com/cmp/Zeel/reviews',
         promo: 'Sign Up With Code PAUSE20 and get $20',
         gigsite: 'https://www.zeel.com/apply',
         featured: false,
-        type: 'gig',
         subtypes: ['other'],
       },
       {
         id: 'G0064',
         logo: soothe,
-        gig: 'Soothe Therapist',
+        gig: 'Soothe',
         description:
           'Gig work for massage therapists, including deep tissue, sports, and couples massage work. Soothe advertises 2-3x industry standard pay and schedule flexibility.',
         indeed: 'https://www.indeed.com/cmp/Soothe-Inc/reviews',
         promo: '',
         gigsite: 'https://www.soothe.com/apply',
         featured: false,
-        type: 'gig',
         subtypes: ['other'],
       },
       // Beauty
       {
         id: 'G0160',
         logo: priv,
-        gig: 'Priv Pro',
+        gig: 'Priv',
         description:
           'Beauty. Priv connects customers on-demand with freelance beauty and wellness professionals, taking a 20% commission. Priv services include makeup, blowout, haircut, nails/manicure, massage, personal training, men’s grooming, spray tan and facials. “Priv Pros” select shifts and kinds of jobs they choose.',
         indeed: 'https://www.indeed.com/cmp/Priv/reviews?fcountry=ALL',
         promo: '',
         gigsite: 'https://gopriv.com/pro',
         featured: false,
-        type: 'gig',
         subtypes: ['other'],
       },
       // Nurses
       {
         id: 'G0179',
         logo: heal,
-        gig: 'Heal.com',
+        gig: 'Heal',
         description:
           'Gig work for healthcare professionals. Heal.com lets healthcare professionals spend quality time with patients in the privacy, comfort and convenience of their environment with the full capabilities of the doctor’s office',
         indeed: 'https://www.indeed.com/cmp/Heal/reviews',
         promo: '',
         gigsite: 'https://heal.com/medical-team/',
         featured: false,
-        type: 'gig',
         subtypes: ['other'],
       },
       {
@@ -1359,7 +1277,6 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.slingshothealth.com/providers/',
         featured: false,
-        type: 'gig',
         subtypes: ['other'],
       },
       // Unfinished
@@ -1375,7 +1292,7 @@ export const initialState = {
       //   promo: '',
       //   gigsite: '',
       //   featured: false,
-      //   type: 'gig',
+      //
       //   subtypes: [''],
       // },
       //
@@ -1397,8 +1314,7 @@ export const initialState = {
         promo: 'Free Download on IOS and Android!',
         gigsite: 'https://gridwise.io/',
         featured: true,
-        type: 'service',
-        subtypes: ['driver', 'rideshare'],
+        subtypes: ['driving', 'rideshare'],
       },
       {
         id: 'S0002',
@@ -1410,9 +1326,8 @@ export const initialState = {
           'https://play.google.com/store/apps/details?id=partners.driver.mystro&hl=en_US',
         promo: 'Try Mystro Free for 14 Days!',
         gigsite: 'https://mystrodriver.com/registration-page-half-photo',
-        featured: true,
-        type: 'service',
-        subtypes: ['driver', 'rideshare'],
+        featured: false,
+        subtypes: ['driving', 'rideshare'],
       },
       {
         id: 'S0003',
@@ -1424,9 +1339,8 @@ export const initialState = {
         promo: '',
         gigsite:
           'https://apps.apple.com/us/app/surge-surge-tracking-for-uber/id986581500',
-        featured: true,
-        type: 'service',
-        subtypes: ['driver', 'rideshare'],
+        featured: false,
+        subtypes: ['driving', 'rideshare'],
       },
       {
         id: 'S0004',
@@ -1439,8 +1353,7 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.sherpashare.com/',
         featured: false,
-        type: 'service',
-        subtypes: ['driver', 'rideshare'],
+        subtypes: ['driving', 'rideshare'],
       },
       {
         id: 'S0005',
@@ -1452,7 +1365,6 @@ export const initialState = {
         promo: 'Sign Up Below for a Free 30 Day Trial and 20% Off!',
         gigsite: 'http://trplg.co/389373',
         featured: true,
-        type: 'service',
         subtypes: ['business'],
       },
       {
@@ -1466,8 +1378,7 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.everlance.com/',
         featured: false,
-        type: 'service',
-        subtypes: ['driver', 'business'],
+        subtypes: ['driving', 'business'],
       },
       {
         id: 'S0030',
@@ -1479,8 +1390,7 @@ export const initialState = {
         promo: '',
         gigsite: 'https://grabb.io/',
         featured: false,
-        type: 'service',
-        subtypes: ['driver', 'rideshare'],
+        subtypes: ['driving', 'rideshare'],
       },
       {
         id: 'S0031',
@@ -1492,8 +1402,7 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.hurdlr.com/',
         featured: false,
-        type: 'service',
-        subtypes: ['driver', 'business'],
+        subtypes: ['driving', 'business'],
       },
       {
         id: 'S0038',
@@ -1505,8 +1414,7 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.adwayusa.com/',
         featured: false,
-        type: 'service',
-        subtypes: ['driver'],
+        subtypes: ['driving'],
       },
       {
         id: 'S0039',
@@ -1518,8 +1426,7 @@ export const initialState = {
         promo: '',
         gigsite: 'https://www.nickelytics.com/',
         featured: false,
-        type: 'service',
-        subtypes: ['driver'],
+        subtypes: ['driving'],
       },
       {
         id: 'S0040',
@@ -1531,8 +1438,7 @@ export const initialState = {
         promo: '',
         gigsite: 'https://wrapify.com/',
         featured: false,
-        type: 'service',
-        subtypes: ['driver'],
+        subtypes: ['driving'],
       },
       {
         id: 'S0033',
@@ -1543,9 +1449,8 @@ export const initialState = {
         indeed: 'https://www.playoctopus.com/driver-reviews/',
         promo: '',
         gigsite: 'https://www.playoctopus.com/drivers/',
-        featured: true,
-        type: 'service',
-        subtypes: ['driver'],
+        featured: false,
+        subtypes: ['driving'],
       },
       {
         id: 'S0037',
@@ -1557,8 +1462,7 @@ export const initialState = {
         promo: '',
         gigsite: 'https://stickerride.com/',
         featured: false,
-        type: 'service',
-        subtypes: ['driver'],
+        subtypes: ['driving'],
       },
       // Scooter apps
       {
@@ -1572,8 +1476,7 @@ export const initialState = {
         promo: '',
         gigsite: 'https://scootermap.com/?sc_referral=62591ccf',
         featured: true,
-        type: 'service',
-        subtypes: ['scooter'],
+        subtypes: ['scooter', 'other'],
       },
       // Products and classes
       //
@@ -1588,18 +1491,18 @@ export const initialState = {
       //   promo: '',
       //   gigsite: '',
       //   featured: false,
-      //    type: 'service',  subtypes: [''],
+      //      subtypes: [''],
       // },
       {
         id: 'D0001',
-        logo: uber,
+        logo: acorns,
         gig: 'Acorns',
         description: '',
         indeed: '',
-        promo: 'They get $5 and We get $5',
+        promo:
+          'Acorns automatically invests your spare change into a portfolio built by experts. Sign up today and get a free $5 for your account!',
         gigsite: 'https://acorns.com/invite/SGU9A3',
         featured: false,
-        type: 'deal',
         subtypes: [''],
       },
     ],
@@ -1626,6 +1529,9 @@ const appReducer = (state = initialState, action) =>
         draft.error = action.error;
         draft.loading = false;
         break;
+
+      case TOGGLE_MOBNAV:
+        draft.showMobNav = !draft.showMobNav;
     }
   });
 

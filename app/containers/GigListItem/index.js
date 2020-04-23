@@ -27,7 +27,8 @@ import Wrapper from './Wrapper';
 const Spacing = styled.div`
   margin: 15px;
   @media (max-width: 768px) {
-    margin: 7px;
+    margin: 0px;
+    padding: 10px 20px;
   }
 `;
 
@@ -39,19 +40,28 @@ const LinkSpace = styled.div`
   }
 `;
 
+const Title = styled.div`
+  text-align: left;
+  margin-left: 60px;
+  margin-top: -12px;
+  @media (max-width: 768px) {
+    margin-left: 50px;
+    margin-top: -8px;
+  }
+`;
+
 export function GigsListItem(props) {
   const { item } = props;
 
-  // Put together the content of the repository
   const content = (
     <Spacing>
       <Wrapper>
         <Img src={item.logo} alt="Company - Logo" />
         <Ul>
           <Li>
-            <CenterText>
+            <Title>
               <H2>{item.gig}</H2>
-            </CenterText>
+            </Title>
           </Li>
           <Li>
             <P>{item.description}</P>

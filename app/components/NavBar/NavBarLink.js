@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default styled.a`
   float: right;
-  padding: 16px 10px;
+  padding: 16.5px 10px;
   text-decoration: none;
   border-radius: 4px;
   -webkit-font-smoothing: antialiased;
@@ -13,10 +13,6 @@ export default styled.a`
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
   color: #fff;
-  @media (max-width: 768px) {
-    padding: 8px 5px;
-    font-size: 10px;
-  }
 
   &:hover {
     background: #9dcdea;
