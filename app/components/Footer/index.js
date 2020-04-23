@@ -12,6 +12,7 @@ import Ul from 'components/Ul';
 import H2 from 'components/H1';
 import CenterText from 'components/CenterText';
 import AdDisclose from 'components/AdDisclose';
+import VecDisclose from 'components/VecDisclose/VecDisclose';
 import Li from './Li';
 import Wrapper from './Wrapper';
 import Img from './Img';
@@ -44,6 +45,9 @@ function Footer() {
             <Li />
             <Li>
               <AdDisclose />
+            </Li>
+            <Li>
+              <VecDisclose />
             </Li>
             <Li>
               <A href="/terms-of-service">Terms of Service</A>

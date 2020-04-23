@@ -142,7 +142,7 @@ export const initialState = {
         indeed: 'https://www.indeed.com/cmp/Uber/reviews',
         promo: '',
         gigsite: 'https://www.uber.com/us/en/drive/',
-        featured: true,
+        featured: false,
         subtypes: ['driving'],
       },
       {
@@ -634,7 +634,7 @@ export const initialState = {
         promo: 'Sign Up and Get $20 Rental Credit!',
         gigsite:
           'https://www.getaround.com/invite/2c776f91-e44f-5695-bae1-784dd3b6ae18',
-        featured: true,
+        featured: false,
         subtypes: ['rental'],
       },
       {
@@ -1073,7 +1073,7 @@ export const initialState = {
         indeed: 'https://www.indeed.com/cmp/Urbansitter/reviews',
         promo: 'Sign Up and Get $25 Credit!',
         gigsite: 'https://link.urbansitter.com/P2JqXJSHN5',
-        featured: true,
+        featured: false,
         subtypes: ['labor'],
       },
       //
@@ -1326,7 +1326,7 @@ export const initialState = {
           'https://play.google.com/store/apps/details?id=partners.driver.mystro&hl=en_US',
         promo: 'Try Mystro Free for 14 Days!',
         gigsite: 'https://mystrodriver.com/registration-page-half-photo',
-        featured: true,
+        featured: false,
         subtypes: ['driving', 'rideshare'],
       },
       {
@@ -1339,7 +1339,7 @@ export const initialState = {
         promo: '',
         gigsite:
           'https://apps.apple.com/us/app/surge-surge-tracking-for-uber/id986581500',
-        featured: true,
+        featured: false,
         subtypes: ['driving', 'rideshare'],
       },
       {
@@ -1449,7 +1449,7 @@ export const initialState = {
         indeed: 'https://www.playoctopus.com/driver-reviews/',
         promo: '',
         gigsite: 'https://www.playoctopus.com/drivers/',
-        featured: true,
+        featured: false,
         subtypes: ['driving'],
       },
       {

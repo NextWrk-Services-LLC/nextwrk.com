@@ -29,7 +29,7 @@ function AdDisclose() {
     <div>
       <PLink onClick={() => toggleShow(!show)}>Advertiser Disclosure</PLink>
       {show ? (
-        <div style={{ backgroundColor: `#ffffff`, padding: '5px' }}>
+        <div style={{ padding: '5px' }}>
           <P>
             NextWrk is a free service that connects users with their best
             avenues for success in the rapidly evolving gig economy. In many

@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 const CenteredSection = styled.img`
-  width: 100%;
-  max-height: 350px;
-  float: left;
+  max-width: 100%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
 `;
 
 export default CenteredSection;

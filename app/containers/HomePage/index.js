@@ -25,7 +25,6 @@ import H2 from 'components/H2';
 import Header from 'components/Header';
 import GigsList from 'components/GigsList';
 import H3 from './H3';
-import CenteredSection from './CenteredSection';
 import Section from './Section';
 import { changeUsername } from './actions';
 import reducer from './reducer';
@@ -38,6 +37,11 @@ import deal from './deals.png';
 const Table = styled.table`
   border-collapse: separate;
   border-spacing: 15px;
+`;
+
+const TdImg = styled.td`
+  width: 50%;
+  text-align: center;
 `;
 
 const key = 'home';
@@ -72,67 +76,52 @@ export function HomePage({ loading, error, gigs }) {
         />
       </Helmet>
       <Header />
-      <div style={{ padding: '0px 10px' }}>
-        <CenteredSection>
-          <H1>Make Easier Money on Your Own Time</H1>
-        </CenteredSection>
-        <div style={{ marginTop: '-40px' }}>
-          <H2>Discover...</H2>
-          <Table>
-            <tbody>
-              <tr>
-                <td style={{ width: '33%' }}>
-                  <Img src={gig} alt="Gig Vector" />
-                </td>
-                <td>
-                  <H1>Gig Work</H1>
-                  <H3>
-                    New opportunities to earn extra money on your own time
-                  </H3>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <Img src={services} alt="Services Vector" />
-                </td>
-                <td>
-                  <H1>New Services</H1>
-                  <H3>
-                    A multitude of apps and services to make your jobs easier
-                    and more lucrative
-                  </H3>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <Img src={deal} alt="Deals Vector" />
-                </td>
-                <td>
-                  <H1>Deals</H1>
-                  <H3>
-                    Exclusive deals to ensure you are never leaving any money on
-                    the table
-                  </H3>
-                </td>
-              </tr>
-            </tbody>
-          </Table>
-        </div>
-        <Section>
-          <H2>Featured Gig Jobs</H2>
-          <hr />
-          <GigsList {...gigsFeaturedProps} />
-          <H2>Featured Services</H2>
-          <hr />
-          <GigsList {...servicesFeaturedProps} />
-          {/* <H2>Featured Deals</H2>
-          <hr />
-          <DealItem />
-          <H2>Featured Freelance Networks</H2>
-          <hr />
-          <FreelanceItem /> */}
-        </Section>
-      </div>
+      <H2>Discover...</H2>
+      <Table>
+        <tbody>
+          <tr>
+            <TdImg>
+              <Img src={gig} alt="Gig Vector" />
+            </TdImg>
+            <td>
+              <H1>Gig Work</H1>
+              <H3>New opportunities to earn extra money on your own time</H3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <H1>New Services</H1>
+              <H3>
+                A multitude of apps and services to make your jobs easier and
+                more lucrative
+              </H3>
+            </td>
+            <TdImg>
+              <Img src={services} alt="Services Vector" />
+            </TdImg>
+          </tr>
+          <tr>
+            <TdImg>
+              <Img src={deal} alt="Deals Vector" />
+            </TdImg>
+            <td>
+              <H1>Deals</H1>
+              <H3>
+                Exclusive deals to ensure you are never leaving any money on the
+                table
+              </H3>
+            </td>
+          </tr>
+        </tbody>
+      </Table>
+      <Section>
+        <H2>Featured Gigs</H2>
+        <hr />
+        <GigsList {...gigsFeaturedProps} />
+        <H2>Featured Services</H2>
+        <hr />
+        <GigsList {...servicesFeaturedProps} />
+      </Section>
     </article>
   );
 }
