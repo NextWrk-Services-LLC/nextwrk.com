@@ -12,7 +12,7 @@ export default styled.p`
   outline: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
-  color: #070600;
+  color: #3b9ad5;
   @media (max-width: 768px) {
     padding: 3px 5px;
     font-size: 14px;

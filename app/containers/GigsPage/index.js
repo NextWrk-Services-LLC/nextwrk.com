@@ -113,17 +113,19 @@ export function GigsPage({
         />
       </Helmet>
       <Img src={gigsheader} alt="Gigs Page Header" />
-      <Wrapper>
-        <ContentWrapper>
-          <NavBarLink onClick={showAll}>All</NavBarLink>
-          <NavBarLink onClick={showDriving}>Driving</NavBarLink>
-          <NavBarLink onClick={showLabor}>Labor</NavBarLink>
-          <NavBarLink onClick={showRental}>Rental</NavBarLink>
-          <NavBarLink onClick={showOther}>Other</NavBarLink>
-        </ContentWrapper>
-      </Wrapper>
-      <hr />
-      {switchGigs(gigsPage)}
+      <div style={{ padding: '5px' }}>
+        <Wrapper>
+          <ContentWrapper>
+            <NavBarLink onClick={showAll}>All</NavBarLink>
+            <NavBarLink onClick={showDriving}>Driving</NavBarLink>
+            <NavBarLink onClick={showLabor}>Labor</NavBarLink>
+            <NavBarLink onClick={showRental}>Rental</NavBarLink>
+            <NavBarLink onClick={showOther}>Other</NavBarLink>
+          </ContentWrapper>
+        </Wrapper>
+        <hr />
+        {switchGigs(gigsPage)}
+      </div>
     </div>
   );
 }

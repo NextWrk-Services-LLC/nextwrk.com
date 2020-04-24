@@ -121,17 +121,19 @@ export function ServicesPage({
         />
       </Helmet>
       <Header />
-      <Wrapper>
-        <ContentWrapper>
-          <NavBarLink onClick={showAll}>All</NavBarLink>
-          <NavBarLink onClick={showDriving}>Driving</NavBarLink>
-          <NavBarLink onClick={showTaxes}>Taxes</NavBarLink>
-          <NavBarLink onClick={showRental}>Rental</NavBarLink>
-          <NavBarLink onClick={showOther}>Other</NavBarLink>
-        </ContentWrapper>
-      </Wrapper>
-      <hr />
-      {switchServices(servicesPage)}
+      <div style={{ padding: '5px' }}>
+        <Wrapper>
+          <ContentWrapper>
+            <NavBarLink onClick={showAll}>All</NavBarLink>
+            <NavBarLink onClick={showDriving}>Driving</NavBarLink>
+            <NavBarLink onClick={showTaxes}>Taxes</NavBarLink>
+            <NavBarLink onClick={showRental}>Rental</NavBarLink>
+            <NavBarLink onClick={showOther}>Other</NavBarLink>
+          </ContentWrapper>
+        </Wrapper>
+        <hr />
+        {switchServices(servicesPage)}
+      </div>
     </div>
   );
 }
