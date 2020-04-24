@@ -18,7 +18,7 @@ const selectFreelancePageDomain = state => state.freelancePage || initialState;
 const makeSelectFreelancePage = () =>
   createSelector(
     selectFreelancePageDomain,
-    substate => substate,
+    freelancePageState => freelancePageState.showFreelance,
   );
 
 export default makeSelectFreelancePage;

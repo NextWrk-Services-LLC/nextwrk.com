@@ -12,8 +12,13 @@ const Wrapper = styled.li`
   -webkit-box-shadow: 1px 1px 3px grey;
   box-shadow: 1px 1px 3px grey;
   @media (max-width: 768px) {
-    padding: 5px 10px;
-    max-width: 150px;
+    padding: 15px 15px;
+    min-width: 80%;
+    max-width: 500px;
+  }
+
+  &:hover {
+    background: #f7f7f7;
   }
 `;
 

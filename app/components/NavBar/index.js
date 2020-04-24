@@ -6,8 +6,10 @@
  *
  */
 
-import React, { memo } from 'react';
+import React, { memo, useState } from 'react';
 import styled from 'styled-components';
+import { useMediaQuery } from 'react-responsive';
+import { compose } from 'redux';
 
 import NavBarLink from './NavBarLink';
 import LogoLink from './LogoLink';
@@ -23,7 +25,7 @@ const Wrapper = styled.div`
   z-index: 2;
   @media (max-width: 768px) {
     position: static;
-    height: 32px;
+    border-bottom: 1px solid #4da3d9;
   }
 `;
 
@@ -34,22 +36,76 @@ const ContentWrapper = styled.div`
   text-align: center;
 `;
 
+const MobNav = styled.a`
+  text-decoration: none;
+  color: #3b9ad5;
+`;
+
+const DropDown = styled.div`
+  text-align: center;
+`;
+
+const Ul = styled.ul`
+  list-style-type: none;
+`;
+
+const Li = styled.li`
+  font-size: 20px;
+  padding: 10px 40px;
+`;
+
 function NavBar() {
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const [show, toggleShow] = useState(false);
+
   return (
-    <Wrapper>
-      <ContentWrapper>
-        <LogoLink to="/">
-          <Img src={Logo} alt="NextWrk - Logo" />
-        </LogoLink>
-        <NavBarLink href="/deals">Deals</NavBarLink>
-        <NavBarLink href="/freelance">Freelance</NavBarLink>
-        <NavBarLink href="/services">Services</NavBarLink>
-        <NavBarLink href="/gigs">Gigs</NavBarLink>
-      </ContentWrapper>
-    </Wrapper>
+    <React.Fragment>
+      <Wrapper>
+        <ContentWrapper>
+          <LogoLink to="/">
+            <Img src={Logo} alt="NextWrk - Logo" />
+          </LogoLink>
+          {isMobile ? (
+            <NavBarLink onClick={() => toggleShow(!show)} href="#">
+              ☰
+            </NavBarLink>
+          ) : (
+            <React.Fragment>
+              <NavBarLink href="/deals">Deals</NavBarLink>
+              <NavBarLink href="/freelance">Freelance</NavBarLink>
+              <NavBarLink href="/services">Services</NavBarLink>
+              <NavBarLink href="/gigs">Gigs</NavBarLink>
+            </React.Fragment>
+          )}
+        </ContentWrapper>
+      </Wrapper>
+      {show ? (
+        <DropDown>
+          <Ul>
+            <Li>
+              {' '}
+              <MobNav href="/gigs">Gigs</MobNav>
+            </Li>
+            <Li>
+              <MobNav href="/services">Services</MobNav>
+            </Li>
+            <Li>
+              {' '}
+              <MobNav href="/freelance">Freelance</MobNav>
+            </Li>
+            <Li>
+              {' '}
+              <MobNav href="/deals">Deals</MobNav>
+            </Li>
+          </Ul>
+        </DropDown>
+      ) : (
+        ''
+      )}
+    </React.Fragment>
   );
 }
 
 NavBar.propTypes = {};
 
-export default memo(NavBar);
+export default compose(memo)(NavBar);

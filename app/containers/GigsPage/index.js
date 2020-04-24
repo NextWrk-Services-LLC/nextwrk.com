@@ -19,36 +19,38 @@ import {
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
-// import Header from './Header';
 import makeSelectGigsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
-// import NavBarLink from './NavBarLink';
-// import Wrapper from './Wrapper';
-// import ContentWrapper from './ContentWrapper';
+import NavBarLink from './NavBarLink';
+import Wrapper from './Wrapper';
+import ContentWrapper from './ContentWrapper';
 import { changeFilter } from './actions';
 import AllGigs from './AllGigs';
 import DrivingGigs from './DrivingGigs';
 import LaborGigs from './LaborGigs';
 import RentalGigs from './RentalGigs';
 import OtherGigs from './OtherGigs';
+import Img from './Img';
+import gigsheader from './gigsheader.png';
 
 const key = 'gigsPage';
 
 export function GigsPage({
+  gigsPage,
   loading,
   error,
   gigs,
-  // showAll,
-  // showDriving,
-  // showLabor,
-  // showRental,
-  // showOther,
+  showAll,
+  showDriving,
+  showLabor,
+  showRental,
+  showOther,
 }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
-  const allGigs = gigs.filter(obj => obj.type === 'gig');
+  const allGigs = gigs.filter(obj => obj.id.startsWith('G'));
   const drivingGigs = allGigs.filter(obj => obj.subtypes.includes('driving'));
   const laborGigs = allGigs.filter(obj => obj.subtypes.includes('labor'));
   const rentalGigs = allGigs.filter(obj => obj.subtypes.includes('rental'));
@@ -104,33 +106,40 @@ export function GigsPage({
   return (
     <div>
       <Helmet>
-        <title>Find New Gigs</title>
-        <meta name="GigsPage" content="Displays All Gigs" />
+        <title>Discover New Gig Opportunities</title>
+        <meta
+          name="description"
+          content="There are a plethora of jobs available to anyone with a phone, car, and/or skill. NextWrk's Gig Page helps exposes individuals to new opportunities in the gig economy, and helps them find the best jobs for them!"
+        />
       </Helmet>
-      {/* <Wrapper>
-        <ContentWrapper>
-          <NavBarLink onClick={showAll}>All</NavBarLink>
-          <NavBarLink onClick={showDriving}>Driving</NavBarLink>
-          <NavBarLink onClick={showLabor}>Labor</NavBarLink>
-          <NavBarLink onClick={showRental}>Rental</NavBarLink>
-          <NavBarLink onClick={showOther}>Other</NavBarLink>
-        </ContentWrapper>
-      </Wrapper>
-      <Header /> */}
-      {switchGigs('all')}
+      <Img src={gigsheader} alt="Gigs Page Header" />
+      <div style={{ padding: '5px' }}>
+        <Wrapper>
+          <ContentWrapper>
+            <NavBarLink onClick={showAll}>All</NavBarLink>
+            <NavBarLink onClick={showDriving}>Driving</NavBarLink>
+            <NavBarLink onClick={showLabor}>Labor</NavBarLink>
+            <NavBarLink onClick={showRental}>Rental</NavBarLink>
+            <NavBarLink onClick={showOther}>Other</NavBarLink>
+          </ContentWrapper>
+        </Wrapper>
+        <hr />
+        {switchGigs(gigsPage)}
+      </div>
     </div>
   );
 }
 
 GigsPage.propTypes = {
+  gigsPage: PropTypes.string,
   loading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   gigs: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
-  // showAll: PropTypes.func,
-  // showDriving: PropTypes.func,
-  // showLabor: PropTypes.func,
-  // showRental: PropTypes.func,
-  // showOther: PropTypes.func,
+  showAll: PropTypes.func,
+  showDriving: PropTypes.func,
+  showLabor: PropTypes.func,
+  showRental: PropTypes.func,
+  showOther: PropTypes.func,
 };
 
 const mapStateToProps = createStructuredSelector({
