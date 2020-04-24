@@ -58,7 +58,7 @@ export function FreelancePage({ freelancePage, loading, error, gigs }) {
         />
       </Helmet>
       <Header />
-      {switchFreelance(freelancePage)}
+      <div style={{ padding: '5px' }}>{switchFreelance(freelancePage)}</div>
     </div>
   );
 }

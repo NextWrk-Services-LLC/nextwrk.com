@@ -49,7 +49,9 @@ export function DealsPage({ loading, error, gigs }) {
         />
       </Helmet>
       <Header />
-      <AllDeals deals={dealsProps} />
+      <div style={{ padding: '5px' }}>
+        <AllDeals deals={dealsProps} />
+      </div>
     </div>
   );
 }

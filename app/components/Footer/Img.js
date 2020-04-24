@@ -7,7 +7,7 @@ const Img = styled(NormalImg)`
   height: 25px;
   @media (max-width: 768px) {
     margin: 10px;
-    height: 22px;
+    height: 35px;
   }
 `;
 

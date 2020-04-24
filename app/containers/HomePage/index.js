@@ -10,6 +10,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
+import { useMediaQuery } from 'react-responsive';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 
@@ -50,6 +51,8 @@ export function HomePage({ loading, error, gigs }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+
   const featured = gigs.filter(obj => obj.featured === true);
   const featuredServices = featured.filter(obj => obj.id.startsWith('S'));
   const featuredGigs = featured.filter(obj => obj.id.startsWith('G'));
@@ -76,52 +79,97 @@ export function HomePage({ loading, error, gigs }) {
         />
       </Helmet>
       <Header />
-      <H2>Discover...</H2>
-      <Table>
-        <tbody>
-          <tr>
-            <TdImg>
-              <Img src={gig} alt="Gig Vector" />
-            </TdImg>
-            <td>
-              <H1>Gig Work</H1>
-              <H3>New opportunities to earn extra money on your own time</H3>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <H1>New Services</H1>
-              <H3>
-                A multitude of apps and services to make your jobs easier and
-                more lucrative
-              </H3>
-            </td>
-            <TdImg>
-              <Img src={services} alt="Services Vector" />
-            </TdImg>
-          </tr>
-          <tr>
-            <TdImg>
-              <Img src={deal} alt="Deals Vector" />
-            </TdImg>
-            <td>
-              <H1>Deals</H1>
-              <H3>
-                Exclusive deals to ensure you are never leaving any money on the
-                table
-              </H3>
-            </td>
-          </tr>
-        </tbody>
-      </Table>
-      <Section>
-        <H2>Featured Gigs</H2>
-        <hr />
-        <GigsList {...gigsFeaturedProps} />
-        <H2>Featured Services</H2>
-        <hr />
-        <GigsList {...servicesFeaturedProps} />
-      </Section>
+      <div style={{ padding: '5px' }}>
+        <H1>Discover...</H1>
+        {isMobile ? (
+          <Table>
+            <tbody>
+              <tr>
+                <TdImg>
+                  <Img src={gig} alt="Gig Vector" />
+                </TdImg>
+                <td>
+                  <H1>Gig Work</H1>
+                  <H3>
+                    New opportunities to earn extra money on your own time
+                  </H3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <H1>New Services</H1>
+                  <H3>
+                    A multitude of apps and services to make your jobs easier
+                    and more lucrative
+                  </H3>
+                </td>
+                <TdImg>
+                  <Img src={services} alt="Services Vector" />
+                </TdImg>
+              </tr>
+              <tr>
+                <TdImg>
+                  <Img src={deal} alt="Deals Vector" />
+                </TdImg>
+                <td>
+                  <H1>Deals</H1>
+                  <H3>
+                    Exclusive deals to ensure you are never leaving any money on
+                    the table
+                  </H3>
+                </td>
+              </tr>
+            </tbody>
+          </Table>
+        ) : (
+          <Table>
+            <tbody>
+              <tr>
+                <td>
+                  <Img src={gig} alt="Gig Vector" />
+                </td>
+                <td>
+                  <Img src={services} alt="Services Vector" />
+                </td>
+                <td>
+                  <Img src={deal} alt="Deals Vector" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <H1>Gig Work</H1>
+                  <H3>
+                    New opportunities to earn extra money on your own time
+                  </H3>
+                </td>
+                <td>
+                  <H1>New Services</H1>
+                  <H3>
+                    A multitude of apps and services to make your jobs easier
+                    and more lucrative
+                  </H3>
+                </td>
+                <td>
+                  <H1>Deals</H1>
+                  <H3>
+                    Exclusive deals to ensure you are never leaving any money on
+                    the table
+                  </H3>
+                </td>
+              </tr>
+            </tbody>
+          </Table>
+        )}
+
+        <Section>
+          <H2>Featured Gigs</H2>
+          <hr />
+          <GigsList {...gigsFeaturedProps} />
+          <H2>Featured Services</H2>
+          <hr />
+          <GigsList {...servicesFeaturedProps} />
+        </Section>
+      </div>
     </article>
   );
 }

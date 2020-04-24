@@ -3,11 +3,15 @@ import styled from 'styled-components';
 import NormalImg from 'components/Img';
 
 const Img = styled(NormalImg)`
-  height: 50px;
+  width: 100%;
   margin: 0 auto;
-  border-radius: 10px;
+  display: block;
+  border-radius: 40px;
+  box-shadow: 2px 2px 3px grey;
   @media (max-width: 768px) {
-    height: 40px;
+    border: 0px solid #070600;
+    box-shadow: 0px 0px 0px grey;
+    border-radius: 0px;
   }
 `;
 
