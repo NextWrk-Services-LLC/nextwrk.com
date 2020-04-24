@@ -8,12 +8,9 @@
 
 import React, { memo, useState } from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 import { useMediaQuery } from 'react-responsive';
-import { connect } from 'react-redux';
 import { compose } from 'redux';
 
-import { toggleMobNav } from '../../containers/App/actions';
 import NavBarLink from './NavBarLink';
 import LogoLink from './LogoLink';
 import Img from './Img';
@@ -45,7 +42,7 @@ const MobNav = styled.a`
 `;
 
 const DropDown = styled.div`
-  text-align: right;
+  text-align: center;
 `;
 
 const Ul = styled.ul`
@@ -57,13 +54,13 @@ const Li = styled.li`
   padding: 10px 40px;
 `;
 
-function NavBar({ onToggleNav }) {
+function NavBar() {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   const [show, toggleShow] = useState(false);
 
   return (
     <React.Fragment>
-      <Wrapper onClick={onToggleNav}>
+      <Wrapper>
         <ContentWrapper>
           <LogoLink to="/">
             <Img src={Logo} alt="NextWrk - Logo" />
@@ -109,19 +106,6 @@ function NavBar({ onToggleNav }) {
   );
 }
 
-NavBar.propTypes = {
-  onToggleNav: PropTypes.func,
-};
+NavBar.propTypes = {};
 
-export function mapDispatchToProps(dispatch) {
-  return {
-    onToggleNav: () => dispatch(toggleMobNav()),
-  };
-}
-
-const withConnect = connect(mapDispatchToProps);
-
-export default compose(
-  withConnect,
-  memo,
-)(NavBar);
+export default compose(memo)(NavBar);

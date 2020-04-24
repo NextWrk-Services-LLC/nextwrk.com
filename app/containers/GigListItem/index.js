@@ -42,12 +42,20 @@ const LinkSpace = styled.div`
 
 const Title = styled.div`
   text-align: left;
-  margin-left: 60px;
-  margin-top: -12px;
+  margin-left: 10px;
   @media (max-width: 768px) {
-    margin-left: 50px;
-    margin-top: -8px;
+    margin-left: 5px;
   }
+`;
+
+const Table = styled.table`
+  border-collapse: separate;
+  border-spacing: 1px;
+  text-align: left;
+`;
+
+const TdImg = styled.td`
+  width: 20%;
 `;
 
 export function GigsListItem(props) {
@@ -56,13 +64,21 @@ export function GigsListItem(props) {
   const content = (
     <Spacing>
       <Wrapper>
-        <Img src={item.logo} alt="Company - Logo" />
+        <Table>
+          <tbody>
+            <tr>
+              <TdImg>
+                <Img src={item.logo} alt="Company - Logo" />
+              </TdImg>
+              <td>
+                <Title>
+                  <H2>{item.gig}</H2>
+                </Title>
+              </td>
+            </tr>
+          </tbody>
+        </Table>
         <Ul>
-          <Li>
-            <Title>
-              <H2>{item.gig}</H2>
-            </Title>
-          </Li>
           <Li>
             <P>{item.description}</P>
           </Li>
