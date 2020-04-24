@@ -19,8 +19,6 @@ import {
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
-import Header from 'components/Header';
-// import Header from './Header';
 import makeSelectGigsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -33,6 +31,8 @@ import DrivingGigs from './DrivingGigs';
 import LaborGigs from './LaborGigs';
 import RentalGigs from './RentalGigs';
 import OtherGigs from './OtherGigs';
+import Img from './Img';
+import gigsheader from './gigsheader.png';
 
 const key = 'gigsPage';
 
@@ -112,7 +112,7 @@ export function GigsPage({
           content="There are a plethora of jobs available to anyone with a phone, car, and/or skill. NextWrk's Gig Page helps exposes individuals to new opportunities in the gig economy, and helps them find the best jobs for them!"
         />
       </Helmet>
-      <Header />
+      <Img src={gigsheader} alt="Gigs Page Header" />
       <Wrapper>
         <ContentWrapper>
           <NavBarLink onClick={showAll}>All</NavBarLink>
