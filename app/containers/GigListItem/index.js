@@ -81,6 +81,13 @@ export function GigsListItem(props) {
               <P>{item.description}</P>
             </Li>
           </Ul>
+          {item.promo ? (
+            <div style={{ textAlign: 'center' }}>
+              <hr /> <P>{item.promo}</P>
+            </div>
+          ) : (
+            ''
+          )}
         </Wrapper>
       </Spacing>
     </React.Fragment>
