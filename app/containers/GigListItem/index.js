@@ -14,9 +14,7 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 import { makeSelectCurrentUser } from 'containers/App/selectors';
-import CenterText from 'components/CenterText';
 import ListItem from 'components/ListItem';
-import A from 'components/A';
 import H2 from 'components/H2';
 import Ul from 'components/Ul';
 import Li from 'components/Li';
@@ -30,14 +28,6 @@ const Spacing = styled.div`
   @media (max-width: 768px) {
     margin: 0px;
     padding: 10px 20px;
-  }
-`;
-
-const LinkSpace = styled.div`
-  margin: 15px;
-  @media (max-width: 768px) {
-    margin: 0px;
-    margin-top: -5px;
   }
 `;
 
@@ -69,7 +59,7 @@ export function GigsListItem(props) {
 
   const content = (
     <React.Fragment>
-      {show ? <Popup close={closePopup} /> : ''}
+      {show ? <Popup close={closePopup} info={item} /> : ''}
       <Spacing onClick={() => toggleShow(!show)}>
         <Wrapper>
           <Table>
@@ -91,26 +81,6 @@ export function GigsListItem(props) {
               <P>{item.description}</P>
             </Li>
           </Ul>
-          <hr />
-          <CenterText>
-            <Ul>
-              <Li>
-                <LinkSpace>
-                  {item.indeed ? (
-                    <A href={item.indeed}>See what others have to say</A>
-                  ) : (
-                    ''
-                  )}
-                </LinkSpace>
-              </Li>
-              <Li>{item.promo ? <P>{item.promo}</P> : <p />}</Li>
-              <Li>
-                <LinkSpace>
-                  <A href={item.gigsite}>TRY IT OUT</A>
-                </LinkSpace>
-              </Li>
-            </Ul>
-          </CenterText>
         </Wrapper>
       </Spacing>
     </React.Fragment>

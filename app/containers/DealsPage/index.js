@@ -19,11 +19,12 @@ import {
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
-import Header from 'components/Header';
 import makeSelectDealsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import AllDeals from './AllDeals';
+import Img from './Img';
+import dealsheader from './dealsheader.png';
 
 const key = 'dealsPage';
 
@@ -48,7 +49,7 @@ export function DealsPage({ loading, error, gigs }) {
           content="Maximize your returns! NextWrk's Deals Page connects users looking for new services with services looking for new users!"
         />
       </Helmet>
-      <Header />
+      <Img src={dealsheader} alt="Deals Page Header" />
       <div style={{ padding: '5px' }}>
         <AllDeals deals={dealsProps} />
       </div>

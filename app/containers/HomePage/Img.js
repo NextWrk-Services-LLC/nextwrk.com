@@ -5,6 +5,7 @@ const CenteredSection = styled.img`
   max-height: 300px;
   width: auto;
   height: auto;
+  border-radius: 40px;
 `;
 
 export default CenteredSection;

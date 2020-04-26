@@ -19,7 +19,6 @@ import {
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
-import Header from 'components/Header';
 import makeSelectServicesPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -29,10 +28,11 @@ import DrivingServices from './DrivingServices';
 import BusinessServices from './BusinessServices';
 import RentalServices from './RentalServices';
 import OtherServices from './OtherServices';
-// import Header from './Header';
 import NavBarLink from './NavBarLink';
 import Wrapper from './Wrapper';
 import ContentWrapper from './ContentWrapper';
+import Img from './Img';
+import servicesheader from './servicesheader.png';
 
 const key = 'servicesPage';
 
@@ -120,7 +120,7 @@ export function ServicesPage({
           content="Gig workers need help too, and the market definitely realizes this. There are more and more services available to help gig workers improve and maximize their returns. NextWrk's Services Page exposees individuals to new services to ensure they're always a step ahead!"
         />
       </Helmet>
-      <Header />
+      <Img src={servicesheader} alt="Services Page Header" />
       <div style={{ padding: '5px' }}>
         <Wrapper>
           <ContentWrapper>

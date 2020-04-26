@@ -19,11 +19,12 @@ import {
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
-import Header from 'components/Header';
 import makeSelectFreelancePage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import AllFreelance from './AllFreelance';
+import Img from './Img';
+import freelanceheader from './freelanceheader.png';
 
 const key = 'freelancePage';
 
@@ -57,7 +58,7 @@ export function FreelancePage({ freelancePage, loading, error, gigs }) {
           content="NextWrk's goal is to put freedom and autonomy back into the hands of workers. The gig economy is exploding, and becoming a skilled freelancer is quickly becoming a viable option for skilled workers. NextWrk helps users find new avenues for scoring freelance jobs so they can start working how, when and where they want."
         />
       </Helmet>
-      <Header />
+      <Img src={freelanceheader} alt="Freelance Page Header" />
       <div style={{ padding: '5px' }}>{switchFreelance(freelancePage)}</div>
     </div>
   );

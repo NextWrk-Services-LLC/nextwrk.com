@@ -1497,10 +1497,10 @@ export const initialState = {
         id: 'D0001',
         logo: acorns,
         gig: 'Acorns',
-        description: '',
-        indeed: '',
-        promo:
+        description:
           'Acorns automatically invests your spare change into a portfolio built by experts. Sign up today and get a free $5 for your account!',
+        indeed: '',
+        promo: '',
         gigsite: 'https://acorns.com/invite/SGU9A3',
         featured: false,
         subtypes: [''],
