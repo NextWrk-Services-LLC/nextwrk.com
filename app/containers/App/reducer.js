@@ -132,6 +132,7 @@ import rakuten from './img/rakuten.png';
 import cashapp from './img/cashapp.png';
 import fiverr from './img/fiverr.png';
 import linkedin from './img/linkedin.png';
+import freelancer from './img/freelancer.png';
 
 // The initial state of the App
 export const initialState = {
@@ -1911,7 +1912,7 @@ export const initialState = {
         promo: '',
         resources: '',
         gigsite: 'https://www.fiverr.com/start_selling',
-        featured: false,
+        featured: true,
         subtypes: [''],
       },
       {
@@ -1922,9 +1923,23 @@ export const initialState = {
           'LinkedIn ProFinder connects top freelance professionals like you with high quality leads.',
         indeed: '',
         promo: '',
+        resources: '',
         gigsite: 'https://www.linkedin.com/profinder/pros',
-        featured: false,
-        type: 'gig',
+        featured: true,
+        subtypes: [''],
+      },
+      {
+        id: 'F0002',
+        logo: freelancer,
+        gig: 'Freelancer',
+        description:
+          'Freelancer has posted almost 11 million jobs for tens of thousands of its members. ',
+        indeed: '',
+        promo: '',
+        resources: '',
+        gigsite: 'https://www.freelancer.com/jobs/',
+        featured: true,
+        subtypes: [''],
       },
       // Template
       // {
@@ -1964,7 +1979,7 @@ export const initialState = {
         promo: 'Sign up today and get a free stock for your account!',
         resources: '',
         gigsite: 'https://join.robinhood.com/markf1248',
-        featured: false,
+        featured: true,
         subtypes: [''],
       },
       {
@@ -1977,7 +1992,7 @@ export const initialState = {
         promo: 'Spend $30 on Rakuten and get $30!',
         resources: '',
         gigsite: 'https://go.rakuten.com/MARKFO238',
-        featured: false,
+        featured: true,
         subtypes: [''],
       },
       {
@@ -1990,7 +2005,7 @@ export const initialState = {
         promo: 'Sign Up for Cash App and get $5!',
         resources: '',
         gigsite: 'https://cash.app/app/QXGKDDH',
-        featured: false,
+        featured: true,
         subtypes: [''],
       },
     ],

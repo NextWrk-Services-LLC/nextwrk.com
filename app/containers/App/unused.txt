@@ -195,18 +195,6 @@
         type: 'gig',
       },
       {
-        id: 'G0032',
-        logo: uber,
-        gig: 'Freelancer',
-        description:
-          'Freelancer has posted almost 11 million jobs for tens of thousands of its members. ',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
         id: 'G0006',
         logo: thumbtack,
         gig: 'Thumbtack Pro',

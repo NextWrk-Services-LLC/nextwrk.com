@@ -53,6 +53,8 @@ export function HomePage({ loading, error, gigs }) {
   const featured = gigs.filter(obj => obj.featured === true);
   const featuredServices = featured.filter(obj => obj.id.startsWith('S'));
   const featuredGigs = featured.filter(obj => obj.id.startsWith('G'));
+  const featuredFreelance = featured.filter(obj => obj.id.startsWith('F'));
+  const featuredDeals = featured.filter(obj => obj.id.startsWith('D'));
 
   const gigsFeaturedProps = {
     loading,
@@ -64,6 +66,18 @@ export function HomePage({ loading, error, gigs }) {
     loading,
     error,
     gigs: featuredServices,
+  };
+
+  const freelanceFeaturedProps = {
+    loading,
+    error,
+    gigs: featuredFreelance,
+  };
+
+  const dealFeaturedProps = {
+    loading,
+    error,
+    gigs: featuredDeals,
   };
 
   return (
@@ -177,6 +191,12 @@ export function HomePage({ loading, error, gigs }) {
           <H2>Featured Services</H2>
           <hr />
           <GigsList {...servicesFeaturedProps} />
+          <H2>Featured Freelance Networks</H2>
+          <hr />
+          <GigsList {...freelanceFeaturedProps} />
+          <H2>Featured Deals</H2>
+          <hr />
+          <GigsList {...dealFeaturedProps} />
         </Section>
       </BodySpacing>
     </article>
