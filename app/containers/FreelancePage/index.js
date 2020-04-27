@@ -14,16 +14,20 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+
 import {
   makeSelectGigs,
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
+
 import makeSelectFreelancePage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+
 import AllFreelance from './AllFreelance';
 import Img from './Img';
+
 import freelanceheader from './freelanceheader.png';
 
 const key = 'freelancePage';

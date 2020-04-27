@@ -16,21 +16,26 @@ import { createStructuredSelector } from 'reselect';
 
 import { useInjectReducer } from 'utils/injectReducer';
 import { useInjectSaga } from 'utils/injectSaga';
+
 import {
   makeSelectGigs,
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
+
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 import Header from 'components/Header';
 import GigsList from 'components/GigsList';
-import H3 from './H3';
-import Section from './Section';
+
 import { changeUsername } from './actions';
 import reducer from './reducer';
 import saga from './saga';
+
 import Img from './Img';
+import H3 from './H3';
+import Section from './Section';
+
 import services from './services.png';
 import gig from './gigs.png';
 import deal from './deals.png';

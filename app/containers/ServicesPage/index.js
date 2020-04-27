@@ -14,15 +14,18 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+
 import {
   makeSelectGigs,
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
+
 import makeSelectServicesPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import { changeFilter } from './actions';
+
 import AllServices from './AllServices';
 import DrivingServices from './DrivingServices';
 import BusinessServices from './BusinessServices';
@@ -32,6 +35,7 @@ import NavBarLink from './NavBarLink';
 import Wrapper from './Wrapper';
 import ContentWrapper from './ContentWrapper';
 import Img from './Img';
+
 import servicesheader from './servicesheader.png';
 
 const key = 'servicesPage';

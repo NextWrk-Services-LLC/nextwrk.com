@@ -14,16 +14,20 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+
 import {
   makeSelectGigs,
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
+
 import makeSelectDealsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+
 import AllDeals from './AllDeals';
 import Img from './Img';
+
 import dealsheader from './dealsheader.png';
 
 const key = 'dealsPage';

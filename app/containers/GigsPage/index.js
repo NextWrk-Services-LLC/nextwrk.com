@@ -14,24 +14,28 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+
 import {
   makeSelectGigs,
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
+
 import makeSelectGigsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+import { changeFilter } from './actions';
+
 import NavBarLink from './NavBarLink';
 import Wrapper from './Wrapper';
 import ContentWrapper from './ContentWrapper';
-import { changeFilter } from './actions';
 import AllGigs from './AllGigs';
 import DrivingGigs from './DrivingGigs';
 import LaborGigs from './LaborGigs';
 import RentalGigs from './RentalGigs';
 import OtherGigs from './OtherGigs';
 import Img from './Img';
+
 import gigsheader from './gigsheader.png';
 
 const key = 'gigsPage';

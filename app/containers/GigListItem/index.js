@@ -9,45 +9,24 @@
 
 import React, { useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 import { makeSelectCurrentUser } from 'containers/App/selectors';
+
 import ListItem from 'components/ListItem';
 import H2 from 'components/H2';
 import Ul from 'components/Ul';
 import Li from 'components/Li';
 import Popup from 'components/Popup';
+
 import P from './P';
 import Img from './Img';
 import Wrapper from './Wrapper';
-
-const Spacing = styled.div`
-  margin: 15px;
-  @media (max-width: 768px) {
-    margin: 0px;
-    padding: 10px 20px;
-  }
-`;
-
-const Title = styled.div`
-  text-align: left;
-  margin-left: 10px;
-  @media (max-width: 768px) {
-    margin-left: 5px;
-  }
-`;
-
-const Table = styled.table`
-  border-collapse: separate;
-  border-spacing: 1px;
-  text-align: left;
-`;
-
-const TdImg = styled.td`
-  width: 20%;
-`;
+import Spacing from './Spacing';
+import Title from './Title';
+import Table from './Table';
+import TdImg from './TdImg';
 
 export function GigsListItem(props) {
   const { item } = props;
