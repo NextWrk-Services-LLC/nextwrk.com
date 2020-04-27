@@ -21,6 +21,8 @@ import {
   makeSelectError,
 } from 'containers/App/selectors';
 
+import BodySpacing from 'components/BodySpacing';
+
 import makeSelectServicesPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -125,7 +127,7 @@ export function ServicesPage({
         />
       </Helmet>
       <Img src={servicesheader} alt="Services Page Header" />
-      <div style={{ padding: '5px' }}>
+      <BodySpacing>
         <Wrapper>
           <ContentWrapper>
             <NavBarLink onClick={showAll}>All</NavBarLink>
@@ -137,7 +139,7 @@ export function ServicesPage({
         </Wrapper>
         <hr />
         {switchServices(servicesPage)}
-      </div>
+      </BodySpacing>
     </div>
   );
 }

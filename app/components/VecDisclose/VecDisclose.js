@@ -7,6 +7,8 @@
 import React, { memo, useState } from 'react';
 import styled from 'styled-components';
 
+import BodySpacing from 'components/BodySpacing';
+
 const PLink = styled.p`
   color: #3b9ad5;
   margin: 0;
@@ -37,7 +39,7 @@ function VecDisclose() {
     <div>
       <PLink onClick={() => toggleShow(!show)}>Images Sources</PLink>
       {show ? (
-        <div style={{ padding: '5px' }}>
+        <BodySpacing>
           <A href="https://www.vecteezy.com/free-vector/working">
             Working Vectors by Vecteezy
           </A>
@@ -49,7 +51,7 @@ function VecDisclose() {
           <A href="https://www.freepik.com/free-photos-vectors/people">
             People vector created by freepik - www.freepik.com
           </A>
-        </div>
+        </BodySpacing>
       ) : (
         ''
       )}

@@ -10,6 +10,7 @@ import styled from 'styled-components';
 
 import Circle from './Circle';
 import Wrapper from './Wrapper';
+
 import logo from './nw.png';
 
 const Outer = styled.div`

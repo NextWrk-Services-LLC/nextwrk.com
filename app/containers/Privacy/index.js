@@ -6,12 +6,11 @@
  */
 
 import React from 'react';
-import { connect } from 'react-redux';
-import { compose } from 'redux';
 import { Helmet } from 'react-helmet';
 
 import Header from 'components/Header';
 import H1 from 'components/H1';
+import BodySpacing from 'components/BodySpacing';
 
 export function Privacy() {
   return (
@@ -24,7 +23,7 @@ export function Privacy() {
         />
       </Helmet>
       <Header />
-      <div style={{ padding: '0px 5px' }}>
+      <BodySpacing>
         <H1>NextWrk Privacy Policy</H1>
         <h1>Privacy Policy of NextWrk Services LLC</h1>
 
@@ -176,20 +175,9 @@ export function Privacy() {
           If you have any questions or suggestions about our Privacy Policy, do
           not hesitate to contact us.
         </p>
-      </div>
+      </BodySpacing>
     </div>
   );
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch,
-  };
-}
-
-const withConnect = connect(
-  null,
-  mapDispatchToProps,
-);
-
-export default compose(withConnect)(Privacy);
+export default Privacy;

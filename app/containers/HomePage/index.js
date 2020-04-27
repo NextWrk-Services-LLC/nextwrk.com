@@ -7,7 +7,6 @@
 
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 import { useMediaQuery } from 'react-responsive';
@@ -23,6 +22,7 @@ import {
   makeSelectError,
 } from 'containers/App/selectors';
 
+import BodySpacing from 'components/BodySpacing';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 import Header from 'components/Header';
@@ -35,20 +35,12 @@ import saga from './saga';
 import Img from './Img';
 import H3 from './H3';
 import Section from './Section';
+import Table from './Table';
+import TdImg from './TdImg';
 
 import services from './services.png';
 import gig from './gigs.png';
 import deal from './deals.png';
-
-const Table = styled.table`
-  border-collapse: separate;
-  border-spacing: 15px;
-`;
-
-const TdImg = styled.td`
-  width: 50%;
-  text-align: center;
-`;
 
 const key = 'home';
 
@@ -84,7 +76,7 @@ export function HomePage({ loading, error, gigs }) {
         />
       </Helmet>
       <Header />
-      <div style={{ padding: '5px' }}>
+      <BodySpacing>
         <H1>Discover...</H1>
         {isMobile ? (
           <Table>
@@ -143,7 +135,6 @@ export function HomePage({ loading, error, gigs }) {
                 </td>
                 <td>
                   <a href="/services">
-                    {' '}
                     <Img src={services} alt="Services Vector" />
                   </a>
                 </td>
@@ -187,7 +178,7 @@ export function HomePage({ loading, error, gigs }) {
           <hr />
           <GigsList {...servicesFeaturedProps} />
         </Section>
-      </div>
+      </BodySpacing>
     </article>
   );
 }

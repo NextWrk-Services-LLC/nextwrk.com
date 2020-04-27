@@ -83,18 +83,15 @@ function NavBar() {
         <DropDown>
           <Ul>
             <Li>
-              {' '}
               <MobNav href="/gigs">Gigs</MobNav>
             </Li>
             <Li>
               <MobNav href="/services">Services</MobNav>
             </Li>
             <Li>
-              {' '}
               <MobNav href="/freelance">Freelance</MobNav>
             </Li>
             <Li>
-              {' '}
               <MobNav href="/deals">Deals</MobNav>
             </Li>
           </Ul>

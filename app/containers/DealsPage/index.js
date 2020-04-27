@@ -21,6 +21,8 @@ import {
   makeSelectError,
 } from 'containers/App/selectors';
 
+import BodySpacing from 'components/BodySpacing';
+
 import makeSelectDealsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -54,9 +56,9 @@ export function DealsPage({ loading, error, gigs }) {
         />
       </Helmet>
       <Img src={dealsheader} alt="Deals Page Header" />
-      <div style={{ padding: '5px' }}>
+      <BodySpacing>
         <AllDeals deals={dealsProps} />
-      </div>
+      </BodySpacing>
     </div>
   );
 }

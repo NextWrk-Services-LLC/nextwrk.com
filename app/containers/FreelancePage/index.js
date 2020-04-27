@@ -21,6 +21,8 @@ import {
   makeSelectError,
 } from 'containers/App/selectors';
 
+import BodySpacing from 'components/BodySpacing';
+
 import makeSelectFreelancePage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -63,7 +65,7 @@ export function FreelancePage({ freelancePage, loading, error, gigs }) {
         />
       </Helmet>
       <Img src={freelanceheader} alt="Freelance Page Header" />
-      <div style={{ padding: '5px' }}>{switchFreelance(freelancePage)}</div>
+      <BodySpacing>{switchFreelance(freelancePage)}</BodySpacing>
     </div>
   );
 }

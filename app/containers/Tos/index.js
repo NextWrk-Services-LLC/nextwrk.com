@@ -6,12 +6,11 @@
  */
 
 import React from 'react';
-import { connect } from 'react-redux';
-import { compose } from 'redux';
 import { Helmet } from 'react-helmet';
 
 import Header from 'components/Header';
 import H1 from 'components/H1';
+import BodySpacing from 'components/BodySpacing';
 
 export function Tos() {
   return (
@@ -24,7 +23,7 @@ export function Tos() {
         />
       </Helmet>
       <Header />
-      <div style={{ padding: '0px 5px' }}>
+      <BodySpacing>
         <H1>NextWrk Terms of Service</H1>
         <h1>Terms and Conditions</h1>
 
@@ -313,20 +312,9 @@ export function Tos() {
           </li>
           <li>By phone number: 6786996447</li>
         </ul>
-      </div>
+      </BodySpacing>
     </div>
   );
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch,
-  };
-}
-
-const withConnect = connect(
-  null,
-  mapDispatchToProps,
-);
-
-export default compose(withConnect)(Tos);
+export default Tos;

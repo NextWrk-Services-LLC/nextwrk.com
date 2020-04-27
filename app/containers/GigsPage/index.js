@@ -21,6 +21,8 @@ import {
   makeSelectError,
 } from 'containers/App/selectors';
 
+import BodySpacing from 'components/BodySpacing';
+
 import makeSelectGigsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -117,7 +119,7 @@ export function GigsPage({
         />
       </Helmet>
       <Img src={gigsheader} alt="Gigs Page Header" />
-      <div style={{ padding: '5px' }}>
+      <BodySpacing>
         <Wrapper>
           <ContentWrapper>
             <NavBarLink onClick={showAll}>All</NavBarLink>
@@ -129,7 +131,7 @@ export function GigsPage({
         </Wrapper>
         <hr />
         {switchGigs(gigsPage)}
-      </div>
+      </BodySpacing>
     </div>
   );
 }
