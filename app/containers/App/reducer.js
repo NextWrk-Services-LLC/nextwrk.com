@@ -128,6 +128,10 @@ import schlep from './img/Schlep.png';
 import eatwith from './img/EatWith.png';
 import feastly from './img/Feastly.png';
 import robinhood from './img/robinhood.png';
+import rakuten from './img/rakuten.png';
+import cashapp from './img/cashapp.png';
+import fiverr from './img/fiverr.png';
+import linkedin from './img/linkedin.png';
 
 // The initial state of the App
 export const initialState = {
@@ -1889,18 +1893,62 @@ export const initialState = {
       //   description: '',
       //   indeed: '',
       //   promo: '',
-      //   resources: '', gigsite: '',
+      //   resources: '',
+      //   gigsite: '',
       //   featured: false,
-      //      subtypes: [''],
+      //   subtypes: [''],
       // },
+      //
+      //
+      // Freelance
+      {
+        id: 'F0000',
+        logo: fiverr,
+        gig: 'Fiverr',
+        description:
+          'Fiverr is one of the easiest ways to make money in the gig economy. No matter what skills you have, with a little creativity you sell your services to a platform of motivated buyers.',
+        indeed: 'https://www.indeed.com/cmp/Fiverr/reviews',
+        promo: '',
+        resources: '',
+        gigsite: 'https://www.fiverr.com/start_selling',
+        featured: false,
+        subtypes: [''],
+      },
+      {
+        id: 'F0001',
+        logo: linkedin,
+        gig: 'LinkedIn ProFinder',
+        description:
+          'LinkedIn ProFinder connects top freelance professionals like you with high quality leads.',
+        indeed: '',
+        promo: '',
+        gigsite: 'https://www.linkedin.com/profinder/pros',
+        featured: false,
+        type: 'gig',
+      },
+      // Template
+      // {
+      //   id: 'F0000',
+      //   logo: ,
+      //   gig: '',
+      //   description: '',
+      //   indeed: '',
+      //   promo: '',
+      //   resources: '',
+      //   gigsite: '',
+      //   featured: false,
+      //   subtypes: [''],
+      // },
+      //
+      // Deals
       {
         id: 'D0001',
         logo: acorns,
         gig: 'Acorns',
         description:
-          'Acorns automatically invests your spare change into a portfolio built by experts. Sign up today and get a free $5 for your account!',
+          'Acorns automatically invests your spare change into a portfolio built by experts.',
         indeed: '',
-        promo: '',
+        promo: 'Sign up today and get a free $5 for your account!',
         resources: '',
         gigsite: 'https://acorns.com/invite/SGU9A3',
         featured: false,
@@ -1911,11 +1959,37 @@ export const initialState = {
         logo: robinhood,
         gig: 'Robinhood',
         description:
-          'Robinhood is a mobile app for trading stocks and options comission free. Sign up today and get a free stock for your account!',
+          'Robinhood is a mobile app for trading stocks and options comission free.',
         indeed: '',
-        promo: '',
+        promo: 'Sign up today and get a free stock for your account!',
         resources: '',
         gigsite: 'https://join.robinhood.com/markf1248',
+        featured: false,
+        subtypes: [''],
+      },
+      {
+        id: 'D0003',
+        logo: rakuten,
+        gig: 'Rakuten',
+        description:
+          'Rakuten is the worlds most popular cashback site and mobile app. Their services help people save money with cash back and coupons at over 2,000 online stores. Their goal is turn everyday spenders into smart shoppers by getting the most out of their money.',
+        indeed: '',
+        promo: 'Spend $30 on Rakuten and get $30!',
+        resources: '',
+        gigsite: 'https://go.rakuten.com/MARKFO238',
+        featured: false,
+        subtypes: [''],
+      },
+      {
+        id: 'D0004',
+        logo: cashapp,
+        gig: 'Cash App',
+        description:
+          'Cash App is, quite simply, an app for sending and receiving money. Users can create a free account that will then let them instantly send or receive money from other users within the same country.',
+        indeed: '',
+        promo: 'Sign Up for Cash App and get $5!',
+        resources: '',
+        gigsite: 'https://cash.app/app/QXGKDDH',
         featured: false,
         subtypes: [''],
       },

@@ -72,6 +72,4 @@ function NavBar() {
   );
 }
 
-NavBar.propTypes = {};
-
 export default compose(memo)(NavBar);
