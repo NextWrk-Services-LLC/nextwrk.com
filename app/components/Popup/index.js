@@ -88,9 +88,7 @@ function Popup({ close, info }) {
                   </td>
                 </tr>
               </React.Fragment>
-            ) : (
-              ''
-            )}
+            ) : null}
             {info.indeed ? (
               <React.Fragment>
                 <tr>
@@ -110,9 +108,7 @@ function Popup({ close, info }) {
                   </td>
                 </tr>
               </React.Fragment>
-            ) : (
-              ''
-            )}
+            ) : null}
             {info.resources ? (
               <React.Fragment>
                 <tr>
@@ -128,7 +124,7 @@ function Popup({ close, info }) {
                       <div style={{ padding: '0px 10px' }}>
                         <Ul>
                           {info.resources.map(item => (
-                            <Li>
+                            <Li key={`resources-${item.title}`}>
                               <A href={item.link}>{item.title}</A>
                             </Li>
                           ))}
@@ -138,9 +134,7 @@ function Popup({ close, info }) {
                   </td>
                 </tr>
               </React.Fragment>
-            ) : (
-              ''
-            )}
+            ) : null}
             <tr>
               <td>
                 <TitleLeft>
