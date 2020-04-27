@@ -132,6 +132,7 @@ import wardrobe from './img/Wardrobe.png';
 import schlep from './img/Schlep.png';
 import eatwith from './img/EatWith.png';
 import feastly from './img/Feastly.png';
+import robinhood from './img/robinhood.png';
 
 // The initial state of the App
 export const initialState = {
@@ -1908,6 +1909,19 @@ export const initialState = {
         promo: '',
         resources: '',
         gigsite: 'https://acorns.com/invite/SGU9A3',
+        featured: false,
+        subtypes: [''],
+      },
+      {
+        id: 'D0002',
+        logo: robinhood,
+        gig: 'Robinhood',
+        description:
+          'Robinhood is a mobile app for trading stocks and options comission free. Sign up today and get a free stock for your account!',
+        indeed: '',
+        promo: '',
+        resources: '',
+        gigsite: 'https://join.robinhood.com/markf1248',
         featured: false,
         subtypes: [''],
       },
