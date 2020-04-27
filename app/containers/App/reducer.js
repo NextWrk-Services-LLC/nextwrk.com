@@ -121,6 +121,17 @@ import gridwise from './img/gridwise.png';
 import mystro from './img/mystro.png';
 import surge from './img/surge.png';
 import deliverthat from './img/deliverthat.png';
+import via from './img/Via.png';
+import curb from './img/Curb.png';
+import uzurv from './img/Uzurv.png';
+import lovehomeswap from './img/Love Home Swap.png';
+import eaze from './img/Eaze.png';
+import minibar from './img/Minibar.png';
+import sailo from './img/Sailo.png';
+import wardrobe from './img/Wardrobe.png';
+import schlep from './img/Schlep.png';
+import eatwith from './img/EatWith.png';
+import feastly from './img/Feastly.png';
 
 // The initial state of the App
 export const initialState = {
@@ -195,6 +206,18 @@ export const initialState = {
         subtypes: ['driving'],
       },
       {
+        id: 'G0197',
+        logo: via,
+        gig: 'Via Transportation',
+        description:
+          'Via is another ride sharing company. They are reshaping public transit - they send you the rate for the upcoming day so you can plan your schedule in advance! You also do not need a car, you can rent one from Via to drive!',
+        indeed: 'https://www.indeed.com/cmp/Via-Transportation/reviews',
+        promo: '',
+        gigsite: 'https://my.drivewithvia.com/',
+        featured: false,
+        subtypes: ['driving'],
+      },
+      {
         id: 'G0163',
         logo: groundlink,
         gig: 'GroundLink',
@@ -203,6 +226,18 @@ export const initialState = {
         indeed: 'https://www.yelp.com/biz/groundlink-new-york',
         promo: '',
         gigsite: 'https://driver.groundlink.com/',
+        featured: false,
+        subtypes: ['driving'],
+      },
+      {
+        id: 'G0198',
+        logo: curb,
+        gig: 'Curb',
+        description:
+          'If you are a licensed and insured cab driver, then this ride-share app is for you! Available in NYC, Boston, Philadelphia, Miami and Las Vegas!',
+        indeed: 'https://www.indeed.com/cmp/Curb/reviews',
+        promo: '',
+        gigsite: 'https://gocurb.com/',
         featured: false,
         subtypes: ['driving'],
       },
@@ -310,7 +345,7 @@ export const initialState = {
         logo: dispatchit,
         gig: 'DispatchIt',
         description:
-          'Dispatchit provides reliable local deliveries to customers with real time ETA’s and tracking. Dispatch drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
+          'Dispatchit provides reliable local deliveries to customers with real time ETAs and tracking. Dispatch drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
         indeed: 'https://www.facebook.com/pg/dispatchitinc/reviews',
         promo: '',
         gigsite: 'https://www.dispatchit.com/drivers/',
@@ -408,7 +443,7 @@ export const initialState = {
         logo: zifty,
         gig: 'Zifty',
         description:
-          'Zifty is an online delivery company that partners with local restaurants and brands to bring their goods straight to clients’ doors. Zifty is looking for enthusiastic delivery providers to make deliveries of food, movies, and other items to customers.',
+          'Zifty is an online delivery company that partners with local restaurants and brands to bring their goods straight to clients doors. Zifty is looking for enthusiastic delivery providers to make deliveries of food, movies, and other items to customers.',
         indeed: 'https://www.indeed.com/cmp/Zifty.com/reviews',
         promo: '',
         gigsite: 'http://jobs.zifty.com/',
@@ -476,6 +511,32 @@ export const initialState = {
         gigsite: 'https://www.saucey.com/apply',
         featured: false,
         subtypes: ['driving'],
+      },
+      {
+        id: 'G0201',
+        logo: eaze,
+        gig: 'Eaze',
+        description:
+          'If you live in California and want to make some extra cash, Eaze could be for you! As a delivery person, you will deliver cannabis products from a licensed retailer directly to consumers',
+        indeed:
+          'https://www.glassdoor.com/Reviews/Eaze-Driver-Reviews-EI_IE977965.0,4_KO5,11.htm',
+        promo: '',
+        gigsite: 'https://www.drive.eaze.com/',
+        featured: false,
+        subtypes: ['delivery'],
+      },
+      {
+        id: 'G0202',
+        logo: minibar,
+        gig: 'Minibar',
+        description:
+          'Minibar delivery provides on-demand delivery of wine, spirits, beer & mixers. If you live in a city, this is a great delivery service to make some spare cash',
+        indeed:
+          'https://www.glassdoor.com/Reviews/Minibar-Delivery-Reviews-E917096.htm',
+        promo: '',
+        gigsite: 'https://minibardelivery.com/',
+        featured: false,
+        subtypes: ['delivery'],
       },
       {
         id: 'G0008', // Shopping
@@ -613,6 +674,18 @@ export const initialState = {
         subtypes: ['rental'],
       },
       {
+        id: 'G0200',
+        logo: lovehomeswap,
+        gig: 'Love Home Swap',
+        description:
+          'Love Home Swap is a rental platform where you can lease out your home to someone and also get to rent out their home. Available in tons of places in the world! Great way to travel cheap and get a cultural experience',
+        indeed: 'https://www.trustpilot.com/review/www.lovehomeswap.com',
+        promo: '',
+        gigsite: 'https://www.lovehomeswap.com/',
+        featured: false,
+        subtypes: ['rental'],
+      },
+      {
         id: 'G0017', // Car rentals
         logo: turo,
         gig: 'Turo',
@@ -696,6 +769,18 @@ export const initialState = {
         promo: 'List Your Boat and Get $100 Added to Your First Rental!',
         gigsite: 'https://www.boatsetter.com/referral/o/sqxkrtk',
         featured: true,
+        subtypes: ['rental'],
+      },
+      {
+        id: 'G0203',
+        logo: sailo,
+        gig: 'Sailo',
+        description:
+          'Sailo is considered the “airbnb” of boat rentals. The app connecting millions of boat owners looking to list with millions of renters looking to go on a boat. As a host, Sailo gives you full control of your availability, prices and boat rules. Sign up as a host and Sailo lets you earn money opening up your boat to travelers.',
+        indeed: 'https://www.facebook.com/pg/Sailoboats/reviews/',
+        promo: '',
+        gigsite: 'https://www.sailo.com/',
+        featured: false,
         subtypes: ['rental'],
       },
       {
@@ -873,12 +958,24 @@ export const initialState = {
         logo: dolly,
         gig: 'Dolly',
         description:
-          'The Dolly service is another moving service that pays people that have vehicles for moving, and movers to do the heavy lifting if they don’t have a vehicle, to help individuals in your community move in or out.',
+          'The Dolly service is another moving service that pays people that have vehicles for moving, and movers to do the heavy lifting if they do not have a vehicle, to help individuals in your community move in or out.',
         indeed: 'https://www.indeed.com/cmp/Dolly/reviews',
         promo: '',
         gigsite: 'https://dolly.com/helpers/',
         featured: false,
         subtypes: ['labor'],
+      },
+      {
+        id: 'G0205',
+        logo: schlep,
+        gig: 'Schlep',
+        description:
+          'The Uber for moving! Work a gig as a driver or a mover. Earn up to $1,000 a week, keep 100% of your tips and work on a flexible schedule',
+        indeed: 'https://www.yelp.com/biz/schlep-chicago',
+        promo: '',
+        gigsite: 'https://www.schlep.it/#/',
+        featured: false,
+        subtypes: ['rental', 'labor'],
       },
       {
         id: 'G0164',
@@ -909,7 +1006,7 @@ export const initialState = {
         logo: goshare,
         gig: 'GoShare',
         description:
-          'GoShare specializes in delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you don’t have a truck you can apply as a helper. Depender on your driving situation, this gig can prove very lucrative.',
+          'GoShare specializes in delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you have no truck you can apply as a helper. Depending on your driving situation, this gig can prove very lucrative.',
         indeed:
           'https://www.glassdoor.com/Reviews/GoShare-Reviews-E1779925.htm',
         promo: 'Sign Up Below and Receieve $10!',
@@ -1029,6 +1126,19 @@ export const initialState = {
         subtypes: ['labor'],
       },
       {
+        id: 'G0199',
+        logo: uzurv,
+        gig: 'Uzurv',
+        description:
+          'Do you have a passion for helping the elderly? UZURV is a ride-share company that helps provide transportation to the elderly, disabled, and for NEMT needs',
+        indeed:
+          'https://appgrooves.com/app/uzurv360-driver-by-uzurv-llc/positive',
+        promo: '',
+        gigsite: 'https://uzurv.com/drivers/',
+        featured: false,
+        subtypes: ['driving'],
+      },
+      {
         id: 'G0167',
         logo: sittercity,
         gig: 'Sittercity',
@@ -1145,7 +1255,7 @@ export const initialState = {
         logo: gigwalk,
         gig: 'Gigwalk',
         description:
-          'Work for Gigwalk usually involves gathering data for companies about their products and stores. For example, you might be checking what’s on the shelves in a particular shop, and whether it’s correctly priced and labeled.',
+          'Work for Gigwalk usually involves gathering data for companies about their products and stores. For example, you might be checking what is on the shelves in a particular shop, and whether it is correctly priced and labeled.',
         indeed: 'https://www.indeed.com/cmp/Gigwalk/reviews',
         promo: '',
         gigsite: 'http://www.gigwalk.com/gigwalkers/',
@@ -1157,7 +1267,7 @@ export const initialState = {
         logo: marketforce,
         gig: 'Market Force',
         description:
-          'At Market Force, you’ll complete mystery shops for banks, restaurants, and stores. You get paid to provide feedback on your visits, which those companies then use to improve.',
+          'At Market Force, you will complete mystery shops for banks, restaurants, and stores. You get paid to provide feedback on your visits, which those companies then use to improve.',
         indeed: 'https://www.indeed.com/cmp/Market-Force/reviews',
         promo: '',
         gigsite: 'https://www.marketforce.com/become-a-mystery-shopper',
@@ -1246,7 +1356,7 @@ export const initialState = {
         logo: priv,
         gig: 'Priv',
         description:
-          'Beauty. Priv connects customers on-demand with freelance beauty and wellness professionals, taking a 20% commission. Priv services include makeup, blowout, haircut, nails/manicure, massage, personal training, men’s grooming, spray tan and facials. “Priv Pros” select shifts and kinds of jobs they choose.',
+          'Beauty. Priv connects customers on-demand with freelance beauty and wellness professionals, taking a 20% commission. Priv services include makeup, blowout, haircut, nails/manicure, massage, personal training, grooming, spray tan and facials. “Priv Pros” select shifts and kinds of jobs they choose.',
         indeed: 'https://www.indeed.com/cmp/Priv/reviews?fcountry=ALL',
         promo: '',
         gigsite: 'https://gopriv.com/pro',
@@ -1259,7 +1369,7 @@ export const initialState = {
         logo: heal,
         gig: 'Heal',
         description:
-          'Gig work for healthcare professionals. Heal.com lets healthcare professionals spend quality time with patients in the privacy, comfort and convenience of their environment with the full capabilities of the doctor’s office',
+          'Gig work for healthcare professionals. Heal.com lets healthcare professionals spend quality time with patients in the privacy, comfort and convenience of their environment with the full capabilities of the doctors office',
         indeed: 'https://www.indeed.com/cmp/Heal/reviews',
         promo: '',
         gigsite: 'https://heal.com/medical-team/',
@@ -1271,7 +1381,7 @@ export const initialState = {
         logo: slingshot,
         gig: 'Slingshot Health',
         description:
-          'Slingshot Health helps healthcare profesionals find new patients and fill open gaps in their schedules, growing their practice. It’s free to sign up.',
+          'Slingshot Health helps healthcare profesionals find new patients and fill open gaps in their schedules, growing their practice. It is free to sign up.',
         indeed:
           'https://www.glassdoor.com/Reviews/Slingshot-Health-Reviews-E2439803.htm',
         promo: '',
@@ -1279,12 +1389,49 @@ export const initialState = {
         featured: false,
         subtypes: ['other'],
       },
+      {
+        id: 'G0204',
+        logo: wardrobe,
+        gig: 'Wardrobe',
+        description:
+          'Do you have a big or fashionable wardrobe? Monetize your closet with peer-to-peer fashion rentals. Lend designer pieces from your closet to fellow fashion lovers and get easy cash with this app!',
+        indeed:
+          'https://apps.apple.com/us/app/wardrobe-rent-luxury-fashion/id1275844584',
+        promo: '',
+        gigsite: 'https://wearwardrobe.co/',
+        featured: false,
+        subtypes: ['rental'],
+      },
+      {
+        id: 'G0206',
+        logo: eatwith,
+        gig: 'EatWith',
+        description:
+          'Do you have a passion for food or cooking? Host dining experiences, cooking classes, food tours, and much more at EatWith. Set menus, set prices, and set your own schedule. Do what you enjoy and make money from it.',
+        indeed: 'https://www.yelp.com/biz/eatwith-san-francisco-3',
+        promo: '',
+        gigsite: 'https://www.eatwith.com/landings/become-a-host',
+        featured: false,
+        subtypes: ['rental', 'labor'],
+      },
+      {
+        id: 'G0207',
+        logo: feastly,
+        gig: 'Feastly',
+        description:
+          'A similar gig to EatWith. Showcase and host your own dinners, pop-ups, cooking lessons, and culinary experiences. Make easy money with what you love doing and meet new people while doing it.',
+        indeed: 'https://www.yelp.com/biz/feastly-san-francisco-2',
+        promo: '',
+        gigsite: 'https://experiences.chefsfeed.com/browse/',
+        featured: false,
+        subtypes: ['rental', 'labor'],
+      },
       // Unfinished
       //
       //
       // Template
       // {
-      //   id: 'G0197',
+      //   id: 'G0208',
       //   logo: ,
       //   gig: '',
       //   description: '',
@@ -1421,7 +1568,7 @@ export const initialState = {
         logo: nickelytics,
         gig: 'Nickelytics',
         description:
-          'Nickelytics’ process is simple, they put ads on vehicles that drive through busy city streets. If you are working as a rideshare or delivery driver, you spend a lot of time on the road, Nickelytics helps you earn even more for your time.',
+          'Nickelytics process is simple, they put ads on vehicles that drive through busy city streets. If you are working as a rideshare or delivery driver, you spend a lot of time on the road, Nickelytics helps you earn even more for your time.',
         indeed: '',
         promo: '',
         gigsite: 'https://www.nickelytics.com/',

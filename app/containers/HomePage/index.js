@@ -86,7 +86,9 @@ export function HomePage({ loading, error, gigs }) {
             <tbody>
               <tr>
                 <TdImg>
-                  <Img src={gig} alt="Gig Vector" />
+                  <a href="/gigs">
+                    <Img src={gig} alt="Gig Vector" />
+                  </a>
                 </TdImg>
                 <td>
                   <H1>Gig Work</H1>
@@ -104,12 +106,16 @@ export function HomePage({ loading, error, gigs }) {
                   </H3>
                 </td>
                 <TdImg>
-                  <Img src={services} alt="Services Vector" />
+                  <a href="/services">
+                    <Img src={services} alt="Services Vector" />
+                  </a>
                 </TdImg>
               </tr>
               <tr>
                 <TdImg>
-                  <Img src={deal} alt="Deals Vector" />
+                  <a href="/deals">
+                    <Img src={deal} alt="Deals Vector" />
+                  </a>
                 </TdImg>
                 <td>
                   <H1>Deals</H1>
@@ -126,13 +132,20 @@ export function HomePage({ loading, error, gigs }) {
             <tbody>
               <tr>
                 <td>
-                  <Img src={gig} alt="Gig Vector" />
+                  <a href="/gigs">
+                    <Img src={gig} alt="Gig Vector" />
+                  </a>
                 </td>
                 <td>
-                  <Img src={services} alt="Services Vector" />
+                  <a href="/services">
+                    {' '}
+                    <Img src={services} alt="Services Vector" />
+                  </a>
                 </td>
                 <td>
-                  <Img src={deal} alt="Deals Vector" />
+                  <a href="/deals">
+                    <Img src={deal} alt="Deals Vector" />
+                  </a>
                 </td>
               </tr>
               <tr>

@@ -6,6 +6,10 @@ const CenteredSection = styled.img`
   width: auto;
   height: auto;
   border-radius: 40px;
+
+  &:hover {
+    background-color: #f7f7f7;
+  }
 `;
 
 export default CenteredSection;
