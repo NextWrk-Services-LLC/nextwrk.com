@@ -1682,9 +1682,9 @@ export const initialState = {
       //   description: '',
       //   indeed: '',
       //   promo: '',
-      //   resources: '', gigsite: '',
+      //   resources: '',
+      //   gigsite: '',
       //   featured: false,
-      //
       //   subtypes: [''],
       // },
       //

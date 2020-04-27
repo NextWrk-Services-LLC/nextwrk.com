@@ -17,8 +17,8 @@ import DealsPage from 'containers/DealsPage/Loadable';
 import ServicesPage from 'containers/ServicesPage/Loadable';
 import GigsPage from 'containers/GigsPage/Loadable';
 import FreelancePage from 'containers/FreelancePage/Loadable';
-import Privacy from 'containers/Privacy';
-import Tos from 'containers/Tos';
+import Privacy from 'containers/Privacy/Loadable';
+import Tos from 'containers/Tos/Loadable';
 import Footer from 'components/Footer';
 import NavBar from 'components/NavBar';
 

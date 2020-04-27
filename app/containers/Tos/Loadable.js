@@ -1,6 +1,6 @@
 /**
  *
- * Asynchronously loads the component for ServicesPage
+ * Asynchronously loads the component for Terms of Service Page
  *
  */
 
