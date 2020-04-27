@@ -86,7 +86,7 @@ function Popup({ close, info }) {
                       <P>{info.promo}</P>
                     </TitleLeft>
                   </td>
-                </tr>{' '}
+                </tr>
               </React.Fragment>
             ) : (
               ''

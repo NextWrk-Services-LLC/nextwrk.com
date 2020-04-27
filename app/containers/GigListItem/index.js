@@ -38,7 +38,9 @@ export function GigsListItem(props) {
 
   const content = (
     <React.Fragment>
-      {show ? <Popup close={closePopup} info={item} /> : ''}
+      {show ? (
+        <Popup key={`popup-${item.id}`} close={closePopup} info={item} />
+      ) : null}
       <Spacing onClick={() => toggleShow(!show)}>
         <Wrapper>
           <Table>
