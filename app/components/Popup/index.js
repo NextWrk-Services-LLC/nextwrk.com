@@ -10,8 +10,10 @@ import styled from 'styled-components';
 
 import H1 from 'components/H1';
 import H2 from 'components/H2';
-import A from 'components/A';
 import Button from 'components/Button';
+import Ul from 'components/Ul';
+import Li from 'components/Li';
+import A from './A';
 import Img from './Img';
 
 const Outer = styled.div`
@@ -31,7 +33,7 @@ const Inner = styled.div`
   position: absolute;
   left: 25%;
   right: 25%;
-  top: 15%;
+  top: 10%;
   margin: auto;
   background: white;
   border: 1px solid #070600;
@@ -162,8 +164,36 @@ function Popup({ close, info }) {
                 <tr>
                   <td>
                     <TitleLeft>
-                      <div style={{ padding: '0px 10px' }}>
+                      <div style={{ padding: '0px 10px 16px 10px' }}>
                         <A href={info.indeed}>See What Others Have to Say</A>
+                      </div>
+                    </TitleLeft>
+                  </td>
+                </tr>
+              </React.Fragment>
+            ) : (
+              ''
+            )}
+            {info.resources ? (
+              <React.Fragment>
+                <tr>
+                  <td>
+                    <TitleLeft>
+                      <H2>Resources</H2>
+                    </TitleLeft>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <TitleLeft>
+                      <div style={{ padding: '0px 10px' }}>
+                        <Ul>
+                          {info.resources.map(item => (
+                            <Li>
+                              <A href={item.link}>{item.title}</A>
+                            </Li>
+                          ))}
+                        </Ul>
                       </div>
                     </TitleLeft>
                   </td>

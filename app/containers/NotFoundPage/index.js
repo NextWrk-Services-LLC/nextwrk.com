@@ -10,9 +10,9 @@ import H1 from 'components/H1';
 
 export default function NotFound() {
   return (
-    <article>
+    <div style={{ padding: '0px 5px' }}>
       <H1>Oops, looks like that page does not exist.</H1>
       <H1>Click the NextWrk logo to return to the homepage.</H1>
-    </article>
+    </div>
   );
 }
