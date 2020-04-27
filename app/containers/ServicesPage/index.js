@@ -38,7 +38,7 @@ import Wrapper from './Wrapper';
 import ContentWrapper from './ContentWrapper';
 import Img from './Img';
 
-import servicesheader from './servicesheader.png';
+import servicesheader from './img/servicesheader.png';
 
 const key = 'servicesPage';
 

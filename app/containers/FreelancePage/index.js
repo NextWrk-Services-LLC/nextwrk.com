@@ -30,7 +30,7 @@ import saga from './saga';
 import AllFreelance from './AllFreelance';
 import Img from './Img';
 
-import freelanceheader from './freelanceheader.png';
+import freelanceheader from './img/freelanceheader.png';
 
 const key = 'freelancePage';
 

@@ -8,7 +8,7 @@
 import React from 'react';
 
 import Img from './Img';
-import Banner from './banner.png';
+import Banner from './img/banner.png';
 
 function Header() {
   return <Img src={Banner} alt="NextWrk - Logo" />;

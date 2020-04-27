@@ -38,7 +38,7 @@ import RentalGigs from './RentalGigs';
 import OtherGigs from './OtherGigs';
 import Img from './Img';
 
-import gigsheader from './gigsheader.png';
+import gigsheader from './img/gigsheader.png';
 
 const key = 'gigsPage';
 

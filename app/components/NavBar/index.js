@@ -7,52 +7,21 @@
  */
 
 import React, { memo, useState } from 'react';
-import styled from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
 import { compose } from 'redux';
+
+import Ul from 'components/Ul';
 
 import NavBarLink from './NavBarLink';
 import LogoLink from './LogoLink';
 import Img from './Img';
-import Logo from './nwlogo.png';
+import Wrapper from './Wrapper';
+import ContentWrapper from './ContentWrapper';
+import Li from './Li';
+import DropDown from './DropDown';
+import MobNav from './MobNav';
 
-const Wrapper = styled.div`
-  width: 100%;
-  height: 64px;
-  background: #4da3d9;
-  border-bottom: 1px solid #070600;
-  position: fixed;
-  z-index: 2;
-  @media (max-width: 768px) {
-    position: static;
-    border-bottom: 1px solid #4da3d9;
-  }
-`;
-
-const ContentWrapper = styled.div`
-  width: min(1070px, 90vw);
-  min-width: 250px;
-  margin: auto;
-  text-align: center;
-`;
-
-const MobNav = styled.a`
-  text-decoration: none;
-  color: #3b9ad5;
-`;
-
-const DropDown = styled.div`
-  text-align: center;
-`;
-
-const Ul = styled.ul`
-  list-style-type: none;
-`;
-
-const Li = styled.li`
-  font-size: 20px;
-  padding: 10px 40px;
-`;
+import Logo from './img/nwlogo.png';
 
 function NavBar() {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });

@@ -5,32 +5,11 @@
  */
 
 import React, { memo, useState } from 'react';
-import styled from 'styled-components';
 
 import BodySpacing from 'components/BodySpacing';
+import A from 'components/A';
 
-const PLink = styled.p`
-  color: #3b9ad5;
-  margin: 0;
-  padding: 0;
-  @media (max-width: 768px) {
-    font-size: 14px;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
-const A = styled.a`
-  color: #3b9ad5;
-  text-decoration: none;
-  font-size: 14px;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
+import PLink from './PLink';
 
 function VecDisclose() {
   const [show, toggleShow] = useState(false);

@@ -30,7 +30,7 @@ import saga from './saga';
 import AllDeals from './AllDeals';
 import Img from './Img';
 
-import dealsheader from './dealsheader.png';
+import dealsheader from './img/dealsheader.png';
 
 const key = 'dealsPage';
 

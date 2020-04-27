@@ -38,9 +38,9 @@ import Section from './Section';
 import Table from './Table';
 import TdImg from './TdImg';
 
-import services from './services.png';
-import gig from './gigs.png';
-import deal from './deals.png';
+import services from './img/services.png';
+import gig from './img/gigs.png';
+import deal from './img/deals.png';
 
 const key = 'home';
 

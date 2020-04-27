@@ -6,7 +6,6 @@
 
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
 import H1 from 'components/H1';
 import H2 from 'components/H2';
@@ -15,73 +14,13 @@ import Ul from 'components/Ul';
 import Li from 'components/Li';
 import A from './A';
 import Img from './Img';
-
-const Outer = styled.div`
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 5;
-`;
-
-const Inner = styled.div`
-  position: absolute;
-  left: 25%;
-  right: 25%;
-  top: 10%;
-  margin: auto;
-  background: white;
-  border: 1px solid #070600;
-  border-radius: 20px;
-  z-index: 6;
-  padding: 20px 40px;
-  @media (max-width: 768px) {
-    left: 5%;
-    right: 5%;
-    top: 15%;
-    padding: 5px 10px;
-  }
-`;
-
-const Table = styled.table`
-  border-collapse: separate;
-  border-spacing: 1px;
-  text-align: center;
-  width: 100%;
-`;
-
-const TdImg = styled.td`
-  text-align: center;
-`;
-
-const Title = styled.div`
-  text-align: center;
-  margin-top: -25px;
-  @media (max-width: 768px) {
-    margin-top: -20px;
-  }
-`;
-
-const TitleLeft = styled.div`
-  text-align: left;
-  margin-top: -25px;
-  @media (max-width: 768px) {
-    margin-top: -20px;
-  }
-`;
-
-const P = styled.p`
-  padding: 0px 10px;
-  margin-top: -5px;
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
-`;
+import P from './P';
+import TdImg from './TdImg';
+import Table from './Table';
+import Outer from './Outer';
+import Inner from './Inner';
+import Title from './Title';
+import TitleLeft from './TitleLeft';
 
 function Popup({ close, info }) {
   const wrapperRef = useRef(null);
