@@ -8,7 +8,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import Header from 'components/Header';
 import H1 from 'components/H1';
 import BodySpacing from 'components/BodySpacing';
 
@@ -22,7 +21,6 @@ export function Tos() {
           content="The Terms of Service for NextWrk Services LLC. By accessing or using NextWrk.com or any of its services, you confirm your agreement to be bound by these Terms. If you do not agree to these Terms, you may not access or use our Services."
         />
       </Helmet>
-      <Header />
       <BodySpacing>
         <H1>NextWrk Terms of Service</H1>
         <h1>Terms and Conditions</h1>

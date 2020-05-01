@@ -8,7 +8,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import Header from 'components/Header';
 import H1 from 'components/H1';
 import BodySpacing from 'components/BodySpacing';
 
@@ -22,7 +21,6 @@ export function Privacy() {
           content="The privacy policy for NextWrk Services LLC. Here at NextWrk we are committed to transparency. We have developed this statement to provide users with information on how we collect, use and share information from you and other users of NextWrk.com."
         />
       </Helmet>
-      <Header />
       <BodySpacing>
         <H1>NextWrk Privacy Policy</H1>
         <h1>Privacy Policy of NextWrk Services LLC</h1>
