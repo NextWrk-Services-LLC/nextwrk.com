@@ -14,16 +14,23 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+
 import {
   makeSelectGigs,
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
-import Header from 'components/Header';
+
+import BodySpacing from 'components/BodySpacing';
+
 import makeSelectDealsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+
 import AllDeals from './AllDeals';
+import Img from './Img';
+
+import dealsheader from './img/dealsheader.png';
 
 const key = 'dealsPage';
 
@@ -48,10 +55,10 @@ export function DealsPage({ loading, error, gigs }) {
           content="Maximize your returns! NextWrk's Deals Page connects users looking for new services with services looking for new users!"
         />
       </Helmet>
-      <Header />
-      <div style={{ padding: '5px' }}>
+      <Img src={dealsheader} alt="Deals Page Header" />
+      <BodySpacing>
         <AllDeals deals={dealsProps} />
-      </div>
+      </BodySpacing>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 {
   "name": "nextwrk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Service connecting professionals to their best avenues for success in the gig economy",
   "repository": {
     "type": "git",
@@ -63,6 +63,8 @@
   },
   "dependencies": {
     "@babel/polyfill": "7.4.3",
+    "@material-ui/core": "^4.9.12",
+    "@material-ui/icons": "^4.9.1",
     "chalk": "^2.4.2",
     "compression": "1.7.4",
     "connected-react-router": "6.4.0",

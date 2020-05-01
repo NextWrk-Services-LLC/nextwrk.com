@@ -1,4 +1,4 @@
-<img src='./app/components/Header/banner.png' alt="NextWrk.com banner" align="center" />
+<img src='./app/components/Header/img/banner.png' alt="NextWrk.com banner" align="center" />
 
 <br />
 

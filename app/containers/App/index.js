@@ -8,7 +8,6 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
@@ -16,24 +15,15 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import DealsPage from 'containers/DealsPage/Loadable';
 import ServicesPage from 'containers/ServicesPage/Loadable';
 import GigsPage from 'containers/GigsPage/Loadable';
-import FreelancePage from 'containers/FreelancePage/Loadable';
-import Privacy from 'containers/Privacy';
-import Tos from 'containers/Tos';
+import Privacy from 'containers/Privacy/Loadable';
+import Tos from 'containers/Tos/Loadable';
+
 import Footer from 'components/Footer';
 import NavBar from 'components/NavBar';
 
-import GlobalStyle from '../../global-styles';
+import AppWrapper from './AppWrapper';
 
-const AppWrapper = styled.div`
-  max-width: 1140px;
-  margin: 0 auto;
-  display: flex;
-  padding: 70px 16px;
-  flex-direction: column;
-  @media (max-width: 768px) {
-    padding: 0px 0px;
-  }
-`;
+import GlobalStyle from '../../global-styles';
 
 export default function App() {
   return (
@@ -54,7 +44,6 @@ export default function App() {
           <Route path="/services" component={ServicesPage} />
           <Route path="/gigs" component={GigsPage} />
           <Route path="/deals" component={DealsPage} />
-          <Route path="/freelance" component={FreelancePage} />
           <Route path="/terms-of-service" component={Tos} />
           <Route path="/privacy-policy" component={Privacy} />
           <Route path="" component={NotFoundPage} />

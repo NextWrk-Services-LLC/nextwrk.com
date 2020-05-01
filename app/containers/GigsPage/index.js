@@ -14,25 +14,28 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+
 import {
   makeSelectGigs,
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
+
+import BodySpacing from 'components/BodySpacing';
+
 import makeSelectGigsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+import { changeFilter } from './actions';
+
 import NavBarLink from './NavBarLink';
 import Wrapper from './Wrapper';
 import ContentWrapper from './ContentWrapper';
-import { changeFilter } from './actions';
 import AllGigs from './AllGigs';
 import DrivingGigs from './DrivingGigs';
 import LaborGigs from './LaborGigs';
 import RentalGigs from './RentalGigs';
 import OtherGigs from './OtherGigs';
-import Img from './Img';
-import gigsheader from './gigsheader.png';
 
 const key = 'gigsPage';
 
@@ -112,8 +115,7 @@ export function GigsPage({
           content="There are a plethora of jobs available to anyone with a phone, car, and/or skill. NextWrk's Gig Page helps exposes individuals to new opportunities in the gig economy, and helps them find the best jobs for them!"
         />
       </Helmet>
-      <Img src={gigsheader} alt="Gigs Page Header" />
-      <div style={{ padding: '5px' }}>
+      <BodySpacing>
         <Wrapper>
           <ContentWrapper>
             <NavBarLink onClick={showAll}>All</NavBarLink>
@@ -125,7 +127,7 @@ export function GigsPage({
         </Wrapper>
         <hr />
         {switchGigs(gigsPage)}
-      </div>
+      </BodySpacing>
     </div>
   );
 }

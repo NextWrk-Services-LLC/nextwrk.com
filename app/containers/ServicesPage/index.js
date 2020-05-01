@@ -14,25 +14,31 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+
 import {
   makeSelectGigs,
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
-import Header from 'components/Header';
+
+import BodySpacing from 'components/BodySpacing';
+
 import makeSelectServicesPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import { changeFilter } from './actions';
+
 import AllServices from './AllServices';
 import DrivingServices from './DrivingServices';
 import BusinessServices from './BusinessServices';
 import RentalServices from './RentalServices';
 import OtherServices from './OtherServices';
-// import Header from './Header';
 import NavBarLink from './NavBarLink';
 import Wrapper from './Wrapper';
 import ContentWrapper from './ContentWrapper';
+import Img from './Img';
+
+import servicesheader from './img/servicesheader.png';
 
 const key = 'servicesPage';
 
@@ -120,8 +126,8 @@ export function ServicesPage({
           content="Gig workers need help too, and the market definitely realizes this. There are more and more services available to help gig workers improve and maximize their returns. NextWrk's Services Page exposees individuals to new services to ensure they're always a step ahead!"
         />
       </Helmet>
-      <Header />
-      <div style={{ padding: '5px' }}>
+      <Img src={servicesheader} alt="Services Page Header" />
+      <BodySpacing>
         <Wrapper>
           <ContentWrapper>
             <NavBarLink onClick={showAll}>All</NavBarLink>
@@ -133,7 +139,7 @@ export function ServicesPage({
         </Wrapper>
         <hr />
         {switchServices(servicesPage)}
-      </div>
+      </BodySpacing>
     </div>
   );
 }

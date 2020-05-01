@@ -7,7 +7,6 @@
 
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 import { useMediaQuery } from 'react-responsive';
@@ -16,34 +15,33 @@ import { createStructuredSelector } from 'reselect';
 
 import { useInjectReducer } from 'utils/injectReducer';
 import { useInjectSaga } from 'utils/injectSaga';
+
 import {
   makeSelectGigs,
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
+
+import BodySpacing from 'components/BodySpacing';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 import Header from 'components/Header';
 import GigsList from 'components/GigsList';
-import H3 from './H3';
-import Section from './Section';
+
+import CenterText from 'components/CenterText';
 import { changeUsername } from './actions';
 import reducer from './reducer';
 import saga from './saga';
+
 import Img from './Img';
-import services from './services.png';
-import gig from './gigs.png';
-import deal from './deals.png';
+import H3 from './H3';
+import Section from './Section';
+import Table from './Table';
+import TdImg from './TdImg';
 
-const Table = styled.table`
-  border-collapse: separate;
-  border-spacing: 15px;
-`;
-
-const TdImg = styled.td`
-  width: 50%;
-  text-align: center;
-`;
+import services from './img/services.png';
+import gig from './img/gigs.png';
+import deal from './img/deals.png';
 
 const key = 'home';
 
@@ -56,6 +54,7 @@ export function HomePage({ loading, error, gigs }) {
   const featured = gigs.filter(obj => obj.featured === true);
   const featuredServices = featured.filter(obj => obj.id.startsWith('S'));
   const featuredGigs = featured.filter(obj => obj.id.startsWith('G'));
+  const featuredDeals = featured.filter(obj => obj.id.startsWith('D'));
 
   const gigsFeaturedProps = {
     loading,
@@ -69,6 +68,12 @@ export function HomePage({ loading, error, gigs }) {
     gigs: featuredServices,
   };
 
+  const dealFeaturedProps = {
+    loading,
+    error,
+    gigs: featuredDeals,
+  };
+
   return (
     <article>
       <Helmet>
@@ -79,19 +84,22 @@ export function HomePage({ loading, error, gigs }) {
         />
       </Helmet>
       <Header />
-      <div style={{ padding: '5px' }}>
+      <BodySpacing>
         <H1>Discover...</H1>
         {isMobile ? (
           <Table>
             <tbody>
               <tr>
                 <TdImg>
-                  <Img src={gig} alt="Gig Vector" />
+                  <a href="/gigs">
+                    <Img src={gig} alt="Gig Vector" />
+                  </a>
                 </TdImg>
                 <td>
                   <H1>Gig Work</H1>
                   <H3>
-                    New opportunities to earn extra money on your own time
+                    From charging scooters to professional freelancing - Gig
+                    jobs let you work where you want, when you want.
                   </H3>
                 </td>
               </tr>
@@ -99,23 +107,27 @@ export function HomePage({ loading, error, gigs }) {
                 <td>
                   <H1>New Services</H1>
                   <H3>
-                    A multitude of apps and services to make your jobs easier
-                    and more lucrative
+                    A multitude of apps and services created specifically for
+                    gig workers - Make your jobs easier and more lucrative
                   </H3>
                 </td>
                 <TdImg>
-                  <Img src={services} alt="Services Vector" />
+                  <a href="/services">
+                    <Img src={services} alt="Services Vector" />
+                  </a>
                 </TdImg>
               </tr>
               <tr>
                 <TdImg>
-                  <Img src={deal} alt="Deals Vector" />
+                  <a href="/deals">
+                    <Img src={deal} alt="Deals Vector" />
+                  </a>
                 </TdImg>
                 <td>
                   <H1>Deals</H1>
                   <H3>
-                    Exclusive deals to ensure you are never leaving any money on
-                    the table
+                    Exclusive deals for trying out new jobs and services -
+                    Ensure you are never leaving any money on the table.
                   </H3>
                 </td>
               </tr>
@@ -125,35 +137,48 @@ export function HomePage({ loading, error, gigs }) {
           <Table>
             <tbody>
               <tr>
-                <td>
-                  <Img src={gig} alt="Gig Vector" />
+                <td style={{ textAlign: 'center' }}>
+                  <a href="/gigs">
+                    <Img src={gig} alt="Gig Vector" />
+                  </a>
                 </td>
-                <td>
-                  <Img src={services} alt="Services Vector" />
+                <td style={{ textAlign: 'center' }}>
+                  <a href="/services">
+                    <Img src={services} alt="Services Vector" />
+                  </a>
                 </td>
-                <td>
-                  <Img src={deal} alt="Deals Vector" />
+                <td style={{ textAlign: 'center' }}>
+                  <a href="/deals">
+                    <Img src={deal} alt="Deals Vector" />
+                  </a>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <H1>Gig Work</H1>
+                  <CenterText>
+                    <H1>Gig Work</H1>
+                  </CenterText>
                   <H3>
-                    New opportunities to earn extra money on your own time
+                    From charging scooters to professional freelancing - Gig
+                    jobs let you work where you want, when you want.
                   </H3>
                 </td>
                 <td>
-                  <H1>New Services</H1>
+                  <CenterText>
+                    <H1>New Services</H1>
+                  </CenterText>
                   <H3>
-                    A multitude of apps and services to make your jobs easier
-                    and more lucrative
+                    A multitude of apps and services created specifically for
+                    gig workers - Make your jobs easier and more lucrative
                   </H3>
                 </td>
                 <td>
-                  <H1>Deals</H1>
+                  <CenterText>
+                    <H1>Deals</H1>
+                  </CenterText>
                   <H3>
-                    Exclusive deals to ensure you are never leaving any money on
-                    the table
+                    Exclusive deals for trying out new jobs and services -
+                    Ensure you are never leaving any money on the table.
                   </H3>
                 </td>
               </tr>
@@ -168,8 +193,11 @@ export function HomePage({ loading, error, gigs }) {
           <H2>Featured Services</H2>
           <hr />
           <GigsList {...servicesFeaturedProps} />
+          <H2>Featured Deals</H2>
+          <hr />
+          <GigsList {...dealFeaturedProps} />
         </Section>
-      </div>
+      </BodySpacing>
     </article>
   );
 }

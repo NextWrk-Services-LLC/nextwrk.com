@@ -7,52 +7,24 @@
  */
 
 import React, { memo, useState } from 'react';
-import styled from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
 import { compose } from 'redux';
+import WorkIcon from '@material-ui/icons/Work';
+import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
+import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
+
+import Ul from 'components/Ul';
 
 import NavBarLink from './NavBarLink';
 import LogoLink from './LogoLink';
 import Img from './Img';
-import Logo from './nwlogo.png';
+import Wrapper from './Wrapper';
+import ContentWrapper from './ContentWrapper';
+import Li from './Li';
+import DropDown from './DropDown';
+import MobNav from './MobNav';
 
-const Wrapper = styled.div`
-  width: 100%;
-  height: 64px;
-  background: #4da3d9;
-  border-bottom: 1px solid #070600;
-  position: fixed;
-  z-index: 2;
-  @media (max-width: 768px) {
-    position: static;
-    border-bottom: 1px solid #4da3d9;
-  }
-`;
-
-const ContentWrapper = styled.div`
-  width: min(1070px, 90vw);
-  min-width: 250px;
-  margin: auto;
-  text-align: center;
-`;
-
-const MobNav = styled.a`
-  text-decoration: none;
-  color: #3b9ad5;
-`;
-
-const DropDown = styled.div`
-  text-align: center;
-`;
-
-const Ul = styled.ul`
-  list-style-type: none;
-`;
-
-const Li = styled.li`
-  font-size: 20px;
-  padding: 10px 40px;
-`;
+import Logo from './img/nwlogo.png';
 
 function NavBar() {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
@@ -71,10 +43,24 @@ function NavBar() {
             </NavBarLink>
           ) : (
             <React.Fragment>
-              <NavBarLink href="/deals">Deals</NavBarLink>
-              <NavBarLink href="/freelance">Freelance</NavBarLink>
-              <NavBarLink href="/services">Services</NavBarLink>
-              <NavBarLink href="/gigs">Gigs</NavBarLink>
+              <NavBarLink href="/deals">
+                <div>
+                  <AttachMoneyIcon />
+                </div>
+                <div>Deals</div>
+              </NavBarLink>
+              <NavBarLink href="/services">
+                <div>
+                  <PhoneAndroidIcon />
+                </div>
+                <div>Services</div>
+              </NavBarLink>
+              <NavBarLink href="/gigs">
+                <div>
+                  <WorkIcon />
+                </div>
+                <div>Gigs</div>
+              </NavBarLink>
             </React.Fragment>
           )}
         </ContentWrapper>
@@ -83,18 +69,12 @@ function NavBar() {
         <DropDown>
           <Ul>
             <Li>
-              {' '}
               <MobNav href="/gigs">Gigs</MobNav>
             </Li>
             <Li>
               <MobNav href="/services">Services</MobNav>
             </Li>
             <Li>
-              {' '}
-              <MobNav href="/freelance">Freelance</MobNav>
-            </Li>
-            <Li>
-              {' '}
               <MobNav href="/deals">Deals</MobNav>
             </Li>
           </Ul>
@@ -105,7 +85,5 @@ function NavBar() {
     </React.Fragment>
   );
 }
-
-NavBar.propTypes = {};
 
 export default compose(memo)(NavBar);

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default styled.a`
   float: right;
-  padding: 16.5px 10px;
+  padding: 1px 10px;
   text-decoration: none;
   border-radius: 4px;
   -webkit-font-smoothing: antialiased;

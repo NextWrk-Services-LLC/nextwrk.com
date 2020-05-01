@@ -139,18 +139,6 @@
         type: 'gig',
       },
       {
-        id: 'G0060',
-        logo: uber,
-        gig: 'LinkedIn ProFinder',
-        description:
-          'LinkedIn ProFinder connects top freelance professionals like you with high quality leads.',
-        indeed: '',
-        promo: '',
-        gigsite: 'https://www.linkedin.com/profinder/pros',
-        featured: false,
-        type: 'gig',
-      },
-      {
         id: 'G0052',
         logo: uber,
         gig: 'Upwork',
@@ -207,18 +195,6 @@
         type: 'gig',
       },
       {
-        id: 'G0032',
-        logo: uber,
-        gig: 'Freelancer',
-        description:
-          'Freelancer has posted almost 11 million jobs for tens of thousands of its members. ',
-        indeed: '',
-        promo: '',
-        gigsite: '',
-        featured: false,
-        type: 'gig',
-      },
-      {
         id: 'G0006',
         logo: thumbtack,
         gig: 'Thumbtack Pro',
@@ -230,19 +206,7 @@
           'https://help.thumbtack.com/article/signing-up-as-a-professional',
         featured: false,
         type: 'gig',
-      },  
-      {
-        id: 'G0019',
-        logo: fiverr,
-        gig: 'Fiverr Freelancer',
-        description:
-          'Fiverr is one of the easiest ways to make money in the gig economy. No matter what skills you have, with a little creativity you sell your services to a platform of motivated buyers.',
-        indeed: 'https://www.indeed.com/cmp/Fiverr/reviews',
-        promo: '',
-        gigsite: 'https://www.fiverr.com/start_selling',
-        featured: false,
-        type: 'gig',
-      },
+      }, 
   
   // {
   //   id: 'G0011',
