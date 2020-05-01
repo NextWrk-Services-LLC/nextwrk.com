@@ -149,7 +149,7 @@ export const initialState = {
         logo: uber,
         gig: 'Uber',
         description:
-          'The grandaddy of all gig jobs. The taxi of the 21st century. As one of the largest ridesharing apps, Uber can turn your daily commute into a money maker, or help you score some extra cash while you cruise around town.',
+          'Uber drivers offer passengers a safe ride to their destination. Finding customers will not be an issue, as Uber is one of the largest ridesharing apps with tens of millions of users.',
         indeed: 'https://www.indeed.com/cmp/Uber/reviews',
         promo: '',
         resources: [
@@ -167,7 +167,7 @@ export const initialState = {
         logo: lyft,
         gig: 'Lyft',
         description:
-          'Another behemoth ridesharing app. Lyft boasts a lower barrier of entry and higher tips on average than Uber (although Uber can offer more through higher surges). They also have Lyft Express Drive, a car rental service meaning you can be a Lyft driver even if you have no car!',
+          'Lyft is another gigantic ride sharing app. Similar to Uber, Lyft drivers offer passengers a safe ride to their destination. Lyft boasts a lower barrier of entry and higher tips on average than Uber.',
         indeed: 'https://www.indeed.com/cmp/Lyft/reviews',
         promo: '',
         resources: [
@@ -185,7 +185,7 @@ export const initialState = {
         logo: hsnd,
         gig: 'HopSkipDrive',
         description:
-          'HopSkipDrive drivers offer carpooling services for youth in your community. There is a more stringent application process because of this, but if you want to make a positive impact in the community while at the same time earning some money, this app is for you!',
+          'HopSkipDrive drivers offer carpooling services for children ages 6+. There is a more stringent application process because of this, but it also pays incredibly well and gives you the opportunty to make a positive impact in the community.',
         indeed:
           'https://www.indeed.com/cmp/Hopskipdrive/reviews?fjobtitle=Driver',
         promo: '',
@@ -199,7 +199,7 @@ export const initialState = {
         logo: zum,
         gig: 'Zum',
         description:
-          'Zum is another ridesharing app offering a platform for kids transportation and care. Available in California, Arizona, Texas, Illinois, Florida, Washington and Washington DC, if you want to brighten kids days and make extra money, Zum is for you!',
+          'Zum is another carpooling rideshare app similar to HopSkipDrive. Zum drivers provide kids with transportation and care. It is available in California, Arizona, Texas, Illinois, Florida, Washington and Washington DC.',
         indeed: 'https://www.indeed.com/cmp/Ridezum/reviews',
         promo: 'Receive up to $500 sign up bonus!',
         resources: '',
@@ -212,7 +212,7 @@ export const initialState = {
         logo: wingz,
         gig: 'Wingz',
         description:
-          'A rideshare app with a twist. Wingz specializes in airport pickup and drop off and allows customers to select their favorite drivers for repeat rides. If you live near an airport and have a keen sense for customer service, Wingz is the rideshare app for you.',
+          'Wingz drivers specialize in airport pickup and drop off. Wingz also allows customers to select their favorite drivers for repeat rides, so drivers need to live near an airport and have a keen sense for customer service.',
         indeed: 'https://www.yelp.com/biz/wingz-san-francisco-4',
         promo: '',
         resources: '',
@@ -238,7 +238,7 @@ export const initialState = {
         logo: groundlink,
         gig: 'GroundLink',
         description:
-          'GroundLink is a black-car vehicle service that uses a network of professional drivers to provide transportation to riders. If you want to be a rideshare driver with class, sign up as a driver!',
+          'GroundLink chauffeurs are professional black car drivers that provide transportation to riders. They only accept experienced limo and car service drivers.',
         indeed: 'https://www.yelp.com/biz/groundlink-new-york',
         promo: '',
         resources: '',
@@ -251,7 +251,7 @@ export const initialState = {
         logo: curb,
         gig: 'Curb',
         description:
-          'If you are a licensed and insured cab driver, then this ride-share app is for you! Available in NYC, Boston, Philadelphia, Miami and Las Vegas!',
+          'Curb drivers are licensed and insured cab drivers. Available in NYC, Boston, Philadelphia, Miami and Las Vegas, Curb aims to help impacted cab drivers adapt to Uber and Lyft.',
         indeed: 'https://www.indeed.com/cmp/Curb/reviews',
         promo: '',
         resources: '',
@@ -277,7 +277,7 @@ export const initialState = {
         logo: grabr,
         gig: 'Grabr',
         description:
-          'Earn money while traveling! Grabr lets travelers subsidize their trips by delivering a handful of items. You can earn $200+ every time you travel abroad. If you are taking a trip soon, check out Grabr to see if you can earn some extra cash',
+          'Earn money while traveling! Grabr lets travelers subsidize their trips by delivering a handful of items. You can earn $200+ every time you travel abroad.',
         indeed: 'https://www.producthunt.com/posts/grabr-2/reviews',
         promo: 'Sign Up Below and Get $10!',
         resources: '',
@@ -350,7 +350,7 @@ export const initialState = {
         logo: tommyrun,
         gig: 'TommyRun',
         description:
-          'TommyRun is an app that allows users to order building materials and have them delivered within hours. If you own a truck or van you can start earning money today as a TommyRunner',
+          'TommyRunners deliver buliding materials to individuals in their communities. You need to own a truck or van and be willing to do some heavy lifting.',
         indeed: 'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
         promo: 'Sign Up and Get a $25 Credit!',
         resources: '',
@@ -363,7 +363,7 @@ export const initialState = {
         logo: upship,
         gig: 'uShip',
         description:
-          'uShip is a service that makes shipping motorcycles, boats, and other large items both fast and affordable. If you have the type of horsepower that can handles these deliveries, you can start making money as a uShip carrier.',
+          'uShip carriers ship motorcycles, boats, and other large items. If you have the type of horsepower that can handles these deliveries, you can start making money as a uShip carrier.',
         indeed: 'https://www.glassdoor.com/Reviews/uShip-Reviews-E200164.htm',
         promo: '',
         resources: '',
@@ -376,7 +376,7 @@ export const initialState = {
         logo: dispatchit,
         gig: 'DispatchIt',
         description:
-          'Dispatchit provides reliable local deliveries to customers with real time ETAs and tracking. Dispatch drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
+          'Dispatchit drivers provide reliable local deliveries to customers with real time ETAs and tracking. Dispatchit drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
         indeed: 'https://www.facebook.com/pg/dispatchitinc/reviews',
         promo: '',
         resources: '',
@@ -389,7 +389,7 @@ export const initialState = {
         logo: deliverthat,
         gig: 'DeliverThat',
         description:
-          'DeliverThat is a food delivery app that has partnered with well known restaraunts like QDoba, Zoes Kitchen, Boston Market and Firehouse. Delivery comissions start with a base amount, then increase based on distance and size.',
+          'DeliverThat is a food delivery app that has partnered with well known restaraunts like QDoba, Zoes Kitchen, Boston Market and Firehouse, and drivers deliver orders to homes. Delivery comissions start with a base amount, then increase based on distance and size.',
         indeed: 'https://www.indeed.com/cmp/Deliver-That/reviews',
         promo: '',
         resources: '',
@@ -402,10 +402,10 @@ export const initialState = {
         logo: postmates, // Food
         gig: 'Postmates',
         description:
-          'Postmates is one of the fastest growing food-delivery apps, and is hiring delivery drivers! Get delivery requests from the Postmates app, navigate to the store or restaurant and deliver to the customer location.',
+          'Postmates drivers deliver for one of the fastest growing food-delivery apps. They get delivery requests from the Postmates app, navigate to the store or restaurant and deliver to the customer location.',
         indeed: 'https://www.indeed.com/cmp/Postmates/reviews',
         promo:
-          'Complete a certain number of deliveries within 14 days and earn a guaranteed minimum payout (varies by location).',
+          'Complete a certain number of deliveries within 14 days and earn a guaranteed minimum payout.',
         resources: [
           {
             title: 'r/postmates: Subreddit for Postmates Customers and Drivers',
@@ -520,7 +520,7 @@ export const initialState = {
         logo: peach,
         gig: 'Peach',
         description:
-          'Peach focuses on carefully chosen dishes from the best lunch spots. They offer generous compensation and minimal time commitment. Peach is available in Seattle, San Diego and Boston.',
+          'Peach focuses on carefully chosen dishes from the best lunch spots. They offer generous compensation and minimal time commitment to their delivery drivers. Peach is available in Seattle, San Diego and Boston.',
         indeed: 'https://www.indeed.com/cmp/Peach/reviews',
         promo: '',
         resources: '',
@@ -533,7 +533,7 @@ export const initialState = {
         logo: deliveroo,
         gig: 'Deliveroo',
         description:
-          'Deliveroo is a UK based food-delivery service.  Unfortunately it is not available in America, but if you live abroad Deliveroo might be right for you',
+          'Deliveroo is a UK based food-delivery service. Delivery Drivers get paid to move orders from restaurants to homes. Unfortunately it is not currently available in America.',
         indeed: 'https://www.indeed.com/cmp/Deliveroo/reviews',
         promo: '',
         resources: [
@@ -551,7 +551,7 @@ export const initialState = {
         logo: gopuff,
         gig: 'GoPuff',
         description:
-          'GoPuff is the largest and fastest convenience delivery app available. Customers order snacks, drinks, alcohol, personal care items and more. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel',
+          'GoPuff is the largest and fastest convenience delivery app available. Drivers get paid to deliver snacks, drinks, alcohol, personal care items and more to customers. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel.',
         indeed: 'https://www.indeed.com/cmp/Gopuff/reviews',
         promo: '',
         resources: [
@@ -570,7 +570,7 @@ export const initialState = {
         logo: drizly,
         gig: 'Drizly',
         description:
-          'Drizly focuses on the delivery of the fun stuff, alcohol that is. Drizly partners with liquor stores to deliver their fine products to customers. The hiring process is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
+          'Drizly focuses on the delivery of the fun stuff, alcohol that is. Drizly partners with liquor stores to deliver their fine products to customers. The hiring process for their drivers is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
         indeed:
           'https://www.glassdoor.com/Reviews/Drizly-Delivery-Driver-Reviews-EI_IE1344937.0,6_KO7,22.htm',
         promo: '',
@@ -597,7 +597,7 @@ export const initialState = {
         logo: eaze,
         gig: 'Eaze',
         description:
-          'If you live in California and want to make some extra cash, Eaze could be for you! As a delivery person, you will deliver cannabis products from a licensed retailer directly to consumers',
+          'As a delivery person for Eaze, you will deliver cannabis products from a licensed retailer directly to consumers. Eaze is currently only available in California.',
         indeed:
           'https://www.glassdoor.com/Reviews/Eaze-Driver-Reviews-EI_IE977965.0,4_KO5,11.htm',
         promo: '',
@@ -616,7 +616,7 @@ export const initialState = {
         logo: minibar,
         gig: 'Minibar',
         description:
-          'Minibar delivery provides on-demand delivery of wine, spirits, beer & mixers. If you live in a city, this is a great delivery service to make some spare cash',
+          'Minibar delivery provides on-demand delivery of wine, spirits, beer & mixers. If you live in a city you can start earning cash as a delivery driver.',
         indeed:
           'https://www.glassdoor.com/Reviews/Minibar-Delivery-Reviews-E917096.htm',
         promo: '',
@@ -630,7 +630,7 @@ export const initialState = {
         logo: instacart,
         gig: 'Instacart',
         description:
-          'Instacart is one of the largest grocery delivery services out there. Shoppers use their platform to shop and deliver orders for their customers. If you have a car and extra time during the week, why not put both to work?',
+          'Instacart is one of the largest grocery delivery services out there. Shoppers use their platform to shop and deliver orders for their customers.',
         indeed: 'https://www.indeed.com/cmp/Instacart/reviews',
         promo: '',
         resources: [
@@ -648,7 +648,7 @@ export const initialState = {
         logo: shipt,
         gig: 'Shipt',
         description:
-          'Shipt is another key player in the grocery delivery game. Unlike Instacart, Shipt is owned solely by Target, which is where you will be doing most of your shopping, but the jobs are similar. Shipt is a great way to get paid to shop.',
+          'Shipt is another key player in the grocery delivery game hiring Shoppers. Unlike Instacart, Shipt is owned solely by Target, which is where you will be doing most of your shopping.',
         indeed: 'https://www.indeed.com/cmp/Shipt-Shopper/reviews',
         promo: '',
         resources: [
@@ -666,7 +666,7 @@ export const initialState = {
         logo: burpy,
         gig: 'Burpy',
         description:
-          'Burpy is another grocery service, offering delivery to customers within the hour. It hires shoppers to shop and deliver for customers, but is only available in the Texas area. If you live in Texas and have some spare time, Burpy will gladly compensate you for it.',
+          'Burpy is another grocery service, offering delivery to customers within the hour. It hires shoppers to shop and deliver for customers, but is only available in the Texas area.',
         indeed: 'https://www.indeed.com/cmp/Burpy/reviews',
         promo: '',
         resources: '',
@@ -708,7 +708,7 @@ export const initialState = {
         logo: rlac,
         gig: 'Rent Like a Champion',
         description:
-          'AirBnb for sporting events! Live near a college football stadium or major sporting event? Make some extra money renting your home out to eager fans traveling for games in your hometown.',
+          'AirBnb for sporting events! If you live near a college football stadium or major sporting event, you can earn money renting your home out to eager fans traveling for games in your hometown.',
         indeed: 'https://www.trustpilot.com/review/rentlikeachampion.com',
         promo: '',
         resources: '',
@@ -721,7 +721,7 @@ export const initialState = {
         logo: neighbor,
         gig: 'Neighbor',
         description:
-          'Got empty storage space? Earn money by giving that empty storage space a job. Start renting out your basement, garage and even closets to your neighbors today!',
+          'Neighbor lets you earn money renting out your basement, garage and even closets to neighbors.',
         indeed: 'https://www.trustpilot.com/review/neighbor.com',
         promo: 'Sign Up for Neighbor Today and Get $50!',
         resources: '',
@@ -778,7 +778,7 @@ export const initialState = {
         logo: vrbo,
         gig: 'VRBO',
         description:
-          'VRBO is a service for homeowners to list their properties for short term rental. If you have a vacation beach house, condo, cabin, or other property, quit wasting money while not in use. List is on VRBO and start earning.',
+          'VRBO is a service for homeowners to list their properties for short term rental. If you have a vacation beach house, condo, cabin, or other property, list it on VRBO and start earning.',
         indeed: 'https://www.consumeraffairs.com/online/vrbo.html',
         promo: '',
         resources: '',
@@ -804,7 +804,7 @@ export const initialState = {
         logo: turo,
         gig: 'Turo',
         description:
-          'Instead of leaving your car in the garage all day, rent it out! Turo is a car rental service that connects renters with car owners, and is available worldwide!',
+          'Turo is a car rental service that connects renters with car owners, and is available worldwide!',
         indeed: 'https://www.trustpilot.com/review/turo.com',
         promo: '',
         resources: [
@@ -933,7 +933,7 @@ export const initialState = {
         logo: outdoorsy,
         gig: 'Outdoorsy',
         description:
-          'Outdoorsy is another RV rental marketplace. They perform DMV checks on all driver, provide 24/7 roadside assistance and have a dedicated customer support team.',
+          'Outdoorsy is another RV rental marketplace. They perform DMV checks on all drivers, provide 24/7 roadside assistance and have a dedicated customer support team.',
         indeed: 'https://www.trustpilot.com/review/www.outdoorsy.com',
         promo: 'Sign Up and Get $50 Off Your First Trip!',
         resources: [
@@ -1670,6 +1670,45 @@ export const initialState = {
         featured: false,
         subtypes: ['rental', 'labor'],
       },
+      {
+        id: 'G0208',
+        logo: fiverr,
+        gig: 'Fiverr',
+        description:
+          'Fiverr is one of the easiest ways to make money in the gig economy. No matter what skills you have, with a little creativity you sell your services to a platform of motivated buyers.',
+        indeed: 'https://www.indeed.com/cmp/Fiverr/reviews',
+        promo: '',
+        resources: '',
+        gigsite: 'https://www.fiverr.com/start_selling',
+        featured: false,
+        subtypes: [''],
+      },
+      {
+        id: 'G0209',
+        logo: linkedin,
+        gig: 'LinkedIn ProFinder',
+        description:
+          'LinkedIn ProFinder connects top freelance professionals like you with high quality leads.',
+        indeed: '',
+        promo: '',
+        resources: '',
+        gigsite: 'https://www.linkedin.com/profinder/pros',
+        featured: false,
+        subtypes: [''],
+      },
+      {
+        id: 'G0210',
+        logo: freelancer,
+        gig: 'Freelancer',
+        description:
+          'Freelancer has posted almost 11 million jobs for tens of thousands of its members. ',
+        indeed: '',
+        promo: '',
+        resources: '',
+        gigsite: 'https://www.freelancer.com/jobs/',
+        featured: false,
+        subtypes: [''],
+      },
       // Unfinished
       //
       //
@@ -1902,45 +1941,6 @@ export const initialState = {
       //
       //
       // Freelance
-      {
-        id: 'F0000',
-        logo: fiverr,
-        gig: 'Fiverr',
-        description:
-          'Fiverr is one of the easiest ways to make money in the gig economy. No matter what skills you have, with a little creativity you sell your services to a platform of motivated buyers.',
-        indeed: 'https://www.indeed.com/cmp/Fiverr/reviews',
-        promo: '',
-        resources: '',
-        gigsite: 'https://www.fiverr.com/start_selling',
-        featured: true,
-        subtypes: [''],
-      },
-      {
-        id: 'F0001',
-        logo: linkedin,
-        gig: 'LinkedIn ProFinder',
-        description:
-          'LinkedIn ProFinder connects top freelance professionals like you with high quality leads.',
-        indeed: '',
-        promo: '',
-        resources: '',
-        gigsite: 'https://www.linkedin.com/profinder/pros',
-        featured: true,
-        subtypes: [''],
-      },
-      {
-        id: 'F0002',
-        logo: freelancer,
-        gig: 'Freelancer',
-        description:
-          'Freelancer has posted almost 11 million jobs for tens of thousands of its members. ',
-        indeed: '',
-        promo: '',
-        resources: '',
-        gigsite: 'https://www.freelancer.com/jobs/',
-        featured: true,
-        subtypes: [''],
-      },
       // Template
       // {
       //   id: 'F0000',
