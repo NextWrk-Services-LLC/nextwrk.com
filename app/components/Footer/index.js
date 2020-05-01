@@ -22,7 +22,7 @@ import twitter from './twitter.png';
 import linkedin from './linkedin.png';
 import facebook from './facebook.png';
 import instagram from './instagram.svg';
-import nextwrk from './nextwork.png';
+import nextwrk from '../../images/nextwork.png';
 
 function Footer() {
   return (

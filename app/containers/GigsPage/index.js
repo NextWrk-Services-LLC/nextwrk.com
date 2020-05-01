@@ -36,9 +36,6 @@ import DrivingGigs from './DrivingGigs';
 import LaborGigs from './LaborGigs';
 import RentalGigs from './RentalGigs';
 import OtherGigs from './OtherGigs';
-import Img from './Img';
-
-import gigsheader from './img/gigsheader.png';
 
 const key = 'gigsPage';
 
@@ -118,7 +115,6 @@ export function GigsPage({
           content="There are a plethora of jobs available to anyone with a phone, car, and/or skill. NextWrk's Gig Page helps exposes individuals to new opportunities in the gig economy, and helps them find the best jobs for them!"
         />
       </Helmet>
-      <Img src={gigsheader} alt="Gigs Page Header" />
       <BodySpacing>
         <Wrapper>
           <ContentWrapper>

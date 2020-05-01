@@ -28,6 +28,7 @@ import H2 from 'components/H2';
 import Header from 'components/Header';
 import GigsList from 'components/GigsList';
 
+import CenterText from 'components/CenterText';
 import { changeUsername } from './actions';
 import reducer from './reducer';
 import saga from './saga';
@@ -53,7 +54,6 @@ export function HomePage({ loading, error, gigs }) {
   const featured = gigs.filter(obj => obj.featured === true);
   const featuredServices = featured.filter(obj => obj.id.startsWith('S'));
   const featuredGigs = featured.filter(obj => obj.id.startsWith('G'));
-  const featuredFreelance = featured.filter(obj => obj.id.startsWith('F'));
   const featuredDeals = featured.filter(obj => obj.id.startsWith('D'));
 
   const gigsFeaturedProps = {
@@ -66,12 +66,6 @@ export function HomePage({ loading, error, gigs }) {
     loading,
     error,
     gigs: featuredServices,
-  };
-
-  const freelanceFeaturedProps = {
-    loading,
-    error,
-    gigs: featuredFreelance,
   };
 
   const dealFeaturedProps = {
@@ -104,7 +98,8 @@ export function HomePage({ loading, error, gigs }) {
                 <td>
                   <H1>Gig Work</H1>
                   <H3>
-                    New opportunities to earn extra money on your own time
+                    From charging scooters to professional freelancing - Gig
+                    jobs let you work where you want, when you want.
                   </H3>
                 </td>
               </tr>
@@ -112,8 +107,8 @@ export function HomePage({ loading, error, gigs }) {
                 <td>
                   <H1>New Services</H1>
                   <H3>
-                    A multitude of apps and services to make your jobs easier
-                    and more lucrative
+                    A multitude of apps and services created specifically for
+                    gig workers - Make your jobs easier and more lucrative
                   </H3>
                 </td>
                 <TdImg>
@@ -131,8 +126,8 @@ export function HomePage({ loading, error, gigs }) {
                 <td>
                   <H1>Deals</H1>
                   <H3>
-                    Exclusive deals to ensure you are never leaving any money on
-                    the table
+                    Exclusive deals for trying out new jobs and services -
+                    Ensure you are never leaving any money on the table.
                   </H3>
                 </td>
               </tr>
@@ -142,17 +137,17 @@ export function HomePage({ loading, error, gigs }) {
           <Table>
             <tbody>
               <tr>
-                <td>
+                <td style={{ textAlign: 'center' }}>
                   <a href="/gigs">
                     <Img src={gig} alt="Gig Vector" />
                   </a>
                 </td>
-                <td>
+                <td style={{ textAlign: 'center' }}>
                   <a href="/services">
                     <Img src={services} alt="Services Vector" />
                   </a>
                 </td>
-                <td>
+                <td style={{ textAlign: 'center' }}>
                   <a href="/deals">
                     <Img src={deal} alt="Deals Vector" />
                   </a>
@@ -160,23 +155,30 @@ export function HomePage({ loading, error, gigs }) {
               </tr>
               <tr>
                 <td>
-                  <H1>Gig Work</H1>
+                  <CenterText>
+                    <H1>Gig Work</H1>
+                  </CenterText>
                   <H3>
-                    New opportunities to earn extra money on your own time
+                    From charging scooters to professional freelancing - Gig
+                    jobs let you work where you want, when you want.
                   </H3>
                 </td>
                 <td>
-                  <H1>New Services</H1>
+                  <CenterText>
+                    <H1>New Services</H1>
+                  </CenterText>
                   <H3>
-                    A multitude of apps and services to make your jobs easier
-                    and more lucrative
+                    A multitude of apps and services created specifically for
+                    gig workers - Make your jobs easier and more lucrative
                   </H3>
                 </td>
                 <td>
-                  <H1>Deals</H1>
+                  <CenterText>
+                    <H1>Deals</H1>
+                  </CenterText>
                   <H3>
-                    Exclusive deals to ensure you are never leaving any money on
-                    the table
+                    Exclusive deals for trying out new jobs and services -
+                    Ensure you are never leaving any money on the table.
                   </H3>
                 </td>
               </tr>
@@ -191,9 +193,6 @@ export function HomePage({ loading, error, gigs }) {
           <H2>Featured Services</H2>
           <hr />
           <GigsList {...servicesFeaturedProps} />
-          <H2>Featured Freelance Networks</H2>
-          <hr />
-          <GigsList {...freelanceFeaturedProps} />
           <H2>Featured Deals</H2>
           <hr />
           <GigsList {...dealFeaturedProps} />

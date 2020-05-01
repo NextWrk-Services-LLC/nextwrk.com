@@ -41,7 +41,6 @@ function NavBar() {
           ) : (
             <React.Fragment>
               <NavBarLink href="/deals">Deals</NavBarLink>
-              <NavBarLink href="/freelance">Freelance</NavBarLink>
               <NavBarLink href="/services">Services</NavBarLink>
               <NavBarLink href="/gigs">Gigs</NavBarLink>
             </React.Fragment>
@@ -56,9 +55,6 @@ function NavBar() {
             </Li>
             <Li>
               <MobNav href="/services">Services</MobNav>
-            </Li>
-            <Li>
-              <MobNav href="/freelance">Freelance</MobNav>
             </Li>
             <Li>
               <MobNav href="/deals">Deals</MobNav>
