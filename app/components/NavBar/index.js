@@ -9,6 +9,9 @@
 import React, { memo, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { compose } from 'redux';
+import WorkIcon from '@material-ui/icons/Work';
+import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
+import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 
 import Ul from 'components/Ul';
 
@@ -40,9 +43,24 @@ function NavBar() {
             </NavBarLink>
           ) : (
             <React.Fragment>
-              <NavBarLink href="/deals">Deals</NavBarLink>
-              <NavBarLink href="/services">Services</NavBarLink>
-              <NavBarLink href="/gigs">Gigs</NavBarLink>
+              <NavBarLink href="/deals">
+                <div>
+                  <AttachMoneyIcon />
+                </div>
+                <div>Deals</div>
+              </NavBarLink>
+              <NavBarLink href="/services">
+                <div>
+                  <PhoneAndroidIcon />
+                </div>
+                <div>Services</div>
+              </NavBarLink>
+              <NavBarLink href="/gigs">
+                <div>
+                  <WorkIcon />
+                </div>
+                <div>Gigs</div>
+              </NavBarLink>
             </React.Fragment>
           )}
         </ContentWrapper>
