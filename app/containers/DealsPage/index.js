@@ -23,11 +23,11 @@ import {
 
 import BodySpacing from 'components/BodySpacing';
 
+import DealsList from 'components/DealsList';
 import makeSelectDealsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
-import AllDeals from './AllDeals';
 import Img from './Img';
 
 import dealsheader from './img/dealsheader.png';
@@ -57,7 +57,7 @@ export function DealsPage({ loading, error, gigs }) {
       </Helmet>
       <Img src={dealsheader} alt="Deals Page Header" />
       <BodySpacing>
-        <AllDeals deals={dealsProps} />
+        <DealsList {...dealsProps} />
       </BodySpacing>
     </div>
   );

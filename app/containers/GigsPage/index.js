@@ -7,6 +7,7 @@
 
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { createStructuredSelector } from 'reselect';
@@ -22,89 +23,53 @@ import {
 } from 'containers/App/selectors';
 
 import BodySpacing from 'components/BodySpacing';
+import GigsList from 'components/GigsList';
+import H1 from 'components/H1';
 
 import makeSelectGigsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import { changeFilter } from './actions';
 
-import NavBarLink from './NavBarLink';
 import Wrapper from './Wrapper';
-import ContentWrapper from './ContentWrapper';
-import AllGigs from './AllGigs';
-import DrivingGigs from './DrivingGigs';
-import LaborGigs from './LaborGigs';
-import RentalGigs from './RentalGigs';
-import OtherGigs from './OtherGigs';
+
+import search from './img/search.png';
 
 const key = 'gigsPage';
 
-export function GigsPage({
-  gigsPage,
-  loading,
-  error,
-  gigs,
-  showAll,
-  showDriving,
-  showLabor,
-  showRental,
-  showOther,
-}) {
+const Input = styled.input`
+  width: 25%;
+  outline: none;
+  border: none;
+  background: #edf6fb;
+  padding: 0px 5px;
+  @media (max-width: 768px) {
+    width: 60%;
+  }
+`;
+
+const Button = styled.button`
+  border-radius: 60px;
+  border: none;
+  background: #3b9ad5;
+  color: #fff;
+  padding: 0px 20px;
+  &:hover {
+    box-shadow: 0px 0px 3px gray;
+  }
+`;
+
+export function GigsPage({ loading, error, gigs }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
   const allGigs = gigs.filter(obj => obj.id.startsWith('G'));
-  const drivingGigs = allGigs.filter(obj => obj.subtypes.includes('driving'));
-  const laborGigs = allGigs.filter(obj => obj.subtypes.includes('labor'));
-  const rentalGigs = allGigs.filter(obj => obj.subtypes.includes('rental'));
-  const otherGigs = allGigs.filter(obj => obj.subtypes.includes('other'));
 
   const gigsProps = {
     loading,
     error,
     gigs: allGigs,
   };
-
-  const drivingProps = {
-    loading,
-    error,
-    gigs: drivingGigs,
-  };
-
-  const laborProps = {
-    loading,
-    error,
-    gigs: laborGigs,
-  };
-
-  const rentalProps = {
-    loading,
-    error,
-    gigs: rentalGigs,
-  };
-
-  const otherProps = {
-    loading,
-    error,
-    gigs: otherGigs,
-  };
-
-  function switchGigs(param) {
-    switch (param) {
-      case 'all':
-        return <AllGigs gigs={gigsProps} />;
-      case 'driving':
-        return <DrivingGigs gigs={drivingProps} />;
-      case 'labor':
-        return <LaborGigs gigs={laborProps} />;
-      case 'rental':
-        return <RentalGigs gigs={rentalProps} />;
-      case 'other':
-        return <OtherGigs gigs={otherProps} />;
-      default:
-        return <AllGigs gigs={gigsProps} />;
-    }
-  }
 
   return (
     <div>
@@ -117,16 +82,37 @@ export function GigsPage({
       </Helmet>
       <BodySpacing>
         <Wrapper>
-          <ContentWrapper>
-            <NavBarLink onClick={showAll}>All</NavBarLink>
-            <NavBarLink onClick={showDriving}>Driving</NavBarLink>
-            <NavBarLink onClick={showLabor}>Labor</NavBarLink>
-            <NavBarLink onClick={showRental}>Rental</NavBarLink>
-            <NavBarLink onClick={showOther}>Other</NavBarLink>
-          </ContentWrapper>
+          <form>
+            <div style={{ display: 'flex', width: '100%' }}>
+              <img
+                src={search}
+                alt="Search"
+                style={{
+                  padding: '10px',
+                  background: `#edf6fb`,
+                  color: `#3b9ad5`,
+                  minWidth: '50px',
+                  textAlign: 'center',
+                }}
+              />
+              <Input type="text" placeholder="Search for Gigs" name="srchfld" />
+              <Button>Search</Button>
+            </div>
+          </form>
         </Wrapper>
         <hr />
-        {switchGigs(gigsPage)}
+        <table>
+          <tbody>
+            <tr>
+              <td style={{ width: '75%' }}>
+                <GigsList {...gigsProps} />
+              </td>
+              <td style={{ verticalAlign: 'top' }}>
+                <H1>Gig Filters</H1>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </BodySpacing>
     </div>
   );
@@ -137,11 +123,6 @@ GigsPage.propTypes = {
   loading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   gigs: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
-  showAll: PropTypes.func,
-  showDriving: PropTypes.func,
-  showLabor: PropTypes.func,
-  showRental: PropTypes.func,
-  showOther: PropTypes.func,
 };
 
 const mapStateToProps = createStructuredSelector({

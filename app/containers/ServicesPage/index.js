@@ -22,17 +22,13 @@ import {
 } from 'containers/App/selectors';
 
 import BodySpacing from 'components/BodySpacing';
+import ServicesList from 'components/ServicesList';
 
 import makeSelectServicesPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import { changeFilter } from './actions';
 
-import AllServices from './AllServices';
-import DrivingServices from './DrivingServices';
-import BusinessServices from './BusinessServices';
-import RentalServices from './RentalServices';
-import OtherServices from './OtherServices';
 import NavBarLink from './NavBarLink';
 import Wrapper from './Wrapper';
 import ContentWrapper from './ContentWrapper';
@@ -43,7 +39,6 @@ import servicesheader from './img/servicesheader.png';
 const key = 'servicesPage';
 
 export function ServicesPage({
-  servicesPage,
   loading,
   error,
   gigs,
@@ -57,65 +52,12 @@ export function ServicesPage({
   useInjectSaga({ key, saga });
 
   const allServices = gigs.filter(obj => obj.id.startsWith('S'));
-  const drivingServices = allServices.filter(obj =>
-    obj.subtypes.includes('driving'),
-  );
-  const businessServices = allServices.filter(obj =>
-    obj.subtypes.includes('business'),
-  );
-  const rentalServices = allServices.filter(obj =>
-    obj.subtypes.includes('rental'),
-  );
-  const otherServices = allServices.filter(obj =>
-    obj.subtypes.includes('other'),
-  );
 
   const servicesProps = {
     loading,
     error,
     gigs: allServices,
   };
-
-  const drivingProps = {
-    loading,
-    error,
-    gigs: drivingServices,
-  };
-
-  const businessProps = {
-    loading,
-    error,
-    gigs: businessServices,
-  };
-
-  const rentalProps = {
-    loading,
-    error,
-    gigs: rentalServices,
-  };
-
-  const otherProps = {
-    loading,
-    error,
-    gigs: otherServices,
-  };
-
-  function switchServices(param) {
-    switch (param) {
-      case 'all':
-        return <AllServices services={servicesProps} />;
-      case 'driving':
-        return <DrivingServices services={drivingProps} />;
-      case 'business':
-        return <BusinessServices services={businessProps} />;
-      case 'rental':
-        return <RentalServices services={rentalProps} />;
-      case 'other':
-        return <OtherServices services={otherProps} />;
-      default:
-        return <AllServices services={servicesProps} />;
-    }
-  }
 
   return (
     <div>
@@ -138,7 +80,7 @@ export function ServicesPage({
           </ContentWrapper>
         </Wrapper>
         <hr />
-        {switchServices(servicesPage)}
+        <ServicesList {...servicesProps} />
       </BodySpacing>
     </div>
   );

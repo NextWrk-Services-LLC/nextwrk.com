@@ -27,6 +27,8 @@ import H1 from 'components/H1';
 import H2 from 'components/H2';
 import Header from 'components/Header';
 import GigsList from 'components/GigsList';
+import ServicesList from 'components/ServicesList';
+import DealsList from 'components/DealsList';
 
 import CenterText from 'components/CenterText';
 import { changeUsername } from './actions';
@@ -192,10 +194,10 @@ export function HomePage({ loading, error, gigs }) {
           <GigsList {...gigsFeaturedProps} />
           <H2>Featured Services</H2>
           <hr />
-          <GigsList {...servicesFeaturedProps} />
+          <ServicesList {...servicesFeaturedProps} />
           <H2>Featured Deals</H2>
           <hr />
-          <GigsList {...dealFeaturedProps} />
+          <DealsList {...dealFeaturedProps} />
         </Section>
       </BodySpacing>
     </article>
