@@ -12,6 +12,12 @@ import {
   LOAD_GIGS_SUCCESS,
   LOAD_GIGS,
   LOAD_GIGS_ERROR,
+  LOAD_SERVICES,
+  LOAD_SERVICES_SUCCESS,
+  LOAD_SERVICES_ERROR,
+  LOAD_DEALS,
+  LOAD_DEALS_SUCCESS,
+  LOAD_DEALS_ERROR,
   SELECTED_GIG,
 } from './constants';
 // import nw from './img/nw.png';
@@ -144,7 +150,7 @@ export const initialState = {
   selectedGig: 'G0001',
   loading: false,
   error: false,
-  userData: {
+  componentData: {
     gigs: [
       // Gigs
       //
@@ -1731,6 +1737,8 @@ export const initialState = {
       //   featured: false,
       //   subtypes: [''],
       // },
+    ],
+    services: [
       //
       //
       //
@@ -1944,6 +1952,8 @@ export const initialState = {
       //   featured: false,
       //   subtypes: [''],
       // },
+    ],
+    deals: [
       //
       //
       // Freelance
@@ -2025,16 +2035,47 @@ const appReducer = (state = initialState, action) =>
       case LOAD_GIGS:
         draft.loading = true;
         draft.error = false;
-        draft.userData.gigs = false;
+        draft.componentData.gigs = false;
         break;
 
       case LOAD_GIGS_SUCCESS:
-        draft.userData.gigs = action.gigs;
+        draft.componentData.gigs = action.gigs;
         draft.loading = false;
-        draft.currentUser = action.username;
         break;
 
       case LOAD_GIGS_ERROR:
+        draft.error = action.error;
+        draft.loading = false;
+        break;
+
+      case LOAD_SERVICES:
+        draft.loading = true;
+        draft.error = false;
+        draft.componentData.services = false;
+        break;
+
+      case LOAD_SERVICES_SUCCESS:
+        draft.componentData.services = action.services;
+        draft.loading = false;
+        break;
+
+      case LOAD_SERVICES_ERROR:
+        draft.error = action.error;
+        draft.loading = false;
+        break;
+
+      case LOAD_DEALS:
+        draft.loading = true;
+        draft.error = false;
+        draft.componentData.deals = false;
+        break;
+
+      case LOAD_DEALS_SUCCESS:
+        draft.componentData.deals = action.deals;
+        draft.loading = false;
+        break;
+
+      case LOAD_DEALS_ERROR:
         draft.error = action.error;
         draft.loading = false;
         break;

@@ -12,4 +12,10 @@
 export const LOAD_GIGS = 'nextwrk/App/LOAD_GIGS';
 export const LOAD_GIGS_SUCCESS = 'nextwrk/App/LOAD_GIGS_SUCCESS';
 export const LOAD_GIGS_ERROR = 'nextwrk/App/LOAD_GIGS_ERROR';
+export const LOAD_SERVICES = 'nextwrk/App/LOAD_SERVICES';
+export const LOAD_SERVICES_SUCCESS = 'nextwrk/App/LOAD_SERVICES_SUCCESS';
+export const LOAD_SERVICES_ERROR = 'nextwrk/App/LOAD_SERVICES_ERROR';
+export const LOAD_DEALS = 'nextwrk/App/LOAD_DEALS';
+export const LOAD_DEALS_SUCCESS = 'nextwrk/App/LOAD_DEALS_SUCCESS';
+export const LOAD_DEALS_ERROR = 'nextwrk/App/LOAD_DEALS_ERROR';
 export const SELECTED_GIG = 'nextwrk/App/SELECTED_GIG';

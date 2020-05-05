@@ -36,7 +36,26 @@ const makeSelectLocation = () =>
 const makeSelectGigs = () =>
   createSelector(
     selectGlobal,
-    globalState => globalState.userData.gigs,
+    globalState => globalState.componentData.gigs,
+  );
+
+const makeSelectServices = () =>
+  createSelector(
+    selectGlobal,
+    globalState => globalState.componentData.services,
+  );
+
+const makeSelectDeals = () =>
+  createSelector(
+    selectGlobal,
+    globalState => globalState.componentData.deals,
+  );
+
+const makeSelectGigById = id =>
+  createSelector(
+    selectGlobal,
+    globalState =>
+      globalState.componentData.gigs.filter(obj => obj.id.includes(id)),
   );
 
 const makeSelectSelectedGig = () =>
@@ -47,6 +66,9 @@ const makeSelectSelectedGig = () =>
 
 export {
   selectGlobal,
+  makeSelectDeals,
+  makeSelectServices,
+  makeSelectGigById,
   makeSelectCurrentUser,
   makeSelectLoading,
   makeSelectError,
