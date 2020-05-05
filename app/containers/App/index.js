@@ -43,9 +43,9 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/services" component={ServicesPage} />
-          <Route path="/gigs" component={GigsPage} />
+          <Route exact path="/gigs" component={GigsPage} />
+          <Route path="/gigs/:id" component={FullGigPage} />
           <Route path="/deals" component={DealsPage} />
-          <Route exact path="/view-gig/:id" component={FullGigPage} />
           <Route path="/terms-of-service" component={Tos} />
           <Route path="/privacy-policy" component={Privacy} />
           <Route path="" component={NotFoundPage} />

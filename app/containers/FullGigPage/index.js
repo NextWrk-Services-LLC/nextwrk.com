@@ -12,7 +12,7 @@ import { Helmet } from 'react-helmet';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 
-import { makeSelectGigById } from 'containers/App/selectors';
+import { makeSelectPathname } from '../App/selectors';
 
 const Inner = styled.div`
   margin: auto;
@@ -25,7 +25,8 @@ const Inner = styled.div`
   }
 `;
 
-export function FullGigPage({ id }) {
+export function FullGigPage({ id, gigId }) {
+  console.log(gigId);
   return (
     <div>
       <Helmet>
@@ -41,10 +42,11 @@ export function FullGigPage({ id }) {
 
 FullGigPage.propTypes = {
   id: PropTypes.any,
+  gigId: PropTypes.any,
 };
 
 const mapStateToProps = createStructuredSelector({
-  info: makeSelectGigById(),
+  gigId: makeSelectPathname(),
 });
 
 function mapDispatchToProps(dispatch) {

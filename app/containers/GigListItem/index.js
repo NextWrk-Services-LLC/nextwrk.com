@@ -30,7 +30,7 @@ export function GigsListItem(props) {
 
   const content = (
     <React.Fragment>
-      <a href={`/view-gig/${item.id}`} style={{ textDecoration: 'none' }}>
+      <a href={`/gigs/${item.id}`} style={{ textDecoration: 'none' }}>
         <Spacing>
           <Wrapper>
             <Table>

@@ -33,6 +33,12 @@ const makeSelectLocation = () =>
     routerState => routerState.location,
   );
 
+const makeSelectPathname = () =>
+  createSelector(
+    selectRouter,
+    routerState => routerState.location.pathname.substring(6),
+  );
+
 const makeSelectGigs = () =>
   createSelector(
     selectGlobal,
@@ -51,13 +57,11 @@ const makeSelectDeals = () =>
     globalState => globalState.componentData.deals,
   );
 
-const makeSelectGigById = () =>
+const makeSelectGigByRouter = searchId =>
   createSelector(
     selectGlobal,
     globalState =>
-      globalState.componentData.gigs.filter(obj =>
-        obj.id.includes(globalState.selectedGig),
-      ),
+      globalState.componentData.gigs.filter(obj => obj.id.includes(searchId)),
   );
 
 const makeSelectSelectedGig = () =>
@@ -70,7 +74,8 @@ export {
   selectGlobal,
   makeSelectDeals,
   makeSelectServices,
-  makeSelectGigById,
+  makeSelectGigByRouter,
+  makeSelectPathname,
   makeSelectCurrentUser,
   makeSelectLoading,
   makeSelectError,
