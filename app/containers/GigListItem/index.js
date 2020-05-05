@@ -11,8 +11,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { selectGig } from 'containers/App/actions';
-
 import ListItem from 'components/ListItem';
 import H2 from 'components/H2';
 import Ul from 'components/Ul';
@@ -28,42 +26,40 @@ import Table from './Table';
 import TdImg from './TdImg';
 
 export function GigsListItem(props) {
-  const { item, dispatch } = props;
-
-  function handleClick() {
-    dispatch(selectGig(item.id));
-  }
+  const { item } = props;
 
   const content = (
     <React.Fragment>
-      <Spacing onClick={handleClick}>
-        <Wrapper>
-          <Table>
-            <tbody>
-              <tr>
-                <TdImg>
-                  <Img src={item.logo} alt="Company - Logo" />
-                </TdImg>
-                <td>
-                  <Title>
-                    <H2>{item.gig}</H2>
-                  </Title>
-                </td>
-              </tr>
-            </tbody>
-          </Table>
-          <Ul>
-            <Li>
-              <P>{item.description}</P>
-            </Li>
-          </Ul>
-          {item.promo ? (
-            <div style={{ textAlign: 'center' }}>
-              <hr /> <Deal>{item.promo}</Deal>
-            </div>
-          ) : null}
-        </Wrapper>
-      </Spacing>
+      <a href={`/view-gig/${item.id}`} style={{ textDecoration: 'none' }}>
+        <Spacing>
+          <Wrapper>
+            <Table>
+              <tbody>
+                <tr>
+                  <TdImg>
+                    <Img src={item.logo} alt="Company - Logo" />
+                  </TdImg>
+                  <td>
+                    <Title>
+                      <H2>{item.gig}</H2>
+                    </Title>
+                  </td>
+                </tr>
+              </tbody>
+            </Table>
+            <Ul>
+              <Li>
+                <P>{item.description}</P>
+              </Li>
+            </Ul>
+            {item.promo ? (
+              <div style={{ textAlign: 'center' }}>
+                <hr /> <Deal>{item.promo}</Deal>
+              </div>
+            ) : null}
+          </Wrapper>
+        </Spacing>
+      </a>
     </React.Fragment>
   );
 
@@ -73,7 +69,6 @@ export function GigsListItem(props) {
 
 GigsListItem.propTypes = {
   item: PropTypes.object,
-  dispatch: PropTypes.any,
 };
 
 function mapDispatchToProps(dispatch) {

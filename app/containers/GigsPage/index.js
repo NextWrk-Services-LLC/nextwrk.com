@@ -40,14 +40,15 @@ export function GigsPage({ loading, error, gigs }) {
 
   const [state, setState] = React.useState({
     srchfld: '',
-    drive: true,
-    labor: true,
-    rent: true,
-    other: true,
+    featured: true,
+    drive: false,
+    labor: false,
+    rent: false,
+    other: false,
     gigsProps: {
       loading,
       error,
-      gigs: allGigs,
+      gigs: allGigs.filter(obj => obj.featured),
     },
   });
 
@@ -110,7 +111,7 @@ export function GigsPage({ loading, error, gigs }) {
     });
   };
 
-  const { drive, labor, rent, other, gigsProps } = state;
+  const { featured, drive, labor, rent, other, gigsProps } = state;
 
   return (
     <div>
@@ -152,6 +153,17 @@ export function GigsPage({ loading, error, gigs }) {
                   <H2>Categories</H2>
                   <FormControl component="fieldset">
                     <FormGroup>
+                      <FormControlLabel
+                        control={
+                          <Checkbox
+                            checked={featured}
+                            onChange={handleChange}
+                            name="featured"
+                            color="default"
+                          />
+                        }
+                        label="Featured"
+                      />
                       <FormControlLabel
                         control={
                           <Checkbox

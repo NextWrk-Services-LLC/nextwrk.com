@@ -51,11 +51,13 @@ const makeSelectDeals = () =>
     globalState => globalState.componentData.deals,
   );
 
-const makeSelectGigById = id =>
+const makeSelectGigById = () =>
   createSelector(
     selectGlobal,
     globalState =>
-      globalState.componentData.gigs.filter(obj => obj.id.includes(id)),
+      globalState.componentData.gigs.filter(obj =>
+        obj.id.includes(globalState.selectedGig),
+      ),
   );
 
 const makeSelectSelectedGig = () =>

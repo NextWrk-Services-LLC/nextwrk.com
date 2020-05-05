@@ -45,7 +45,7 @@ export default function App() {
           <Route path="/services" component={ServicesPage} />
           <Route path="/gigs" component={GigsPage} />
           <Route path="/deals" component={DealsPage} />
-          <Route path="/view-gig" component={FullGigPage} />
+          <Route exact path="/view-gig/:id" component={FullGigPage} />
           <Route path="/terms-of-service" component={Tos} />
           <Route path="/privacy-policy" component={Privacy} />
           <Route path="" component={NotFoundPage} />
