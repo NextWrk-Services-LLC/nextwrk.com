@@ -26,7 +26,6 @@ import BodySpacing from 'components/BodySpacing';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 import Header from 'components/Header';
-import GigsList from 'components/GigsList';
 import ServicesList from 'components/ServicesList';
 import DealsList from 'components/DealsList';
 
@@ -191,7 +190,7 @@ export function HomePage({ loading, error, gigs }) {
         <Section>
           <H2>Featured Gigs</H2>
           <hr />
-          <GigsList {...gigsFeaturedProps} />
+          <ServicesList {...gigsFeaturedProps} />
           <H2>Featured Services</H2>
           <hr />
           <ServicesList {...servicesFeaturedProps} />

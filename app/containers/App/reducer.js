@@ -8,7 +8,12 @@
  */
 
 import produce from 'immer';
-import { LOAD_GIGS_SUCCESS, LOAD_GIGS, LOAD_GIGS_ERROR } from './constants';
+import {
+  LOAD_GIGS_SUCCESS,
+  LOAD_GIGS,
+  LOAD_GIGS_ERROR,
+  SELECTED_GIG,
+} from './constants';
 // import nw from './img/nw.png';
 import acorns from './img/acorns.png';
 import rlac from './img/rlac.png';
@@ -136,6 +141,7 @@ import freelancer from './img/freelancer.png';
 
 // The initial state of the App
 export const initialState = {
+  selectedGig: 'G0001',
   loading: false,
   error: false,
   userData: {
@@ -2031,6 +2037,10 @@ const appReducer = (state = initialState, action) =>
       case LOAD_GIGS_ERROR:
         draft.error = action.error;
         draft.loading = false;
+        break;
+
+      case SELECTED_GIG:
+        draft.selectedGig = action.id;
         break;
     }
   });

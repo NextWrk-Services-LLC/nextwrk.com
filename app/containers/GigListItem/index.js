@@ -9,6 +9,7 @@
 
 import React, { useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
@@ -27,6 +28,16 @@ import Spacing from './Spacing';
 import Title from './Title';
 import Table from './Table';
 import TdImg from './TdImg';
+
+const Deal = styled.p`
+  color: #3b9ad5;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+`;
 
 export function GigsListItem(props) {
   const { item } = props;
@@ -64,7 +75,7 @@ export function GigsListItem(props) {
           </Ul>
           {item.promo ? (
             <div style={{ textAlign: 'center' }}>
-              <hr /> <P>{item.promo}</P>
+              <hr /> <Deal>{item.promo}</Deal>
             </div>
           ) : null}
         </Wrapper>

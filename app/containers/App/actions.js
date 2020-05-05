@@ -15,7 +15,12 @@
  *    }
  */
 
-import { LOAD_GIGS, LOAD_GIGS_SUCCESS, LOAD_GIGS_ERROR } from './constants';
+import {
+  LOAD_GIGS,
+  LOAD_GIGS_SUCCESS,
+  LOAD_GIGS_ERROR,
+  SELECTED_GIG,
+} from './constants';
 
 /**
  * Load the gigs, this action starts the request saga
@@ -53,5 +58,19 @@ export function gigsLoadingError(error) {
   return {
     type: LOAD_GIGS_ERROR,
     error,
+  };
+}
+
+/**
+ * Dispatched when loading the gigs fails
+ *
+ * @param  {object} error The error
+ *
+ * @return {object}       An action object with a type of LOAD_GIGS_ERROR passing the error
+ */
+export function selectGig(id) {
+  return {
+    type: SELECTED_GIG,
+    id,
   };
 }
