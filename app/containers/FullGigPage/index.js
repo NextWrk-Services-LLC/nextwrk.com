@@ -137,7 +137,7 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
             <tr>
               <td>
                 <img
-                  style={{ height: '70px', borderRadius: '10px' }}
+                  style={{ height: '100px', borderRadius: '10px' }}
                   src={info.logo}
                   alt="Logo"
                 />
@@ -204,12 +204,14 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
           ) : null}
           {featuredServices.length > 0 ? (
             <React.Fragment>
-              <H2>Useful Services</H2>
+              <H2>
+                Useful Services{' '}
+                <a style={{ color: `#3b9ad5` }} href="/services">
+                  (See More Here)
+                </a>
+              </H2>
               <div style={{ marginTop: '-10px', textAlign: 'center' }}>
                 <ServicesList {...servicesProps} />
-              </div>
-              <div style={{ textAlign: 'center', paddingTop: '10px' }}>
-                <A href="/services">See More Services</A>
               </div>
             </React.Fragment>
           ) : null}
