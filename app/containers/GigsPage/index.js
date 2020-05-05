@@ -47,7 +47,7 @@ export function GigsPage({ loading, error, gigs }) {
     gigsProps: {
       loading,
       error,
-      gigs: allGigs.filter(obj => obj.featured),
+      gigs: allGigs,
     },
   });
 
@@ -110,7 +110,7 @@ export function GigsPage({ loading, error, gigs }) {
     });
   };
 
-  const { featured, drive, labor, rent, other, gigsProps } = state;
+  const { drive, labor, rent, other, gigsProps } = state;
 
   return (
     <div>
@@ -134,7 +134,6 @@ export function GigsPage({ loading, error, gigs }) {
                     placeholder="Search for Gigs"
                     id="srchfld"
                   />
-                  <Button>Search</Button>
                 </Wrapper>
                 <GigsList {...gigsProps} />
               </TdLeft>
@@ -145,17 +144,6 @@ export function GigsPage({ loading, error, gigs }) {
                   <H2>Categories</H2>
                   <FormControl component="fieldset">
                     <FormGroup>
-                      <FormControlLabel
-                        control={
-                          <Checkbox
-                            checked={featured}
-                            onChange={handleChange}
-                            name="featured"
-                            color="default"
-                          />
-                        }
-                        label="Featured"
-                      />
                       <FormControlLabel
                         control={
                           <Checkbox
