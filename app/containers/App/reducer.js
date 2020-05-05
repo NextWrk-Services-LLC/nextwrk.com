@@ -1282,10 +1282,13 @@ export const initialState = {
         gig: 'Rover',
         description:
           'Love animals? Wanna earn some extra money? Rover will pay you to watch dogs as a Sitter or walk dogs as a Walker. They offer flexibility and can help you earn up to $1,000 a month working with animals!',
-        indeed:
-          'https://www.indeed.com/cmp/Rover.com/reviews?fcountry=ALL&fjobtitle=Dog+Walker',
-        promo: 'Sign Up Through the Link Below and Get $20!',
+        promo: 'Sign Up and Get $20 from NextWrk!',
         resources: [
+          {
+            title: 'Indeed: Reviews for Rover Workers',
+            link:
+              'https://www.indeed.com/cmp/Rover.com/reviews?fcountry=ALL&fjobtitle=Dog+Walker',
+          },
           {
             title: 'r/RoverPetSitting: Subreddit for Rover Workers',
             link: 'https://www.reddit.com/r/RoverPetSitting/',
@@ -1301,9 +1304,12 @@ export const initialState = {
         gig: 'Wag!',
         description:
           'Wag! is one of the largest dog walking apps. They offer flexibility, secure payment through Stripe, and donates money from 30 minute walks to feed shelter dogs.',
-        indeed: 'https://www.indeed.com/cmp/Wag!-1/reviews',
         promo: 'Sign Up and Get a Free Walk!',
         resources: [
+          {
+            title: 'Indeed: Reviews for Wag Workers',
+            link: 'https://www.indeed.com/cmp/Wag!-1/reviews',
+          },
           {
             title: 'r/WagWalker: Subreddit for Wag Walkers',
             link: 'https://www.reddit.com/r/WagWalker/',
@@ -1322,9 +1328,12 @@ export const initialState = {
         gig: 'TaskRabbit',
         description:
           'TaskRabbit is a marketplace that matches freelance labor with local demand. You can get paid to help with everyday tasks, like cleaning, moving, delivery and handyman work, for individuals in your community.',
-        indeed: 'https://www.indeed.com/cmp/Taskrabbit/reviews',
         promo: '',
         resources: [
+          {
+            title: 'Indeed: Reviews for TaskRabbit Workers',
+            link: 'https://www.indeed.com/cmp/Taskrabbit/reviews',
+          },
           {
             title: 'r/TaskRabbit: Subreddit for TaskRabbit Workers',
             link: 'https://www.reddit.com/r/TaskRabbit/',
@@ -1341,12 +1350,11 @@ export const initialState = {
         gig: 'Handy',
         description:
           'Handy pays for being a home cleaner and handymen. It covers over 20 cities in North America, Canada, and the UK. However, unlike TaskRabbit, they only accept applicants with professional experience in cleaning or handyman services.',
-        indeed: 'https://www.indeed.com/cmp/Handy/reviews',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Handy Workers',
+            link: 'https://www.indeed.com/cmp/Handy/reviews',
           },
         ],
         gigsite: 'https://www.handy.com/apply',
@@ -1359,12 +1367,11 @@ export const initialState = {
         gig: 'Wonolo',
         description:
           'Wonolo hires workers to perform certain jobs, like Warehouse Operations, General Labor, Food Production, Cleaning and Merchandising, for different Employers. They are quickly expanding across the US and are available in most major cities.',
-        indeed: 'https://www.indeed.com/cmp/Wonolo/reviews',
-        promo: 'Earn a $100 Bonus When You Accept a Job Through Wonolo!',
+        promo: 'Accept a Job Through Wonolo and Earn a $100 Bonus!',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Wonolo Workers',
+            link: 'https://www.indeed.com/cmp/Wonolo/reviews',
           },
         ],
         gigsite: 'https://www.wonolo.com/find-work',
@@ -1377,12 +1384,11 @@ export const initialState = {
         gig: 'Bellhops',
         description:
           'Bellhops is a moving service that eases the demands of moving by connecting capable workers with clients looking to pack up and move. As a mover, you will get paid to pack boxes and move people into their new digs.',
-        indeed: 'https://www.indeed.com/cmp/Bellhops/reviews',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Bellhops Workers',
+            link: 'https://www.indeed.com/cmp/Bellhops/reviews',
           },
         ],
         gigsite: 'https://www.getbellhops.com/being-a-bellhop/',
@@ -1395,12 +1401,11 @@ export const initialState = {
         gig: 'Dolly',
         description:
           'The Dolly service is another moving service that pays people that have vehicles for moving, and movers to do the heavy lifting if they do not have a vehicle, to help individuals in your community move in or out.',
-        indeed: 'https://www.indeed.com/cmp/Dolly/reviews',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Dolly Workers',
+            link: 'https://www.indeed.com/cmp/Dolly/reviews',
           },
         ],
         gigsite: 'https://dolly.com/helpers/',
@@ -1413,12 +1418,11 @@ export const initialState = {
         gig: 'Schlep',
         description:
           'The Uber for moving! Work a gig as a driver or a mover. Earn up to $1,000 a week, keep 100% of your tips and work on a flexible schedule',
-        indeed: 'https://www.yelp.com/biz/schlep-chicago',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Yelp: Reviews for Schlep',
+            link: 'https://www.yelp.com/biz/schlep-chicago',
           },
         ],
         gigsite: 'https://www.schlep.it/#/',
@@ -1431,12 +1435,11 @@ export const initialState = {
         gig: 'EasyMove',
         description:
           'Easymove is a delivery service offering to help users move bulky items from point A to point B. If you have a big car and can do some heavy lifting, they advertise you can make $2,500 a week as an Easymove partner.',
-        indeed: 'https://www.trustpilot.com/review/www.easymove.co.uk',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Trustpilot: Reviews for Easymove',
+            link: 'https://www.trustpilot.com/review/www.easymove.co.uk',
           },
         ],
         gigsite: 'https://geteasymove.com/',
@@ -1449,12 +1452,11 @@ export const initialState = {
         gig: 'Lugg',
         description:
           'Convenient Moving and Delivering is what Lugg offers. If you own a truck, you can sign up to become a Lugger and earn up to $2.5k a week! No truck? No problem! If you can do some heavy lifting you can still sign up.',
-        indeed: 'https://www.indeed.com/cmp/Lugg/reviews',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Lugg Workers',
+            link: 'https://www.indeed.com/cmp/Lugg/reviews',
           },
         ],
         gigsite: 'https://lugg.com/become-a-lugger',
@@ -1467,13 +1469,12 @@ export const initialState = {
         gig: 'GoShare',
         description:
           'GoShare specializes in delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you have no truck you can apply as a helper. Depending on your driving situation, this gig can prove very lucrative.',
-        indeed:
-          'https://www.glassdoor.com/Reviews/GoShare-Reviews-E1779925.htm',
         promo: 'Sign Up Below and Receieve $10!',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Glassdoor: Job Reviews for GoShare Drivers',
+            link:
+              'https://www.glassdoor.com/Reviews/GoShare-Reviews-E1779925.htm',
           },
         ],
         gigsite: 'https://goshare.app.link/Mark_Foster_MF6447',
@@ -1486,12 +1487,11 @@ export const initialState = {
         gig: 'Takl',
         description:
           'At Takl, you get paid to help others in your community complete small jobs and household chores. You can perform chores in twelve categories on your own time, and get paid fast through direct deposit.',
-        indeed: 'https://www.indeed.com/cmp/Takl/reviews',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Takl Workers',
+            link: 'https://www.indeed.com/cmp/Takl/reviews',
           },
         ],
         gigsite: 'https://app.takl.com/providers/register',
@@ -1504,12 +1504,12 @@ export const initialState = {
         gig: 'NetWorx',
         description:
           'NetWorx is looking for professionals offering contracting services like Carpentry, Pest Control, Fencing and Roofing. They connect you with local demand for these services, and help boost your bottom line.',
-        indeed: 'https://www.glassdoor.com/Reviews/Networx-Reviews-E368391.htm',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Glassdoor: Job Reviews for NetWorx Workers',
+            link:
+              'https://www.glassdoor.com/Reviews/Networx-Reviews-E368391.htm',
           },
         ],
         gigsite: 'https://www.networx.com/signup',
@@ -1522,13 +1522,12 @@ export const initialState = {
         gig: 'TaskEasy',
         description:
           'TaskEasy employs landscaping professionals to provide lawnmowing, gardening, and landscaping services for individuals in the community. If you know your way around a lawn, and are looking to gain more customers, TaskEasy will help out.',
-        indeed:
-          'https://www.glassdoor.com/Overview/Working-at-TaskEasy-EI_IE1030594.11,19.htm',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Glassdoor: Job Reviews for TaskEasy Workers',
+            link:
+              'https://www.glassdoor.com/Overview/Working-at-TaskEasy-EI_IE1030594.11,19.htm',
           },
         ],
         gigsite: 'https://www.taskeasy.com/contractors',
@@ -1541,13 +1540,12 @@ export const initialState = {
         gig: 'LawnStarter',
         description:
           'LawnStarter can grow your lawn care business by over 30%. By connecting you with new customers in your area at no cost, you can put a stop to slow days and grow your revenue.',
-        indeed:
-          'https://www.indeed.com/cmp/Lawnstarter/reviews?ftopic=paybenefits',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for LawnStarter Workers',
+            link:
+              'https://www.indeed.com/cmp/Lawnstarter/reviews?ftopic=paybenefits',
           },
         ],
         gigsite: 'https://www.lawnstarter.com/lawn-care-businesses',
@@ -1560,12 +1558,11 @@ export const initialState = {
         gig: 'Plowz & Mowz',
         description:
           'Plowz & Mowz is another service offering more customers to lawncare professionals. They require $1M in General Liability Insurance and professional equipment, but if you have that they advertise they can grow your business by 30%',
-        indeed: 'https://www.trustpilot.com/review/www.plowzandmowz.com',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'TrustPilot: Reviews for Plowz & Mowz',
+            link: 'https://www.trustpilot.com/review/www.plowzandmowz.com',
           },
         ],
         gigsite: 'https://order.plowzandmowz.com/provider-onboard',
@@ -1578,12 +1575,11 @@ export const initialState = {
         gig: 'Lawn Love',
         description:
           'If you have a truck and equipment, sign up to be a Lawn Pro and get connected with Lawn Care jobs in your community. You can choose which ones to work and get paid through the app within 72 hours.',
-        indeed: 'https://www.indeed.com/cmp/Lawn-Love/reviews',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Lawn Love Workers',
+            link: 'https://www.indeed.com/cmp/Lawn-Love/reviews',
           },
         ],
         gigsite: 'https://lawnlove.com/apply',
@@ -1596,13 +1592,12 @@ export const initialState = {
         gig: 'Veryable',
         description:
           'Veryable is a great way for manufacturing workers the leverage the gig economy. When clients book a project through their service, the labor is filled from their pool of workers. Flexible work, daily pay',
-        indeed:
-          'https://www.indeed.com/cmp/Veryable-3/reviews?ftopic=paybenefits',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Veryable Workers',
+            link:
+              'https://www.indeed.com/cmp/Veryable-3/reviews?ftopic=paybenefits',
           },
         ],
         gigsite: 'https://veryable.app.link/pqxf1qmEN5',
@@ -1615,12 +1610,11 @@ export const initialState = {
         gig: 'Homeaglow',
         description:
           'Homeaglow connects residential cleaners with clients in their community. You can set your own rates, make your own schedule, and get paid weekly.',
-        indeed: 'https://www.indeed.com/cmp/Homeaglow/reviews',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Homeaglow Workers',
+            link: 'https://www.indeed.com/cmp/Homeaglow/reviews',
           },
         ],
         gigsite: 'https://www.homeaglow.com/apply',
@@ -1633,12 +1627,11 @@ export const initialState = {
         gig: 'Care', // Childcare
         description:
           'Primarily a place to find work in child or pet care, Care.com also offers gigs for housekeepers, gardeners, tutors, and those caring for the elderly.',
-        indeed: 'https://www.indeed.com/cmp/Care.com/reviews',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Care.com Workers',
+            link: 'https://www.indeed.com/cmp/Care.com/reviews',
           },
         ],
         gigsite: 'https://www.care.com/',
@@ -1651,13 +1644,12 @@ export const initialState = {
         gig: 'Uzurv',
         description:
           'Do you have a passion for helping the elderly? UZURV is a ride-share company that helps provide transportation to the elderly, disabled, and for NEMT needs',
-        indeed:
-          'https://appgrooves.com/app/uzurv360-driver-by-uzurv-llc/positive',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Appgrooves: Reviews for Uzurv',
+            link:
+              'https://appgrooves.com/app/uzurv360-driver-by-uzurv-llc/positive',
           },
         ],
         gigsite: 'https://uzurv.com/drivers/',
@@ -1670,12 +1662,11 @@ export const initialState = {
         gig: 'Sittercity',
         description:
           'If you are a babysitter, nanny or child care professional, Sittercity can connect you with individuals in your community looking for your services.',
-        indeed: 'https://www.indeed.com/cmp/Sittercity/reviews',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for SitterCity Workers',
+            link: 'https://www.indeed.com/cmp/Sittercity/reviews',
           },
         ],
         gigsite: 'https://www.sittercity.com/sitter/account',
@@ -1688,12 +1679,11 @@ export const initialState = {
         gig: 'CareLinx',
         description:
           'CareLinx connects Caregivers with elders seeking care nearby. They have a network of over 300,000 caregivers and offer flexible hours, great pay and professional development.',
-        indeed: 'https://www.indeed.com/cmp/Carelinx/reviews',
         promo: 'Sign Up Below and Get a Free Background Check!',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for CareLinx Workers',
+            link: 'https://www.indeed.com/cmp/Carelinx/reviews',
           },
         ],
         gigsite: 'https://www.carelinx.com/p/nextwrs',
@@ -1706,12 +1696,12 @@ export const initialState = {
         gig: 'Helpr',
         description:
           'Helpr is an app that connects parents with reliable childcare help (i.e., babysitting), It is is ideal for those with relevant experience looking for occasional part-time work.',
-        indeed: 'https://www.glassdoor.com/Reviews/Helpr-Reviews-E1305149.htm',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Glassdoor: Job Reviews for Helpr Workers',
+            link:
+              'https://www.glassdoor.com/Reviews/Helpr-Reviews-E1305149.htm',
           },
         ],
         gigsite: 'https://www.helpr-app.com/become-a-helpr-now',
@@ -1724,12 +1714,11 @@ export const initialState = {
         gig: 'UrbanSitter',
         description:
           'UrbanSitter lets users find and book babysitters and nannies in their communities. If you are a nanny or babysitter, it is a great way to pick up new clients!',
-        indeed: 'https://www.indeed.com/cmp/Urbansitter/reviews',
-        promo: 'Sign Up and Get $25 Credit!',
+        promo: 'Sign Up and Get $25!',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for UrbanSitter Workers',
+            link: 'https://www.indeed.com/cmp/Urbansitter/reviews',
           },
         ],
         gigsite: 'https://link.urbansitter.com/P2JqXJSHN5',
@@ -1745,13 +1734,12 @@ export const initialState = {
         gig: 'Figure Eight',
         description:
           'When someone need labels and annotations for a machine learning project, Figure Eight steps up. Users upload unlabeled data, with the rules they need for the project, and contributers get paid to mold the data for the model.',
-        indeed:
-          'https://www.glassdoor.com/Reviews/Figure-Eight-Reviews-E553483.htm',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Glassdoor: Job Reviews for Figure Eight Contributors',
+            link:
+              'https://www.glassdoor.com/Reviews/Figure-Eight-Reviews-E553483.htm',
           },
         ],
         gigsite: 'https://www.figure-eight.com/contributor/',
@@ -1764,9 +1752,12 @@ export const initialState = {
         gig: 'HelloTech',
         description:
           'Have a plethora of technical knowledge? Wanna get paid to help those less technically advanced? HelloTech connects you with users in your area looking for tech help. You set your own schedule, and get paid weekly',
-        indeed: 'https://www.indeed.com/cmp/Hellotech/reviews?fcountry=ALL',
         promo: 'Sign Up and Get $10!',
         resources: [
+          {
+            title: 'Indeed: Job Reviews for HelloTech Workers',
+            link: 'https://www.indeed.com/cmp/Hellotech/reviews?fcountry=ALL',
+          },
           {
             title: 'r/HelloTech: Subreddit for HelloTech Workers',
             link: 'https://www.reddit.com/r/HelloTech/',
@@ -1785,9 +1776,12 @@ export const initialState = {
         gig: 'Etsy Seller',
         description:
           'Etsy provides a marketplace for people to sell their handmade, vintage, or creative goods online. If you have an artsy side, look into getting paid for it on Etsy!',
-        indeed: 'https://www.consumeraffairs.com/online/etsy.html',
         promo: '',
         resources: [
+          {
+            title: 'ConsumerAffairs: Etsy Review',
+            link: 'https://www.consumeraffairs.com/online/etsy.html',
+          },
           {
             title: 'r/EtsySellers: Subreddit for Etsy Sellers',
             link: 'https://www.reddit.com/r/EtsySellers/',
@@ -1806,12 +1800,11 @@ export const initialState = {
         gig: 'Fancy Hands',
         description:
           'Want to become a virtual assistant, offering services to entrepenuers and businesses from wherever you want? Fancy Hands is a team of US-based virtual assistants, and a great place to start!',
-        indeed: 'https://www.indeed.com/cmp/Fancy-Hands/reviews',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Fancy Hands Workers',
+            link: 'https://www.indeed.com/cmp/Fancy-Hands/reviews',
           },
         ],
         gigsite: 'https://www.fancyhands.com/jobs',
@@ -1830,12 +1823,11 @@ export const initialState = {
         gig: 'Gigwalk',
         description:
           'Work for Gigwalk usually involves gathering data for companies about their products and stores. For example, you might be checking what is on the shelves in a particular shop, and whether it is correctly priced and labeled.',
-        indeed: 'https://www.indeed.com/cmp/Gigwalk/reviews',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for GigWalk Workers',
+            link: 'https://www.indeed.com/cmp/Gigwalk/reviews',
           },
         ],
         gigsite: 'http://www.gigwalk.com/gigwalkers/',
@@ -1848,12 +1840,11 @@ export const initialState = {
         gig: 'Market Force',
         description:
           'At Market Force, you will complete mystery shops for banks, restaurants, and stores. You get paid to provide feedback on your visits, which those companies then use to improve.',
-        indeed: 'https://www.indeed.com/cmp/Market-Force/reviews',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Market Force Workers',
+            link: 'https://www.indeed.com/cmp/Market-Force/reviews',
           },
         ],
         gigsite: 'https://www.marketforce.com/become-a-mystery-shopper',
@@ -1866,12 +1857,11 @@ export const initialState = {
         gig: 'GBW',
         description:
           'GBW pays individuals to shop at globally recognized brands and provide feedback on the experience. They have organized over 14 million mystery shops for some of the largest brands.',
-        indeed: 'https://www.trustpilot.com/review/www.gapbuster.com',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Trustpilot: Reviews for GBW Workers',
+            link: 'https://www.trustpilot.com/review/www.gapbuster.com',
           },
         ],
         gigsite: 'https://gbw.solutions/becomeanevaluator',
@@ -1885,12 +1875,11 @@ export const initialState = {
         gig: 'Spare5',
         description:
           'Spare5 is an app which pays you small amounts of money for completing micro-tasks on your phone. Most tasks only take a few seconds, and the app pays on average $0.02 – $0.05 per task.',
-        indeed: 'https://onlinezerotohero.com/spare5-review',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Spare5 Online Review',
+            link: 'https://onlinezerotohero.com/spare5-review',
           },
         ],
         gigsite: 'https://app.spare5.com/fives/sign_in',
@@ -1903,13 +1892,12 @@ export const initialState = {
         gig: 'Census Taker',
         description:
           'The United States Government needs a lot of help taking the census every year. Sign up to be a census taker and you can earn between $12 and $30 an hour, depending on your location.',
-        indeed:
-          'https://www.indeed.com/cmp/U.S.-Census-Bureau/reviews?fcountry=ALL&fjobtitle=Census+Taker',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Census Workers',
+            link:
+              'https://www.indeed.com/cmp/U.S.-Census-Bureau/reviews?fcountry=ALL&fjobtitle=Census+Taker',
           },
         ],
         gigsite: 'https://2020census.gov/en/jobs.html',
@@ -1923,12 +1911,11 @@ export const initialState = {
         gig: 'YourMechanic',
         description:
           'YourMechanic offers at home mechanic services to users, and is a great way for people with auto repair skills to leverage the gig economy. You can make extra money providing car repairs and maitenance at the homes of clients.',
-        indeed: 'https://www.trustpilot.com/review/yourmechanic.com',
-        promo: 'Sign Up Below and Get a $10 Credit!',
+        promo: 'Sign Up and Get $10!',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Trustpilot: Reviews for YourMechanic',
+            link: 'https://www.trustpilot.com/review/yourmechanic.com',
           },
         ],
         gigsite: 'https://www.yourmechanic.com/rl/IyhJRw1860682',
@@ -1942,9 +1929,12 @@ export const initialState = {
         gig: 'Zeel',
         description:
           'Zeel is a service offering at home massages to users, and is a phenomenal way for massage therapists to leverage the gig economy. 18% gratuity is added to every in-home appointment and customers pay for late cancelations.',
-        indeed: 'https://www.indeed.com/cmp/Zeel/reviews',
-        promo: 'Sign Up With Code PAUSE20 and get $20',
+        promo: 'Sign Up With Code PAUSE20 and get $20!',
         resources: [
+          {
+            title: 'Indeed: Job Reviews for Zeel Workers',
+            link: 'https://www.indeed.com/cmp/Zeel/reviews',
+          },
           {
             title: 'Zeel or Soothe?',
             link:
@@ -1961,9 +1951,12 @@ export const initialState = {
         gig: 'Soothe',
         description:
           'Gig work for massage therapists, including deep tissue, sports, and couples massage work. Soothe advertises 2-3x industry standard pay and schedule flexibility.',
-        indeed: 'https://www.indeed.com/cmp/Soothe-Inc/reviews',
         promo: '',
         resources: [
+          {
+            title: 'Indeed: Job Reviews for Soothe Workers',
+            link: 'https://www.indeed.com/cmp/Soothe-Inc/reviews',
+          },
           {
             title: 'Zeel or Soothe?',
             link:
@@ -1981,12 +1974,11 @@ export const initialState = {
         gig: 'Priv',
         description:
           'Beauty. Priv connects customers on-demand with freelance beauty and wellness professionals, taking a 20% commission. Priv services include makeup, blowout, haircut, nails/manicure, massage, personal training, grooming, spray tan and facials. “Priv Pros” select shifts and kinds of jobs they choose.',
-        indeed: 'https://www.indeed.com/cmp/Priv/reviews?fcountry=ALL',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Priv Workers',
+            link: 'https://www.indeed.com/cmp/Priv/reviews?fcountry=ALL',
           },
         ],
         gigsite: 'https://gopriv.com/pro',
@@ -2000,12 +1992,11 @@ export const initialState = {
         gig: 'Heal',
         description:
           'Gig work for healthcare professionals. Heal.com lets healthcare professionals spend quality time with patients in the privacy, comfort and convenience of their environment with the full capabilities of the doctors office',
-        indeed: 'https://www.indeed.com/cmp/Heal/reviews',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Heal Workers',
+            link: 'https://www.indeed.com/cmp/Heal/reviews',
           },
         ],
         gigsite: 'https://heal.com/medical-team/',
@@ -2018,13 +2009,12 @@ export const initialState = {
         gig: 'Slingshot Health',
         description:
           'Slingshot Health helps healthcare profesionals find new patients and fill open gaps in their schedules, growing their practice. It is free to sign up.',
-        indeed:
-          'https://www.glassdoor.com/Reviews/Slingshot-Health-Reviews-E2439803.htm',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Glassdoor: Job Reviews for Slingshot Health Workers',
+            link:
+              'https://www.glassdoor.com/Reviews/Slingshot-Health-Reviews-E2439803.htm',
           },
         ],
         gigsite: 'https://www.slingshothealth.com/providers/',
@@ -2037,13 +2027,12 @@ export const initialState = {
         gig: 'Wardrobe',
         description:
           'Do you have a big or fashionable wardrobe? Monetize your closet with peer-to-peer fashion rentals. Lend designer pieces from your closet to fellow fashion lovers and get easy cash with this app!',
-        indeed:
-          'https://apps.apple.com/us/app/wardrobe-rent-luxury-fashion/id1275844584',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Wardrobe Reviews',
+            link:
+              'https://apps.apple.com/us/app/wardrobe-rent-luxury-fashion/id1275844584',
           },
         ],
         gigsite: 'https://wearwardrobe.co/',
@@ -2056,12 +2045,11 @@ export const initialState = {
         gig: 'EatWith',
         description:
           'Do you have a passion for food or cooking? Host dining experiences, cooking classes, food tours, and much more at EatWith. Set menus, set prices, and set your own schedule. Do what you enjoy and make money from it.',
-        indeed: 'https://www.yelp.com/biz/eatwith-san-francisco-3',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Yelp: EatWith Reviews',
+            link: 'https://www.yelp.com/biz/eatwith-san-francisco-3',
           },
         ],
         gigsite: 'https://www.eatwith.com/landings/become-a-host',
@@ -2074,12 +2062,11 @@ export const initialState = {
         gig: 'Feastly',
         description:
           'A similar gig to EatWith. Showcase and host your own dinners, pop-ups, cooking lessons, and culinary experiences. Make easy money with what you love doing and meet new people while doing it.',
-        indeed: 'https://www.yelp.com/biz/feastly-san-francisco-2',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Yelp: Feastly Reviews',
+            link: 'https://www.yelp.com/biz/feastly-san-francisco-2',
           },
         ],
         gigsite: 'https://experiences.chefsfeed.com/browse/',
@@ -2092,12 +2079,11 @@ export const initialState = {
         gig: 'Fiverr',
         description:
           'Fiverr is one of the easiest ways to make money in the gig economy. No matter what skills you have, with a little creativity you sell your services to a platform of motivated buyers.',
-        indeed: 'https://www.indeed.com/cmp/Fiverr/reviews',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
+            title: 'Indeed: Job Reviews for Fiverr Freelancers',
+            link: 'https://www.indeed.com/cmp/Fiverr/reviews',
           },
         ],
         gigsite: 'https://www.fiverr.com/start_selling',
@@ -2112,12 +2098,7 @@ export const initialState = {
           'LinkedIn ProFinder connects top freelance professionals like you with high quality leads.',
         indeed: '',
         promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
-          },
-        ],
+        resources: [],
         gigsite: 'https://www.linkedin.com/profinder/pros',
 
         subtypes: [''],
@@ -2130,12 +2111,7 @@ export const initialState = {
           'Freelancer has posted almost 11 million jobs for tens of thousands of its members. ',
         indeed: '',
         promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
-          },
-        ],
+        resources: [],
         gigsite: 'https://www.freelancer.com/jobs/',
 
         subtypes: [''],
