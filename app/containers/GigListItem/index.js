@@ -7,13 +7,19 @@
  * sign up website
  */
 
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+
+import { makeSelectCurrentUser } from 'containers/App/selectors';
 
 import ListItem from 'components/ListItem';
 import H2 from 'components/H2';
 import Ul from 'components/Ul';
 import Li from 'components/Li';
+import Popup from 'components/Popup';
 
 import P from './P';
 import Img from './Img';
@@ -22,14 +28,31 @@ import Spacing from './Spacing';
 import Title from './Title';
 import Table from './Table';
 import TdImg from './TdImg';
-import Deal from './Deal';
+
+const Deal = styled.p`
+  color: #3b9ad5;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+`;
 
 export function GigsListItem(props) {
   const { item } = props;
 
+  const [show, toggleShow] = useState(false);
+  const closePopup = useCallback(() => {
+    toggleShow(false);
+  }, [false]);
+
   const content = (
     <React.Fragment>
-      <Spacing>
+      {show ? (
+        <Popup key={`popup-${item.id}`} close={closePopup} info={item} />
+      ) : null}
+      <Spacing onClick={() => toggleShow(!show)}>
         <Wrapper>
           <Table>
             <tbody>
@@ -68,4 +91,8 @@ GigsListItem.propTypes = {
   item: PropTypes.object,
 };
 
-export default GigsListItem;
+export default connect(
+  createStructuredSelector({
+    currentUser: makeSelectCurrentUser(),
+  }),
+)(GigsListItem);
