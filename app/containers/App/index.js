@@ -17,6 +17,7 @@ import ServicesPage from 'containers/ServicesPage/Loadable';
 import GigsPage from 'containers/GigsPage/Loadable';
 import Privacy from 'containers/Privacy/Loadable';
 import Tos from 'containers/Tos/Loadable';
+import FullGigPage from 'containers/FullGigPage/Loadable';
 
 import Footer from 'components/Footer';
 import NavBar from 'components/NavBar';
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="/services" component={ServicesPage} />
           <Route path="/gigs" component={GigsPage} />
           <Route path="/deals" component={DealsPage} />
+          <Route path="/view-gig" component={FullGigPage} />
           <Route path="/terms-of-service" component={Tos} />
           <Route path="/privacy-policy" component={Privacy} />
           <Route path="" component={NotFoundPage} />
