@@ -7,20 +7,18 @@
  * sign up website
  */
 
-import React, { useState, useCallback } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
 
-import { makeSelectCurrentUser } from 'containers/App/selectors';
+import { selectGig } from 'containers/App/actions';
 
 import ListItem from 'components/ListItem';
 import H2 from 'components/H2';
 import Ul from 'components/Ul';
 import Li from 'components/Li';
-import Popup from 'components/Popup';
 
+import Deal from './Deal';
 import P from './P';
 import Img from './Img';
 import Wrapper from './Wrapper';
@@ -29,30 +27,12 @@ import Title from './Title';
 import Table from './Table';
 import TdImg from './TdImg';
 
-const Deal = styled.p`
-  color: #3b9ad5;
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  @media (max-width: 768px) {
-    font-size: 20px;
-  }
-`;
-
 export function GigsListItem(props) {
-  const { item } = props;
-
-  const [show, toggleShow] = useState(false);
-  const closePopup = useCallback(() => {
-    toggleShow(false);
-  }, [false]);
+  const { item, dispatch } = props;
 
   const content = (
     <React.Fragment>
-      {show ? (
-        <Popup key={`popup-${item.id}`} close={closePopup} info={item} />
-      ) : null}
-      <Spacing onClick={() => toggleShow(!show)}>
+      <Spacing onClick={() => dispatch(selectGig(item.id))}>
         <Wrapper>
           <Table>
             <tbody>
@@ -89,10 +69,16 @@ export function GigsListItem(props) {
 
 GigsListItem.propTypes = {
   item: PropTypes.object,
+  dispatch: PropTypes.any,
 };
 
+function mapDispatchToProps(dispatch) {
+  return {
+    dispatch,
+  };
+}
+
 export default connect(
-  createStructuredSelector({
-    currentUser: makeSelectCurrentUser(),
-  }),
+  null,
+  mapDispatchToProps,
 )(GigsListItem);
