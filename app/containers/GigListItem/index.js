@@ -30,9 +30,13 @@ import TdImg from './TdImg';
 export function GigsListItem(props) {
   const { item, dispatch } = props;
 
+  function handleClick() {
+    dispatch(selectGig(item.id));
+  }
+
   const content = (
     <React.Fragment>
-      <Spacing onClick={() => dispatch(selectGig(item.id))}>
+      <Spacing onClick={handleClick}>
         <Wrapper>
           <Table>
             <tbody>
