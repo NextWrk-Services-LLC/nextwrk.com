@@ -16,8 +16,6 @@ import { makeSelectCurrentUser } from 'containers/App/selectors';
 
 import ListItem from 'components/ListItem';
 import H2 from 'components/H2';
-import Ul from 'components/Ul';
-import Li from 'components/Li';
 import Popup from 'components/Popup';
 
 import P from './P';
@@ -26,7 +24,6 @@ import Wrapper from './Wrapper';
 import Spacing from './Spacing';
 import Title from './Title';
 import Table from './Table';
-import TdImg from './TdImg';
 
 export function ServicesListItem(props) {
   const { item } = props;
@@ -46,22 +43,20 @@ export function ServicesListItem(props) {
           <Table>
             <tbody>
               <tr>
-                <TdImg>
+                <td>
                   <Img src={item.logo} alt="Company - Logo" />
-                </TdImg>
+                </td>
                 <td>
                   <Title>
                     <H2>{item.gig}</H2>
+                    <div style={{ marginTop: '-15px' }}>
+                      <P>{item.description}</P>
+                    </div>
                   </Title>
                 </td>
               </tr>
             </tbody>
           </Table>
-          <Ul>
-            <Li>
-              <P>{item.description}</P>
-            </Li>
-          </Ul>
           {item.promo ? (
             <div style={{ textAlign: 'center' }}>
               <hr /> <P>{item.promo}</P>

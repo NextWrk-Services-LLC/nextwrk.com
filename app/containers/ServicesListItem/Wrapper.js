@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 const Wrapper = styled.li`
   min-width: 27%;
-  max-width: 330px;
   height: 100%;
-  padding: 10px 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
   background: #fff;
   border: 1px solid #070600;
   border-radius: 5px;

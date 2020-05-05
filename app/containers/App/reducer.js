@@ -313,6 +313,8 @@ export const initialState = {
         id: 'G0198',
         logo: curb,
         gig: 'Curb',
+        app:
+          'Curb is the #1 taxi app in the US. They have over 50,000 taxis over 65+ US cities.',
         description:
           'Curb drivers are licensed and insured cab drivers. Available in NYC, Boston, Philadelphia, Miami and Las Vegas, Curb aims to help impacted cab drivers adapt to Uber and Lyft.',
         promo: '',
@@ -323,14 +325,16 @@ export const initialState = {
           },
         ],
         gigsite: 'https://gocurb.com/',
-
+        appsite: 'https://mobileapp.gocurb.com/',
+        pay: 'Average Curb Driver Pay is around $17/hr',
         subtypes: ['driving'],
       },
-      // /////////////////////////////////////////////////////////THis is where you started with the fkn resources
       {
         id: 'G0007', // Delivery
         logo: roadie,
         gig: 'Roadie', // Last mile
+        app:
+          'Roadie was the first “on-the-way” delivery service. They put extra space in passenger vehicles to work by connecting people with items to send with drivers heading.',
         description:
           'Going on a roadtrip soon? Roadie will pay you to fill your empty space and complete deliveries on the way. Roadie is a same day delivery service that connects drivers already headed in the right direction with shipments',
         promo: '',
@@ -341,16 +345,20 @@ export const initialState = {
           },
         ],
         gigsite: 'https://my.roadie.com/drive/sign-up/basic-info',
-
+        appsite: 'https://www.roadie.com/',
+        pay:
+          'Most local gigs pay between $8 and $50, with long distance trips paying up to $650',
         subtypes: ['driving'],
       },
       {
         id: 'G0188',
         logo: grabr,
         gig: 'Grabr',
+        app:
+          'Grabr is a peer to peer delivery service focussed on international shipments',
         description:
           'Earn money while traveling! Grabr lets travelers subsidize their trips by delivering a handful of items. You can earn $200+ every time you travel abroad.',
-        promo: 'Sign Up Below and Get $10!',
+        promo: 'Sign Up and Get $10!',
         resources: [
           {
             title: 'Grabr Reviews',
@@ -359,7 +367,9 @@ export const initialState = {
         ],
         gigsite:
           'https://grabr.io/invitation/mark-foster?utm_campaign=web&utm_source=referral_program&utm_medium=copy_link',
-
+        appsite:
+          'https://grabr.io/invitation/mark-foster?utm_campaign=web&utm_source=referral_program&utm_medium=copy_link',
+        pay: 'Earn $200+ Every Time You Travel Abroad',
         subtypes: ['driving'],
       },
       {
@@ -381,6 +391,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://flex.amazon.com/',
+        appsite: 'https://flex.amazon.com/',
         pay: 'Amazon Flex Drivers can make between $18 and $25 an hour',
         subtypes: ['driving'],
       },
@@ -398,7 +409,8 @@ export const initialState = {
           },
         ],
         gigsite: 'https://skipcart.com/drivers/',
-
+        appsite: 'https://skipcart.com/',
+        pay: 'Skipcart Drivers Can Earn Up to $22/hr',
         subtypes: ['driving'],
       },
       {
@@ -416,16 +428,18 @@ export const initialState = {
           },
         ],
         gigsite: 'https://pickupnow.com/requirements/',
-
+        appsite: 'https://pickupnow.com/',
+        pay: 'Make a minimum of $25 per run and up to $50/hr',
         subtypes: ['driving'],
       },
       {
         id: 'G0193',
         logo: bungii,
         gig: 'Bungii',
+        app:
+          "Bungii is a mobile app that instantly helps move, haul and deliver your stuff across town by connecting you with a local driver and pickup truck. They've been compared to popular ride sharing apps but instead of moving people, they move people's stuff.",
         description:
           'If you own a truck and can do some heavy lifting, Bungii will help you earn up to $40/hour doing deliveries for people in your community. They ask for you to own a 2005 or newer and rachet straps, bungee cords and moving blankets to secure your deliveries.',
-
         promo: 'Sign Up With Promo Code 5XDKA and get $10!',
         resources: [
           {
@@ -435,7 +449,8 @@ export const initialState = {
           },
         ],
         gigsite: 'https://bungii.com/',
-
+        appsite: 'https://bungii.com/',
+        pay: 'Bungii Workers Earn Up to $40/hr',
         subtypes: ['driving'],
       },
       {
@@ -445,7 +460,7 @@ export const initialState = {
         description:
           'TommyRunners deliver buliding materials to individuals in their communities. You need to own a truck or van and be willing to do some heavy lifting.',
         indeed: 'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
-        promo: 'Sign Up and Get a $25 Credit!',
+        promo: 'Sign Up and Get $25!',
         resources: [
           {
             title: 'TommyRun Reviews',
@@ -454,7 +469,8 @@ export const initialState = {
           },
         ],
         gigsite: 'https://tommyrun.app.link/vanKPpCzN5',
-
+        appsite: 'https://tommyrun.app.link/vanKPpCzN5',
+        pay: 'Average between $12 and $20/hr',
         subtypes: ['driving'],
       },
       {
@@ -512,6 +528,8 @@ export const initialState = {
         id: 'G0013',
         logo: postmates, // Food
         gig: 'Postmates',
+        app:
+          'Postmates is the largest, most reliable on-demand delivery and pickup platform. Able to deliver anything from anywhere, Postmates is the food delivery, grocery delivery, whatever-you-can-think-of delivery app to bring what you crave right to your door.',
         description:
           'Postmates drivers deliver for one of the fastest growing food-delivery apps. They get delivery requests from the Postmates app, navigate to the store or restaurant and deliver to the customer location.',
         promo:
@@ -527,13 +545,17 @@ export const initialState = {
           },
         ],
         gigsite: 'https://fleet.postmates.com/',
-
+        appsite: 'https://postmates.com/',
+        pay:
+          'Postmates pay ranges from around $12/hr for Drivers to around $25/hr for Truck Drivers',
         subtypes: ['driving'],
       },
       {
         id: 'G0014',
         logo: doordash,
         gig: 'DoorDash',
+        app:
+          'Delivery & takeout from the best local restaurants. Breakfast, lunch, dinner and more, delivered safely to your door. Now offering pickup & no-contact delivery.',
         description:
           'Doordash is another gigantic food-delivery app hiring delivery drivers. Doordash Dashers schedule shifts and fulfill delivery requests from the DoorDash app',
         promo: '',
@@ -548,7 +570,8 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.doordash.com/dasher/signup/',
-
+        appsite: 'https://www.doordash.com/en-US',
+        pay: 'Doordash pays Dashers between $2 and $10 per delivery',
         subtypes: ['driving'],
       },
       {
@@ -570,13 +593,17 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.uber.com/a/signup/drive/deliver/',
-
+        appsite: 'https://www.ubereats.com/',
+        pay:
+          'Uber Eats drivers can expect to make around $8 – $12 per hour after factoring in vehicle expenses',
         subtypes: ['driving'],
       },
       {
         id: 'G0034',
         logo: grubhub,
         gig: 'Grubhub',
+        app:
+          'Grubhub is a leading online and mobile food-ordering and delivery marketplace with the largest and most comprehensive network of restaurant partners.',
         description:
           'Grubhub is another food-delivery service, similar to DoorDash and other options. Grubhub drivers get guaranteed minimum earnings and additional perks for performance.',
         promo: '',
@@ -591,13 +618,16 @@ export const initialState = {
           },
         ],
         gigsite: 'https://driver.grubhub.com/',
-
+        appsite: 'https://www.grubhub.com/mobile_home',
+        pay: 'Grubhub Drivers typically make around $12 an hour',
         subtypes: ['driving'],
       },
       {
         id: 'G0024',
         logo: caviar,
         gig: 'Caviar',
+        app:
+          'Caviar is an all-in-one food ordering platform that connects diners with the best local and independent restaurants, via convenient delivery, pickup, or catering',
         description:
           'Caviar is a food-delivery service operating in over a dozen markets with a focus on higher end restaurants that they can develop seamless partnerships with, allowing them to fulfill orders faster. Caviar has no driver rating system, and compensates couriers on an "effort-based" algorithm',
         promo: '',
@@ -608,13 +638,17 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.trycaviar.com/apply',
-
+        appsite: 'https://www.trycaviar.com/',
+        pay:
+          'Daily pay ranges from around $200 a day for Drivers and $400 a day for Couriers',
         subtypes: ['driving'],
       },
       {
         id: 'G0030',
         logo: favor,
         gig: 'Favor',
+        app:
+          "Favor is the easiest way to get anything you want in your city delivered to your door in under an hour. Whether it's your favorite local restaurant or an errand you forgot to run.",
         description:
           'With Favor, you can deliver just about anything to customers and get paid for it. Unlike other deliver gigs, Favor provides a $9 per hour base pay, though tips are deducted from this, and is available in 12 cities',
         promo: '',
@@ -629,7 +663,8 @@ export const initialState = {
           },
         ],
         gigsite: 'https://apply.favordelivery.com/',
-
+        appsite: 'https://favordelivery.com/download',
+        pay: 'Favor provides a $9 per hour base pay.',
         subtypes: ['driving'],
       },
       {
@@ -653,6 +688,8 @@ export const initialState = {
         id: 'G0185',
         logo: peach,
         gig: 'Peach',
+        app:
+          'Peach is a daily lunch service. No service fee, no tips, no commitment, conveniently delivered to your office.',
         description:
           'Peach focuses on carefully chosen dishes from the best lunch spots. They offer generous compensation and minimal time commitment to their delivery drivers. Peach is available in Seattle, San Diego and Boston.',
         promo: '',
@@ -663,7 +700,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.peachd.com/jobs/',
-
+        appsite: 'https://www.peachd.com/',
         subtypes: ['driving'],
       },
       {
@@ -684,13 +721,15 @@ export const initialState = {
           },
         ],
         gigsite: 'https://deliveroo.co.uk/apply',
-
+        appsite: 'https://deliveroo.co.uk/app?manual=1',
         subtypes: ['driving'],
       },
       {
         id: 'G0169',
         logo: gopuff,
         gig: 'GoPuff',
+        app:
+          'goPuff is the on-demand convenience store that delivers what you need, day or night. Use their app or site for fast delivery of snacks, drinks, ice cream & more!',
         description:
           'GoPuff is the largest and fastest convenience delivery app available. Drivers get paid to deliver snacks, drinks, alcohol, personal care items and more to customers. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel.',
         promo: '',
@@ -706,7 +745,8 @@ export const initialState = {
         ],
         gigsite:
           'https://www.fountain.com/gopuff/apply/godrive-delivery-partner',
-
+        appsite: 'https://gopuff.com/home',
+        pay: 'Gopuff Drivers Average Approximately $17/hr',
         subtypes: ['driving'],
       },
       {
@@ -788,6 +828,8 @@ export const initialState = {
         id: 'G0008', // Shopping
         logo: instacart,
         gig: 'Instacart',
+        app:
+          'Instacart lets you shop from local grocery stores online, then sends a “personal shopper” to fulfill and deliver your order to you the same day.',
         description:
           'Instacart is one of the largest grocery delivery services out there. Shoppers use their platform to shop and deliver orders for their customers.',
         promo: '',
@@ -802,13 +844,17 @@ export const initialState = {
           },
         ],
         gigsite: 'https://shoppers.instacart.com/',
-
+        appsite: 'https://www.instacart.com/',
+        pay:
+          'During busy shifts, shoppers can earn $20 or more an hour. Several say the minimum base pay is $10 an hour',
         subtypes: ['driving'],
       },
       {
         id: 'G0046',
         logo: shipt,
         gig: 'Shipt',
+        app:
+          'Founded in 2014, Shipt is a grocery delivery service that was purchased by Target in 2017.',
         description:
           'Shipt is another key player in the grocery delivery game hiring Shoppers. Unlike Instacart, Shipt is owned solely by Target, which is where you will be doing most of your shopping.',
         promo: '',
@@ -823,7 +869,8 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.shipt.com/be-a-shopper/',
-
+        appsite: 'https://app.shipt.com/shopperappdownload',
+        pay: 'The Average Shipt Shopper Makes Around $15 an hour',
         subtypes: ['driving'],
       },
       {
@@ -901,9 +948,11 @@ export const initialState = {
         id: 'G0004',
         logo: neighbor,
         gig: 'Neighbor',
+        app:
+          'Neighbor connects people who have unused spaces with people in the area looking for a place to keep their things.',
         description:
           'Neighbor lets you earn money renting out your basement, garage and even closets to neighbors. Clean out your garage and you can start earning over $2,000 extra a year.',
-        promo: 'Sign Up and Get $50 from NextWrk!',
+        promo: 'Sign Up and Get $50!',
         resources: [
           {
             title: 'TrustPilot, Neighbor Review',
@@ -911,13 +960,16 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.neighbor.com/invited/nextwrk-39640',
-
+        pay:
+          'Rent out a closet for ~$400 a year, a garage for ~$1,800 a year, or a basement for ~$2,100 a year',
         subtypes: ['rental'],
       },
       {
         id: 'G0012',
         logo: airbnb,
         gig: 'AirBnB',
+        app:
+          'Airbnb is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in that locale. It currently covers more than 81,000 cities and 191 countries worldwide.',
         description:
           'The app connecting millions of homeowners looking to list with millions of renters looking to travel. As a host, AirBnB gives you full control of your availability, prices and house rules. Sign up as a host and AirBnB lets you earn money opneing up your home to travelers.',
         promo: '',
@@ -932,7 +984,8 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.airbnb.com/host/homes',
-
+        appsite: 'https://www.airbnb.com/mobile',
+        pay: 'AirBnB Hosts make, on average, about $920 a month',
         subtypes: ['rental'],
       },
       {
@@ -1007,8 +1060,10 @@ export const initialState = {
         id: 'G0017', // Car rentals
         logo: turo,
         gig: 'Turo',
+        app:
+          'Turo is a peer-to-peer car sharing company. Formerly known as RelayRides, Turo allows car owners to make extra cash by renting out their vehicles, while providing a convenient and quick way to rent a car to those in need of transportation.',
         description:
-          'Turo is a car rental service that connects renters with car owners, and is available worldwide!',
+          'Known as the AirBnB of cars, Turo is a car rental service that connects renters with car owners, and is available worldwide!',
         promo: '',
         resources: [
           {
@@ -1021,16 +1076,19 @@ export const initialState = {
           },
         ],
         gigsite: 'https://turo.com/us/en/list-your-car',
-
+        appsite: 'https://turo.com/',
+        pay: 'Renters earn between 65% and 90% of the price they set.',
         subtypes: ['rental'],
       },
       {
         id: 'G0018',
         logo: getaround,
         gig: 'Getaround',
+        app:
+          'Rent nearby cars, trucks, and vans, by the hour or day, on Getaround. No lines or key exchanges. Simply rent, unlock, and go in an instant with the Getaround',
         description:
           'Getaround is a car rental service that connects renters with car owners. It is available in most major cities, and is a great way to make money with little effort.',
-        promo: 'Sign Up and Get $20 Rental Credit!',
+        promo: 'Sign Up and Get $20!',
         resources: [
           {
             title: 'Yelp: Reviews for Getaround',
@@ -1043,7 +1101,8 @@ export const initialState = {
         ],
         gigsite:
           'https://www.getaround.com/invite/2c776f91-e44f-5695-bae1-784dd3b6ae18',
-
+        pay:
+          'According to Getaround, the average car owner makes about $6,000 a year',
         subtypes: ['rental'],
       },
       {
@@ -1103,7 +1162,7 @@ export const initialState = {
         gig: 'Boatsetter',
         description:
           'If you own a boat, then Boatsetter lets you rent it out — either with or without a captain. Peace of mind and insurance is included in every rental, and you choose who rents your boat!',
-        promo: 'Rent Out Your Boat and Get $100 from NextWrk!',
+        promo: 'Rent Out Your Boat and Get an Extra $100!',
         resources: [
           {
             title: 'Facebook: Boatsetter Reviews',
@@ -1154,7 +1213,7 @@ export const initialState = {
         gig: 'Outdoorsy',
         description:
           'Outdoorsy is another RV rental marketplace. They perform DMV checks on all drivers, provide 24/7 roadside assistance and have a dedicated customer support team.',
-        promo: 'Sign Up and Get $50 from NextWrk!',
+        promo: 'Sign Up and Get $50!',
         resources: [
           {
             title: 'Trustpilot: Reviews for Outdoorsy',
@@ -1175,7 +1234,7 @@ export const initialState = {
         gig: 'Riders Share',
         description:
           'If you own a motercycle, and and it spends most of its time in your garage, Riders Share will connect you with drivers looking to rent it out. List your motorcycle for free and make an average of $150 per booking! All listings are protected by an A rated insurance provider.',
-        promo: 'Sign Up and Get $25 From NextWrk!',
+        promo: 'Sign Up and Get $25!',
         resources: [
           {
             title: 'Facebook: Riders Share Reviews',
@@ -1282,7 +1341,7 @@ export const initialState = {
         gig: 'Rover',
         description:
           'Love animals? Wanna earn some extra money? Rover will pay you to watch dogs as a Sitter or walk dogs as a Walker. They offer flexibility and can help you earn up to $1,000 a month working with animals!',
-        promo: 'Sign Up and Get $20 from NextWrk!',
+        promo: 'Sign Up and Get $20!',
         resources: [
           {
             title: 'Indeed: Reviews for Rover Workers',

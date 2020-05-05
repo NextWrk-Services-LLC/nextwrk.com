@@ -65,6 +65,7 @@ const Button = styled.button`
 `;
 
 const P = styled.p`
+  font-size: 18px;
   @media (max-width: 768px) {
     font-size: 14px;
   }
@@ -154,7 +155,7 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
           <tbody>
             <tr>
               <td>
-                <a href={info.appsite}>
+                <a href={info.appsite ? info.appsite : info.gigsite}>
                   <Button>View The App</Button>
                 </a>
               </td>
@@ -194,7 +195,7 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
               <div style={{ marginTop: '-10px' }}>
                 <ul style={{ listStyle: 'none' }}>
                   {info.resources.map(item => (
-                    <li key={item.title}>
+                    <li style={{ paddingBottom: '3px' }} key={item.title}>
                       <ASm href={item.link}>{item.title}</ASm>
                     </li>
                   ))}
