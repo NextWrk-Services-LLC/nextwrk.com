@@ -8,7 +8,6 @@
 
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { createStructuredSelector } from 'reselect';
@@ -18,60 +17,26 @@ import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 
-import { useInjectSaga } from 'utils/injectSaga';
-import { useInjectReducer } from 'utils/injectReducer';
-
 import {
   makeSelectGigs,
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
-
 import BodySpacing from 'components/BodySpacing';
 import GigsList from 'components/GigsList';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 
-import makeSelectGigsPage from './selectors';
-import reducer from './reducer';
-import saga from './saga';
-import { changeFilter } from './actions';
-
+import TdLeft from './TdLeft';
 import Wrapper from './Wrapper';
-
+import InputTop from './InputTop';
+import Button from './Button';
+import SearchImg from './SearchImg';
 import search from './img/search.png';
 import nw from '../../images/nextwork.png';
 
-const key = 'gigsPage';
-
-const InputTop = styled.input`
-  width: 25%;
-  outline: none;
-  border: none;
-  background: #edf6fb;
-  padding: 0px 5px;
-  @media (max-width: 768px) {
-    width: 60%;
-  }
-`;
-
-const Button = styled.button`
-  border-radius: 60px;
-  border: none;
-  background: #3b9ad5;
-  color: #fff;
-  padding: 0px 20px;
-  outline: none;
-  &:hover {
-    box-shadow: 0px 0px 3px gray;
-  }
-`;
-
 export function GigsPage({ loading, error, gigs }) {
   const allGigs = gigs.filter(obj => obj.id.startsWith('G'));
-
-  useInjectReducer({ key, reducer });
-  useInjectSaga({ key, saga });
 
   const [state, setState] = React.useState({
     srchfld: '',
@@ -160,34 +125,16 @@ export function GigsPage({ loading, error, gigs }) {
         <table>
           <tbody>
             <tr>
-              <td style={{ width: '75%' }}>
+              <TdLeft>
                 <Wrapper>
-                  <div
-                    style={{
-                      display: 'flex',
-                      width: '100%',
-                      paddingBottom: '10px',
-                    }}
-                  >
-                    <img
-                      src={search}
-                      alt="Search"
-                      style={{
-                        padding: '10px',
-                        background: `#edf6fb`,
-                        color: `#3b9ad5`,
-                        minWidth: '50px',
-                        textAlign: 'center',
-                      }}
-                    />
-                    <InputTop
-                      type="text"
-                      onChange={textChange}
-                      placeholder="Search for Gigs"
-                      id="srchfld"
-                    />
-                    <Button>Search</Button>
-                  </div>
+                  <SearchImg src={search} alt="Search" />
+                  <InputTop
+                    type="text"
+                    onChange={textChange}
+                    placeholder="Search for Gigs"
+                    id="srchfld"
+                  />
+                  <Button>Search</Button>
                 </Wrapper>
                 <GigsList {...gigsProps} />
                 <div style={{ textAlign: 'center' }}>
@@ -197,7 +144,7 @@ export function GigsPage({ loading, error, gigs }) {
                     alt="nw logo"
                   />
                 </div>
-              </td>
+              </TdLeft>
               <td style={{ verticalAlign: 'top' }}>
                 <div style={{ paddingLeft: '10px' }}>
                   <H1>Gig Filters</H1>
@@ -267,14 +214,12 @@ export function GigsPage({ loading, error, gigs }) {
 }
 
 GigsPage.propTypes = {
-  gigsPage: PropTypes.string,
   loading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   gigs: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
 };
 
 const mapStateToProps = createStructuredSelector({
-  gigsPage: makeSelectGigsPage(),
   gigs: makeSelectGigs(),
   loading: makeSelectLoading(),
   error: makeSelectError(),
@@ -282,11 +227,7 @@ const mapStateToProps = createStructuredSelector({
 
 function mapDispatchToProps(dispatch) {
   return {
-    showAll: () => dispatch(changeFilter('all')),
-    showDriving: () => dispatch(changeFilter('driving')),
-    showLabor: () => dispatch(changeFilter('labor')),
-    showRental: () => dispatch(changeFilter('rental')),
-    showOther: () => dispatch(changeFilter('other')),
+    dispatch,
   };
 }
 

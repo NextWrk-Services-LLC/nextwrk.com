@@ -14,44 +14,28 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
-
 import {
-  makeSelectGigs,
+  makeSelectServices,
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
-
 import BodySpacing from 'components/BodySpacing';
 import ServicesList from 'components/ServicesList';
 
 import makeSelectServicesPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
-import { changeFilter } from './actions';
-
-import NavBarLink from './NavBarLink';
 import Wrapper from './Wrapper';
-import ContentWrapper from './ContentWrapper';
 import Img from './Img';
-
 import servicesheader from './img/servicesheader.png';
 
 const key = 'servicesPage';
 
-export function ServicesPage({
-  loading,
-  error,
-  gigs,
-  showAll,
-  showDriving,
-  showTaxes,
-  showRental,
-  showOther,
-}) {
+export function ServicesPage({ loading, error, services }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
-  const allServices = gigs.filter(obj => obj.id.startsWith('S'));
+  const allServices = services.filter(obj => obj.id.startsWith('S'));
 
   const servicesProps = {
     loading,
@@ -70,15 +54,7 @@ export function ServicesPage({
       </Helmet>
       <Img src={servicesheader} alt="Services Page Header" />
       <BodySpacing>
-        <Wrapper>
-          <ContentWrapper>
-            <NavBarLink onClick={showAll}>All</NavBarLink>
-            <NavBarLink onClick={showDriving}>Driving</NavBarLink>
-            <NavBarLink onClick={showTaxes}>Taxes</NavBarLink>
-            <NavBarLink onClick={showRental}>Rental</NavBarLink>
-            <NavBarLink onClick={showOther}>Other</NavBarLink>
-          </ContentWrapper>
-        </Wrapper>
+        <Wrapper>Search</Wrapper>
         <hr />
         <ServicesList {...servicesProps} />
       </BodySpacing>
@@ -90,28 +66,19 @@ ServicesPage.propTypes = {
   servicesPage: PropTypes.string,
   loading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
-  gigs: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
-  showAll: PropTypes.func,
-  showDriving: PropTypes.func,
-  showTaxes: PropTypes.func,
-  showRental: PropTypes.func,
-  showOther: PropTypes.func,
+  services: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
 };
 
 const mapStateToProps = createStructuredSelector({
   servicesPage: makeSelectServicesPage(),
-  gigs: makeSelectGigs(),
+  services: makeSelectServices(),
   loading: makeSelectLoading(),
   error: makeSelectError(),
 });
 
 function mapDispatchToProps(dispatch) {
   return {
-    showAll: () => dispatch(changeFilter('all')),
-    showDriving: () => dispatch(changeFilter('driving')),
-    showTaxes: () => dispatch(changeFilter('business')),
-    showRental: () => dispatch(changeFilter('rental')),
-    showOther: () => dispatch(changeFilter('other')),
+    dispatch,
   };
 }
 

@@ -16,7 +16,7 @@ import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
 
 import {
-  makeSelectGigs,
+  makeSelectDeals,
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
@@ -34,11 +34,11 @@ import dealsheader from './img/dealsheader.png';
 
 const key = 'dealsPage';
 
-export function DealsPage({ loading, error, gigs }) {
+export function DealsPage({ loading, error, deals }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
-  const allDeals = gigs.filter(obj => obj.id.startsWith('D'));
+  const allDeals = deals.filter(obj => obj.id.startsWith('D'));
 
   const dealsProps = {
     loading,
@@ -66,12 +66,12 @@ export function DealsPage({ loading, error, gigs }) {
 DealsPage.propTypes = {
   loading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
-  gigs: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
+  deals: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
 };
 
 const mapStateToProps = createStructuredSelector({
   dealsPage: makeSelectDealsPage(),
-  gigs: makeSelectGigs(),
+  deals: makeSelectDeals(),
   loading: makeSelectLoading(),
   error: makeSelectError(),
 });
