@@ -33,7 +33,6 @@ import InputTop from './InputTop';
 import Button from './Button';
 import SearchImg from './SearchImg';
 import search from './img/search.png';
-import nw from '../../images/nextwork.png';
 
 export function GigsPage({ loading, error, gigs }) {
   const allGigs = gigs.filter(obj => obj.id.startsWith('G'));
@@ -138,13 +137,6 @@ export function GigsPage({ loading, error, gigs }) {
                   <Button>Search</Button>
                 </Wrapper>
                 <GigsList {...gigsProps} />
-                <div style={{ textAlign: 'center' }}>
-                  <img
-                    src={nw}
-                    style={{ width: '75%', paddingBottom: '250px' }}
-                    alt="nw logo"
-                  />
-                </div>
               </TdLeft>
               <td style={{ verticalAlign: 'top' }}>
                 <div style={{ paddingLeft: '10px' }}>

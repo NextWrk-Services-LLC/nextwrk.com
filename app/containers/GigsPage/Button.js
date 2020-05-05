@@ -7,8 +7,10 @@ const Button = styled.button`
   color: #fff;
   padding: 0px 20px;
   outline: none;
+  font-weight: bold;
   &:hover {
     box-shadow: 0px 0px 3px gray;
+    cursor: pointer;
   }
 `;
 

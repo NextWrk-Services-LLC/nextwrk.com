@@ -10,7 +10,6 @@ import { Helmet } from 'react-helmet';
 import { useMediaQuery } from 'react-responsive';
 import { compose } from 'redux';
 
-import CenterText from 'components/CenterText';
 import BodySpacing from 'components/BodySpacing';
 import H1 from 'components/H1';
 import Header from 'components/Header';
@@ -35,11 +34,11 @@ export function HomePage() {
       <BodySpacing>
         <H1>Discover...</H1>
         {isMobile ? <MobileBody /> : <Body />}
-        <CenterText>
+        <div style={{ textAlign: 'center', margin: '50px' }}>
           <A href="/gigs">
             <H1>Find Your Next Gig Today!</H1>
           </A>
-        </CenterText>
+        </div>
       </BodySpacing>
     </article>
   );

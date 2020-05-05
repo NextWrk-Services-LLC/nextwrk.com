@@ -733,7 +733,7 @@ export const initialState = {
         logo: neighbor,
         gig: 'Neighbor',
         description:
-          'Neighbor lets you earn money renting out your basement, garage and even closets to neighbors.',
+          'Neighbor lets you earn money renting out your basement, garage and even closets to neighbors. Clean out your garage and you can start earning over $2,000 extra a year.',
         indeed: 'https://www.trustpilot.com/review/neighbor.com',
         promo: 'Sign Up for Neighbor Today and Get $50!',
         resources: '',
