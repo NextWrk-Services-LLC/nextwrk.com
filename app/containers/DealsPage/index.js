@@ -12,32 +12,18 @@ import { Helmet } from 'react-helmet';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
-import { useInjectSaga } from 'utils/injectSaga';
-import { useInjectReducer } from 'utils/injectReducer';
-
 import {
   makeSelectDeals,
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
-
 import BodySpacing from 'components/BodySpacing';
-
 import DealsList from 'components/DealsList';
-import makeSelectDealsPage from './selectors';
-import reducer from './reducer';
-import saga from './saga';
 
 import Img from './Img';
-
 import dealsheader from './img/dealsheader.png';
 
-const key = 'dealsPage';
-
 export function DealsPage({ loading, error, deals }) {
-  useInjectReducer({ key, reducer });
-  useInjectSaga({ key, saga });
-
   const allDeals = deals.filter(obj => obj.id.startsWith('D'));
 
   const dealsProps = {
@@ -70,7 +56,6 @@ DealsPage.propTypes = {
 };
 
 const mapStateToProps = createStructuredSelector({
-  dealsPage: makeSelectDealsPage(),
   deals: makeSelectDeals(),
   loading: makeSelectLoading(),
   error: makeSelectError(),

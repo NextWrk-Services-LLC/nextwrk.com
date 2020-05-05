@@ -12,8 +12,6 @@ import { Helmet } from 'react-helmet';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
-import { useInjectSaga } from 'utils/injectSaga';
-import { useInjectReducer } from 'utils/injectReducer';
 import {
   makeSelectServices,
   makeSelectLoading,
@@ -22,19 +20,11 @@ import {
 import BodySpacing from 'components/BodySpacing';
 import ServicesList from 'components/ServicesList';
 
-import makeSelectServicesPage from './selectors';
-import reducer from './reducer';
-import saga from './saga';
 import Wrapper from './Wrapper';
 import Img from './Img';
 import servicesheader from './img/servicesheader.png';
 
-const key = 'servicesPage';
-
 export function ServicesPage({ loading, error, services }) {
-  useInjectReducer({ key, reducer });
-  useInjectSaga({ key, saga });
-
   const allServices = services.filter(obj => obj.id.startsWith('S'));
 
   const servicesProps = {
@@ -63,14 +53,12 @@ export function ServicesPage({ loading, error, services }) {
 }
 
 ServicesPage.propTypes = {
-  servicesPage: PropTypes.string,
   loading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   services: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
 };
 
 const mapStateToProps = createStructuredSelector({
-  servicesPage: makeSelectServicesPage(),
   services: makeSelectServices(),
   loading: makeSelectLoading(),
   error: makeSelectError(),
