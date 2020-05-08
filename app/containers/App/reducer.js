@@ -178,6 +178,21 @@ export const initialState = {
         appsite: 'https://www.uber.com/us/en/ride/',
         pay:
           'Uber Drivers make between $12 and $22 an hour on average, depending on the city',
+        services: [
+          'S0001',
+          'S0002',
+          'S0003',
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0033',
+          'S0037',
+        ],
         subtypes: ['driving'],
       },
       {
@@ -202,6 +217,7 @@ export const initialState = {
         gigsite: 'https://www.lyft.com/drive-with-lyft',
         appsite: 'https://www.lyft.com/rider/signup',
         pay: 'On average Lyft drivers make about $17.50 an hour',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -223,6 +239,7 @@ export const initialState = {
         gigsite: 'https://www.hopskipdrive.com/driver-sign-up',
         appsite: 'https://www.hopskipdrive.com/hopskipdrive-app-download',
         pay: 'CareDrivers earn an average of $32 an hour',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -243,6 +260,7 @@ export const initialState = {
         gigsite: 'https://www.ridezum.com/drive.html',
         appsite: 'https://www.ridezum.com/',
         pay: 'Zumers make anywhere between $16 and $35 an hour, on average',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -263,6 +281,7 @@ export const initialState = {
         gigsite: 'https://www.wingz.me/drivers-2/',
         appsite: 'https://www.wingz.me/',
         pay: 'You can expect to make $25+ per ride with Wingz',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -283,6 +302,7 @@ export const initialState = {
         gigsite: 'https://my.drivewithvia.com/',
         appsite: 'https://ridewithvia.com/',
         pay: 'Expect to earn between $15 and $20 an hour',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -307,6 +327,7 @@ export const initialState = {
         ],
         gigsite: 'https://driver.groundlink.com/',
         appsite: 'https://www.groundlink.com/app',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -327,6 +348,7 @@ export const initialState = {
         gigsite: 'https://gocurb.com/',
         appsite: 'https://mobileapp.gocurb.com/',
         pay: 'Average Curb Driver Pay is around $17/hr',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -348,6 +370,7 @@ export const initialState = {
         appsite: 'https://www.roadie.com/',
         pay:
           'Most local gigs pay between $8 and $50, with long distance trips paying up to $650',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -370,6 +393,7 @@ export const initialState = {
         appsite:
           'https://grabr.io/invitation/mark-foster?utm_campaign=web&utm_source=referral_program&utm_medium=copy_link',
         pay: 'Earn $200+ Every Time You Travel Abroad',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -393,6 +417,7 @@ export const initialState = {
         gigsite: 'https://flex.amazon.com/',
         appsite: 'https://flex.amazon.com/',
         pay: 'Amazon Flex Drivers can make between $18 and $25 an hour',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -411,6 +436,7 @@ export const initialState = {
         gigsite: 'https://skipcart.com/drivers/',
         appsite: 'https://skipcart.com/',
         pay: 'Skipcart Drivers Can Earn Up to $22/hr',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -430,6 +456,7 @@ export const initialState = {
         gigsite: 'https://pickupnow.com/requirements/',
         appsite: 'https://pickupnow.com/',
         pay: 'Make a minimum of $25 per run and up to $50/hr',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -451,6 +478,7 @@ export const initialState = {
         gigsite: 'https://bungii.com/',
         appsite: 'https://bungii.com/',
         pay: 'Bungii Workers Earn Up to $40/hr',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -471,6 +499,7 @@ export const initialState = {
         gigsite: 'https://tommyrun.app.link/vanKPpCzN5',
         appsite: 'https://tommyrun.app.link/vanKPpCzN5',
         pay: 'Average between $12 and $20/hr',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -488,6 +517,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.uship.com/register/',
 
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -505,6 +535,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.dispatchit.com/drivers/',
 
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -522,6 +553,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.ideliverthat.com/driver',
 
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -548,6 +580,7 @@ export const initialState = {
         appsite: 'https://postmates.com/',
         pay:
           'Postmates pay ranges from around $12/hr for Drivers to around $25/hr for Truck Drivers',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -572,6 +605,7 @@ export const initialState = {
         gigsite: 'https://www.doordash.com/dasher/signup/',
         appsite: 'https://www.doordash.com/en-US',
         pay: 'Doordash pays Dashers between $2 and $10 per delivery',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -596,6 +630,7 @@ export const initialState = {
         appsite: 'https://www.ubereats.com/',
         pay:
           'Uber Eats drivers can expect to make around $8 – $12 per hour after factoring in vehicle expenses',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -620,6 +655,7 @@ export const initialState = {
         gigsite: 'https://driver.grubhub.com/',
         appsite: 'https://www.grubhub.com/mobile_home',
         pay: 'Grubhub Drivers typically make around $12 an hour',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -641,6 +677,7 @@ export const initialState = {
         appsite: 'https://www.trycaviar.com/',
         pay:
           'Daily pay ranges from around $200 a day for Drivers and $400 a day for Couriers',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -665,6 +702,7 @@ export const initialState = {
         gigsite: 'https://apply.favordelivery.com/',
         appsite: 'https://favordelivery.com/download',
         pay: 'Favor provides a $9 per hour base pay.',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -682,6 +720,7 @@ export const initialState = {
         ],
         gigsite: 'http://jobs.zifty.com/',
 
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -701,6 +740,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.peachd.com/jobs/',
         appsite: 'https://www.peachd.com/',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -722,6 +762,7 @@ export const initialState = {
         ],
         gigsite: 'https://deliveroo.co.uk/apply',
         appsite: 'https://deliveroo.co.uk/app?manual=1',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -747,6 +788,7 @@ export const initialState = {
           'https://www.fountain.com/gopuff/apply/godrive-delivery-partner',
         appsite: 'https://gopuff.com/home',
         pay: 'Gopuff Drivers Average Approximately $17/hr',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -765,6 +807,7 @@ export const initialState = {
         ],
         gigsite: 'https://drizly.com/liquor-stores-near-me',
 
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -782,6 +825,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.saucey.com/apply',
 
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -804,6 +848,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.drive.eaze.com/',
 
+        services: [],
         subtypes: ['delivery'],
       },
       {
@@ -822,6 +867,7 @@ export const initialState = {
         ],
         gigsite: 'https://minibardelivery.com/',
 
+        services: [],
         subtypes: ['delivery'],
       },
       {
@@ -847,6 +893,7 @@ export const initialState = {
         appsite: 'https://www.instacart.com/',
         pay:
           'During busy shifts, shoppers can earn $20 or more an hour. Several say the minimum base pay is $10 an hour',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -871,6 +918,7 @@ export const initialState = {
         gigsite: 'https://www.shipt.com/be-a-shopper/',
         appsite: 'https://app.shipt.com/shopperappdownload',
         pay: 'The Average Shipt Shopper Makes Around $15 an hour',
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -888,6 +936,7 @@ export const initialState = {
         ],
         gigsite: 'https://shoppers.burpy.com/join-as-shopper',
 
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -905,6 +954,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.deliv.co/drivers/',
 
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -922,6 +972,7 @@ export const initialState = {
         ],
         gigsite: 'https://getburro.com/drivers.html',
 
+        services: [],
         subtypes: ['driving'],
       },
       //
@@ -942,6 +993,7 @@ export const initialState = {
         ],
         gigsite: 'https://rentlikeachampion.com/',
 
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -962,6 +1014,7 @@ export const initialState = {
         gigsite: 'https://www.neighbor.com/invited/nextwrk-39640',
         pay:
           'Rent out a closet for ~$400 a year, a garage for ~$1,800 a year, or a basement for ~$2,100 a year',
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -986,6 +1039,7 @@ export const initialState = {
         gigsite: 'https://www.airbnb.com/host/homes',
         appsite: 'https://www.airbnb.com/mobile',
         pay: 'AirBnB Hosts make, on average, about $920 a month',
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -1003,6 +1057,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.homeaway.com/lyp',
 
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -1020,6 +1075,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.onefinestay.com/list-your-home/',
 
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -1037,6 +1093,7 @@ export const initialState = {
         ],
         gigsite: 'https://help.vrbo.com/category/List_Your_Property',
 
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -1054,6 +1111,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.lovehomeswap.com/',
 
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -1078,6 +1136,7 @@ export const initialState = {
         gigsite: 'https://turo.com/us/en/list-your-car',
         appsite: 'https://turo.com/',
         pay: 'Renters earn between 65% and 90% of the price they set.',
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -1103,6 +1162,7 @@ export const initialState = {
           'https://www.getaround.com/invite/2c776f91-e44f-5695-bae1-784dd3b6ae18',
         pay:
           'According to Getaround, the average car owner makes about $6,000 a year',
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -1120,6 +1180,7 @@ export const initialState = {
         ],
         gigsite: 'https://app.hyrecar.com/login?type=owner&form=signup',
 
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -1137,6 +1198,7 @@ export const initialState = {
         ],
         gigsite: 'https://spothero.com/sell-parking/rent-my-parking-space/',
 
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -1154,6 +1216,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.parkingpanda.com/',
 
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -1171,6 +1234,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.boatsetter.com/referral/o/sqxkrtk',
 
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -1188,6 +1252,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.sailo.com/',
 
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -1205,6 +1270,7 @@ export const initialState = {
         ],
         gigsite: 'https://rvshare.com/list-your-rv',
 
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -1226,6 +1292,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.outdoorsy.com/invite/g6o1lb',
 
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -1243,6 +1310,7 @@ export const initialState = {
         ],
         gigsite: 'www.riders-share.com/welcome/markf+QdETy',
 
+        services: [],
         subtypes: ['rental'],
       },
       //
@@ -1263,6 +1331,7 @@ export const initialState = {
         ],
         gigsite: 'https://flyers.bird.co/',
 
+        services: ['S0036'],
         subtypes: ['other', 'scooter'],
       },
       {
@@ -1285,6 +1354,7 @@ export const initialState = {
         ],
         gigsite: 'https://lime.bike/juicer',
 
+        services: ['S0036'],
         subtypes: ['other', 'scooter'],
       },
       {
@@ -1307,6 +1377,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.spin.app/charger',
 
+        services: ['S0036'],
         subtypes: ['other', 'scooter'],
       },
       {
@@ -1330,6 +1401,7 @@ export const initialState = {
         gigsite:
           'https://www.fountain.com/skip-scooters/apply/general-location-ranger',
 
+        services: ['S0036'],
         subtypes: ['other', 'scooter'],
       },
       //
@@ -1355,6 +1427,7 @@ export const initialState = {
         ],
         gigsite: 'http://share.rover.com/SWhzJ',
 
+        services: [],
         subtypes: ['labor', 'dog'],
       },
       {
@@ -1376,6 +1449,7 @@ export const initialState = {
         ],
         gigsite: 'https://wagwalking.com/dog-walker',
 
+        services: [],
         subtypes: ['labor', 'dog'],
       },
       //
@@ -1401,6 +1475,7 @@ export const initialState = {
         gigsite:
           'https://support.taskrabbit.com/hc/en-us/articles/360031918292-How-Do-I-Become-a-Tasker-',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1418,6 +1493,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.handy.com/apply',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1435,6 +1511,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.wonolo.com/find-work',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1452,6 +1529,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.getbellhops.com/being-a-bellhop/',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1469,6 +1547,7 @@ export const initialState = {
         ],
         gigsite: 'https://dolly.com/helpers/',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1486,6 +1565,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.schlep.it/#/',
 
+        services: [],
         subtypes: ['rental', 'labor'],
       },
       {
@@ -1503,6 +1583,7 @@ export const initialState = {
         ],
         gigsite: 'https://geteasymove.com/',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1520,6 +1601,7 @@ export const initialState = {
         ],
         gigsite: 'https://lugg.com/become-a-lugger',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1538,6 +1620,7 @@ export const initialState = {
         ],
         gigsite: 'https://goshare.app.link/Mark_Foster_MF6447',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1555,6 +1638,7 @@ export const initialState = {
         ],
         gigsite: 'https://app.takl.com/providers/register',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1573,6 +1657,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.networx.com/signup',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1591,6 +1676,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.taskeasy.com/contractors',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1609,6 +1695,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.lawnstarter.com/lawn-care-businesses',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1626,6 +1713,7 @@ export const initialState = {
         ],
         gigsite: 'https://order.plowzandmowz.com/provider-onboard',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1643,6 +1731,7 @@ export const initialState = {
         ],
         gigsite: 'https://lawnlove.com/apply',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1661,6 +1750,7 @@ export const initialState = {
         ],
         gigsite: 'https://veryable.app.link/pqxf1qmEN5',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1678,6 +1768,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.homeaglow.com/apply',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1695,6 +1786,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.care.com/',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1713,6 +1805,7 @@ export const initialState = {
         ],
         gigsite: 'https://uzurv.com/drivers/',
 
+        services: [],
         subtypes: ['driving'],
       },
       {
@@ -1730,6 +1823,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.sittercity.com/sitter/account',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1747,6 +1841,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.carelinx.com/p/nextwrs',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1765,6 +1860,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.helpr-app.com/become-a-helpr-now',
 
+        services: [],
         subtypes: ['labor'],
       },
       {
@@ -1782,6 +1878,7 @@ export const initialState = {
         ],
         gigsite: 'https://link.urbansitter.com/P2JqXJSHN5',
 
+        services: [],
         subtypes: ['labor'],
       },
       //
@@ -1803,6 +1900,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.figure-eight.com/contributor/',
 
+        services: [],
         subtypes: ['other'],
       },
       {
@@ -1824,6 +1922,7 @@ export const initialState = {
         ],
         gigsite: 'http://fbuy.me/v/markfoster314',
 
+        services: [],
         subtypes: ['other'],
       },
       //
@@ -1848,6 +1947,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.etsy.com/join',
 
+        services: [],
         subtypes: ['other'],
       },
       //
@@ -1868,6 +1968,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.fancyhands.com/jobs',
 
+        services: [],
         subtypes: ['other'],
       },
       //
@@ -1891,6 +1992,7 @@ export const initialState = {
         ],
         gigsite: 'http://www.gigwalk.com/gigwalkers/',
 
+        services: [],
         subtypes: ['other'],
       },
       {
@@ -1908,6 +2010,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.marketforce.com/become-a-mystery-shopper',
 
+        services: [],
         subtypes: ['other'],
       },
       {
@@ -1925,6 +2028,7 @@ export const initialState = {
         ],
         gigsite: 'https://gbw.solutions/becomeanevaluator',
 
+        services: [],
         subtypes: ['other'],
       },
       // Bullshit work
@@ -1943,6 +2047,7 @@ export const initialState = {
         ],
         gigsite: 'https://app.spare5.com/fives/sign_in',
 
+        services: [],
         subtypes: ['other'],
       },
       {
@@ -1961,6 +2066,7 @@ export const initialState = {
         ],
         gigsite: 'https://2020census.gov/en/jobs.html',
 
+        services: [],
         subtypes: ['other'],
       },
       // Mechanics
@@ -1979,6 +2085,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.yourmechanic.com/rl/IyhJRw1860682',
 
+        services: [],
         subtypes: ['labor'],
       },
       // Massages
@@ -2002,6 +2109,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.zeel.com/apply',
 
+        services: [],
         subtypes: ['other'],
       },
       {
@@ -2024,6 +2132,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.soothe.com/apply',
 
+        services: [],
         subtypes: ['other'],
       },
       // Beauty
@@ -2042,6 +2151,7 @@ export const initialState = {
         ],
         gigsite: 'https://gopriv.com/pro',
 
+        services: [],
         subtypes: ['other'],
       },
       // Nurses
@@ -2060,6 +2170,7 @@ export const initialState = {
         ],
         gigsite: 'https://heal.com/medical-team/',
 
+        services: [],
         subtypes: ['other'],
       },
       {
@@ -2078,6 +2189,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.slingshothealth.com/providers/',
 
+        services: [],
         subtypes: ['other'],
       },
       {
@@ -2096,6 +2208,7 @@ export const initialState = {
         ],
         gigsite: 'https://wearwardrobe.co/',
 
+        services: [],
         subtypes: ['rental'],
       },
       {
@@ -2113,6 +2226,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.eatwith.com/landings/become-a-host',
 
+        services: [],
         subtypes: ['rental', 'labor'],
       },
       {
@@ -2130,6 +2244,7 @@ export const initialState = {
         ],
         gigsite: 'https://experiences.chefsfeed.com/browse/',
 
+        services: [],
         subtypes: ['rental', 'labor'],
       },
       {
@@ -2147,6 +2262,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.fiverr.com/start_selling',
 
+        services: [],
         subtypes: [''],
       },
       {
@@ -2160,6 +2276,7 @@ export const initialState = {
         resources: [],
         gigsite: 'https://www.linkedin.com/profinder/pros',
 
+        services: [],
         subtypes: [''],
       },
       {
@@ -2173,6 +2290,7 @@ export const initialState = {
         resources: [],
         gigsite: 'https://www.freelancer.com/jobs/',
 
+        services: [],
         subtypes: [''],
       },
       // Unfinished

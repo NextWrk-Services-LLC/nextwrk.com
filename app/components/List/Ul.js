@@ -13,7 +13,7 @@ const Ul = styled.ul`
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
 `;
 
 export default Ul;

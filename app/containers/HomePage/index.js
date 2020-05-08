@@ -13,6 +13,7 @@ import { compose } from 'redux';
 import BodySpacing from 'components/BodySpacing';
 import H1 from 'components/H1';
 import Header from 'components/Header';
+import CenterText from 'components/CenterText';
 
 import A from './A';
 import MobileBody from './MobileBody';
@@ -32,9 +33,17 @@ export function HomePage() {
       </Helmet>
       <Header />
       <BodySpacing>
-        <H1>
-          Start Working How, When and Where <u>YOU</u> Want! <br /> Discover...
-        </H1>
+        <CenterText>
+          <H1>
+            Start Working How, When and Where{' '}
+            <b>
+              {' '}
+              <u>YOU</u>
+            </b>{' '}
+            Want!
+          </H1>
+        </CenterText>
+        <H1>Discover...</H1>
         {isMobile ? <MobileBody /> : <Body />}
         <div style={{ textAlign: 'center', margin: '50px' }}>
           <A href="/gigs">

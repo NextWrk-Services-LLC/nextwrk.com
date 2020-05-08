@@ -111,7 +111,7 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
   }
 
   let featuredServices = allServices.filter(obj =>
-    getServices(obj.subtypes[0], info.subtypes),
+    getServices(obj.id, info.services.slice(0, 3)),
   );
 
   if (featuredServices.length > 3) {

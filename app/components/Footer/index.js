@@ -37,9 +37,6 @@ function Footer() {
               <A href="/services">Services</A>
             </Li>
             <Li>
-              <A href="/freelance">Freelance Networks</A>
-            </Li>
-            <Li>
               <A href="/deals">Deals</A>
             </Li>
             <Li />

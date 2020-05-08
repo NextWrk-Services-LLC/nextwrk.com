@@ -64,7 +64,9 @@ export function ServicesPage({ loading, error, services, gigs }) {
   const textChange = () => {
     const srch = document.getElementById('srchfld').value;
     for (let i = 0; i < searchGigs.length; i += 1) {
-      searchGigs[i].show = searchGigs[i].name.includes(srch);
+      searchGigs[i].show = searchGigs[i].name
+        .toLowerCase()
+        .includes(srch.toLowerCase());
     }
     setState({
       ...state,
@@ -97,7 +99,7 @@ export function ServicesPage({ loading, error, services, gigs }) {
         <LinkDropdown id="myDropdown">
           {state.searchList.map(item =>
             item.show ? (
-              <DropA key={item.id} href={`/gigs/${item.id}`}>
+              <DropA key={item.id} href={`/services?fltr=${item.id}`}>
                 {item.name}
               </DropA>
             ) : null,

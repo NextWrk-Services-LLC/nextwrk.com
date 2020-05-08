@@ -109,7 +109,9 @@ export function GigsPage({ loading, error, gigs }) {
   const textChange = () => {
     const srch = document.getElementById('srchfld').value;
     for (let i = 0; i < searchGigs.length; i += 1) {
-      searchGigs[i].show = searchGigs[i].name.includes(srch);
+      searchGigs[i].show = searchGigs[i].name
+        .toLowerCase()
+        .includes(srch.toLowerCase());
     }
     setState({
       ...state,
