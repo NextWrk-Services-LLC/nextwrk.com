@@ -23,8 +23,10 @@ function MobileBody() {
           <td>
             <H1>Gig Work</H1>
             <H3>
-              From charging scooters to professional freelancing - Gig jobs let
-              you work where you want, when you want.
+              From charging scooters to professional remote freelancing - Gig
+              jobs let you work where you want, when you want. <br /> <br />
+              We connect you with all these opportunities so you can start
+              working on your own terms.
             </H3>
           </td>
         </tr>
@@ -32,8 +34,9 @@ function MobileBody() {
           <td>
             <H1>New Services</H1>
             <H3>
-              A multitude of apps and services created specifically for gig
-              workers - Make your jobs easier and more lucrative
+              Companies are constantly developing new apps and services to make
+              gig jobs easier and more lucrative. <br /> <br /> We connect you
+              with all these services so you can make faster, easier money.
             </H3>
           </td>
           <TdImg>
@@ -51,8 +54,9 @@ function MobileBody() {
           <td>
             <H1>Deals</H1>
             <H3>
-              Exclusive deals for trying out new jobs and services - Ensure you
-              are never leaving any money on the table.
+              We have compiled and created exclusive deals for trying out new
+              jobs and services. <br /> <br /> Sign up through NextWrk and
+              ensure you are never leaving any money on the table.
             </H3>
           </td>
         </tr>

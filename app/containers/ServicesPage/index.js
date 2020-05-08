@@ -6,6 +6,7 @@
  */
 
 import React, { memo } from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
@@ -16,21 +17,60 @@ import {
   makeSelectServices,
   makeSelectLoading,
   makeSelectError,
+  makeSelectGigs,
 } from 'containers/App/selectors';
 import BodySpacing from 'components/BodySpacing';
 import ServicesList from 'components/ServicesList';
+import SearchImg from 'containers/GigsPage/SearchImg';
+import InputTop from 'containers/GigsPage/InputTop';
+import DropA from 'containers/GigsPage/DropA';
+import search from 'containers/GigsPage/img/search.png';
 
 import Wrapper from './Wrapper';
 import Img from './Img';
 import servicesheader from './img/servicesheader.png';
 
-export function ServicesPage({ loading, error, services }) {
+export function ServicesPage({ loading, error, services, gigs }) {
   const allServices = services.filter(obj => obj.id.startsWith('S'));
+  const searchGigs = [];
+  gigs.forEach(item =>
+    searchGigs.push({ name: item.gig, id: item.id, show: true }),
+  );
 
   const servicesProps = {
     loading,
     error,
     gigs: allServices,
+  };
+
+  const [state, setState] = React.useState({
+    searchList: searchGigs,
+    showSearchList: false,
+    numCards: 20,
+    loadMore: true,
+  });
+
+  const LinkDropdown = styled.div`
+    display: ${state.showSearchList ? '' : 'none'};
+    margin-left: 50px;
+    margin-top: -15px;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 230px;
+    border: 1px solid #808080;
+    z-index: 1;
+  `;
+
+  const textChange = () => {
+    const srch = document.getElementById('srchfld').value;
+    for (let i = 0; i < searchGigs.length; i += 1) {
+      searchGigs[i].show = searchGigs[i].name.includes(srch);
+    }
+    setState({
+      ...state,
+      searchList: searchGigs,
+      showSearchList: srch.length > 0,
+    });
   };
 
   return (
@@ -44,8 +84,25 @@ export function ServicesPage({ loading, error, services }) {
       </Helmet>
       <Img src={servicesheader} alt="Services Page Header" />
       <BodySpacing>
-        <Wrapper>Search</Wrapper>
-        <hr />
+        <Wrapper>
+          <SearchImg src={search} alt="Search" />
+          <InputTop
+            type="text"
+            onChange={textChange}
+            placeholder="Find Services For Which Gig?"
+            id="srchfld"
+            autocomplete="off"
+          />
+        </Wrapper>
+        <LinkDropdown id="myDropdown">
+          {state.searchList.map(item =>
+            item.show ? (
+              <DropA key={item.id} href={`/gigs/${item.id}`}>
+                {item.name}
+              </DropA>
+            ) : null,
+          )}
+        </LinkDropdown>
         <ServicesList {...servicesProps} />
       </BodySpacing>
     </div>
@@ -56,10 +113,12 @@ ServicesPage.propTypes = {
   loading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   services: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
+  gigs: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
 };
 
 const mapStateToProps = createStructuredSelector({
   services: makeSelectServices(),
+  gigs: makeSelectGigs(),
   loading: makeSelectLoading(),
   error: makeSelectError(),
 });
