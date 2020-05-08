@@ -155,15 +155,21 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
         <Table>
           <tbody>
             <tr>
-              <td>
+              <td style={{ width: '50%', verticalAlign: 'top' }}>
                 <a href={info.appsite ? info.appsite : info.gigsite}>
-                  <Button>View The App</Button>
+                  <Button>Get The App</Button>
                 </a>
+                <div style={{ textAlign: 'center' }}>
+                  <H1>{info.apppromo}</H1>
+                </div>
               </td>
-              <td>
+              <td style={{ width: '50%', verticalAlign: 'top' }}>
                 <a href={info.gigsite}>
                   <Button>View The Job</Button>
                 </a>
+                <div style={{ textAlign: 'center' }}>
+                  <H1>{info.jobpromo}</H1>
+                </div>
               </td>
             </tr>
           </tbody>
@@ -220,10 +226,6 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
               </div>
             </React.Fragment>
           ) : null}
-          <div style={{ textAlign: 'center' }}>
-            <hr />
-            <H1>{info.promo}</H1>
-          </div>
         </div>
       </Inner>
     </div>

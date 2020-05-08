@@ -52,9 +52,10 @@ export function GigsListItem(props) {
                 <P>{item.description}</P>
               </Li>
             </Ul>
-            {item.promo ? (
+            {item.apppromo || item.jobpromo ? (
               <div style={{ textAlign: 'center' }}>
-                <hr /> <Deal>{item.promo}</Deal>
+                <hr /> <Deal>{item.apppromo}</Deal>
+                <Deal>{item.jobpromo}</Deal>
               </div>
             ) : null}
           </Wrapper>

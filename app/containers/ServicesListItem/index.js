@@ -18,6 +18,7 @@ import ListItem from 'components/ListItem';
 import H2 from 'components/H2';
 import Popup from 'components/Popup';
 
+import Deal from 'containers/GigListItem/Deal';
 import P from './P';
 import Img from './Img';
 import Wrapper from './Wrapper';
@@ -59,7 +60,7 @@ export function ServicesListItem(props) {
           </Table>
           {item.promo ? (
             <div style={{ textAlign: 'center' }}>
-              <hr /> <P>{item.promo}</P>
+              <hr /> <Deal>{item.promo}</Deal>
             </div>
           ) : null}
         </Wrapper>

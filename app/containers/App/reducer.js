@@ -160,14 +160,18 @@ export const initialState = {
         logo: neighbor,
         gig: 'Neighbor',
         app:
-          'Neighbor connects people who have unused spaces with people in the area looking for a place to keep their things.',
+          'Storage units and parking at half the cost of traditional storage providers. A bold, new take on storage, Neighbor connects people who have unused storage spaces with people in the area looking for a place to keep their things.',
         description:
-          'Neighbor lets you earn money renting out your basement, garage and even closets to neighbors. Clean out your garage and you can start earning over $2,000 extra a year.',
-        promo: 'Sign Up and Get $50!',
+          'Neighbor renters earn money renting out their basements, garages and even closets to neighbors. Clean out your garage and you can start earning over $2,000 extra a year!',
+        apppromo: 'Sign Up for Neighbor and Get $50!',
         resources: [
           {
             title: 'TrustPilot, Neighbor Review',
             link: 'https://www.trustpilot.com/review/neighbor.com',
+          },
+          {
+            title: 'Neighbor Storage FAQs',
+            link: 'https://www.neighbor.com/faqs',
           },
         ],
         gigsite: 'https://www.neighbor.com/invited/nextwrk-39640',
@@ -183,8 +187,8 @@ export const initialState = {
         app:
           'Lyft matches you with a nearby driver who will pick you up and take you where you want to go. Use the Lyft app to get a ride in minutes. Just tap request and a driver’s there. By taking Lyft, you can help your community reduce traffic and take cars off the road.',
         description:
-          'Lyft is another gigantic ride sharing app. Similar to Uber, Lyft drivers offer passengers a safe ride to their destination. Lyft boasts a lower barrier of entry and higher tips on average than Uber.',
-        promo: '',
+          'Lyft drivers offer passengers a safe ride to their destination. Lyft is one of the largest rideshare apps and boasts a lower barrier of entry and higher tips on average than Uber.',
+        apppromo: 'Sign Up for Lyft and Get $5!',
         resources: [
           {
             title: 'Indeed: Job Reviews from Lyft Drivers',
@@ -196,7 +200,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.lyft.com/drive-with-lyft',
-        appsite: 'https://www.lyft.com/rider/signup',
+        appsite: 'https://www.lyft.com/i/FOSTER52621?utm_medium=p2pi_iacc',
         pay: 'On average Lyft drivers make about $17.50 an hour',
         services: [
           'S0001',
@@ -221,7 +225,7 @@ export const initialState = {
         app:
           'Roadie was the first “on-the-way” delivery service. They put extra space in passenger vehicles to work by connecting people with items to send with drivers heading.',
         description:
-          'Going on a roadtrip soon? Roadie will pay you to fill your empty space and complete deliveries on the way. Roadie is a same day delivery service that connects drivers already headed in the right direction with shipments',
+          'Roadie drivers get paid to fill up their empty car space and complete deliveries while they roadtrip. Going on a roadtrip soon? Sign up for Roadie and make some extra money on the way.',
         promo: '',
         resources: [
           {
@@ -243,8 +247,8 @@ export const initialState = {
         app:
           'Delivery & takeout from the best local restaurants. Breakfast, lunch, dinner and more, delivered safely to your door. Now offering pickup & no-contact delivery.',
         description:
-          'Doordash is another gigantic food-delivery app hiring delivery drivers. Doordash Dashers schedule shifts and fulfill delivery requests from the DoorDash app',
-        promo: '',
+          'Doordash Dashers deliver food from restaraunts to customers. They schedule shifts and fulfill delivery requests from the DoorDash app.',
+        apppromo: 'Download Doordash and Get $15!',
         resources: [
           {
             title: 'Indeed: Job Reviews for DoorDash Dashers',
@@ -256,7 +260,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.doordash.com/dasher/signup/',
-        appsite: 'https://www.doordash.com/en-US',
+        appsite: 'https://drd.sh/H12UIB',
         pay: 'Doordash pays Dashers between $2 and $10 per delivery',
         services: [
           'S0001',
@@ -277,10 +281,10 @@ export const initialState = {
         logo: shipt,
         gig: 'Shipt',
         app:
-          'Founded in 2014, Shipt is a grocery delivery service that was purchased by Target in 2017.',
+          'Simplify your life with fast, simple delivery from your local stores! Shipt brings your groceries and household essentials right to your door.',
         description:
-          'Shipt is another key player in the grocery delivery game hiring Shoppers. Unlike Instacart, Shipt is owned solely by Target, which is where you will be doing most of your shopping.',
-        promo: '',
+          'Shipt Shoppers get paid to buy groceries and deliver them to customers. Shipt is owned solely by Target, which is where you will be doing most of your shopping.',
+        apppromo: 'Get $10 Off a Shipt Membership!',
         resources: [
           {
             title: 'Indeed: Job Reviews for Shipt Shoppers',
@@ -292,7 +296,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.shipt.com/be-a-shopper/',
-        appsite: 'https://app.shipt.com/shopperappdownload',
+        appsite: 'https://share.shipt.com/DQgBd',
         pay: 'The Average Shipt Shopper Makes Around $15 an hour',
         services: [
           'S004',
@@ -311,9 +315,11 @@ export const initialState = {
         id: 'G0067',
         logo: boatsetter,
         gig: 'Boatsetter',
+        app:
+          'Boatsetter, the nation’s fastest-growing boat rental marketplace, gives the over 13 million registered boat owners a way to offset their ownership costs by renting their boat to pre-screened, qualified renters.',
         description:
-          'If you own a boat, then Boatsetter lets you rent it out — either with or without a captain. Peace of mind and insurance is included in every rental, and you choose who rents your boat!',
-        promo: 'Rent Out Your Boat and Get an Extra $100!',
+          'Boatsetter renters rent out their boats — either with or without a captain. Peace of mind and insurance is included in every rental, and you choose who rents your boat!',
+        jobpromo: 'Rent Out Your Boat and Get an Extra $100!',
         resources: [
           {
             title: 'Facebook: Boatsetter Reviews',
@@ -332,8 +338,8 @@ export const initialState = {
         app:
           'Rent nearby cars, trucks, and vans, by the hour or day, on Getaround. No lines or key exchanges. Simply rent, unlock, and go in an instant with the Getaround',
         description:
-          'Getaround is a car rental service that connects renters with car owners. It is available in most major cities, and is a great way to make money with little effort.',
-        promo: 'Sign Up and Get $20!',
+          'Getaround renters rent out their cars when not in use. It is available in most major cities, and is a great way to make money with little effort.',
+        apppromo: 'Sign Up and Get $20!',
         resources: [
           {
             title: 'Yelp: Reviews for Getaround',
@@ -357,7 +363,7 @@ export const initialState = {
         gig: 'Rover',
         description:
           'Love animals? Wanna earn some extra money? Rover will pay you to watch dogs as a Sitter or walk dogs as a Walker. They offer flexibility and can help you earn up to $1,000 a month working with animals!',
-        promo: 'Sign Up and Get $20!',
+        apppromo: 'Sign Up and Get $20!',
         resources: [
           {
             title: 'Indeed: Reviews for Rover Workers',
@@ -380,7 +386,7 @@ export const initialState = {
         gig: 'UrbanSitter',
         description:
           'UrbanSitter lets users find and book babysitters and nannies in their communities. If you are a nanny or babysitter, it is a great way to pick up new clients!',
-        promo: 'Sign Up and Get $25!',
+        apppromo: 'Sign Up and Get $25!',
         resources: [
           {
             title: 'Indeed: Job Reviews for UrbanSitter Workers',
