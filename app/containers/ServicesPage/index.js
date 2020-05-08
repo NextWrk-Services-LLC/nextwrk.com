@@ -18,6 +18,7 @@ import {
   makeSelectLoading,
   makeSelectError,
   makeSelectGigs,
+  makeSelectLocation,
 } from 'containers/App/selectors';
 import BodySpacing from 'components/BodySpacing';
 import ServicesList from 'components/ServicesList';
@@ -30,17 +31,22 @@ import Wrapper from './Wrapper';
 import Img from './Img';
 import servicesheader from './img/servicesheader.png';
 
-export function ServicesPage({ loading, error, services, gigs }) {
+export function ServicesPage({ location, loading, error, services, gigs }) {
   const allServices = services.filter(obj => obj.id.startsWith('S'));
   const searchGigs = [];
   gigs.forEach(item =>
     searchGigs.push({ name: item.gig, id: item.id, show: true }),
   );
+  const gigId = location.search.slice(6, 11);
+  const serviceIds = gigs.filter(obj => obj.id.includes(gigId))[0].services;
 
   const servicesProps = {
     loading,
     error,
-    gigs: allServices,
+    gigs:
+      gigId.length === 5
+        ? allServices.filter(obj => serviceIds.includes(obj.id))
+        : allServices,
   };
 
   const [state, setState] = React.useState({
@@ -112,6 +118,7 @@ export function ServicesPage({ loading, error, services, gigs }) {
 }
 
 ServicesPage.propTypes = {
+  location: PropTypes.any,
   loading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   services: PropTypes.oneOfType([PropTypes.array, PropTypes.bool]),
@@ -119,6 +126,7 @@ ServicesPage.propTypes = {
 };
 
 const mapStateToProps = createStructuredSelector({
+  location: makeSelectLocation(),
   services: makeSelectServices(),
   gigs: makeSelectGigs(),
   loading: makeSelectLoading(),
