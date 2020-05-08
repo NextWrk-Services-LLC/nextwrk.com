@@ -8,6 +8,8 @@
 
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { useMediaQuery } from 'react-responsive';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { createStructuredSelector } from 'reselect';
@@ -27,6 +29,7 @@ import GigsList from 'components/GigsList';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 
+import DropA from './DropA';
 import TdLeft from './TdLeft';
 import Wrapper from './Wrapper';
 import InputTop from './InputTop';
@@ -35,21 +38,36 @@ import SearchImg from './SearchImg';
 import search from './img/search.png';
 
 export function GigsPage({ loading, error, gigs }) {
-  const allGigs = gigs.filter(obj => obj.id.startsWith('G'));
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+
+  const allGigs = gigs;
+  const searchGigs = [];
+  gigs.forEach(item =>
+    searchGigs.push({ name: item.gig, id: item.id, show: true }),
+  );
 
   const [state, setState] = React.useState({
-    srchfld: '',
-    featured: true,
     drive: false,
     labor: false,
     rent: false,
     other: false,
-    gigsProps: {
-      loading,
-      error,
-      gigs: allGigs,
-    },
+    gigs: allGigs,
+    searchList: searchGigs,
+    showSearchList: false,
+    numCards: 20,
+    loadMore: true,
   });
+
+  const LinkDropdown = styled.div`
+    display: ${state.showSearchList ? '' : 'none'};
+    margin-left: 50px;
+    margin-top: -15px;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 230px;
+    border: 1px solid #808080;
+    z-index: 1;
+  `;
 
   const handleChange = event => {
     setState({ ...state, [event.target.name]: event.target.checked });
@@ -65,52 +83,148 @@ export function GigsPage({ loading, error, gigs }) {
 
   const filterGigs = () => {
     const showGigs = [];
-    if (drive) {
+    if (state.drive) {
       showGigs.push('driving');
     }
-    if (labor) {
+    if (state.labor) {
       showGigs.push('labor');
     }
-    if (rent) {
+    if (state.rent) {
       showGigs.push('rental');
     }
-    if (other) {
+    if (state.other) {
       showGigs.push('other');
     }
-    if (showGigs.length === 0) {
-      setState({
-        ...state,
-        gigsProps: {
-          loading,
-          error,
-          gigs: allGigs.filter(obj => obj.featured),
-        },
-      });
-    } else {
-      setState({
-        ...state,
-        gigsProps: {
-          loading,
-          error,
-          gigs: allGigs.filter(obj => contains(obj.subtypes, showGigs)),
-        },
-      });
-    }
+    setState({
+      ...state,
+      gigs:
+        showGigs.length === 0
+          ? allGigs
+          : allGigs.filter(obj => contains(obj.subtypes, showGigs)),
+      numCards: 20,
+      loadMore: true,
+    });
   };
 
   const textChange = () => {
     const srch = document.getElementById('srchfld').value;
+    for (let i = 0; i < searchGigs.length; i += 1) {
+      searchGigs[i].show = searchGigs[i].name.includes(srch);
+    }
     setState({
       ...state,
-      gigsProps: {
-        loading,
-        error,
-        gigs: gigs.filter(obj => obj.gig.includes(srch)),
-      },
+      searchList: searchGigs,
+      showSearchList: srch.length > 0,
     });
   };
 
-  const { drive, labor, rent, other, gigsProps } = state;
+  const loadMore = () => {
+    const newNum = state.numCards + 20;
+    setState({
+      ...state,
+      numCards: newNum,
+      loadMore: newNum < state.gigs.length,
+    });
+  };
+
+  const main = (
+    <TdLeft>
+      <Wrapper>
+        <SearchImg src={search} alt="Search" />
+        <InputTop
+          type="text"
+          onChange={textChange}
+          placeholder="Search for Gigs"
+          id="srchfld"
+          autocomplete="off"
+        />
+      </Wrapper>
+      <LinkDropdown id="myDropdown">
+        {state.searchList.map(item =>
+          item.show ? (
+            <DropA key={item.id} href={`/gigs/${item.id}`}>
+              {item.name}
+            </DropA>
+          ) : null,
+        )}
+      </LinkDropdown>
+      <GigsList
+        loading={loading}
+        error={error}
+        gigs={state.gigs.slice(0, state.numCards)}
+      />
+      {state.loadMore ? (
+        <div style={{ textAlign: 'center', marginTop: '10px' }}>
+          <Button onClick={loadMore}>
+            <p>Load More</p>
+          </Button>
+        </div>
+      ) : null}
+    </TdLeft>
+  );
+
+  const form = (
+    <td style={{ verticalAlign: 'top' }}>
+      <div style={{ paddingLeft: '10px', paddingBottom: '40px' }}>
+        <H1>Gig Filters</H1>
+        <hr />
+        <H2>Categories</H2>
+        <FormControl component="fieldset">
+          <FormGroup>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.drive}
+                  onChange={handleChange}
+                  name="drive"
+                  color="default"
+                />
+              }
+              label="Driving"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.labor}
+                  onChange={handleChange}
+                  name="labor"
+                  color="default"
+                />
+              }
+              label="Labor"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.rent}
+                  onChange={handleChange}
+                  name="rent"
+                  color="default"
+                />
+              }
+              label="Rental"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.other}
+                  onChange={handleChange}
+                  name="other"
+                  color="default"
+                />
+              }
+              label="Other"
+            />
+          </FormGroup>
+          <div style={{ height: '24px', paddingTop: '10px' }}>
+            <Button onClick={filterGigs}>
+              <p>Submit</p>
+            </Button>
+          </div>
+        </FormControl>
+      </div>
+    </td>
+  );
 
   return (
     <div>
@@ -124,80 +238,17 @@ export function GigsPage({ loading, error, gigs }) {
       <BodySpacing>
         <table>
           <tbody>
-            <tr>
-              <TdLeft>
-                <Wrapper>
-                  <SearchImg src={search} alt="Search" />
-                  <InputTop
-                    type="text"
-                    onChange={textChange}
-                    placeholder="Search for Gigs"
-                    id="srchfld"
-                  />
-                </Wrapper>
-                <GigsList {...gigsProps} />
-              </TdLeft>
-              <td style={{ verticalAlign: 'top' }}>
-                <div style={{ paddingLeft: '10px' }}>
-                  <H1>Gig Filters</H1>
-                  <hr />
-                  <H2>Categories</H2>
-                  <FormControl component="fieldset">
-                    <FormGroup>
-                      <FormControlLabel
-                        control={
-                          <Checkbox
-                            checked={drive}
-                            onChange={handleChange}
-                            name="drive"
-                            color="default"
-                          />
-                        }
-                        label="Driving"
-                      />
-                      <FormControlLabel
-                        control={
-                          <Checkbox
-                            checked={labor}
-                            onChange={handleChange}
-                            name="labor"
-                            color="default"
-                          />
-                        }
-                        label="Labor"
-                      />
-                      <FormControlLabel
-                        control={
-                          <Checkbox
-                            checked={rent}
-                            onChange={handleChange}
-                            name="rent"
-                            color="default"
-                          />
-                        }
-                        label="Rental"
-                      />
-                      <FormControlLabel
-                        control={
-                          <Checkbox
-                            checked={other}
-                            onChange={handleChange}
-                            name="other"
-                            color="default"
-                          />
-                        }
-                        label="Other"
-                      />
-                    </FormGroup>
-                    <div style={{ height: '24px', paddingTop: '10px' }}>
-                      <Button onClick={filterGigs}>
-                        <p>Submit</p>
-                      </Button>
-                    </div>
-                  </FormControl>
-                </div>
-              </td>
-            </tr>
+            {isMobile ? (
+              <React.Fragment>
+                <tr>{form}</tr>
+                <tr>{main}</tr>
+              </React.Fragment>
+            ) : (
+              <tr>
+                {main}
+                {form}
+              </tr>
+            )}
           </tbody>
         </table>
       </BodySpacing>

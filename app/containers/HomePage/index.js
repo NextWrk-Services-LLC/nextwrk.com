@@ -24,15 +24,17 @@ export function HomePage() {
   return (
     <article>
       <Helmet>
-        <title>Featured Gigs</title>
+        <title>HomePage</title>
         <meta
           name="description"
-          content="NextWrk's Featured Gigs and Services. Discover the best gigs for developing extra streams of income, and the best services for maximizing your returns!"
+          content="NextWrk. Discover the best gigs for developing extra streams of income, and the best services for maximizing your returns!"
         />
       </Helmet>
       <Header />
       <BodySpacing>
-        <H1>Discover...</H1>
+        <H1>
+          Start Working How, When and Where <u>YOU</u> Want! <br /> Discover...
+        </H1>
         {isMobile ? <MobileBody /> : <Body />}
         <div style={{ textAlign: 'center', margin: '50px' }}>
           <A href="/gigs">
