@@ -62,8 +62,13 @@ export function GigsPage({ loading, error, gigs }) {
     handyman: false,
     mover: false,
     landscaping: false,
-    rent: false,
-    other: false,
+    cleaning: false,
+    care: false,
+    tech: false,
+    mysteryshop: false,
+    beauty: false,
+    cuisine: false,
+
     gigs: allGigs,
     searchList: searchGigs,
     showSearchList: false,
@@ -96,6 +101,24 @@ export function GigsPage({ loading, error, gigs }) {
 
   const filterGigs = () => {
     const showGigs = [];
+    if (state.care) {
+      showGigs.push('care');
+    }
+    if (state.tech) {
+      showGigs.push('tech');
+    }
+    if (state.mysteryshop) {
+      showGigs.push('mysteryshop');
+    }
+    if (state.beauty) {
+      showGigs.push('beauty');
+    }
+    if (state.healthcare) {
+      showGigs.push('healthcare');
+    }
+    if (state.cuisine) {
+      showGigs.push('cuisine');
+    }
     if (state.rideshare) {
       showGigs.push('rideshare');
     }
@@ -141,11 +164,8 @@ export function GigsPage({ loading, error, gigs }) {
     if (state.landscaping) {
       showGigs.push('landscaping');
     }
-    if (state.rent) {
-      showGigs.push('rental');
-    }
-    if (state.other) {
-      showGigs.push('other');
+    if (state.cleaning) {
+      showGigs.push('cleaning');
     }
     setState({
       ...state,
@@ -382,6 +402,83 @@ export function GigsPage({ loading, error, gigs }) {
               }
               label="Landscaping / Lawn Care"
             />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.cleaning}
+                  onChange={handleChange}
+                  name="cleaning"
+                  color="default"
+                />
+              }
+              label="Cleaning"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.care}
+                  onChange={handleChange}
+                  name="care"
+                  color="default"
+                />
+              }
+              label="Child and Elder Care"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.tech}
+                  onChange={handleChange}
+                  name="tech"
+                  color="default"
+                />
+              }
+              label="Technical"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.mysteryshop}
+                  onChange={handleChange}
+                  name="mysteryshop"
+                  color="default"
+                />
+              }
+              label="Mystery Shopping"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.beauty}
+                  onChange={handleChange}
+                  name="beauty"
+                  color="default"
+                />
+              }
+              label="Beauty and Massage"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.healthcare}
+                  onChange={handleChange}
+                  name="healthcare"
+                  color="default"
+                />
+              }
+              label="Healthcare"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.cuisine}
+                  onChange={handleChange}
+                  name="cuisine"
+                  color="default"
+                />
+              }
+              label="Cuisine"
+            />
             <H2>Other</H2>
             <FormControlLabel
               control={
@@ -393,17 +490,6 @@ export function GigsPage({ loading, error, gigs }) {
                 />
               }
               label="Scooter Charging"
-            />
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={state.other}
-                  onChange={handleChange}
-                  name="other"
-                  color="default"
-                />
-              }
-              label="Other"
             />
           </FormGroup>
           <div style={{ height: '24px', paddingTop: '10px' }}>
