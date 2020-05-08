@@ -349,6 +349,7 @@ export const initialState = {
         appsite: 'https://ridewithvia.com/',
         pay: 'Expect to earn between $15 and $20 an hour',
         services: [
+          'S0001',
           'S0004',
           'S0005',
           'S0006',
@@ -405,7 +406,7 @@ export const initialState = {
         gigsite: 'https://gocurb.com/',
         appsite: 'https://mobileapp.gocurb.com/',
         pay: 'Average Curb Driver Pay is around $17/hr',
-        services: ['S0004', 'S0005', 'S0006', 'S0031', 'S0037'],
+        services: ['S0001', 'S0004', 'S0005', 'S0006', 'S0031', 'S0037'],
         subtypes: ['driving', 'rideshare'],
       },
       {
@@ -427,7 +428,7 @@ export const initialState = {
         appsite: 'https://www.roadie.com/',
         pay:
           'Most local gigs pay between $8 and $50, with long distance trips paying up to $650',
-        services: [],
+        services: ['S0004', 'S0005'],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -450,7 +451,7 @@ export const initialState = {
         appsite:
           'https://grabr.io/invitation/mark-foster?utm_campaign=web&utm_source=referral_program&utm_medium=copy_link',
         pay: 'Earn $200+ Every Time You Travel Abroad',
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -474,7 +475,7 @@ export const initialState = {
         gigsite: 'https://flex.amazon.com/',
         appsite: 'https://flex.amazon.com/',
         pay: 'Amazon Flex Drivers can make between $18 and $25 an hour',
-        services: [],
+        services: ['S0001', 'S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -493,7 +494,7 @@ export const initialState = {
         gigsite: 'https://skipcart.com/drivers/',
         appsite: 'https://skipcart.com/',
         pay: 'Skipcart Drivers Can Earn Up to $22/hr',
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -513,7 +514,7 @@ export const initialState = {
         gigsite: 'https://pickupnow.com/requirements/',
         appsite: 'https://pickupnow.com/',
         pay: 'Make a minimum of $25 per run and up to $50/hr',
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -535,7 +536,7 @@ export const initialState = {
         gigsite: 'https://bungii.com/',
         appsite: 'https://bungii.com/',
         pay: 'Bungii Workers Earn Up to $40/hr',
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -556,7 +557,7 @@ export const initialState = {
         gigsite: 'https://tommyrun.app.link/vanKPpCzN5',
         appsite: 'https://tommyrun.app.link/vanKPpCzN5',
         pay: 'Average between $12 and $20/hr',
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -574,7 +575,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.uship.com/register/',
 
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -592,7 +593,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.dispatchit.com/drivers/',
 
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -610,7 +611,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.ideliverthat.com/driver',
 
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -637,7 +638,7 @@ export const initialState = {
         appsite: 'https://postmates.com/',
         pay:
           'Postmates pay ranges from around $12/hr for Drivers to around $25/hr for Truck Drivers',
-        services: [],
+        services: ['S0001', 'S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -662,7 +663,7 @@ export const initialState = {
         gigsite: 'https://www.doordash.com/dasher/signup/',
         appsite: 'https://www.doordash.com/en-US',
         pay: 'Doordash pays Dashers between $2 and $10 per delivery',
-        services: [],
+        services: ['S0001', 'S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -687,7 +688,7 @@ export const initialState = {
         appsite: 'https://www.ubereats.com/',
         pay:
           'Uber Eats drivers can expect to make around $8 – $12 per hour after factoring in vehicle expenses',
-        services: [],
+        services: ['S0001', 'S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -712,7 +713,7 @@ export const initialState = {
         gigsite: 'https://driver.grubhub.com/',
         appsite: 'https://www.grubhub.com/mobile_home',
         pay: 'Grubhub Drivers typically make around $12 an hour',
-        services: [],
+        services: ['S0001', 'S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -734,7 +735,7 @@ export const initialState = {
         appsite: 'https://www.trycaviar.com/',
         pay:
           'Daily pay ranges from around $200 a day for Drivers and $400 a day for Couriers',
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -759,7 +760,7 @@ export const initialState = {
         gigsite: 'https://apply.favordelivery.com/',
         appsite: 'https://favordelivery.com/download',
         pay: 'Favor provides a $9 per hour base pay.',
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -777,7 +778,7 @@ export const initialState = {
         ],
         gigsite: 'http://jobs.zifty.com/',
 
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -797,7 +798,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.peachd.com/jobs/',
         appsite: 'https://www.peachd.com/',
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -819,7 +820,7 @@ export const initialState = {
         ],
         gigsite: 'https://deliveroo.co.uk/apply',
         appsite: 'https://deliveroo.co.uk/app?manual=1',
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -845,7 +846,7 @@ export const initialState = {
           'https://www.fountain.com/gopuff/apply/godrive-delivery-partner',
         appsite: 'https://gopuff.com/home',
         pay: 'Gopuff Drivers Average Approximately $17/hr',
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -864,7 +865,7 @@ export const initialState = {
         ],
         gigsite: 'https://drizly.com/liquor-stores-near-me',
 
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', '21delivery'],
       },
       {
@@ -882,7 +883,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.saucey.com/apply',
 
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', '21delivery'],
       },
       {
@@ -905,7 +906,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.drive.eaze.com/',
 
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['delivery', '21delivery'],
       },
       {
@@ -924,7 +925,7 @@ export const initialState = {
         ],
         gigsite: 'https://minibardelivery.com/',
 
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['delivery', '21delivery'],
       },
       {
@@ -950,7 +951,7 @@ export const initialState = {
         appsite: 'https://www.instacart.com/',
         pay:
           'During busy shifts, shoppers can earn $20 or more an hour. Several say the minimum base pay is $10 an hour',
-        services: [],
+        services: ['S0001', 'S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'grocery'],
       },
       {
@@ -975,7 +976,7 @@ export const initialState = {
         gigsite: 'https://www.shipt.com/be-a-shopper/',
         appsite: 'https://app.shipt.com/shopperappdownload',
         pay: 'The Average Shipt Shopper Makes Around $15 an hour',
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'grocery'],
       },
       {
@@ -993,7 +994,7 @@ export const initialState = {
         ],
         gigsite: 'https://shoppers.burpy.com/join-as-shopper',
 
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'grocery'],
       },
       {
@@ -1011,7 +1012,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.deliv.co/drivers/',
 
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -1029,7 +1030,7 @@ export const initialState = {
         ],
         gigsite: 'https://getburro.com/drivers.html',
 
-        services: [],
+        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'packagedelivery'],
       },
       //
