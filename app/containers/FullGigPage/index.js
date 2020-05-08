@@ -208,7 +208,10 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
             <React.Fragment>
               <H2>
                 Useful Services{' '}
-                <a style={{ color: `#3b9ad5` }} href="/services">
+                <a
+                  style={{ color: `#3b9ad5` }}
+                  href={`/services?fltr=${gigId}`}
+                >
                   (See More Here)
                 </a>
               </H2>

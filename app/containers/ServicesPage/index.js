@@ -22,6 +22,7 @@ import {
 } from 'containers/App/selectors';
 import BodySpacing from 'components/BodySpacing';
 import ServicesList from 'components/ServicesList';
+import H1 from 'components/H1';
 import SearchImg from 'containers/GigsPage/SearchImg';
 import InputTop from 'containers/GigsPage/InputTop';
 import DropA from 'containers/GigsPage/DropA';
@@ -38,7 +39,8 @@ export function ServicesPage({ location, loading, error, services, gigs }) {
     searchGigs.push({ name: item.gig, id: item.id, show: true }),
   );
   const gigId = location.search.slice(6, 11);
-  const serviceIds = gigs.filter(obj => obj.id.includes(gigId))[0].services;
+  const selectedGig = gigs.filter(obj => obj.id.includes(gigId))[0];
+  const serviceIds = selectedGig.services;
 
   const servicesProps = {
     loading,
@@ -92,6 +94,8 @@ export function ServicesPage({ location, loading, error, services, gigs }) {
       </Helmet>
       <Img src={servicesheader} alt="Services Page Header" />
       <BodySpacing>
+        {gigId.length === 5 ? <H1>{`${selectedGig.gig} Services`}</H1> : null}
+
         <Wrapper>
           <SearchImg src={search} alt="Search" />
           <InputTop
