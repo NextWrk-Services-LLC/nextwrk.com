@@ -156,44 +156,25 @@ export const initialState = {
       //
       //    Driving Gigs
       {
-        id: 'G0001', // Rideshare
-        logo: uber,
-        gig: 'Uber',
+        id: 'G0004',
+        logo: neighbor,
+        gig: 'Neighbor',
         app:
-          'Uber is a ride-hailing company that offers the Uber mobile app, which you can use to submit a trip request that is automatically sent to an Uber driver near to you, alerting the driver to your location. The accepting Uber driver will then come and pick you up and drive you to your requested destination.',
+          'Neighbor connects people who have unused spaces with people in the area looking for a place to keep their things.',
         description:
-          'Uber drivers offer passengers a safe ride to their destination. Finding customers will not be an issue, as Uber is one of the largest ridesharing apps with tens of millions of users.',
-        promo: '',
+          'Neighbor lets you earn money renting out your basement, garage and even closets to neighbors. Clean out your garage and you can start earning over $2,000 extra a year.',
+        promo: 'Sign Up and Get $50!',
         resources: [
           {
-            title: 'Indeed: Job Reviews from Uber Drivers',
-            link: 'https://www.indeed.com/cmp/Uber/reviews',
-          },
-          {
-            title: 'r/uberdrivers: Subreddit for Uber Drivers',
-            link: 'https://www.reddit.com/r/uberdrivers/',
+            title: 'TrustPilot, Neighbor Review',
+            link: 'https://www.trustpilot.com/review/neighbor.com',
           },
         ],
-        gigsite: 'https://www.uber.com/us/en/drive/',
-        appsite: 'https://www.uber.com/us/en/ride/',
+        gigsite: 'https://www.neighbor.com/invited/nextwrk-39640',
         pay:
-          'Uber Drivers make between $12 and $22 an hour on average, depending on the city',
-        services: [
-          'S0001',
-          'S0002',
-          'S0003',
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0038',
-          'S0039',
-          'S0040',
-          'S0033',
-          'S0037',
-        ],
-        subtypes: ['driving', 'rideshare'],
+          'Rent out a closet for ~$400 a year, a garage for ~$1,800 a year, or a basement for ~$2,100 a year',
+        services: [],
+        subtypes: ['rental', 'home'],
       },
       {
         id: 'G0009',
@@ -234,182 +215,6 @@ export const initialState = {
         subtypes: ['driving', 'rideshare'],
       },
       {
-        id: 'G0037',
-        logo: hsnd,
-        gig: 'HopSkipDrive',
-        app:
-          "HopSkipDrive is a ride service to get kids (age 6+) where they need to go when their parents can't. It was created by three moms who understand the stress of driving kids to all of their activities, and the safety concerns parents have putting their children in someone else's car.",
-        description:
-          'HopSkipDrive drivers offer carpooling services for children ages 6+. There is a more stringent application process because of this, but it also pays incredibly well and gives you the opportunty to make a positive impact in the community.',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews from HopSkipDrive Drivers',
-            link:
-              'https://www.indeed.com/cmp/Hopskipdrive/reviews?fjobtitle=Driver',
-          },
-        ],
-        promo: '',
-        gigsite: 'https://www.hopskipdrive.com/driver-sign-up',
-        appsite: 'https://www.hopskipdrive.com/hopskipdrive-app-download',
-        pay: 'CareDrivers earn an average of $32 an hour',
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0038',
-          'S0039',
-          'S0040',
-          'S0033',
-          'S0037',
-        ],
-        subtypes: ['driving', 'rideshare'],
-      },
-      {
-        id: 'G0168',
-        logo: zum,
-        gig: 'Zum',
-        app:
-          "Zūm is a reliable, technology platform that connects busy families with providers (Zūmers,) of kids' transportation and childcare services",
-        description:
-          'Zum is another carpooling rideshare app similar to HopSkipDrive. Zum drivers provide kids with transportation and care. It is available in California, Arizona, Texas, Illinois, Florida, Washington and Washington DC.',
-        promo: 'Receive up to $500 sign up bonus!',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews from Zum Drivers',
-            link: 'https://www.indeed.com/cmp/Ridezum/reviews',
-          },
-        ],
-        gigsite: 'https://www.ridezum.com/drive.html',
-        appsite: 'https://www.ridezum.com/',
-        pay: 'Zumers make anywhere between $16 and $35 an hour, on average',
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0038',
-          'S0039',
-          'S0040',
-          'S0033',
-          'S0037',
-        ],
-        subtypes: ['driving', 'rideshare'],
-      },
-      {
-        id: 'G0054',
-        logo: wingz,
-        gig: 'Wingz',
-        app:
-          'Wingz is a rideshare app that specializes in airport pick up and drop off. You can schedule a ride up to two months in advance, know the rate up front, and book your favorite drivers.',
-        description:
-          'Wingz drivers specialize in airport pickup and drop off. Wingz also allows customers to select their favorite drivers for repeat rides, so drivers need to live near an airport and have a keen sense for customer service.',
-        promo: '',
-        resources: [
-          {
-            title: 'Yelp reviews for Wingz',
-            link: 'https://www.yelp.com/biz/wingz-san-francisco-4',
-          },
-        ],
-        gigsite: 'https://www.wingz.me/drivers-2/',
-        appsite: 'https://www.wingz.me/',
-        pay: 'You can expect to make $25+ per ride with Wingz',
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0038',
-          'S0039',
-          'S0040',
-          'S0033',
-          'S0037',
-        ],
-        subtypes: ['driving', 'rideshare'],
-      },
-      {
-        id: 'G0197',
-        logo: via,
-        gig: 'Via Transportation',
-        app:
-          'Via is an on-demand transit system that takes multiple passengers heading in the same direction and books them into a shared vehicle. Think of Via as a bus smart enough to come when you want it and where you want it',
-        description:
-          'Via is another ride sharing company. They are reshaping public transit - they send you the rate for the upcoming day so you can plan your schedule in advance! You also do not need a car, you can rent one from Via to drive!',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Via Drivers',
-            link: 'https://www.indeed.com/cmp/Via-Transportation/reviews',
-          },
-        ],
-        gigsite: 'https://my.drivewithvia.com/',
-        appsite: 'https://ridewithvia.com/',
-        pay: 'Expect to earn between $15 and $20 an hour',
-        services: [
-          'S0001',
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0038',
-          'S0039',
-          'S0040',
-          'S0033',
-          'S0037',
-        ],
-        subtypes: ['driving', 'rideshare'],
-      },
-      {
-        id: 'G0163',
-        logo: groundlink,
-        gig: 'GroundLink',
-        app: 'Groundlink provides professional black car and limo services.',
-        description:
-          'GroundLink chauffeurs are professional black car drivers that provide transportation to riders. They only accept experienced limo and car service drivers.',
-        promo: '',
-        resources: [
-          {
-            title: 'Yelp reviews for GroundLink',
-            link: 'https://www.yelp.com/biz/groundlink-new-york',
-          },
-          {
-            title:
-              'Groundlink: difference between Groundlink and Rideshare Driving',
-            link:
-              'https://www.groundlink.com/blog/differences-groundlink-driver-rideshare-driver/',
-          },
-        ],
-        gigsite: 'https://driver.groundlink.com/',
-        appsite: 'https://www.groundlink.com/app',
-        services: ['S0004', 'S0005', 'S0006', 'S0031', 'S0037'],
-        subtypes: ['driving', 'rideshare'],
-      },
-      {
-        id: 'G0198',
-        logo: curb,
-        gig: 'Curb',
-        app:
-          'Curb is the #1 taxi app in the US. They have over 50,000 taxis over 65+ US cities.',
-        description:
-          'Curb drivers are licensed and insured cab drivers. Available in NYC, Boston, Philadelphia, Miami and Las Vegas, Curb aims to help impacted cab drivers adapt to Uber and Lyft.',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
-          },
-        ],
-        gigsite: 'https://gocurb.com/',
-        appsite: 'https://mobileapp.gocurb.com/',
-        pay: 'Average Curb Driver Pay is around $17/hr',
-        services: ['S0001', 'S0004', 'S0005', 'S0006', 'S0031', 'S0037'],
-        subtypes: ['driving', 'rideshare'],
-      },
-      {
         id: 'G0007', // Delivery
         logo: roadie,
         gig: 'Roadie', // Last mile
@@ -432,6 +237,202 @@ export const initialState = {
         subtypes: ['driving', 'packagedelivery'],
       },
       {
+        id: 'G0014',
+        logo: doordash,
+        gig: 'DoorDash',
+        app:
+          'Delivery & takeout from the best local restaurants. Breakfast, lunch, dinner and more, delivered safely to your door. Now offering pickup & no-contact delivery.',
+        description:
+          'Doordash is another gigantic food-delivery app hiring delivery drivers. Doordash Dashers schedule shifts and fulfill delivery requests from the DoorDash app',
+        promo: '',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for DoorDash Dashers',
+            link: 'https://www.indeed.com/cmp/Doordash/reviews',
+          },
+          {
+            title: 'r/doordash: Subreddit for Doordash Customers and Drivers',
+            link: 'https://www.reddit.com/r/doordash/',
+          },
+        ],
+        gigsite: 'https://www.doordash.com/dasher/signup/',
+        appsite: 'https://www.doordash.com/en-US',
+        pay: 'Doordash pays Dashers between $2 and $10 per delivery',
+        services: [
+          'S0001',
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
+        subtypes: ['driving', 'fooddelivery'],
+      },
+      {
+        id: 'G0046',
+        logo: shipt,
+        gig: 'Shipt',
+        app:
+          'Founded in 2014, Shipt is a grocery delivery service that was purchased by Target in 2017.',
+        description:
+          'Shipt is another key player in the grocery delivery game hiring Shoppers. Unlike Instacart, Shipt is owned solely by Target, which is where you will be doing most of your shopping.',
+        promo: '',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for Shipt Shoppers',
+            link: 'https://www.indeed.com/cmp/Shipt-Shopper/reviews',
+          },
+          {
+            title: 'r/ShiptShoppers: Subreddit for Shipt Shoppers',
+            link: 'https://www.reddit.com/r/ShiptShoppers/',
+          },
+        ],
+        gigsite: 'https://www.shipt.com/be-a-shopper/',
+        appsite: 'https://app.shipt.com/shopperappdownload',
+        pay: 'The Average Shipt Shopper Makes Around $15 an hour',
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
+        subtypes: ['driving', 'grocery'],
+      },
+      {
+        id: 'G0067',
+        logo: boatsetter,
+        gig: 'Boatsetter',
+        description:
+          'If you own a boat, then Boatsetter lets you rent it out — either with or without a captain. Peace of mind and insurance is included in every rental, and you choose who rents your boat!',
+        promo: 'Rent Out Your Boat and Get an Extra $100!',
+        resources: [
+          {
+            title: 'Facebook: Boatsetter Reviews',
+            link: 'https://www.facebook.com/pg/Boatsetter/reviews/',
+          },
+        ],
+        gigsite: 'https://www.boatsetter.com/referral/o/sqxkrtk',
+
+        services: [],
+        subtypes: ['rental', 'boat'],
+      },
+      {
+        id: 'G0018',
+        logo: getaround,
+        gig: 'Getaround',
+        app:
+          'Rent nearby cars, trucks, and vans, by the hour or day, on Getaround. No lines or key exchanges. Simply rent, unlock, and go in an instant with the Getaround',
+        description:
+          'Getaround is a car rental service that connects renters with car owners. It is available in most major cities, and is a great way to make money with little effort.',
+        promo: 'Sign Up and Get $20!',
+        resources: [
+          {
+            title: 'Yelp: Reviews for Getaround',
+            link: 'https://www.yelp.com/biz/getaround-san-francisco',
+          },
+          {
+            title: 'r/GetAround: Subreddit for GetAround Renters',
+            link: 'https://www.reddit.com/r/GetAround/',
+          },
+        ],
+        gigsite:
+          'https://www.getaround.com/invite/2c776f91-e44f-5695-bae1-784dd3b6ae18',
+        pay:
+          'According to Getaround, the average car owner makes about $6,000 a year',
+        services: [],
+        subtypes: ['rental', 'car'],
+      },
+      {
+        id: 'G0003',
+        logo: rover,
+        gig: 'Rover',
+        description:
+          'Love animals? Wanna earn some extra money? Rover will pay you to watch dogs as a Sitter or walk dogs as a Walker. They offer flexibility and can help you earn up to $1,000 a month working with animals!',
+        promo: 'Sign Up and Get $20!',
+        resources: [
+          {
+            title: 'Indeed: Reviews for Rover Workers',
+            link:
+              'https://www.indeed.com/cmp/Rover.com/reviews?fcountry=ALL&fjobtitle=Dog+Walker',
+          },
+          {
+            title: 'r/RoverPetSitting: Subreddit for Rover Workers',
+            link: 'https://www.reddit.com/r/RoverPetSitting/',
+          },
+        ],
+        gigsite: 'http://share.rover.com/SWhzJ',
+
+        services: [],
+        subtypes: ['labor', 'dog'],
+      },
+      {
+        id: 'G0154',
+        logo: urbansitter,
+        gig: 'UrbanSitter',
+        description:
+          'UrbanSitter lets users find and book babysitters and nannies in their communities. If you are a nanny or babysitter, it is a great way to pick up new clients!',
+        promo: 'Sign Up and Get $25!',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for UrbanSitter Workers',
+            link: 'https://www.indeed.com/cmp/Urbansitter/reviews',
+          },
+        ],
+        gigsite: 'https://link.urbansitter.com/P2JqXJSHN5',
+
+        services: [],
+        subtypes: ['labor', 'care'],
+      },
+      {
+        id: 'G0001', // Rideshare
+        logo: uber,
+        gig: 'Uber',
+        app:
+          'Uber is a ride-hailing company that offers the Uber mobile app, which you can use to submit a trip request that is automatically sent to an Uber driver near to you, alerting the driver to your location. The accepting Uber driver will then come and pick you up and drive you to your requested destination.',
+        description:
+          'Uber drivers offer passengers a safe ride to their destination. Finding customers will not be an issue, as Uber is one of the largest ridesharing apps with tens of millions of users.',
+        promo: '',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews from Uber Drivers',
+            link: 'https://www.indeed.com/cmp/Uber/reviews',
+          },
+          {
+            title: 'r/uberdrivers: Subreddit for Uber Drivers',
+            link: 'https://www.reddit.com/r/uberdrivers/',
+          },
+        ],
+        gigsite: 'https://www.uber.com/us/en/drive/',
+        appsite: 'https://www.uber.com/us/en/ride/',
+        pay:
+          'Uber Drivers make between $12 and $22 an hour on average, depending on the city',
+        services: [
+          'S0001',
+          'S0002',
+          'S0003',
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0033',
+          'S0037',
+        ],
+        subtypes: ['driving', 'rideshare'],
+      },
+      {
         id: 'G0188',
         logo: grabr,
         gig: 'Grabr',
@@ -451,7 +452,17 @@ export const initialState = {
         appsite:
           'https://grabr.io/invitation/mark-foster?utm_campaign=web&utm_source=referral_program&utm_medium=copy_link',
         pay: 'Earn $200+ Every Time You Travel Abroad',
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -475,7 +486,18 @@ export const initialState = {
         gigsite: 'https://flex.amazon.com/',
         appsite: 'https://flex.amazon.com/',
         pay: 'Amazon Flex Drivers can make between $18 and $25 an hour',
-        services: ['S0001', 'S004', 'S0005', 'S0006'],
+        services: [
+          'S0001',
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -494,7 +516,17 @@ export const initialState = {
         gigsite: 'https://skipcart.com/drivers/',
         appsite: 'https://skipcart.com/',
         pay: 'Skipcart Drivers Can Earn Up to $22/hr',
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -514,7 +546,17 @@ export const initialState = {
         gigsite: 'https://pickupnow.com/requirements/',
         appsite: 'https://pickupnow.com/',
         pay: 'Make a minimum of $25 per run and up to $50/hr',
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -536,7 +578,17 @@ export const initialState = {
         gigsite: 'https://bungii.com/',
         appsite: 'https://bungii.com/',
         pay: 'Bungii Workers Earn Up to $40/hr',
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -557,7 +609,17 @@ export const initialState = {
         gigsite: 'https://tommyrun.app.link/vanKPpCzN5',
         appsite: 'https://tommyrun.app.link/vanKPpCzN5',
         pay: 'Average between $12 and $20/hr',
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -575,7 +637,17 @@ export const initialState = {
         ],
         gigsite: 'https://www.uship.com/register/',
 
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -593,7 +665,17 @@ export const initialState = {
         ],
         gigsite: 'https://www.dispatchit.com/drivers/',
 
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -611,7 +693,17 @@ export const initialState = {
         ],
         gigsite: 'https://www.ideliverthat.com/driver',
 
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -638,32 +730,18 @@ export const initialState = {
         appsite: 'https://postmates.com/',
         pay:
           'Postmates pay ranges from around $12/hr for Drivers to around $25/hr for Truck Drivers',
-        services: ['S0001', 'S004', 'S0005', 'S0006'],
-        subtypes: ['driving', 'fooddelivery'],
-      },
-      {
-        id: 'G0014',
-        logo: doordash,
-        gig: 'DoorDash',
-        app:
-          'Delivery & takeout from the best local restaurants. Breakfast, lunch, dinner and more, delivered safely to your door. Now offering pickup & no-contact delivery.',
-        description:
-          'Doordash is another gigantic food-delivery app hiring delivery drivers. Doordash Dashers schedule shifts and fulfill delivery requests from the DoorDash app',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for DoorDash Dashers',
-            link: 'https://www.indeed.com/cmp/Doordash/reviews',
-          },
-          {
-            title: 'r/doordash: Subreddit for Doordash Customers and Drivers',
-            link: 'https://www.reddit.com/r/doordash/',
-          },
+        services: [
+          'S0001',
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
         ],
-        gigsite: 'https://www.doordash.com/dasher/signup/',
-        appsite: 'https://www.doordash.com/en-US',
-        pay: 'Doordash pays Dashers between $2 and $10 per delivery',
-        services: ['S0001', 'S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -688,7 +766,18 @@ export const initialState = {
         appsite: 'https://www.ubereats.com/',
         pay:
           'Uber Eats drivers can expect to make around $8 – $12 per hour after factoring in vehicle expenses',
-        services: ['S0001', 'S004', 'S0005', 'S0006'],
+        services: [
+          'S0001',
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -713,7 +802,18 @@ export const initialState = {
         gigsite: 'https://driver.grubhub.com/',
         appsite: 'https://www.grubhub.com/mobile_home',
         pay: 'Grubhub Drivers typically make around $12 an hour',
-        services: ['S0001', 'S004', 'S0005', 'S0006'],
+        services: [
+          'S0001',
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -735,7 +835,17 @@ export const initialState = {
         appsite: 'https://www.trycaviar.com/',
         pay:
           'Daily pay ranges from around $200 a day for Drivers and $400 a day for Couriers',
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -760,7 +870,17 @@ export const initialState = {
         gigsite: 'https://apply.favordelivery.com/',
         appsite: 'https://favordelivery.com/download',
         pay: 'Favor provides a $9 per hour base pay.',
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -778,7 +898,17 @@ export const initialState = {
         ],
         gigsite: 'http://jobs.zifty.com/',
 
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -798,7 +928,17 @@ export const initialState = {
         ],
         gigsite: 'https://www.peachd.com/jobs/',
         appsite: 'https://www.peachd.com/',
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -820,7 +960,17 @@ export const initialState = {
         ],
         gigsite: 'https://deliveroo.co.uk/apply',
         appsite: 'https://deliveroo.co.uk/app?manual=1',
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'fooddelivery'],
       },
       {
@@ -846,7 +996,17 @@ export const initialState = {
           'https://www.fountain.com/gopuff/apply/godrive-delivery-partner',
         appsite: 'https://gopuff.com/home',
         pay: 'Gopuff Drivers Average Approximately $17/hr',
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -865,7 +1025,17 @@ export const initialState = {
         ],
         gigsite: 'https://drizly.com/liquor-stores-near-me',
 
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', '21delivery'],
       },
       {
@@ -883,7 +1053,17 @@ export const initialState = {
         ],
         gigsite: 'https://www.saucey.com/apply',
 
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', '21delivery'],
       },
       {
@@ -906,7 +1086,17 @@ export const initialState = {
         ],
         gigsite: 'https://www.drive.eaze.com/',
 
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['delivery', '21delivery'],
       },
       {
@@ -925,7 +1115,17 @@ export const initialState = {
         ],
         gigsite: 'https://minibardelivery.com/',
 
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['delivery', '21delivery'],
       },
       {
@@ -951,34 +1151,21 @@ export const initialState = {
         appsite: 'https://www.instacart.com/',
         pay:
           'During busy shifts, shoppers can earn $20 or more an hour. Several say the minimum base pay is $10 an hour',
-        services: ['S0001', 'S004', 'S0005', 'S0006'],
-        subtypes: ['driving', 'grocery'],
-      },
-      {
-        id: 'G0046',
-        logo: shipt,
-        gig: 'Shipt',
-        app:
-          'Founded in 2014, Shipt is a grocery delivery service that was purchased by Target in 2017.',
-        description:
-          'Shipt is another key player in the grocery delivery game hiring Shoppers. Unlike Instacart, Shipt is owned solely by Target, which is where you will be doing most of your shopping.',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Shipt Shoppers',
-            link: 'https://www.indeed.com/cmp/Shipt-Shopper/reviews',
-          },
-          {
-            title: 'r/ShiptShoppers: Subreddit for Shipt Shoppers',
-            link: 'https://www.reddit.com/r/ShiptShoppers/',
-          },
+        services: [
+          'S0001',
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
         ],
-        gigsite: 'https://www.shipt.com/be-a-shopper/',
-        appsite: 'https://app.shipt.com/shopperappdownload',
-        pay: 'The Average Shipt Shopper Makes Around $15 an hour',
-        services: ['S004', 'S0005', 'S0006'],
         subtypes: ['driving', 'grocery'],
       },
+
       {
         id: 'G0186',
         logo: burpy,
@@ -994,7 +1181,17 @@ export const initialState = {
         ],
         gigsite: 'https://shoppers.burpy.com/join-as-shopper',
 
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'grocery'],
       },
       {
@@ -1012,7 +1209,17 @@ export const initialState = {
         ],
         gigsite: 'https://www.deliv.co/drivers/',
 
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'packagedelivery'],
       },
       {
@@ -1030,7 +1237,17 @@ export const initialState = {
         ],
         gigsite: 'https://getburro.com/drivers.html',
 
-        services: ['S004', 'S0005', 'S0006'],
+        services: [
+          'S004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
         subtypes: ['driving', 'packagedelivery'],
       },
       //
@@ -1051,27 +1268,6 @@ export const initialState = {
         ],
         gigsite: 'https://rentlikeachampion.com/',
 
-        services: [],
-        subtypes: ['rental', 'home'],
-      },
-      {
-        id: 'G0004',
-        logo: neighbor,
-        gig: 'Neighbor',
-        app:
-          'Neighbor connects people who have unused spaces with people in the area looking for a place to keep their things.',
-        description:
-          'Neighbor lets you earn money renting out your basement, garage and even closets to neighbors. Clean out your garage and you can start earning over $2,000 extra a year.',
-        promo: 'Sign Up and Get $50!',
-        resources: [
-          {
-            title: 'TrustPilot, Neighbor Review',
-            link: 'https://www.trustpilot.com/review/neighbor.com',
-          },
-        ],
-        gigsite: 'https://www.neighbor.com/invited/nextwrk-39640',
-        pay:
-          'Rent out a closet for ~$400 a year, a garage for ~$1,800 a year, or a basement for ~$2,100 a year',
         services: [],
         subtypes: ['rental', 'home'],
       },
@@ -1198,32 +1394,6 @@ export const initialState = {
         subtypes: ['rental', 'car'],
       },
       {
-        id: 'G0018',
-        logo: getaround,
-        gig: 'Getaround',
-        app:
-          'Rent nearby cars, trucks, and vans, by the hour or day, on Getaround. No lines or key exchanges. Simply rent, unlock, and go in an instant with the Getaround',
-        description:
-          'Getaround is a car rental service that connects renters with car owners. It is available in most major cities, and is a great way to make money with little effort.',
-        promo: 'Sign Up and Get $20!',
-        resources: [
-          {
-            title: 'Yelp: Reviews for Getaround',
-            link: 'https://www.yelp.com/biz/getaround-san-francisco',
-          },
-          {
-            title: 'r/GetAround: Subreddit for GetAround Renters',
-            link: 'https://www.reddit.com/r/GetAround/',
-          },
-        ],
-        gigsite:
-          'https://www.getaround.com/invite/2c776f91-e44f-5695-bae1-784dd3b6ae18',
-        pay:
-          'According to Getaround, the average car owner makes about $6,000 a year',
-        services: [],
-        subtypes: ['rental', 'car'],
-      },
-      {
         id: 'G0177',
         logo: hyrecar,
         gig: 'Hyrecar',
@@ -1276,24 +1446,6 @@ export const initialState = {
 
         services: [],
         subtypes: ['rental', 'parking'],
-      },
-      {
-        id: 'G0067',
-        logo: boatsetter,
-        gig: 'Boatsetter',
-        description:
-          'If you own a boat, then Boatsetter lets you rent it out — either with or without a captain. Peace of mind and insurance is included in every rental, and you choose who rents your boat!',
-        promo: 'Rent Out Your Boat and Get an Extra $100!',
-        resources: [
-          {
-            title: 'Facebook: Boatsetter Reviews',
-            link: 'https://www.facebook.com/pg/Boatsetter/reviews/',
-          },
-        ],
-        gigsite: 'https://www.boatsetter.com/referral/o/sqxkrtk',
-
-        services: [],
-        subtypes: ['rental', 'boat'],
       },
       {
         id: 'G0203',
@@ -1465,29 +1617,6 @@ export const initialState = {
       //
       //
       //    Dog Walking Gigs
-      {
-        id: 'G0003',
-        logo: rover,
-        gig: 'Rover',
-        description:
-          'Love animals? Wanna earn some extra money? Rover will pay you to watch dogs as a Sitter or walk dogs as a Walker. They offer flexibility and can help you earn up to $1,000 a month working with animals!',
-        promo: 'Sign Up and Get $20!',
-        resources: [
-          {
-            title: 'Indeed: Reviews for Rover Workers',
-            link:
-              'https://www.indeed.com/cmp/Rover.com/reviews?fcountry=ALL&fjobtitle=Dog+Walker',
-          },
-          {
-            title: 'r/RoverPetSitting: Subreddit for Rover Workers',
-            link: 'https://www.reddit.com/r/RoverPetSitting/',
-          },
-        ],
-        gigsite: 'http://share.rover.com/SWhzJ',
-
-        services: [],
-        subtypes: ['labor', 'dog'],
-      },
       {
         id: 'G0015',
         logo: wag,
@@ -1921,24 +2050,6 @@ export const initialState = {
         services: [],
         subtypes: ['labor', 'care'],
       },
-      {
-        id: 'G0154',
-        logo: urbansitter,
-        gig: 'UrbanSitter',
-        description:
-          'UrbanSitter lets users find and book babysitters and nannies in their communities. If you are a nanny or babysitter, it is a great way to pick up new clients!',
-        promo: 'Sign Up and Get $25!',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for UrbanSitter Workers',
-            link: 'https://www.indeed.com/cmp/Urbansitter/reviews',
-          },
-        ],
-        gigsite: 'https://link.urbansitter.com/P2JqXJSHN5',
-
-        services: [],
-        subtypes: ['labor', 'care'],
-      },
       //
       //
       // Technical gigs
@@ -2350,6 +2461,190 @@ export const initialState = {
 
         services: [],
         subtypes: [''],
+      },
+      {
+        id: 'G0037',
+        logo: hsnd,
+        gig: 'HopSkipDrive',
+        app:
+          "HopSkipDrive is a ride service to get kids (age 6+) where they need to go when their parents can't. It was created by three moms who understand the stress of driving kids to all of their activities, and the safety concerns parents have putting their children in someone else's car.",
+        description:
+          'HopSkipDrive drivers offer carpooling services for children ages 6+. There is a more stringent application process because of this, but it also pays incredibly well and gives you the opportunty to make a positive impact in the community.',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews from HopSkipDrive Drivers',
+            link:
+              'https://www.indeed.com/cmp/Hopskipdrive/reviews?fjobtitle=Driver',
+          },
+        ],
+        promo: '',
+        gigsite: 'https://www.hopskipdrive.com/driver-sign-up',
+        appsite: 'https://www.hopskipdrive.com/hopskipdrive-app-download',
+        pay: 'CareDrivers earn an average of $32 an hour',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0033',
+          'S0037',
+        ],
+        subtypes: ['driving', 'rideshare'],
+      },
+      {
+        id: 'G0168',
+        logo: zum,
+        gig: 'Zum',
+        app:
+          "Zūm is a reliable, technology platform that connects busy families with providers (Zūmers,) of kids' transportation and childcare services",
+        description:
+          'Zum is another carpooling rideshare app similar to HopSkipDrive. Zum drivers provide kids with transportation and care. It is available in California, Arizona, Texas, Illinois, Florida, Washington and Washington DC.',
+        promo: 'Receive up to $500 sign up bonus!',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews from Zum Drivers',
+            link: 'https://www.indeed.com/cmp/Ridezum/reviews',
+          },
+        ],
+        gigsite: 'https://www.ridezum.com/drive.html',
+        appsite: 'https://www.ridezum.com/',
+        pay: 'Zumers make anywhere between $16 and $35 an hour, on average',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0033',
+          'S0037',
+        ],
+        subtypes: ['driving', 'rideshare'],
+      },
+      {
+        id: 'G0054',
+        logo: wingz,
+        gig: 'Wingz',
+        app:
+          'Wingz is a rideshare app that specializes in airport pick up and drop off. You can schedule a ride up to two months in advance, know the rate up front, and book your favorite drivers.',
+        description:
+          'Wingz drivers specialize in airport pickup and drop off. Wingz also allows customers to select their favorite drivers for repeat rides, so drivers need to live near an airport and have a keen sense for customer service.',
+        promo: '',
+        resources: [
+          {
+            title: 'Yelp reviews for Wingz',
+            link: 'https://www.yelp.com/biz/wingz-san-francisco-4',
+          },
+        ],
+        gigsite: 'https://www.wingz.me/drivers-2/',
+        appsite: 'https://www.wingz.me/',
+        pay: 'You can expect to make $25+ per ride with Wingz',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0033',
+          'S0037',
+        ],
+        subtypes: ['driving', 'rideshare'],
+      },
+      {
+        id: 'G0197',
+        logo: via,
+        gig: 'Via Transportation',
+        app:
+          'Via is an on-demand transit system that takes multiple passengers heading in the same direction and books them into a shared vehicle. Think of Via as a bus smart enough to come when you want it and where you want it',
+        description:
+          'Via is another ride sharing company. They are reshaping public transit - they send you the rate for the upcoming day so you can plan your schedule in advance! You also do not need a car, you can rent one from Via to drive!',
+        promo: '',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for Via Drivers',
+            link: 'https://www.indeed.com/cmp/Via-Transportation/reviews',
+          },
+        ],
+        gigsite: 'https://my.drivewithvia.com/',
+        appsite: 'https://ridewithvia.com/',
+        pay: 'Expect to earn between $15 and $20 an hour',
+        services: [
+          'S0001',
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0038',
+          'S0039',
+          'S0040',
+          'S0033',
+          'S0037',
+        ],
+        subtypes: ['driving', 'rideshare'],
+      },
+      {
+        id: 'G0163',
+        logo: groundlink,
+        gig: 'GroundLink',
+        app: 'Groundlink provides professional black car and limo services.',
+        description:
+          'GroundLink chauffeurs are professional black car drivers that provide transportation to riders. They only accept experienced limo and car service drivers.',
+        promo: '',
+        resources: [
+          {
+            title: 'Yelp reviews for GroundLink',
+            link: 'https://www.yelp.com/biz/groundlink-new-york',
+          },
+          {
+            title:
+              'Groundlink: difference between Groundlink and Rideshare Driving',
+            link:
+              'https://www.groundlink.com/blog/differences-groundlink-driver-rideshare-driver/',
+          },
+        ],
+        gigsite: 'https://driver.groundlink.com/',
+        appsite: 'https://www.groundlink.com/app',
+        services: ['S0004', 'S0005', 'S0006', 'S0031', 'S0037'],
+        subtypes: ['driving', 'rideshare'],
+      },
+      {
+        id: 'G0198',
+        logo: curb,
+        gig: 'Curb',
+        app:
+          'Curb is the #1 taxi app in the US. They have over 50,000 taxis over 65+ US cities.',
+        description:
+          'Curb drivers are licensed and insured cab drivers. Available in NYC, Boston, Philadelphia, Miami and Las Vegas, Curb aims to help impacted cab drivers adapt to Uber and Lyft.',
+        promo: '',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for Curb Drivers',
+            link: 'https://www.indeed.com/cmp/Curb/reviews',
+          },
+        ],
+        gigsite: 'https://gocurb.com/',
+        appsite: 'https://mobileapp.gocurb.com/',
+        pay: 'Average Curb Driver Pay is around $17/hr',
+        services: [
+          'S0001',
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0031',
+          'S0033',
+          'S0037',
+        ],
+        subtypes: ['driving', 'rideshare'],
       },
       // Unfinished
       //
