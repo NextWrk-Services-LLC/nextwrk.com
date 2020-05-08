@@ -466,6 +466,186 @@ export const initialState = {
         subtypes: ['driving', 'packagedelivery'],
       },
       {
+        id: 'G0191',
+        logo: outdoorsy,
+        gig: 'Outdoorsy',
+        description:
+          'Outdoorsy is another RV rental marketplace. They perform DMV checks on all drivers, provide 24/7 roadside assistance and have a dedicated customer support team.',
+        promo: 'Sign Up and Get $50!',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for Outdoorsy',
+            link: 'https://www.trustpilot.com/review/www.outdoorsy.com',
+          },
+          {
+            title: 'r/outdoorsy: Subreddit for Outdoorsy Renters',
+            link: 'https://www.reddit.com/r/outdoorsy/',
+          },
+        ],
+        gigsite: 'https://www.outdoorsy.com/invite/g6o1lb',
+
+        services: [],
+        subtypes: ['rental', 'RV'],
+      },
+      {
+        id: 'G0194',
+        logo: ridersshare,
+        gig: 'Riders Share',
+        description:
+          'If you own a motercycle, and and it spends most of its time in your garage, Riders Share will connect you with drivers looking to rent it out. List your motorcycle for free and make an average of $150 per booking! All listings are protected by an A rated insurance provider.',
+        promo: 'Sign Up and Get $25!',
+        resources: [
+          {
+            title: 'Facebook: Riders Share Reviews',
+            link: 'https://www.facebook.com/pg/ridersshare/reviews/',
+          },
+        ],
+        gigsite: 'www.riders-share.com/welcome/markf+QdETy',
+
+        services: [],
+        subtypes: ['rental', 'car'],
+      },
+      {
+        id: 'G0015',
+        logo: wag,
+        gig: 'Wag!',
+        description:
+          'Wag! is one of the largest dog walking apps. They offer flexibility, secure payment through Stripe, and donates money from 30 minute walks to feed shelter dogs.',
+        promo: 'Sign Up and Get a Free Walk!',
+        resources: [
+          {
+            title: 'Indeed: Reviews for Wag Workers',
+            link: 'https://www.indeed.com/cmp/Wag!-1/reviews',
+          },
+          {
+            title: 'r/WagWalker: Subreddit for Wag Walkers',
+            link: 'https://www.reddit.com/r/WagWalker/',
+          },
+        ],
+        gigsite: 'https://wagwalking.com/dog-walker',
+
+        services: [],
+        subtypes: ['labor', 'dog'],
+      },
+      {
+        id: 'G0021',
+        logo: wonolo,
+        gig: 'Wonolo',
+        description:
+          'Wonolo hires workers to perform certain jobs, like Warehouse Operations, General Labor, Food Production, Cleaning and Merchandising, for different Employers. They are quickly expanding across the US and are available in most major cities.',
+        promo: 'Accept a Job Through Wonolo and Earn a $100 Bonus!',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for Wonolo Workers',
+            link: 'https://www.indeed.com/cmp/Wonolo/reviews',
+          },
+        ],
+        gigsite: 'https://www.wonolo.com/find-work',
+
+        services: [],
+        subtypes: ['labor'],
+      },
+      {
+        id: 'G0151',
+        logo: goshare,
+        gig: 'GoShare',
+        description:
+          'GoShare specializes in delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you have no truck you can apply as a helper. Depending on your driving situation, this gig can prove very lucrative.',
+        promo: 'Sign Up Below and Receieve $10!',
+        resources: [
+          {
+            title: 'Glassdoor: Job Reviews for GoShare Drivers',
+            link:
+              'https://www.glassdoor.com/Reviews/GoShare-Reviews-E1779925.htm',
+          },
+        ],
+        gigsite: 'https://goshare.app.link/Mark_Foster_MF6447',
+
+        services: [],
+        subtypes: ['labor', 'mover'],
+      },
+      {
+        id: 'G0035',
+        logo: hellotech,
+        gig: 'HelloTech',
+        description:
+          'Have a plethora of technical knowledge? Wanna get paid to help those less technically advanced? HelloTech connects you with users in your area looking for tech help. You set your own schedule, and get paid weekly',
+        promo: 'Sign Up and Get $10!',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for HelloTech Workers',
+            link: 'https://www.indeed.com/cmp/Hellotech/reviews?fcountry=ALL',
+          },
+          {
+            title: 'r/HelloTech: Subreddit for HelloTech Workers',
+            link: 'https://www.reddit.com/r/HelloTech/',
+          },
+        ],
+        gigsite: 'http://fbuy.me/v/markfoster314',
+
+        services: [],
+        subtypes: ['other', 'tech'],
+      },
+      {
+        id: 'G0055',
+        logo: yourmechanic,
+        gig: 'YourMechanic',
+        description:
+          'YourMechanic offers at home mechanic services to users, and is a great way for people with auto repair skills to leverage the gig economy. You can make extra money providing car repairs and maitenance at the homes of clients.',
+        promo: 'Sign Up and Get $10!',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for YourMechanic',
+            link: 'https://www.trustpilot.com/review/yourmechanic.com',
+          },
+        ],
+        gigsite: 'https://www.yourmechanic.com/rl/IyhJRw1860682',
+
+        services: [],
+        subtypes: ['labor'],
+      },
+      {
+        id: 'G0056',
+        logo: zeel,
+        gig: 'Zeel',
+        description:
+          'Zeel is a service offering at home massages to users, and is a phenomenal way for massage therapists to leverage the gig economy. 18% gratuity is added to every in-home appointment and customers pay for late cancelations.',
+        promo: 'Sign Up With Code PAUSE20 and get $20!',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for Zeel Workers',
+            link: 'https://www.indeed.com/cmp/Zeel/reviews',
+          },
+          {
+            title: 'Zeel or Soothe?',
+            link:
+              'https://www.reddit.com/r/massage/comments/adykig/zeel_or_soothe/',
+          },
+        ],
+        gigsite: 'https://www.zeel.com/apply',
+
+        services: [],
+        subtypes: ['other', 'beauty'],
+      },
+      {
+        id: 'G0195',
+        logo: carelinx,
+        gig: 'CareLinx',
+        description:
+          'CareLinx connects Caregivers with elders seeking care nearby. They have a network of over 300,000 caregivers and offer flexible hours, great pay and professional development.',
+        promo: 'Sign Up Below and Get a Free Background Check!',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for CareLinx Workers',
+            link: 'https://www.indeed.com/cmp/Carelinx/reviews',
+          },
+        ],
+        gigsite: 'https://www.carelinx.com/p/nextwrs',
+
+        services: [],
+        subtypes: ['labor', 'care'],
+      },
+      {
         id: 'G0010',
         logo: amazon,
         gig: 'Amazon Flex',
@@ -1483,46 +1663,7 @@ export const initialState = {
         services: [],
         subtypes: ['rental', 'RV'],
       },
-      {
-        id: 'G0191',
-        logo: outdoorsy,
-        gig: 'Outdoorsy',
-        description:
-          'Outdoorsy is another RV rental marketplace. They perform DMV checks on all drivers, provide 24/7 roadside assistance and have a dedicated customer support team.',
-        promo: 'Sign Up and Get $50!',
-        resources: [
-          {
-            title: 'Trustpilot: Reviews for Outdoorsy',
-            link: 'https://www.trustpilot.com/review/www.outdoorsy.com',
-          },
-          {
-            title: 'r/outdoorsy: Subreddit for Outdoorsy Renters',
-            link: 'https://www.reddit.com/r/outdoorsy/',
-          },
-        ],
-        gigsite: 'https://www.outdoorsy.com/invite/g6o1lb',
 
-        services: [],
-        subtypes: ['rental', 'RV'],
-      },
-      {
-        id: 'G0194',
-        logo: ridersshare,
-        gig: 'Riders Share',
-        description:
-          'If you own a motercycle, and and it spends most of its time in your garage, Riders Share will connect you with drivers looking to rent it out. List your motorcycle for free and make an average of $150 per booking! All listings are protected by an A rated insurance provider.',
-        promo: 'Sign Up and Get $25!',
-        resources: [
-          {
-            title: 'Facebook: Riders Share Reviews',
-            link: 'https://www.facebook.com/pg/ridersshare/reviews/',
-          },
-        ],
-        gigsite: 'www.riders-share.com/welcome/markf+QdETy',
-
-        services: [],
-        subtypes: ['rental', 'car'],
-      },
       //
       //
       // Scooter Chargers
@@ -1617,28 +1758,7 @@ export const initialState = {
       //
       //
       //    Dog Walking Gigs
-      {
-        id: 'G0015',
-        logo: wag,
-        gig: 'Wag!',
-        description:
-          'Wag! is one of the largest dog walking apps. They offer flexibility, secure payment through Stripe, and donates money from 30 minute walks to feed shelter dogs.',
-        promo: 'Sign Up and Get a Free Walk!',
-        resources: [
-          {
-            title: 'Indeed: Reviews for Wag Workers',
-            link: 'https://www.indeed.com/cmp/Wag!-1/reviews',
-          },
-          {
-            title: 'r/WagWalker: Subreddit for Wag Walkers',
-            link: 'https://www.reddit.com/r/WagWalker/',
-          },
-        ],
-        gigsite: 'https://wagwalking.com/dog-walker',
 
-        services: [],
-        subtypes: ['labor', 'dog'],
-      },
       //
       //
       //    Anybody can do it labor
@@ -1682,24 +1802,6 @@ export const initialState = {
 
         services: [],
         subtypes: ['labor', 'handyman'],
-      },
-      {
-        id: 'G0021',
-        logo: wonolo,
-        gig: 'Wonolo',
-        description:
-          'Wonolo hires workers to perform certain jobs, like Warehouse Operations, General Labor, Food Production, Cleaning and Merchandising, for different Employers. They are quickly expanding across the US and are available in most major cities.',
-        promo: 'Accept a Job Through Wonolo and Earn a $100 Bonus!',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Wonolo Workers',
-            link: 'https://www.indeed.com/cmp/Wonolo/reviews',
-          },
-        ],
-        gigsite: 'https://www.wonolo.com/find-work',
-
-        services: [],
-        subtypes: ['labor'],
       },
       {
         id: 'G0022',
@@ -1787,25 +1889,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://lugg.com/become-a-lugger',
-
-        services: [],
-        subtypes: ['labor', 'mover'],
-      },
-      {
-        id: 'G0151',
-        logo: goshare,
-        gig: 'GoShare',
-        description:
-          'GoShare specializes in delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you have no truck you can apply as a helper. Depending on your driving situation, this gig can prove very lucrative.',
-        promo: 'Sign Up Below and Receieve $10!',
-        resources: [
-          {
-            title: 'Glassdoor: Job Reviews for GoShare Drivers',
-            link:
-              'https://www.glassdoor.com/Reviews/GoShare-Reviews-E1779925.htm',
-          },
-        ],
-        gigsite: 'https://goshare.app.link/Mark_Foster_MF6447',
 
         services: [],
         subtypes: ['labor', 'mover'],
@@ -2014,24 +2097,6 @@ export const initialState = {
         subtypes: ['labor', 'care'],
       },
       {
-        id: 'G0195',
-        logo: carelinx,
-        gig: 'CareLinx',
-        description:
-          'CareLinx connects Caregivers with elders seeking care nearby. They have a network of over 300,000 caregivers and offer flexible hours, great pay and professional development.',
-        promo: 'Sign Up Below and Get a Free Background Check!',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for CareLinx Workers',
-            link: 'https://www.indeed.com/cmp/Carelinx/reviews',
-          },
-        ],
-        gigsite: 'https://www.carelinx.com/p/nextwrs',
-
-        services: [],
-        subtypes: ['labor', 'care'],
-      },
-      {
         id: 'G0061',
         logo: helpr,
         gig: 'Helpr',
@@ -2072,28 +2137,7 @@ export const initialState = {
         services: [],
         subtypes: ['other', 'tech'],
       },
-      {
-        id: 'G0035',
-        logo: hellotech,
-        gig: 'HelloTech',
-        description:
-          'Have a plethora of technical knowledge? Wanna get paid to help those less technically advanced? HelloTech connects you with users in your area looking for tech help. You set your own schedule, and get paid weekly',
-        promo: 'Sign Up and Get $10!',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for HelloTech Workers',
-            link: 'https://www.indeed.com/cmp/Hellotech/reviews?fcountry=ALL',
-          },
-          {
-            title: 'r/HelloTech: Subreddit for HelloTech Workers',
-            link: 'https://www.reddit.com/r/HelloTech/',
-          },
-        ],
-        gigsite: 'http://fbuy.me/v/markfoster314',
 
-        services: [],
-        subtypes: ['other', 'tech'],
-      },
       //
       //
       // Artsy Gigs
@@ -2239,48 +2283,8 @@ export const initialState = {
         subtypes: ['other'],
       },
       // Mechanics
-      {
-        id: 'G0055',
-        logo: yourmechanic,
-        gig: 'YourMechanic',
-        description:
-          'YourMechanic offers at home mechanic services to users, and is a great way for people with auto repair skills to leverage the gig economy. You can make extra money providing car repairs and maitenance at the homes of clients.',
-        promo: 'Sign Up and Get $10!',
-        resources: [
-          {
-            title: 'Trustpilot: Reviews for YourMechanic',
-            link: 'https://www.trustpilot.com/review/yourmechanic.com',
-          },
-        ],
-        gigsite: 'https://www.yourmechanic.com/rl/IyhJRw1860682',
 
-        services: [],
-        subtypes: ['labor'],
-      },
       // Massages
-      {
-        id: 'G0056',
-        logo: zeel,
-        gig: 'Zeel',
-        description:
-          'Zeel is a service offering at home massages to users, and is a phenomenal way for massage therapists to leverage the gig economy. 18% gratuity is added to every in-home appointment and customers pay for late cancelations.',
-        promo: 'Sign Up With Code PAUSE20 and get $20!',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Zeel Workers',
-            link: 'https://www.indeed.com/cmp/Zeel/reviews',
-          },
-          {
-            title: 'Zeel or Soothe?',
-            link:
-              'https://www.reddit.com/r/massage/comments/adykig/zeel_or_soothe/',
-          },
-        ],
-        gigsite: 'https://www.zeel.com/apply',
-
-        services: [],
-        subtypes: ['other', 'beauty'],
-      },
       {
         id: 'G0064',
         logo: soothe,
