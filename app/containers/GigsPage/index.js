@@ -47,8 +47,21 @@ export function GigsPage({ loading, error, gigs }) {
   );
 
   const [state, setState] = React.useState({
-    drive: false,
-    labor: false,
+    rideshare: false,
+    packagedelivery: false,
+    fooddelivery: false,
+    delivery21: false,
+    gorcery: false,
+    home: false,
+    car: false,
+    boat: false,
+    parking: false,
+    rv: false,
+    scooter: false,
+    dog: false,
+    handyman: false,
+    mover: false,
+    landscaping: false,
     rent: false,
     other: false,
     gigs: allGigs,
@@ -83,11 +96,50 @@ export function GigsPage({ loading, error, gigs }) {
 
   const filterGigs = () => {
     const showGigs = [];
-    if (state.drive) {
-      showGigs.push('driving');
+    if (state.rideshare) {
+      showGigs.push('rideshare');
     }
-    if (state.labor) {
-      showGigs.push('labor');
+    if (state.packagedelivery) {
+      showGigs.push('packagedelivery');
+    }
+    if (state.fooddelivery) {
+      showGigs.push('fooddelivery');
+    }
+    if (state.delivery21) {
+      showGigs.push('21delivery');
+    }
+    if (state.grocery) {
+      showGigs.push('grocery');
+    }
+    if (state.home) {
+      showGigs.push('home');
+    }
+    if (state.car) {
+      showGigs.push('car');
+    }
+    if (state.boat) {
+      showGigs.push('boat');
+    }
+    if (state.parking) {
+      showGigs.push('parking');
+    }
+    if (state.rv) {
+      showGigs.push('RV');
+    }
+    if (state.scooter) {
+      showGigs.push('scooter');
+    }
+    if (state.dog) {
+      showGigs.push('dog');
+    }
+    if (state.handyman) {
+      showGigs.push('handyman');
+    }
+    if (state.mover) {
+      showGigs.push('mover');
+    }
+    if (state.landscaping) {
+      showGigs.push('landscaping');
     }
     if (state.rent) {
       showGigs.push('rental');
@@ -170,41 +222,177 @@ export function GigsPage({ loading, error, gigs }) {
       <div style={{ paddingLeft: '10px', paddingBottom: '40px' }}>
         <H1>Gig Filters</H1>
         <hr />
-        <H2>Categories</H2>
+
         <FormControl component="fieldset">
           <FormGroup>
+            <H2>Driving</H2>
             <FormControlLabel
               control={
                 <Checkbox
-                  checked={state.drive}
+                  checked={state.rideshare}
                   onChange={handleChange}
-                  name="drive"
+                  name="rideshare"
                   color="default"
                 />
               }
-              label="Driving"
+              label="Rideshare"
             />
             <FormControlLabel
               control={
                 <Checkbox
-                  checked={state.labor}
+                  checked={state.packagedelivery}
                   onChange={handleChange}
-                  name="labor"
+                  name="packagedelivery"
                   color="default"
                 />
               }
-              label="Labor"
+              label="Item Delivery"
             />
             <FormControlLabel
               control={
                 <Checkbox
-                  checked={state.rent}
+                  checked={state.fooddelivery}
                   onChange={handleChange}
-                  name="rent"
+                  name="fooddelivery"
                   color="default"
                 />
               }
-              label="Rental"
+              label="Food Delivery"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.delivery21}
+                  onChange={handleChange}
+                  name="delivery21"
+                  color="default"
+                />
+              }
+              label="21+ Delivery"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.grocery}
+                  onChange={handleChange}
+                  name="grocery"
+                  color="default"
+                />
+              }
+              label="Grocery Shopping"
+            />
+            <H2>Rental</H2>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.home}
+                  onChange={handleChange}
+                  name="home"
+                  color="default"
+                />
+              }
+              label="Home Rental"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.car}
+                  onChange={handleChange}
+                  name="car"
+                  color="default"
+                />
+              }
+              label="Car Rental"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.boat}
+                  onChange={handleChange}
+                  name="boat"
+                  color="default"
+                />
+              }
+              label="Boat Rental"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.parking}
+                  onChange={handleChange}
+                  name="parking"
+                  color="default"
+                />
+              }
+              label="Parking Spot Rental"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.rv}
+                  onChange={handleChange}
+                  name="rv"
+                  color="default"
+                />
+              }
+              label="RV Rental"
+            />
+            <H2>Labor</H2>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.dog}
+                  onChange={handleChange}
+                  name="dog"
+                  color="default"
+                />
+              }
+              label="Dog Walking / Care"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.handyman}
+                  onChange={handleChange}
+                  name="handyman"
+                  color="default"
+                />
+              }
+              label="HandyMan"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.mover}
+                  onChange={handleChange}
+                  name="mover"
+                  color="default"
+                />
+              }
+              label="Mover"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.landscaping}
+                  onChange={handleChange}
+                  name="landscaping"
+                  color="default"
+                />
+              }
+              label="Landscaping / Lawn Care"
+            />
+            <H2>Other</H2>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.scooter}
+                  onChange={handleChange}
+                  name="scooter"
+                  color="default"
+                />
+              }
+              label="Scooter Charging"
             />
             <FormControlLabel
               control={
