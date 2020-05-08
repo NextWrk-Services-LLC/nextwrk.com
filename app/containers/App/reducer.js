@@ -320,6 +320,7 @@ export const initialState = {
         description:
           'Boatsetter renters rent out their boats — either with or without a captain. Peace of mind and insurance is included in every rental, and you choose who rents your boat!',
         jobpromo: 'Rent Out Your Boat and Get an Extra $100!',
+        apppromo: 'Sign Up for Boatsetter and Get $25!',
         resources: [
           {
             title: 'Facebook: Boatsetter Reviews',
@@ -327,7 +328,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.boatsetter.com/referral/o/sqxkrtk',
-
+        appsite: 'https://www.boatsetter.com/referral/r/sqxkrtk',
         services: [],
         subtypes: ['rental', 'boat'],
       },
@@ -339,7 +340,7 @@ export const initialState = {
           'Rent nearby cars, trucks, and vans, by the hour or day, on Getaround. No lines or key exchanges. Simply rent, unlock, and go in an instant with the Getaround',
         description:
           'Getaround renters rent out their cars when not in use. It is available in most major cities, and is a great way to make money with little effort.',
-        apppromo: 'Sign Up and Get $20!',
+        apppromo: 'Sign Up for Getaround and Get $20!',
         resources: [
           {
             title: 'Yelp: Reviews for Getaround',
@@ -361,9 +362,11 @@ export const initialState = {
         id: 'G0003',
         logo: rover,
         gig: 'Rover',
+        app:
+          "Rover connects pet parents with a nationwide network of dog lovers who can't wait to watch their dog. Search for nearby dog sitters, day care providers, and dog walkers who’ll help care for your pet—at their place or yours.",
         description:
-          'Love animals? Wanna earn some extra money? Rover will pay you to watch dogs as a Sitter or walk dogs as a Walker. They offer flexibility and can help you earn up to $1,000 a month working with animals!',
-        apppromo: 'Sign Up and Get $20!',
+          'Rover pays workers to walk dogs as a walker or watch dogs as a sitter. Love animals? Wanna earn some extra money? They offer flexibility and can help you earn up to $1,000 a month working with animals!',
+        apppromo: 'Sign Up for Rover and Get $20!',
         resources: [
           {
             title: 'Indeed: Reviews for Rover Workers',
@@ -384,9 +387,11 @@ export const initialState = {
         id: 'G0154',
         logo: urbansitter,
         gig: 'UrbanSitter',
+        app:
+          'UrbanSitter lets you find and book babysitters and nannies of people you know and trust. Last-minute sitters, backup care, and part-time nannies available.',
         description:
-          'UrbanSitter lets users find and book babysitters and nannies in their communities. If you are a nanny or babysitter, it is a great way to pick up new clients!',
-        apppromo: 'Sign Up and Get $25!',
+          'UrbanSitter hires nannies and babysitters and connects them with new clients in their communities. If you are a nanny or babysitter, it is a great way to earn some extra money!',
+        apppromo: 'Sign Up for UrbanSitter and Get $25!',
         resources: [
           {
             title: 'Indeed: Job Reviews for UrbanSitter Workers',
