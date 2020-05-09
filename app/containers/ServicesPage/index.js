@@ -7,6 +7,7 @@
 
 import React, { memo } from 'react';
 import styled from 'styled-components';
+import { useMediaQuery } from 'react-responsive';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
@@ -33,6 +34,7 @@ import Img from './Img';
 import servicesheader from './img/servicesheader.png';
 
 export function ServicesPage({ location, loading, error, services, gigs }) {
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   const allServices = services.filter(obj => obj.id.startsWith('S'));
   const searchGigs = [];
   gigs.forEach(item =>
@@ -83,6 +85,30 @@ export function ServicesPage({ location, loading, error, services, gigs }) {
     });
   };
 
+  const SearchFld = (
+    <React.Fragment>
+      <Wrapper>
+        <SearchImg src={search} alt="Search" />
+        <InputTop
+          type="text"
+          onChange={textChange}
+          placeholder="Services For Which Gig?"
+          id="srchfld"
+          autocomplete="off"
+        />
+      </Wrapper>
+      <LinkDropdown id="myDropdown">
+        {state.searchList.map(item =>
+          item.show ? (
+            <DropA key={item.id} href={`/services?fltr=${item.id}`}>
+              {item.name}
+            </DropA>
+          ) : null,
+        )}
+      </LinkDropdown>
+    </React.Fragment>
+  );
+
   return (
     <div>
       <Helmet>
@@ -94,28 +120,36 @@ export function ServicesPage({ location, loading, error, services, gigs }) {
       </Helmet>
       <Img src={servicesheader} alt="Services Page Header" />
       <BodySpacing>
-        {gigId.length === 5 ? <H1>{`${selectedGig.gig} Services`}</H1> : null}
-
-        <Wrapper>
-          <SearchImg src={search} alt="Search" />
-          <InputTop
-            type="text"
-            onChange={textChange}
-            placeholder="Find Services For Which Gig?"
-            id="srchfld"
-            autocomplete="off"
-          />
-        </Wrapper>
-        <LinkDropdown id="myDropdown">
-          {state.searchList.map(item =>
-            item.show ? (
-              <DropA key={item.id} href={`/services?fltr=${item.id}`}>
-                {item.name}
-              </DropA>
-            ) : null,
+        <div style={{ textAlign: 'center' }}>
+          {gigId.length === 5 ? (
+            <H1>{`${selectedGig.gig} Services`}</H1>
+          ) : (
+            <H1>Search for Services</H1>
           )}
-        </LinkDropdown>
-        <ServicesList {...servicesProps} />
+        </div>
+        {isMobile ? (
+          <div>
+            {SearchFld}
+            {gigId.length === 5 ? (
+              <ServicesList {...servicesProps} />
+            ) : null}{' '}
+          </div>
+        ) : (
+          <table>
+            <tbody>
+              <tr>
+                <td style={{ width: '33%', verticalAlign: 'top' }}>
+                  {SearchFld}
+                </td>
+                <td>
+                  {gigId.length === 5 ? (
+                    <ServicesList {...servicesProps} />
+                  ) : null}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        )}
       </BodySpacing>
     </div>
   );

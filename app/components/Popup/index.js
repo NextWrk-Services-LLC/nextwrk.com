@@ -6,10 +6,10 @@
 
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import H1 from 'components/H1';
 import H2 from 'components/H2';
-import Button from 'components/Button';
 import Ul from 'components/Ul';
 import Li from 'components/Li';
 import A from './A';
@@ -21,6 +21,25 @@ import Outer from './Outer';
 import Inner from './Inner';
 import Title from './Title';
 import TitleLeft from './TitleLeft';
+
+const Button = styled.button`
+  border-radius: 60px;
+  border: none;
+  background: #3b9ad5;
+  color: #fff;
+  padding: 10px 20px;
+  outline: none;
+  font-size: 24px;
+  font-weight: bold;
+  &:hover {
+    box-shadow: 0px 0px 3px gray;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    font-weight: normal;
+    font-size: 16px;
+  }
+`;
 
 function Popup({ close, info }) {
   const wrapperRef = useRef(null);
@@ -55,20 +74,14 @@ function Popup({ close, info }) {
                 <Title>
                   <H1>{info.gig}</H1>
                 </Title>
+                <hr />
               </td>
             </tr>
             <tr>
               <td>
-                <TitleLeft>
-                  <H2>Description</H2>
-                </TitleLeft>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <TitleLeft>
+                <div style={{ textAlign: 'left', paddingTop: '10px' }}>
                   <P>{info.description}</P>
-                </TitleLeft>
+                </div>
               </td>
             </tr>
             {info.promo ? (
@@ -137,9 +150,9 @@ function Popup({ close, info }) {
             ) : null}
             <tr>
               <td>
-                <TitleLeft>
+                <div style={{ textAlign: 'center' }}>
                   <Button href={info.gigsite}>TRY IT OUT TODAY!</Button>
-                </TitleLeft>
+                </div>
               </td>
             </tr>
           </tbody>

@@ -4,6 +4,7 @@ const P = styled.p`
   margin: 0;
   padding: 0;
   color: #000000;
+  font-size: 18px;
   @media (max-width: 768px) {
     font-size: 14px;
   }

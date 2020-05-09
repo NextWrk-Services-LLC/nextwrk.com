@@ -20,6 +20,7 @@ import Ul from 'components/Ul';
 import Li from 'components/Li';
 import Popup from 'components/Popup';
 
+import Deal from 'containers/GigListItem/Deal';
 import P from './P';
 import Img from './Img';
 import Wrapper from './Wrapper';
@@ -64,7 +65,7 @@ export function DealsListItem(props) {
           </Ul>
           {item.promo ? (
             <div style={{ textAlign: 'center' }}>
-              <hr /> <P>{item.promo}</P>
+              <hr /> <Deal>{item.promo}</Deal>
             </div>
           ) : null}
         </Wrapper>

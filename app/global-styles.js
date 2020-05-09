@@ -24,8 +24,13 @@ const GlobalStyle = createGlobalStyle`
 
   p,
   label {
+    font-size: 18px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.5em;
+  }
+
+  a {
+    font-size: 18px;
   }
 `;
 
