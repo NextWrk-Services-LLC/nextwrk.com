@@ -105,7 +105,7 @@ import lugg from './img/lugg.png';
 import heal from './img/heal.png';
 import veryable from './img/veryable.png';
 import spothero from './img/spothero1.png';
-import adway from './img/adway.png';
+// import adway from './img/adway.png';
 import burpy from './img/burpy.png';
 import takl from './img/takl1.png';
 import everlance from './img/everlance.png';
@@ -210,7 +210,7 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0033',
@@ -264,12 +264,12 @@ export const initialState = {
         pay: 'Doordash pays Dashers between $2 and $10 per delivery',
         services: [
           'S0001',
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -299,12 +299,12 @@ export const initialState = {
         appsite: 'https://share.shipt.com/DQgBd',
         pay: 'The Average Shipt Shopper Makes Around $15 an hour',
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -435,7 +435,7 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0033',
@@ -451,7 +451,7 @@ export const initialState = {
           'Grabr is a peer to peer delivery service focussed on international shipments',
         description:
           'Earn money while traveling! Grabr lets travelers subsidize their trips by delivering a handful of items. You can earn $200+ every time you travel abroad.',
-        promo: 'Sign Up and Get $10!',
+        apppromo: 'Sign Up and Get $10!',
         resources: [
           {
             title: 'Grabr Reviews',
@@ -464,12 +464,12 @@ export const initialState = {
           'https://grabr.io/invitation/mark-foster?utm_campaign=web&utm_source=referral_program&utm_medium=copy_link',
         pay: 'Earn $200+ Every Time You Travel Abroad',
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -482,7 +482,7 @@ export const initialState = {
         gig: 'Outdoorsy',
         description:
           'Outdoorsy is another RV rental marketplace. They perform DMV checks on all drivers, provide 24/7 roadside assistance and have a dedicated customer support team.',
-        promo: 'Sign Up and Get $50!',
+        apppromo: 'Sign Up and Get $50!',
         resources: [
           {
             title: 'Trustpilot: Reviews for Outdoorsy',
@@ -504,7 +504,7 @@ export const initialState = {
         gig: 'Riders Share',
         description:
           'If you own a motercycle, and and it spends most of its time in your garage, Riders Share will connect you with drivers looking to rent it out. List your motorcycle for free and make an average of $150 per booking! All listings are protected by an A rated insurance provider.',
-        promo: 'Sign Up and Get $25!',
+        apppromo: 'Sign Up and Get $25!',
         resources: [
           {
             title: 'Facebook: Riders Share Reviews',
@@ -522,7 +522,7 @@ export const initialState = {
         gig: 'Wag!',
         description:
           'Wag! is one of the largest dog walking apps. They offer flexibility, secure payment through Stripe, and donates money from 30 minute walks to feed shelter dogs.',
-        promo: 'Sign Up and Get a Free Walk!',
+        apppromo: 'Sign Up and Get a Free Walk!',
         resources: [
           {
             title: 'Indeed: Reviews for Wag Workers',
@@ -544,7 +544,7 @@ export const initialState = {
         gig: 'Wonolo',
         description:
           'Wonolo hires workers to perform certain jobs, like Warehouse Operations, General Labor, Food Production, Cleaning and Merchandising, for different Employers. They are quickly expanding across the US and are available in most major cities.',
-        promo: 'Accept a Job Through Wonolo and Earn a $100 Bonus!',
+        jobpromo: 'Accept a Job Through Wonolo and Earn a $100 Bonus!',
         resources: [
           {
             title: 'Indeed: Job Reviews for Wonolo Workers',
@@ -562,7 +562,7 @@ export const initialState = {
         gig: 'GoShare',
         description:
           'GoShare specializes in delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you have no truck you can apply as a helper. Depending on your driving situation, this gig can prove very lucrative.',
-        promo: 'Sign Up Below and Receieve $10!',
+        apppromo: 'Sign Up and Get $10!',
         resources: [
           {
             title: 'Glassdoor: Job Reviews for GoShare Drivers',
@@ -581,7 +581,7 @@ export const initialState = {
         gig: 'HelloTech',
         description:
           'Have a plethora of technical knowledge? Wanna get paid to help those less technically advanced? HelloTech connects you with users in your area looking for tech help. You set your own schedule, and get paid weekly',
-        promo: 'Sign Up and Get $10!',
+        apppromo: 'Sign Up and Get $10!',
         resources: [
           {
             title: 'Indeed: Job Reviews for HelloTech Workers',
@@ -603,7 +603,7 @@ export const initialState = {
         gig: 'YourMechanic',
         description:
           'YourMechanic offers at home mechanic services to users, and is a great way for people with auto repair skills to leverage the gig economy. You can make extra money providing car repairs and maitenance at the homes of clients.',
-        promo: 'Sign Up and Get $10!',
+        apppromo: 'Sign Up and Get $10!',
         resources: [
           {
             title: 'Trustpilot: Reviews for YourMechanic',
@@ -621,7 +621,7 @@ export const initialState = {
         gig: 'Zeel',
         description:
           'Zeel is a service offering at home massages to users, and is a phenomenal way for massage therapists to leverage the gig economy. 18% gratuity is added to every in-home appointment and customers pay for late cancelations.',
-        promo: 'Sign Up With Code PAUSE20 and get $20!',
+        apppromo: 'Sign Up With Code PAUSE20 and get $20!',
         resources: [
           {
             title: 'Indeed: Job Reviews for Zeel Workers',
@@ -644,7 +644,7 @@ export const initialState = {
         gig: 'CareLinx',
         description:
           'CareLinx connects Caregivers with elders seeking care nearby. They have a network of over 300,000 caregivers and offer flexible hours, great pay and professional development.',
-        promo: 'Sign Up Below and Get a Free Background Check!',
+        jobpromo: 'Get a Free Background Check!',
         resources: [
           {
             title: 'Indeed: Job Reviews for CareLinx Workers',
@@ -679,12 +679,12 @@ export const initialState = {
         pay: 'Amazon Flex Drivers can make between $18 and $25 an hour',
         services: [
           'S0001',
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -708,12 +708,12 @@ export const initialState = {
         appsite: 'https://skipcart.com/',
         pay: 'Skipcart Drivers Can Earn Up to $22/hr',
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -738,12 +738,12 @@ export const initialState = {
         appsite: 'https://pickupnow.com/',
         pay: 'Make a minimum of $25 per run and up to $50/hr',
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -758,7 +758,7 @@ export const initialState = {
           "Bungii is a mobile app that instantly helps move, haul and deliver your stuff across town by connecting you with a local driver and pickup truck. They've been compared to popular ride sharing apps but instead of moving people, they move people's stuff.",
         description:
           'If you own a truck and can do some heavy lifting, Bungii will help you earn up to $40/hour doing deliveries for people in your community. They ask for you to own a 2005 or newer and rachet straps, bungee cords and moving blankets to secure your deliveries.',
-        promo: 'Sign Up With Promo Code 5XDKA and get $10!',
+        apppromo: 'Sign Up With Promo Code 5XDKA and get $10!',
         resources: [
           {
             title: 'Bungii Reviews',
@@ -770,12 +770,12 @@ export const initialState = {
         appsite: 'https://bungii.com/',
         pay: 'Bungii Workers Earn Up to $40/hr',
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -789,7 +789,7 @@ export const initialState = {
         description:
           'TommyRunners deliver buliding materials to individuals in their communities. You need to own a truck or van and be willing to do some heavy lifting.',
         indeed: 'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
-        promo: 'Sign Up and Get $25!',
+        apppromo: 'Sign Up and Get $25!',
         resources: [
           {
             title: 'TommyRun Reviews',
@@ -801,12 +801,12 @@ export const initialState = {
         appsite: 'https://tommyrun.app.link/vanKPpCzN5',
         pay: 'Average between $12 and $20/hr',
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -829,12 +829,12 @@ export const initialState = {
         gigsite: 'https://www.uship.com/register/',
 
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -857,12 +857,12 @@ export const initialState = {
         gigsite: 'https://www.dispatchit.com/drivers/',
 
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -885,12 +885,12 @@ export const initialState = {
         gigsite: 'https://www.ideliverthat.com/driver',
 
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -905,7 +905,7 @@ export const initialState = {
           'Postmates is the largest, most reliable on-demand delivery and pickup platform. Able to deliver anything from anywhere, Postmates is the food delivery, grocery delivery, whatever-you-can-think-of delivery app to bring what you crave right to your door.',
         description:
           'Postmates drivers deliver for one of the fastest growing food-delivery apps. They get delivery requests from the Postmates app, navigate to the store or restaurant and deliver to the customer location.',
-        promo:
+        jobpromo:
           'Complete a certain number of deliveries within 14 days and earn a guaranteed minimum payout.',
         resources: [
           {
@@ -923,12 +923,12 @@ export const initialState = {
           'Postmates pay ranges from around $12/hr for Drivers to around $25/hr for Truck Drivers',
         services: [
           'S0001',
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -959,12 +959,12 @@ export const initialState = {
           'Uber Eats drivers can expect to make around $8 – $12 per hour after factoring in vehicle expenses',
         services: [
           'S0001',
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -995,12 +995,12 @@ export const initialState = {
         pay: 'Grubhub Drivers typically make around $12 an hour',
         services: [
           'S0001',
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -1027,12 +1027,12 @@ export const initialState = {
         pay:
           'Daily pay ranges from around $200 a day for Drivers and $400 a day for Couriers',
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -1062,12 +1062,12 @@ export const initialState = {
         appsite: 'https://favordelivery.com/download',
         pay: 'Favor provides a $9 per hour base pay.',
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -1090,12 +1090,12 @@ export const initialState = {
         gigsite: 'http://jobs.zifty.com/',
 
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -1120,12 +1120,12 @@ export const initialState = {
         gigsite: 'https://www.peachd.com/jobs/',
         appsite: 'https://www.peachd.com/',
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -1152,12 +1152,12 @@ export const initialState = {
         gigsite: 'https://deliveroo.co.uk/apply',
         appsite: 'https://deliveroo.co.uk/app?manual=1',
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -1188,12 +1188,12 @@ export const initialState = {
         appsite: 'https://gopuff.com/home',
         pay: 'Gopuff Drivers Average Approximately $17/hr',
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -1217,12 +1217,12 @@ export const initialState = {
         gigsite: 'https://drizly.com/liquor-stores-near-me',
 
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -1245,12 +1245,12 @@ export const initialState = {
         gigsite: 'https://www.saucey.com/apply',
 
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -1278,12 +1278,12 @@ export const initialState = {
         gigsite: 'https://www.drive.eaze.com/',
 
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -1307,12 +1307,12 @@ export const initialState = {
         gigsite: 'https://minibardelivery.com/',
 
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -1344,12 +1344,12 @@ export const initialState = {
           'During busy shifts, shoppers can earn $20 or more an hour. Several say the minimum base pay is $10 an hour',
         services: [
           'S0001',
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -1373,12 +1373,12 @@ export const initialState = {
         gigsite: 'https://shoppers.burpy.com/join-as-shopper',
 
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -1401,12 +1401,12 @@ export const initialState = {
         gigsite: 'https://www.deliv.co/drivers/',
 
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -1429,12 +1429,12 @@ export const initialState = {
         gigsite: 'https://getburro.com/drivers.html',
 
         services: [
-          'S004',
+          'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0037',
@@ -2502,7 +2502,7 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0033',
@@ -2518,7 +2518,7 @@ export const initialState = {
           "Zūm is a reliable, technology platform that connects busy families with providers (Zūmers,) of kids' transportation and childcare services",
         description:
           'Zum is another carpooling rideshare app similar to HopSkipDrive. Zum drivers provide kids with transportation and care. It is available in California, Arizona, Texas, Illinois, Florida, Washington and Washington DC.',
-        promo: 'Receive up to $500 sign up bonus!',
+        jobpromo: 'Receive up to $500 sign up bonus!',
         resources: [
           {
             title: 'Indeed: Job Reviews from Zum Drivers',
@@ -2534,7 +2534,7 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0033',
@@ -2566,7 +2566,7 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0033',
@@ -2599,7 +2599,7 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-          'S0038',
+
           'S0039',
           'S0040',
           'S0033',
@@ -2692,96 +2692,75 @@ export const initialState = {
         logo: gridwise,
         gig: 'Gridwise',
         description:
-          'Gridwise is an intelligence platform which provides information on ridesharing insights to users, helping drivers improve efficiency and profits on the road.',
+          "Gridwise increases rideshare drivers' earnings by 39% by letting them know how and where to drive and save thousands a year on taxes.",
         indeed:
           'https://appgrooves.com/app/gridwise-earn-more-by-driving-smarter-by-swerv-technologies-llc/negative',
         promo: 'Free Download on IOS and Android!',
-        resources: '',
         gigsite: 'https://gridwise.io/',
-
-        subtypes: ['driving', 'rideshare'],
       },
       {
         id: 'S0002',
         logo: mystro,
         gig: 'Mystro',
         description:
-          'Mystro is an app that orchestrates incoming passenger requests between the Uber and Lyft rideshare apps, so you can stop clicking back and forth between the apps.',
+          'Mystro combines the Uber and Lyft drivers apps allowing you to easily drive both at the same time. They also evaluate trip requests so you only accept ideal trips.',
         indeed:
           'https://play.google.com/store/apps/details?id=partners.driver.mystro&hl=en_US',
         promo: 'Try Mystro Free for 14 Days!',
-        resources: '',
         gigsite: 'https://mystrodriver.com/registration-page-half-photo',
-
-        subtypes: ['driving', 'rideshare'],
       },
       {
         id: 'S0003',
         logo: surge,
         gig: 'Surge 2x',
         description:
-          'Surge tracks Uber surges in your area. By using Surge you are able to only drive during surges, drastically increasing your profit.',
+          'Surge lets you monitor Uber surges, notifying you when a surge starts, increases/decreases and ends, so you know when to drive to make the most money.',
         indeed: 'https://apps.apple.com/us/app/surge-2x/id986581500',
         promo: '',
-        resources: '',
         gigsite:
           'https://apps.apple.com/us/app/surge-surge-tracking-for-uber/id986581500',
-
-        subtypes: ['driving', 'rideshare'],
       },
       {
         id: 'S0004',
         logo: sherpashare,
         gig: 'SherpaShare',
         description:
-          'SherpaShare is a rideshare driver assistant that helps drivers reduce taxes, manage expenses, and boost earnings.',
+          'SherpaShare helps rideshare drivers reduce taxes, manage expenses, and boost earnings. Their financial management tool also allows drivers to track mileage, analyze expenses and consolidate earnings.',
         indeed:
           'https://apps.apple.com/us/app/sherpashare-driver-assistant/id975868991',
         promo: '',
-        resources: '',
         gigsite: 'https://www.sherpashare.com/',
-
-        subtypes: ['driving', 'rideshare'],
       },
       {
         id: 'S0005',
         logo: triplog,
         gig: 'TripLog',
         description:
-          'As a gig worker, the miles you drive for work are tax deductable. Triplog helps you track those miles so you can maximize your returns!',
+          'Triplog helps users save an average of $7,200 annually. As a gig worker, the miles you drive for work are tax deductable. Triplog helps you track those miles so you can maximize your returns. They are also fully IRS compliant, protecting you in case of audit.',
         indeed: 'https://reviews.financesonline.com/p/triplog/',
         promo: 'Sign Up Below for a Free 30 Day Trial and 20% Off!',
-        resources: '',
         gigsite: 'http://trplg.co/389373',
-
-        subtypes: ['business'],
       },
       {
         id: 'S0006',
         logo: everlance,
         gig: 'Everlance',
         description:
-          'Everlance is another automatic mileage tracker and expense log for taxes or reimbursements for gig workers.',
+          'Everlance automatically logs tax-deductible business mileage, expenses and receipts, making it easy to fill out your taxes.',
         indeed:
           'https://appgrooves.com/app/everlance-mileage-log-expense-and-receipt-tracker-by-everlance-inc',
         promo: '',
-        resources: '',
         gigsite: 'https://www.everlance.com/',
-
-        subtypes: ['driving', 'business'],
       },
       {
         id: 'S0030',
         logo: grabbit,
         gig: 'Grabb-it',
         description:
-          'Grabb-it helps rideshare drivers make more. Sign up and they give you a free screen to display advertisements outside your window, then pay you for your driving time.',
+          "Grabb-it will pay you around $5/hr to turn your cars' side rear window into a full color display playing location aware ads.",
         indeed: 'https://www.trustpilot.com/review/www.thesocialdelivery.com',
         promo: '',
-        resources: '',
         gigsite: 'https://grabb.io/',
-
-        subtypes: ['driving', 'rideshare'],
       },
       {
         id: 'S0031',
@@ -2791,75 +2770,47 @@ export const initialState = {
           'Hurdlr is an automatic business expenses and mileage tracker. They have cumulatively saved over $300M in taxes.',
         indeed: 'https://investorjunkie.com/reviews/hurdlr/',
         promo: '',
-        resources: '',
         gigsite: 'https://www.hurdlr.com/',
-
-        subtypes: ['driving', 'business'],
-      },
-      {
-        id: 'S0038',
-        logo: adway,
-        gig: 'ADWAY',
-        description:
-          'If you are a Lyft, Instacart, Postmates, Doordash or any other driving/delivery company driver, you can make extra money by wrapping up your car in ads.',
-        indeed: '',
-        promo: '',
-        resources: '',
-        gigsite: 'https://www.adwayusa.com/',
-
-        subtypes: ['driving'],
       },
       {
         id: 'S0039',
         logo: nickelytics,
         gig: 'Nickelytics',
         description:
-          'Nickelytics process is simple, they put ads on vehicles that drive through busy city streets. If you are working as a rideshare or delivery driver, you spend a lot of time on the road, Nickelytics helps you earn even more for your time.',
+          'Nickelytics will wrap an ad on your vehicle and pay you as you drive through city streets. Depending on routes, wrap type and distance covered you could make up to $500/month.',
         indeed: '',
         promo: '',
-        resources: '',
         gigsite: 'https://www.nickelytics.com/',
-
-        subtypes: ['driving'],
       },
       {
         id: 'S0040',
         logo: wrapify,
         gig: 'Wrapify',
         description:
-          'Wrapify will help you earn extra income if you are frequently driving by wrapping your vehicle in eye-catching advertising.',
+          'Wrapify wraps cars with advertisements and pays drivers as they drive. For rideshare drivers with a full wrap they estimate you can earn an extra $264-$452 per month.',
         indeed: 'https://appgrooves.com/app/wrapify-by-wrapify-inc/',
         promo: '',
-        resources: '',
         gigsite: 'https://wrapify.com/',
-
-        subtypes: ['driving'],
       },
       {
         id: 'S0033',
         logo: octopus,
         gig: 'Play Octopus',
         description:
-          'Octopus provides rideshare drivers with interactive tablets and accessories. Riders enjoy games and cash prizes, and they run short ads so drivers can earn up to $100 extra a month!',
+          'Octopus provides rideshare drivers with interactive tablets and accessories for their passengers to use as they ride. Riders enjoy games and cash prizes, and they run short ads so drivers can earn up to $100 extra a month!',
         indeed: 'https://www.playoctopus.com/driver-reviews/',
         promo: '',
-        resources: '',
         gigsite: 'https://www.playoctopus.com/drivers/',
-
-        subtypes: ['driving'],
       },
       {
         id: 'S0037',
         logo: stickerride,
         gig: 'Sticker Ride',
         description:
-          'StickerRide helps you make money as you drive! Drive around town and get compensated for your vehicle expenses such as gas, car washes, and parking.',
+          'Sticker Ride pays rideshare drivers to wrap their cars in advertisements they can choose. They also help neat drivers save on their car insurance.',
         indeed: 'https://apps.apple.com/us/app/stickerride/id870548113',
         promo: '',
-        resources: '',
         gigsite: 'https://stickerride.com/',
-
-        subtypes: ['driving'],
       },
       // Scooter apps
       {
@@ -2867,14 +2818,11 @@ export const initialState = {
         logo: scootermap,
         gig: 'ScooterMap',
         description:
-          'Jump Scooters, Limes, Birds, Bolts, Skip... there are so many scooter companies you want to charge for! ScooterMap has a simple solution: all scooters on one app.',
+          'ScooterMap puts all the scooters from all the brands into one convenient app, making it easier for chargers to locate new scooters and earn more money.',
         indeed:
           'https://apps.apple.com/us/app/scooter-map-all-the-scooters/id1437698355',
         promo: '',
-        resources: '',
         gigsite: 'https://scootermap.com/?sc_referral=62591ccf',
-
-        subtypes: ['scooter', 'other'],
       },
       // Products and classes
       //
@@ -2918,12 +2866,8 @@ export const initialState = {
         gig: 'Acorns',
         description:
           'Acorns automatically invests your spare change into a portfolio built by experts.',
-        indeed: '',
-        promo: 'Sign up today and get a free $5 for your account!',
-        resources: '',
+        promo: 'Sign Up and Get $5!',
         gigsite: 'https://acorns.com/invite/SGU9A3',
-
-        subtypes: [''],
       },
       {
         id: 'D0002',
@@ -2931,38 +2875,26 @@ export const initialState = {
         gig: 'Robinhood',
         description:
           'Robinhood is a mobile app for trading stocks and options comission free.',
-        indeed: '',
-        promo: 'Sign up today and get a free stock for your account!',
-        resources: '',
+        promo: 'Get a Free Stock When You Sign Up!',
         gigsite: 'https://join.robinhood.com/markf1248',
-
-        subtypes: [''],
       },
       {
         id: 'D0003',
         logo: rakuten,
         gig: 'Rakuten',
         description:
-          'Rakuten is the worlds most popular cashback site and mobile app. Their services help people save money with cash back and coupons at over 2,000 online stores. Their goal is turn everyday spenders into smart shoppers by getting the most out of their money.',
-        indeed: '',
-        promo: 'Spend $30 on Rakuten and get $30!',
-        resources: '',
+          'Formerly Ebates, Rakuten gives you cashback for shopping at over 2,500 stores.',
+        promo: 'Sign Up and Get $30!',
         gigsite: 'https://go.rakuten.com/MARKFO238',
-
-        subtypes: [''],
       },
       {
         id: 'D0004',
         logo: cashapp,
         gig: 'Cash App',
         description:
-          'Cash App is, quite simply, an app for sending and receiving money. Users can create a free account that will then let them instantly send or receive money from other users within the same country.',
-        indeed: '',
-        promo: 'Sign Up for Cash App and get $5!',
-        resources: '',
+          'Cash App is an app for sending and receiving money fast and easy.',
+        promo: 'Sign Up and Get $5!',
         gigsite: 'https://cash.app/app/QXGKDDH',
-
-        subtypes: [''],
       },
     ],
   },

@@ -6,7 +6,7 @@ const Deal = styled.p`
   padding: 0;
   font-size: 24px;
   @media (max-width: 768px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
 

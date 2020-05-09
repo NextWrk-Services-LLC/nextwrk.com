@@ -6,6 +6,7 @@
  */
 
 import React, { memo } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
@@ -100,6 +101,7 @@ const ASm = styled.a`
 `;
 
 export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   const info = allGigs.filter(obj => obj.id.includes(gigId))[0];
 
   function getServices(target, pattern) {
@@ -154,24 +156,49 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
         </Table>
         <Table>
           <tbody>
-            <tr>
-              <td style={{ width: '50%', verticalAlign: 'top' }}>
-                <a href={info.appsite ? info.appsite : info.gigsite}>
-                  <Button>Get The App</Button>
-                </a>
-                <div style={{ textAlign: 'center' }}>
-                  <H1>{info.apppromo}</H1>
-                </div>
-              </td>
-              <td style={{ width: '50%', verticalAlign: 'top' }}>
-                <a href={info.gigsite}>
-                  <Button>View The Job</Button>
-                </a>
-                <div style={{ textAlign: 'center' }}>
-                  <H1>{info.jobpromo}</H1>
-                </div>
-              </td>
-            </tr>
+            {isMobile ? (
+              <React.Fragment>
+                <tr>
+                  <td style={{ verticalAlign: 'top' }}>
+                    <a href={info.appsite ? info.appsite : info.gigsite}>
+                      <Button>Get The App</Button>
+                    </a>
+                    <div style={{ textAlign: 'center' }}>
+                      <H2>{info.apppromo}</H2>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style={{ verticalAlign: 'top' }}>
+                    <a href={info.gigsite}>
+                      <Button>View The Job</Button>
+                    </a>
+                    <div style={{ textAlign: 'center' }}>
+                      <H2>{info.jobpromo}</H2>
+                    </div>
+                  </td>
+                </tr>
+              </React.Fragment>
+            ) : (
+              <tr>
+                <td style={{ width: '50%', verticalAlign: 'top' }}>
+                  <a href={info.appsite ? info.appsite : info.gigsite}>
+                    <Button>Get The App</Button>
+                  </a>
+                  <div style={{ textAlign: 'center' }}>
+                    <H2>{info.apppromo}</H2>
+                  </div>
+                </td>
+                <td style={{ width: '50%', verticalAlign: 'top' }}>
+                  <a href={info.gigsite}>
+                    <Button>View The Job</Button>
+                  </a>
+                  <div style={{ textAlign: 'center' }}>
+                    <H2>{info.jobpromo}</H2>
+                  </div>
+                </td>
+              </tr>
+            )}
           </tbody>
         </Table>
         <hr />
