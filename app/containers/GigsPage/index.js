@@ -74,6 +74,7 @@ export function GigsPage({ loading, error, gigs }) {
     showSearchList: false,
     numCards: 20,
     loadMore: true,
+    showMobile: false,
   });
 
   const LinkDropdown = styled.div`
@@ -85,6 +86,20 @@ export function GigsPage({ loading, error, gigs }) {
     min-width: 230px;
     border: 1px solid #808080;
     z-index: 1;
+  `;
+
+  const FilterBtn = styled.button`
+    margin-top: 0px;
+    padding-top: 18px;
+    padding-left: 20px;
+    color: #3b9ad5;
+    font-size: 20px;
+    border: none;
+    background-color: #ffffff;
+  `;
+
+  const HideableTr = styled.tr`
+    display: ${state.showMobile ? '' : 'none'};
   `;
 
   const handleChange = event => {
@@ -175,6 +190,14 @@ export function GigsPage({ loading, error, gigs }) {
           : allGigs.filter(obj => contains(obj.subtypes, showGigs)),
       numCards: 20,
       loadMore: true,
+    });
+  };
+
+  const toggleMobile = () => {
+    const newShow = !state.showMobile;
+    setState({
+      ...state,
+      showMobile: newShow,
     });
   };
 
@@ -511,12 +534,19 @@ export function GigsPage({ loading, error, gigs }) {
           content="There are a plethora of jobs available to anyone with a phone, car, and/or skill. NextWrk's Gig Page helps exposes individuals to new opportunities in the gig economy, and helps them find the best jobs for them!"
         />
       </Helmet>
+      {isMobile ? (
+        <div style={{ height: '64px', backgroundColor: `#ffffff` }}>
+          <FilterBtn type="submit" onClick={toggleMobile}>
+            Filter
+          </FilterBtn>
+        </div>
+      ) : null}
       <BodySpacing>
         <table>
           <tbody>
             {isMobile ? (
               <React.Fragment>
-                <tr>{form}</tr>
+                <HideableTr>{form}</HideableTr>
                 <tr>{main}</tr>
               </React.Fragment>
             ) : (
