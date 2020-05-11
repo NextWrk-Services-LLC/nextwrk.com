@@ -22,7 +22,7 @@ import Inner from './Inner';
 import Title from './Title';
 import TitleLeft from './TitleLeft';
 
-const Button = styled.button`
+const Button = styled.a`
   border-radius: 60px;
   border: none;
   background: #3b9ad5;
@@ -31,6 +31,7 @@ const Button = styled.button`
   outline: none;
   font-size: 24px;
   font-weight: bold;
+  text-decoration: none;
   &:hover {
     box-shadow: 0px 0px 3px gray;
     cursor: pointer;
@@ -151,7 +152,7 @@ function Popup({ close, info }) {
             <tr>
               <td>
                 <div style={{ textAlign: 'center' }}>
-                  <Button href={info.gigsite}>TRY IT OUT TODAY!</Button>
+                  <Button href={info.gigsite}>TRY IT OUT</Button>
                 </div>
               </td>
             </tr>

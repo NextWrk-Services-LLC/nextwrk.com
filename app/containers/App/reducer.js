@@ -379,7 +379,8 @@ export const initialState = {
           },
         ],
         gigsite: 'http://share.rover.com/SWhzJ',
-
+        pay:
+          'Average part-time salary is said to be around $1,000 a month while those who treat it as a full time job can, according to some accounts, earn around $3,300 a month.',
         services: [],
         subtypes: ['labor', 'dog'],
       },
@@ -399,7 +400,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://link.urbansitter.com/P2JqXJSHN5',
-
+        pay: 'Nannys and Babysitters on average earn $15-$17/hr.',
         services: [],
         subtypes: ['labor', 'care'],
       },
@@ -480,8 +481,10 @@ export const initialState = {
         id: 'G0191',
         logo: outdoorsy,
         gig: 'Outdoorsy',
+        app:
+          'Outdoorsy is the largest and safest community-driven RV marketplace for renting RVs directly from local RV owners.',
         description:
-          'Outdoorsy is another RV rental marketplace. They perform DMV checks on all drivers, provide 24/7 roadside assistance and have a dedicated customer support team.',
+          'Outdoorsy renters rent out their RVs on their marketplace. Outdoorsy performs DMV checks on all drivers, provide 24/7 roadside assistance and have a dedicated customer support team.',
         apppromo: 'Sign Up and Get $50!',
         resources: [
           {
@@ -494,7 +497,8 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.outdoorsy.com/invite/g6o1lb',
-
+        pay:
+          'Depending on the RV, renters can earn anywhere between $100 and $300 per night.',
         services: [],
         subtypes: ['rental', 'RV'],
       },
@@ -502,8 +506,10 @@ export const initialState = {
         id: 'G0194',
         logo: ridersshare,
         gig: 'Riders Share',
+        app:
+          'Riders Share is the largest motorcycle renter community, offering best in class insurance and flexible refunds.',
         description:
-          'If you own a motercycle, and and it spends most of its time in your garage, Riders Share will connect you with drivers looking to rent it out. List your motorcycle for free and make an average of $150 per booking! All listings are protected by an A rated insurance provider.',
+          'Riders Share renters rent out motorcycles on their marketplace. List your motorcycle for free and make an average of $150 per booking! All listings are protected by an A rated insurance provider.',
         apppromo: 'Sign Up and Get $25!',
         resources: [
           {
@@ -512,7 +518,7 @@ export const initialState = {
           },
         ],
         gigsite: 'www.riders-share.com/welcome/markf+QdETy',
-
+        pay: 'Renters earn an average of $150 per booking.',
         services: [],
         subtypes: ['rental', 'car'],
       },
@@ -520,8 +526,10 @@ export const initialState = {
         id: 'G0015',
         logo: wag,
         gig: 'Wag!',
+        app:
+          'Wag! is one of the largest dog walking apps. They offer flexibility, secure payment through Stripe, and donate money from 30 minute walks to feed shelter dogs.',
         description:
-          'Wag! is one of the largest dog walking apps. They offer flexibility, secure payment through Stripe, and donates money from 30 minute walks to feed shelter dogs.',
+          'Wag Walkers get paid to pick up dogs in their communities, walk them, and return them. You choose how many walks you want to do and where you want to walk. It is extremely personalized and you get to play with dogs all day!',
         apppromo: 'Sign Up and Get a Free Walk!',
         resources: [
           {
@@ -534,7 +542,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://wagwalking.com/dog-walker',
-
+        pay: 'Walkers earn around $17.50 per walk',
         services: [],
         subtypes: ['labor', 'dog'],
       },
@@ -542,6 +550,8 @@ export const initialState = {
         id: 'G0021',
         logo: wonolo,
         gig: 'Wonolo',
+        app:
+          'Wonolo is an on-demand staffing marketplace. It connects businesses which have temporary staffing needs (Requestors) with workers who can meet those needs (Wonoloers). Requestors post jobs into our marketplace, Wonoloers can then review those positions and decide if they want to do the work.',
         description:
           'Wonolo hires workers to perform certain jobs, like Warehouse Operations, General Labor, Food Production, Cleaning and Merchandising, for different Employers. They are quickly expanding across the US and are available in most major cities.',
         jobpromo: 'Accept a Job Through Wonolo and Earn a $100 Bonus!',
@@ -552,7 +562,8 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.wonolo.com/find-work',
-
+        pay:
+          'Average pay ranges from around $13.79/hr for Warehouse Workers to $20.00/hr for Material Handlers.',
         services: [],
         subtypes: ['labor'],
       },
@@ -560,8 +571,10 @@ export const initialState = {
         id: 'G0151',
         logo: goshare,
         gig: 'GoShare',
+        app:
+          'GoShare connects truck and van owners with people and businesses who need help moving, hauling, and delivering large items on demand.',
         description:
-          'GoShare specializes in delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you have no truck you can apply as a helper. Depending on your driving situation, this gig can prove very lucrative.',
+          'GoShare hires movers and drivers for delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you have no truck you can apply as a helper. Depending on your driving situation, this gig can prove very lucrative.',
         apppromo: 'Sign Up and Get $10!',
         resources: [
           {
@@ -569,9 +582,14 @@ export const initialState = {
             link:
               'https://www.glassdoor.com/Reviews/GoShare-Reviews-E1779925.htm',
           },
+          {
+            title: 'GoShare Worker Pay Estimates',
+            link: 'https://www.goshare.co/drivers/',
+          },
         ],
         gigsite: 'https://goshare.app.link/Mark_Foster_MF6447',
-
+        pay:
+          'Depending on your car, GoShare workers can earn between $33 and $66 per hour.',
         services: [],
         subtypes: ['labor', 'mover'],
       },
@@ -579,8 +597,10 @@ export const initialState = {
         id: 'G0035',
         logo: hellotech,
         gig: 'HelloTech',
+        app:
+          'HelloTech offers diagnostic solutions, support, installations and hands-on training for just about any technology need, including computer and printers, smart home devices, home theater and audio, Wi-Fi, TV mounting and much more.',
         description:
-          'Have a plethora of technical knowledge? Wanna get paid to help those less technically advanced? HelloTech connects you with users in your area looking for tech help. You set your own schedule, and get paid weekly',
+          'HelloTech workers help individuals set up and fix their technology. Have a plethora of technical knowledge? Wanna get paid to help those less technically advanced? You set your own schedule, and get paid weekly',
         apppromo: 'Sign Up and Get $10!',
         resources: [
           {
@@ -593,7 +613,7 @@ export const initialState = {
           },
         ],
         gigsite: 'http://fbuy.me/v/markfoster314',
-
+        pay: 'HelloTech workers earn an average of around $16/hr.',
         services: [],
         subtypes: ['other', 'tech'],
       },
@@ -601,8 +621,10 @@ export const initialState = {
         id: 'G0055',
         logo: yourmechanic,
         gig: 'YourMechanic',
+        app:
+          "Skip the shops and dealers. YourMechanic's top-rated mobile mechanics will come to your home or office to service your car.",
         description:
-          'YourMechanic offers at home mechanic services to users, and is a great way for people with auto repair skills to leverage the gig economy. You can make extra money providing car repairs and maitenance at the homes of clients.',
+          'YourMechanic hires mechanics to offer at home services to users, and is a great way for people with auto repair skills to leverage the gig economy. You can make extra money providing car repairs and maintenance at the homes of clients.',
         apppromo: 'Sign Up and Get $10!',
         resources: [
           {
@@ -611,7 +633,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.yourmechanic.com/rl/IyhJRw1860682',
-
+        pay: 'YourMechanic claims their professionals earn between $40-$50/hr.',
         services: [],
         subtypes: ['labor'],
       },
@@ -619,8 +641,10 @@ export const initialState = {
         id: 'G0056',
         logo: zeel,
         gig: 'Zeel',
+        app:
+          'Zeel is not only the first mobile Massage On Demand company, with a network of more than 10,000 therapists throughout the U.S. Zeel connects you to the best licensed massage therapists available on-demand at your home, hotel, workplace, or event.',
         description:
-          'Zeel is a service offering at home massages to users, and is a phenomenal way for massage therapists to leverage the gig economy. 18% gratuity is added to every in-home appointment and customers pay for late cancelations.',
+          'Zeel employs massage therapists to provide at home massages to users. 18% gratuity is added to every in-home appointment and customers pay for late cancelations.',
         apppromo: 'Sign Up With Code PAUSE20 and get $20!',
         resources: [
           {
@@ -634,7 +658,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.zeel.com/apply',
-
+        pay: 'Zeel Massage Therapists earn an average of around $60/hr.',
         services: [],
         subtypes: ['other', 'beauty'],
       },
@@ -642,8 +666,10 @@ export const initialState = {
         id: 'G0195',
         logo: carelinx,
         gig: 'CareLinx',
+        app:
+          'CareLinx is a professional caregiver marketplace, connecting trusted and licensed caregivers with family in need of in-home care services.',
         description:
-          'CareLinx connects Caregivers with elders seeking care nearby. They have a network of over 300,000 caregivers and offer flexible hours, great pay and professional development.',
+          'CareLinx hires Caregivers to provide care to nearby elders. They have a network of over 300,000 caregivers and offer flexible hours, great pay and professional development.',
         jobpromo: 'Get a Free Background Check!',
         resources: [
           {
@@ -652,7 +678,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.carelinx.com/p/nextwrs',
-
+        pay: 'Caregivers/Housekeepers earn an average of around $11.40/hr.',
         services: [],
         subtypes: ['labor', 'care'],
       },
@@ -661,7 +687,7 @@ export const initialState = {
         logo: amazon,
         gig: 'Amazon Flex',
         description:
-          'Perform the "last mile" of Amazon delivery, moving packages from regional centers to customers. Amazon Flex offers great compensation, and you can easily track your earnings in the Amazon Flex app.',
+          'Amazon Flex hires drivers to perform the "last mile" of Amazon delivery, moving packages from regional centers to customers. Amazon Flex offers great compensation, and you can easily track your earnings in the Amazon Flex app.',
         promo: '',
         resources: [
           {
