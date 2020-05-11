@@ -721,8 +721,10 @@ export const initialState = {
         id: 'G0143',
         logo: skipcart,
         gig: 'Skipcart',
+        app:
+          'Skipcart is an on-demand platform providing last-mile delivery for all retailers and restaurants currently offering a Curbside or Pickup solution but lacking same-day delivery.',
         description:
-          'Skipcart is a service that offers last-mile delivery for retailers and restaurants. Skipcart lets you choose your own schedule and make deliveries in the community you already live in. Open the Skipcart app. Choose your hours and start delivering.',
+          'Skipcart drivers deliver packages for local retailers and restaurants. Open the Skipcart app, choose your hours and start delivering.',
         promo: '',
         resources: [
           {
@@ -750,8 +752,10 @@ export const initialState = {
         id: 'G0155',
         logo: PICKUP,
         gig: 'PICKUP',
+        app:
+          'PICKUP is an on-demand same day delivery service. It allows users to hire drivers with pickup trucks to move furniture or other bulky items.',
         description:
-          'PICKUP is an on-demand and same day delivery service of big & heavy items for national and area businesses. If you own a truck or van, put it to good use and start hauling for money',
+          'PICKUP workers deliver big & heavy items for national and area businesses. If you own a truck or van, put it to good use and start hauling for money',
         promo: '',
         resources: [
           {
@@ -783,7 +787,7 @@ export const initialState = {
         app:
           "Bungii is a mobile app that instantly helps move, haul and deliver your stuff across town by connecting you with a local driver and pickup truck. They've been compared to popular ride sharing apps but instead of moving people, they move people's stuff.",
         description:
-          'If you own a truck and can do some heavy lifting, Bungii will help you earn up to $40/hour doing deliveries for people in your community. They ask for you to own a 2005 or newer and rachet straps, bungee cords and moving blankets to secure your deliveries.',
+          'Bungii workers get paid to move bulky items for users. Bungii asks for you to own a 2005 or newer truck, rachet straps, bungee cords and moving blankets to secure your deliveries, as well as be able to do some heavy lifting.',
         apppromo: 'Sign Up With Promo Code 5XDKA and get $10!',
         resources: [
           {
@@ -812,6 +816,8 @@ export const initialState = {
         id: 'G0157',
         logo: tommyrun,
         gig: 'TommyRun',
+        app:
+          'TommyRun is an app that allows you to order building materials and have them delivered within hours.',
         description:
           'TommyRunners deliver buliding materials to individuals in their communities. You need to own a truck or van and be willing to do some heavy lifting.',
         indeed: 'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
@@ -843,6 +849,8 @@ export const initialState = {
         id: 'G0161',
         logo: upship,
         gig: 'uShip',
+        app:
+          'uShip makes shipping motorcycles, boats, and other large items fast and affordable by connecting you to their network of carriers who compete for your shipment.',
         description:
           'uShip carriers ship motorcycles, boats, and other large items. If you have the type of horsepower that can handles these deliveries, you can start making money as a uShip carrier.',
         promo: '',
@@ -871,6 +879,8 @@ export const initialState = {
         id: 'G0182',
         logo: dispatchit,
         gig: 'DispatchIt',
+        app:
+          'Dispatch is replacing the old courier industry by providing customers with real time tracking and accurate ETAs by leveraging technology and hard working drivers who get paid a fair wage.',
         description:
           'Dispatchit drivers provide reliable local deliveries to customers with real time ETAs and tracking. Dispatchit drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
         promo: '',
@@ -899,8 +909,10 @@ export const initialState = {
         id: 'G0189',
         logo: deliverthat,
         gig: 'DeliverThat',
+        app:
+          'DeliverThat is the industry leader for pre-scheduled catering delivery and setup.',
         description:
-          'DeliverThat is a food delivery app that has partnered with well known restaraunts like QDoba, Zoes Kitchen, Boston Market and Firehouse, and drivers deliver orders to homes. Delivery comissions start with a base amount, then increase based on distance and size.',
+          'DeliverThat drivers deliver food from restaraunts like QDoba, Zoes Kitchen, Boston Market and Firehouse, to customers. Delivery comissions start with a base amount, then increase based on distance and size.',
         promo: '',
         resources: [
           {
@@ -931,8 +943,7 @@ export const initialState = {
           'Postmates is the largest, most reliable on-demand delivery and pickup platform. Able to deliver anything from anywhere, Postmates is the food delivery, grocery delivery, whatever-you-can-think-of delivery app to bring what you crave right to your door.',
         description:
           'Postmates drivers deliver for one of the fastest growing food-delivery apps. They get delivery requests from the Postmates app, navigate to the store or restaurant and deliver to the customer location.',
-        jobpromo:
-          'Complete a certain number of deliveries within 14 days and earn a guaranteed minimum payout.',
+        jobpromo: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for PostMates Drivers',
@@ -965,8 +976,10 @@ export const initialState = {
         id: 'G0016',
         logo: ubereats,
         gig: 'Uber Eats',
+        app:
+          "Uber Eats is Uber's food delivery platform that makes getting great food from your favorite local restaurants as easy as requesting a ride.",
         description:
-          'Another big player in the food-delivery scene, UberEats drivers pick up food from local restaurants and deliver the orders to customers. Some cities offer bike and scooter delivery in addition to driving delivery.',
+          'UberEats drivers pick up food from local restaurants and deliver the orders to customers. Some cities offer bike and scooter delivery in addition to driving delivery.',
         promo: '',
         resources: [
           {
@@ -1004,7 +1017,7 @@ export const initialState = {
         app:
           'Grubhub is a leading online and mobile food-ordering and delivery marketplace with the largest and most comprehensive network of restaurant partners.',
         description:
-          'Grubhub is another food-delivery service, similar to DoorDash and other options. Grubhub drivers get guaranteed minimum earnings and additional perks for performance.',
+          'Grubhub drivers pick up food from local restaurants and deliver the orders to customers. They get guaranteed minimum earnings and additional perks for performance.',
         promo: '',
         resources: [
           {
@@ -1040,7 +1053,7 @@ export const initialState = {
         app:
           'Caviar is an all-in-one food ordering platform that connects diners with the best local and independent restaurants, via convenient delivery, pickup, or catering',
         description:
-          'Caviar is a food-delivery service operating in over a dozen markets with a focus on higher end restaurants that they can develop seamless partnerships with, allowing them to fulfill orders faster. Caviar has no driver rating system, and compensates couriers on an "effort-based" algorithm',
+          'Caviar drivers pick up food from local restaurants and deliver the orders to customers. Caviar has no driver rating system, and compensates couriers on an "effort-based" algorithm',
         promo: '',
         resources: [
           {
@@ -1072,7 +1085,7 @@ export const initialState = {
         app:
           "Favor is the easiest way to get anything you want in your city delivered to your door in under an hour. Whether it's your favorite local restaurant or an errand you forgot to run.",
         description:
-          'With Favor, you can deliver just about anything to customers and get paid for it. Unlike other deliver gigs, Favor provides a $9 per hour base pay, though tips are deducted from this, and is available in 12 cities',
+          'Favor Runners deliver just about anything to customers and get paid for it. Unlike other deliver gigs, Favor provides a $9 per hour base pay, though tips are deducted from this, and is available in 12 cities',
         promo: '',
         resources: [
           {
@@ -1104,8 +1117,10 @@ export const initialState = {
         id: 'G0148',
         logo: zifty,
         gig: 'Zifty',
+        app:
+          'Zifty is an online delivery company that partners with local restaurants and brands to bring their goods straight to clients doors.',
         description:
-          'Zifty is an online delivery company that partners with local restaurants and brands to bring their goods straight to clients doors. Zifty is looking for enthusiastic delivery providers to make deliveries of food, movies, and other items to customers.',
+          'Zifty delivery drivers make deliveries of food, movies, and other items to customers. Requests are matched to drivers on the Zifty driver app who then complete them, simple and easy.',
         promo: '',
         resources: [
           {
@@ -1135,7 +1150,7 @@ export const initialState = {
         app:
           'Peach is a daily lunch service. No service fee, no tips, no commitment, conveniently delivered to your office.',
         description:
-          'Peach focuses on carefully chosen dishes from the best lunch spots. They offer generous compensation and minimal time commitment to their delivery drivers. Peach is available in Seattle, San Diego and Boston.',
+          'Peach drivers deliver carefully chosen dishes from the best lunch spots. They offer generous compensation and minimal time commitment to their delivery drivers. Peach is available in Seattle, San Diego and Boston.',
         promo: '',
         resources: [
           {
@@ -1145,6 +1160,8 @@ export const initialState = {
         ],
         gigsite: 'https://www.peachd.com/jobs/',
         appsite: 'https://www.peachd.com/',
+        pay:
+          'Average Peach Delivery Driver hourly pay in the US is around $40/hr.',
         services: [
           'S0004',
           'S0005',
@@ -1162,6 +1179,8 @@ export const initialState = {
         id: 'G0183',
         logo: deliveroo,
         gig: 'Deliveroo',
+        app:
+          'The best local restaurants and takeaways are here to deliver. Order on Deliveroo today!',
         description:
           'Deliveroo is a UK based food-delivery service. Delivery Drivers get paid to move orders from restaurants to homes. Unfortunately it is not currently available in America.',
         promo: '',
@@ -1177,6 +1196,7 @@ export const initialState = {
         ],
         gigsite: 'https://deliveroo.co.uk/apply',
         appsite: 'https://deliveroo.co.uk/app?manual=1',
+        pay: 'Deliveroo says couriers earn “over €10.20 per hour"',
         services: [
           'S0004',
           'S0005',
@@ -1197,7 +1217,7 @@ export const initialState = {
         app:
           'goPuff is the on-demand convenience store that delivers what you need, day or night. Use their app or site for fast delivery of snacks, drinks, ice cream & more!',
         description:
-          'GoPuff is the largest and fastest convenience delivery app available. Drivers get paid to deliver snacks, drinks, alcohol, personal care items and more to customers. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel.',
+          'GoPuff drivers get paid to deliver snacks, drinks, alcohol, personal care items and more to customers. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel.',
         promo: '',
         resources: [
           {
@@ -1230,8 +1250,10 @@ export const initialState = {
         id: 'G0181', // Alcohol
         logo: drizly,
         gig: 'Drizly',
+        app:
+          'Drizly focuses on the delivery of the fun stuff, alcohol that is.',
         description:
-          'Drizly focuses on the delivery of the fun stuff, alcohol that is. Drizly partners with liquor stores to deliver their fine products to customers. The hiring process for their drivers is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
+          'Drizly partners with liquor stores to deliver their fine products to customers. The hiring process for their drivers is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
         promo: '',
         resources: [
           {
@@ -1241,7 +1263,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://drizly.com/liquor-stores-near-me',
-
+        pay: 'Average Drizly Driver pay is around $11-$13/hr',
         services: [
           'S0004',
           'S0005',
@@ -1259,8 +1281,10 @@ export const initialState = {
         id: 'G0184',
         logo: saucey,
         gig: 'Saucey',
+        app:
+          'Alcohol delivery to your door. No order minimums + free delivery on 30-min orders in select cities. Fast & Free beer delivery, wine delivery and liquor delivery.',
         description:
-          'Saucey is another Alcohol delivery company. It boasts a flexible schedule and solid pay for drivers. Sacuey also has a minimum pay for those who commit to working in "core blocks," which means you agree to work on the clock.',
+          'Saucey drivers deliver alcohol to customers. It boasts a flexible schedule and solid pay for drivers. Sacuey also has a minimum pay for those who commit to working in "core blocks," which means you agree to work on the clock.',
         promo: '',
         resources: [
           {
@@ -1269,7 +1293,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.saucey.com/apply',
-
+        pay: 'Drivers earn $5 per delivery, plus $0.50 per item and tips.',
         services: [
           'S0004',
           'S0005',
@@ -1287,6 +1311,8 @@ export const initialState = {
         id: 'G0201',
         logo: eaze,
         gig: 'Eaze',
+        app:
+          'Get the best THC and CBD products delivered same-day with Eaze. Shop flower, vapes, edibles, and joints from legal marijuana brands.',
         description:
           'As a delivery person for Eaze, you will deliver cannabis products from a licensed retailer directly to consumers. Eaze is currently only available in California.',
         promo: '',
@@ -1302,7 +1328,8 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.drive.eaze.com/',
-
+        pay:
+          'Eaze drivers report a starting salary of $18/hr. They also reimburse $0.545 for every mile driven.',
         services: [
           'S0004',
           'S0005',
@@ -1320,6 +1347,8 @@ export const initialState = {
         id: 'G0202',
         logo: minibar,
         gig: 'Minibar',
+        app:
+          'Shop Minibar Delivery for the best selection of wine, liquor, beer, and more - available in 30 to 60 minutes. Fast delivery and low prices!',
         description:
           'Minibar delivery provides on-demand delivery of wine, spirits, beer & mixers. If you live in a city you can start earning cash as a delivery driver.',
         promo: '',
@@ -1352,7 +1381,7 @@ export const initialState = {
         app:
           'Instacart lets you shop from local grocery stores online, then sends a “personal shopper” to fulfill and deliver your order to you the same day.',
         description:
-          'Instacart is one of the largest grocery delivery services out there. Shoppers use their platform to shop and deliver orders for their customers.',
+          'Instacart Shoppers use their platform to shop and deliver orders, like groceries, for their customers.',
         promo: '',
         resources: [
           {
@@ -1387,6 +1416,8 @@ export const initialState = {
         id: 'G0186',
         logo: burpy,
         gig: 'Burpy',
+        app:
+          'Same day grocery delivery services online in Houston, Dallas, Fort Worth, Austin & San Antonio.',
         description:
           'Burpy is another grocery service, offering delivery to customers within the hour. It hires shoppers to shop and deliver for customers, but is only available in the Texas area.',
         promo: '',
@@ -1443,8 +1474,9 @@ export const initialState = {
         id: 'G0187',
         logo: burro,
         gig: 'Burro',
+        app: 'Burro is an all in one delivery app for the Austin area.',
         description:
-          'Burro is an all in one delivery app for the Austin area. Deliver Craigslist items, make store deliveries even help people move. You can set a flexible schedule and they advertise "Drive for Burro and earn $45/hr with your pickup truck."',
+          'Deliver Craigslist items, make store deliveries even help people move. You can set a flexible schedule and they advertise "Drive for Burro and earn $45/hr with your pickup truck."',
         promo: '',
         resources: [
           {
@@ -1474,6 +1506,8 @@ export const initialState = {
         id: 'G0002', // Home rentals
         logo: rlac,
         gig: 'Rent Like a Champion',
+        app:
+          "Rent Like a Champion is an online business that lists apartments and houses available for rent near college campuses for big sporting events – football games is the company's bread and butter.",
         description:
           'AirBnb for sporting events! If you live near a college football stadium or major sporting event, you can earn money renting your home out to eager fans traveling for games in your hometown.',
         promo: '',
@@ -1517,6 +1551,8 @@ export const initialState = {
         id: 'G0036',
         logo: homeaway,
         gig: 'HomeAway',
+        app:
+          'HomeAway is a vacation rental marketplace with more than 2,000,000 vacation rentals in 190 countries listed on its website.',
         description:
           'HomeAway is a vacation rental marketplace with more than 2,000,000 vacation rentals in 190 countries listed on its website. Instead of leaving your vacation property vacant rent it out on HomeAway.',
         promo: '',
@@ -1535,6 +1571,8 @@ export const initialState = {
         id: 'G0041',
         logo: ofs,
         gig: 'onefinestay',
+        app:
+          '10000+ high-end homes available to rent. The best homes. The best service. Stay in luxury serviced apartments in our favourite cities.',
         description:
           'onefinestay offers high-end home-stays across the world with currently 5,000 homes and villas in its portfolio divided between two collections, City and Villa. Put that high end vacation property to work for you.',
         promo: '',
@@ -1553,6 +1591,8 @@ export const initialState = {
         id: 'G0053',
         logo: vrbo,
         gig: 'VRBO',
+        app:
+          'Vrbo is short for Vacation Rental By Owner, and as the name implies, it specializes in vacation rentals of all types: houses, apartments, condos, villas, etc.',
         description:
           'VRBO is a service for homeowners to list their properties for short term rental. If you have a vacation beach house, condo, cabin, or other property, list it on VRBO and start earning.',
         promo: '',
@@ -1592,7 +1632,7 @@ export const initialState = {
         app:
           'Turo is a peer-to-peer car sharing company. Formerly known as RelayRides, Turo allows car owners to make extra cash by renting out their vehicles, while providing a convenient and quick way to rent a car to those in need of transportation.',
         description:
-          'Known as the AirBnB of cars, Turo is a car rental service that connects renters with car owners, and is available worldwide!',
+          'Known as the AirBnB of cars, Turo renters list their cars on the Turo marketplace and rent them out to individuals in the area. Turo is available worldwide!',
         promo: '',
         resources: [
           {
@@ -1614,8 +1654,10 @@ export const initialState = {
         id: 'G0177',
         logo: hyrecar,
         gig: 'Hyrecar',
+        app:
+          'Rent a car to drive for Uber, Lyft and Food Delivery. On-demand car rentals, protection included! Drive for any ridesharing, delivery or on-demand companies.',
         description:
-          'HyreCar is a service that allows ridesharers without a ride to rent cars. Because of this, your car is likely to rent quickly and for a long time. Check out HyreCar if you have a car collecting space in your driveway, or want to start ridesharing.',
+          'HyreCar renters rent their cars to ridesharers without a ride. Because of this, your car is likely to rent quickly and for a long time.',
         promo: '',
         resources: [
           {
@@ -1632,6 +1674,8 @@ export const initialState = {
         id: 'G0049', // Parking Rental
         logo: spothero,
         gig: 'SpotHero',
+        app:
+          'SpotHero is a parking reservation service that helps drivers reserve parking with garages and lots, often at a discount to the drive-up rate.',
         description:
           'Own a parking space? Is it empty a majority of the day? Turn it into extra income with SpotHero. They simplify the process of parking in the city by allowing owners to rent out their empty spots!',
         promo: '',
@@ -1650,6 +1694,8 @@ export const initialState = {
         id: 'G0058',
         logo: parkingpanda,
         gig: 'ParkingPanda',
+        app:
+          'Parking Panda is an online parking service that allows drivers to find and reserve parking in advance. In addition to providing drivers with mobile and web applications to find parking, they also help parking garage owners manage their inventory',
         description:
           'A parking space is a premium product in many major cities across the country. ParkingPanda is an app that brings owners and customers together seamlessly. You can post a free listing with the app to start earning cash whenever anyone books your space.',
         promo: '',
@@ -1668,8 +1714,10 @@ export const initialState = {
         id: 'G0203',
         logo: sailo,
         gig: 'Sailo',
+        app:
+          'Sailo is being called the “airbnb” of boat rentals, an online marketplace offering both, experienced and inexperienced boaters the opportunity to view and compare boats and captains, if you even want a captain, and create custom trips.',
         description:
-          'Sailo is considered the “airbnb” of boat rentals. The app connecting millions of boat owners looking to list with millions of renters looking to go on a boat. As a host, Sailo gives you full control of your availability, prices and boat rules. Sign up as a host and Sailo lets you earn money opening up your boat to travelers.',
+          'Sailo is considered the “airbnb” of boat rentals, and makes it easy for boat owners to rent out their boats. As a host, Sailo gives you full control of your availability, prices and boat rules. Sign up as a host and Sailo lets you earn money opening up your boat to travelers.',
         promo: '',
         resources: [
           {
@@ -1686,6 +1734,8 @@ export const initialState = {
         id: 'G0066',
         logo: rvshare,
         gig: 'RVShare',
+        app:
+          "RVshare is the world's first and largest peer-to-peer RV rental marketplace, serving more than 60,000 RV owners across the US.",
         description:
           'Are you an outdoorsy person who owns an RV? RVshare will connect you with individuals looking to rent it out! Their platform reaches millions of users, they give you complete control of your rental and you could earn up to $40,000 in additional income per year!',
         promo: '',
@@ -1803,8 +1853,10 @@ export const initialState = {
         id: 'G0005', // Manual labor
         logo: taskrabbit,
         gig: 'TaskRabbit',
+        app:
+          'TaskRabbit is a marketplace that matches freelance labor with local demand.',
         description:
-          'TaskRabbit is a marketplace that matches freelance labor with local demand. You can get paid to help with everyday tasks, like cleaning, moving, delivery and handyman work, for individuals in your community.',
+          'TaskRabbit Taskers get paid to help with everyday tasks, like cleaning, moving, delivery and handyman work, for individuals in their community.',
         promo: '',
         resources: [
           {
@@ -1826,8 +1878,10 @@ export const initialState = {
         id: 'G0020',
         logo: handy,
         gig: 'Handy',
+        app:
+          'Handy is the leading platform for connecting individuals looking for household services with top-quality, pre-screened independent service professionals. From home cleaning to handyman services, Handy instantly matches thousands of customers every week with top-rated professionals in cities all around the world.',
         description:
-          'Handy pays for being a home cleaner and handymen. It covers over 20 cities in North America, Canada, and the UK. However, unlike TaskRabbit, they only accept applicants with professional experience in cleaning or handyman services.',
+          'Handy pays for being a home cleaner and handymen. It covers over 20 cities in North America, Canada, and the UK. They only accept applicants with professional experience in cleaning or handyman services.',
         promo: '',
         resources: [
           {
@@ -1844,6 +1898,7 @@ export const initialState = {
         id: 'G0022',
         logo: bellhops,
         gig: 'Bellhops',
+        app: 'Bellhops Provides Simple, Easy, And Stress-free Moving Services.',
         description:
           'Bellhops is a moving service that eases the demands of moving by connecting capable workers with clients looking to pack up and move. As a mover, you will get paid to pack boxes and move people into their new digs.',
         promo: '',
@@ -1862,8 +1917,10 @@ export const initialState = {
         id: 'G0027',
         logo: dolly,
         gig: 'Dolly',
+        app:
+          'Need moving help? Dolly helps you move on your schedule and at an affordable price.',
         description:
-          'The Dolly service is another moving service that pays people that have vehicles for moving, and movers to do the heavy lifting if they do not have a vehicle, to help individuals in your community move in or out.',
+          'Dolly is a moving services that pays people that have vehicles for moving, and movers to do the heavy lifting if they do not have a vehicle, to help individuals in your community move in or out.',
         promo: '',
         resources: [
           {
@@ -1898,6 +1955,8 @@ export const initialState = {
         id: 'G0164',
         logo: easymove,
         gig: 'EasyMove',
+        app:
+          "Easymove connects you with professional, reliable, local movers anytime you need it. It's the smartest alternative to traditional movers, renting a truck and doing it yourself- their app connects you with local independent strong easymovers to help with moving, hauling and junk removal.",
         description:
           'Easymove is a delivery service offering to help users move bulky items from point A to point B. If you have a big car and can do some heavy lifting, they advertise you can make $2,500 a week as an Easymove partner.',
         promo: '',
@@ -1916,6 +1975,8 @@ export const initialState = {
         id: 'G0192',
         logo: lugg,
         gig: 'Lugg',
+        app:
+          'Lugg connects you to a truck and two movers, ready to move your stuff within the hour or up to 30 days from now.',
         description:
           'Convenient Moving and Delivering is what Lugg offers. If you own a truck, you can sign up to become a Lugger and earn up to $2.5k a week! No truck? No problem! If you can do some heavy lifting you can still sign up.',
         promo: '',
@@ -1934,6 +1995,8 @@ export const initialState = {
         id: 'G0050',
         logo: takl,
         gig: 'Takl',
+        app:
+          'The Takl platform connects customers who need chores completed with background-checked, self-employed Providers who are able to earn money using their skills on their own schedule.',
         description:
           'At Takl, you get paid to help others in your community complete small jobs and household chores. You can perform chores in twelve categories on your own time, and get paid fast through direct deposit.',
         promo: '',
@@ -1952,6 +2015,8 @@ export const initialState = {
         id: 'G0190',
         logo: networx,
         gig: 'NetWorx',
+        app:
+          'Since 2004, millions of homeowners have used Networx to help them connect with quality contractors in their local area. With years of experience and thousands of active contractors, you can depend on us to generate high quality leads and help you grow your business.',
         description:
           'NetWorx is looking for professionals offering contracting services like Carpentry, Pest Control, Fencing and Roofing. They connect you with local demand for these services, and help boost your bottom line.',
         promo: '',
@@ -1971,6 +2036,8 @@ export const initialState = {
         id: 'G0051', // Lawn Care
         logo: taskeasy,
         gig: 'TaskEasy',
+        app:
+          "TaskEasy provides lawn care and grounds maintenance services in all 50 U.S. states. TaskEasy works together with landscaping businesses nationwide supporting local industry with services to hundreds of thousands of properties. TaskEasy's network of more than 12,000 screened and insured vendors is the nation's largest.",
         description:
           'TaskEasy employs landscaping professionals to provide lawnmowing, gardening, and landscaping services for individuals in the community. If you know your way around a lawn, and are looking to gain more customers, TaskEasy will help out.',
         promo: '',
@@ -1990,6 +2057,8 @@ export const initialState = {
         id: 'G0149',
         logo: lawnstarter,
         gig: 'LawnStarter',
+        app:
+          'LawnStarter saves you time, money, and energy by providing you with the top lawn care providers in your area, whenever you want them.',
         description:
           'LawnStarter can grow your lawn care business by over 30%. By connecting you with new customers in your area at no cost, you can put a stop to slow days and grow your revenue.',
         promo: '',
@@ -2009,6 +2078,8 @@ export const initialState = {
         id: 'G0150',
         logo: plowzandmowz,
         gig: 'Plowz & Mowz',
+        app:
+          'Order Lawn Mowing, Snow Plowing, Landscaping & other outdoor home services through Plowz & Mowz.',
         description:
           'Plowz & Mowz is another service offering more customers to lawncare professionals. They require $1M in General Liability Insurance and professional equipment, but if you have that they advertise they can grow your business by 30%',
         promo: '',
@@ -2027,6 +2098,8 @@ export const initialState = {
         id: 'G0152',
         logo: lawnlove,
         gig: 'Lawn Love',
+        app:
+          'Lawn Love makes it easier to find, book and pay a landscaping or lawn care provider.',
         description:
           'If you have a truck and equipment, sign up to be a Lawn Pro and get connected with Lawn Care jobs in your community. You can choose which ones to work and get paid through the app within 72 hours.',
         promo: '',
@@ -2045,6 +2118,8 @@ export const initialState = {
         id: 'G0142', // Manufacturing
         logo: veryable,
         gig: 'Veryable',
+        app:
+          'Veryable is the on-demand marketplace for manufacturing, logistics and warehousing labor.',
         description:
           'Veryable is a great way for manufacturing workers the leverage the gig economy. When clients book a project through their service, the labor is filled from their pool of workers. Flexible work, daily pay',
         promo: '',
@@ -2064,6 +2139,8 @@ export const initialState = {
         id: 'G0162', // Cleaning
         logo: homeaglow,
         gig: 'Homeaglow',
+        app:
+          'Homeaglow is an online service that matches you with local, 5-star cleaning professionals.',
         description:
           'Homeaglow connects residential cleaners with clients in their community. You can set your own rates, make your own schedule, and get paid weekly.',
         promo: '',
@@ -2082,6 +2159,8 @@ export const initialState = {
         id: 'G0023', // Less intensive labor
         logo: care,
         gig: 'Care', // Childcare
+        app:
+          "Care.com is the world's largest online destination for care. They connect families with caregivers and caring companies to help you be there for the ones you love.",
         description:
           'Primarily a place to find work in child or pet care, Care.com also offers gigs for housekeepers, gardeners, tutors, and those caring for the elderly.',
         promo: '',
@@ -2100,6 +2179,8 @@ export const initialState = {
         id: 'G0199',
         logo: uzurv,
         gig: 'Uzurv',
+        app:
+          'The adaptive transportation network company with drug & alcohol tested, credentialed drivers for paratransit and non-emergency medical transportation.',
         description:
           'Do you have a passion for helping the elderly? UZURV is a ride-share company that helps provide transportation to the elderly, disabled, and for NEMT needs',
         promo: '',
@@ -2113,12 +2194,14 @@ export const initialState = {
         gigsite: 'https://uzurv.com/drivers/',
 
         services: [],
-        subtypes: ['driving', 'care'],
+        subtypes: ['driving', 'rideshare'],
       },
       {
         id: 'G0167',
         logo: sittercity,
         gig: 'Sittercity',
+        app:
+          'Find local child, senior, & pet care providers that your family will love.',
         description:
           'If you are a babysitter, nanny or child care professional, Sittercity can connect you with individuals in your community looking for your services.',
         promo: '',
@@ -2137,6 +2220,8 @@ export const initialState = {
         id: 'G0061',
         logo: helpr,
         gig: 'Helpr',
+        app:
+          'Connect with screened babysitters anytime and anywhere, get in-home care rates for as low as $1 hour with support from your employer.',
         description:
           'Helpr is an app that connects parents with reliable childcare help (i.e., babysitting), It is is ideal for those with relevant experience looking for occasional part-time work.',
         promo: '',
@@ -2159,6 +2244,8 @@ export const initialState = {
         id: 'G0026',
         logo: figureeight,
         gig: 'Figure Eight',
+        app:
+          'Figure Eight uses human intelligence to do simple tasks such as transcribing text or annotating images to train machine learning algorithms.',
         description:
           'When someone need labels and annotations for a machine learning project, Figure Eight steps up. Users upload unlabeled data, with the rules they need for the project, and contributers get paid to mold the data for the model.',
         promo: '',
@@ -2207,6 +2294,8 @@ export const initialState = {
         id: 'G0029',
         logo: fancyhands,
         gig: 'Fancy Hands',
+        app:
+          'Fancy Hands is a team of US-based virtual assistants ready to start working with you today. Use any device, at any time of day, and their assistants will tackle anything on your to-do list!',
         description:
           'Want to become a virtual assistant, offering services to entrepenuers and businesses from wherever you want? Fancy Hands is a team of US-based virtual assistants, and a great place to start!',
         promo: '',
@@ -2326,6 +2415,8 @@ export const initialState = {
         id: 'G0064',
         logo: soothe,
         gig: 'Soothe',
+        app:
+          'Soothe helps you book a five-star massage to your home, hotel, office, or event in as little as an hour.',
         description:
           'Gig work for massage therapists, including deep tissue, sports, and couples massage work. Soothe advertises 2-3x industry standard pay and schedule flexibility.',
         promo: '',
@@ -2350,6 +2441,8 @@ export const initialState = {
         id: 'G0160',
         logo: priv,
         gig: 'Priv',
+        app:
+          'Priv delivers on-demand salon and spa services by top-rated professionals to your home (or office) anytime, anywhere - manicures, blowouts, makeup, anything you want.',
         description:
           'Beauty. Priv connects customers on-demand with freelance beauty and wellness professionals, taking a 20% commission. Priv services include makeup, blowout, haircut, nails/manicure, massage, personal training, grooming, spray tan and facials. “Priv Pros” select shifts and kinds of jobs they choose.',
         promo: '',
@@ -2369,6 +2462,8 @@ export const initialState = {
         id: 'G0179',
         logo: heal,
         gig: 'Heal',
+        app:
+          'Talk to a doctor on-demand and on your schedule, 8am-8pm, every day.',
         description:
           'Gig work for healthcare professionals. Heal.com lets healthcare professionals spend quality time with patients in the privacy, comfort and convenience of their environment with the full capabilities of the doctors office',
         promo: '',
@@ -2387,6 +2482,8 @@ export const initialState = {
         id: 'G0178',
         logo: slingshot,
         gig: 'Slingshot Health',
+        app:
+          'Slingshot Health is a health tech startup that brings top healthcare providers and patients together. Patients bid on the cost of services and healthcare providers accept bids based on availability.',
         description:
           'Slingshot Health helps healthcare profesionals find new patients and fill open gaps in their schedules, growing their practice. It is free to sign up.',
         promo: '',
@@ -2406,6 +2503,8 @@ export const initialState = {
         id: 'G0204',
         logo: wardrobe,
         gig: 'Wardrobe',
+        app:
+          'Join celebs, influencers & friends in the most -friendly rental marketplace for luxury designer fashion. Your Wardrobe goals just became reality.',
         description:
           'Do you have a big or fashionable wardrobe? Monetize your closet with peer-to-peer fashion rentals. Lend designer pieces from your closet to fellow fashion lovers and get easy cash with this app!',
         promo: '',
@@ -2425,6 +2524,8 @@ export const initialState = {
         id: 'G0206',
         logo: eatwith,
         gig: 'EatWith',
+        app:
+          'Explore culinary experiences with locals in 130+ countries. Enjoy dinner parties, cooking classes and more in beautiful homes and exclusive venues.',
         description:
           'Do you have a passion for food or cooking? Host dining experiences, cooking classes, food tours, and much more at EatWith. Set menus, set prices, and set your own schedule. Do what you enjoy and make money from it.',
         promo: '',
@@ -2443,8 +2544,10 @@ export const initialState = {
         id: 'G0207',
         logo: feastly,
         gig: 'Feastly',
+        app:
+          "Feastly is a global marketplace for chefs to showcase and host dinners, pop-ups, and culinary experiences. It is a p2p marketplace that connects hungry eaters with passionate cooks, offering authentic meals prepared and served in a cook's home.",
         description:
-          'A similar gig to EatWith. Showcase and host your own dinners, pop-ups, cooking lessons, and culinary experiences. Make easy money with what you love doing and meet new people while doing it.',
+          'Showcase and host your own dinners, pop-ups, cooking lessons, and culinary experiences. Make easy money with what you love doing and meet new people while doing it.',
         promo: '',
         resources: [
           {
