@@ -28,7 +28,12 @@ import TdImg from './TdImg';
 export function GigsListItem(props) {
   const { item } = props;
   const images = require.context('../../images/Logos', true);
-  const logo = images(`./${item.id}.png`);
+  let logo = images(`./nw.png`);
+  try {
+    logo = images(`./${item.id}.png`);
+  } catch {
+    logo = images(`./nw.png`);
+  }
 
   const content = (
     <React.Fragment>

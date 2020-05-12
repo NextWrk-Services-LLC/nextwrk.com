@@ -35,7 +35,12 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   const info = allGigs.filter(obj => obj.id.includes(gigId))[0];
   const images = require.context('../../images/Logos', true);
-  const logo = images(`./${info.id}.png`);
+  let logo = images(`./nw.png`);
+  try {
+    logo = images(`./${info.id}.png`);
+  } catch {
+    logo = images(`./nw.png`);
+  }
 
   function getServices(target, pattern) {
     let value = 0;
@@ -97,7 +102,7 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
                 <tr>
                   <td style={{ verticalAlign: 'top' }}>
                     <a href={info.appsite ? info.appsite : info.gigsite}>
-                      <Button>Get The App</Button>
+                      <Button>{`Start Using ${info.gig}`}</Button>
                     </a>
                     <div style={{ textAlign: 'center' }}>
                       <H2>{info.apppromo}</H2>
@@ -107,7 +112,7 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
                 <tr>
                   <td style={{ verticalAlign: 'top' }}>
                     <a href={info.gigsite}>
-                      <Button>View The Job</Button>
+                      <Button>{`Start Earning with ${info.gig}`}</Button>
                     </a>
                     <div style={{ textAlign: 'center' }}>
                       <H2>{info.jobpromo}</H2>
@@ -119,7 +124,7 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
               <tr>
                 <td style={{ width: '50%', verticalAlign: 'top' }}>
                   <a href={info.appsite ? info.appsite : info.gigsite}>
-                    <Button>Get The App</Button>
+                    <Button>{`Start Using ${info.gig}`}</Button>
                   </a>
                   <div style={{ textAlign: 'center' }}>
                     <H2>{info.apppromo}</H2>
@@ -127,7 +132,7 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
                 </td>
                 <td style={{ width: '50%', verticalAlign: 'top' }}>
                   <a href={info.gigsite}>
-                    <Button>View The Job</Button>
+                    <Button>{`Start Earning with ${info.gig}`}</Button>
                   </a>
                   <div style={{ textAlign: 'center' }}>
                     <H2>{info.jobpromo}</H2>

@@ -61,7 +61,12 @@ function Popup({ close, info }) {
   }
 
   const images = require.context('../../images/Logos', true);
-  const logo = images(`./${info.id}.png`);
+  let logo = images(`./nw.png`);
+  try {
+    logo = images(`./${info.id}.png`);
+  } catch {
+    logo = images(`./nw.png`);
+  }
 
   return (
     <Outer>

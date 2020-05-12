@@ -32,7 +32,12 @@ import TdImg from './TdImg';
 export function DealsListItem(props) {
   const { item } = props;
   const images = require.context('../../images/Logos', true);
-  const logo = images(`./${item.id}.png`);
+  let logo = images(`./nw.png`);
+  try {
+    logo = images(`./${item.id}.png`);
+  } catch {
+    logo = images(`./nw.png`);
+  }
   const [show, toggleShow] = useState(false);
   const closePopup = useCallback(() => {
     toggleShow(false);

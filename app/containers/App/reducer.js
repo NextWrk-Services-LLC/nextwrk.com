@@ -29,6 +29,31 @@ export const initialState = {
   componentData: {
     gigs: [
       {
+        id: 'G0208',
+        gig: 'Fiverr',
+        app:
+          'Fiverr connects businesses with freelancers offering digital services in 300+ categories.',
+        description:
+          'Fiverr takes the freelance marketplace and sizes it down into smaller project chunks. Freelancers make profiles introducing who they are and what services they offer. Many freelancers offer their services for $5 but you are free to charge more if you see fit.',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for Fiverr',
+            link: 'https://www.trustpilot.com/review/www.fiverr.com',
+          },
+          {
+            title: 'Indeed: Job Reviews for Fiverr Freelancers',
+            link: 'https://www.indeed.com/cmp/Fiverr/reviews',
+          },
+        ],
+        gigsite: 'https://track.fiverr.com/visit/?bta=106560&nci=7416',
+        appsite: 'https://track.fiverr.com/visit/?bta=106560&nci=7416',
+        pay:
+          'Fiverr starts at $5 per project and you are free to charge whatever you see fit for the project.',
+        services: [],
+        subtypes: ['software', 'design'],
+      },
+      {
         id: 'G0004',
         gig: 'Neighbor',
         app:
@@ -62,6 +87,10 @@ export const initialState = {
         apppromo: 'Sign Up for Lyft and Get $5!',
         resources: [
           {
+            title: 'Trustpilot: Reviews for Lyft',
+            link: 'https://www.trustpilot.com/review/www.lyft.com',
+          },
+          {
             title: 'Indeed: Job Reviews from Lyft Drivers',
             link: 'https://www.indeed.com/cmp/Lyft/reviews',
           },
@@ -89,27 +118,6 @@ export const initialState = {
         subtypes: ['driving', 'rideshare'],
       },
       {
-        id: 'G0007',
-        gig: 'Roadie',
-        app:
-          'Roadie was the first “on-the-way” delivery service. They put extra space in passenger vehicles to work by connecting people with items to send with drivers heading.',
-        description:
-          'Roadie drivers get paid to fill up their empty car space and complete deliveries while they roadtrip. Going on a roadtrip soon? Sign up for Roadie and make some extra money on the way.',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Roadies',
-            link: 'https://www.indeed.com/cmp/Roadie/reviews',
-          },
-        ],
-        gigsite: 'https://my.roadie.com/drive/sign-up/basic-info',
-        appsite: 'https://www.roadie.com/',
-        pay:
-          'Most local gigs pay between $8 and $50, with long distance trips paying up to $650',
-        services: ['S0004', 'S0005'],
-        subtypes: ['driving', 'packagedelivery'],
-      },
-      {
         id: 'G0014',
         gig: 'DoorDash',
         app:
@@ -118,6 +126,10 @@ export const initialState = {
           'DoorDash Dashers deliver food from restaurants to customers. They schedule shifts and fulfill delivery requests from the DoorDash app.',
         apppromo: 'Sign Up for DoorDash and Get $15!',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for DoorDash',
+            link: 'https://www.trustpilot.com/review/doordash.com',
+          },
           {
             title: 'Indeed: Job Reviews for DoorDash Dashers',
             link: 'https://www.indeed.com/cmp/Doordash/reviews',
@@ -144,6 +156,27 @@ export const initialState = {
         subtypes: ['driving', 'fooddelivery'],
       },
       {
+        id: 'G0007',
+        gig: 'Roadie',
+        app:
+          'Roadie was the first “on-the-way” delivery service. They put extra space in passenger vehicles to work by connecting people with items to send with drivers heading.',
+        description:
+          'Roadie drivers get paid to fill up their empty car space and complete deliveries while they roadtrip. Going on a roadtrip soon? Sign up for Roadie and make some extra money on the way.',
+        promo: '',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for Roadies',
+            link: 'https://www.indeed.com/cmp/Roadie/reviews',
+          },
+        ],
+        gigsite: 'https://my.roadie.com/drive/sign-up/basic-info',
+        appsite: 'https://www.roadie.com/',
+        pay:
+          'Most local gigs pay between $8 and $50, with long distance trips paying up to $650',
+        services: ['S0004', 'S0005'],
+        subtypes: ['driving', 'packagedelivery'],
+      },
+      {
         id: 'G0046',
         gig: 'Shipt',
         app:
@@ -152,6 +185,10 @@ export const initialState = {
           'Shipt Shoppers get paid to buy groceries and deliver them to customers. Shipt is owned solely by Target, which is where you will be doing most of your shopping.',
         apppromo: 'Get $10 Off a Shipt Membership!',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for Shipt',
+            link: 'https://www.trustpilot.com/review/shipt.com',
+          },
           {
             title: 'Indeed: Job Reviews for Shipt Shoppers',
             link: 'https://www.indeed.com/cmp/Shipt-Shopper/reviews',
@@ -206,6 +243,10 @@ export const initialState = {
         apppromo: 'Sign Up for Getaround and Get $20!',
         resources: [
           {
+            title: 'Trustpilot: Reviews for Getaround',
+            link: 'https://www.trustpilot.com/review/www.getaround.com',
+          },
+          {
             title: 'Yelp: Reviews for Getaround',
             link: 'https://www.yelp.com/biz/getaround-san-francisco',
           },
@@ -230,6 +271,10 @@ export const initialState = {
           'Rover pays workers to walk dogs as a walker or watch dogs as a sitter. Love animals? Wanna earn some extra money? They offer flexibility and can help you earn up to $1,000 a month working with animals!',
         apppromo: 'Sign Up for Rover and Get $20!',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for Rover',
+            link: 'https://www.trustpilot.com/review/rover.com',
+          },
           {
             title: 'Indeed: Reviews for Rover Workers',
             link:
@@ -256,6 +301,10 @@ export const initialState = {
         apppromo: 'Sign Up for UrbanSitter and Get $25!',
         resources: [
           {
+            title: 'Trustpilot: Reviews for UrbanSitter',
+            link: 'https://www.trustpilot.com/review/urbansitter.com',
+          },
+          {
             title: 'Indeed: Job Reviews for UrbanSitter Workers',
             link: 'https://www.indeed.com/cmp/Urbansitter/reviews',
           },
@@ -274,6 +323,10 @@ export const initialState = {
           'Uber drivers offer passengers a safe ride to their destination. Finding customers will not be an issue, as Uber is one of the largest ridesharing apps with tens of millions of users.',
         apppromo: 'Sign Up for Uber and Get $6!',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for Uber',
+            link: 'https://www.trustpilot.com/review/www.uber.com',
+          },
           {
             title: 'Indeed: Job Reviews from Uber Drivers',
             link: 'https://www.indeed.com/cmp/Uber/reviews',
@@ -313,6 +366,10 @@ export const initialState = {
         apppromo: 'Sign Up for Grabr and Get $10!',
         resources: [
           {
+            title: 'Trustpilot: Reviews for Grabr',
+            link: 'https://www.trustpilot.com/review/grabr.io',
+          },
+          {
             title: 'Grabr Reviews',
             link: 'https://www.producthunt.com/posts/grabr-2/reviews',
           },
@@ -322,6 +379,37 @@ export const initialState = {
         appsite:
           'https://grabr.io/invitation/mark-foster?utm_campaign=web&utm_source=referral_program&utm_medium=copy_link',
         pay: 'Earn $200+ Every Time You Travel Abroad',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
+        subtypes: ['driving', 'packagedelivery'],
+      },
+      {
+        id: 'G0161',
+        gig: 'uShip',
+        app:
+          'uShip makes shipping motorcycles, boats, and other large items fast and affordable by connecting you to their network of carriers who compete for your shipment.',
+        description:
+          'uShip carriers ship motorcycles, boats, and other large items. If you have the type of horsepower that can handles these deliveries, you can start making money as a uShip carrier.',
+        promo: '',
+        resources: [
+          {
+            title: 'TrustPilot: Reviews for uShip',
+            link: 'https://www.trustpilot.com/review/www.uship.com',
+          },
+          {
+            title: 'Glassdoor: Job Reviews for uShip Carriers',
+            link: 'https://www.glassdoor.com/Reviews/uShip-Reviews-E200164.htm',
+          },
+        ],
+        gigsite: 'https://www.uship.com/register/',
         services: [
           'S0004',
           'S0005',
@@ -386,6 +474,10 @@ export const initialState = {
           'Wag Walkers get paid to pick up dogs in their communities, walk them, and return them. You choose how many walks you want to do and where you want to walk. It is extremely personalized and you get to play with dogs all day!',
         apppromo: 'Sign Up for Wag and Get a Free Walk!',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for Wag',
+            link: 'https://www.trustpilot.com/review/wagwalking.com',
+          },
           {
             title: 'Indeed: Reviews for Wag Workers',
             link: 'https://www.indeed.com/cmp/Wag!-1/reviews',
@@ -455,6 +547,10 @@ export const initialState = {
         apppromo: 'Sign Up for HelloTech and Get $10!',
         resources: [
           {
+            title: 'Trustpilot: Reviews for HelloTech',
+            link: 'https://www.trustpilot.com/review/www.geekatoo.com',
+          },
+          {
             title: 'Indeed: Job Reviews for HelloTech Workers',
             link: 'https://www.indeed.com/cmp/Hellotech/reviews?fcountry=ALL',
           },
@@ -497,6 +593,10 @@ export const initialState = {
         apppromo: 'Sign Up for Zeel and get $40!',
         resources: [
           {
+            title: 'Trustpilot: Reviews for Zeel',
+            link: 'https://www.trustpilot.com/review/zeel.com',
+          },
+          {
             title: 'Indeed: Job Reviews for Zeel Workers',
             link: 'https://www.indeed.com/cmp/Zeel/reviews',
           },
@@ -521,6 +621,10 @@ export const initialState = {
           'CareLinx hires Caregivers to provide care to nearby elders. They have a network of over 300,000 caregivers and offer flexible hours, great pay and professional development.',
         jobpromo: 'Apply to Work and Get a Free Background Check!',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for CareLinx',
+            link: 'https://www.trustpilot.com/review/carelinx.com',
+          },
           {
             title: 'Indeed: Job Reviews for CareLinx Workers',
             link: 'https://www.indeed.com/cmp/Carelinx/reviews',
@@ -575,6 +679,10 @@ export const initialState = {
         apppromo: 'Sign Up for Postmates and Get $100 Delivery Credit!',
         resources: [
           {
+            title: 'Trustpilot: Reviews for Postmates',
+            link: 'https://www.trustpilot.com/review/postmates.com',
+          },
+          {
             title: 'Indeed: Job Reviews for PostMates Drivers',
             link: 'https://www.indeed.com/cmp/Postmates/reviews',
           },
@@ -609,6 +717,10 @@ export const initialState = {
           'UberEats drivers pick up food from local restaurants and deliver the orders to customers. Some cities offer bike and scooter delivery in addition to driving delivery.',
         promo: '',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for Uber Eats',
+            link: 'https://www.trustpilot.com/review/ubereats.com',
+          },
           {
             title: 'Indeed: Job Reviews for Uber Eats Drivers',
             link:
@@ -646,6 +758,10 @@ export const initialState = {
         apppromo: 'Sign Up for Grubhub and Get $5!',
         resources: [
           {
+            title: 'Trustpilot: Reviews for Grubhub',
+            link: 'https://www.trustpilot.com/review/www.grubhub.com',
+          },
+          {
             title: 'Indeed: Job Reviews for Grubhub Drivers',
             link: 'https://www.indeed.com/cmp/Grubhub/reviews',
           },
@@ -681,6 +797,10 @@ export const initialState = {
         promo: '',
         resources: [
           {
+            title: 'Trustpilot: Reviews for Caviar',
+            link: 'https://www.trustpilot.com/review/trycaviar.com',
+          },
+          {
             title: 'Indeed: Job Reviews for Caviar Drivers',
             link: 'https://www.indeed.com/cmp/Caviar/reviews?fjobtitle=Courier',
           },
@@ -710,6 +830,10 @@ export const initialState = {
           'Favor Runners deliver just about anything to customers and get paid for it. Unlike other deliver gigs, Favor provides a $9 per hour base pay, though tips are deducted from this, and is available in 12 cities',
         apppromo: 'Sign Up for Favor and Get $5!',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for Favor',
+            link: 'https://www.trustpilot.com/review/favordelivery.com',
+          },
           {
             title: 'Indeed: Job Reviews for Favor Runners',
             link: 'https://www.indeed.com/cmp/Favor-Delivery/reviews',
@@ -744,6 +868,10 @@ export const initialState = {
         apppromo: 'Sign Up for GoPuff and Get $15!',
         resources: [
           {
+            title: 'Trustpilot: Reviews for GoPuff',
+            link: 'https://www.trustpilot.com/review/www.gopuff.com',
+          },
+          {
             title: 'Indeed: Job Reviews for GoPuff Drivers',
             link: 'https://www.indeed.com/cmp/Gopuff/reviews',
           },
@@ -777,6 +905,10 @@ export const initialState = {
           'Drizly partners with liquor stores to deliver their fine products to customers. The hiring process for their drivers is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
         apppromo: 'Sign Up for Drizly and Get $5!',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for Drizly',
+            link: 'https://www.trustpilot.com/review/drizly.com',
+          },
           {
             title: 'Glassdoor: Job Reviews for Drizly Drivers',
             link:
@@ -836,6 +968,10 @@ export const initialState = {
           'As a delivery person for Eaze, you will deliver cannabis products from a licensed retailer directly to consumers. Eaze is currently only available in California.',
         apppromo: 'Sign Up for Eaze and Get $20!',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for Eaze',
+            link: 'https://www.trustpilot.com/review/eaze.com',
+          },
           {
             title: 'Glassdoor: Job Reviews for Eaze Drivers',
             link:
@@ -901,6 +1037,10 @@ export const initialState = {
         apppromo: 'Sign Up for Instacart and Get $10!',
         resources: [
           {
+            title: 'Trustpilot: Reviews for Instacart',
+            link: 'https://www.trustpilot.com/review/instacart.com',
+          },
+          {
             title: 'Indeed: Job Reviews for Instacart Shoppers',
             link: 'https://www.indeed.com/cmp/Instacart/reviews',
           },
@@ -954,6 +1094,10 @@ export const initialState = {
         promo: '',
         resources: [
           {
+            title: 'Trustpilot: Reviews for AirBnB',
+            link: 'https://www.trustpilot.com/review/www.airbnb.com',
+          },
+          {
             title: 'Indeed: Job Reviews for AirBnB Hosts',
             link: 'https://www.indeed.com/cmp/Airbnb/reviews',
           },
@@ -977,6 +1121,10 @@ export const initialState = {
           'HomeAway is a vacation rental marketplace with more than 2,000,000 vacation rentals in 190 countries listed on its website. Instead of leaving your vacation property vacant rent it out on HomeAway.',
         promo: '',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for HomeAway',
+            link: 'https://www.trustpilot.com/review/www.homeaway.com',
+          },
           {
             title: 'Trustpilot: Reviews for Homeaway',
             link: 'https://www.trustpilot.com/review/www.homeaway.com',
@@ -1013,6 +1161,10 @@ export const initialState = {
           'VRBO is a service for homeowners to list their properties for short term rental. If you have a vacation beach house, condo, cabin, or other property, list it on VRBO and start earning.',
         promo: '',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for VRBO',
+            link: 'https://www.trustpilot.com/review/www.vrbo.com',
+          },
           {
             title: 'ConsumerAffairs: VRBO Review',
             link: 'https://www.consumeraffairs.com/online/vrbo.html',
@@ -1160,6 +1312,10 @@ export const initialState = {
         promo: '',
         resources: [
           {
+            title: 'Trustpilot: Reviews for Bird',
+            link: 'https://www.trustpilot.com/review/bird.co',
+          },
+          {
             title: 'r/birdcharger: Subreddit for Bird Chargers',
             link: 'https://www.reddit.com/r/birdcharger/',
           },
@@ -1242,6 +1398,10 @@ export const initialState = {
         apppromo: 'Sign Up for TaskRabbit and Get $10!',
         resources: [
           {
+            title: 'Trustpilot: Reviews for TaskRabbit',
+            link: 'https://www.trustpilot.com/review/taskrabbit.com',
+          },
+          {
             title: 'Indeed: Reviews for TaskRabbit Workers',
             link: 'https://www.indeed.com/cmp/Taskrabbit/reviews',
           },
@@ -1282,6 +1442,10 @@ export const initialState = {
           'Bellhops is a moving service that eases the demands of moving by connecting capable workers with clients looking to pack up and move. As a mover, you will get paid to pack boxes and move people into their new digs.',
         promo: '',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for Bellhops',
+            link: 'https://www.trustpilot.com/review/www.getbellhops.com',
+          },
           {
             title: 'Indeed: Job Reviews for Bellhops Workers',
             link: 'https://www.indeed.com/cmp/Bellhops/reviews',
@@ -1338,6 +1502,10 @@ export const initialState = {
           'At Takl, you get paid to help others in your community complete small jobs and household chores. You can perform chores in twelve categories on your own time, and get paid fast through direct deposit.',
         apppromo: 'Sign Up for Takl and Get 10% Off Your First Job!',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for Takl',
+            link: 'https://www.trustpilot.com/review/takl.com',
+          },
           {
             title: 'Indeed: Job Reviews for Takl Workers',
             link: 'https://www.indeed.com/cmp/Takl/reviews',
@@ -1419,6 +1587,10 @@ export const initialState = {
         promo: '',
         resources: [
           {
+            title: 'Trustpilot: Reviews for Via Transportation',
+            link: 'https://www.trustpilot.com/review/ridewithvia.com',
+          },
+          {
             title: 'Indeed: Job Reviews for Via Drivers',
             link: 'https://www.indeed.com/cmp/Via-Transportation/reviews',
           },
@@ -1449,6 +1621,10 @@ export const initialState = {
         promo: '',
         resources: [
           {
+            title: 'Trustpilot: Reviews for GroundLink',
+            link: 'https://www.trustpilot.com/review/groundlink.com',
+          },
+          {
             title: 'Yelp reviews for GroundLink',
             link: 'https://www.yelp.com/biz/groundlink-new-york',
           },
@@ -1473,6 +1649,10 @@ export const initialState = {
           'Curb drivers are licensed and insured cab drivers. Available in NYC, Boston, Philadelphia, Miami and Las Vegas, Curb aims to help impacted cab drivers adapt to Uber and Lyft.',
         promo: '',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for Curb',
+            link: 'https://www.trustpilot.com/review/gocurb.com',
+          },
           {
             title: 'Indeed: Job Reviews for Curb Drivers',
             link: 'https://www.indeed.com/cmp/Curb/reviews',
@@ -1501,6 +1681,10 @@ export const initialState = {
           'NetWorx is looking for professionals offering contracting services like Carpentry, Pest Control, Fencing and Roofing. They connect you with local demand for these services, and help boost your bottom line.',
         promo: '',
         resources: [
+          {
+            title: 'Trustpilot: Reviews for Networx',
+            link: 'https://www.trustpilot.com/review/networx.com',
+          },
           {
             title: 'Glassdoor: Job Reviews for NetWorx Workers',
             link:
@@ -1541,6 +1725,10 @@ export const initialState = {
         promo: '',
         resources: [
           {
+            title: 'Trustpilot: Reviews for LawnStarter',
+            link: 'https://www.trustpilot.com/review/lawnstarter.com',
+          },
+          {
             title: 'Indeed: Job Reviews for LawnStarter Workers',
             link:
               'https://www.indeed.com/cmp/Lawnstarter/reviews?ftopic=paybenefits',
@@ -1580,6 +1768,10 @@ export const initialState = {
         promo: '',
         resources: [
           {
+            title: 'TrustPilot: Reviews for Lawn Love',
+            link: 'https://www.trustpilot.com/review/lawnlove.com',
+          },
+          {
             title: 'Indeed: Job Reviews for Lawn Love Workers',
             link: 'https://www.indeed.com/cmp/Lawn-Love/reviews',
           },
@@ -1598,6 +1790,10 @@ export const initialState = {
           'Veryable is a great way for manufacturing workers the leverage the gig economy. When clients book a project through their service, the labor is filled from their pool of workers. Flexible work, daily pay',
         promo: '',
         resources: [
+          {
+            title: 'TrustPilot: Reviews for Veryable',
+            link: 'https://www.trustpilot.com/review/veryableops.com',
+          },
           {
             title: 'Indeed: Job Reviews for Veryable Workers',
             link:
@@ -1635,6 +1831,10 @@ export const initialState = {
           'Primarily a place to find work in child or pet care, Care.com also offers gigs for housekeepers, gardeners, tutors, and those caring for the elderly.',
         promo: '',
         resources: [
+          {
+            title: 'TrustPilot: Reviews for Care.com',
+            link: 'https://www.trustpilot.com/review/care.com',
+          },
           {
             title: 'Indeed: Job Reviews for Care.com Workers',
             link: 'https://www.indeed.com/cmp/Care.com/reviews',
@@ -1781,6 +1981,10 @@ export const initialState = {
         promo: '',
         resources: [
           {
+            title: 'TrustPilot: Reviews for Market Force',
+            link: 'https://www.trustpilot.com/review/uk.marketforce.com',
+          },
+          {
             title: 'Indeed: Job Reviews for Market Force Workers',
             link: 'https://www.indeed.com/cmp/Market-Force/reviews',
           },
@@ -1847,6 +2051,10 @@ export const initialState = {
           'Gig work for massage therapists, including deep tissue, sports, and couples massage work. Soothe advertises 2-3x industry standard pay and schedule flexibility.',
         apppromo: 'Sign Up for Soothe With Code ESEFM and Get $20!',
         resources: [
+          {
+            title: 'TrustPilot: Reviews for Soothe',
+            link: 'https://www.trustpilot.com/review/soothe.com',
+          },
           {
             title: 'Indeed: Job Reviews for Soothe Workers',
             link: 'https://www.indeed.com/cmp/Soothe-Inc/reviews',
@@ -1974,46 +2182,6 @@ export const initialState = {
         subtypes: ['labor', 'cuisine'],
       },
       {
-        id: 'G0208',
-        gig: 'Fiverr',
-        description:
-          'Fiverr is one of the easiest ways to make money in the gig economy. No matter what skills you have, with a little creativity you sell your services to a platform of motivated buyers.',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Fiverr Freelancers',
-            link: 'https://www.indeed.com/cmp/Fiverr/reviews',
-          },
-        ],
-        gigsite: 'https://www.fiverr.com/start_selling',
-        services: [],
-        subtypes: [''],
-      },
-      {
-        id: 'G0209',
-        gig: 'LinkedIn ProFinder',
-        description:
-          'LinkedIn ProFinder connects top freelance professionals like you with high quality leads.',
-        indeed: '',
-        promo: '',
-        resources: [],
-        gigsite: 'https://www.linkedin.com/profinder/pros',
-        services: [],
-        subtypes: [''],
-      },
-      {
-        id: 'G0210',
-        gig: 'Freelancer',
-        description:
-          'Freelancer has posted almost 11 million jobs for tens of thousands of its members. ',
-        indeed: '',
-        promo: '',
-        resources: [],
-        gigsite: 'https://www.freelancer.com/jobs/',
-        services: [],
-        subtypes: [''],
-      },
-      {
         id: 'G0148',
         gig: 'Zifty',
         app:
@@ -2050,6 +2218,10 @@ export const initialState = {
         promo: '',
         resources: [
           {
+            title: 'TrustPilot: Reviews for Peach',
+            link: 'https://www.trustpilot.com/review/peachd.com',
+          },
+          {
             title: 'Indeed: Job Reviews for Peach Drivers',
             link: 'https://www.indeed.com/cmp/Peach/reviews',
           },
@@ -2079,6 +2251,10 @@ export const initialState = {
           'Deliveroo is a UK based food-delivery service. Delivery Drivers get paid to move orders from restaurants to homes. Unfortunately it is not currently available in America.',
         promo: '',
         resources: [
+          {
+            title: 'TrustPilot: Reviews for Deliveroo',
+            link: 'https://www.trustpilot.com/review/www.deliveroo.co.uk',
+          },
           {
             title: 'Indeed: Job Reviews for Deliveroo Drivers',
             link: 'https://www.indeed.com/cmp/Deliveroo/reviews',
@@ -2134,6 +2310,462 @@ export const initialState = {
         subtypes: ['driving', 'rideshare'],
       },
       {
+        id: 'G0220',
+        gig: '99Designs',
+        app:
+          '99Designs is a global creative platform that makes it easy for designers and clients to work together to create designs they love.',
+        description:
+          '99designs connects all types of graphic designers with clients worldwide. 99Designs offers two working models – either work one on one with a client or participate in a design contest. Only the winning design gets paid in a contest. It’s free to join 99designs. The platform reviews your work to rate you as an Entry, Mid, or Top level designer. The higher your level, the more perks you’ll unlock on 99Designs.',
+        promo: '',
+        resources: [
+          {
+            title: 'TrustPilot: Reviews for 99Designs',
+            link: 'https://www.trustpilot.com/review/www.99designs.com',
+          },
+          {
+            title: 'Indeed: Reviews for 99Designs Workers',
+            link:
+              'https://www.indeed.com/cmp/99designs/reviews?fcountry=ALL&fjobtitle=Graphic+Designer',
+          },
+        ],
+        gigsite: 'https://99designs.com/designers',
+        appsite: 'https://99designs.com/designers/search',
+        pay: '',
+        services: [],
+        subtypes: ['design'],
+      },
+      {
+        id: 'G0224',
+        gig: 'DesignHill',
+        app:
+          "DesignHill is the world's #1 marketplace, powered by a massive community of designers and business owners. Small businesses and start-ups everywhere use their service to get custom graphic designs for logos, business cards, t-shirts, websites, and more.",
+        description:
+          'DesignHill matches businesses and individuals with designs provided by remote freelancers, they also run design contests that allow clients to request submissions for their projects, and for designers to showcase their abilities and compete for a prize.',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for DesignHill',
+            link: 'https://www.trustpilot.com/review/designhill.com',
+          },
+        ],
+        gigsite: 'https://www.designhill.com/printshop',
+        appsite: 'https://www.designhill.com/',
+        pay: '',
+        services: [],
+        subtypes: ['design'],
+      },
+      {
+        id: 'G0225',
+        gig: 'StoryHunter',
+        app:
+          'StoryHunter makes it easier for businesses and individuals to connect with freelance video producers. Simply post your needs on StoryHunter, including your location, budget and timing. Our algorithm instantly matches you with the best available freelancers in our network and notifies them of your project.',
+        description:
+          'StoryHunter is a freelance platform for video designers to find new video projects. Here’s how you do it: Sign up to build your portfolio, add your projects, and get them verified. Once you’re accepted into the network, you can apply to postings and pitch stories to some of the worlds best-known brands.',
+        promo: '',
+        resources: [
+          {
+            title: 'Glassdoor: Reviews for StoryHunter Workers',
+            link:
+              'https://www.glassdoor.com/Reviews/Storyhunter-Reviews-E1053392.htm',
+          },
+        ],
+        gigsite: 'https://storyhunter.com/home/freelancing/',
+        appsite: 'https://storyhunter.com/home/find-talent/',
+        pay: '',
+        services: [],
+        subtypes: ['design'],
+      },
+      {
+        id: 'G0226',
+        gig: 'CGTrader',
+        app:
+          'CGTrader is the world’s largest source for licensable stock and custom 3D models. The self-service CGTrader Marketplace showcases 1,030,000 3D models and includes a managed community of 2.61 million users. CGTrader Enterprise 3D Modeling allows enterprise customers and online retailers to transform their 2D product images into photorealistic 3D models for Augmented Reality and other 3D customer experiences.',
+        description:
+          'CGTrader can make your 3D assets profitable by connecting you to an ever-increasing base of buyers from all over the globe.',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for CGTrader',
+            link: 'https://www.trustpilot.com/review/cgtrader.com',
+          },
+          {
+            title: 'Indeed: Reviews for CGTrader',
+            link: 'https://www.trustpilot.com/review/cgtrader.com',
+          },
+        ],
+        gigsite: 'https://www.cgtrader.com/pages/sell-3d-models',
+        appsite: 'https://www.cgtrader.com/',
+        pay: '',
+        services: [],
+        subtypes: ['design'],
+      },
+      {
+        id: 'G0227',
+        gig: 'DesignCrowd',
+        app:
+          'DesignCrowd is an online logo design service and marketplace for website design contests and almost any other type of graphic design you can think of.',
+        description:
+          'DesignCrowd connects design freelancers and clients. They host design contests for logos, flyers, web design, and more.',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for DesignCrowd',
+            link: 'https://www.trustpilot.com/review/designcrowd.com',
+          },
+          {
+            title: 'Glassdoor: Reviews for DesignCrowd',
+            link:
+              'https://www.glassdoor.com/Overview/Working-at-DesignCrowd-EI_IE776715.11,22.htm',
+          },
+        ],
+        gigsite: 'https://www.designcrowd.com/',
+        appsite: 'https://www.designcrowd.com/',
+        pay: '',
+        services: [],
+        subtypes: ['design'],
+      },
+      {
+        id: 'G0228',
+        gig: 'PrestoExperts',
+        app:
+          "Finding the expert help that you need is easy on PrestoExperts. With more than 30,000 registered experts in over 600 categories to choose from, chances are, we'll have just the right professional in the exact area of expertise that you need.",
+        description:
+          'Find freelance clients for tutoring or project-based work as a designer in any field, including animation, web design, and video.',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for PrestoExperts',
+            link: 'https://www.trustpilot.com/review/www.prestoexperts.com',
+          },
+        ],
+        gigsite: 'https://www.prestoexperts.com/',
+        appsite: 'https://www.prestoexperts.com/',
+        pay: '',
+        services: [],
+        subtypes: ['software', 'design'],
+      },
+      {
+        id: 'G0211',
+        gig: 'Toptal',
+        app:
+          'Toptal connects startups and businesses with the top talent from around the world. The company uniquely boasts that they can give you access to the top 3 percent of freelance talent all over the world. They do this by screening all applicants before they enter their freelancing talent pool.',
+        description:
+          'Toptal accepts the top 3% of software engineers, designers, PMOs and finance experts for remote freelance projects. Their screening process includes a timed algorithm test, language and personality test, technical screenings and a test project.',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for Toptal',
+            link: 'https://www.trustpilot.com/review/toptal.com',
+          },
+          {
+            title: 'Indeed: Reviews for Toptal Workers',
+            link: 'https://www.indeed.com/cmp/Toptal/reviews',
+          },
+        ],
+        gigsite: 'https://www.toptal.com/talent/apply',
+        appsite: 'https://www.toptal.com/hire',
+        pay:
+          'The commission and pay structure of Toptal is not public, but Toptal contracts out the labor to businesses for $60-$95+/hr.',
+        services: [],
+        subtypes: ['software', 'design'],
+      },
+      {
+        id: 'G0212',
+        gig: 'Upwork',
+        app:
+          'Upwork’s process is simple enough. Start by describing the type of job you need done. It can be practically any job—big or small, individual or team, short term or long term. Potential candidates will apply to your posting allowing you to compare profiles, feedback and portfolios.',
+        description:
+          'Upwork functions as a marketplace connecting individuals and businesses looking for skilled labor with freelancers offering that labor. Build a profile and you can start bidding on projects.',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for Upwork',
+            link: 'https://www.trustpilot.com/review/upwork.com',
+          },
+          {
+            title: 'Indeed: Reviews for Upwork Freelancers',
+            link:
+              'https://www.indeed.com/cmp/Upwork/reviews?fcountry=ALL&fjobtitle=Freelancer',
+          },
+        ],
+        gigsite: 'https://www.upwork.com/signup/?dest=home',
+        appsite: 'https://www.upwork.com/signup/?dest=job-posting',
+        pay:
+          'Each project has an advertised pay, Upwork takes a small percentage (around 3%).',
+        services: [],
+        subtypes: ['software', 'design'],
+      },
+      {
+        id: 'G0221',
+        gig: 'TopCoder',
+        app:
+          'TopCoder matches software designers, developers, and data scientists with global clients, through paid contests.',
+        description:
+          'TopCoder matches remote freelance developers to paying gigs through different contests where you prove your skills for cash payouts.',
+        promo: '',
+        resources: [
+          {
+            title: 'Glassdoor: Reviews for TopCoder Developers',
+            link: 'https://www.indeed.com/cmp/Topcoder/reviews',
+          },
+        ],
+        gigsite: 'https://www.topcoder.com/community/learn',
+        appsite: 'https://www.topcoder.com/',
+        pay: '',
+        services: [],
+        subtypes: ['software'],
+      },
+      {
+        id: 'G0209',
+        gig: 'LinkedIn ProFinder',
+        app:
+          "LinkedIn ProFinder is LinkedIn's professional services marketplace that helps you find the best freelance or independent professionals in your area. It's currently only available within the U.S. and within specific service categories",
+        description:
+          'LinkedIn ProFinder connects top freelance professionals across a variety of fields like software development, graphic design and accounting, with high quality leads. LinkedIn members will make a request for services they need. When a request that matches your expertise, they send you an email, and you can respond on your own terms.',
+        promo: '',
+        resources: [
+          {
+            title:
+              'Forbes: Thinking About Trying LinkedIn ProFinder? Check Out These Findings',
+            link:
+              'https://www.forbes.com/sites/elainepofeldt/2017/09/30/thinking-about-trying-linkedin-profinder-check-out-these-findings/#3a735ad91efd',
+          },
+        ],
+        gigsite: 'https://www.linkedin.com/profinder/pros',
+        appsite: 'https://www.linkedin.com/profinder',
+        services: [],
+        subtypes: ['software', 'design'],
+      },
+      {
+        id: 'G0213',
+        gig: 'Guru',
+        app:
+          'Guru is similar to Upwork in the sense that you start your freelancer search by describing and posting your job on their site. However, unlike Upwork, Guru adds another layer through the ability to search for a specific freelancer based on specialties, categories, location, feedback, rate and more. This allows top freelancers to stand out from the crowd instead of having to apply for jobs each time.',
+        description:
+          'Guru functions as a marketplace connecting individuals and businesses looking for freelance labor with freelancers offering that labor. Build a profile and you can start bidding on projects.',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for Guru',
+            link: 'https://www.trustpilot.com/review/guru.com',
+          },
+          {
+            title: 'Indeed: Reviews for Guru Freelancers',
+            link: 'https://www.indeed.com/cmp/Guru.com/reviews',
+          },
+        ],
+        gigsite: 'https://www.guru.com/registeraccount.aspx',
+        appsite: 'https://www.guru.com/post-job/',
+        pay:
+          'Each project has an advertised pay, Guru takes a small percentage.',
+        services: [],
+        subtypes: ['software', 'design'],
+      },
+      {
+        id: 'G0210',
+        gig: 'Freelancer',
+        app:
+          'Freelancer is similar to Upwork and Guru in the sense that you start your freelancer search by describing and posting your job on their site. They also have a reputation system to simplify the process of finding the right freelancer',
+        description:
+          'Freelancer functions as a marketplace connecting individuals and businesses looking for software development labor with freelancers offering that labor. They have smaller scale projects so, if you have less experience, you can secure more gigs.',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for Freelancer',
+            link: 'https://www.trustpilot.com/review/www.freelancer.com',
+          },
+          {
+            title: 'Indeed: Reviews for Freelancer Freelancers',
+            link: 'https://www.indeed.com/cmp/Freelancer.com/reviews',
+          },
+        ],
+        gigsite: 'https://www.freelancer.com/signup',
+        appsite: 'https://www.freelancer.com/post-project/?ngsw-bypass=&w=f',
+        pay:
+          'Each project has an advertised pay, Freelancer takes a percentage (around 10%).',
+        services: [],
+        subtypes: ['software'],
+      },
+      {
+        id: 'G0214',
+        gig: 'Outsourcely',
+        app:
+          'Outsourcely is a site that connects employers with remote workers. They are focussed on employers looking for more permanent staff as opposed to small short term projects.',
+        description:
+          'Outsourcely is a marketplace connecting freelance talent to businesses and individuals seeking it. The site distinguishes itself from rivals by not taking a cut from the pay of the workers themselves and by focussing on longer term projects as opposed to short term gigs, they even employ freelancers full time.',
+        promo: '',
+        resources: [
+          {
+            title: 'Glassdoor: Reviews for Outsourcely Freelancers',
+            link:
+              'https://www.glassdoor.com/Reviews/Outsourcely-Reviews-E1591978.htm',
+          },
+        ],
+        gigsite: 'https://www.outsourcely.com/remote-workers',
+        appsite: 'https://www.outsourcely.com/startups-and-businesses',
+        pay:
+          'Each project has an advertised pay, Outsourcely takes no percentage.',
+        services: [],
+        subtypes: ['software'],
+      },
+      {
+        id: 'G0215',
+        gig: 'PeoplePerHour',
+        app:
+          'PeoplePerHour provides three ways for companies to get started on their quest for freelance work. The first option is to browse Hourlies, which are fixed offers that are ready to begin right away. The second option is to post a job and wait for the proposals to roll in. Finally, the third option allows you to search the directory of freelancers and contact them directly.',
+        description:
+          'PeoplePerHour is a marketplace matching freelance talent with individuals and businesses. Their team meticulously reviews applications of interested freelancers. Talents do not just put up a profile when they sign up—they are assessed to ensure that they are indeed professional workers and quality service sellers.',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for PeoplePerHour',
+            link: 'https://www.trustpilot.com/review/www.peopleperhour.com',
+          },
+        ],
+        gigsite: 'https://www.peopleperhour.com/site/register#freelancer',
+        appsite: 'https://www.peopleperhour.com/job/new?ref=header',
+        pay: '',
+        services: [],
+        subtypes: ['software'],
+      },
+      {
+        id: 'G0216',
+        gig: 'Flexiple',
+        app:
+          'Flexiple is a premium, tech-only (developers & designers) online platform that sources the best freelance talent who have previously worked at top tech companies such as Amazon, Microsoft, Adobe, among others.',
+        description:
+          'Flexiple hires premium developers and designers who previously worked at top tech companies like Facebook, Microsoft, Apple and Amazon for remote freelance software development work.',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for Flexiple',
+            link: 'https://www.trustpilot.com/review/flexiple.com',
+          },
+          {
+            title: 'Glassdoor: Reviews for Flexiple Workers',
+            link:
+              'https://www.glassdoor.com/Overview/Working-at-Flexiple-EI_IE2987429.11,19.htm',
+          },
+        ],
+        gigsite: 'https://flexiple.com/freelancer-onboarding-form',
+        appsite: 'https://flexiple.com/customer-form',
+        pay: '',
+        services: [],
+        subtypes: ['software'],
+      },
+      {
+        id: 'G0217',
+        gig: 'Arc.dev',
+        app:
+          'A simpler way to hire great remote talent. Helping organizations scale faster with top vetted developers. Arc is your complete remote hiring solution.',
+        description:
+          'Arc.dev started off, and continues as, a “leading on-demand mentorship platform for developers” but has also developed a solution for hiring freelance developers. Like other premium freelance networks, they have a vetting process to ensure quality',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for Arc.dev',
+            link: 'https://www.trustpilot.com/review/arc.dev',
+          },
+          {
+            title: 'Glassdoor: Reviews for Arc.dev Workers',
+            link:
+              'https://www.glassdoor.com/Overview/Working-at-ARC-Developers-EI_IE2210166.11,25.htm',
+          },
+        ],
+        gigsite: 'https://arc.dev/developer/apply',
+        appsite: 'https://arc.dev/',
+        pay: '',
+        services: [],
+        subtypes: ['software'],
+      },
+      {
+        id: 'G0218',
+        gig: 'Hubstaff Talent',
+        app:
+          'Hubstaff Talent offers a completely free service for companies looking to hire independent freelancers as well as agencies. With more emphasis on the use of software to match freelancers with projects, there is no manual vetting process to ascertain their quality.',
+        description:
+          'Hubstaff Talent is a marketplace matching freelance talent with demand from individuals and companies. There is no vetting process, and it allows employers to get in touch with freelancers directly.',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for Hubstaff Talent',
+            link: 'https://www.trustpilot.com/review/talent.hubstaff.com',
+          },
+        ],
+        gigsite: 'https://talent.hubstaff.com/work',
+        appsite: 'https://talent.hubstaff.com/jobs/new',
+        pay: '',
+        services: [],
+        subtypes: ['software'],
+      },
+      {
+        id: 'G0219',
+        gig: 'Workana',
+        app:
+          'Workana is one of the most important freelance marketplaces in the world, with almost 2 million freelancers and over 1,000 freelance job opportunities posted every day.',
+        description:
+          'Workana is a freelance job site that focuses on tech and design skills. It is free to use as a freelancer, but you’ll be charged varying levels of commission each time you’re paid by a client. To use Workana, you’ll need to create a profile that promotes your skills, then search for suitable jobs and send a bid to the client that lays out your rates, timeline, and expertise.',
+        promo: '',
+        resources: [
+          {
+            title: 'Glassdoor: Reviews for Workana Workers',
+            link:
+              'https://www.glassdoor.com/Reviews/Workana-Reviews-E1464337.htm',
+          },
+        ],
+        gigsite: 'https://www.workana.com/en/signup',
+        appsite: 'https://www.workana.com/en/post-project?ref=home_top_bar',
+        pay: '',
+        services: [],
+        subtypes: ['software', 'design'],
+      },
+      {
+        id: 'G0222',
+        gig: 'Twine',
+        app:
+          'Twine provides a community for app developers, programmers, and other tech creatives to promote their skills, find jobs, and attract new clients.',
+        description:
+          'Twine is an online marketplace and network that connects creative freelancers in music, design and film to buyers. Twine allows creative freelancers to tag collaborators on a creative project, enabling all those who worked on it to receive credit and build a portfolio.',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for Twine',
+            link: 'https://www.trustpilot.com/review/twine.fm',
+          },
+          {
+            title:
+              'TheNextWeb: Twine The Anti-fiverr for Creative Professionals',
+            link:
+              'https://thenextweb.com/eu/2017/06/05/twine-is-the-anti-fiverr-for-creative-professionals/',
+          },
+        ],
+        gigsite: 'https://www.twine.fm/creatives',
+        appsite: 'https://www.twine.fm/',
+        pay: '',
+        services: [],
+        subtypes: ['software', 'design'],
+      },
+      {
+        id: 'G0223',
+        gig: 'Crossover',
+        app:
+          'Crossover teams are assembled from the top 1% of talent across 130 countries. Challenge yourself to become a part of the cloud team revolution.',
+        description:
+          'Crossover hires the top 1% of programming and developing experts for full-time, remote working.',
+        promo: '',
+        resources: [
+          {
+            title: 'Indeed: Reviews for Crossover Workers',
+            link: 'https://www.indeed.com/cmp/Crossover/reviews',
+          },
+        ],
+        gigsite: 'https://jobs.crossover.com/',
+        appsite: 'https://www.crossover.com/#index',
+        pay: '',
+        services: [],
+        subtypes: ['software'],
+      },
+      {
         id: 'G0186',
         gig: 'Burpy',
         app:
@@ -2142,6 +2774,10 @@ export const initialState = {
           'Burpy is another grocery service, offering delivery to customers within the hour. It hires shoppers to shop and deliver for customers, but is only available in the Texas area.',
         promo: '',
         resources: [
+          {
+            title: 'TrustPilot: Reviews for Burpy',
+            link: 'https://www.trustpilot.com/review/www.burpy.com',
+          },
           {
             title: 'Indeed: Job Reviews for Burpy Drivers',
             link: 'https://www.indeed.com/cmp/Burpy/reviews',
@@ -2306,33 +2942,6 @@ export const initialState = {
         subtypes: ['driving', 'packagedelivery'],
       },
       {
-        id: 'G0161',
-        gig: 'uShip',
-        app:
-          'uShip makes shipping motorcycles, boats, and other large items fast and affordable by connecting you to their network of carriers who compete for your shipment.',
-        description:
-          'uShip carriers ship motorcycles, boats, and other large items. If you have the type of horsepower that can handles these deliveries, you can start making money as a uShip carrier.',
-        promo: '',
-        resources: [
-          {
-            title: 'Glassdoor: Job Reviews for uShip Carriers',
-            link: 'https://www.glassdoor.com/Reviews/uShip-Reviews-E200164.htm',
-          },
-        ],
-        gigsite: 'https://www.uship.com/register/',
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'packagedelivery'],
-      },
-      {
         id: 'G0182',
         gig: 'DispatchIt',
         app:
@@ -2447,6 +3056,7 @@ export const initialState = {
         subtypes: ['labor', 'mover'],
       },
     ],
+    // Services
     services: [
       {
         id: 'S0001',
@@ -2571,7 +3181,18 @@ export const initialState = {
         promo: '',
         gigsite: 'https://scootermap.com/?sc_referral=62591ccf',
       },
+      {
+        id: 'S0041',
+        gig: 'Time Doctor',
+        description:
+          'ScooterMap puts all the scooters from all the brands into one convenient app, making it easier for chargers to locate new scooters and earn more money.',
+        indeed:
+          'https://apps.apple.com/us/app/scooter-map-all-the-scooters/id1437698355',
+        promo: '',
+        gigsite: 'https://staff.com',
+      },
     ],
+    // Deals
     deals: [
       {
         id: 'D0001',

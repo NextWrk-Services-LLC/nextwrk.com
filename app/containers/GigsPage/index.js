@@ -69,6 +69,8 @@ export function GigsPage({ loading, error, gigs }) {
     mysteryshop: false,
     beauty: false,
     cuisine: false,
+    software: false,
+    design: false,
 
     gigs: allGigs,
     searchList: searchGigs,
@@ -172,6 +174,12 @@ export function GigsPage({ loading, error, gigs }) {
     }
     if (state.cleaning) {
       showGigs.push('cleaning');
+    }
+    if (state.software) {
+      showGigs.push('software');
+    }
+    if (state.design) {
+      showGigs.push('design');
     }
     setState({
       ...state,
@@ -314,6 +322,29 @@ export function GigsPage({ loading, error, gigs }) {
                 />
               }
               label="Grocery Shopping"
+            />
+            <H2>Freelancing</H2>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.software}
+                  onChange={handleChange}
+                  name="software"
+                  color="default"
+                />
+              }
+              label="Software Freelancing"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.design}
+                  onChange={handleChange}
+                  name="design"
+                  color="default"
+                />
+              }
+              label="Design Freelancing"
             />
             <H2>Rental</H2>
             <FormControlLabel
