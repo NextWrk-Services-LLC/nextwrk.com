@@ -35,6 +35,7 @@ import Wrapper from './Wrapper';
 import InputTop from './InputTop';
 import Button from './Button';
 import SearchImg from './SearchImg';
+import FilterBtn from './FilterBtn';
 import search from './img/search.png';
 
 export function GigsPage({ loading, error, gigs }) {
@@ -86,16 +87,6 @@ export function GigsPage({ loading, error, gigs }) {
     min-width: 230px;
     border: 1px solid #808080;
     z-index: 1;
-  `;
-
-  const FilterBtn = styled.button`
-    margin-top: 0px;
-    padding-top: 18px;
-    padding-left: 20px;
-    color: #3b9ad5;
-    font-size: 20px;
-    border: none;
-    background-color: #ffffff;
   `;
 
   const HideableTr = styled.tr`

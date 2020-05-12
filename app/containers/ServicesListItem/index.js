@@ -28,6 +28,8 @@ import Table from './Table';
 
 export function ServicesListItem(props) {
   const { item } = props;
+  const images = require.context('../../images/Logos', true);
+  const logo = images(`./${item.id}.png`);
 
   const [show, toggleShow] = useState(false);
   const closePopup = useCallback(() => {
@@ -45,7 +47,7 @@ export function ServicesListItem(props) {
             <tbody>
               <tr>
                 <td>
-                  <Img src={item.logo} alt="Company - Logo" />
+                  <Img src={logo} alt="Company - Logo" />
                 </td>
                 <td>
                   <Title>

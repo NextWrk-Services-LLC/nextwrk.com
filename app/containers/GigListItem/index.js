@@ -27,6 +27,8 @@ import TdImg from './TdImg';
 
 export function GigsListItem(props) {
   const { item } = props;
+  const images = require.context('../../images/Logos', true);
+  const logo = images(`./${item.id}.png`);
 
   const content = (
     <React.Fragment>
@@ -37,7 +39,7 @@ export function GigsListItem(props) {
               <tbody>
                 <tr>
                   <TdImg>
-                    <Img src={item.logo} alt="Company - Logo" />
+                    <Img src={logo} alt="Company - Logo" />
                   </TdImg>
                   <td>
                     <Title>

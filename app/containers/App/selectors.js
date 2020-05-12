@@ -70,6 +70,12 @@ const makeSelectSelectedGig = () =>
     globalState => globalState.selectedGig,
   );
 
+const makeSelectFeatured = () =>
+  createSelector(
+    selectGlobal,
+    globalState => globalState.componentData.gigs.slice(0, 4),
+  );
+
 export {
   selectGlobal,
   makeSelectDeals,
@@ -82,4 +88,5 @@ export {
   makeSelectGigs,
   makeSelectLocation,
   makeSelectSelectedGig,
+  makeSelectFeatured,
 };

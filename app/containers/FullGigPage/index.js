@@ -8,7 +8,6 @@
 import React, { memo } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { compose } from 'redux';
@@ -25,84 +24,18 @@ import {
   makeSelectLoading,
 } from '../App/selectors';
 
-const Inner = styled.div`
-  margin: auto;
-  background: white;
-  border: 1px solid #070600;
-  border-radius: 20px;
-  margin: 20px 40px;
-  padding: 20px;
-  @media (max-width: 768px) {
-    margin: 5px 10px;
-  }
-`;
-
-const H1 = styled.h1`
-  font-size: 32px;
-  color: #3b9ad5;
-  margin: 0px;
-  font-weight: normal;
-  @media (max-width: 768px) {
-    font-size: 24px;
-  }
-`;
-
-const Button = styled.button`
-  border-radius: 60px;
-  border: none;
-  background: #3b9ad5;
-  color: #fff;
-  padding: 10px 20px;
-  outline: none;
-  font-size: 24px;
-  font-weight: bold;
-  &:hover {
-    box-shadow: 0px 0px 3px gray;
-    cursor: pointer;
-  }
-  @media (max-width: 768px) {
-    font-weight: normal;
-    font-size: 16px;
-  }
-`;
-
-const P = styled.p`
-  font-size: 18px;
-  @media (max-width: 768px) {
-    font-size: 14px;
-  }
-`;
-
-const A = styled.a`
-  font-size: 32px;
-  color: #3b9ad5;
-  font-weight: normal;
-  text-decoration: none;
-  @media (max-width: 768px) {
-    font-size: 24px;
-  }
-  &:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-`;
-
-const ASm = styled.a`
-  color: #000000;
-  font-weight: normal;
-  text-decoration: underline;
-  @media (max-width: 768px) {
-    font-size: 14px;
-  }
-  &:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-`;
+import Inner from './Inner';
+import H1 from './H1';
+import Button from './Button';
+import P from './P';
+import A from './A';
+import ASm from './ASm';
 
 export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   const info = allGigs.filter(obj => obj.id.includes(gigId))[0];
+  const images = require.context('../../images/Logos', true);
+  const logo = images(`./${info.id}.png`);
 
   function getServices(target, pattern) {
     let value = 0;
@@ -142,7 +75,7 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
               <td>
                 <img
                   style={{ height: '100px', borderRadius: '10px' }}
-                  src={info.logo}
+                  src={logo}
                   alt="Logo"
                 />
               </td>

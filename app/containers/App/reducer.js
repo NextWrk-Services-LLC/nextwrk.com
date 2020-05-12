@@ -20,129 +20,6 @@ import {
   LOAD_DEALS_ERROR,
   SELECTED_GIG,
 } from './constants';
-// import nw from './img/nw.png';
-import acorns from './img/acorns.png';
-import rlac from './img/rlac.png';
-import rover from './img/rover.png';
-import hsnd from './img/hsnd.png';
-import wingz from './img/wingz.png';
-import uber from './img/uber.png';
-import neighbor from './img/neighbor.png';
-import taskrabbit from './img/taskrabbit.png';
-import roadie from './img/roadie.png';
-import instacart from './img/instacart.png';
-import lyft from './img/lyft.png';
-import amazon from './img/amazon.png';
-import airbnb from './img/airbnb.png';
-import postmates from './img/postmates.png';
-import doordash from './img/doordash.png';
-import wag from './img/wag.png';
-import ubereats from './img/ubereats.png';
-import turo from './img/turo.png';
-import getaround from './img/getaround.png';
-import handy from './img/handy.png';
-import groundlink from './img/groundlink.png';
-import skipcart from './img/skipcart.png';
-import PICKUP from './img/PICKUP.png';
-import tommyrun from './img/tommyrun.png';
-import vrbo from './img/vrbo.png';
-import upship from './img/upship.png';
-import grubhub from './img/grubhub.png';
-import caviar from './img/caviar.png';
-import favor from './img/favor.png';
-import zifty from './img/zifty.png';
-import shipt from './img/shipt.png';
-import homeaway from './img/homeaway.png';
-import ofs from './img/ofs.png';
-import dolly from './img/dolly.png';
-import care from './img/care.png';
-import bellhops from './img/bellhops.png';
-import wonolo from './img/wonolo.png';
-import etsy from './img/etsy.png';
-import goshare from './img/goshare.png';
-import figureeight from './img/figureeight.png';
-import gigwalk from './img/gigwalk.jpg';
-import hellotech from './img/hellotech.png';
-import bird from './img/bird.png';
-import burro from './img/burro.png';
-import carelinx from './img/carelinx.png';
-import census from './img/census.png';
-import drizly from './img/drizly.png';
-import easymove from './img/easymove.png';
-import gbw from './img/gbw1.png';
-import grabbit from './img/grabbit.png';
-import grabr from './img/grabr.png';
-import helpr from './img/helpr1.png';
-import homeaglow from './img/homeaglow.png';
-import hyrecar from './img/hyrecar.png';
-import lawnlove from './img/lawnlove.png';
-import networx from './img/networx.png';
-import octopus from './img/octopus.png';
-import peach from './img/peach.png';
-import priv from './img/priv.png';
-import ridersshare from './img/ridersshare.png';
-import saucey from './img/saucey.png';
-import scootermap from './img/scootermap.png';
-import sherpashare from './img/sherpashare.png';
-import sittercity from './img/sittercity.png';
-import spare5 from './img/spare51.png';
-import spin from './img/spin.png';
-import taskeasy from './img/taskeasy1.png';
-import urbansitter from './img/urbansitter.png';
-import yourmechanic from './img/yourmechanic1.png';
-import zeel from './img/zeel1.png';
-import zum from './img/zum.png';
-import plowzandmowz from './img/plowzandmowz.png';
-import stickerride from './img/stickerride.png';
-import dispatchit from './img/dispatchit.png';
-import boatsetter from './img/boatsetter1.png';
-import deliv from './img/deliv.png';
-import skip from './img/skip.png';
-import fancyhands from './img/fancyhands.png';
-import wrapify from './img/wrapify.png';
-import marketforce from './img/marketforce1.png';
-import lugg from './img/lugg.png';
-import heal from './img/heal.png';
-import veryable from './img/veryable.png';
-import spothero from './img/spothero1.png';
-// import adway from './img/adway.png';
-import burpy from './img/burpy.png';
-import takl from './img/takl1.png';
-import everlance from './img/everlance.png';
-import triplog from './img/triplog.png';
-import rvshare from './img/rvshare1.png';
-import parkingpanda from './img/parkingpanda1.png';
-import lawnstarter from './img/lawnstarter.png';
-import nickelytics from './img/nickelytics.png';
-import deliveroo from './img/deliveroo.png';
-import outdoorsy from './img/outdoorsy.png';
-import gopuff from './img/gopuff.png';
-import soothe from './img/soothe1.png';
-import slingshot from './img/slingshot.png';
-import bungii from './img/bungii.png';
-import lime from './img/lime.png';
-import hurdlr from './img/hurdlr.png';
-import gridwise from './img/gridwise.png';
-import mystro from './img/mystro.png';
-import surge from './img/surge.png';
-import deliverthat from './img/deliverthat.png';
-import via from './img/Via.png';
-import curb from './img/Curb.png';
-import uzurv from './img/Uzurv.png';
-import lovehomeswap from './img/Love Home Swap.png';
-import eaze from './img/Eaze.png';
-import minibar from './img/Minibar.png';
-import sailo from './img/Sailo.png';
-import wardrobe from './img/Wardrobe.png';
-import schlep from './img/Schlep.png';
-import eatwith from './img/EatWith.png';
-import feastly from './img/Feastly.png';
-import robinhood from './img/robinhood.png';
-import rakuten from './img/rakuten.png';
-import cashapp from './img/cashapp.png';
-import fiverr from './img/fiverr.png';
-import linkedin from './img/linkedin.png';
-import freelancer from './img/freelancer.png';
 
 // The initial state of the App
 export const initialState = {
@@ -151,13 +28,8 @@ export const initialState = {
   error: false,
   componentData: {
     gigs: [
-      // Gigs
-      //
-      //
-      //    Driving Gigs
       {
         id: 'G0004',
-        logo: neighbor,
         gig: 'Neighbor',
         app:
           'Storage units and parking at half the cost of traditional storage providers. A bold, new take on storage, Neighbor connects people who have unused storage spaces with people in the area looking for a place to keep their things.',
@@ -182,7 +54,6 @@ export const initialState = {
       },
       {
         id: 'G0009',
-        logo: lyft,
         gig: 'Lyft',
         app:
           'Lyft matches you with a nearby driver who will pick you up and take you where you want to go. Use the Lyft app to get a ride in minutes. Just tap request and a driver’s there. By taking Lyft, you can help your community reduce traffic and take cars off the road.',
@@ -219,9 +90,8 @@ export const initialState = {
         subtypes: ['driving', 'rideshare'],
       },
       {
-        id: 'G0007', // Delivery
-        logo: roadie,
-        gig: 'Roadie', // Last mile
+        id: 'G0007',
+        gig: 'Roadie',
         app:
           'Roadie was the first “on-the-way” delivery service. They put extra space in passenger vehicles to work by connecting people with items to send with drivers heading.',
         description:
@@ -242,20 +112,19 @@ export const initialState = {
       },
       {
         id: 'G0014',
-        logo: doordash,
         gig: 'DoorDash',
         app:
           'Delivery & takeout from the best local restaurants. Breakfast, lunch, dinner and more, delivered safely to your door. Now offering pickup & no-contact delivery.',
         description:
-          'Doordash Dashers deliver food from restaraunts to customers. They schedule shifts and fulfill delivery requests from the DoorDash app.',
-        apppromo: 'Download Doordash and Get $15!',
+          'DoorDash Dashers deliver food from restaurants to customers. They schedule shifts and fulfill delivery requests from the DoorDash app.',
+        apppromo: 'Download DoorDash and Get $15!',
         resources: [
           {
             title: 'Indeed: Job Reviews for DoorDash Dashers',
             link: 'https://www.indeed.com/cmp/Doordash/reviews',
           },
           {
-            title: 'r/doordash: Subreddit for Doordash Customers and Drivers',
+            title: 'r/doordash: Subreddit for DoorDash Customers and Drivers',
             link: 'https://www.reddit.com/r/doordash/',
           },
         ],
@@ -278,7 +147,6 @@ export const initialState = {
       },
       {
         id: 'G0046',
-        logo: shipt,
         gig: 'Shipt',
         app:
           'Simplify your life with fast, simple delivery from your local stores! Shipt brings your groceries and household essentials right to your door.',
@@ -313,7 +181,6 @@ export const initialState = {
       },
       {
         id: 'G0067',
-        logo: boatsetter,
         gig: 'Boatsetter',
         app:
           'Boatsetter, the nation’s fastest-growing boat rental marketplace, gives the over 13 million registered boat owners a way to offset their ownership costs by renting their boat to pre-screened, qualified renters.',
@@ -334,7 +201,6 @@ export const initialState = {
       },
       {
         id: 'G0018',
-        logo: getaround,
         gig: 'Getaround',
         app:
           'Rent nearby cars, trucks, and vans, by the hour or day, on Getaround. No lines or key exchanges. Simply rent, unlock, and go in an instant with the Getaround',
@@ -360,7 +226,6 @@ export const initialState = {
       },
       {
         id: 'G0003',
-        logo: rover,
         gig: 'Rover',
         app:
           "Rover connects pet parents with a nationwide network of dog lovers who can't wait to watch their dog. Search for nearby dog sitters, day care providers, and dog walkers who’ll help care for your pet—at their place or yours.",
@@ -386,7 +251,6 @@ export const initialState = {
       },
       {
         id: 'G0154',
-        logo: urbansitter,
         gig: 'UrbanSitter',
         app:
           'UrbanSitter lets you find and book babysitters and nannies of people you know and trust. Last-minute sitters, backup care, and part-time nannies available.',
@@ -405,8 +269,7 @@ export const initialState = {
         subtypes: ['labor', 'care'],
       },
       {
-        id: 'G0001', // Rideshare
-        logo: uber,
+        id: 'G0001',
         gig: 'Uber',
         app:
           'Uber is a ride-hailing company that offers the Uber mobile app, which you can use to submit a trip request that is automatically sent to an Uber driver near to you, alerting the driver to your location. The accepting Uber driver will then come and pick you up and drive you to your requested destination.',
@@ -446,7 +309,6 @@ export const initialState = {
       },
       {
         id: 'G0188',
-        logo: grabr,
         gig: 'Grabr',
         app:
           'Grabr is a peer to peer delivery service focussed on international shipments',
@@ -479,7 +341,6 @@ export const initialState = {
       },
       {
         id: 'G0191',
-        logo: outdoorsy,
         gig: 'Outdoorsy',
         app:
           'Outdoorsy is the largest and safest community-driven RV marketplace for renting RVs directly from local RV owners.',
@@ -504,7 +365,6 @@ export const initialState = {
       },
       {
         id: 'G0194',
-        logo: ridersshare,
         gig: 'Riders Share',
         app:
           'Riders Share is the largest motorcycle renter community, offering best in class insurance and flexible refunds.',
@@ -524,7 +384,6 @@ export const initialState = {
       },
       {
         id: 'G0015',
-        logo: wag,
         gig: 'Wag!',
         app:
           'Wag! is one of the largest dog walking apps. They offer flexibility, secure payment through Stripe, and donate money from 30 minute walks to feed shelter dogs.',
@@ -548,7 +407,6 @@ export const initialState = {
       },
       {
         id: 'G0021',
-        logo: wonolo,
         gig: 'Wonolo',
         app:
           'Wonolo is an on-demand staffing marketplace. It connects businesses which have temporary staffing needs (Requestors) with workers who can meet those needs (Wonoloers). Requestors post jobs into our marketplace, Wonoloers can then review those positions and decide if they want to do the work.',
@@ -569,7 +427,6 @@ export const initialState = {
       },
       {
         id: 'G0151',
-        logo: goshare,
         gig: 'GoShare',
         app:
           'GoShare connects truck and van owners with people and businesses who need help moving, hauling, and delivering large items on demand.',
@@ -595,7 +452,6 @@ export const initialState = {
       },
       {
         id: 'G0035',
-        logo: hellotech,
         gig: 'HelloTech',
         app:
           'HelloTech offers diagnostic solutions, support, installations and hands-on training for just about any technology need, including computer and printers, smart home devices, home theater and audio, Wi-Fi, TV mounting and much more.',
@@ -619,7 +475,6 @@ export const initialState = {
       },
       {
         id: 'G0055',
-        logo: yourmechanic,
         gig: 'YourMechanic',
         app:
           "Skip the shops and dealers. YourMechanic's top-rated mobile mechanics will come to your home or office to service your car.",
@@ -639,12 +494,11 @@ export const initialState = {
       },
       {
         id: 'G0056',
-        logo: zeel,
         gig: 'Zeel',
         app:
           'Zeel is not only the first mobile Massage On Demand company, with a network of more than 10,000 therapists throughout the U.S. Zeel connects you to the best licensed massage therapists available on-demand at your home, hotel, workplace, or event.',
         description:
-          'Zeel employs massage therapists to provide at home massages to users. 18% gratuity is added to every in-home appointment and customers pay for late cancelations.',
+          'Zeel employs massage therapists to provide at home massages to users. 18% gratuity is added to every in-home appointment and customers pay for late cancellations.',
         apppromo: 'Sign Up With Code PAUSE20 and get $20!',
         resources: [
           {
@@ -664,7 +518,6 @@ export const initialState = {
       },
       {
         id: 'G0195',
-        logo: carelinx,
         gig: 'CareLinx',
         app:
           'CareLinx is a professional caregiver marketplace, connecting trusted and licensed caregivers with family in need of in-home care services.',
@@ -684,7 +537,6 @@ export const initialState = {
       },
       {
         id: 'G0010',
-        logo: amazon,
         gig: 'Amazon Flex',
         description:
           'Amazon Flex hires drivers to perform the "last mile" of Amazon delivery, moving packages from regional centers to customers. Amazon Flex offers great compensation, and you can easily track your earnings in the Amazon Flex app.',
@@ -719,7 +571,6 @@ export const initialState = {
       },
       {
         id: 'G0143',
-        logo: skipcart,
         gig: 'Skipcart',
         app:
           'Skipcart is an on-demand platform providing last-mile delivery for all retailers and restaurants currently offering a Curbside or Pickup solution but lacking same-day delivery.',
@@ -750,7 +601,6 @@ export const initialState = {
       },
       {
         id: 'G0155',
-        logo: PICKUP,
         gig: 'PICKUP',
         app:
           'PICKUP is an on-demand same day delivery service. It allows users to hire drivers with pickup trucks to move furniture or other bulky items.',
@@ -782,12 +632,11 @@ export const initialState = {
       },
       {
         id: 'G0193',
-        logo: bungii,
         gig: 'Bungii',
         app:
           "Bungii is a mobile app that instantly helps move, haul and deliver your stuff across town by connecting you with a local driver and pickup truck. They've been compared to popular ride sharing apps but instead of moving people, they move people's stuff.",
         description:
-          'Bungii workers get paid to move bulky items for users. Bungii asks for you to own a 2005 or newer truck, rachet straps, bungee cords and moving blankets to secure your deliveries, as well as be able to do some heavy lifting.',
+          'Bungii workers get paid to move bulky items for users. Bungii asks for you to own a 2005 or newer truck, ratchet straps, bungee cords and moving blankets to secure your deliveries, as well as be able to do some heavy lifting.',
         apppromo: 'Sign Up With Promo Code 5XDKA and get $10!',
         resources: [
           {
@@ -814,7 +663,6 @@ export const initialState = {
       },
       {
         id: 'G0157',
-        logo: tommyrun,
         gig: 'TommyRun',
         app:
           'TommyRun is an app that allows you to order building materials and have them delivered within hours.',
@@ -847,7 +695,6 @@ export const initialState = {
       },
       {
         id: 'G0161',
-        logo: upship,
         gig: 'uShip',
         app:
           'uShip makes shipping motorcycles, boats, and other large items fast and affordable by connecting you to their network of carriers who compete for your shipment.',
@@ -877,7 +724,6 @@ export const initialState = {
       },
       {
         id: 'G0182',
-        logo: dispatchit,
         gig: 'DispatchIt',
         app:
           'Dispatch is replacing the old courier industry by providing customers with real time tracking and accurate ETAs by leveraging technology and hard working drivers who get paid a fair wage.',
@@ -907,12 +753,11 @@ export const initialState = {
       },
       {
         id: 'G0189',
-        logo: deliverthat,
         gig: 'DeliverThat',
         app:
           'DeliverThat is the industry leader for pre-scheduled catering delivery and setup.',
         description:
-          'DeliverThat drivers deliver food from restaraunts like QDoba, Zoes Kitchen, Boston Market and Firehouse, to customers. Delivery comissions start with a base amount, then increase based on distance and size.',
+          'DeliverThat drivers deliver food from restaraunts like QDoba, Zoes Kitchen, Boston Market and Firehouse, to customers. Delivery commissions start with a base amount, then increase based on distance and size.',
         promo: '',
         resources: [
           {
@@ -937,7 +782,6 @@ export const initialState = {
       },
       {
         id: 'G0013',
-        logo: postmates, // Food
         gig: 'Postmates',
         app:
           'Postmates is the largest, most reliable on-demand delivery and pickup platform. Able to deliver anything from anywhere, Postmates is the food delivery, grocery delivery, whatever-you-can-think-of delivery app to bring what you crave right to your door.',
@@ -974,7 +818,6 @@ export const initialState = {
       },
       {
         id: 'G0016',
-        logo: ubereats,
         gig: 'Uber Eats',
         app:
           "Uber Eats is Uber's food delivery platform that makes getting great food from your favorite local restaurants as easy as requesting a ride.",
@@ -1012,7 +855,6 @@ export const initialState = {
       },
       {
         id: 'G0034',
-        logo: grubhub,
         gig: 'Grubhub',
         app:
           'Grubhub is a leading online and mobile food-ordering and delivery marketplace with the largest and most comprehensive network of restaurant partners.',
@@ -1048,7 +890,6 @@ export const initialState = {
       },
       {
         id: 'G0024',
-        logo: caviar,
         gig: 'Caviar',
         app:
           'Caviar is an all-in-one food ordering platform that connects diners with the best local and independent restaurants, via convenient delivery, pickup, or catering',
@@ -1080,7 +921,6 @@ export const initialState = {
       },
       {
         id: 'G0030',
-        logo: favor,
         gig: 'Favor',
         app:
           "Favor is the easiest way to get anything you want in your city delivered to your door in under an hour. Whether it's your favorite local restaurant or an errand you forgot to run.",
@@ -1115,7 +955,6 @@ export const initialState = {
       },
       {
         id: 'G0148',
-        logo: zifty,
         gig: 'Zifty',
         app:
           'Zifty is an online delivery company that partners with local restaurants and brands to bring their goods straight to clients doors.',
@@ -1145,7 +984,6 @@ export const initialState = {
       },
       {
         id: 'G0185',
-        logo: peach,
         gig: 'Peach',
         app:
           'Peach is a daily lunch service. No service fee, no tips, no commitment, conveniently delivered to your office.',
@@ -1177,7 +1015,6 @@ export const initialState = {
       },
       {
         id: 'G0183',
-        logo: deliveroo,
         gig: 'Deliveroo',
         app:
           'The best local restaurants and takeaways are here to deliver. Order on Deliveroo today!',
@@ -1212,7 +1049,6 @@ export const initialState = {
       },
       {
         id: 'G0169',
-        logo: gopuff,
         gig: 'GoPuff',
         app:
           'goPuff is the on-demand convenience store that delivers what you need, day or night. Use their app or site for fast delivery of snacks, drinks, ice cream & more!',
@@ -1247,8 +1083,7 @@ export const initialState = {
         subtypes: ['driving', 'packagedelivery'],
       },
       {
-        id: 'G0181', // Alcohol
-        logo: drizly,
+        id: 'G0181',
         gig: 'Drizly',
         app:
           'Drizly focuses on the delivery of the fun stuff, alcohol that is.',
@@ -1279,7 +1114,6 @@ export const initialState = {
       },
       {
         id: 'G0184',
-        logo: saucey,
         gig: 'Saucey',
         app:
           'Alcohol delivery to your door. No order minimums + free delivery on 30-min orders in select cities. Fast & Free beer delivery, wine delivery and liquor delivery.',
@@ -1309,7 +1143,6 @@ export const initialState = {
       },
       {
         id: 'G0201',
-        logo: eaze,
         gig: 'Eaze',
         app:
           'Get the best THC and CBD products delivered same-day with Eaze. Shop flower, vapes, edibles, and joints from legal marijuana brands.',
@@ -1345,7 +1178,6 @@ export const initialState = {
       },
       {
         id: 'G0202',
-        logo: minibar,
         gig: 'Minibar',
         app:
           'Shop Minibar Delivery for the best selection of wine, liquor, beer, and more - available in 30 to 60 minutes. Fast delivery and low prices!',
@@ -1375,8 +1207,7 @@ export const initialState = {
         subtypes: ['delivery', '21delivery'],
       },
       {
-        id: 'G0008', // Shopping
-        logo: instacart,
+        id: 'G0008',
         gig: 'Instacart',
         app:
           'Instacart lets you shop from local grocery stores online, then sends a “personal shopper” to fulfill and deliver your order to you the same day.',
@@ -1414,7 +1245,6 @@ export const initialState = {
 
       {
         id: 'G0186',
-        logo: burpy,
         gig: 'Burpy',
         app:
           'Same day grocery delivery services online in Houston, Dallas, Fort Worth, Austin & San Antonio.',
@@ -1444,7 +1274,6 @@ export const initialState = {
       },
       {
         id: 'G0170',
-        logo: deliv,
         gig: 'DeLiv',
         description:
           'DeLiv is a Same day delivery service helping retailers deliver their items to customers. They have a schedule where you can book hours and deliver packages for up to $22/hr. No passengers or food. No mess or stress.',
@@ -1472,7 +1301,6 @@ export const initialState = {
       },
       {
         id: 'G0187',
-        logo: burro,
         gig: 'Burro',
         app: 'Burro is an all in one delivery app for the Austin area.',
         description:
@@ -1499,12 +1327,8 @@ export const initialState = {
         ],
         subtypes: ['driving', 'packagedelivery'],
       },
-      //
-      //
-      //    Property (Rental) Gigs
       {
-        id: 'G0002', // Home rentals
-        logo: rlac,
+        id: 'G0002',
         gig: 'Rent Like a Champion',
         app:
           "Rent Like a Champion is an online business that lists apartments and houses available for rent near college campuses for big sporting events – football games is the company's bread and butter.",
@@ -1524,7 +1348,6 @@ export const initialState = {
       },
       {
         id: 'G0012',
-        logo: airbnb,
         gig: 'AirBnB',
         app:
           'Airbnb is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in that locale. It currently covers more than 81,000 cities and 191 countries worldwide.',
@@ -1549,7 +1372,6 @@ export const initialState = {
       },
       {
         id: 'G0036',
-        logo: homeaway,
         gig: 'HomeAway',
         app:
           'HomeAway is a vacation rental marketplace with more than 2,000,000 vacation rentals in 190 countries listed on its website.',
@@ -1569,7 +1391,6 @@ export const initialState = {
       },
       {
         id: 'G0041',
-        logo: ofs,
         gig: 'onefinestay',
         app:
           '10000+ high-end homes available to rent. The best homes. The best service. Stay in luxury serviced apartments in our favourite cities.',
@@ -1589,7 +1410,6 @@ export const initialState = {
       },
       {
         id: 'G0053',
-        logo: vrbo,
         gig: 'VRBO',
         app:
           'Vrbo is short for Vacation Rental By Owner, and as the name implies, it specializes in vacation rentals of all types: houses, apartments, condos, villas, etc.',
@@ -1609,7 +1429,6 @@ export const initialState = {
       },
       {
         id: 'G0200',
-        logo: lovehomeswap,
         gig: 'Love Home Swap',
         description:
           'Love Home Swap is a rental platform where you can lease out your home to someone and also get to rent out their home. Available in tons of places in the world! Great way to travel cheap and get a cultural experience',
@@ -1626,8 +1445,7 @@ export const initialState = {
         subtypes: ['rental', 'home'],
       },
       {
-        id: 'G0017', // Car rentals
-        logo: turo,
+        id: 'G0017',
         gig: 'Turo',
         app:
           'Turo is a peer-to-peer car sharing company. Formerly known as RelayRides, Turo allows car owners to make extra cash by renting out their vehicles, while providing a convenient and quick way to rent a car to those in need of transportation.',
@@ -1652,7 +1470,6 @@ export const initialState = {
       },
       {
         id: 'G0177',
-        logo: hyrecar,
         gig: 'Hyrecar',
         app:
           'Rent a car to drive for Uber, Lyft and Food Delivery. On-demand car rentals, protection included! Drive for any ridesharing, delivery or on-demand companies.',
@@ -1671,8 +1488,7 @@ export const initialState = {
         subtypes: ['rental', 'car'],
       },
       {
-        id: 'G0049', // Parking Rental
-        logo: spothero,
+        id: 'G0049',
         gig: 'SpotHero',
         app:
           'SpotHero is a parking reservation service that helps drivers reserve parking with garages and lots, often at a discount to the drive-up rate.',
@@ -1692,7 +1508,6 @@ export const initialState = {
       },
       {
         id: 'G0058',
-        logo: parkingpanda,
         gig: 'ParkingPanda',
         app:
           'Parking Panda is an online parking service that allows drivers to find and reserve parking in advance. In addition to providing drivers with mobile and web applications to find parking, they also help parking garage owners manage their inventory',
@@ -1712,7 +1527,6 @@ export const initialState = {
       },
       {
         id: 'G0203',
-        logo: sailo,
         gig: 'Sailo',
         app:
           'Sailo is being called the “airbnb” of boat rentals, an online marketplace offering both, experienced and inexperienced boaters the opportunity to view and compare boats and captains, if you even want a captain, and create custom trips.',
@@ -1732,7 +1546,6 @@ export const initialState = {
       },
       {
         id: 'G0066',
-        logo: rvshare,
         gig: 'RVShare',
         app:
           "RVshare is the world's first and largest peer-to-peer RV rental marketplace, serving more than 60,000 RV owners across the US.",
@@ -1750,13 +1563,8 @@ export const initialState = {
         services: [],
         subtypes: ['rental', 'RV'],
       },
-
-      //
-      //
-      // Scooter Chargers
       {
         id: 'G0153',
-        logo: bird,
         gig: 'Bird',
         description:
           'If you noticed Bird Scooters littering the streets of you city, you can turn that clutter into cash! Bird Flyers are paid to collect scooters at the end of the night, charge them, then disperse them in the morning. All you need is some free time and something to transport them.',
@@ -1774,7 +1582,6 @@ export const initialState = {
       },
       {
         id: 'G0165',
-        logo: lime,
         gig: 'Lime',
         description:
           'Scooter charging is a popular, and lucrative, gig. If there are Lime Scooters in your area, Lime will pay you to become a juicer. Just collect them, charge them, and disperse them!',
@@ -1797,7 +1604,6 @@ export const initialState = {
       },
       {
         id: 'G0175',
-        logo: spin,
         gig: 'Spin',
         description:
           'Another player in the scooter game, Spin Chargers work like other charging gigs: collect, charge and disperse the scooters. You get paid for every scooter you charge.',
@@ -1820,7 +1626,6 @@ export const initialState = {
       },
       {
         id: 'G0176',
-        logo: skip,
         gig: 'Skip',
         description:
           'Skip Scooters are located mainly in Virginia and Washington D.C, but if you live in that area they are willing to pay you to collect, charge and disperse their scooters.',
@@ -1842,16 +1647,8 @@ export const initialState = {
         services: ['S0036'],
         subtypes: ['other', 'scooter'],
       },
-      //
-      //
-      //    Dog Walking Gigs
-
-      //
-      //
-      //    Anybody can do it labor
       {
-        id: 'G0005', // Manual labor
-        logo: taskrabbit,
+        id: 'G0005',
         gig: 'TaskRabbit',
         app:
           'TaskRabbit is a marketplace that matches freelance labor with local demand.',
@@ -1876,7 +1673,6 @@ export const initialState = {
       },
       {
         id: 'G0020',
-        logo: handy,
         gig: 'Handy',
         app:
           'Handy is the leading platform for connecting individuals looking for household services with top-quality, pre-screened independent service professionals. From home cleaning to handyman services, Handy instantly matches thousands of customers every week with top-rated professionals in cities all around the world.',
@@ -1896,7 +1692,6 @@ export const initialState = {
       },
       {
         id: 'G0022',
-        logo: bellhops,
         gig: 'Bellhops',
         app: 'Bellhops Provides Simple, Easy, And Stress-free Moving Services.',
         description:
@@ -1915,7 +1710,6 @@ export const initialState = {
       },
       {
         id: 'G0027',
-        logo: dolly,
         gig: 'Dolly',
         app:
           'Need moving help? Dolly helps you move on your schedule and at an affordable price.',
@@ -1935,7 +1729,6 @@ export const initialState = {
       },
       {
         id: 'G0205',
-        logo: schlep,
         gig: 'Schlep',
         description:
           'The Uber for moving! Work a gig as a driver or a mover. Earn up to $1,000 a week, keep 100% of your tips and work on a flexible schedule',
@@ -1953,7 +1746,6 @@ export const initialState = {
       },
       {
         id: 'G0164',
-        logo: easymove,
         gig: 'EasyMove',
         app:
           "Easymove connects you with professional, reliable, local movers anytime you need it. It's the smartest alternative to traditional movers, renting a truck and doing it yourself- their app connects you with local independent strong easymovers to help with moving, hauling and junk removal.",
@@ -1973,7 +1765,6 @@ export const initialState = {
       },
       {
         id: 'G0192',
-        logo: lugg,
         gig: 'Lugg',
         app:
           'Lugg connects you to a truck and two movers, ready to move your stuff within the hour or up to 30 days from now.',
@@ -1993,7 +1784,6 @@ export const initialState = {
       },
       {
         id: 'G0050',
-        logo: takl,
         gig: 'Takl',
         app:
           'The Takl platform connects customers who need chores completed with background-checked, self-employed Providers who are able to earn money using their skills on their own schedule.',
@@ -2013,7 +1803,6 @@ export const initialState = {
       },
       {
         id: 'G0190',
-        logo: networx,
         gig: 'NetWorx',
         app:
           'Since 2004, millions of homeowners have used Networx to help them connect with quality contractors in their local area. With years of experience and thousands of active contractors, you can depend on us to generate high quality leads and help you grow your business.',
@@ -2033,8 +1822,7 @@ export const initialState = {
         subtypes: ['labor'],
       },
       {
-        id: 'G0051', // Lawn Care
-        logo: taskeasy,
+        id: 'G0051',
         gig: 'TaskEasy',
         app:
           "TaskEasy provides lawn care and grounds maintenance services in all 50 U.S. states. TaskEasy works together with landscaping businesses nationwide supporting local industry with services to hundreds of thousands of properties. TaskEasy's network of more than 12,000 screened and insured vendors is the nation's largest.",
@@ -2055,7 +1843,6 @@ export const initialState = {
       },
       {
         id: 'G0149',
-        logo: lawnstarter,
         gig: 'LawnStarter',
         app:
           'LawnStarter saves you time, money, and energy by providing you with the top lawn care providers in your area, whenever you want them.',
@@ -2076,7 +1863,6 @@ export const initialState = {
       },
       {
         id: 'G0150',
-        logo: plowzandmowz,
         gig: 'Plowz & Mowz',
         app:
           'Order Lawn Mowing, Snow Plowing, Landscaping & other outdoor home services through Plowz & Mowz.',
@@ -2096,7 +1882,6 @@ export const initialState = {
       },
       {
         id: 'G0152',
-        logo: lawnlove,
         gig: 'Lawn Love',
         app:
           'Lawn Love makes it easier to find, book and pay a landscaping or lawn care provider.',
@@ -2115,8 +1900,7 @@ export const initialState = {
         subtypes: ['labor', 'landscaping'],
       },
       {
-        id: 'G0142', // Manufacturing
-        logo: veryable,
+        id: 'G0142',
         gig: 'Veryable',
         app:
           'Veryable is the on-demand marketplace for manufacturing, logistics and warehousing labor.',
@@ -2136,8 +1920,7 @@ export const initialState = {
         subtypes: ['labor'],
       },
       {
-        id: 'G0162', // Cleaning
-        logo: homeaglow,
+        id: 'G0162',
         gig: 'Homeaglow',
         app:
           'Homeaglow is an online service that matches you with local, 5-star cleaning professionals.',
@@ -2156,9 +1939,8 @@ export const initialState = {
         subtypes: ['labor', 'cleaning'],
       },
       {
-        id: 'G0023', // Less intensive labor
-        logo: care,
-        gig: 'Care', // Childcare
+        id: 'G0023',
+        gig: 'Care',
         app:
           "Care.com is the world's largest online destination for care. They connect families with caregivers and caring companies to help you be there for the ones you love.",
         description:
@@ -2177,7 +1959,6 @@ export const initialState = {
       },
       {
         id: 'G0199',
-        logo: uzurv,
         gig: 'Uzurv',
         app:
           'The adaptive transportation network company with drug & alcohol tested, credentialed drivers for paratransit and non-emergency medical transportation.',
@@ -2198,7 +1979,6 @@ export const initialState = {
       },
       {
         id: 'G0167',
-        logo: sittercity,
         gig: 'Sittercity',
         app:
           'Find local child, senior, & pet care providers that your family will love.',
@@ -2218,7 +1998,6 @@ export const initialState = {
       },
       {
         id: 'G0061',
-        logo: helpr,
         gig: 'Helpr',
         app:
           'Connect with screened babysitters anytime and anywhere, get in-home care rates for as low as $1 hour with support from your employer.',
@@ -2237,12 +2016,8 @@ export const initialState = {
         services: [],
         subtypes: ['labor', 'care'],
       },
-      //
-      //
-      // Technical gigs
       {
         id: 'G0026',
-        logo: figureeight,
         gig: 'Figure Eight',
         app:
           'Figure Eight uses human intelligence to do simple tasks such as transcribing text or annotating images to train machine learning algorithms.',
@@ -2261,13 +2036,8 @@ export const initialState = {
         services: [],
         subtypes: ['other', 'tech'],
       },
-
-      //
-      //
-      // Artsy Gigs
       {
         id: 'G0028',
-        logo: etsy,
         gig: 'Etsy Seller',
         description:
           'Etsy provides a marketplace for people to sell their handmade, vintage, or creative goods online. If you have an artsy side, look into getting paid for it on Etsy!',
@@ -2287,12 +2057,8 @@ export const initialState = {
         services: [],
         subtypes: ['other'],
       },
-      //
-      //
-      // Virtual Assistant Gigs
       {
         id: 'G0029',
-        logo: fancyhands,
         gig: 'Fancy Hands',
         app:
           'Fancy Hands is a team of US-based virtual assistants ready to start working with you today. Use any device, at any time of day, and their assistants will tackle anything on your to-do list!',
@@ -2310,15 +2076,8 @@ export const initialState = {
         services: [],
         subtypes: ['other'],
       },
-      //
-      //
-      // Cooking Gigs
-      //
-      //
-      // Mystery Shoppers
       {
         id: 'G0033',
-        logo: gigwalk,
         gig: 'Gigwalk',
         description:
           'Work for Gigwalk usually involves gathering data for companies about their products and stores. For example, you might be checking what is on the shelves in a particular shop, and whether it is correctly priced and labeled.',
@@ -2336,7 +2095,6 @@ export const initialState = {
       },
       {
         id: 'G0070',
-        logo: marketforce,
         gig: 'Market Force',
         description:
           'At Market Force, you will complete mystery shops for banks, restaurants, and stores. You get paid to provide feedback on your visits, which those companies then use to improve.',
@@ -2354,7 +2112,6 @@ export const initialState = {
       },
       {
         id: 'G0071',
-        logo: gbw,
         gig: 'GBW',
         description:
           'GBW pays individuals to shop at globally recognized brands and provide feedback on the experience. They have organized over 14 million mystery shops for some of the largest brands.',
@@ -2370,10 +2127,8 @@ export const initialState = {
         services: [],
         subtypes: ['other', 'mysteryshop'],
       },
-      // Bullshit work
       {
         id: 'G0048',
-        logo: spare5,
         gig: 'Spare5',
         description:
           'Spare5 is an app which pays you small amounts of money for completing micro-tasks on your phone. Most tasks only take a few seconds, and the app pays on average $0.02 – $0.05 per task.',
@@ -2391,7 +2146,6 @@ export const initialState = {
       },
       {
         id: 'G0147',
-        logo: census,
         gig: 'Census Taker',
         description:
           'The United States Government needs a lot of help taking the census every year. Sign up to be a census taker and you can earn between $12 and $30 an hour, depending on your location.',
@@ -2408,12 +2162,8 @@ export const initialState = {
         services: [],
         subtypes: ['other'],
       },
-      // Mechanics
-
-      // Massages
       {
         id: 'G0064',
-        logo: soothe,
         gig: 'Soothe',
         app:
           'Soothe helps you book a five-star massage to your home, hotel, office, or event in as little as an hour.',
@@ -2436,10 +2186,8 @@ export const initialState = {
         services: [],
         subtypes: ['other', 'beauty'],
       },
-      // Beauty
       {
         id: 'G0160',
-        logo: priv,
         gig: 'Priv',
         app:
           'Priv delivers on-demand salon and spa services by top-rated professionals to your home (or office) anytime, anywhere - manicures, blowouts, makeup, anything you want.',
@@ -2457,10 +2205,8 @@ export const initialState = {
         services: [],
         subtypes: ['other', 'beauty'],
       },
-      // Nurses
       {
         id: 'G0179',
-        logo: heal,
         gig: 'Heal',
         app:
           'Talk to a doctor on-demand and on your schedule, 8am-8pm, every day.',
@@ -2480,7 +2226,6 @@ export const initialState = {
       },
       {
         id: 'G0178',
-        logo: slingshot,
         gig: 'Slingshot Health',
         app:
           'Slingshot Health is a health tech startup that brings top healthcare providers and patients together. Patients bid on the cost of services and healthcare providers accept bids based on availability.',
@@ -2501,7 +2246,6 @@ export const initialState = {
       },
       {
         id: 'G0204',
-        logo: wardrobe,
         gig: 'Wardrobe',
         app:
           'Join celebs, influencers & friends in the most -friendly rental marketplace for luxury designer fashion. Your Wardrobe goals just became reality.',
@@ -2522,7 +2266,6 @@ export const initialState = {
       },
       {
         id: 'G0206',
-        logo: eatwith,
         gig: 'EatWith',
         app:
           'Explore culinary experiences with locals in 130+ countries. Enjoy dinner parties, cooking classes and more in beautiful homes and exclusive venues.',
@@ -2542,7 +2285,6 @@ export const initialState = {
       },
       {
         id: 'G0207',
-        logo: feastly,
         gig: 'Feastly',
         app:
           "Feastly is a global marketplace for chefs to showcase and host dinners, pop-ups, and culinary experiences. It is a p2p marketplace that connects hungry eaters with passionate cooks, offering authentic meals prepared and served in a cook's home.",
@@ -2562,7 +2304,6 @@ export const initialState = {
       },
       {
         id: 'G0208',
-        logo: fiverr,
         gig: 'Fiverr',
         description:
           'Fiverr is one of the easiest ways to make money in the gig economy. No matter what skills you have, with a little creativity you sell your services to a platform of motivated buyers.',
@@ -2580,7 +2321,6 @@ export const initialState = {
       },
       {
         id: 'G0209',
-        logo: linkedin,
         gig: 'LinkedIn ProFinder',
         description:
           'LinkedIn ProFinder connects top freelance professionals like you with high quality leads.',
@@ -2594,7 +2334,6 @@ export const initialState = {
       },
       {
         id: 'G0210',
-        logo: freelancer,
         gig: 'Freelancer',
         description:
           'Freelancer has posted almost 11 million jobs for tens of thousands of its members. ',
@@ -2608,7 +2347,6 @@ export const initialState = {
       },
       {
         id: 'G0037',
-        logo: hsnd,
         gig: 'HopSkipDrive',
         app:
           "HopSkipDrive is a ride service to get kids (age 6+) where they need to go when their parents can't. It was created by three moms who understand the stress of driving kids to all of their activities, and the safety concerns parents have putting their children in someone else's car.",
@@ -2641,7 +2379,6 @@ export const initialState = {
       },
       {
         id: 'G0168',
-        logo: zum,
         gig: 'Zum',
         app:
           "Zūm is a reliable, technology platform that connects busy families with providers (Zūmers,) of kids' transportation and childcare services",
@@ -2673,7 +2410,6 @@ export const initialState = {
       },
       {
         id: 'G0054',
-        logo: wingz,
         gig: 'Wingz',
         app:
           'Wingz is a rideshare app that specializes in airport pick up and drop off. You can schedule a ride up to two months in advance, know the rate up front, and book your favorite drivers.',
@@ -2705,7 +2441,6 @@ export const initialState = {
       },
       {
         id: 'G0197',
-        logo: via,
         gig: 'Via Transportation',
         app:
           'Via is an on-demand transit system that takes multiple passengers heading in the same direction and books them into a shared vehicle. Think of Via as a bus smart enough to come when you want it and where you want it',
@@ -2738,7 +2473,6 @@ export const initialState = {
       },
       {
         id: 'G0163',
-        logo: groundlink,
         gig: 'GroundLink',
         app: 'Groundlink provides professional black car and limo services.',
         description:
@@ -2763,7 +2497,6 @@ export const initialState = {
       },
       {
         id: 'G0198',
-        logo: curb,
         gig: 'Curb',
         app:
           'Curb is the #1 taxi app in the US. They have over 50,000 taxis over 65+ US cities.',
@@ -2790,35 +2523,10 @@ export const initialState = {
         ],
         subtypes: ['driving', 'rideshare'],
       },
-      // Unfinished
-      //
-      //
-      // Template
-      // {
-      //   id: 'G0208',
-      //   logo: ,
-      //   gig: '',
-      //   description: '',
-      //   indeed: '',
-      //   promo: '',
-      //   resources: '',
-      //   gigsite: '',
-      //
-      //   subtypes: [''],
-      // },
     ],
     services: [
-      //
-      //
-      //
-      //
-      // Services
-      //
-      //
-      // Driving Services
       {
         id: 'S0001',
-        logo: gridwise,
         gig: 'Gridwise',
         description:
           "Gridwise increases rideshare drivers' earnings by 39% by letting them know how and where to drive and save thousands a year on taxes.",
@@ -2829,7 +2537,6 @@ export const initialState = {
       },
       {
         id: 'S0002',
-        logo: mystro,
         gig: 'Mystro',
         description:
           'Mystro combines the Uber and Lyft drivers apps allowing you to easily drive both at the same time. They also evaluate trip requests so you only accept ideal trips.',
@@ -2840,7 +2547,6 @@ export const initialState = {
       },
       {
         id: 'S0003',
-        logo: surge,
         gig: 'Surge 2x',
         description:
           'Surge lets you monitor Uber surges, notifying you when a surge starts, increases/decreases and ends, so you know when to drive to make the most money.',
@@ -2851,7 +2557,6 @@ export const initialState = {
       },
       {
         id: 'S0004',
-        logo: sherpashare,
         gig: 'SherpaShare',
         description:
           'SherpaShare helps rideshare drivers reduce taxes, manage expenses, and boost earnings. Their financial management tool also allows drivers to track mileage, analyze expenses and consolidate earnings.',
@@ -2862,7 +2567,6 @@ export const initialState = {
       },
       {
         id: 'S0005',
-        logo: triplog,
         gig: 'TripLog',
         description:
           'Triplog helps users save an average of $7,200 annually. As a gig worker, the miles you drive for work are tax deductable. Triplog helps you track those miles so you can maximize your returns. They are also fully IRS compliant, protecting you in case of audit.',
@@ -2872,7 +2576,6 @@ export const initialState = {
       },
       {
         id: 'S0006',
-        logo: everlance,
         gig: 'Everlance',
         description:
           'Everlance automatically logs tax-deductible business mileage, expenses and receipts, making it easy to fill out your taxes.',
@@ -2883,7 +2586,6 @@ export const initialState = {
       },
       {
         id: 'S0030',
-        logo: grabbit,
         gig: 'Grabb-it',
         description:
           "Grabb-it will pay you around $5/hr to turn your cars' side rear window into a full color display playing location aware ads.",
@@ -2893,7 +2595,6 @@ export const initialState = {
       },
       {
         id: 'S0031',
-        logo: hurdlr,
         gig: 'Hurdlr',
         description:
           'Hurdlr is an automatic business expenses and mileage tracker. They have cumulatively saved over $300M in taxes.',
@@ -2903,7 +2604,6 @@ export const initialState = {
       },
       {
         id: 'S0039',
-        logo: nickelytics,
         gig: 'Nickelytics',
         description:
           'Nickelytics will wrap an ad on your vehicle and pay you as you drive through city streets. Depending on routes, wrap type and distance covered you could make up to $500/month.',
@@ -2913,7 +2613,6 @@ export const initialState = {
       },
       {
         id: 'S0040',
-        logo: wrapify,
         gig: 'Wrapify',
         description:
           'Wrapify wraps cars with advertisements and pays drivers as they drive. For rideshare drivers with a full wrap they estimate you can earn an extra $264-$452 per month.',
@@ -2923,7 +2622,6 @@ export const initialState = {
       },
       {
         id: 'S0033',
-        logo: octopus,
         gig: 'Play Octopus',
         description:
           'Octopus provides rideshare drivers with interactive tablets and accessories for their passengers to use as they ride. Riders enjoy games and cash prizes, and they run short ads so drivers can earn up to $100 extra a month!',
@@ -2933,7 +2631,6 @@ export const initialState = {
       },
       {
         id: 'S0037',
-        logo: stickerride,
         gig: 'Sticker Ride',
         description:
           'Sticker Ride pays rideshare drivers to wrap their cars in advertisements they can choose. They also help neat drivers save on their car insurance.',
@@ -2941,10 +2638,8 @@ export const initialState = {
         promo: '',
         gigsite: 'https://stickerride.com/',
       },
-      // Scooter apps
       {
         id: 'S0036',
-        logo: scootermap,
         gig: 'ScooterMap',
         description:
           'ScooterMap puts all the scooters from all the brands into one convenient app, making it easier for chargers to locate new scooters and earn more money.',
@@ -2953,45 +2648,10 @@ export const initialState = {
         promo: '',
         gigsite: 'https://scootermap.com/?sc_referral=62591ccf',
       },
-      // Products and classes
-      //
-      //
-      // Template
-      // {
-      //   id: 'S0041',
-      //   logo: ,
-      //   gig: '',
-      //   description: '',
-      //   indeed: '',
-      //   promo: '',
-      //   resources: '',
-      //   gigsite: '',
-      //
-      //   subtypes: [''],
-      // },
     ],
     deals: [
-      //
-      //
-      // Freelance
-      // Template
-      // {
-      //   id: 'F0000',
-      //   logo: ,
-      //   gig: '',
-      //   description: '',
-      //   indeed: '',
-      //   promo: '',
-      //   resources: '',
-      //   gigsite: '',
-      //
-      //   subtypes: [''],
-      // },
-      //
-      // Deals
       {
         id: 'D0001',
-        logo: acorns,
         gig: 'Acorns',
         description:
           'Acorns automatically invests your spare change into a portfolio built by experts.',
@@ -3000,7 +2660,6 @@ export const initialState = {
       },
       {
         id: 'D0002',
-        logo: robinhood,
         gig: 'Robinhood',
         description:
           'Robinhood is a mobile app for trading stocks and options comission free.',
@@ -3009,7 +2668,6 @@ export const initialState = {
       },
       {
         id: 'D0003',
-        logo: rakuten,
         gig: 'Rakuten',
         description:
           'Formerly Ebates, Rakuten gives you cashback for shopping at over 2,500 stores.',
@@ -3018,7 +2676,6 @@ export const initialState = {
       },
       {
         id: 'D0004',
-        logo: cashapp,
         gig: 'Cash App',
         description:
           'Cash App is an app for sending and receiving money fast and easy.',

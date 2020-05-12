@@ -60,6 +60,9 @@ function Popup({ close, info }) {
     }, [ref]);
   }
 
+  const images = require.context('../../images/Logos', true);
+  const logo = images(`./${info.id}.png`);
+
   return (
     <Outer>
       <Inner ref={wrapperRef}>
@@ -67,7 +70,7 @@ function Popup({ close, info }) {
           <tbody>
             <tr>
               <TdImg>
-                <Img src={info.logo} alt="Company - Logo" />
+                <Img src={logo} alt="Company - Logo" />
               </TdImg>
             </tr>
             <tr>

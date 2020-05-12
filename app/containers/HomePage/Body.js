@@ -39,9 +39,9 @@ function Body() {
             </CenterText>
             <H3>
               From charging scooters to professional remote freelancing - Gig
-              jobs let you work where you want, when you want. <br /> <br />
-              We connect you with all these opportunities so you can start
-              working on your own terms.
+              jobs let you work where you want, when you want. <br />
+              Discover all these opportunities so you can start working on your
+              own terms.
             </H3>
           </td>
           <td style={{ width: '33%', verticalAlign: 'top' }}>
@@ -50,8 +50,8 @@ function Body() {
             </CenterText>
             <H3>
               Companies are constantly developing new apps and services to make
-              gig jobs easier and more lucrative. <br /> <br /> We connect you
-              with all these services so you can make faster, easier money.
+              gig jobs easier and more lucrative. <br /> Discover all these
+              services so you can make faster, easier money.
             </H3>
           </td>
           <td style={{ width: '33%', verticalAlign: 'top' }}>
@@ -60,8 +60,8 @@ function Body() {
             </CenterText>
             <H3>
               We have compiled and created exclusive deals for trying out new
-              jobs and services. <br /> <br /> Sign up through NextWrk and
-              ensure you are never leaving any money on the table.
+              jobs and services. <br /> Sign up through NextWrk and ensure you
+              are never leaving any money on the table.
             </H3>
           </td>
         </tr>

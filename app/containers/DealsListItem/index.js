@@ -31,7 +31,8 @@ import TdImg from './TdImg';
 
 export function DealsListItem(props) {
   const { item } = props;
-
+  const images = require.context('../../images/Logos', true);
+  const logo = images(`./${item.id}.png`);
   const [show, toggleShow] = useState(false);
   const closePopup = useCallback(() => {
     toggleShow(false);
@@ -48,7 +49,7 @@ export function DealsListItem(props) {
             <tbody>
               <tr>
                 <TdImg>
-                  <Img src={item.logo} alt="Company - Logo" />
+                  <Img src={logo} alt="Company - Logo" />
                 </TdImg>
                 <td>
                   <Title>
