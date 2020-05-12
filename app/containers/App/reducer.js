@@ -81,7 +81,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0033',
@@ -117,7 +116,7 @@ export const initialState = {
           'Delivery & takeout from the best local restaurants. Breakfast, lunch, dinner and more, delivered safely to your door. Now offering pickup & no-contact delivery.',
         description:
           'DoorDash Dashers deliver food from restaurants to customers. They schedule shifts and fulfill delivery requests from the DoorDash app.',
-        apppromo: 'Download DoorDash and Get $15!',
+        apppromo: 'Sign Up for DoorDash and Get $15!',
         resources: [
           {
             title: 'Indeed: Job Reviews for DoorDash Dashers',
@@ -138,7 +137,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0037',
@@ -172,7 +170,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0037',
@@ -275,7 +272,7 @@ export const initialState = {
           'Uber is a ride-hailing company that offers the Uber mobile app, which you can use to submit a trip request that is automatically sent to an Uber driver near to you, alerting the driver to your location. The accepting Uber driver will then come and pick you up and drive you to your requested destination.',
         description:
           'Uber drivers offer passengers a safe ride to their destination. Finding customers will not be an issue, as Uber is one of the largest ridesharing apps with tens of millions of users.',
-        promo: '',
+        apppromo: 'Sign Up for Uber and Get $6!',
         resources: [
           {
             title: 'Indeed: Job Reviews from Uber Drivers',
@@ -287,7 +284,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.uber.com/us/en/drive/',
-        appsite: 'https://www.uber.com/us/en/ride/',
+        appsite: 'https://www.uber.com/invite/burker45ue',
         pay:
           'Uber Drivers make between $12 and $22 an hour on average, depending on the city',
         services: [
@@ -299,7 +296,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0033',
@@ -314,7 +310,7 @@ export const initialState = {
           'Grabr is a peer to peer delivery service focussed on international shipments',
         description:
           'Earn money while traveling! Grabr lets travelers subsidize their trips by delivering a handful of items. You can earn $200+ every time you travel abroad.',
-        apppromo: 'Sign Up and Get $10!',
+        apppromo: 'Sign Up for Grabr and Get $10!',
         resources: [
           {
             title: 'Grabr Reviews',
@@ -332,7 +328,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0037',
@@ -346,7 +341,7 @@ export const initialState = {
           'Outdoorsy is the largest and safest community-driven RV marketplace for renting RVs directly from local RV owners.',
         description:
           'Outdoorsy renters rent out their RVs on their marketplace. Outdoorsy performs DMV checks on all drivers, provide 24/7 roadside assistance and have a dedicated customer support team.',
-        apppromo: 'Sign Up and Get $50!',
+        apppromo: 'Sign Up for Outdoorsy and Get $50!',
         resources: [
           {
             title: 'Trustpilot: Reviews for Outdoorsy',
@@ -370,7 +365,7 @@ export const initialState = {
           'Riders Share is the largest motorcycle renter community, offering best in class insurance and flexible refunds.',
         description:
           'Riders Share renters rent out motorcycles on their marketplace. List your motorcycle for free and make an average of $150 per booking! All listings are protected by an A rated insurance provider.',
-        apppromo: 'Sign Up and Get $25!',
+        apppromo: 'Sign Up for Riders Share and Get $25!',
         resources: [
           {
             title: 'Facebook: Riders Share Reviews',
@@ -389,7 +384,7 @@ export const initialState = {
           'Wag! is one of the largest dog walking apps. They offer flexibility, secure payment through Stripe, and donate money from 30 minute walks to feed shelter dogs.',
         description:
           'Wag Walkers get paid to pick up dogs in their communities, walk them, and return them. You choose how many walks you want to do and where you want to walk. It is extremely personalized and you get to play with dogs all day!',
-        apppromo: 'Sign Up and Get a Free Walk!',
+        apppromo: 'Sign Up for Wag and Get a Free Walk!',
         resources: [
           {
             title: 'Indeed: Reviews for Wag Workers',
@@ -432,7 +427,7 @@ export const initialState = {
           'GoShare connects truck and van owners with people and businesses who need help moving, hauling, and delivering large items on demand.',
         description:
           'GoShare hires movers and drivers for delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you have no truck you can apply as a helper. Depending on your driving situation, this gig can prove very lucrative.',
-        apppromo: 'Sign Up and Get $10!',
+        apppromo: 'Sign Up for GoShare and Get $10!',
         resources: [
           {
             title: 'Glassdoor: Job Reviews for GoShare Drivers',
@@ -457,7 +452,7 @@ export const initialState = {
           'HelloTech offers diagnostic solutions, support, installations and hands-on training for just about any technology need, including computer and printers, smart home devices, home theater and audio, Wi-Fi, TV mounting and much more.',
         description:
           'HelloTech workers help individuals set up and fix their technology. Have a plethora of technical knowledge? Wanna get paid to help those less technically advanced? You set your own schedule, and get paid weekly',
-        apppromo: 'Sign Up and Get $10!',
+        apppromo: 'Sign Up for HelloTech and Get $10!',
         resources: [
           {
             title: 'Indeed: Job Reviews for HelloTech Workers',
@@ -480,7 +475,7 @@ export const initialState = {
           "Skip the shops and dealers. YourMechanic's top-rated mobile mechanics will come to your home or office to service your car.",
         description:
           'YourMechanic hires mechanics to offer at home services to users, and is a great way for people with auto repair skills to leverage the gig economy. You can make extra money providing car repairs and maintenance at the homes of clients.',
-        apppromo: 'Sign Up and Get $10!',
+        apppromo: 'Sign Up for YourMechanic and Get $10!',
         resources: [
           {
             title: 'Trustpilot: Reviews for YourMechanic',
@@ -499,7 +494,7 @@ export const initialState = {
           'Zeel is not only the first mobile Massage On Demand company, with a network of more than 10,000 therapists throughout the U.S. Zeel connects you to the best licensed massage therapists available on-demand at your home, hotel, workplace, or event.',
         description:
           'Zeel employs massage therapists to provide at home massages to users. 18% gratuity is added to every in-home appointment and customers pay for late cancellations.',
-        apppromo: 'Sign Up With Code PAUSE20 and get $20!',
+        apppromo: 'Sign Up for Zeel and get $40!',
         resources: [
           {
             title: 'Indeed: Job Reviews for Zeel Workers',
@@ -512,6 +507,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.zeel.com/apply',
+        appsite: 'https://www.zeel.com/invite/1XPH9',
         pay: 'Zeel Massage Therapists earn an average of around $60/hr.',
         services: [],
         subtypes: ['other', 'beauty'],
@@ -523,7 +519,7 @@ export const initialState = {
           'CareLinx is a professional caregiver marketplace, connecting trusted and licensed caregivers with family in need of in-home care services.',
         description:
           'CareLinx hires Caregivers to provide care to nearby elders. They have a network of over 300,000 caregivers and offer flexible hours, great pay and professional development.',
-        jobpromo: 'Get a Free Background Check!',
+        jobpromo: 'Apply to Work and Get a Free Background Check!',
         resources: [
           {
             title: 'Indeed: Job Reviews for CareLinx Workers',
@@ -562,223 +558,11 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0037',
         ],
         subtypes: ['driving', 'packagedelivery'],
-      },
-      {
-        id: 'G0143',
-        gig: 'Skipcart',
-        app:
-          'Skipcart is an on-demand platform providing last-mile delivery for all retailers and restaurants currently offering a Curbside or Pickup solution but lacking same-day delivery.',
-        description:
-          'Skipcart drivers deliver packages for local retailers and restaurants. Open the Skipcart app, choose your hours and start delivering.',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Skipcart Drivers',
-            link: 'https://www.indeed.com/cmp/Skipcart/reviews',
-          },
-        ],
-        gigsite: 'https://skipcart.com/drivers/',
-        appsite: 'https://skipcart.com/',
-        pay: 'Skipcart Drivers Can Earn Up to $22/hr',
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'packagedelivery'],
-      },
-      {
-        id: 'G0155',
-        gig: 'PICKUP',
-        app:
-          'PICKUP is an on-demand same day delivery service. It allows users to hire drivers with pickup trucks to move furniture or other bulky items.',
-        description:
-          'PICKUP workers deliver big & heavy items for national and area businesses. If you own a truck or van, put it to good use and start hauling for money',
-        promo: '',
-        resources: [
-          {
-            title: 'Glassdoor: Job Reviews for PICKUP Drivers',
-            link:
-              'https://www.glassdoor.com/Overview/Working-at-PICKUP-EI_IE1641897.11,17.htm',
-          },
-        ],
-        gigsite: 'https://pickupnow.com/requirements/',
-        appsite: 'https://pickupnow.com/',
-        pay: 'Make a minimum of $25 per run and up to $50/hr',
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'packagedelivery'],
-      },
-      {
-        id: 'G0193',
-        gig: 'Bungii',
-        app:
-          "Bungii is a mobile app that instantly helps move, haul and deliver your stuff across town by connecting you with a local driver and pickup truck. They've been compared to popular ride sharing apps but instead of moving people, they move people's stuff.",
-        description:
-          'Bungii workers get paid to move bulky items for users. Bungii asks for you to own a 2005 or newer truck, ratchet straps, bungee cords and moving blankets to secure your deliveries, as well as be able to do some heavy lifting.',
-        apppromo: 'Sign Up With Promo Code 5XDKA and get $10!',
-        resources: [
-          {
-            title: 'Bungii Reviews',
-            link:
-              'https://appgrooves.com/app/bungii-your-friend-w-a-truck-by-bungii-llc',
-          },
-        ],
-        gigsite: 'https://bungii.com/',
-        appsite: 'https://bungii.com/',
-        pay: 'Bungii Workers Earn Up to $40/hr',
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'packagedelivery'],
-      },
-      {
-        id: 'G0157',
-        gig: 'TommyRun',
-        app:
-          'TommyRun is an app that allows you to order building materials and have them delivered within hours.',
-        description:
-          'TommyRunners deliver buliding materials to individuals in their communities. You need to own a truck or van and be willing to do some heavy lifting.',
-        indeed: 'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
-        apppromo: 'Sign Up and Get $25!',
-        resources: [
-          {
-            title: 'TommyRun Reviews',
-            link:
-              'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
-          },
-        ],
-        gigsite: 'https://tommyrun.app.link/vanKPpCzN5',
-        appsite: 'https://tommyrun.app.link/vanKPpCzN5',
-        pay: 'Average between $12 and $20/hr',
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'packagedelivery'],
-      },
-      {
-        id: 'G0161',
-        gig: 'uShip',
-        app:
-          'uShip makes shipping motorcycles, boats, and other large items fast and affordable by connecting you to their network of carriers who compete for your shipment.',
-        description:
-          'uShip carriers ship motorcycles, boats, and other large items. If you have the type of horsepower that can handles these deliveries, you can start making money as a uShip carrier.',
-        promo: '',
-        resources: [
-          {
-            title: 'Glassdoor: Job Reviews for uShip Carriers',
-            link: 'https://www.glassdoor.com/Reviews/uShip-Reviews-E200164.htm',
-          },
-        ],
-        gigsite: 'https://www.uship.com/register/',
-
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'packagedelivery'],
-      },
-      {
-        id: 'G0182',
-        gig: 'DispatchIt',
-        app:
-          'Dispatch is replacing the old courier industry by providing customers with real time tracking and accurate ETAs by leveraging technology and hard working drivers who get paid a fair wage.',
-        description:
-          'Dispatchit drivers provide reliable local deliveries to customers with real time ETAs and tracking. Dispatchit drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
-        promo: '',
-        resources: [
-          {
-            title: 'Dispatchit Facebook Reviews',
-            link: 'https://www.facebook.com/pg/dispatchitinc/reviews',
-          },
-        ],
-        gigsite: 'https://www.dispatchit.com/drivers/',
-
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'packagedelivery'],
-      },
-      {
-        id: 'G0189',
-        gig: 'DeliverThat',
-        app:
-          'DeliverThat is the industry leader for pre-scheduled catering delivery and setup.',
-        description:
-          'DeliverThat drivers deliver food from restaraunts like QDoba, Zoes Kitchen, Boston Market and Firehouse, to customers. Delivery commissions start with a base amount, then increase based on distance and size.',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for DeliverThat Drivers',
-            link: 'https://www.indeed.com/cmp/Deliver-That/reviews',
-          },
-        ],
-        gigsite: 'https://www.ideliverthat.com/driver',
-
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'fooddelivery'],
       },
       {
         id: 'G0013',
@@ -788,6 +572,7 @@ export const initialState = {
         description:
           'Postmates drivers deliver for one of the fastest growing food-delivery apps. They get delivery requests from the Postmates app, navigate to the store or restaurant and deliver to the customer location.',
         jobpromo: '',
+        apppromo: 'Sign Up for Postmates and Get $100 Delivery Credit!',
         resources: [
           {
             title: 'Indeed: Job Reviews for PostMates Drivers',
@@ -799,7 +584,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://fleet.postmates.com/',
-        appsite: 'https://postmates.com/',
+        appsite: 'https://postmat.es/hPYaJSvSp6',
         pay:
           'Postmates pay ranges from around $12/hr for Drivers to around $25/hr for Truck Drivers',
         services: [
@@ -809,7 +594,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0037',
@@ -846,7 +630,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0037',
@@ -860,7 +643,7 @@ export const initialState = {
           'Grubhub is a leading online and mobile food-ordering and delivery marketplace with the largest and most comprehensive network of restaurant partners.',
         description:
           'Grubhub drivers pick up food from local restaurants and deliver the orders to customers. They get guaranteed minimum earnings and additional perks for performance.',
-        promo: '',
+        apppromo: 'Sign Up for Grubhub and Get $5!',
         resources: [
           {
             title: 'Indeed: Job Reviews for Grubhub Drivers',
@@ -872,7 +655,8 @@ export const initialState = {
           },
         ],
         gigsite: 'https://driver.grubhub.com/',
-        appsite: 'https://www.grubhub.com/mobile_home',
+        appsite:
+          'https://www.grubhub.com/referral/7d739b71-5658-11e9-88da-7f959f257d5e',
         pay: 'Grubhub Drivers typically make around $12 an hour',
         services: [
           'S0001',
@@ -881,7 +665,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0037',
@@ -912,7 +695,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0037',
@@ -926,7 +708,7 @@ export const initialState = {
           "Favor is the easiest way to get anything you want in your city delivered to your door in under an hour. Whether it's your favorite local restaurant or an errand you forgot to run.",
         description:
           'Favor Runners deliver just about anything to customers and get paid for it. Unlike other deliver gigs, Favor provides a $9 per hour base pay, though tips are deducted from this, and is available in 12 cities',
-        promo: '',
+        apppromo: 'Sign Up for Favor and Get $5!',
         resources: [
           {
             title: 'Indeed: Job Reviews for Favor Runners',
@@ -938,7 +720,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://apply.favordelivery.com/',
-        appsite: 'https://favordelivery.com/download',
+        appsite: 'http://fv.rs/i/NEXTS5',
         pay: 'Favor provides a $9 per hour base pay.',
         services: [
           'S0004',
@@ -946,101 +728,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'fooddelivery'],
-      },
-      {
-        id: 'G0148',
-        gig: 'Zifty',
-        app:
-          'Zifty is an online delivery company that partners with local restaurants and brands to bring their goods straight to clients doors.',
-        description:
-          'Zifty delivery drivers make deliveries of food, movies, and other items to customers. Requests are matched to drivers on the Zifty driver app who then complete them, simple and easy.',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Zifty Drivers',
-            link: 'https://www.indeed.com/cmp/Zifty.com/reviews',
-          },
-        ],
-        gigsite: 'http://jobs.zifty.com/',
-
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'fooddelivery'],
-      },
-      {
-        id: 'G0185',
-        gig: 'Peach',
-        app:
-          'Peach is a daily lunch service. No service fee, no tips, no commitment, conveniently delivered to your office.',
-        description:
-          'Peach drivers deliver carefully chosen dishes from the best lunch spots. They offer generous compensation and minimal time commitment to their delivery drivers. Peach is available in Seattle, San Diego and Boston.',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Peach Drivers',
-            link: 'https://www.indeed.com/cmp/Peach/reviews',
-          },
-        ],
-        gigsite: 'https://www.peachd.com/jobs/',
-        appsite: 'https://www.peachd.com/',
-        pay:
-          'Average Peach Delivery Driver hourly pay in the US is around $40/hr.',
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'fooddelivery'],
-      },
-      {
-        id: 'G0183',
-        gig: 'Deliveroo',
-        app:
-          'The best local restaurants and takeaways are here to deliver. Order on Deliveroo today!',
-        description:
-          'Deliveroo is a UK based food-delivery service. Delivery Drivers get paid to move orders from restaurants to homes. Unfortunately it is not currently available in America.',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Deliveroo Drivers',
-            link: 'https://www.indeed.com/cmp/Deliveroo/reviews',
-          },
-          {
-            title: 'r/deliveroos: Subreddit for Deliveroo Drivers',
-            link: 'https://www.reddit.com/r/deliveroos/',
-          },
-        ],
-        gigsite: 'https://deliveroo.co.uk/apply',
-        appsite: 'https://deliveroo.co.uk/app?manual=1',
-        pay: 'Deliveroo says couriers earn “over €10.20 per hour"',
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-
           'S0039',
           'S0040',
           'S0037',
@@ -1054,7 +741,7 @@ export const initialState = {
           'goPuff is the on-demand convenience store that delivers what you need, day or night. Use their app or site for fast delivery of snacks, drinks, ice cream & more!',
         description:
           'GoPuff drivers get paid to deliver snacks, drinks, alcohol, personal care items and more to customers. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel.',
-        promo: '',
+        apppromo: 'Sign Up for GoPuff and Get $15!',
         resources: [
           {
             title: 'Indeed: Job Reviews for GoPuff Drivers',
@@ -1067,7 +754,7 @@ export const initialState = {
         ],
         gigsite:
           'https://www.fountain.com/gopuff/apply/godrive-delivery-partner',
-        appsite: 'https://gopuff.com/home',
+        appsite: 'https://gopuff.com/r/GO12MBDRX',
         pay: 'Gopuff Drivers Average Approximately $17/hr',
         services: [
           'S0004',
@@ -1075,7 +762,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0037',
@@ -1089,7 +775,7 @@ export const initialState = {
           'Drizly focuses on the delivery of the fun stuff, alcohol that is.',
         description:
           'Drizly partners with liquor stores to deliver their fine products to customers. The hiring process for their drivers is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
-        promo: '',
+        apppromo: 'Sign Up for Drizly and Get $5!',
         resources: [
           {
             title: 'Glassdoor: Job Reviews for Drizly Drivers',
@@ -1098,6 +784,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://drizly.com/liquor-stores-near-me',
+        appsite: 'https://drizly.com/i/RCDZO',
         pay: 'Average Drizly Driver pay is around $11-$13/hr',
         services: [
           'S0004',
@@ -1105,7 +792,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0037',
@@ -1118,8 +804,8 @@ export const initialState = {
         app:
           'Alcohol delivery to your door. No order minimums + free delivery on 30-min orders in select cities. Fast & Free beer delivery, wine delivery and liquor delivery.',
         description:
-          'Saucey drivers deliver alcohol to customers. It boasts a flexible schedule and solid pay for drivers. Sacuey also has a minimum pay for those who commit to working in "core blocks," which means you agree to work on the clock.',
-        promo: '',
+          'Saucey drivers deliver alcohol to customers. It boasts a flexible schedule and solid pay for drivers. Saucey also has a minimum pay for those who commit to working in "core blocks," which means you agree to work on the clock.',
+        apppromo: 'Sign Up for Saucey and Get $10!',
         resources: [
           {
             title: 'Indeed: Job Reviews for Saucey Drivers',
@@ -1127,6 +813,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.saucey.com/apply',
+        appsite: 'https://get.saucey.com/x2USY1wUp6',
         pay: 'Drivers earn $5 per delivery, plus $0.50 per item and tips.',
         services: [
           'S0004',
@@ -1134,7 +821,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0037',
@@ -1148,7 +834,7 @@ export const initialState = {
           'Get the best THC and CBD products delivered same-day with Eaze. Shop flower, vapes, edibles, and joints from legal marijuana brands.',
         description:
           'As a delivery person for Eaze, you will deliver cannabis products from a licensed retailer directly to consumers. Eaze is currently only available in California.',
-        promo: '',
+        apppromo: 'Sign Up for Eaze and Get $20!',
         resources: [
           {
             title: 'Glassdoor: Job Reviews for Eaze Drivers',
@@ -1161,6 +847,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.drive.eaze.com/',
+        appsite: 'https://eaze.com/share/l/iclqrkq',
         pay:
           'Eaze drivers report a starting salary of $18/hr. They also reimburse $0.545 for every mile driven.',
         services: [
@@ -1169,7 +856,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0037',
@@ -1183,7 +869,7 @@ export const initialState = {
           'Shop Minibar Delivery for the best selection of wine, liquor, beer, and more - available in 30 to 60 minutes. Fast delivery and low prices!',
         description:
           'Minibar delivery provides on-demand delivery of wine, spirits, beer & mixers. If you live in a city you can start earning cash as a delivery driver.',
-        promo: '',
+        apppromo: 'Sign Up for Minibar and Get $10!',
         resources: [
           {
             title: 'Glassdoor: Job Reviews for Minibar Drivers',
@@ -1192,14 +878,13 @@ export const initialState = {
           },
         ],
         gigsite: 'https://minibardelivery.com/',
-
+        appsite: 'http://mbar.me/2pAXDEX',
         services: [
           'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0037',
@@ -1213,7 +898,7 @@ export const initialState = {
           'Instacart lets you shop from local grocery stores online, then sends a “personal shopper” to fulfill and deliver your order to you the same day.',
         description:
           'Instacart Shoppers use their platform to shop and deliver orders, like groceries, for their customers.',
-        promo: '',
+        apppromo: 'Sign Up for Instacart and Get $10!',
         resources: [
           {
             title: 'Indeed: Job Reviews for Instacart Shoppers',
@@ -1225,7 +910,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://shoppers.instacart.com/',
-        appsite: 'https://www.instacart.com/',
+        appsite: 'https://inst.cr/t/RG80ZG1XZXA1',
         pay:
           'During busy shifts, shoppers can earn $20 or more an hour. Several say the minimum base pay is $10 an hour',
         services: [
@@ -1235,97 +920,11 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0037',
         ],
         subtypes: ['driving', 'grocery'],
-      },
-
-      {
-        id: 'G0186',
-        gig: 'Burpy',
-        app:
-          'Same day grocery delivery services online in Houston, Dallas, Fort Worth, Austin & San Antonio.',
-        description:
-          'Burpy is another grocery service, offering delivery to customers within the hour. It hires shoppers to shop and deliver for customers, but is only available in the Texas area.',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Burpy Drivers',
-            link: 'https://www.indeed.com/cmp/Burpy/reviews',
-          },
-        ],
-        gigsite: 'https://shoppers.burpy.com/join-as-shopper',
-
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'grocery'],
-      },
-      {
-        id: 'G0170',
-        gig: 'DeLiv',
-        description:
-          'DeLiv is a Same day delivery service helping retailers deliver their items to customers. They have a schedule where you can book hours and deliver packages for up to $22/hr. No passengers or food. No mess or stress.',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for DeLiv Drivers',
-            link: 'https://www.indeed.com/cmp/Deliv/reviews',
-          },
-        ],
-        gigsite: 'https://www.deliv.co/drivers/',
-
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'packagedelivery'],
-      },
-      {
-        id: 'G0187',
-        gig: 'Burro',
-        app: 'Burro is an all in one delivery app for the Austin area.',
-        description:
-          'Deliver Craigslist items, make store deliveries even help people move. You can set a flexible schedule and they advertise "Drive for Burro and earn $45/hr with your pickup truck."',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Burro Drivers',
-            link: 'https://www.indeed.com/cmp/Burro/salaries/Delivery-Driver',
-          },
-        ],
-        gigsite: 'https://getburro.com/drivers.html',
-
-        services: [
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'packagedelivery'],
       },
       {
         id: 'G0002',
@@ -1342,7 +941,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://rentlikeachampion.com/',
-
         services: [],
         subtypes: ['rental', 'home'],
       },
@@ -1352,7 +950,7 @@ export const initialState = {
         app:
           'Airbnb is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in that locale. It currently covers more than 81,000 cities and 191 countries worldwide.',
         description:
-          'The app connecting millions of homeowners looking to list with millions of renters looking to travel. As a host, AirBnB gives you full control of your availability, prices and house rules. Sign up as a host and AirBnB lets you earn money opneing up your home to travelers.',
+          'The app connecting millions of homeowners looking to list with millions of renters looking to travel. As a host, AirBnB gives you full control of your availability, prices and house rules. Sign up as a host and AirBnB lets you earn money opening up your home to travelers.',
         promo: '',
         resources: [
           {
@@ -1385,7 +983,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.homeaway.com/lyp',
-
         services: [],
         subtypes: ['rental', 'home'],
       },
@@ -1393,7 +990,7 @@ export const initialState = {
         id: 'G0041',
         gig: 'onefinestay',
         app:
-          '10000+ high-end homes available to rent. The best homes. The best service. Stay in luxury serviced apartments in our favourite cities.',
+          '10000+ high-end homes available to rent. The best homes. The best service. Stay in luxury serviced apartments in our favorite cities.',
         description:
           'onefinestay offers high-end home-stays across the world with currently 5,000 homes and villas in its portfolio divided between two collections, City and Villa. Put that high end vacation property to work for you.',
         promo: '',
@@ -1404,7 +1001,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.onefinestay.com/list-your-home/',
-
         services: [],
         subtypes: ['rental', 'home'],
       },
@@ -1423,7 +1019,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://help.vrbo.com/category/List_Your_Property',
-
         services: [],
         subtypes: ['rental', 'home'],
       },
@@ -1440,7 +1035,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.lovehomeswap.com/',
-
         services: [],
         subtypes: ['rental', 'home'],
       },
@@ -1483,7 +1077,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://app.hyrecar.com/login?type=owner&form=signup',
-
         services: [],
         subtypes: ['rental', 'car'],
       },
@@ -1502,7 +1095,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://spothero.com/sell-parking/rent-my-parking-space/',
-
         services: [],
         subtypes: ['rental', 'parking'],
       },
@@ -1521,7 +1113,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.parkingpanda.com/',
-
         services: [],
         subtypes: ['rental', 'parking'],
       },
@@ -1540,7 +1131,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.sailo.com/',
-
         services: [],
         subtypes: ['rental', 'boat'],
       },
@@ -1559,7 +1149,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://rvshare.com/list-your-rv',
-
         services: [],
         subtypes: ['rental', 'RV'],
       },
@@ -1576,7 +1165,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://flyers.bird.co/',
-
         services: ['S0036'],
         subtypes: ['other', 'scooter'],
       },
@@ -1598,7 +1186,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://lime.bike/juicer',
-
         services: ['S0036'],
         subtypes: ['other', 'scooter'],
       },
@@ -1620,7 +1207,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.spin.app/charger',
-
         services: ['S0036'],
         subtypes: ['other', 'scooter'],
       },
@@ -1643,7 +1229,6 @@ export const initialState = {
         ],
         gigsite:
           'https://www.fountain.com/skip-scooters/apply/general-location-ranger',
-
         services: ['S0036'],
         subtypes: ['other', 'scooter'],
       },
@@ -1654,7 +1239,7 @@ export const initialState = {
           'TaskRabbit is a marketplace that matches freelance labor with local demand.',
         description:
           'TaskRabbit Taskers get paid to help with everyday tasks, like cleaning, moving, delivery and handyman work, for individuals in their community.',
-        promo: '',
+        apppromo: 'Sign Up for TaskRabbit and Get $10!',
         resources: [
           {
             title: 'Indeed: Reviews for TaskRabbit Workers',
@@ -1667,7 +1252,7 @@ export const initialState = {
         ],
         gigsite:
           'https://support.taskrabbit.com/hc/en-us/articles/360031918292-How-Do-I-Become-a-Tasker-',
-
+        appsite: 'https://www.taskrabbit.com/s/79ofx/try?utm_source=trycode',
         services: [],
         subtypes: ['labor', 'handyman'],
       },
@@ -1686,7 +1271,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.handy.com/apply',
-
         services: [],
         subtypes: ['labor', 'handyman'],
       },
@@ -1704,7 +1288,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.getbellhops.com/being-a-bellhop/',
-
         services: [],
         subtypes: ['labor', 'mover'],
       },
@@ -1723,43 +1306,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://dolly.com/helpers/',
-
-        services: [],
-        subtypes: ['labor', 'mover'],
-      },
-      {
-        id: 'G0205',
-        gig: 'Schlep',
-        description:
-          'The Uber for moving! Work a gig as a driver or a mover. Earn up to $1,000 a week, keep 100% of your tips and work on a flexible schedule',
-        promo: '',
-        resources: [
-          {
-            title: 'Yelp: Reviews for Schlep',
-            link: 'https://www.yelp.com/biz/schlep-chicago',
-          },
-        ],
-        gigsite: 'https://www.schlep.it/#/',
-
-        services: [],
-        subtypes: ['rental', 'labor', 'mover'],
-      },
-      {
-        id: 'G0164',
-        gig: 'EasyMove',
-        app:
-          "Easymove connects you with professional, reliable, local movers anytime you need it. It's the smartest alternative to traditional movers, renting a truck and doing it yourself- their app connects you with local independent strong easymovers to help with moving, hauling and junk removal.",
-        description:
-          'Easymove is a delivery service offering to help users move bulky items from point A to point B. If you have a big car and can do some heavy lifting, they advertise you can make $2,500 a week as an Easymove partner.',
-        promo: '',
-        resources: [
-          {
-            title: 'Trustpilot: Reviews for Easymove',
-            link: 'https://www.trustpilot.com/review/www.easymove.co.uk',
-          },
-        ],
-        gigsite: 'https://geteasymove.com/',
-
+        appsite: 'https://book.dolly.com/referred-by-friend/NS23231755651',
         services: [],
         subtypes: ['labor', 'mover'],
       },
@@ -1789,7 +1336,7 @@ export const initialState = {
           'The Takl platform connects customers who need chores completed with background-checked, self-employed Providers who are able to earn money using their skills on their own schedule.',
         description:
           'At Takl, you get paid to help others in your community complete small jobs and household chores. You can perform chores in twelve categories on your own time, and get paid fast through direct deposit.',
-        promo: '',
+        apppromo: 'Sign Up for Takl and Get 10% Off Your First Job!',
         resources: [
           {
             title: 'Indeed: Job Reviews for Takl Workers',
@@ -1797,9 +1344,153 @@ export const initialState = {
           },
         ],
         gigsite: 'https://app.takl.com/providers/register',
-
+        appsite: 'https://m.takl.com/t/pc/1346385',
         services: [],
         subtypes: ['labor', 'handyman'],
+      },
+      {
+        id: 'G0037',
+        gig: 'HopSkipDrive',
+        app:
+          "HopSkipDrive is a ride service to get kids (age 6+) where they need to go when their parents can't. It was created by three moms who understand the stress of driving kids to all of their activities, and the safety concerns parents have putting their children in someone elses car.",
+        description:
+          'HopSkipDrive drivers offer carpooling services for children ages 6+. There is a more stringent application process because of this, but it also pays incredibly well and gives you the opportunity to make a positive impact in the community.',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews from HopSkipDrive Drivers',
+            link:
+              'https://www.indeed.com/cmp/Hopskipdrive/reviews?fjobtitle=Driver',
+          },
+        ],
+        promo: '',
+        gigsite: 'https://www.hopskipdrive.com/driver-sign-up',
+        appsite: 'https://www.hopskipdrive.com/hopskipdrive-app-download',
+        pay: 'CareDrivers earn an average of $32 an hour',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0039',
+          'S0040',
+          'S0033',
+          'S0037',
+        ],
+        subtypes: ['driving', 'rideshare'],
+      },
+      {
+        id: 'G0054',
+        gig: 'Wingz',
+        app:
+          'Wingz is a rideshare app that specializes in airport pick up and drop off. You can schedule a ride up to two months in advance, know the rate up front, and book your favorite drivers.',
+        description:
+          'Wingz drivers specialize in airport pickup and drop off. Wingz also allows customers to select their favorite drivers for repeat rides, so drivers need to live near an airport and have a keen sense for customer service.',
+        promo: '',
+        resources: [
+          {
+            title: 'Yelp reviews for Wingz',
+            link: 'https://www.yelp.com/biz/wingz-san-francisco-4',
+          },
+        ],
+        gigsite: 'https://www.wingz.me/drivers-2/',
+        appsite: 'https://www.wingz.me/',
+        pay: 'You can expect to make $25+ per ride with Wingz',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0039',
+          'S0040',
+          'S0033',
+          'S0037',
+        ],
+        subtypes: ['driving', 'rideshare'],
+      },
+      {
+        id: 'G0197',
+        gig: 'Via Transportation',
+        app:
+          'Via is an on-demand transit system that takes multiple passengers heading in the same direction and books them into a shared vehicle. Think of Via as a bus smart enough to come when you want it and where you want it',
+        description:
+          'Via is another ride sharing company. They are reshaping public transit - they send you the rate for the upcoming day so you can plan your schedule in advance! You also do not need a car, you can rent one from Via to drive!',
+        promo: '',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for Via Drivers',
+            link: 'https://www.indeed.com/cmp/Via-Transportation/reviews',
+          },
+        ],
+        gigsite: 'https://my.drivewithvia.com/',
+        appsite: 'https://ridewithvia.com/',
+        pay: 'Expect to earn between $15 and $20 an hour',
+        services: [
+          'S0001',
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0039',
+          'S0040',
+          'S0033',
+          'S0037',
+        ],
+        subtypes: ['driving', 'rideshare'],
+      },
+      {
+        id: 'G0163',
+        gig: 'GroundLink',
+        app: 'Groundlink provides professional black car and limo services.',
+        description:
+          'GroundLink chauffeurs are professional black car drivers that provide transportation to riders. They only accept experienced limo and car service drivers.',
+        promo: '',
+        resources: [
+          {
+            title: 'Yelp reviews for GroundLink',
+            link: 'https://www.yelp.com/biz/groundlink-new-york',
+          },
+          {
+            title:
+              'Groundlink: difference between Groundlink and Rideshare Driving',
+            link:
+              'https://www.groundlink.com/blog/differences-groundlink-driver-rideshare-driver/',
+          },
+        ],
+        gigsite: 'https://driver.groundlink.com/',
+        appsite: 'https://www.groundlink.com/app',
+        services: ['S0004', 'S0005', 'S0006', 'S0031', 'S0037'],
+        subtypes: ['driving', 'rideshare'],
+      },
+      {
+        id: 'G0198',
+        gig: 'Curb',
+        app:
+          'Curb is the #1 taxi app in the US. They have over 50,000 taxis over 65+ US cities.',
+        description:
+          'Curb drivers are licensed and insured cab drivers. Available in NYC, Boston, Philadelphia, Miami and Las Vegas, Curb aims to help impacted cab drivers adapt to Uber and Lyft.',
+        promo: '',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for Curb Drivers',
+            link: 'https://www.indeed.com/cmp/Curb/reviews',
+          },
+        ],
+        gigsite: 'https://gocurb.com/',
+        appsite: 'https://mobileapp.gocurb.com/',
+        pay: 'Average Curb Driver Pay is around $17/hr',
+        services: [
+          'S0001',
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0031',
+          'S0033',
+          'S0037',
+        ],
+        subtypes: ['driving', 'rideshare'],
       },
       {
         id: 'G0190',
@@ -1817,7 +1508,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.networx.com/signup',
-
         services: [],
         subtypes: ['labor'],
       },
@@ -1915,7 +1605,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://veryable.app.link/pqxf1qmEN5',
-
         services: [],
         subtypes: ['labor'],
       },
@@ -1934,7 +1623,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.homeaglow.com/apply',
-
         services: [],
         subtypes: ['labor', 'cleaning'],
       },
@@ -1953,7 +1641,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.care.com/',
-
         services: [],
         subtypes: ['labor'],
       },
@@ -1961,7 +1648,7 @@ export const initialState = {
         id: 'G0199',
         gig: 'Uzurv',
         app:
-          'The adaptive transportation network company with drug & alcohol tested, credentialed drivers for paratransit and non-emergency medical transportation.',
+          'The adaptive transportation network company with drug & alcohol tested, credentialed drivers for para-transit and non-emergency medical transportation.',
         description:
           'Do you have a passion for helping the elderly? UZURV is a ride-share company that helps provide transportation to the elderly, disabled, and for NEMT needs',
         promo: '',
@@ -1973,7 +1660,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://uzurv.com/drivers/',
-
         services: [],
         subtypes: ['driving', 'rideshare'],
       },
@@ -1992,7 +1678,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.sittercity.com/sitter/account',
-
         services: [],
         subtypes: ['labor', 'care'],
       },
@@ -2012,7 +1697,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.helpr-app.com/become-a-helpr-now',
-
         services: [],
         subtypes: ['labor', 'care'],
       },
@@ -2022,7 +1706,7 @@ export const initialState = {
         app:
           'Figure Eight uses human intelligence to do simple tasks such as transcribing text or annotating images to train machine learning algorithms.',
         description:
-          'When someone need labels and annotations for a machine learning project, Figure Eight steps up. Users upload unlabeled data, with the rules they need for the project, and contributers get paid to mold the data for the model.',
+          'When someone need labels and annotations for a machine learning project, Figure Eight steps up. Users upload unlabeled data, with the rules they need for the project, and contributors get paid to mold the data for the model.',
         promo: '',
         resources: [
           {
@@ -2032,7 +1716,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.figure-eight.com/contributor/',
-
         services: [],
         subtypes: ['other', 'tech'],
       },
@@ -2053,7 +1736,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.etsy.com/join',
-
         services: [],
         subtypes: ['other'],
       },
@@ -2063,7 +1745,7 @@ export const initialState = {
         app:
           'Fancy Hands is a team of US-based virtual assistants ready to start working with you today. Use any device, at any time of day, and their assistants will tackle anything on your to-do list!',
         description:
-          'Want to become a virtual assistant, offering services to entrepenuers and businesses from wherever you want? Fancy Hands is a team of US-based virtual assistants, and a great place to start!',
+          'Want to become a virtual assistant, offering services to entrepreneurs and businesses from wherever you want? Fancy Hands is a team of US-based virtual assistants, and a great place to start!',
         promo: '',
         resources: [
           {
@@ -2072,7 +1754,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.fancyhands.com/jobs',
-
         services: [],
         subtypes: ['other'],
       },
@@ -2089,7 +1770,6 @@ export const initialState = {
           },
         ],
         gigsite: 'http://www.gigwalk.com/gigwalkers/',
-
         services: [],
         subtypes: ['other', 'mysteryshop'],
       },
@@ -2106,7 +1786,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.marketforce.com/become-a-mystery-shopper',
-
         services: [],
         subtypes: ['other', 'mysteryshop'],
       },
@@ -2123,7 +1802,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://gbw.solutions/becomeanevaluator',
-
         services: [],
         subtypes: ['other', 'mysteryshop'],
       },
@@ -2140,7 +1818,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://app.spare5.com/fives/sign_in',
-
         services: [],
         subtypes: ['other'],
       },
@@ -2158,7 +1835,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://2020census.gov/en/jobs.html',
-
         services: [],
         subtypes: ['other'],
       },
@@ -2169,7 +1845,7 @@ export const initialState = {
           'Soothe helps you book a five-star massage to your home, hotel, office, or event in as little as an hour.',
         description:
           'Gig work for massage therapists, including deep tissue, sports, and couples massage work. Soothe advertises 2-3x industry standard pay and schedule flexibility.',
-        promo: '',
+        apppromo: 'Sign Up for Soothe With Code ESEFM and Get $20!',
         resources: [
           {
             title: 'Indeed: Job Reviews for Soothe Workers',
@@ -2182,7 +1858,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.soothe.com/apply',
-
+        appsite: 'http://soothe.com',
         services: [],
         subtypes: ['other', 'beauty'],
       },
@@ -2201,7 +1877,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://gopriv.com/pro',
-
         services: [],
         subtypes: ['other', 'beauty'],
       },
@@ -2220,7 +1895,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://heal.com/medical-team/',
-
         services: [],
         subtypes: ['other', 'healthcare'],
       },
@@ -2230,7 +1904,7 @@ export const initialState = {
         app:
           'Slingshot Health is a health tech startup that brings top healthcare providers and patients together. Patients bid on the cost of services and healthcare providers accept bids based on availability.',
         description:
-          'Slingshot Health helps healthcare profesionals find new patients and fill open gaps in their schedules, growing their practice. It is free to sign up.',
+          'Slingshot Health helps healthcare professionals find new patients and fill open gaps in their schedules, growing their practice. It is free to sign up.',
         promo: '',
         resources: [
           {
@@ -2240,7 +1914,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.slingshothealth.com/providers/',
-
         services: [],
         subtypes: ['other', 'healthcare'],
       },
@@ -2251,7 +1924,7 @@ export const initialState = {
           'Join celebs, influencers & friends in the most -friendly rental marketplace for luxury designer fashion. Your Wardrobe goals just became reality.',
         description:
           'Do you have a big or fashionable wardrobe? Monetize your closet with peer-to-peer fashion rentals. Lend designer pieces from your closet to fellow fashion lovers and get easy cash with this app!',
-        promo: '',
+        apppromo: 'Sign Up for Wardrobe and Get a Free Wardrobe Rental!',
         resources: [
           {
             title: 'Wardrobe Reviews',
@@ -2260,7 +1933,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://wearwardrobe.co/',
-
+        appsite: 'https://apps.apple.com/us/app/wear-wardrobe/id1275844584',
         services: [],
         subtypes: ['rental'],
       },
@@ -2279,7 +1952,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.eatwith.com/landings/become-a-host',
-
         services: [],
         subtypes: ['labor', 'cuisine'],
       },
@@ -2298,7 +1970,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://experiences.chefsfeed.com/browse/',
-
         services: [],
         subtypes: ['labor', 'cuisine'],
       },
@@ -2315,7 +1986,6 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.fiverr.com/start_selling',
-
         services: [],
         subtypes: [''],
       },
@@ -2328,7 +1998,6 @@ export const initialState = {
         promo: '',
         resources: [],
         gigsite: 'https://www.linkedin.com/profinder/pros',
-
         services: [],
         subtypes: [''],
       },
@@ -2341,41 +2010,98 @@ export const initialState = {
         promo: '',
         resources: [],
         gigsite: 'https://www.freelancer.com/jobs/',
-
         services: [],
         subtypes: [''],
       },
       {
-        id: 'G0037',
-        gig: 'HopSkipDrive',
+        id: 'G0148',
+        gig: 'Zifty',
         app:
-          "HopSkipDrive is a ride service to get kids (age 6+) where they need to go when their parents can't. It was created by three moms who understand the stress of driving kids to all of their activities, and the safety concerns parents have putting their children in someone else's car.",
+          'Zifty is an online delivery company that partners with local restaurants and brands to bring their goods straight to clients doors.',
         description:
-          'HopSkipDrive drivers offer carpooling services for children ages 6+. There is a more stringent application process because of this, but it also pays incredibly well and gives you the opportunty to make a positive impact in the community.',
+          'Zifty delivery drivers make deliveries of food, movies, and other items to customers. Requests are matched to drivers on the Zifty driver app who then complete them, simple and easy.',
+        promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews from HopSkipDrive Drivers',
-            link:
-              'https://www.indeed.com/cmp/Hopskipdrive/reviews?fjobtitle=Driver',
+            title: 'Indeed: Job Reviews for Zifty Drivers',
+            link: 'https://www.indeed.com/cmp/Zifty.com/reviews',
           },
         ],
-        promo: '',
-        gigsite: 'https://www.hopskipdrive.com/driver-sign-up',
-        appsite: 'https://www.hopskipdrive.com/hopskipdrive-app-download',
-        pay: 'CareDrivers earn an average of $32 an hour',
+        gigsite: 'http://jobs.zifty.com/',
         services: [
           'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
-          'S0033',
           'S0037',
         ],
-        subtypes: ['driving', 'rideshare'],
+        subtypes: ['driving', 'fooddelivery'],
+      },
+      {
+        id: 'G0185',
+        gig: 'Peach',
+        app:
+          'Peach is a daily lunch service. No service fee, no tips, no commitment, conveniently delivered to your office.',
+        description:
+          'Peach drivers deliver carefully chosen dishes from the best lunch spots. They offer generous compensation and minimal time commitment to their delivery drivers. Peach is available in Seattle, San Diego and Boston.',
+        promo: '',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for Peach Drivers',
+            link: 'https://www.indeed.com/cmp/Peach/reviews',
+          },
+        ],
+        gigsite: 'https://www.peachd.com/jobs/',
+        appsite: 'https://www.peachd.com/',
+        pay:
+          'Average Peach Delivery Driver hourly pay in the US is around $40/hr.',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
+        subtypes: ['driving', 'fooddelivery'],
+      },
+      {
+        id: 'G0183',
+        gig: 'Deliveroo',
+        app:
+          'The best local restaurants and takeaways are here to deliver. Order on Deliveroo today!',
+        description:
+          'Deliveroo is a UK based food-delivery service. Delivery Drivers get paid to move orders from restaurants to homes. Unfortunately it is not currently available in America.',
+        promo: '',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for Deliveroo Drivers',
+            link: 'https://www.indeed.com/cmp/Deliveroo/reviews',
+          },
+          {
+            title: 'r/deliveroos: Subreddit for Deliveroo Drivers',
+            link: 'https://www.reddit.com/r/deliveroos/',
+          },
+        ],
+        gigsite: 'https://deliveroo.co.uk/apply',
+        appsite: 'https://deliveroo.co.uk/app?manual=1',
+        pay: 'Deliveroo says couriers earn “over €10.20 per hour"',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
+        subtypes: ['driving', 'fooddelivery'],
       },
       {
         id: 'G0168',
@@ -2400,7 +2126,6 @@ export const initialState = {
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
           'S0033',
@@ -2409,119 +2134,317 @@ export const initialState = {
         subtypes: ['driving', 'rideshare'],
       },
       {
-        id: 'G0054',
-        gig: 'Wingz',
+        id: 'G0186',
+        gig: 'Burpy',
         app:
-          'Wingz is a rideshare app that specializes in airport pick up and drop off. You can schedule a ride up to two months in advance, know the rate up front, and book your favorite drivers.',
+          'Same day grocery delivery services online in Houston, Dallas, Fort Worth, Austin & San Antonio.',
         description:
-          'Wingz drivers specialize in airport pickup and drop off. Wingz also allows customers to select their favorite drivers for repeat rides, so drivers need to live near an airport and have a keen sense for customer service.',
+          'Burpy is another grocery service, offering delivery to customers within the hour. It hires shoppers to shop and deliver for customers, but is only available in the Texas area.',
         promo: '',
         resources: [
           {
-            title: 'Yelp reviews for Wingz',
-            link: 'https://www.yelp.com/biz/wingz-san-francisco-4',
+            title: 'Indeed: Job Reviews for Burpy Drivers',
+            link: 'https://www.indeed.com/cmp/Burpy/reviews',
           },
         ],
-        gigsite: 'https://www.wingz.me/drivers-2/',
-        appsite: 'https://www.wingz.me/',
-        pay: 'You can expect to make $25+ per ride with Wingz',
+        gigsite: 'https://shoppers.burpy.com/join-as-shopper',
         services: [
           'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
-          'S0033',
           'S0037',
         ],
-        subtypes: ['driving', 'rideshare'],
+        subtypes: ['driving', 'grocery'],
       },
       {
-        id: 'G0197',
-        gig: 'Via Transportation',
+        id: 'G0143',
+        gig: 'Skipcart',
         app:
-          'Via is an on-demand transit system that takes multiple passengers heading in the same direction and books them into a shared vehicle. Think of Via as a bus smart enough to come when you want it and where you want it',
+          'Skipcart is an on-demand platform providing last-mile delivery for all retailers and restaurants currently offering a Curbside or Pickup solution but lacking same-day delivery.',
         description:
-          'Via is another ride sharing company. They are reshaping public transit - they send you the rate for the upcoming day so you can plan your schedule in advance! You also do not need a car, you can rent one from Via to drive!',
+          'Skipcart drivers deliver packages for local retailers and restaurants. Open the Skipcart app, choose your hours and start delivering.',
         promo: '',
         resources: [
           {
-            title: 'Indeed: Job Reviews for Via Drivers',
-            link: 'https://www.indeed.com/cmp/Via-Transportation/reviews',
+            title: 'Indeed: Job Reviews for Skipcart Drivers',
+            link: 'https://www.indeed.com/cmp/Skipcart/reviews',
           },
         ],
-        gigsite: 'https://my.drivewithvia.com/',
-        appsite: 'https://ridewithvia.com/',
-        pay: 'Expect to earn between $15 and $20 an hour',
+        gigsite: 'https://skipcart.com/drivers/',
+        appsite: 'https://skipcart.com/',
+        pay: 'Skipcart Drivers Can Earn Up to $22/hr',
         services: [
-          'S0001',
           'S0004',
           'S0005',
           'S0006',
           'S0030',
           'S0031',
-
           'S0039',
           'S0040',
-          'S0033',
           'S0037',
         ],
-        subtypes: ['driving', 'rideshare'],
+        subtypes: ['driving', 'packagedelivery'],
       },
       {
-        id: 'G0163',
-        gig: 'GroundLink',
-        app: 'Groundlink provides professional black car and limo services.',
+        id: 'G0155',
+        gig: 'PICKUP',
+        app:
+          'PICKUP is an on-demand same day delivery service. It allows users to hire drivers with pickup trucks to move furniture or other bulky items.',
         description:
-          'GroundLink chauffeurs are professional black car drivers that provide transportation to riders. They only accept experienced limo and car service drivers.',
+          'PICKUP workers deliver big & heavy items for national and area businesses. If you own a truck or van, put it to good use and start hauling for money',
         promo: '',
         resources: [
           {
-            title: 'Yelp reviews for GroundLink',
-            link: 'https://www.yelp.com/biz/groundlink-new-york',
-          },
-          {
-            title:
-              'Groundlink: difference between Groundlink and Rideshare Driving',
+            title: 'Glassdoor: Job Reviews for PICKUP Drivers',
             link:
-              'https://www.groundlink.com/blog/differences-groundlink-driver-rideshare-driver/',
+              'https://www.glassdoor.com/Overview/Working-at-PICKUP-EI_IE1641897.11,17.htm',
           },
         ],
-        gigsite: 'https://driver.groundlink.com/',
-        appsite: 'https://www.groundlink.com/app',
-        services: ['S0004', 'S0005', 'S0006', 'S0031', 'S0037'],
-        subtypes: ['driving', 'rideshare'],
-      },
-      {
-        id: 'G0198',
-        gig: 'Curb',
-        app:
-          'Curb is the #1 taxi app in the US. They have over 50,000 taxis over 65+ US cities.',
-        description:
-          'Curb drivers are licensed and insured cab drivers. Available in NYC, Boston, Philadelphia, Miami and Las Vegas, Curb aims to help impacted cab drivers adapt to Uber and Lyft.',
-        promo: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Curb Drivers',
-            link: 'https://www.indeed.com/cmp/Curb/reviews',
-          },
-        ],
-        gigsite: 'https://gocurb.com/',
-        appsite: 'https://mobileapp.gocurb.com/',
-        pay: 'Average Curb Driver Pay is around $17/hr',
+        gigsite: 'https://pickupnow.com/requirements/',
+        appsite: 'https://pickupnow.com/',
+        pay: 'Make a minimum of $25 per run and up to $50/hr',
         services: [
-          'S0001',
           'S0004',
           'S0005',
           'S0006',
+          'S0030',
           'S0031',
-          'S0033',
+          'S0039',
+          'S0040',
           'S0037',
         ],
-        subtypes: ['driving', 'rideshare'],
+        subtypes: ['driving', 'packagedelivery'],
+      },
+      {
+        id: 'G0193',
+        gig: 'Bungii',
+        app:
+          "Bungii is a mobile app that instantly helps move, haul and deliver your stuff across town by connecting you with a local driver and pickup truck. They've been compared to popular ride sharing apps but instead of moving people, they move people's stuff.",
+        description:
+          'Bungii workers get paid to move bulky items for users. Bungii asks for you to own a 2005 or newer truck, ratchet straps, bungee cords and moving blankets to secure your deliveries, as well as be able to do some heavy lifting.',
+        apppromo: 'Sign Up With Promo Code 5XDKA and get $10!',
+        resources: [
+          {
+            title: 'Bungii Reviews',
+            link:
+              'https://appgrooves.com/app/bungii-your-friend-w-a-truck-by-bungii-llc',
+          },
+        ],
+        gigsite: 'https://bungii.com/',
+        appsite: 'https://bungii.com/',
+        pay: 'Bungii Workers Earn Up to $40/hr',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
+        subtypes: ['driving', 'packagedelivery'],
+      },
+      {
+        id: 'G0157',
+        gig: 'TommyRun',
+        app:
+          'TommyRun is an app that allows you to order building materials and have them delivered within hours.',
+        description:
+          'TommyRunners deliver building materials to individuals in their communities. You need to own a truck or van and be willing to do some heavy lifting.',
+        indeed: 'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
+        apppromo: 'Sign Up and Get $25!',
+        resources: [
+          {
+            title: 'TommyRun Reviews',
+            link:
+              'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
+          },
+        ],
+        gigsite: 'https://tommyrun.app.link/vanKPpCzN5',
+        appsite: 'https://tommyrun.app.link/vanKPpCzN5',
+        pay: 'Average between $12 and $20/hr',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
+        subtypes: ['driving', 'packagedelivery'],
+      },
+      {
+        id: 'G0170',
+        gig: 'DeLiv',
+        description:
+          'DeLiv is a Same day delivery service helping retailers deliver their items to customers. They have a schedule where you can book hours and deliver packages for up to $22/hr. No passengers or food. No mess or stress.',
+        promo: '',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for DeLiv Drivers',
+            link: 'https://www.indeed.com/cmp/Deliv/reviews',
+          },
+        ],
+        gigsite: 'https://www.deliv.co/drivers/',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
+        subtypes: ['driving', 'packagedelivery'],
+      },
+      {
+        id: 'G0161',
+        gig: 'uShip',
+        app:
+          'uShip makes shipping motorcycles, boats, and other large items fast and affordable by connecting you to their network of carriers who compete for your shipment.',
+        description:
+          'uShip carriers ship motorcycles, boats, and other large items. If you have the type of horsepower that can handles these deliveries, you can start making money as a uShip carrier.',
+        promo: '',
+        resources: [
+          {
+            title: 'Glassdoor: Job Reviews for uShip Carriers',
+            link: 'https://www.glassdoor.com/Reviews/uShip-Reviews-E200164.htm',
+          },
+        ],
+        gigsite: 'https://www.uship.com/register/',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
+        subtypes: ['driving', 'packagedelivery'],
+      },
+      {
+        id: 'G0182',
+        gig: 'DispatchIt',
+        app:
+          'Dispatch is replacing the old courier industry by providing customers with real time tracking and accurate ETAs by leveraging technology and hard working drivers who get paid a fair wage.',
+        description:
+          'Dispatchit drivers provide reliable local deliveries to customers with real time ETAs and tracking. Dispatchit drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
+        promo: '',
+        resources: [
+          {
+            title: 'Dispatchit Facebook Reviews',
+            link: 'https://www.facebook.com/pg/dispatchitinc/reviews',
+          },
+        ],
+        gigsite: 'https://www.dispatchit.com/drivers/',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
+        subtypes: ['driving', 'packagedelivery'],
+      },
+      {
+        id: 'G0189',
+        gig: 'DeliverThat',
+        app:
+          'DeliverThat is the industry leader for pre-scheduled catering delivery and setup.',
+        description:
+          'DeliverThat drivers deliver food from restaurants like QDoba, Zoes Kitchen, Boston Market and Firehouse, to customers. Delivery commissions start with a base amount, then increase based on distance and size.',
+        promo: '',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for DeliverThat Drivers',
+            link: 'https://www.indeed.com/cmp/Deliver-That/reviews',
+          },
+        ],
+        gigsite: 'https://www.ideliverthat.com/driver',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
+        subtypes: ['driving', 'fooddelivery'],
+      },
+      {
+        id: 'G0187',
+        gig: 'Burro',
+        app: 'Burro is an all in one delivery app for the Austin area.',
+        description:
+          'Deliver Craigslist items, make store deliveries even help people move. You can set a flexible schedule and they advertise "Drive for Burro and earn $45/hr with your pickup truck."',
+        promo: '',
+        resources: [
+          {
+            title: 'Indeed: Job Reviews for Burro Drivers',
+            link: 'https://www.indeed.com/cmp/Burro/salaries/Delivery-Driver',
+          },
+        ],
+        gigsite: 'https://getburro.com/drivers.html',
+        services: [
+          'S0004',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
+        subtypes: ['driving', 'packagedelivery'],
+      },
+      {
+        id: 'G0205',
+        gig: 'Schlep',
+        description:
+          'The Uber for moving! Work a gig as a driver or a mover. Earn up to $1,000 a week, keep 100% of your tips and work on a flexible schedule',
+        promo: '',
+        resources: [
+          {
+            title: 'Yelp: Reviews for Schlep',
+            link: 'https://www.yelp.com/biz/schlep-chicago',
+          },
+        ],
+        gigsite: 'https://www.schlep.it/#/',
+        services: [],
+        subtypes: ['rental', 'labor', 'mover'],
+      },
+      {
+        id: 'G0164',
+        gig: 'EasyMove',
+        app:
+          "Easymove connects you with professional, reliable, local movers anytime you need it. It's the smartest alternative to traditional movers, renting a truck and doing it yourself- their app connects you with local independent strong easymovers to help with moving, hauling and junk removal.",
+        description:
+          'Easymove is a delivery service offering to help users move bulky items from point A to point B. If you have a big car and can do some heavy lifting, they advertise you can make $2,500 a week as an Easymove partner.',
+        promo: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for Easymove',
+            link: 'https://www.trustpilot.com/review/www.easymove.co.uk',
+          },
+        ],
+        gigsite: 'https://geteasymove.com/',
+        services: [],
+        subtypes: ['labor', 'mover'],
       },
     ],
     services: [
@@ -2569,7 +2492,7 @@ export const initialState = {
         id: 'S0005',
         gig: 'TripLog',
         description:
-          'Triplog helps users save an average of $7,200 annually. As a gig worker, the miles you drive for work are tax deductable. Triplog helps you track those miles so you can maximize your returns. They are also fully IRS compliant, protecting you in case of audit.',
+          'Triplog helps users save an average of $7,200 annually. As a gig worker, the miles you drive for work are tax deductible. Triplog helps you track those miles so you can maximize your returns. They are also fully IRS compliant, protecting you in case of audit.',
         indeed: 'https://reviews.financesonline.com/p/triplog/',
         promo: 'Sign Up Below for a Free 30 Day Trial and 20% Off!',
         gigsite: 'http://trplg.co/389373',
@@ -2662,7 +2585,7 @@ export const initialState = {
         id: 'D0002',
         gig: 'Robinhood',
         description:
-          'Robinhood is a mobile app for trading stocks and options comission free.',
+          'Robinhood is a mobile app for trading stocks and options commission free.',
         promo: 'Get a Free Stock When You Sign Up!',
         gigsite: 'https://join.robinhood.com/markf1248',
       },

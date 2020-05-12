@@ -62,8 +62,11 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
   return (
     <div>
       <Helmet>
-        <title>FullGigPage</title>
-        <meta name="description" content="Description of FullGigPage" />
+        <title>View Gig</title>
+        <meta
+          name="description"
+          content="View information about a specific gig: pay, relevant services, resources etc."
+        />
       </Helmet>
       <div style={{ marginTop: '15px' }}>
         <A href="/gigs">{'<< Go Back'}</A>
