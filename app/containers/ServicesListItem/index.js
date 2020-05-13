@@ -14,6 +14,7 @@ import { createStructuredSelector } from 'reselect';
 
 import { makeSelectCurrentUser } from 'containers/App/selectors';
 
+import CenterText from 'components/CenterText';
 import ListItem from 'components/ListItem';
 import H2 from 'components/H2';
 import Popup from 'components/Popup';
@@ -25,6 +26,7 @@ import Wrapper from './Wrapper';
 import Spacing from './Spacing';
 import Title from './Title';
 import Table from './Table';
+import PSpacing from './PSpacing';
 
 export function ServicesListItem(props) {
   const { item } = props;
@@ -57,18 +59,18 @@ export function ServicesListItem(props) {
                 <td>
                   <Title>
                     <H2>{item.gig}</H2>
-                    <div style={{ marginTop: '-15px' }}>
+                    <PSpacing>
                       <P>{item.description}</P>
-                    </div>
+                    </PSpacing>
                   </Title>
                 </td>
               </tr>
             </tbody>
           </Table>
           {item.promo ? (
-            <div style={{ textAlign: 'center' }}>
+            <CenterText>
               <hr /> <Deal>{item.promo}</Deal>
-            </div>
+            </CenterText>
           ) : null}
         </Wrapper>
       </Spacing>

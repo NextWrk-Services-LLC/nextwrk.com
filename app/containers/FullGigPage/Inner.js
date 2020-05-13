@@ -9,6 +9,7 @@ const Inner = styled.div`
   padding: 20px;
   @media (max-width: 768px) {
     margin: 5px 10px;
+    padding: 5px;
   }
 `;
 

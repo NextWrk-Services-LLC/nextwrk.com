@@ -22,11 +22,14 @@ import {
 import BodySpacing from 'components/BodySpacing';
 import H0 from 'components/H0';
 import H1 from 'components/H1';
+import H2 from 'components/H2';
 import Header from 'components/Header';
 import CenterText from 'components/CenterText';
 import GigsList from 'components/GigsList';
 
 import A from './A';
+import H0Wrapper from './H0Wrapper';
+import ViewMoreWrapper from './ViewMoreWrapper';
 import MobileBody from './MobileBody';
 import Body from './Body';
 
@@ -44,7 +47,7 @@ export function HomePage({ loading, error, gigs }) {
       </Helmet>
       <Header />
       <BodySpacing>
-        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+        <H0Wrapper>
           <H0>
             Start Working How, When and Where{' '}
             <b>
@@ -52,7 +55,7 @@ export function HomePage({ loading, error, gigs }) {
             </b>{' '}
             Want
           </H0>
-        </div>
+        </H0Wrapper>
         <H1>Discover...</H1>
         {isMobile ? <MobileBody /> : <Body />}
         <CenterText>
@@ -60,12 +63,11 @@ export function HomePage({ loading, error, gigs }) {
           <hr />
         </CenterText>
         <GigsList loading={loading} error={error} gigs={gigs} />
-
-        <div style={{ textAlign: 'center', margin: '50px' }}>
+        <ViewMoreWrapper>
           <A href="/gigs">
-            <H1>Find Your Next Gig Today!</H1>
+            <H2>{'View More >>'}</H2>
           </A>
-        </div>
+        </ViewMoreWrapper>
       </BodySpacing>
     </article>
   );

@@ -6,15 +6,12 @@
  */
 
 import React, { memo } from 'react';
-import { useMediaQuery } from 'react-responsive';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 
-import H2 from 'components/H2';
-import Table from 'components/Popup/Table';
 import ServicesList from 'components/ServicesList';
 import {
   makeSelectPathname,
@@ -25,14 +22,18 @@ import {
 } from '../App/selectors';
 
 import Inner from './Inner';
-import H1 from './H1';
-import Button from './Button';
-import P from './P';
-import A from './A';
-import ASm from './ASm';
+import BodyWrapper from './BodyWrapper';
+
+import GoBack from './GoBack';
+import Header from './Header';
+import AppDesc from './AppDesc';
+import GigDesc from './GigDesc';
+import PayInsights from './PayInsights';
+import Resources from './Resources';
+import FeaturedServices from './FeaturedServices';
+import BottomButtons from './BottomButtons';
 
 export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   const info = allGigs.filter(obj => obj.id.includes(gigId))[0];
   const images = require.context('../../images/Logos', true);
   let logo = images(`./nw.png`);
@@ -73,128 +74,23 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
           content="View information about a specific gig: pay, relevant services, resources etc."
         />
       </Helmet>
-      <div style={{ marginTop: '15px' }}>
-        <A href="/gigs">{'<< Go Back'}</A>
-      </div>
+      <GoBack />
       <Inner>
-        <Table>
-          <tbody>
-            <tr>
-              <td>
-                <img
-                  style={{ height: '100px', borderRadius: '10px' }}
-                  src={logo}
-                  alt="Logo"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <H1>{info.gig}</H1>
-              </td>
-            </tr>
-          </tbody>
-        </Table>
-        <Table>
-          <tbody>
-            {isMobile ? (
-              <React.Fragment>
-                <tr>
-                  <td style={{ verticalAlign: 'top' }}>
-                    <a href={info.appsite ? info.appsite : info.gigsite}>
-                      <Button>{`Start Using ${info.gig}`}</Button>
-                    </a>
-                    <div style={{ textAlign: 'center' }}>
-                      <H2>{info.apppromo}</H2>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td style={{ verticalAlign: 'top' }}>
-                    <a href={info.gigsite}>
-                      <Button>{`Start Earning with ${info.gig}`}</Button>
-                    </a>
-                    <div style={{ textAlign: 'center' }}>
-                      <H2>{info.jobpromo}</H2>
-                    </div>
-                  </td>
-                </tr>
-              </React.Fragment>
-            ) : (
-              <tr>
-                <td style={{ width: '50%', verticalAlign: 'top' }}>
-                  <a href={info.appsite ? info.appsite : info.gigsite}>
-                    <Button>{`Start Using ${info.gig}`}</Button>
-                  </a>
-                  <div style={{ textAlign: 'center' }}>
-                    <H2>{info.apppromo}</H2>
-                  </div>
-                </td>
-                <td style={{ width: '50%', verticalAlign: 'top' }}>
-                  <a href={info.gigsite}>
-                    <Button>{`Start Earning with ${info.gig}`}</Button>
-                  </a>
-                  <div style={{ textAlign: 'center' }}>
-                    <H2>{info.jobpromo}</H2>
-                  </div>
-                </td>
-              </tr>
-            )}
-          </tbody>
-        </Table>
+        <Header image={logo} title={info.gig} />
         <hr />
-        <div style={{ padding: '0px 20px' }}>
-          {info.app ? (
-            <React.Fragment>
-              <H2>App Description</H2>
-              <div style={{ marginTop: '-10px' }}>
-                <P>{info.app}</P>
-              </div>
-            </React.Fragment>
-          ) : null}
-          <H2>Gig Description</H2>
-          <div style={{ marginTop: '-10px' }}>
-            <P>{info.description}</P>
-          </div>
-          {info.pay ? (
-            <React.Fragment>
-              <H2>Pay Insights</H2>
-              <div style={{ marginTop: '-10px' }}>
-                <P>{info.pay}</P>
-              </div>
-            </React.Fragment>
-          ) : null}
-          {info.resources ? (
-            <React.Fragment>
-              <H2>Resources</H2>
-              <div style={{ marginTop: '-10px' }}>
-                <ul style={{ listStyle: 'none' }}>
-                  {info.resources.map(item => (
-                    <li style={{ paddingBottom: '3px' }} key={item.title}>
-                      <ASm href={item.link}>{item.title}</ASm>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </React.Fragment>
-          ) : null}
+        <BodyWrapper>
+          {info.app ? <AppDesc text={info.app} /> : null}
+          {info.description ? <GigDesc text={info.description} /> : null}
+          {info.pay ? <PayInsights text={info.pay} /> : null}
+          {info.resources ? <Resources items={info.resources} /> : null}
           {featuredServices.length > 0 ? (
-            <React.Fragment>
-              <H2>
-                Useful Services{' '}
-                <a
-                  style={{ color: `#3b9ad5` }}
-                  href={`/services?fltr=${gigId}`}
-                >
-                  (See More Here)
-                </a>
-              </H2>
-              <div style={{ marginTop: '-10px', textAlign: 'center' }}>
-                <ServicesList {...servicesProps} />
-              </div>
-            </React.Fragment>
+            <FeaturedServices
+              id={gigId}
+              list={<ServicesList {...servicesProps} />}
+            />
           ) : null}
-        </div>
+          <BottomButtons info={info} />
+        </BodyWrapper>
       </Inner>
     </div>
   );

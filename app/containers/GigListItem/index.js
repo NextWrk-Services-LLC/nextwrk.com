@@ -12,18 +12,13 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import ListItem from 'components/ListItem';
-import H2 from 'components/H2';
-import Ul from 'components/Ul';
-import Li from 'components/Li';
 
-import Deal from './Deal';
 import P from './P';
-import Img from './Img';
+import A from './A';
 import Wrapper from './Wrapper';
 import Spacing from './Spacing';
-import Title from './Title';
-import Table from './Table';
-import TdImg from './TdImg';
+import Header from './Header';
+import Promo from './Promo';
 
 export function GigsListItem(props) {
   const { item } = props;
@@ -37,37 +32,15 @@ export function GigsListItem(props) {
 
   const content = (
     <React.Fragment>
-      <a href={`/gigs/${item.id}`} style={{ textDecoration: 'none' }}>
+      <A href={`/gigs/${item.id}`}>
         <Spacing>
           <Wrapper>
-            <Table>
-              <tbody>
-                <tr>
-                  <TdImg>
-                    <Img src={logo} alt="Company - Logo" />
-                  </TdImg>
-                  <td>
-                    <Title>
-                      <H2>{item.gig}</H2>
-                    </Title>
-                  </td>
-                </tr>
-              </tbody>
-            </Table>
-            <Ul>
-              <Li>
-                <P>{item.description}</P>
-              </Li>
-            </Ul>
-            {item.apppromo || item.jobpromo ? (
-              <div style={{ textAlign: 'center' }}>
-                <hr /> <Deal>{item.apppromo}</Deal>
-                <Deal>{item.jobpromo}</Deal>
-              </div>
-            ) : null}
+            <Header image={logo} name={item.gig} />
+            <P>{item.description}</P>
+            {item.apppromo || item.jobpromo ? <Promo item={item} /> : null}
           </Wrapper>
         </Spacing>
-      </a>
+      </A>
     </React.Fragment>
   );
 

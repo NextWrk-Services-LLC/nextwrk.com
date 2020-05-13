@@ -15,19 +15,13 @@ import { createStructuredSelector } from 'reselect';
 import { makeSelectCurrentUser } from 'containers/App/selectors';
 
 import ListItem from 'components/ListItem';
-import H2 from 'components/H2';
-import Ul from 'components/Ul';
-import Li from 'components/Li';
 import Popup from 'components/Popup';
 
-import Deal from 'containers/GigListItem/Deal';
 import P from './P';
-import Img from './Img';
 import Wrapper from './Wrapper';
 import Spacing from './Spacing';
-import Title from './Title';
-import Table from './Table';
-import TdImg from './TdImg';
+import Header from './Header';
+import Promo from './Promo';
 
 export function DealsListItem(props) {
   const { item } = props;
@@ -50,30 +44,9 @@ export function DealsListItem(props) {
       ) : null}
       <Spacing onClick={() => toggleShow(!show)}>
         <Wrapper>
-          <Table>
-            <tbody>
-              <tr>
-                <TdImg>
-                  <Img src={logo} alt="Company - Logo" />
-                </TdImg>
-                <td>
-                  <Title>
-                    <H2>{item.gig}</H2>
-                  </Title>
-                </td>
-              </tr>
-            </tbody>
-          </Table>
-          <Ul>
-            <Li>
-              <P>{item.description}</P>
-            </Li>
-          </Ul>
-          {item.promo ? (
-            <div style={{ textAlign: 'center' }}>
-              <hr /> <Deal>{item.promo}</Deal>
-            </div>
-          ) : null}
+          <Header image={logo} name={item.gig} />
+          <P>{item.description}</P>
+          {item.promo ? <Promo promo={item.promo} /> : null}
         </Wrapper>
       </Spacing>
     </React.Fragment>

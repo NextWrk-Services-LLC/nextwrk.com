@@ -22,6 +22,7 @@ import {
   makeSelectLocation,
 } from 'containers/App/selectors';
 import BodySpacing from 'components/BodySpacing';
+import CenterText from 'components/CenterText';
 import ServicesList from 'components/ServicesList';
 import H1 from 'components/H1';
 import SearchImg from 'containers/GigsPage/SearchImg';
@@ -31,6 +32,7 @@ import search from 'containers/GigsPage/img/search.png';
 
 import Wrapper from './Wrapper';
 import Img from './Img';
+import SearchTd from './SearchTd';
 import servicesheader from './img/servicesheader.png';
 
 export function ServicesPage({ location, loading, error, services, gigs }) {
@@ -120,13 +122,13 @@ export function ServicesPage({ location, loading, error, services, gigs }) {
       </Helmet>
       <Img src={servicesheader} alt="Services Page Header" />
       <BodySpacing>
-        <div style={{ textAlign: 'center' }}>
+        <CenterText>
           {gigId.length === 5 ? (
             <H1>{`${selectedGig.gig} Services`}</H1>
           ) : (
             <H1>Search for Services</H1>
           )}
-        </div>
+        </CenterText>
         {isMobile ? (
           <div>
             {SearchFld}
@@ -138,9 +140,7 @@ export function ServicesPage({ location, loading, error, services, gigs }) {
           <table>
             <tbody>
               <tr>
-                <td style={{ width: '33%', verticalAlign: 'top' }}>
-                  {SearchFld}
-                </td>
+                <SearchTd>{SearchFld}</SearchTd>
                 <td>
                   {gigId.length === 5 ? (
                     <ServicesList {...servicesProps} />

@@ -2041,7 +2041,7 @@ export const initialState = {
         ],
         gigsite: 'https://app.spare5.com/fives/sign_in',
         services: [],
-        subtypes: ['other'],
+        subtypes: ['quickbucks'],
       },
       {
         id: 'G0147',

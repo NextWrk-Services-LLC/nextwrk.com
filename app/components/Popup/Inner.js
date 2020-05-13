@@ -12,10 +12,10 @@ const Inner = styled.div`
   z-index: 6;
   padding: 20px 40px;
   @media (max-width: 768px) {
-    left: 5%;
-    right: 5%;
+    left: 2%;
+    right: 2%;
     top: 15%;
-    padding: 5px 10px;
+    padding: 5px 5px;
   }
 `;
 
