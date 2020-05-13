@@ -27,6 +27,7 @@ export const initialState = {
   loading: false,
   error: false,
   componentData: {
+    // Gigs
     gigs: [
       {
         id: 'G0208',
@@ -2846,7 +2847,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.zulily.com/vendor',
-        appsite: 'http://www.thredup.com/r/5CP1KX',
+        appsite: 'https://tinyurl.com/yb24nrja',
         pay: '',
         services: [],
         subtypes: ['clothes'],
