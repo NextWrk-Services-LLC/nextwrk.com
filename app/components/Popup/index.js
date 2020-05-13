@@ -159,7 +159,7 @@ function Popup({ close, info }) {
             ) : null}
             <tr>
               <td>
-                <div style={{ textAlign: 'center' }}>
+                <div style={{ textAlign: 'center', marginBottom: '10px' }}>
                   <Button href={info.gigsite}>TRY IT OUT</Button>
                 </div>
               </td>

@@ -20,6 +20,7 @@ import {
 } from 'containers/App/selectors';
 
 import BodySpacing from 'components/BodySpacing';
+import H0 from 'components/H0';
 import H1 from 'components/H1';
 import Header from 'components/Header';
 import CenterText from 'components/CenterText';
@@ -43,13 +44,15 @@ export function HomePage({ loading, error, gigs }) {
       </Helmet>
       <Header />
       <BodySpacing>
-        <CenterText>
-          <H1>
+        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+          <H0>
+            Start Working How, When and Where{' '}
             <b>
-              Start Working How, When and Where <u>YOU</u> Want!
-            </b>
-          </H1>
-        </CenterText>
+              <u>YOU</u>
+            </b>{' '}
+            Want
+          </H0>
+        </div>
         <H1>Discover...</H1>
         {isMobile ? <MobileBody /> : <Body />}
         <CenterText>

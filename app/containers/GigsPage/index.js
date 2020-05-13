@@ -71,6 +71,8 @@ export function GigsPage({ loading, error, gigs }) {
     cuisine: false,
     software: false,
     design: false,
+    photo: false,
+    clothes: false,
 
     gigs: allGigs,
     searchList: searchGigs,
@@ -181,6 +183,12 @@ export function GigsPage({ loading, error, gigs }) {
     if (state.design) {
       showGigs.push('design');
     }
+    if (state.photo) {
+      showGigs.push('photo');
+    }
+    if (state.clothes) {
+      showGigs.push('clothes');
+    }
     setState({
       ...state,
       gigs:
@@ -250,7 +258,13 @@ export function GigsPage({ loading, error, gigs }) {
         gigs={state.gigs.slice(0, state.numCards)}
       />
       {state.loadMore ? (
-        <div style={{ textAlign: 'center', marginTop: '10px' }}>
+        <div
+          style={{
+            textAlign: 'center',
+            marginTop: '10px',
+            marginBottom: '10px',
+          }}
+        >
           <Button onClick={loadMore}>
             <p>Load More</p>
           </Button>
@@ -345,6 +359,29 @@ export function GigsPage({ loading, error, gigs }) {
                 />
               }
               label="Design Freelancing"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.photo}
+                  onChange={handleChange}
+                  name="photo"
+                  color="default"
+                />
+              }
+              label="Photography Freelancing"
+            />
+            <H2>Sell Your Stuff</H2>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.clothes}
+                  onChange={handleChange}
+                  name="clothes"
+                  color="default"
+                />
+              }
+              label="Sell Clothes"
             />
             <H2>Rental</H2>
             <FormControlLabel
@@ -537,7 +574,9 @@ export function GigsPage({ loading, error, gigs }) {
               label="Scooter Charging"
             />
           </FormGroup>
-          <div style={{ height: '24px', paddingTop: '10px' }}>
+          <div
+            style={{ height: '24px', paddingTop: '10px', marginBottom: '20px' }}
+          >
             <Button onClick={filterGigs}>
               <p>Submit</p>
             </Button>
