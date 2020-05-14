@@ -18,7 +18,7 @@ const Wrapper = styled.li`
   }
 
   &:hover {
-    background: #f7f7f7;
+    background: #fbfbfb;
   }
 `;
 

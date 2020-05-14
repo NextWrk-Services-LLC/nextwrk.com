@@ -15,7 +15,7 @@ import { createStructuredSelector } from 'reselect';
 import { makeSelectCurrentUser } from 'containers/App/selectors';
 
 import ListItem from 'components/ListItem';
-import Popup from 'components/Popup';
+import Popup from 'components/PopupDeal';
 
 import P from './P';
 import Wrapper from './Wrapper';

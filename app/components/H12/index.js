@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
-const H1 = styled.h1`
-  font-size: 48px;
+const H12 = styled.h1`
+  font-size: 28px;
+  margin-bottom: 0.25em;
   color: #3b9ad5;
-  margin: 0px;
   font-weight: normal;
   @media (max-width: 768px) {
-    font-size: 32px;
+    font-size: 20px;
   }
 `;
 
-export default H1;
+export default H12;

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useMediaQuery } from 'react-responsive';
 
-import H2 from 'components/H2';
+import H2 from 'components/H1';
 import CenterText from 'components/CenterText';
 import Table from 'components/Popup/Table';
 

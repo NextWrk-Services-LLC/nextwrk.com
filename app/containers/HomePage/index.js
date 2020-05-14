@@ -49,17 +49,13 @@ export function HomePage({ loading, error, gigs }) {
       <BodySpacing>
         <H0Wrapper>
           <H0>
-            Start Working How, When and Where{' '}
-            <b>
-              <u>YOU</u>
-            </b>{' '}
-            Want
+            Start Working How, When and Where <b>YOU</b> Want
           </H0>
         </H0Wrapper>
         <H1>Discover...</H1>
         {isMobile ? <MobileBody /> : <Body />}
         <CenterText>
-          <H1>Featured Gigs</H1>
+          <H0>Featured Gigs</H0>
           <hr />
         </CenterText>
         <GigsList loading={loading} error={error} gigs={gigs} />

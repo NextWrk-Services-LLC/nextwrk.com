@@ -36,7 +36,10 @@ export const initialState = {
           'Fiverr connects businesses with freelancers offering digital services in 300+ categories.',
         description:
           'Fiverr takes the freelance marketplace and sizes it down into smaller project chunks. Freelancers make profiles introducing who they are and what services they offer. Many freelancers offer their services for $5 but you are free to charge more if you see fit.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Fiverr',
@@ -61,7 +64,11 @@ export const initialState = {
           'Storage units and parking at half the cost of traditional storage providers. A bold, new take on storage, Neighbor connects people who have unused storage spaces with people in the area looking for a place to keep their things.',
         description:
           'Neighbor renters earn money renting out their basements, garages and even closets to neighbors. Clean out your garage and you can start earning over $2,000 extra a year!',
-        apppromo: 'Sign Up for Neighbor and Get $50!',
+        apppromo: 'Get $50 from NextWrk!',
+        jobpromo: '',
+        apppromoterms:
+          'Sign up for Neighbor and earn $50 when an invitation is fulfilled and verified. To fulfill an invitation, you must create an account and either place at least one reservation or list your storage space on Neighbor and receive a reservation. After the verification process, a referal payout in the form of an electronic Amazon gift card will be sent to your email address.',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot, Neighbor Review',
@@ -85,7 +92,11 @@ export const initialState = {
           'Lyft matches you with a nearby driver who will pick you up and take you where you want to go. Use the Lyft app to get a ride in minutes. Just tap request and a driver’s there. By taking Lyft, you can help your community reduce traffic and take cars off the road.',
         description:
           'Lyft drivers offer passengers a safe ride to their destination. Lyft is one of the largest rideshare apps and boasts a lower barrier of entry and higher tips on average than Uber.',
-        apppromo: 'Sign Up for Lyft and Get $5!',
+        apppromo: 'Get $5 from NextWrk!',
+        jobpromo: '',
+        apppromoterms:
+          "You must be new to Lyft and in an eligible market to qualify. $5 off your ride. You have 1 ride remaining. Offer valid until 15 days after activation. Cannot be combined with other offers. Subject to Lyft's Terms of Service.",
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Lyft',
@@ -106,11 +117,11 @@ export const initialState = {
         services: [
           'S0001',
           'S0046',
-          'S0002',
           'S0004',
           'S0005',
           'S0006',
           'S0030',
+          'S0002',
           'S0031',
           'S0039',
           'S0040',
@@ -126,7 +137,11 @@ export const initialState = {
           'Delivery & takeout from the best local restaurants. Breakfast, lunch, dinner and more, delivered safely to your door. Now offering pickup & no-contact delivery.',
         description:
           'DoorDash Dashers deliver food from restaurants to customers. They schedule shifts and fulfill delivery requests from the DoorDash app.',
-        apppromo: 'Sign Up for DoorDash and Get $15!',
+        apppromo: 'Get $15 from NextWrk!',
+        jobpromo: '',
+        apppromoterms:
+          "New customers get $5 off their first 3 DoorDash orders over $15. Subject to DoorDash's terms and conditions.",
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for DoorDash',
@@ -165,7 +180,10 @@ export const initialState = {
           'Roadie was the first “on-the-way” delivery service. They put extra space in passenger vehicles to work by connecting people with items to send with drivers heading.',
         description:
           'Roadie drivers get paid to fill up their empty car space and complete deliveries while they roadtrip. Going on a roadtrip soon? Sign up for Roadie and make some extra money on the way.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for Roadies',
@@ -186,7 +204,11 @@ export const initialState = {
           'Simplify your life with fast, simple delivery from your local stores! Shipt brings your groceries and household essentials right to your door.',
         description:
           'Shipt Shoppers get paid to buy groceries and deliver them to customers. Shipt is owned solely by Target, which is where you will be doing most of your shopping.',
-        apppromo: 'Sign Up for Shipt and Get $10!',
+        apppromo: 'Get $10 from NextWrk!',
+        jobpromo: '',
+        apppromoterms:
+          "New customers get $10 in free groceries when they sign up for Shipt. Subject to Shipt's terms and conditions.",
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Shipt',
@@ -205,6 +227,7 @@ export const initialState = {
         appsite: 'http://share.shipt.com/33357892',
         pay: 'The Average Shipt Shopper Makes Around $15 an hour',
         services: [
+          'S0001',
           'S0004',
           'S0046',
           'S0005',
@@ -224,8 +247,12 @@ export const initialState = {
           'Boatsetter, the nation’s fastest-growing boat rental marketplace, gives the over 13 million registered boat owners a way to offset their ownership costs by renting their boat to pre-screened, qualified renters.',
         description:
           'Boatsetter renters rent out their boats — either with or without a captain. Peace of mind and insurance is included in every rental, and you choose who rents your boat!',
-        jobpromo: 'Rent Out Your Boat and Get an Extra $100!',
-        apppromo: 'Sign Up for Boatsetter and Get $25!',
+        jobpromo: 'Rent Your Boat and Get $100 from NextWrk!',
+        apppromo: 'Get $25 from NextWrk!',
+        apppromoterms:
+          "Must be a new customer to Boatsetter. Create a Boatsetter Account and become a member, then request a booking of a Boat which is confirmed by the applicable Owner to receive $25 in Boatsetter Boating Credits. Please note that you may not be the Owner or the Renter for the booking to receive a Referral Reward. Subject to Boatsetter's terms and conditions",
+        jobpromoterms:
+          "Must be a new user. Create a Boatsetter Account and become a member, then create a Listing which subsequently receives a confirmed booking via the Services with Total Fees of at least two hundred dollars ($200) that is not subsequently cancelled to receive $100 tacked on to your payout. Please note that you may not be the Owner or the Renter for the booking to receive a Referral Reward. Subject to Boatsetter's terms and conditions",
         resources: [
           {
             title: 'Facebook: Boatsetter Reviews',
@@ -274,6 +301,9 @@ export const initialState = {
         description:
           'Rover pays workers to walk dogs as a walker or watch dogs as a sitter. Love animals? Wanna earn some extra money? They offer flexibility and can help you earn up to $1,000 a month working with animals!',
         apppromo: 'Sign Up for Rover and Get $20!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Rover',
@@ -303,6 +333,9 @@ export const initialState = {
         description:
           'UrbanSitter hires nannies and babysitters and connects them with new clients in their communities. If you are a nanny or babysitter, it is a great way to earn some extra money!',
         apppromo: 'Sign Up for UrbanSitter and Get $25!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for UrbanSitter',
@@ -326,6 +359,9 @@ export const initialState = {
         description:
           'Uber drivers offer passengers a safe ride to their destination. Finding customers will not be an issue, as Uber is one of the largest ridesharing apps with tens of millions of users.',
         apppromo: 'Sign Up for Uber and Get $6!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Uber',
@@ -347,8 +383,8 @@ export const initialState = {
         services: [
           'S0001',
           'S0046',
-          'S0002',
           'S0003',
+          'S0002',
           'S0004',
           'S0005',
           'S0006',
@@ -369,6 +405,9 @@ export const initialState = {
         description:
           'Earn money while traveling! Grabr lets travelers subsidize their trips by delivering a handful of items. You can earn $200+ every time you travel abroad.',
         apppromo: 'Sign Up for Grabr and Get $10!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Grabr',
@@ -403,7 +442,10 @@ export const initialState = {
           'uShip makes shipping motorcycles, boats, and other large items fast and affordable by connecting you to their network of carriers who compete for your shipment.',
         description:
           'uShip carriers ship motorcycles, boats, and other large items. If you have the type of horsepower that can handles these deliveries, you can start making money as a uShip carrier.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot: Reviews for uShip',
@@ -435,6 +477,9 @@ export const initialState = {
         description:
           'Outdoorsy renters rent out their RVs on their marketplace. Outdoorsy performs DMV checks on all drivers, provide 24/7 roadside assistance and have a dedicated customer support team.',
         apppromo: 'Sign Up for Outdoorsy and Get $50!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Outdoorsy',
@@ -459,6 +504,9 @@ export const initialState = {
         description:
           'Riders Share renters rent out motorcycles on their marketplace. List your motorcycle for free and make an average of $150 per booking! All listings are protected by an A rated insurance provider.',
         apppromo: 'Sign Up for Riders Share and Get $25!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Facebook: Riders Share Reviews',
@@ -505,6 +553,9 @@ export const initialState = {
         description:
           'Wonolo hires workers to perform certain jobs, like Warehouse Operations, General Labor, Food Production, Cleaning and Merchandising, for different Employers. They are quickly expanding across the US and are available in most major cities.',
         jobpromo: 'Accept a Job Through Wonolo and Earn a $100 Bonus!',
+        apppromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for Wonolo Workers',
@@ -525,6 +576,9 @@ export const initialState = {
         description:
           'GoShare hires movers and drivers for delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you have no truck you can apply as a helper. Depending on your driving situation, this gig can prove very lucrative.',
         apppromo: 'Sign Up for GoShare and Get $10!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Glassdoor: Job Reviews for GoShare Drivers',
@@ -550,6 +604,9 @@ export const initialState = {
         description:
           'HelloTech workers help individuals set up and fix their technology. Have a plethora of technical knowledge? Wanna get paid to help those less technically advanced? You set your own schedule, and get paid weekly',
         apppromo: 'Sign Up for HelloTech and Get $10!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for HelloTech',
@@ -577,6 +634,9 @@ export const initialState = {
         description:
           'YourMechanic hires mechanics to offer at home services to users, and is a great way for people with auto repair skills to leverage the gig economy. You can make extra money providing car repairs and maintenance at the homes of clients.',
         apppromo: 'Sign Up for YourMechanic and Get $10!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for YourMechanic',
@@ -596,6 +656,9 @@ export const initialState = {
         description:
           'Zeel employs massage therapists to provide at home massages to users. 18% gratuity is added to every in-home appointment and customers pay for late cancellations.',
         apppromo: 'Sign Up for Zeel and get $40!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Zeel',
@@ -625,6 +688,9 @@ export const initialState = {
         description:
           'CareLinx hires Caregivers to provide care to nearby elders. They have a network of over 300,000 caregivers and offer flexible hours, great pay and professional development.',
         jobpromo: 'Apply to Work and Get a Free Background Check!',
+        apppromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for CareLinx',
@@ -645,7 +711,10 @@ export const initialState = {
         gig: 'Amazon Flex',
         description:
           'Amazon Flex hires drivers to perform the "last mile" of Amazon delivery, moving packages from regional centers to customers. Amazon Flex offers great compensation, and you can easily track your earnings in the Amazon Flex app.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Glassdoor: Job Reviews for Amazon Flex Drivers',
@@ -683,6 +752,8 @@ export const initialState = {
           'Postmates drivers deliver for one of the fastest growing food-delivery apps. They get delivery requests from the Postmates app, navigate to the store or restaurant and deliver to the customer location.',
         jobpromo: '',
         apppromo: 'Sign Up for Postmates and Get $100 Delivery Credit!',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Postmates',
@@ -722,7 +793,10 @@ export const initialState = {
           "Uber Eats is Uber's food delivery platform that makes getting great food from your favorite local restaurants as easy as requesting a ride.",
         description:
           'UberEats drivers pick up food from local restaurants and deliver the orders to customers. Some cities offer bike and scooter delivery in addition to driving delivery.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Uber Eats',
@@ -764,6 +838,9 @@ export const initialState = {
         description:
           'Grubhub drivers pick up food from local restaurants and deliver the orders to customers. They get guaranteed minimum earnings and additional perks for performance.',
         apppromo: 'Sign Up for Grubhub and Get $5!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Grubhub',
@@ -803,7 +880,10 @@ export const initialState = {
           'Caviar is an all-in-one food ordering platform that connects diners with the best local and independent restaurants, via convenient delivery, pickup, or catering',
         description:
           'Caviar drivers pick up food from local restaurants and deliver the orders to customers. Caviar has no driver rating system, and compensates couriers on an "effort-based" algorithm',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Caviar',
@@ -819,6 +899,7 @@ export const initialState = {
         pay:
           'Daily pay ranges from around $200 a day for Drivers and $400 a day for Couriers',
         services: [
+          'S0001',
           'S0004',
           'S0046',
           'S0005',
@@ -839,6 +920,9 @@ export const initialState = {
         description:
           'Favor Runners deliver just about anything to customers and get paid for it. Unlike other deliver gigs, Favor provides a $9 per hour base pay, though tips are deducted from this, and is available in 12 cities',
         apppromo: 'Sign Up for Favor and Get $5!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Favor',
@@ -877,6 +961,9 @@ export const initialState = {
         description:
           'GoPuff drivers get paid to deliver snacks, drinks, alcohol, personal care items and more to customers. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel.',
         apppromo: 'Sign Up for GoPuff and Get $15!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for GoPuff',
@@ -916,6 +1003,9 @@ export const initialState = {
         description:
           'Drizly partners with liquor stores to deliver their fine products to customers. The hiring process for their drivers is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
         apppromo: 'Sign Up for Drizly and Get $5!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Drizly',
@@ -951,6 +1041,9 @@ export const initialState = {
         description:
           'Saucey drivers deliver alcohol to customers. It boasts a flexible schedule and solid pay for drivers. Saucey also has a minimum pay for those who commit to working in "core blocks," which means you agree to work on the clock.',
         apppromo: 'Sign Up for Saucey and Get $10!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for Saucey Drivers',
@@ -981,6 +1074,9 @@ export const initialState = {
         description:
           'As a delivery person for Eaze, you will deliver cannabis products from a licensed retailer directly to consumers. Eaze is currently only available in California.',
         apppromo: 'Sign Up for Eaze and Get $20!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Eaze',
@@ -1021,6 +1117,9 @@ export const initialState = {
         description:
           'Minibar delivery provides on-demand delivery of wine, spirits, beer & mixers. If you live in a city you can start earning cash as a delivery driver.',
         apppromo: 'Sign Up for Minibar and Get $10!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Glassdoor: Job Reviews for Minibar Drivers',
@@ -1051,6 +1150,9 @@ export const initialState = {
         description:
           'Instacart Shoppers use their platform to shop and deliver orders, like groceries, for their customers.',
         apppromo: 'Sign Up for Instacart and Get $10!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Instacart',
@@ -1089,7 +1191,10 @@ export const initialState = {
           "Rent Like a Champion is an online business that lists apartments and houses available for rent near college campuses for big sporting events – football games is the company's bread and butter.",
         description:
           'AirBnb for sporting events! If you live near a college football stadium or major sporting event, you can earn money renting your home out to eager fans traveling for games in your hometown.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot: Rent Like A Champion Review',
@@ -1107,7 +1212,10 @@ export const initialState = {
           'Airbnb is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in that locale. It currently covers more than 81,000 cities and 191 countries worldwide.',
         description:
           'The app connecting millions of homeowners looking to list with millions of renters looking to travel. As a host, AirBnB gives you full control of your availability, prices and house rules. Sign up as a host and AirBnB lets you earn money opening up your home to travelers.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for AirBnB',
@@ -1135,7 +1243,10 @@ export const initialState = {
           'HomeAway is a vacation rental marketplace with more than 2,000,000 vacation rentals in 190 countries listed on its website.',
         description:
           'HomeAway is a vacation rental marketplace with more than 2,000,000 vacation rentals in 190 countries listed on its website. Instead of leaving your vacation property vacant rent it out on HomeAway.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for HomeAway',
@@ -1157,7 +1268,10 @@ export const initialState = {
           '10000+ high-end homes available to rent. The best homes. The best service. Stay in luxury serviced apartments in our favorite cities.',
         description:
           'onefinestay offers high-end home-stays across the world with currently 5,000 homes and villas in its portfolio divided between two collections, City and Villa. Put that high end vacation property to work for you.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Review for onefinestay',
@@ -1175,7 +1289,10 @@ export const initialState = {
           'Vrbo is short for Vacation Rental By Owner, and as the name implies, it specializes in vacation rentals of all types: houses, apartments, condos, villas, etc.',
         description:
           'VRBO is a service for homeowners to list their properties for short term rental. If you have a vacation beach house, condo, cabin, or other property, list it on VRBO and start earning.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for VRBO',
@@ -1195,7 +1312,10 @@ export const initialState = {
         gig: 'Love Home Swap',
         description:
           'Love Home Swap is a rental platform where you can lease out your home to someone and also get to rent out their home. Available in tons of places in the world! Great way to travel cheap and get a cultural experience',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot: Reviews for Love Home Swap',
@@ -1213,7 +1333,10 @@ export const initialState = {
           'Turo is a peer-to-peer car sharing company. Formerly known as RelayRides, Turo allows car owners to make extra cash by renting out their vehicles, while providing a convenient and quick way to rent a car to those in need of transportation.',
         description:
           'Known as the AirBnB of cars, Turo renters list their cars on the Turo marketplace and rent them out to individuals in the area. Turo is available worldwide!',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot: Reviews for Turo',
@@ -1237,7 +1360,10 @@ export const initialState = {
           'Rent a car to drive for Uber, Lyft and Food Delivery. On-demand car rentals, protection included! Drive for any ridesharing, delivery or on-demand companies.',
         description:
           'HyreCar renters rent their cars to ridesharers without a ride. Because of this, your car is likely to rent quickly and for a long time.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Hyrecar',
@@ -1255,7 +1381,10 @@ export const initialState = {
           'SpotHero is a parking reservation service that helps drivers reserve parking with garages and lots, often at a discount to the drive-up rate.',
         description:
           'Own a parking space? Is it empty a majority of the day? Turn it into extra income with SpotHero. They simplify the process of parking in the city by allowing owners to rent out their empty spots!',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for SpotHero',
@@ -1273,7 +1402,10 @@ export const initialState = {
           'Parking Panda is an online parking service that allows drivers to find and reserve parking in advance. In addition to providing drivers with mobile and web applications to find parking, they also help parking garage owners manage their inventory',
         description:
           'A parking space is a premium product in many major cities across the country. ParkingPanda is an app that brings owners and customers together seamlessly. You can post a free listing with the app to start earning cash whenever anyone books your space.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Yelp: Reviews for ParkingPanda',
@@ -1291,7 +1423,10 @@ export const initialState = {
           'Sailo is being called the “airbnb” of boat rentals, an online marketplace offering both, experienced and inexperienced boaters the opportunity to view and compare boats and captains, if you even want a captain, and create custom trips.',
         description:
           'Sailo is considered the “airbnb” of boat rentals, and makes it easy for boat owners to rent out their boats. As a host, Sailo gives you full control of your availability, prices and boat rules. Sign up as a host and Sailo lets you earn money opening up your boat to travelers.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Facebook: Sailo Reviews',
@@ -1309,7 +1444,10 @@ export const initialState = {
           "RVshare is the world's first and largest peer-to-peer RV rental marketplace, serving more than 60,000 RV owners across the US.",
         description:
           'Are you an outdoorsy person who owns an RV? RVshare will connect you with individuals looking to rent it out! Their platform reaches millions of users, they give you complete control of your rental and you could earn up to $40,000 in additional income per year!',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for RVShare',
@@ -1325,7 +1463,10 @@ export const initialState = {
         gig: 'Bird',
         description:
           'If you noticed Bird Scooters littering the streets of you city, you can turn that clutter into cash! Bird Flyers are paid to collect scooters at the end of the night, charge them, then disperse them in the morning. All you need is some free time and something to transport them.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Bird',
@@ -1345,7 +1486,10 @@ export const initialState = {
         gig: 'Lime',
         description:
           'Scooter charging is a popular, and lucrative, gig. If there are Lime Scooters in your area, Lime will pay you to become a juicer. Just collect them, charge them, and disperse them!',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Glassdoor: Reviews for Lime Juicing',
@@ -1366,7 +1510,10 @@ export const initialState = {
         gig: 'Spin',
         description:
           'Another player in the scooter game, Spin Chargers work like other charging gigs: collect, charge and disperse the scooters. You get paid for every scooter you charge.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Glassdoor: Reviews for Spin Charging',
@@ -1387,7 +1534,10 @@ export const initialState = {
         gig: 'Skip',
         description:
           'Skip Scooters are located mainly in Virginia and Washington D.C, but if you live in that area they are willing to pay you to collect, charge and disperse their scooters.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Yelp: Reviews for Skip Scooters',
@@ -1412,6 +1562,9 @@ export const initialState = {
         description:
           'TaskRabbit Taskers get paid to help with everyday tasks, like cleaning, moving, delivery and handyman work, for individuals in their community.',
         apppromo: 'Sign Up for TaskRabbit and Get $10!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for TaskRabbit',
@@ -1439,7 +1592,10 @@ export const initialState = {
           'Handy is the leading platform for connecting individuals looking for household services with top-quality, pre-screened independent service professionals. From home cleaning to handyman services, Handy instantly matches thousands of customers every week with top-rated professionals in cities all around the world.',
         description:
           'Handy pays for being a home cleaner and handymen. It covers over 20 cities in North America, Canada, and the UK. They only accept applicants with professional experience in cleaning or handyman services.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for Handy Workers',
@@ -1456,7 +1612,10 @@ export const initialState = {
         app: 'Bellhops Provides Simple, Easy, And Stress-free Moving Services.',
         description:
           'Bellhops is a moving service that eases the demands of moving by connecting capable workers with clients looking to pack up and move. As a mover, you will get paid to pack boxes and move people into their new digs.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Bellhops',
@@ -1478,7 +1637,10 @@ export const initialState = {
           'Need moving help? Dolly helps you move on your schedule and at an affordable price.',
         description:
           'Dolly is a moving services that pays people that have vehicles for moving, and movers to do the heavy lifting if they do not have a vehicle, to help individuals in your community move in or out.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for Dolly Workers',
@@ -1497,7 +1659,10 @@ export const initialState = {
           'Lugg connects you to a truck and two movers, ready to move your stuff within the hour or up to 30 days from now.',
         description:
           'Convenient Moving and Delivering is what Lugg offers. If you own a truck, you can sign up to become a Lugger and earn up to $2.5k a week! No truck? No problem! If you can do some heavy lifting you can still sign up.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for Lugg Workers',
@@ -1517,6 +1682,9 @@ export const initialState = {
         description:
           'At Takl, you get paid to help others in your community complete small jobs and household chores. You can perform chores in twelve categories on your own time, and get paid fast through direct deposit.',
         apppromo: 'Sign Up for Takl and Get 10% Off Your First Job!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Takl',
@@ -1546,7 +1714,10 @@ export const initialState = {
               'https://www.indeed.com/cmp/Hopskipdrive/reviews?fjobtitle=Driver',
           },
         ],
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         gigsite: 'https://www.hopskipdrive.com/driver-sign-up',
         appsite: 'https://www.hopskipdrive.com/hopskipdrive-app-download',
         pay: 'CareDrivers earn an average of $32 an hour',
@@ -1571,7 +1742,10 @@ export const initialState = {
           'Wingz is a rideshare app that specializes in airport pick up and drop off. You can schedule a ride up to two months in advance, know the rate up front, and book your favorite drivers.',
         description:
           'Wingz drivers specialize in airport pickup and drop off. Wingz also allows customers to select their favorite drivers for repeat rides, so drivers need to live near an airport and have a keen sense for customer service.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Yelp reviews for Wingz',
@@ -1601,7 +1775,10 @@ export const initialState = {
           'Via is an on-demand transit system that takes multiple passengers heading in the same direction and books them into a shared vehicle. Think of Via as a bus smart enough to come when you want it and where you want it',
         description:
           'Via is another ride sharing company. They are reshaping public transit - they send you the rate for the upcoming day so you can plan your schedule in advance! You also do not need a car, you can rent one from Via to drive!',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Via Transportation',
@@ -1616,7 +1793,6 @@ export const initialState = {
         appsite: 'https://ridewithvia.com/',
         pay: 'Expect to earn between $15 and $20 an hour',
         services: [
-          'S0001',
           'S0046',
           'S0004',
           'S0005',
@@ -1636,7 +1812,10 @@ export const initialState = {
         app: 'Groundlink provides professional black car and limo services.',
         description:
           'GroundLink chauffeurs are professional black car drivers that provide transportation to riders. They only accept experienced limo and car service drivers.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for GroundLink',
@@ -1665,7 +1844,10 @@ export const initialState = {
           'Curb is the #1 taxi app in the US. They have over 50,000 taxis over 65+ US cities.',
         description:
           'Curb drivers are licensed and insured cab drivers. Available in NYC, Boston, Philadelphia, Miami and Las Vegas, Curb aims to help impacted cab drivers adapt to Uber and Lyft.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Curb',
@@ -1679,15 +1861,7 @@ export const initialState = {
         gigsite: 'https://gocurb.com/',
         appsite: 'https://mobileapp.gocurb.com/',
         pay: 'Average Curb Driver Pay is around $17/hr',
-        services: [
-          'S0001',
-          'S0004',
-          'S0005',
-          'S0006',
-          'S0031',
-          'S0033',
-          'S0037',
-        ],
+        services: ['S0004', 'S0005', 'S0006', 'S0031', 'S0033', 'S0037'],
         subtypes: ['driving', 'rideshare'],
       },
       {
@@ -1697,7 +1871,10 @@ export const initialState = {
           'Since 2004, millions of homeowners have used Networx to help them connect with quality contractors in their local area. With years of experience and thousands of active contractors, you can depend on us to generate high quality leads and help you grow your business.',
         description:
           'NetWorx is looking for professionals offering contracting services like Carpentry, Pest Control, Fencing and Roofing. They connect you with local demand for these services, and help boost your bottom line.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Networx',
@@ -1720,7 +1897,10 @@ export const initialState = {
           "TaskEasy provides lawn care and grounds maintenance services in all 50 U.S. states. TaskEasy works together with landscaping businesses nationwide supporting local industry with services to hundreds of thousands of properties. TaskEasy's network of more than 12,000 screened and insured vendors is the nation's largest.",
         description:
           'TaskEasy employs landscaping professionals to provide lawnmowing, gardening, and landscaping services for individuals in the community. If you know your way around a lawn, and are looking to gain more customers, TaskEasy will help out.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Glassdoor: Job Reviews for TaskEasy Workers',
@@ -1740,7 +1920,10 @@ export const initialState = {
           'LawnStarter saves you time, money, and energy by providing you with the top lawn care providers in your area, whenever you want them.',
         description:
           'LawnStarter can grow your lawn care business by over 30%. By connecting you with new customers in your area at no cost, you can put a stop to slow days and grow your revenue.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for LawnStarter',
@@ -1764,7 +1947,10 @@ export const initialState = {
           'Order Lawn Mowing, Snow Plowing, Landscaping & other outdoor home services through Plowz & Mowz.',
         description:
           'Plowz & Mowz is another service offering more customers to lawncare professionals. They require $1M in General Liability Insurance and professional equipment, but if you have that they advertise they can grow your business by 30%',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot: Reviews for Plowz & Mowz',
@@ -1783,7 +1969,10 @@ export const initialState = {
           'Lawn Love makes it easier to find, book and pay a landscaping or lawn care provider.',
         description:
           'If you have a truck and equipment, sign up to be a Lawn Pro and get connected with Lawn Care jobs in your community. You can choose which ones to work and get paid through the app within 72 hours.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot: Reviews for Lawn Love',
@@ -1806,7 +1995,10 @@ export const initialState = {
           'Veryable is the on-demand marketplace for manufacturing, logistics and warehousing labor.',
         description:
           'Veryable is a great way for manufacturing workers the leverage the gig economy. When clients book a project through their service, the labor is filled from their pool of workers. Flexible work, daily pay',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot: Reviews for Veryable',
@@ -1829,7 +2021,10 @@ export const initialState = {
           'Homeaglow is an online service that matches you with local, 5-star cleaning professionals.',
         description:
           'Homeaglow connects residential cleaners with clients in their community. You can set your own rates, make your own schedule, and get paid weekly.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for Homeaglow Workers',
@@ -1847,7 +2042,10 @@ export const initialState = {
           "Care.com is the world's largest online destination for care. They connect families with caregivers and caring companies to help you be there for the ones you love.",
         description:
           'Primarily a place to find work in child or pet care, Care.com also offers gigs for housekeepers, gardeners, tutors, and those caring for the elderly.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot: Reviews for Care.com',
@@ -1869,7 +2067,10 @@ export const initialState = {
           'The adaptive transportation network company with drug & alcohol tested, credentialed drivers for para-transit and non-emergency medical transportation.',
         description:
           'Do you have a passion for helping the elderly? UZURV is a ride-share company that helps provide transportation to the elderly, disabled, and for NEMT needs',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Appgrooves: Reviews for Uzurv',
@@ -1888,7 +2089,10 @@ export const initialState = {
           'Find local child, senior, & pet care providers that your family will love.',
         description:
           'If you are a babysitter, nanny or child care professional, Sittercity can connect you with individuals in your community looking for your services.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for SitterCity Workers',
@@ -1906,7 +2110,10 @@ export const initialState = {
           'Connect with screened babysitters anytime and anywhere, get in-home care rates for as low as $1 hour with support from your employer.',
         description:
           'Helpr is an app that connects parents with reliable childcare help (i.e., babysitting), It is is ideal for those with relevant experience looking for occasional part-time work.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Glassdoor: Job Reviews for Helpr Workers',
@@ -1925,7 +2132,10 @@ export const initialState = {
           'Figure Eight uses human intelligence to do simple tasks such as transcribing text or annotating images to train machine learning algorithms.',
         description:
           'When someone need labels and annotations for a machine learning project, Figure Eight steps up. Users upload unlabeled data, with the rules they need for the project, and contributors get paid to mold the data for the model.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Glassdoor: Job Reviews for Figure Eight Contributors',
@@ -1938,11 +2148,43 @@ export const initialState = {
         subtypes: ['other', 'tech'],
       },
       {
+        id: 'G0233',
+        gig: 'eBay',
+        app:
+          "eBay is the world's online marketplace; a place for buyers and sellers to come together and trade almost anything. Sellers list items on eBay, either for a fixed price as a Buy It Now, or in an auction where other users can bid on it.",
+        description:
+          "eBay connects millions of buyers and sellers around the world. Whether you're a seasoned reseller or just doing some spring cleaning, you can find buyers on one of the largest global online marketplaces.",
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
+        resources: [
+          {
+            title: 'TrustPilot: Reviews for eBay',
+            link: 'https://www.trustpilot.com/review/ebay.com',
+          },
+          {
+            title: 'eBay Selling Fees',
+            link:
+              'https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4364',
+          },
+        ],
+        pay: 'eBay takes a commission for each sale, 10% for most products',
+        gigsite: 'https://reg.ebay.com/reg/PartialReg',
+        services: [],
+        subtypes: ['clothes'],
+      },
+      {
         id: 'G0028',
-        gig: 'Etsy Seller',
+        gig: 'Etsy',
+        app:
+          'Etsy is the global marketplace for unique and creative goods. It’s home to a universe of special, extraordinary items, from unique handcrafted pieces to vintage treasures.',
         description:
           'Etsy provides a marketplace for people to sell their handmade, vintage, or creative goods online. If you have an artsy side, look into getting paid for it on Etsy!',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'ConsumerAffairs: Etsy Review',
@@ -1955,7 +2197,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.etsy.com/join',
         services: [],
-        subtypes: ['other'],
+        subtypes: ['clothes'],
       },
       {
         id: 'G0029',
@@ -1964,7 +2206,10 @@ export const initialState = {
           'Fancy Hands is a team of US-based virtual assistants ready to start working with you today. Use any device, at any time of day, and their assistants will tackle anything on your to-do list!',
         description:
           'Want to become a virtual assistant, offering services to entrepreneurs and businesses from wherever you want? Fancy Hands is a team of US-based virtual assistants, and a great place to start!',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for Fancy Hands Workers',
@@ -1980,7 +2225,10 @@ export const initialState = {
         gig: 'Gigwalk',
         description:
           'Work for Gigwalk usually involves gathering data for companies about their products and stores. For example, you might be checking what is on the shelves in a particular shop, and whether it is correctly priced and labeled.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for GigWalk Workers',
@@ -1996,7 +2244,10 @@ export const initialState = {
         gig: 'Market Force',
         description:
           'At Market Force, you will complete mystery shops for banks, restaurants, and stores. You get paid to provide feedback on your visits, which those companies then use to improve.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot: Reviews for Market Force',
@@ -2016,7 +2267,10 @@ export const initialState = {
         gig: 'GBW',
         description:
           'GBW pays individuals to shop at globally recognized brands and provide feedback on the experience. They have organized over 14 million mystery shops for some of the largest brands.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for GBW Workers',
@@ -2028,11 +2282,35 @@ export const initialState = {
         subtypes: ['other', 'mysteryshop'],
       },
       {
+        id: 'G0232',
+        gig: 'SurveyJunkie',
+        description:
+          'Survey Junkie is a online survey platform that pays users for sharing their opinions. Each survey is worth a certain number of points, which can be redeemed for cash or gift cards.',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
+        resources: [
+          {
+            title: 'TrustPilot: Reviews for SurveyJunkie',
+            link: 'https://www.trustpilot.com/review/www.surveyjunkie.com',
+          },
+        ],
+        pay:
+          'Most surveys equate to around 50 points, where one point equates to $0.01 when redeemed',
+        gigsite: 'https://www.surveyjunkie.com/',
+        services: [],
+        subtypes: ['quickbucks'],
+      },
+      {
         id: 'G0048',
         gig: 'Spare5',
         description:
           'Spare5 is an app which pays you small amounts of money for completing micro-tasks on your phone. Most tasks only take a few seconds, and the app pays on average $0.02 – $0.05 per task.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Spare5 Online Review',
@@ -2048,7 +2326,10 @@ export const initialState = {
         gig: 'Census Taker',
         description:
           'The United States Government needs a lot of help taking the census every year. Sign up to be a census taker and you can earn between $12 and $30 an hour, depending on your location.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for Census Workers',
@@ -2068,6 +2349,9 @@ export const initialState = {
         description:
           'Gig work for massage therapists, including deep tissue, sports, and couples massage work. Soothe advertises 2-3x industry standard pay and schedule flexibility.',
         apppromo: 'Sign Up for Soothe With Code ESEFM and Get $20!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot: Reviews for Soothe',
@@ -2095,7 +2379,10 @@ export const initialState = {
           'Priv delivers on-demand salon and spa services by top-rated professionals to your home (or office) anytime, anywhere - manicures, blowouts, makeup, anything you want.',
         description:
           'Beauty. Priv connects customers on-demand with freelance beauty and wellness professionals, taking a 20% commission. Priv services include makeup, blowout, haircut, nails/manicure, massage, personal training, grooming, spray tan and facials. “Priv Pros” select shifts and kinds of jobs they choose.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for Priv Workers',
@@ -2113,7 +2400,10 @@ export const initialState = {
           'Talk to a doctor on-demand and on your schedule, 8am-8pm, every day.',
         description:
           'Gig work for healthcare professionals. Heal.com lets healthcare professionals spend quality time with patients in the privacy, comfort and convenience of their environment with the full capabilities of the doctors office',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for Heal Workers',
@@ -2131,7 +2421,10 @@ export const initialState = {
           'Slingshot Health is a health tech startup that brings top healthcare providers and patients together. Patients bid on the cost of services and healthcare providers accept bids based on availability.',
         description:
           'Slingshot Health helps healthcare professionals find new patients and fill open gaps in their schedules, growing their practice. It is free to sign up.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Glassdoor: Job Reviews for Slingshot Health Workers',
@@ -2151,6 +2444,9 @@ export const initialState = {
         description:
           'Do you have a big or fashionable wardrobe? Monetize your closet with peer-to-peer fashion rentals. Lend designer pieces from your closet to fellow fashion lovers and get easy cash with this app!',
         apppromo: 'Sign Up for Wardrobe and Get a Free Wardrobe Rental!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Wardrobe Reviews',
@@ -2170,7 +2466,10 @@ export const initialState = {
           'Explore culinary experiences with locals in 130+ countries. Enjoy dinner parties, cooking classes and more in beautiful homes and exclusive venues.',
         description:
           'Do you have a passion for food or cooking? Host dining experiences, cooking classes, food tours, and much more at EatWith. Set menus, set prices, and set your own schedule. Do what you enjoy and make money from it.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Yelp: EatWith Reviews',
@@ -2188,7 +2487,10 @@ export const initialState = {
           "Feastly is a global marketplace for chefs to showcase and host dinners, pop-ups, and culinary experiences. It is a p2p marketplace that connects hungry eaters with passionate cooks, offering authentic meals prepared and served in a cook's home.",
         description:
           'Showcase and host your own dinners, pop-ups, cooking lessons, and culinary experiences. Make easy money with what you love doing and meet new people while doing it.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Yelp: Feastly Reviews',
@@ -2206,7 +2508,10 @@ export const initialState = {
           'Zifty is an online delivery company that partners with local restaurants and brands to bring their goods straight to clients doors.',
         description:
           'Zifty delivery drivers make deliveries of food, movies, and other items to customers. Requests are matched to drivers on the Zifty driver app who then complete them, simple and easy.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for Zifty Drivers',
@@ -2233,7 +2538,10 @@ export const initialState = {
           'Peach is a daily lunch service. No service fee, no tips, no commitment, conveniently delivered to your office.',
         description:
           'Peach drivers deliver carefully chosen dishes from the best lunch spots. They offer generous compensation and minimal time commitment to their delivery drivers. Peach is available in Seattle, San Diego and Boston.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot: Reviews for Peach',
@@ -2268,7 +2576,10 @@ export const initialState = {
           'The best local restaurants and takeaways are here to deliver. Order on Deliveroo today!',
         description:
           'Deliveroo is a UK based food-delivery service. Delivery Drivers get paid to move orders from restaurants to homes. Unfortunately it is not currently available in America.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot: Reviews for Deliveroo',
@@ -2307,6 +2618,9 @@ export const initialState = {
         description:
           'Zum is another carpooling rideshare app similar to HopSkipDrive. Zum drivers provide kids with transportation and care. It is available in California, Arizona, Texas, Illinois, Florida, Washington and Washington DC.',
         jobpromo: 'Receive up to $500 sign up bonus!',
+        apppromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews from Zum Drivers',
@@ -2337,7 +2651,10 @@ export const initialState = {
           '99Designs is a global creative platform that makes it easy for designers and clients to work together to create designs they love.',
         description:
           '99designs connects all types of graphic designers with clients worldwide. 99Designs offers two working models – either work one on one with a client or participate in a design contest. Only the winning design gets paid in a contest. It’s free to join 99designs. The platform reviews your work to rate you as an Entry, Mid, or Top level designer. The higher your level, the more perks you’ll unlock on 99Designs.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot: Reviews for 99Designs',
@@ -2362,7 +2679,10 @@ export const initialState = {
           "DesignHill is the world's #1 marketplace, powered by a massive community of designers and business owners. Small businesses and start-ups everywhere use their service to get custom graphic designs for logos, business cards, t-shirts, websites, and more.",
         description:
           'DesignHill matches businesses and individuals with designs provided by remote freelancers, they also run design contests that allow clients to request submissions for their projects, and for designers to showcase their abilities and compete for a prize.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for DesignHill',
@@ -2382,7 +2702,10 @@ export const initialState = {
           'StoryHunter makes it easier for businesses and individuals to connect with freelance video producers. Simply post your needs on StoryHunter, including your location, budget and timing. Our algorithm instantly matches you with the best available freelancers in our network and notifies them of your project.',
         description:
           'StoryHunter is a freelance platform for video designers to find new video projects. Here’s how you do it: Sign up to build your portfolio, add your projects, and get them verified. Once you’re accepted into the network, you can apply to postings and pitch stories to some of the worlds best-known brands.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Glassdoor: Reviews for StoryHunter Workers',
@@ -2403,7 +2726,10 @@ export const initialState = {
           'CGTrader is the world’s largest source for licensable stock and custom 3D models. The self-service CGTrader Marketplace showcases 1,030,000 3D models and includes a managed community of 2.61 million users. CGTrader Enterprise 3D Modeling allows enterprise customers and online retailers to transform their 2D product images into photorealistic 3D models for Augmented Reality and other 3D customer experiences.',
         description:
           'CGTrader can make your 3D assets profitable by connecting you to an ever-increasing base of buyers from all over the globe.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for CGTrader',
@@ -2427,7 +2753,10 @@ export const initialState = {
           'DesignCrowd is an online logo design service and marketplace for website design contests and almost any other type of graphic design you can think of.',
         description:
           'DesignCrowd connects design freelancers and clients. They host design contests for logos, flyers, web design, and more.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for DesignCrowd',
@@ -2452,7 +2781,10 @@ export const initialState = {
           "Finding the expert help that you need is easy on PrestoExperts. With more than 30,000 registered experts in over 600 categories to choose from, chances are, we'll have just the right professional in the exact area of expertise that you need.",
         description:
           'Find freelance clients for tutoring or project-based work as a designer in any field, including animation, web design, and video.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for PrestoExperts',
@@ -2472,7 +2804,10 @@ export const initialState = {
           'Toptal connects startups and businesses with the top talent from around the world. The company uniquely boasts that they can give you access to the top 3 percent of freelance talent all over the world. They do this by screening all applicants before they enter their freelancing talent pool.',
         description:
           'Toptal accepts the top 3% of software engineers, designers, PMOs and finance experts for remote freelance projects. Their screening process includes a timed algorithm test, language and personality test, technical screenings and a test project.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Toptal',
@@ -2497,7 +2832,10 @@ export const initialState = {
           'Upwork’s process is simple enough. Start by describing the type of job you need done. It can be practically any job—big or small, individual or team, short term or long term. Potential candidates will apply to your posting allowing you to compare profiles, feedback and portfolios.',
         description:
           'Upwork functions as a marketplace connecting individuals and businesses looking for skilled labor with freelancers offering that labor. Build a profile and you can start bidding on projects.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Upwork',
@@ -2523,7 +2861,10 @@ export const initialState = {
           'TopCoder matches software designers, developers, and data scientists with global clients, through paid contests.',
         description:
           'TopCoder matches remote freelance developers to paying gigs through different contests where you prove your skills for cash payouts.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Glassdoor: Reviews for TopCoder Developers',
@@ -2543,7 +2884,10 @@ export const initialState = {
           "LinkedIn ProFinder is LinkedIn's professional services marketplace that helps you find the best freelance or independent professionals in your area. It's currently only available within the U.S. and within specific service categories",
         description:
           'LinkedIn ProFinder connects top freelance professionals across a variety of fields like software development, graphic design and accounting, with high quality leads. LinkedIn members will make a request for services they need. When a request that matches your expertise, they send you an email, and you can respond on your own terms.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title:
@@ -2564,7 +2908,10 @@ export const initialState = {
           'Guru is similar to Upwork in the sense that you start your freelancer search by describing and posting your job on their site. However, unlike Upwork, Guru adds another layer through the ability to search for a specific freelancer based on specialties, categories, location, feedback, rate and more. This allows top freelancers to stand out from the crowd instead of having to apply for jobs each time.',
         description:
           'Guru functions as a marketplace connecting individuals and businesses looking for freelance labor with freelancers offering that labor. Build a profile and you can start bidding on projects.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Guru',
@@ -2589,7 +2936,10 @@ export const initialState = {
           'Freelancer is similar to Upwork and Guru in the sense that you start your freelancer search by describing and posting your job on their site. They also have a reputation system to simplify the process of finding the right freelancer',
         description:
           'Freelancer functions as a marketplace connecting individuals and businesses looking for software development labor with freelancers offering that labor. They have smaller scale projects so, if you have less experience, you can secure more gigs.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Freelancer',
@@ -2614,7 +2964,10 @@ export const initialState = {
           'Outsourcely is a site that connects employers with remote workers. They are focussed on employers looking for more permanent staff as opposed to small short term projects.',
         description:
           'Outsourcely is a marketplace connecting freelance talent to businesses and individuals seeking it. The site distinguishes itself from rivals by not taking a cut from the pay of the workers themselves and by focussing on longer term projects as opposed to short term gigs, they even employ freelancers full time.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Glassdoor: Reviews for Outsourcely Freelancers',
@@ -2636,7 +2989,10 @@ export const initialState = {
           'PeoplePerHour provides three ways for companies to get started on their quest for freelance work. The first option is to browse Hourlies, which are fixed offers that are ready to begin right away. The second option is to post a job and wait for the proposals to roll in. Finally, the third option allows you to search the directory of freelancers and contact them directly.',
         description:
           'PeoplePerHour is a marketplace matching freelance talent with individuals and businesses. Their team meticulously reviews applications of interested freelancers. Talents do not just put up a profile when they sign up—they are assessed to ensure that they are indeed professional workers and quality service sellers.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for PeoplePerHour',
@@ -2656,7 +3012,10 @@ export const initialState = {
           'Flexiple is a premium, tech-only (developers & designers) online platform that sources the best freelance talent who have previously worked at top tech companies such as Amazon, Microsoft, Adobe, among others.',
         description:
           'Flexiple hires premium developers and designers who previously worked at top tech companies like Facebook, Microsoft, Apple and Amazon for remote freelance software development work.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Flexiple',
@@ -2681,7 +3040,10 @@ export const initialState = {
           'A simpler way to hire great remote talent. Helping organizations scale faster with top vetted developers. Arc is your complete remote hiring solution.',
         description:
           'Arc.dev started off, and continues as, a “leading on-demand mentorship platform for developers” but has also developed a solution for hiring freelance developers. Like other premium freelance networks, they have a vetting process to ensure quality',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Arc.dev',
@@ -2706,7 +3068,10 @@ export const initialState = {
           'Hubstaff Talent offers a completely free service for companies looking to hire independent freelancers as well as agencies. With more emphasis on the use of software to match freelancers with projects, there is no manual vetting process to ascertain their quality.',
         description:
           'Hubstaff Talent is a marketplace matching freelance talent with demand from individuals and companies. There is no vetting process, and it allows employers to get in touch with freelancers directly.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Hubstaff Talent',
@@ -2726,7 +3091,10 @@ export const initialState = {
           'Workana is one of the most important freelance marketplaces in the world, with almost 2 million freelancers and over 1,000 freelance job opportunities posted every day.',
         description:
           'Workana is a freelance job site that focuses on tech and design skills. It is free to use as a freelancer, but you’ll be charged varying levels of commission each time you’re paid by a client. To use Workana, you’ll need to create a profile that promotes your skills, then search for suitable jobs and send a bid to the client that lays out your rates, timeline, and expertise.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Glassdoor: Reviews for Workana Workers',
@@ -2747,7 +3115,10 @@ export const initialState = {
           'Twine provides a community for app developers, programmers, and other tech creatives to promote their skills, find jobs, and attract new clients.',
         description:
           'Twine is an online marketplace and network that connects creative freelancers in music, design and film to buyers. Twine allows creative freelancers to tag collaborators on a creative project, enabling all those who worked on it to receive credit and build a portfolio.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Twine',
@@ -2773,7 +3144,10 @@ export const initialState = {
           'Crossover teams are assembled from the top 1% of talent across 130 countries. Challenge yourself to become a part of the cloud team revolution.',
         description:
           'Crossover hires the top 1% of programming and developing experts for full-time, remote working.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Reviews for Crossover Workers',
@@ -2793,7 +3167,10 @@ export const initialState = {
           'Do you create content and you don’t really have access to a great photographer or editor who can come up with incredible images? Snapwire connects a new generation of photographers with businesses and brands that need on-demand creative imagery. Buyers post requests on Snapwire, and photographers submit photos that match. Buyers get custom photos that elevate their projects and photographers earn money doing what they love.',
         description:
           'Snapwire lets freelance photographers submit their own original photos and earn money when companies and individuals use them.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Facebook: Reviews for SnapWire',
@@ -2820,6 +3197,8 @@ export const initialState = {
         apppromo: 'Sign Up for thredUP and Get $10!',
         jobpromo:
           'Start Selling on thredUP and Get a Free Expedited Processing!',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for thredUP',
@@ -2839,7 +3218,10 @@ export const initialState = {
           'Zulily is a clothing site with an emphasis on family. If you’re a new family, this is a spot where you can do shopping for the mother, father, and the child. Also, you can get toys for your toddlers.',
         description:
           'Zulily is an e-commerce clothing site that has partnered with over 15,000 brands. If you want to get your clothing brand out there, you can sign up as a vendor.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Zulily',
@@ -2859,7 +3241,10 @@ export const initialState = {
           'Same day grocery delivery services online in Houston, Dallas, Fort Worth, Austin & San Antonio.',
         description:
           'Burpy is another grocery service, offering delivery to customers within the hour. It hires shoppers to shop and deliver for customers, but is only available in the Texas area.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TrustPilot: Reviews for Burpy',
@@ -2891,7 +3276,10 @@ export const initialState = {
           'Skipcart is an on-demand platform providing last-mile delivery for all retailers and restaurants currently offering a Curbside or Pickup solution but lacking same-day delivery.',
         description:
           'Skipcart drivers deliver packages for local retailers and restaurants. Open the Skipcart app, choose your hours and start delivering.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for Skipcart Drivers',
@@ -2921,7 +3309,10 @@ export const initialState = {
           'PICKUP is an on-demand same day delivery service. It allows users to hire drivers with pickup trucks to move furniture or other bulky items.',
         description:
           'PICKUP workers deliver big & heavy items for national and area businesses. If you own a truck or van, put it to good use and start hauling for money',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Glassdoor: Job Reviews for PICKUP Drivers',
@@ -2952,6 +3343,9 @@ export const initialState = {
         description:
           'Bungii workers get paid to move bulky items for users. Bungii asks for you to own a 2005 or newer truck, ratchet straps, bungee cords and moving blankets to secure your deliveries, as well as be able to do some heavy lifting.',
         apppromo: 'Sign Up With Promo Code 5XDKA and get $10!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Bungii Reviews',
@@ -2983,6 +3377,9 @@ export const initialState = {
           'TommyRunners deliver building materials to individuals in their communities. You need to own a truck or van and be willing to do some heavy lifting.',
         indeed: 'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
         apppromo: 'Sign Up and Get $25!',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'TommyRun Reviews',
@@ -3011,7 +3408,10 @@ export const initialState = {
         gig: 'DeLiv',
         description:
           'DeLiv is a Same day delivery service helping retailers deliver their items to customers. They have a schedule where you can book hours and deliver packages for up to $22/hr. No passengers or food. No mess or stress.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for DeLiv Drivers',
@@ -3039,7 +3439,10 @@ export const initialState = {
           'Dispatch is replacing the old courier industry by providing customers with real time tracking and accurate ETAs by leveraging technology and hard working drivers who get paid a fair wage.',
         description:
           'Dispatchit drivers provide reliable local deliveries to customers with real time ETAs and tracking. Dispatchit drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Dispatchit Facebook Reviews',
@@ -3067,7 +3470,10 @@ export const initialState = {
           'DeliverThat is the industry leader for pre-scheduled catering delivery and setup.',
         description:
           'DeliverThat drivers deliver food from restaurants like QDoba, Zoes Kitchen, Boston Market and Firehouse, to customers. Delivery commissions start with a base amount, then increase based on distance and size.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for DeliverThat Drivers',
@@ -3094,7 +3500,10 @@ export const initialState = {
         app: 'Burro is an all in one delivery app for the Austin area.',
         description:
           'Deliver Craigslist items, make store deliveries even help people move. You can set a flexible schedule and they advertise "Drive for Burro and earn $45/hr with your pickup truck."',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Indeed: Job Reviews for Burro Drivers',
@@ -3120,7 +3529,10 @@ export const initialState = {
         gig: 'Schlep',
         description:
           'The Uber for moving! Work a gig as a driver or a mover. Earn up to $1,000 a week, keep 100% of your tips and work on a flexible schedule',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Yelp: Reviews for Schlep',
@@ -3138,7 +3550,10 @@ export const initialState = {
           "Easymove connects you with professional, reliable, local movers anytime you need it. It's the smartest alternative to traditional movers, renting a truck and doing it yourself- their app connects you with local independent strong easymovers to help with moving, hauling and junk removal.",
         description:
           'Easymove is a delivery service offering to help users move bulky items from point A to point B. If you have a big car and can do some heavy lifting, they advertise you can make $2,500 a week as an Easymove partner.',
-        promo: '',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Easymove',
@@ -3149,6 +3564,34 @@ export const initialState = {
         services: [],
         subtypes: ['labor', 'mover'],
       },
+      {
+        id: 'G0234',
+        gig: 'Twitch',
+        app:
+          'Twitch is the leading live streaming platform where people play games, make crafts, and showcase their day-to-day lives. It has over two million monthly broadcasters providing content.',
+        description:
+          'Twitch Streamers are content creators livestreaming anything from video games to their daily lives, and Twitch offers a partner program for streamers to monetize their channels.',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
+        resources: [
+          {
+            title: 'TrustPilot: Reviews for Twitch',
+            link: 'https://www.trustpilot.com/review/www.twitch.tv',
+          },
+          {
+            title: 'Twitch Partner Program',
+            link: 'https://www.twitch.tv/p/partners/',
+          },
+        ],
+        pay:
+          'Twitch Partners and their subscription payments usually result in streamers taking home 50% of the $4.99 per month cost.',
+        appsite: 'https://www.twitch.tv/',
+        gigsite: 'https://www.twitch.tv/p/partners/',
+        services: [],
+        subtypes: ['gaming'],
+      },
     ],
     // Services
     services: [
@@ -3156,20 +3599,22 @@ export const initialState = {
         id: 'S0001',
         gig: 'Gridwise',
         description:
-          "Gridwise increases rideshare drivers' earnings by 39% by letting them know how and where to drive and save thousands a year on taxes.",
+          "Gridwise increases rideshare drivers' earnings by 39% by letting them know how and where to drive and helping them save thousands a year on taxes.",
         indeed:
           'https://appgrooves.com/app/gridwise-earn-more-by-driving-smarter-by-swerv-technologies-llc/negative',
         promo: 'Free Download on IOS and Android!',
+        terms: '',
         gigsite: 'https://gridwise.io/',
       },
       {
         id: 'S0002',
         gig: 'Mystro',
         description:
-          'Mystro combines the Uber and Lyft drivers apps allowing you to easily drive both at the same time. They also evaluate trip requests so you only accept ideal trips.',
+          "Mystro combines the Uber and Lyft drivers apps, allowing you to easily drive both at the same time. They also evaluate trip requests so you only accept ideal trips. Unfortunately, Mystro isn't available on IOS yet.",
         indeed:
           'https://play.google.com/store/apps/details?id=partners.driver.mystro&hl=en_US',
-        promo: 'Try Mystro Free for 14 Days!',
+        promo: 'Free 14 Day Trial!',
+        terms: '',
         gigsite: 'https://mystrodriver.com/registration-page-half-photo',
       },
       {
@@ -3179,6 +3624,7 @@ export const initialState = {
           'Surge lets you monitor Uber surges, notifying you when a surge starts, increases/decreases and ends, so you know when to drive to make the most money.',
         indeed: 'https://apps.apple.com/us/app/surge-2x/id986581500',
         promo: '',
+        terms: '',
         gigsite:
           'https://apps.apple.com/us/app/surge-surge-tracking-for-uber/id986581500',
       },
@@ -3190,6 +3636,7 @@ export const initialState = {
         indeed:
           'https://apps.apple.com/us/app/sherpashare-driver-assistant/id975868991',
         promo: '',
+        terms: '',
         gigsite: 'https://www.sherpashare.com/',
       },
       {
@@ -3198,7 +3645,8 @@ export const initialState = {
         description:
           'Triplog helps users save an average of $7,200 annually. As a gig worker, the miles you drive for work are tax deductible. Triplog helps you track those miles so you can maximize your returns. They are also fully IRS compliant, protecting you in case of audit.',
         indeed: 'https://reviews.financesonline.com/p/triplog/',
-        promo: 'Sign Up Below for a Free 30 Day Trial and 20% Off!',
+        promo: 'Free 30 Day Trial!',
+        terms: '',
         gigsite: 'http://trplg.co/389373',
       },
       {
@@ -3209,6 +3657,7 @@ export const initialState = {
         indeed:
           'https://appgrooves.com/app/everlance-mileage-log-expense-and-receipt-tracker-by-everlance-inc',
         promo: '',
+        terms: '',
         gigsite: 'https://www.everlance.com/',
       },
       {
@@ -3218,6 +3667,7 @@ export const initialState = {
           "Grabb-it will pay you around $5/hr to turn your cars' side rear window into a full color display playing location aware ads.",
         indeed: 'https://www.trustpilot.com/review/www.thesocialdelivery.com',
         promo: '',
+        terms: '',
         gigsite: 'https://grabb.io/',
       },
       {
@@ -3227,6 +3677,7 @@ export const initialState = {
           'Hurdlr is an automatic business expenses and mileage tracker. They have cumulatively saved over $300M in taxes.',
         indeed: 'https://investorjunkie.com/reviews/hurdlr/',
         promo: '',
+        terms: '',
         gigsite: 'https://www.hurdlr.com/',
       },
       {
@@ -3236,6 +3687,7 @@ export const initialState = {
           'Nickelytics will wrap an ad on your vehicle and pay you as you drive through city streets. Depending on routes, wrap type and distance covered you could make up to $500/month.',
         indeed: '',
         promo: '',
+        terms: '',
         gigsite: 'https://www.nickelytics.com/',
       },
       {
@@ -3245,6 +3697,7 @@ export const initialState = {
           'Wrapify wraps cars with advertisements and pays drivers as they drive. For rideshare drivers with a full wrap they estimate you can earn an extra $264-$452 per month.',
         indeed: 'https://appgrooves.com/app/wrapify-by-wrapify-inc/',
         promo: '',
+        terms: '',
         gigsite: 'https://wrapify.com/',
       },
       {
@@ -3254,6 +3707,7 @@ export const initialState = {
           'Octopus provides rideshare drivers with interactive tablets and accessories for their passengers to use as they ride. Riders enjoy games and cash prizes, and they run short ads so drivers can earn up to $100 extra a month!',
         indeed: 'https://www.playoctopus.com/driver-reviews/',
         promo: '',
+        terms: '',
         gigsite: 'https://www.playoctopus.com/drivers/',
       },
       {
@@ -3263,6 +3717,7 @@ export const initialState = {
           'Sticker Ride pays rideshare drivers to wrap their cars in advertisements they can choose. They also help neat drivers save on their car insurance.',
         indeed: 'https://apps.apple.com/us/app/stickerride/id870548113',
         promo: '',
+        terms: '',
         gigsite: 'https://stickerride.com/',
       },
       {
@@ -3273,6 +3728,7 @@ export const initialState = {
         indeed:
           'https://apps.apple.com/us/app/scooter-map-all-the-scooters/id1437698355',
         promo: '',
+        terms: '',
         gigsite: 'https://scootermap.com/?sc_referral=62591ccf',
       },
       {
@@ -3283,6 +3739,7 @@ export const initialState = {
         indeed:
           'https://apps.apple.com/us/app/scooter-map-all-the-scooters/id1437698355',
         promo: '',
+        terms: '',
         gigsite: 'https://staff.com',
       },
       {
@@ -3291,7 +3748,8 @@ export const initialState = {
         description:
           "When you're working on multiple things at once, especially with multiple people, managing your time can become difficult. HubStaff keeps everything organized, saving you time and allowing you to focus on earning more money.",
         indeed: 'https://www.trustpilot.com/review/hubstaff.com',
-        promo: 'Get Started for Free When You Sign Up Through NextWrk!',
+        promo: 'Get Started for Free!',
+        terms: '',
         gigsite: 'http://try.hbstf.co/Wrwrz',
       },
       {
@@ -3301,6 +3759,7 @@ export const initialState = {
           'With Box, you get a single place to manage, secure, share and govern all of the content for your internal and external collaboration and processes.',
         indeed: 'https://www.trustpilot.com/review/box.com',
         promo: '',
+        terms: '',
         gigsite: 'https://www.box.com/pricing',
       },
       {
@@ -3310,6 +3769,7 @@ export const initialState = {
           'G Suite is an integrated suite of secure, cloud-native collaboration and productivity apps powered by Google AI. It includes Gmail, Docs, Drive, Calendar, Meet and more.',
         indeed: 'https://www.trustradius.com/products/g-suite/reviews',
         promo: 'Free 14 Day Trial!',
+        terms: '',
         gigsite: 'https://gsuite.google.com/signup/business/welcome#0',
       },
       {
@@ -3319,6 +3779,7 @@ export const initialState = {
           'Whether you’re a freelancer or a small business owner, FreeAgent provides you with great accounting service to keep track of everything. You don’t have to waste time trying to find a client that hasn’t paid you for a project, file everything in one system so you can prove what is owed and what’s already been received.',
         indeed: 'https://www.trustpilot.com/review/www.freeagent.com',
         promo: 'Free 30 Day Trial!',
+        terms: '',
         gigsite: 'https://signup.freeagent.com/signup',
       },
       {
@@ -3328,17 +3789,29 @@ export const initialState = {
           "Looking to be a rideshare or delivery driver but don't have a car? HyreCar lets you rent a car by the hour to drive for Uber, Lyft, Postmates, or whatever you want.",
         indeed: 'https://www.trustpilot.com/review/hyrecar.com',
         promo: '',
+        terms: '',
         gigsite: 'https://app.hyrecar.com/login?type=driver&form=signup',
       },
     ],
     // Deals
     deals: [
       {
+        id: 'D0007',
+        gig: 'PrizePicks',
+        description:
+          'PrizePicks is the simplest Daily Fantasy Sports app on the market. Just pick an over/under and start winning.',
+        indeed: 'https://www.trustpilot.com/review/www.myprizepicks.com',
+        promo: 'Get a Free 2-Pick Entry to Win $25!',
+        terms: '',
+        gigsite: 'https://www.myprizepicks.com/',
+      },
+      {
         id: 'D0001',
         gig: 'Acorns',
         description:
           'Acorns automatically invests your spare change into a portfolio built by experts.',
-        promo: 'Sign Up and Get $5!',
+        promo: 'Get $5 from NextWrk!',
+        terms: '',
         gigsite: 'https://acorns.com/invite/SGU9A3',
       },
       {
@@ -3346,7 +3819,8 @@ export const initialState = {
         gig: 'Robinhood',
         description:
           'Robinhood is a mobile app for trading stocks and options commission free.',
-        promo: 'Get a Free Stock When You Sign Up!',
+        promo: 'Get a Free Stock from NextWrk!',
+        terms: '',
         gigsite: 'https://join.robinhood.com/markf1248',
       },
       {
@@ -3354,7 +3828,10 @@ export const initialState = {
         gig: 'Rakuten',
         description:
           'Formerly Ebates, Rakuten gives you cashback for shopping at over 2,500 stores.',
-        promo: 'Sign Up and Get $30!',
+        indeed: 'https://www.trustpilot.com/review/www.rakuten.com',
+        promo: 'Get $30 from NextWrk!',
+        terms:
+          'To qualify for the promotion you must be a natural person (i.e., no businesses, legal entities or pets), be a new member to www.rakuten.com or www.ebates.com, consent to and comply with the General Terms and Conditions, and make a qualifying amount in purchases (subject to terms of promotion) that earn Cash Back through www.rakuten.com or www.ebates.com within ninety (90) days from sign-up.',
         gigsite: 'https://go.rakuten.com/MARKFO238',
       },
       {
@@ -3362,15 +3839,20 @@ export const initialState = {
         gig: 'Cash App',
         description:
           'Cash App is an app for sending and receiving money fast and easy.',
-        promo: 'Sign Up and Get $5!',
+        indeed: 'https://apps.apple.com/us/app/cash-app/id711923939',
+        promo: 'Get $5 from NextWrk!',
+        terms:
+          'Send $5 or more from a newly linked debit card within 14 days of opening an account to qualify for the promotion.',
         gigsite: 'https://cash.app/app/QXGKDDH',
       },
       {
         id: 'D0005',
         gig: 'Love With Food',
         description:
-          'Love With Food is a snack-subscription service delivering a monthly curation of delicious, clean ingredient snacks directly to your home.',
-        promo: 'Sign Up and Get 40% Off Your First Box!',
+          'Love With Food is a snack-subscription service delivering a monthly curation of delicious, clean ingredient snacks.',
+        indeed: 'https://www.facebook.com/pg/lovewithfood/reviews/',
+        promo: 'Get 40% Off Your First Box!',
+        terms: '',
         gigsite: 'http://lovewithfood.com/invite?m=r&ref=4t6h',
       },
       {
@@ -3378,8 +3860,21 @@ export const initialState = {
         gig: 'Craft Coffee',
         description:
           'Craft Coffee subscriptions offer the highest-quality, fresh-roasted coffees at the lowest prices delivered straight to your doorstep.',
-        promo: 'Use Code 5pr-gs7 for 15% Off Your First Order!',
+        indeed: 'https://www.yelp.com/biz/craft-coffee-williamsburg-2',
+        promo: 'Get 15% Off with Code 5pr-gs7!',
+        terms: '',
         gigsite: 'https://www.craftcoffee.com/',
+      },
+      {
+        id: 'D0008',
+        gig: 'Coinbase',
+        description:
+          'Coinbase offers crypto fans the best of both worlds – they’re a trading platform for buyers and sellers as well as offering a digital wallet for your coins.',
+        indeed: '',
+        promo: 'Get $10 in BTC from NextWrk!',
+        terms:
+          'Visit coinbase.com/trade and initiate a buy or sell of $100 USD or more within 180 days of opening your account and receive a 10 USD bonus when the order completes. Orders can take up to 4 business days to complete.',
+        gigsite: 'https://coinbase.com/join/foster_h9u?src=ios-sms',
       },
     ],
   },

@@ -56,6 +56,7 @@ export function FilterForm() {
       <Ul>
         <FilterSelect filter="scooter" name="Scooter Charging" />
         <FilterSelect filter="quickbucks" name="Quick Bucks" />
+        <FilterSelect filter="gaming" name="Gaming" />
       </Ul>
     </FormWrapper>
   );

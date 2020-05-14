@@ -7,7 +7,7 @@
 import React, { memo, useState } from 'react';
 import styled from 'styled-components';
 
-import P from 'components/P';
+import P from './P';
 
 const PLink = styled.p`
   color: #3b9ad5;

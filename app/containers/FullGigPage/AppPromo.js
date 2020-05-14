@@ -1,24 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import H1 from 'components/H1';
+import H2 from 'components/H3';
 
-import P from './P';
 import PSpacing from './PSpacing';
+import PSm from '../../components/Popup/PSm';
 
-function GigDesc({ text }) {
+function AppPromo({ text }) {
   return (
     <React.Fragment>
-      <H1>Gig Description</H1>
+      <H2>App Promotion Terms</H2>
       <PSpacing>
-        <P>{text}</P>
+        <PSm>{text}</PSm>
       </PSpacing>
     </React.Fragment>
   );
 }
 
-GigDesc.propTypes = {
+AppPromo.propTypes = {
   text: PropTypes.any,
 };
 
-export default GigDesc;
+export default AppPromo;

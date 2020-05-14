@@ -4,6 +4,7 @@ const ASm = styled.a`
   color: #000000;
   font-weight: normal;
   text-decoration: underline;
+  font-size: 22px;
   @media (max-width: 768px) {
     font-size: 14px;
   }
