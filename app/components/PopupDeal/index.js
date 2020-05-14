@@ -107,17 +107,13 @@ function PopupDeal({ close, info }) {
               </td>
             </tr>
             {info.terms ? (
-              <td>
-                <tr>
+              <tr style={{ textAlign: 'left' }}>
+                <td>
                   <hr />
-                  <div style={{ textAlign: 'left' }}>
-                    <H3>Promotion Terms</H3>
-                    <div style={{ marginTop: '-15px' }}>
-                      <PSm>{info.terms}</PSm>
-                    </div>
-                  </div>
-                </tr>
-              </td>
+                  <H3>Promotion Terms</H3>
+                  <PSm>{info.terms}</PSm>
+                </td>
+              </tr>
             ) : null}
           </tbody>
         </Table>

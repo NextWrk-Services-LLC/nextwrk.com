@@ -54,7 +54,7 @@ export const initialState = {
         appsite: 'https://track.fiverr.com/visit/?bta=106560&nci=7416',
         pay:
           'Fiverr starts at $5 per project and you are free to charge whatever you see fit for the project.',
-        services: ['S0042', 'S0044', 'S0043'],
+        services: ['S0042', 'S0044', 'S0043', 'S0048', 'S0049', 'S0050'],
         subtypes: ['software', 'design', 'photo'],
       },
       {
@@ -271,7 +271,11 @@ export const initialState = {
           'Rent nearby cars, trucks, and vans, by the hour or day, on Getaround. No lines or key exchanges. Simply rent, unlock, and go in an instant with the Getaround',
         description:
           'Getaround renters rent out their cars when not in use. It is available in most major cities, and is a great way to make money with little effort.',
-        apppromo: 'Sign Up for Getaround and Get $20!',
+        apppromo: 'Get $20 from NextWrk!',
+        jobpromo: '',
+        apppromoterms:
+          "New users to Getaround will receive $20 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Getaround's terms and conditions",
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Getaround',
@@ -290,7 +294,7 @@ export const initialState = {
           'https://www.getaround.com/invite/2c776f91-e44f-5695-bae1-784dd3b6ae18',
         pay:
           'According to Getaround, the average car owner makes about $6,000 a year',
-        services: [],
+        services: ['S0054'],
         subtypes: ['rental', 'car'],
       },
       {
@@ -300,9 +304,10 @@ export const initialState = {
           "Rover connects pet parents with a nationwide network of dog lovers who can't wait to watch their dog. Search for nearby dog sitters, day care providers, and dog walkers who’ll help care for your pet—at their place or yours.",
         description:
           'Rover pays workers to walk dogs as a walker or watch dogs as a sitter. Love animals? Wanna earn some extra money? They offer flexibility and can help you earn up to $1,000 a month working with animals!',
-        apppromo: 'Sign Up for Rover and Get $20!',
+        apppromo: 'Get $20 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Rover will receive $20 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Rover's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -322,7 +327,7 @@ export const initialState = {
         gigsite: 'http://share.rover.com/SWhzJ',
         pay:
           'Average part-time salary is said to be around $1,000 a month while those who treat it as a full time job can, according to some accounts, earn around $3,300 a month.',
-        services: [],
+        services: ['S0047'],
         subtypes: ['labor', 'dog'],
       },
       {
@@ -332,9 +337,10 @@ export const initialState = {
           'UrbanSitter lets you find and book babysitters and nannies of people you know and trust. Last-minute sitters, backup care, and part-time nannies available.',
         description:
           'UrbanSitter hires nannies and babysitters and connects them with new clients in their communities. If you are a nanny or babysitter, it is a great way to earn some extra money!',
-        apppromo: 'Sign Up for UrbanSitter and Get $25!',
+        apppromo: 'Get $25 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to UrbanSitter will receive $25 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to UrbanSitter's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -358,9 +364,10 @@ export const initialState = {
           'Uber is a ride-hailing company that offers the Uber mobile app, which you can use to submit a trip request that is automatically sent to an Uber driver near to you, alerting the driver to your location. The accepting Uber driver will then come and pick you up and drive you to your requested destination.',
         description:
           'Uber drivers offer passengers a safe ride to their destination. Finding customers will not be an issue, as Uber is one of the largest ridesharing apps with tens of millions of users.',
-        apppromo: 'Sign Up for Uber and Get $6!',
+        apppromo: 'Get $6 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Uber will receive $2 off their first 3 rides when they sign up through the link provided on nextwrk.com. This promotion is subject to Uber's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -404,9 +411,10 @@ export const initialState = {
           'Grabr is a peer to peer delivery service focussed on international shipments',
         description:
           'Earn money while traveling! Grabr lets travelers subsidize their trips by delivering a handful of items. You can earn $200+ every time you travel abroad.',
-        apppromo: 'Sign Up for Grabr and Get $10!',
+        apppromo: 'Get $9 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Grabr will receive $3 off 3 orders when they sign up through the link provided on nextwrk.com. This promotion is subject to Grabr's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -476,9 +484,10 @@ export const initialState = {
           'Outdoorsy is the largest and safest community-driven RV marketplace for renting RVs directly from local RV owners.',
         description:
           'Outdoorsy renters rent out their RVs on their marketplace. Outdoorsy performs DMV checks on all drivers, provide 24/7 roadside assistance and have a dedicated customer support team.',
-        apppromo: 'Sign Up for Outdoorsy and Get $50!',
+        apppromo: 'Get $50 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Outdoorsy will receive $50 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Outdoorsy's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -503,9 +512,10 @@ export const initialState = {
           'Riders Share is the largest motorcycle renter community, offering best in class insurance and flexible refunds.',
         description:
           'Riders Share renters rent out motorcycles on their marketplace. List your motorcycle for free and make an average of $150 per booking! All listings are protected by an A rated insurance provider.',
-        apppromo: 'Sign Up for Riders Share and Get $25!',
+        apppromo: 'Get $25 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Riders Share will receive $25 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Riders Share's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -513,9 +523,9 @@ export const initialState = {
             link: 'https://www.facebook.com/pg/ridersshare/reviews/',
           },
         ],
-        gigsite: 'www.riders-share.com/welcome/markf+QdETy',
+        gigsite: 'https://www.riders-share.com/welcome/markf+QdETy',
         pay: 'Renters earn an average of $150 per booking.',
-        services: [],
+        services: ['S0054'],
         subtypes: ['rental', 'car'],
       },
       {
@@ -525,7 +535,10 @@ export const initialState = {
           'Wag! is one of the largest dog walking apps. They offer flexibility, secure payment through Stripe, and donate money from 30 minute walks to feed shelter dogs.',
         description:
           'Wag Walkers get paid to pick up dogs in their communities, walk them, and return them. You choose how many walks you want to do and where you want to walk. It is extremely personalized and you get to play with dogs all day!',
-        apppromo: 'Sign Up for Wag and Get a Free Walk!',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
         resources: [
           {
             title: 'Trustpilot: Reviews for Wag',
@@ -542,7 +555,7 @@ export const initialState = {
         ],
         gigsite: 'https://wagwalking.com/dog-walker',
         pay: 'Walkers earn around $17.50 per walk',
-        services: [],
+        services: ['S0047'],
         subtypes: ['labor', 'dog'],
       },
       {
@@ -552,10 +565,10 @@ export const initialState = {
           'Wonolo is an on-demand staffing marketplace. It connects businesses which have temporary staffing needs (Requestors) with workers who can meet those needs (Wonoloers). Requestors post jobs into our marketplace, Wonoloers can then review those positions and decide if they want to do the work.',
         description:
           'Wonolo hires workers to perform certain jobs, like Warehouse Operations, General Labor, Food Production, Cleaning and Merchandising, for different Employers. They are quickly expanding across the US and are available in most major cities.',
-        jobpromo: 'Accept a Job Through Wonolo and Earn a $100 Bonus!',
+        jobpromo: 'Earn a $100 Bonus on Your First Job!',
         apppromo: '',
         apppromoterms: '',
-        jobpromoterms: '',
+        jobpromoterms: "Subject to Wonolo's terms and conditions",
         resources: [
           {
             title: 'Indeed: Job Reviews for Wonolo Workers',
@@ -575,9 +588,9 @@ export const initialState = {
           'GoShare connects truck and van owners with people and businesses who need help moving, hauling, and delivering large items on demand.',
         description:
           'GoShare hires movers and drivers for delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you have no truck you can apply as a helper. Depending on your driving situation, this gig can prove very lucrative.',
-        apppromo: 'Sign Up for GoShare and Get $10!',
+        apppromo: 'Get $10 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms: "Subject to GoShare's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -603,9 +616,10 @@ export const initialState = {
           'HelloTech offers diagnostic solutions, support, installations and hands-on training for just about any technology need, including computer and printers, smart home devices, home theater and audio, Wi-Fi, TV mounting and much more.',
         description:
           'HelloTech workers help individuals set up and fix their technology. Have a plethora of technical knowledge? Wanna get paid to help those less technically advanced? You set your own schedule, and get paid weekly',
-        apppromo: 'Sign Up for HelloTech and Get $10!',
+        apppromo: 'Get $10 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to HelloTech will receive $10 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to HelloTech's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -633,9 +647,10 @@ export const initialState = {
           "Skip the shops and dealers. YourMechanic's top-rated mobile mechanics will come to your home or office to service your car.",
         description:
           'YourMechanic hires mechanics to offer at home services to users, and is a great way for people with auto repair skills to leverage the gig economy. You can make extra money providing car repairs and maintenance at the homes of clients.',
-        apppromo: 'Sign Up for YourMechanic and Get $10!',
+        apppromo: 'Get $10 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to YourMechanic will receive $10 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to YourMechanic's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -655,9 +670,10 @@ export const initialState = {
           'Zeel is not only the first mobile Massage On Demand company, with a network of more than 10,000 therapists throughout the U.S. Zeel connects you to the best licensed massage therapists available on-demand at your home, hotel, workplace, or event.',
         description:
           'Zeel employs massage therapists to provide at home massages to users. 18% gratuity is added to every in-home appointment and customers pay for late cancellations.',
-        apppromo: 'Sign Up for Zeel and get $40!',
+        apppromo: 'Get $40 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Zeel will receive $40 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Zeel's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -687,10 +703,10 @@ export const initialState = {
           'CareLinx is a professional caregiver marketplace, connecting trusted and licensed caregivers with family in need of in-home care services.',
         description:
           'CareLinx hires Caregivers to provide care to nearby elders. They have a network of over 300,000 caregivers and offer flexible hours, great pay and professional development.',
-        jobpromo: 'Apply to Work and Get a Free Background Check!',
+        jobpromo: 'Get a Free Background Check!',
         apppromo: '',
         apppromoterms: '',
-        jobpromoterms: '',
+        jobpromoterms: "Subject to CareLinx's terms and conditions",
         resources: [
           {
             title: 'Trustpilot: Reviews for CareLinx',
@@ -751,8 +767,9 @@ export const initialState = {
         description:
           'Postmates drivers deliver for one of the fastest growing food-delivery apps. They get delivery requests from the Postmates app, navigate to the store or restaurant and deliver to the customer location.',
         jobpromo: '',
-        apppromo: 'Sign Up for Postmates and Get $100 Delivery Credit!',
-        apppromoterms: '',
+        apppromo: 'Get $100 from NextWrk!',
+        apppromoterms:
+          "New users to Postmates will receive $100 in delivery credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Postmates' terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -837,9 +854,10 @@ export const initialState = {
           'Grubhub is a leading online and mobile food-ordering and delivery marketplace with the largest and most comprehensive network of restaurant partners.',
         description:
           'Grubhub drivers pick up food from local restaurants and deliver the orders to customers. They get guaranteed minimum earnings and additional perks for performance.',
-        apppromo: 'Sign Up for Grubhub and Get $5!',
+        apppromo: 'Get $5 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Grubhub will receive $5 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Grubhub's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -919,9 +937,10 @@ export const initialState = {
           "Favor is the easiest way to get anything you want in your city delivered to your door in under an hour. Whether it's your favorite local restaurant or an errand you forgot to run.",
         description:
           'Favor Runners deliver just about anything to customers and get paid for it. Unlike other deliver gigs, Favor provides a $9 per hour base pay, though tips are deducted from this, and is available in 12 cities',
-        apppromo: 'Sign Up for Favor and Get $5!',
+        apppromo: 'Get $5 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Favor will receive $5 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Favor's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -960,9 +979,10 @@ export const initialState = {
           'goPuff is the on-demand convenience store that delivers what you need, day or night. Use their app or site for fast delivery of snacks, drinks, ice cream & more!',
         description:
           'GoPuff drivers get paid to deliver snacks, drinks, alcohol, personal care items and more to customers. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel.',
-        apppromo: 'Sign Up for GoPuff and Get $15!',
+        apppromo: 'Get $15 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to GoPuff will receive $15 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to GoPuff's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -1002,9 +1022,10 @@ export const initialState = {
           'Drizly focuses on the delivery of the fun stuff, alcohol that is.',
         description:
           'Drizly partners with liquor stores to deliver their fine products to customers. The hiring process for their drivers is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
-        apppromo: 'Sign Up for Drizly and Get $5!',
+        apppromo: 'Get $5 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Drizly will receive $5 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Drizly's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -1040,9 +1061,10 @@ export const initialState = {
           'Alcohol delivery to your door. No order minimums + free delivery on 30-min orders in select cities. Fast & Free beer delivery, wine delivery and liquor delivery.',
         description:
           'Saucey drivers deliver alcohol to customers. It boasts a flexible schedule and solid pay for drivers. Saucey also has a minimum pay for those who commit to working in "core blocks," which means you agree to work on the clock.',
-        apppromo: 'Sign Up for Saucey and Get $10!',
+        apppromo: 'Get $10 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Saucey will receive $10 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Saucey's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -1073,9 +1095,10 @@ export const initialState = {
           'Get the best THC and CBD products delivered same-day with Eaze. Shop flower, vapes, edibles, and joints from legal marijuana brands.',
         description:
           'As a delivery person for Eaze, you will deliver cannabis products from a licensed retailer directly to consumers. Eaze is currently only available in California.',
-        apppromo: 'Sign Up for Eaze and Get $20!',
+        apppromo: 'Get $20 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Eaze will receive $20 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Eaze's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -1110,48 +1133,16 @@ export const initialState = {
         subtypes: ['delivery', '21delivery'],
       },
       {
-        id: 'G0202',
-        gig: 'Minibar',
-        app:
-          'Shop Minibar Delivery for the best selection of wine, liquor, beer, and more - available in 30 to 60 minutes. Fast delivery and low prices!',
-        description:
-          'Minibar delivery provides on-demand delivery of wine, spirits, beer & mixers. If you live in a city you can start earning cash as a delivery driver.',
-        apppromo: 'Sign Up for Minibar and Get $10!',
-        jobpromo: '',
-        apppromoterms: '',
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Glassdoor: Job Reviews for Minibar Drivers',
-            link:
-              'https://www.glassdoor.com/Reviews/Minibar-Delivery-Reviews-E917096.htm',
-          },
-        ],
-        gigsite: 'https://minibardelivery.com/',
-        appsite: 'http://mbar.me/2pAXDEX',
-        services: [
-          'S0004',
-          'S0046',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['delivery', '21delivery'],
-      },
-      {
         id: 'G0008',
         gig: 'Instacart',
         app:
           'Instacart lets you shop from local grocery stores online, then sends a “personal shopper” to fulfill and deliver your order to you the same day.',
         description:
           'Instacart Shoppers use their platform to shop and deliver orders, like groceries, for their customers.',
-        apppromo: 'Sign Up for Instacart and Get $10!',
+        apppromo: 'Get $10 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Instacart will receive $10 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Instacart's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -1202,7 +1193,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://rentlikeachampion.com/',
-        services: ['S0045'],
+        services: ['S0045', 'S0053'],
         subtypes: ['rental', 'home'],
       },
       {
@@ -1233,7 +1224,7 @@ export const initialState = {
         gigsite: 'https://www.airbnb.com/host/homes',
         appsite: 'https://www.airbnb.com/mobile',
         pay: 'AirBnB Hosts make, on average, about $920 a month',
-        services: ['S0045'],
+        services: ['S0045', 'S0053'],
         subtypes: ['rental', 'home'],
       },
       {
@@ -1258,7 +1249,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.homeaway.com/lyp',
-        services: ['S0045'],
+        services: ['S0045', 'S0053'],
         subtypes: ['rental', 'home'],
       },
       {
@@ -1304,7 +1295,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://help.vrbo.com/category/List_Your_Property',
-        services: ['S0045'],
+        services: ['S0045', 'S0053'],
         subtypes: ['rental', 'home'],
       },
       {
@@ -1323,7 +1314,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.lovehomeswap.com/',
-        services: ['S0045'],
+        services: ['S0045', 'S0053'],
         subtypes: ['rental', 'home'],
       },
       {
@@ -1350,7 +1341,7 @@ export const initialState = {
         gigsite: 'https://turo.com/us/en/list-your-car',
         appsite: 'https://turo.com/',
         pay: 'Renters earn between 65% and 90% of the price they set.',
-        services: [],
+        services: ['S0054'],
         subtypes: ['rental', 'car'],
       },
       {
@@ -1371,7 +1362,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://app.hyrecar.com/login?type=owner&form=signup',
-        services: [],
+        services: ['S0054'],
         subtypes: ['rental', 'car'],
       },
       {
@@ -1561,9 +1552,10 @@ export const initialState = {
           'TaskRabbit is a marketplace that matches freelance labor with local demand.',
         description:
           'TaskRabbit Taskers get paid to help with everyday tasks, like cleaning, moving, delivery and handyman work, for individuals in their community.',
-        apppromo: 'Sign Up for TaskRabbit and Get $10!',
+        apppromo: 'Get $10 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to TaskRabbit will receive $10 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to TaskRabbit's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -1681,9 +1673,10 @@ export const initialState = {
           'The Takl platform connects customers who need chores completed with background-checked, self-employed Providers who are able to earn money using their skills on their own schedule.',
         description:
           'At Takl, you get paid to help others in your community complete small jobs and household chores. You can perform chores in twelve categories on your own time, and get paid fast through direct deposit.',
-        apppromo: 'Sign Up for Takl and Get 10% Off Your First Job!',
+        apppromo: 'Get 10% Off a Job From NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Takl will receive 10% off their first job when they sign up through the link provided on nextwrk.com. This promotion is subject to Takl's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -2172,7 +2165,33 @@ export const initialState = {
         pay: 'eBay takes a commission for each sale, 10% for most products',
         gigsite: 'https://reg.ebay.com/reg/PartialReg',
         services: [],
-        subtypes: ['clothes'],
+        subtypes: ['clothes', 'textbook'],
+      },
+      {
+        id: 'G0239',
+        gig: 'Craigslist',
+        app:
+          'Craigslist is an American classified advertisements website with sections devoted to jobs, housing, for sale, items wanted, services, community service, gigs, résumés, and discussion forums.',
+        description:
+          'Anyone can sell anything on Craigslist: clothes, books, video games, cars, you name it. Simply make a listing and interested locals will get in touch with you.',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
+        resources: [
+          {
+            title: 'TrustPilot: Reviews for Craigslist',
+            link: 'https://www.trustpilot.com/review/www.craigslist.org',
+          },
+          {
+            title: 'E-Fraud Prevention: Avoid Online Classifieds Scams',
+            link: 'https://www.efraudprevention.net/home/templates/?a=96',
+          },
+        ],
+        pay: '',
+        gigsite: 'https://craigslist.org',
+        services: [],
+        subtypes: ['clothes', 'textbook'],
       },
       {
         id: 'G0028',
@@ -2348,9 +2367,10 @@ export const initialState = {
           'Soothe helps you book a five-star massage to your home, hotel, office, or event in as little as an hour.',
         description:
           'Gig work for massage therapists, including deep tissue, sports, and couples massage work. Soothe advertises 2-3x industry standard pay and schedule flexibility.',
-        apppromo: 'Sign Up for Soothe With Code ESEFM and Get $20!',
+        apppromo: 'Use Code ESEFM and Get $20 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Soothe will receive $20 in credit when they sign up with promo code ESEFM. This promotion is subject to Soothe's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -2443,9 +2463,10 @@ export const initialState = {
           'Join celebs, influencers & friends in the most -friendly rental marketplace for luxury designer fashion. Your Wardrobe goals just became reality.',
         description:
           'Do you have a big or fashionable wardrobe? Monetize your closet with peer-to-peer fashion rentals. Lend designer pieces from your closet to fellow fashion lovers and get easy cash with this app!',
-        apppromo: 'Sign Up for Wardrobe and Get a Free Wardrobe Rental!',
+        apppromo: 'Get a Free Wardrobe Rental from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Wardrobe will receive a free wardrobe rental when they sign up through the link provided on nextwrk.com. This promotion is subject to Wardrobe's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -2617,7 +2638,7 @@ export const initialState = {
           "Zūm is a reliable, technology platform that connects busy families with providers (Zūmers,) of kids' transportation and childcare services",
         description:
           'Zum is another carpooling rideshare app similar to HopSkipDrive. Zum drivers provide kids with transportation and care. It is available in California, Arizona, Texas, Illinois, Florida, Washington and Washington DC.',
-        jobpromo: 'Receive up to $500 sign up bonus!',
+        jobpromo: '',
         apppromo: '',
         apppromoterms: '',
         jobpromoterms: '',
@@ -2669,7 +2690,7 @@ export const initialState = {
         gigsite: 'https://99designs.com/designers',
         appsite: 'https://99designs.com/designers/search',
         pay: '',
-        services: ['S0042', 'S0044', 'S0043', 'S0045'],
+        services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
         subtypes: ['design'],
       },
       {
@@ -2692,7 +2713,7 @@ export const initialState = {
         gigsite: 'https://www.designhill.com/printshop',
         appsite: 'https://www.designhill.com/',
         pay: '',
-        services: ['S0042', 'S0044', 'S0043', 'S0045'],
+        services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
         subtypes: ['design'],
       },
       {
@@ -2716,7 +2737,7 @@ export const initialState = {
         gigsite: 'https://storyhunter.com/home/freelancing/',
         appsite: 'https://storyhunter.com/home/find-talent/',
         pay: '',
-        services: ['S0042', 'S0044', 'S0043', 'S0045'],
+        services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
         subtypes: ['design'],
       },
       {
@@ -2743,7 +2764,7 @@ export const initialState = {
         gigsite: 'https://www.cgtrader.com/pages/sell-3d-models',
         appsite: 'https://www.cgtrader.com/',
         pay: '',
-        services: ['S0042', 'S0044', 'S0043', 'S0045'],
+        services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
         subtypes: ['design'],
       },
       {
@@ -2771,7 +2792,7 @@ export const initialState = {
         gigsite: 'https://www.designcrowd.com/',
         appsite: 'https://www.designcrowd.com/',
         pay: '',
-        services: ['S0042', 'S0044', 'S0043', 'S0045'],
+        services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
         subtypes: ['design'],
       },
       {
@@ -2794,7 +2815,7 @@ export const initialState = {
         gigsite: 'https://www.prestoexperts.com/',
         appsite: 'https://www.prestoexperts.com/',
         pay: '',
-        services: ['S0042', 'S0044', 'S0043', 'S0045'],
+        services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
         subtypes: ['software', 'design'],
       },
       {
@@ -2822,7 +2843,7 @@ export const initialState = {
         appsite: 'https://www.toptal.com/hire',
         pay:
           'The commission and pay structure of Toptal is not public, but Toptal contracts out the labor to businesses for $60-$95+/hr.',
-        services: ['S0042', 'S0044', 'S0043', 'S0045'],
+        services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
         subtypes: ['software', 'design'],
       },
       {
@@ -2851,7 +2872,7 @@ export const initialState = {
         appsite: 'https://www.upwork.com/signup/?dest=job-posting',
         pay:
           'Each project has an advertised pay, Upwork takes a small percentage (around 3%).',
-        services: ['S0042', 'S0044', 'S0043', 'S0045'],
+        services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
         subtypes: ['software', 'design'],
       },
       {
@@ -2898,7 +2919,7 @@ export const initialState = {
         ],
         gigsite: 'https://www.linkedin.com/profinder/pros',
         appsite: 'https://www.linkedin.com/profinder',
-        services: ['S0042', 'S0044', 'S0043', 'S0045'],
+        services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
         subtypes: ['software', 'design'],
       },
       {
@@ -2926,7 +2947,7 @@ export const initialState = {
         appsite: 'https://www.guru.com/post-job/',
         pay:
           'Each project has an advertised pay, Guru takes a small percentage.',
-        services: ['S0042', 'S0044', 'S0043', 'S0045'],
+        services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
         subtypes: ['software', 'design'],
       },
       {
@@ -3105,7 +3126,7 @@ export const initialState = {
         gigsite: 'https://www.workana.com/en/signup',
         appsite: 'https://www.workana.com/en/post-project?ref=home_top_bar',
         pay: '',
-        services: ['S0042', 'S0044', 'S0043', 'S0045'],
+        services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
         subtypes: ['software', 'design'],
       },
       {
@@ -3134,7 +3155,7 @@ export const initialState = {
         gigsite: 'https://www.twine.fm/creatives',
         appsite: 'https://www.twine.fm/',
         pay: '',
-        services: ['S0042', 'S0044', 'S0043', 'S0045'],
+        services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
         subtypes: ['software', 'design'],
       },
       {
@@ -3184,7 +3205,15 @@ export const initialState = {
         gigsite: 'https://www.snapwi.re/creators',
         appsite: 'https://www.snapwi.re/',
         pay: '',
-        services: ['S0042', 'S0044', 'S0043', 'S0045'],
+        services: [
+          'S0048',
+          'S0042',
+          'S0044',
+          'S0043',
+          'S0045',
+          'S0049',
+          'S0050',
+        ],
         subtypes: ['photo'],
       },
       {
@@ -3194,11 +3223,12 @@ export const initialState = {
           'The trend these days is not going to a shopping mall to purchase product. The online boutique store or thrift spot is where you want to purchase things. Why? One, it’s cheaper. You won’t pay a ridiculous retail fee. Second, you may find something a bit more exclusive. You always want to stand out with your fashion.',
         description:
           'Sell or donate your clothes and earn cash! thredUP makes it easy to recycle your clothes -- simply order a pre-paid shipping bag, fill it with clothes and leave it for your mail carrier.',
-        apppromo: 'Sign Up for thredUP and Get $10!',
-        jobpromo:
-          'Start Selling on thredUP and Get a Free Expedited Processing!',
-        apppromoterms: '',
-        jobpromoterms: '',
+        apppromo: 'Get $10 from NextWrk!',
+        jobpromo: 'Get a Free Expedited Processing from NextWrk!',
+        apppromoterms:
+          "New users to thredUP will receive $10 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to thredUP's terms and conditions",
+        jobpromoterms:
+          "New thredUP sellers will receive a free expedited processing when they sign up through the link provided on nextwrk.com. This promotion is subject to thredUP's terms and conditions",
         resources: [
           {
             title: 'Trustpilot: Reviews for thredUP',
@@ -3268,6 +3298,40 @@ export const initialState = {
           'S0037',
         ],
         subtypes: ['driving', 'grocery'],
+      },
+      {
+        id: 'G0202',
+        gig: 'Minibar',
+        app:
+          'Shop Minibar Delivery for the best selection of wine, liquor, beer, and more - available in 30 to 60 minutes. Fast delivery and low prices!',
+        description:
+          'Minibar delivery provides on-demand delivery of wine, spirits, beer & mixers. If you live in a city you can start earning cash as a delivery driver.',
+        apppromo: 'Get $10 from NextWrk!',
+        jobpromo: '',
+        apppromoterms:
+          "New users to Minibar will receive $10 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Minibar's terms and conditions",
+        jobpromoterms: '',
+        resources: [
+          {
+            title: 'Glassdoor: Job Reviews for Minibar Drivers',
+            link:
+              'https://www.glassdoor.com/Reviews/Minibar-Delivery-Reviews-E917096.htm',
+          },
+        ],
+        gigsite: 'https://minibardelivery.com/',
+        appsite: 'http://mbar.me/2pAXDEX',
+        services: [
+          'S0004',
+          'S0046',
+          'S0005',
+          'S0006',
+          'S0030',
+          'S0031',
+          'S0039',
+          'S0040',
+          'S0037',
+        ],
+        subtypes: ['delivery', '21delivery'],
       },
       {
         id: 'G0143',
@@ -3342,9 +3406,11 @@ export const initialState = {
           "Bungii is a mobile app that instantly helps move, haul and deliver your stuff across town by connecting you with a local driver and pickup truck. They've been compared to popular ride sharing apps but instead of moving people, they move people's stuff.",
         description:
           'Bungii workers get paid to move bulky items for users. Bungii asks for you to own a 2005 or newer truck, ratchet straps, bungee cords and moving blankets to secure your deliveries, as well as be able to do some heavy lifting.',
-        apppromo: 'Sign Up With Promo Code 5XDKA and get $10!',
+        apppromo: 'Use Code 5XDKA and Get $10 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to Bungii will receive $10 in credit when they sign up with promo code 5XDKA. This promotion is subject to Bungii's terms and conditions",
+
         jobpromoterms: '',
         resources: [
           {
@@ -3376,9 +3442,10 @@ export const initialState = {
         description:
           'TommyRunners deliver building materials to individuals in their communities. You need to own a truck or van and be willing to do some heavy lifting.',
         indeed: 'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
-        apppromo: 'Sign Up and Get $25!',
+        apppromo: 'Get $25 from NextWrk!',
         jobpromo: '',
-        apppromoterms: '',
+        apppromoterms:
+          "New users to TommyRun will receive $25 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to TommyRun's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -3592,6 +3659,99 @@ export const initialState = {
         services: [],
         subtypes: ['gaming'],
       },
+      {
+        id: 'G0235',
+        gig: 'Decluttr',
+        app:
+          'Decluttr is a website that offers people a pretty easy way to sell their used media items like CDs, DVDs, Blu-rays, games, and books.',
+        description:
+          'Decluttr makes textbook buyback easy. You download the app, use the app’s scanner to automatically scan the bar code, and wait for their price. If you agree to the price, you’ll accept the offer and print out a pre-paid mailing label.',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
+        resources: [
+          {
+            title: 'TrustPilot: Reviews for Decluttr',
+            link: 'https://www.trustpilot.com/review/decluttr.com',
+          },
+        ],
+        pay: '',
+        appsite: 'https://www.decluttr.com/start-selling/',
+        gigsite: 'https://www.decluttr.com/start-selling/',
+        services: ['S0051', 'S0052'],
+        subtypes: ['textbook'],
+      },
+      {
+        id: 'G0236',
+        gig: 'Bookbyte',
+        app:
+          'Bookbyte is an eCommerce on a mission: to enable students to rent and buy expensive used textbooks economically by leveraging real-time data analytics to drive affordable prices across online marketplaces.',
+        description:
+          'Bookbyte works similarly to other sites where you can sell your old books online. Enter the book’s ISBN number, see how much Bookbyte offers, and then accept or decline the offer. If you accept it, you’ll get a prepaid shipping label. You must mail the books within seven calendar days for the offer to be valid.',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
+        resources: [
+          {
+            title: 'TrustPilot: Reviews for Bookbyte',
+            link: 'https://www.trustpilot.com/review/www.bookbyte.com',
+          },
+        ],
+        pay: '',
+        appsite: 'https://www.bookbyte.com/cheap-textbooks/',
+        gigsite: 'https://www.bookbyte.com/selltextbooks.aspx/',
+        services: ['S0051', 'S0052'],
+        subtypes: ['textbook'],
+      },
+      {
+        id: 'G0237',
+        gig: 'Student2Student',
+        app:
+          'Buy and sell textbooks directly with students at your university. Meet on-campus to the deal. No shipping, no credit cards, no hassles.',
+        description:
+          'Student2Student is a different kind of textbook buyback site. Instead of shipping your books through a site and getting paid through them, you list your books and sell them to real students near you. You’ll sell the books to other people from your college and meet on or around campus to exchange the book and payment.',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
+        resources: [
+          {
+            title: 'Student2Student: Fight Scam and Fraud',
+            link: 'https://student2student.com/scamAndFraud',
+          },
+        ],
+        pay: '',
+        appsite: 'https://student2student.com/',
+        gigsite: 'https://student2student.com/',
+        services: ['S0051', 'S0052'],
+        subtypes: ['textbook'],
+      },
+      {
+        id: 'G0238',
+        gig: 'eCampus',
+        app:
+          "Don't pay full price for textbooks. Save money on cheap textbooks and textbook rentals at eCampus.com.",
+        description:
+          'eCampus lets sellers list their books and set their own prices. If you have a book and want to get the most money for it, you can list it on eCampus for the price you want.',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
+        resources: [
+          {
+            title: 'TrustPilot: Reviews for eCampus',
+            link: 'https://www.trustpilot.com/review/www.ecampus.com',
+          },
+        ],
+        pay:
+          'eCampus takes a 15% commission off each book sold and provides a partial credit for shipping.',
+        appsite: 'https://www.ecampus.com/',
+        gigsite: 'https://www.ecampus.com/',
+        services: ['S0051', 'S0052'],
+        subtypes: ['textbook'],
+      },
     ],
     // Services
     services: [
@@ -3791,6 +3951,87 @@ export const initialState = {
         promo: '',
         terms: '',
         gigsite: 'https://app.hyrecar.com/login?type=driver&form=signup',
+      },
+      {
+        id: 'S0047',
+        gig: 'Whistle',
+        description:
+          'GPS trackers for dogs aren’t exactly new, but Whistle takes things to the next level by not only allowing you to track your furry friend’s location but also monitor their health, right down to their sleeping pattern.',
+        indeed: 'https://www.trustpilot.com/review/whistle.com',
+        promo: '',
+        terms: '',
+        gigsite: 'https://www.whistle.com/',
+      },
+      {
+        id: 'S0048',
+        gig: 'Adobe Creative Cloud',
+        description:
+          'Creative Cloud is a collection of 20+ desktop and mobile apps and services for photography, design, video, web, UX and more.',
+        indeed: 'https://www.trustpilot.com/review/www.adobe.com',
+        promo: '7 Day Free Trial!',
+        terms: '',
+        gigsite: 'https://www.adobe.com/creativecloud.html#',
+      },
+      {
+        id: 'S0049',
+        gig: 'Hiscox',
+        description:
+          'Photographers love their cameras more than most people in their lives, so the idea of having their pride and joy stolen is more than they can deal with. Hiscox insures cameras and accessories, so you can stop worrying about losing them.',
+        indeed: 'https://www.trustpilot.com/review/www.hiscox.co.uk',
+        promo: '',
+        terms: '',
+        gigsite: 'https://www.hiscox.com/',
+      },
+      {
+        id: 'S0050',
+        gig: 'Format',
+        description:
+          'Format is a tool photographers can use to build an online portfolio. Think of it as a highly specialized version of Wix with templates designed to help photographers get started in showcasing their best work.',
+        indeed:
+          'https://www.sitebuilderreport.com/guide-to-photography-website-builders/format',
+        promo: '',
+        terms: '',
+        gigsite: 'https://www.format.com/',
+      },
+      {
+        id: 'S0051',
+        gig: 'BookScouter',
+        description:
+          'BookScouter is an aggregate site. You type in the ISBN number and rather than getting one fixed price, you get a range of prices from more than 30 different buy-back sites. BookScouter is a good place to see what your options are before choosing where to sell your used textbooks.',
+        indeed: 'https://www.trustpilot.com/review/bookscouter.com',
+        promo: '',
+        terms: '',
+        gigsite: 'https://bookscouter.com/',
+      },
+      {
+        id: 'S0052',
+        gig: 'BookFinder',
+        description:
+          'BookFinder aggregates book buyback options and includes sites like Amazon, BooksRun, and sellbackyourbook.com. You can see which site offers the most money and then click through to their link to sell your book.',
+        indeed: 'https://www.trustpilot.com/review/www.bookfinder.com',
+        promo: '',
+        terms: '',
+        gigsite: 'https://www.bookfinder.com/',
+      },
+      {
+        id: 'S0053',
+        gig: 'TriBunk',
+        description:
+          'This innovative triple bunk bed saves space — giving you more room for activities! Rental property hosts can make good use of TriBunk by adding more beds for their renters.',
+        indeed: '',
+        promo: '',
+        terms: '',
+        gigsite: 'https://tribunk.com/',
+      },
+      {
+        id: 'S0054',
+        gig: 'Root',
+        description:
+          'Root Insurance offers an app that tracks drivers and claims to save as much as 50 percent on average car insurance rates. They also offer renters insurance starting at $6/month.',
+        indeed: 'https://www.trustpilot.com/review/joinroot.com',
+        promo: '',
+        terms: '',
+        gigsite: 'https://www.joinroot.com/',
       },
     ],
     // Deals

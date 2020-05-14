@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import H1 from 'components/H1';
+import H1 from 'components/H2';
 
 import P from './P';
 import PSpacing from './PSpacing';

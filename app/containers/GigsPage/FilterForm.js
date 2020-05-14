@@ -29,6 +29,7 @@ export function FilterForm() {
       <FilterTitle title="Sell Your Stuff" />
       <Ul>
         <FilterSelect filter="clothes" name="Sell Clothes" />
+        <FilterSelect filter="textbook" name="Sell Textbooks" />
       </Ul>
       <FilterTitle title="Rental" />
       <Ul>

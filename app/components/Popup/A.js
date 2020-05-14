@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const A = styled.a`
   color: #296fa7;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 19px;
   @media (max-width: 768px) {
     font-size: 14px;
   }
