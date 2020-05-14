@@ -55,7 +55,7 @@ export function HomePage({ loading, error, gigs }) {
         <H1>Discover...</H1>
         {isMobile ? <MobileBody /> : <Body />}
         <CenterText>
-          <H0>Featured Gigs</H0>
+          <H0>Featured Opportunities</H0>
           <hr />
         </CenterText>
         <GigsList loading={loading} error={error} gigs={gigs} />

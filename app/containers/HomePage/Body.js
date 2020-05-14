@@ -35,23 +35,25 @@ function Body() {
         <tr>
           <td style={{ width: '33%', verticalAlign: 'top' }}>
             <CenterText>
-              <H1>Gig Work</H1>
+              <H1>New Work</H1>
             </CenterText>
             <H3>
-              From charging scooters to professional remote freelancing - Gig
-              jobs let you work where you want, when you want. <br />
-              Discover all these opportunities so you can start working on your
-              own terms.
+              Thanks to the expansion of the internet and the explosion of the
+              gig economy, working for yourself is now easier and more viable
+              than ever. From charging scooters to professional remote
+              freelancing, there are opportunities for any individual with any
+              skill set to start earning on their own terms.
             </H3>
           </td>
           <td style={{ width: '33%', verticalAlign: 'top' }}>
             <CenterText>
-              <H1>New Services</H1>
+              <H1>Relevant Services</H1>
             </CenterText>
             <H3>
-              Companies are constantly developing new apps and services to make
-              gig jobs easier and more lucrative. <br /> Discover all these
-              services so you can make faster, easier money.
+              Companies are constantly developing unique products and services
+              to make this new working model easier and more lucrative.
+              Whichever avenues you decide to pursue, we connect you with all
+              the right tools so you can make faster, easier money.
             </H3>
           </td>
           <td style={{ width: '33%', verticalAlign: 'top' }}>
@@ -59,9 +61,9 @@ function Body() {
               <H1>Deals</H1>
             </CenterText>
             <H3>
-              We have compiled and created exclusive deals for trying out new
-              jobs and services. <br /> Sign up through NextWrk and ensure you
-              are never leaving any money on the table.
+              {
+                "Shopping around for what's right for you isn't discouraged. In fact, we've compiled and created exclusive deals for trying out new jobs, products and services. Sign up through NextWrk and ensure you are never leaving any money on the table."
+              }
             </H3>
           </td>
         </tr>

@@ -15,6 +15,9 @@ const Wrapper = styled.li`
     padding: 15px 15px;
     min-width: 80%;
     max-width: 500px;
+    -moz-box-shadow: 0px 0px 0px grey;
+    -webkit-box-shadow: 0px 0px 0px grey;
+    box-shadow: 0px 0px 0px grey;
   }
 
   &:hover {

@@ -59,7 +59,7 @@ function NavBar() {
                 <div>
                   <WorkIcon />
                 </div>
-                <div>Gigs</div>
+                <div>New Work</div>
               </NavBarLink>
             </React.Fragment>
           )}
@@ -69,13 +69,21 @@ function NavBar() {
         <DropDown>
           <Ul>
             <Li>
-              <MobNav href="/gigs">Gigs</MobNav>
+              <div style={{ marginBottom: '-18px' }}>
+                <MobNav href="/gigs">New Work</MobNav>
+                <hr style={{ border: '1px solid white' }} />
+              </div>
             </Li>
             <Li>
-              <MobNav href="/services">Services</MobNav>
+              <div style={{ marginBottom: '-18px' }}>
+                <MobNav href="/services">Services</MobNav>
+                <hr style={{ border: '1px solid white' }} />
+              </div>
             </Li>
             <Li>
-              <MobNav href="/deals">Deals</MobNav>
+              <div style={{ marginBottom: '10px' }}>
+                <MobNav href="/deals">Deals</MobNav>
+              </div>
             </Li>
           </Ul>
         </DropDown>

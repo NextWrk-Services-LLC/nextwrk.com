@@ -10,7 +10,7 @@ import Ul from './Ul';
 export function FilterForm() {
   return (
     <FormWrapper>
-      <H1>Gig Filters</H1>
+      <H1>Filters</H1>
       <hr />
       <FilterTitle title="Driving" />
       <Ul>

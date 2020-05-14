@@ -33,9 +33,9 @@ export const initialState = {
         id: 'G0208',
         gig: 'Fiverr',
         app:
-          'Fiverr connects businesses with freelancers offering digital services in 300+ categories.',
+          "Fiverr is the world's largest marketplace for digital services. On Fiverr, you can browse a selection of freelancers offering services in over 300 categories ranging from design, marketing and programming to astrology readings and relationship advice, then place orders in just one click.",
         description:
-          'Fiverr takes the freelance marketplace and sizes it down into smaller project chunks. Freelancers make profiles introducing who they are and what services they offer. Many freelancers offer their services for $5 but you are free to charge more if you see fit.',
+          'Fiverr takes the freelance marketplace and sizes it down into smaller project chunks. Freelancers make profiles introducing who they are and what services they offer, and are then connected to clients seeking those services. Many freelancers offer their services for $5 but you are free to charge whatever you see fit for the project.',
         apppromo: '',
         jobpromo: '',
         apppromoterms: '',
@@ -53,7 +53,7 @@ export const initialState = {
         gigsite: 'https://track.fiverr.com/visit/?bta=106560&nci=7416',
         appsite: 'https://track.fiverr.com/visit/?bta=106560&nci=7416',
         pay:
-          'Fiverr starts at $5 per project and you are free to charge whatever you see fit for the project.',
+          'Fiverr takes a 20% commission for each successful transaction. Freelance projects start at $5 each, but you are free to charge whatever you see fit for your services.',
         services: ['S0042', 'S0044', 'S0043', 'S0048', 'S0049', 'S0050'],
         subtypes: ['software', 'design', 'photo'],
       },
@@ -63,7 +63,7 @@ export const initialState = {
         app:
           'Storage units and parking at half the cost of traditional storage providers. A bold, new take on storage, Neighbor connects people who have unused storage spaces with people in the area looking for a place to keep their things.',
         description:
-          'Neighbor renters earn money renting out their basements, garages and even closets to neighbors. Clean out your garage and you can start earning over $2,000 extra a year!',
+          'Neighbor renters earn money renting out their basements, garages and even closets to neighbors. Clean out your garage and you can start earning over $2,000 extra a year.',
         apppromo: 'Get $50 from NextWrk!',
         jobpromo: '',
         apppromoterms:
@@ -2799,7 +2799,7 @@ export const initialState = {
         id: 'G0228',
         gig: 'PrestoExperts',
         app:
-          "Finding the expert help that you need is easy on PrestoExperts. With more than 30,000 registered experts in over 600 categories to choose from, chances are, we'll have just the right professional in the exact area of expertise that you need.",
+          "Finding the expert help that you need is easy on PrestoExperts. With more than 30,000 registered experts in over 600 categories to choose from, chances are, they'll have just the right professional in the exact area of expertise that you need.",
         description:
           'Find freelance clients for tutoring or project-based work as a designer in any field, including animation, web design, and video.',
         apppromo: '',
@@ -4072,7 +4072,7 @@ export const initialState = {
         indeed: 'https://www.trustpilot.com/review/www.rakuten.com',
         promo: 'Get $30 from NextWrk!',
         terms:
-          'To qualify for the promotion you must be a natural person (i.e., no businesses, legal entities or pets), be a new member to www.rakuten.com or www.ebates.com, consent to and comply with the General Terms and Conditions, and make a qualifying amount in purchases (subject to terms of promotion) that earn Cash Back through www.rakuten.com or www.ebates.com within ninety (90) days from sign-up.',
+          'To qualify for the promotion you must be a natural person (i.e., no businesses, legal entities or pets), be a new member to www.rakuten.com or www.ebates.com, consent to and comply with the General Terms and Conditions, and make a qualifying amount in purchases (subject to terms of promotion) that earn Cash Back through www.rakuten.com or www.ebates.com within ninety (90) days from sign-up. Subject to Rakuten terms and conditions.',
         gigsite: 'https://go.rakuten.com/MARKFO238',
       },
       {
@@ -4083,7 +4083,7 @@ export const initialState = {
         indeed: 'https://apps.apple.com/us/app/cash-app/id711923939',
         promo: 'Get $5 from NextWrk!',
         terms:
-          'Send $5 or more from a newly linked debit card within 14 days of opening an account to qualify for the promotion.',
+          'Send $5 or more from a newly linked debit card within 14 days of opening an account to qualify for the promotion. Promotion is subject to Cash App terms and conditions.',
         gigsite: 'https://cash.app/app/QXGKDDH',
       },
       {
@@ -4114,7 +4114,7 @@ export const initialState = {
         indeed: '',
         promo: 'Get $10 in BTC from NextWrk!',
         terms:
-          'Visit coinbase.com/trade and initiate a buy or sell of $100 USD or more within 180 days of opening your account and receive a 10 USD bonus when the order completes. Orders can take up to 4 business days to complete.',
+          'Visit coinbase.com/trade and initiate a buy or sell of $100 USD or more within 180 days of opening your account and receive a 10 USD bonus when the order completes. Orders can take up to 4 business days to complete. Promotion subject to Coinbase terms and conditions.',
         gigsite: 'https://coinbase.com/join/foster_h9u?src=ios-sms',
       },
     ],
