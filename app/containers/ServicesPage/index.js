@@ -114,7 +114,7 @@ export function ServicesPage({ location, loading, error, services, gigs }) {
   return (
     <div>
       <Helmet>
-        <title>Discover Services for Gig Workers</title>
+        <title>Search for Services</title>
         <meta
           name="description"
           content="Gig workers need help too, and the market definitely realizes this. There are more and more services available to help gig workers improve and maximize their returns. NextWrk's Services Page exposees individuals to new services to ensure they're always a step ahead!"

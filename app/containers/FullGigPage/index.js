@@ -68,10 +68,10 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
   return (
     <div>
       <Helmet>
-        <title>View Gig</title>
+        <title>Discover New Work</title>
         <meta
           name="description"
-          content="View information about a specific gig: pay, relevant services, resources etc."
+          content="NextWrk helps individuals leverage the gig economy to start working on their own terms. From charging scooters to rideshare driving to professional remote freelancing and everything in between, there are more avenues than ever to start working for yourself. Visit NextWrk and discover new opportunities, relevant services and wallet stuffers."
         />
       </Helmet>
       <GoBack />

@@ -140,10 +140,10 @@ export function GigsPage({ location, loading, error, gigs }) {
   return (
     <div>
       <Helmet>
-        <title>Discover New Gig Opportunities</title>
+        <title>Discover New Work</title>
         <meta
           name="description"
-          content="There are a plethora of jobs available to anyone with a phone, car, and/or skill. NextWrk's Gig Page helps exposes individuals to new opportunities in the gig economy, and helps them find the best jobs for them!"
+          content="From charging scooters to professional remote freelancing, thanks to the explosion of the gig economy there are opportunities for any individual with any skill set to start earning on their own terms."
         />
       </Helmet>
       {isMobile ? <MobileNav action={toggleMobile} /> : null}

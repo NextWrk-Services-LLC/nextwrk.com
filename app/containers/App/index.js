@@ -32,12 +32,12 @@ export default function App() {
       <NavBar />
       <AppWrapper>
         <Helmet
-          titleTemplate="%s - Discover the Best Gig Jobs, Services and Deals to Make Faster, Easier Money"
+          titleTemplate="%s - Start Working on Your Own Terms"
           defaultTitle="NextWrk"
         >
           <meta
             name="description"
-            content="NextWrk connects professionals to their best avenues for success in the gig economy, be it through big names, like Uber, Lyft, DoorDash, Postmates and AirBnB, or lesser known gigs like Rent Like a Champion, HyreCar and SpotHero. We also expose our users to new Services and Deals to make the Gig Economy work for them!"
+            content="NextWrk connects individuals to their best avenues for success in the gig economy: be it working for big names, like Uber, Lyft, DoorDash, Postmates and AirBnB, or lesser known businesses like Rent Like a Champion, HyreCar and SpotHero. Additionally, we connect our users to new services and deals to ensure they're earning as much as possible as easily as possible!"
           />
         </Helmet>
         <Switch>

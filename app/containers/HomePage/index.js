@@ -39,10 +39,10 @@ export function HomePage({ loading, error, gigs }) {
   return (
     <article>
       <Helmet>
-        <title>HomePage</title>
+        <title>NextWrk</title>
         <meta
           name="description"
-          content="NextWrk. Discover the best gigs for developing extra streams of income, and the best services for maximizing your returns!"
+          content="NextWrk helps individuals leverage the gig economy to start working on their own terms. From charging scooters to rideshare driving to professional remote freelancing and everything in between, there are more avenues than ever to start working for yourself. Visit NextWrk and discover new opportunities, relevant services and wallet stuffers."
         />
       </Helmet>
       <Header />

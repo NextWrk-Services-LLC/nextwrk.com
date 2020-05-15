@@ -35,10 +35,10 @@ export function DealsPage({ loading, error, deals }) {
   return (
     <div>
       <Helmet>
-        <title>Discover New Products</title>
+        <title>Wallet Stuffers</title>
         <meta
           name="description"
-          content="Maximize your returns! NextWrk's Deals Page connects users looking for new services with services looking for new users!"
+          content="Use wallet stuffers to maximize your returns! NextWrk has compiled and created exclusive deals to reward you for trying out new jobs, products and services."
         />
       </Helmet>
       <Img src={dealsheader} alt="Deals Page Header" />
