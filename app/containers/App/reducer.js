@@ -2845,7 +2845,8 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.toptal.com/talent/apply',
-        appsite: 'https://www.toptal.com/hire',
+        appsite:
+          'https://www.toptal.com#book-nothing-but-uncanny-software-coders',
         pay:
           'The commission and pay structure of Toptal is not public, but Toptal contracts out the labor to businesses for $60-$95+/hr.',
         services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],

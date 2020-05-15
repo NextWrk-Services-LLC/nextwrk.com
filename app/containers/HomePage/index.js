@@ -48,9 +48,7 @@ export function HomePage({ loading, error, gigs }) {
       <Header />
       <BodySpacing>
         <H0Wrapper>
-          <H0>
-            Start Working How, When and Where <b>YOU</b> Want
-          </H0>
+          <H0>Start Working on Your Own Terms</H0>
         </H0Wrapper>
         <H1>Discover...</H1>
         {isMobile ? <MobileBody /> : <Body />}
