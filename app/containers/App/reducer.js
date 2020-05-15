@@ -61,29 +61,58 @@ export const initialState = {
         id: 'G0004',
         gig: 'Neighbor',
         app:
-          'Storage units and parking at half the cost of traditional storage providers. A bold, new take on storage, Neighbor connects people who have unused storage spaces with people in the area looking for a place to keep their things.',
+          'Find storage or parking spaces for 50% less than self storage units. Neighbor is on a mission to match people’s empty space with other people’s extra stuff. Renters get a friendly home for their stuff for less, Neighbor connects people, handles payments, and keeps things neighborly, and hosts earn money by giving their empty storage spaces a job.',
         description:
-          'Neighbor renters earn money renting out their basements, garages and even closets to neighbors. Clean out your garage and you can start earning over $2,000 extra a year.',
+          'Neighbor connects individuals with empty space with individuals in their communities looking for a space to store their stuff. Clean out your garage, basement, or even closet and you can start earning on Neighbor.',
         apppromo: 'Get $50 from NextWrk!',
-        jobpromo: '',
-        apppromoterms:
-          'Sign up for Neighbor and earn $50 when an invitation is fulfilled and verified. To fulfill an invitation, you must create an account and either place at least one reservation or list your storage space on Neighbor and receive a reservation. After the verification process, a referal payout in the form of an electronic Amazon gift card will be sent to your email address.',
+        jobpromo: 'List Space and Get $50!',
         jobpromoterms: '',
         resources: [
           {
-            title: 'TrustPilot, Neighbor Review',
-            link: 'https://www.trustpilot.com/review/neighbor.com',
+            title:
+              "Utah's Neighbor.com Raises $10M In A16z-Led Series A To Be The 'Airbnb Of Storage'",
+            link:
+              'https://news.crunchbase.com/news/utahs-neighbor-com-raises-10m-in-a16z-led-series-a-to-be-the-airbnb-of-self-storage/',
           },
           {
-            title: 'Neighbor Storage FAQs',
-            link: 'https://www.neighbor.com/faqs',
+            title: 'Facebook: Neighbor Reviews',
+            link: 'https://www.facebook.com/storewithneighbor/',
           },
+          {
+            title: 'TrustPilot: Neighbor Reviews',
+            link: 'https://www.trustpilot.com/review/neighbor.com',
+          },
+          // {
+          //   title: 'Neighbor Storage FAQs',
+          //   link: 'https://www.neighbor.com/faqs',
+          // },
         ],
         gigsite: 'https://www.neighbor.com/invited/nextwrk-39640',
         pay:
-          'Rent out a closet for ~$400 a year, a garage for ~$1,800 a year, or a basement for ~$2,100 a year',
+          'Their site contains estimates for how much you can earn per year depending on your storage situation.',
         services: [],
         subtypes: ['rental', 'home'],
+      },
+      {
+        id: 'G0177',
+        gig: 'Hyrecar',
+        app:
+          'Rent a car to drive for Uber, Lyft and Food Delivery. On-demand car rentals, protection included! Drive for any ridesharing, delivery or on-demand companies.',
+        description:
+          'HyreCar lets individuals rent out their cars to aspiring rideshare and/or delivery drivers without a ride. Because of this, your car is likely to rent quickly and for a long time.',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for Hyrecar',
+            link: 'https://www.trustpilot.com/review/hyrecar.com',
+          },
+        ],
+        gigsite: 'https://hyrecar.sjv.io/2vNbO',
+        services: ['S0054'],
+        subtypes: ['rental', 'car'],
       },
       {
         id: 'G0009',
@@ -91,11 +120,9 @@ export const initialState = {
         app:
           'Lyft matches you with a nearby driver who will pick you up and take you where you want to go. Use the Lyft app to get a ride in minutes. Just tap request and a driver’s there. By taking Lyft, you can help your community reduce traffic and take cars off the road.',
         description:
-          'Lyft drivers offer passengers a safe ride to their destination. Lyft is one of the largest rideshare apps and boasts a lower barrier of entry and higher tips on average than Uber.',
-        apppromo: 'Get $5 from NextWrk!',
+          'Lyft drivers offer passengers a safe ride to their destination. Lyft is one of the largest rideshare apps and boasts fewer restrictions and higher tips on average than other rideshare apps.',
+        apppromo: 'Get Lyft Credit from NextWrk!',
         jobpromo: '',
-        apppromoterms:
-          "You must be new to Lyft and in an eligible market to qualify. $5 off your ride. You have 1 ride remaining. Offer valid until 15 days after activation. Cannot be combined with other offers. Subject to Lyft's Terms of Service.",
         jobpromoterms: '',
         resources: [
           {
@@ -113,7 +140,8 @@ export const initialState = {
         ],
         gigsite: 'https://www.lyft.com/drive-with-lyft',
         appsite: 'https://www.lyft.com/i/FOSTER52621?utm_medium=p2pi_iacc',
-        pay: 'On average Lyft drivers make about $17.50 an hour',
+        pay:
+          'On average Lyft drivers can make about $17.50 an hour, but it differs depending on city',
         services: [
           'S0001',
           'S0046',
@@ -137,10 +165,8 @@ export const initialState = {
           'Delivery & takeout from the best local restaurants. Breakfast, lunch, dinner and more, delivered safely to your door. Now offering pickup & no-contact delivery.',
         description:
           'DoorDash Dashers deliver food from restaurants to customers. They schedule shifts and fulfill delivery requests from the DoorDash app.',
-        apppromo: 'Get $15 from NextWrk!',
+        apppromo: '',
         jobpromo: '',
-        apppromoterms:
-          "New customers get $5 off their first 3 DoorDash orders over $15. Subject to DoorDash's terms and conditions.",
         jobpromoterms: '',
         resources: [
           {
@@ -204,10 +230,9 @@ export const initialState = {
           'Simplify your life with fast, simple delivery from your local stores! Shipt brings your groceries and household essentials right to your door.',
         description:
           'Shipt Shoppers get paid to buy groceries and deliver them to customers. Shipt is owned solely by Target, which is where you will be doing most of your shopping.',
-        apppromo: 'Get $10 from NextWrk!',
+        apppromo: '',
         jobpromo: '',
-        apppromoterms:
-          "New customers get $10 in free groceries when they sign up for Shipt. Subject to Shipt's terms and conditions.",
+        apppromoterms: '',
         jobpromoterms: '',
         resources: [
           {
@@ -224,7 +249,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.shipt.com/be-a-shopper/',
-        appsite: 'http://share.shipt.com/33357892',
+        appsite: 'https://www.shipt.com/',
         pay: 'The Average Shipt Shopper Makes Around $15 an hour',
         services: [
           'S0001',
@@ -978,7 +1003,7 @@ export const initialState = {
         app:
           'goPuff is the on-demand convenience store that delivers what you need, day or night. Use their app or site for fast delivery of snacks, drinks, ice cream & more!',
         description:
-          'GoPuff drivers get paid to deliver snacks, drinks, alcohol, personal care items and more to customers. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel.',
+          'GoPuff drivers get paid to deliver snacks, drinks, personal care items and more to customers. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel.',
         apppromo: 'Get $15 from NextWrk!',
         jobpromo: '',
         apppromoterms:
@@ -1015,123 +1040,123 @@ export const initialState = {
         ],
         subtypes: ['driving', 'packagedelivery'],
       },
-      {
-        id: 'G0181',
-        gig: 'Drizly',
-        app:
-          'Drizly focuses on the delivery of the fun stuff, alcohol that is.',
-        description:
-          'Drizly partners with liquor stores to deliver their fine products to customers. The hiring process for their drivers is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
-        apppromo: 'Get $5 from NextWrk!',
-        jobpromo: '',
-        apppromoterms:
-          "New users to Drizly will receive $5 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Drizly's terms and conditions",
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Trustpilot: Reviews for Drizly',
-            link: 'https://www.trustpilot.com/review/drizly.com',
-          },
-          {
-            title: 'Glassdoor: Job Reviews for Drizly Drivers',
-            link:
-              'https://www.glassdoor.com/Reviews/Drizly-Delivery-Driver-Reviews-EI_IE1344937.0,6_KO7,22.htm',
-          },
-        ],
-        gigsite: 'https://drizly.com/liquor-stores-near-me',
-        appsite: 'https://drizly.com/i/RCDZO',
-        pay: 'Average Drizly Driver pay is around $11-$13/hr',
-        services: [
-          'S0004',
-          'S0046',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', '21delivery'],
-      },
-      {
-        id: 'G0184',
-        gig: 'Saucey',
-        app:
-          'Alcohol delivery to your door. No order minimums + free delivery on 30-min orders in select cities. Fast & Free beer delivery, wine delivery and liquor delivery.',
-        description:
-          'Saucey drivers deliver alcohol to customers. It boasts a flexible schedule and solid pay for drivers. Saucey also has a minimum pay for those who commit to working in "core blocks," which means you agree to work on the clock.',
-        apppromo: 'Get $10 from NextWrk!',
-        jobpromo: '',
-        apppromoterms:
-          "New users to Saucey will receive $10 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Saucey's terms and conditions",
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Saucey Drivers',
-            link: 'https://www.indeed.com/cmp/Saucey/reviews?fcountry=ALL',
-          },
-        ],
-        gigsite: 'https://www.saucey.com/apply',
-        appsite: 'https://get.saucey.com/x2USY1wUp6',
-        pay: 'Drivers earn $5 per delivery, plus $0.50 per item and tips.',
-        services: [
-          'S0004',
-          'S0046',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', '21delivery'],
-      },
-      {
-        id: 'G0201',
-        gig: 'Eaze',
-        app:
-          'Get the best THC and CBD products delivered same-day with Eaze. Shop flower, vapes, edibles, and joints from legal marijuana brands.',
-        description:
-          'As a delivery person for Eaze, you will deliver cannabis products from a licensed retailer directly to consumers. Eaze is currently only available in California.',
-        apppromo: 'Get $20 from NextWrk!',
-        jobpromo: '',
-        apppromoterms:
-          "New users to Eaze will receive $20 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Eaze's terms and conditions",
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Trustpilot: Reviews for Eaze',
-            link: 'https://www.trustpilot.com/review/eaze.com',
-          },
-          {
-            title: 'Glassdoor: Job Reviews for Eaze Drivers',
-            link:
-              'https://www.glassdoor.com/Reviews/Eaze-Driver-Reviews-EI_IE977965.0,4_KO5,11.htm',
-          },
-          {
-            title: 'r/eaze: Subreddit for Eaze Drivers',
-            link: 'https://www.reddit.com/r/eaze/',
-          },
-        ],
-        gigsite: 'https://www.drive.eaze.com/',
-        appsite: 'https://eaze.com/share/l/iclqrkq',
-        pay:
-          'Eaze drivers report a starting salary of $18/hr. They also reimburse $0.545 for every mile driven.',
-        services: [
-          'S0004',
-          'S0046',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['delivery', '21delivery'],
-      },
+      // {
+      //   id: 'G0181',
+      //   gig: 'Drizly',
+      //   app:
+      //     'Drizly focuses on the delivery of the fun stuff, alcohol that is.',
+      //   description:
+      //     'Drizly partners with liquor stores to deliver their fine products to customers. The hiring process for their drivers is different than most gigs, you have to reach out to a local liquor store that partners with Drizly and get hired through them.',
+      //   apppromo: 'Get $5 from NextWrk!',
+      //   jobpromo: '',
+      //   apppromoterms:
+      //     "New users to Drizly will receive $5 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Drizly's terms and conditions",
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'Trustpilot: Reviews for Drizly',
+      //       link: 'https://www.trustpilot.com/review/drizly.com',
+      //     },
+      //     {
+      //       title: 'Glassdoor: Job Reviews for Drizly Drivers',
+      //       link:
+      //         'https://www.glassdoor.com/Reviews/Drizly-Delivery-Driver-Reviews-EI_IE1344937.0,6_KO7,22.htm',
+      //     },
+      //   ],
+      //   gigsite: 'https://drizly.com/liquor-stores-near-me',
+      //   appsite: 'https://drizly.com/i/RCDZO',
+      //   pay: 'Average Drizly Driver pay is around $11-$13/hr',
+      //   services: [
+      //     'S0004',
+      //     'S0046',
+      //     'S0005',
+      //     'S0006',
+      //     'S0030',
+      //     'S0031',
+      //     'S0039',
+      //     'S0040',
+      //     'S0037',
+      //   ],
+      //   subtypes: ['driving', '21delivery'],
+      // },
+      // {
+      //   id: 'G0184',
+      //   gig: 'Saucey',
+      //   app:
+      //     'Alcohol delivery to your door. No order minimums + free delivery on 30-min orders in select cities. Fast & Free beer delivery, wine delivery and liquor delivery.',
+      //   description:
+      //     'Saucey drivers deliver alcohol to customers. It boasts a flexible schedule and solid pay for drivers. Saucey also has a minimum pay for those who commit to working in "core blocks," which means you agree to work on the clock.',
+      //   apppromo: 'Get $10 from NextWrk!',
+      //   jobpromo: '',
+      //   apppromoterms:
+      //     "New users to Saucey will receive $10 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Saucey's terms and conditions",
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'Indeed: Job Reviews for Saucey Drivers',
+      //       link: 'https://www.indeed.com/cmp/Saucey/reviews?fcountry=ALL',
+      //     },
+      //   ],
+      //   gigsite: 'https://www.saucey.com/apply',
+      //   appsite: 'https://get.saucey.com/x2USY1wUp6',
+      //   pay: 'Drivers earn $5 per delivery, plus $0.50 per item and tips.',
+      //   services: [
+      //     'S0004',
+      //     'S0046',
+      //     'S0005',
+      //     'S0006',
+      //     'S0030',
+      //     'S0031',
+      //     'S0039',
+      //     'S0040',
+      //     'S0037',
+      //   ],
+      //   subtypes: ['driving', '21delivery'],
+      // },
+      // {
+      //   id: 'G0201',
+      //   gig: 'Eaze',
+      //   app:
+      //     'Get the best THC and CBD products delivered same-day with Eaze. Shop flower, vapes, edibles, and joints from legal marijuana brands.',
+      //   description:
+      //     'As a delivery person for Eaze, you will deliver cannabis products from a licensed retailer directly to consumers. Eaze is currently only available in California.',
+      //   apppromo: 'Get $20 from NextWrk!',
+      //   jobpromo: '',
+      //   apppromoterms:
+      //     "New users to Eaze will receive $20 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Eaze's terms and conditions",
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'Trustpilot: Reviews for Eaze',
+      //       link: 'https://www.trustpilot.com/review/eaze.com',
+      //     },
+      //     {
+      //       title: 'Glassdoor: Job Reviews for Eaze Drivers',
+      //       link:
+      //         'https://www.glassdoor.com/Reviews/Eaze-Driver-Reviews-EI_IE977965.0,4_KO5,11.htm',
+      //     },
+      //     {
+      //       title: 'r/eaze: Subreddit for Eaze Drivers',
+      //       link: 'https://www.reddit.com/r/eaze/',
+      //     },
+      //   ],
+      //   gigsite: 'https://www.drive.eaze.com/',
+      //   appsite: 'https://eaze.com/share/l/iclqrkq',
+      //   pay:
+      //     'Eaze drivers report a starting salary of $18/hr. They also reimburse $0.545 for every mile driven.',
+      //   services: [
+      //     'S0004',
+      //     'S0046',
+      //     'S0005',
+      //     'S0006',
+      //     'S0030',
+      //     'S0031',
+      //     'S0039',
+      //     'S0040',
+      //     'S0037',
+      //   ],
+      //   subtypes: ['delivery', '21delivery'],
+      // },
       {
         id: 'G0008',
         gig: 'Instacart',
@@ -1345,27 +1370,6 @@ export const initialState = {
         subtypes: ['rental', 'car'],
       },
       {
-        id: 'G0177',
-        gig: 'Hyrecar',
-        app:
-          'Rent a car to drive for Uber, Lyft and Food Delivery. On-demand car rentals, protection included! Drive for any ridesharing, delivery or on-demand companies.',
-        description:
-          'HyreCar renters rent their cars to ridesharers without a ride. Because of this, your car is likely to rent quickly and for a long time.',
-        apppromo: '',
-        jobpromo: '',
-        apppromoterms: '',
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Trustpilot: Reviews for Hyrecar',
-            link: 'https://www.trustpilot.com/review/hyrecar.com',
-          },
-        ],
-        gigsite: 'https://app.hyrecar.com/login?type=owner&form=signup',
-        services: ['S0054'],
-        subtypes: ['rental', 'car'],
-      },
-      {
         id: 'G0049',
         gig: 'SpotHero',
         app:
@@ -1552,7 +1556,7 @@ export const initialState = {
           'TaskRabbit is a marketplace that matches freelance labor with local demand.',
         description:
           'TaskRabbit Taskers get paid to help with everyday tasks, like cleaning, moving, delivery and handyman work, for individuals in their community.',
-        apppromo: 'Get $10 from NextWrk!',
+        apppromo: '',
         jobpromo: '',
         apppromoterms:
           "New users to TaskRabbit will receive $10 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to TaskRabbit's terms and conditions",
@@ -1573,7 +1577,7 @@ export const initialState = {
         ],
         gigsite:
           'https://support.taskrabbit.com/hc/en-us/articles/360031918292-How-Do-I-Become-a-Tasker-',
-        appsite: 'https://www.taskrabbit.com/s/79ofx/try?utm_source=trycode',
+        appsite: 'https://www.taskrabbit.com/',
         services: [],
         subtypes: ['labor', 'handyman'],
       },
@@ -2239,67 +2243,67 @@ export const initialState = {
         services: [],
         subtypes: ['other'],
       },
-      {
-        id: 'G0033',
-        gig: 'Gigwalk',
-        description:
-          'Work for Gigwalk usually involves gathering data for companies about their products and stores. For example, you might be checking what is on the shelves in a particular shop, and whether it is correctly priced and labeled.',
-        apppromo: '',
-        jobpromo: '',
-        apppromoterms: '',
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for GigWalk Workers',
-            link: 'https://www.indeed.com/cmp/Gigwalk/reviews',
-          },
-        ],
-        gigsite: 'http://www.gigwalk.com/gigwalkers/',
-        services: [],
-        subtypes: ['other', 'mysteryshop'],
-      },
-      {
-        id: 'G0070',
-        gig: 'Market Force',
-        description:
-          'At Market Force, you will complete mystery shops for banks, restaurants, and stores. You get paid to provide feedback on your visits, which those companies then use to improve.',
-        apppromo: '',
-        jobpromo: '',
-        apppromoterms: '',
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'TrustPilot: Reviews for Market Force',
-            link: 'https://www.trustpilot.com/review/uk.marketforce.com',
-          },
-          {
-            title: 'Indeed: Job Reviews for Market Force Workers',
-            link: 'https://www.indeed.com/cmp/Market-Force/reviews',
-          },
-        ],
-        gigsite: 'https://www.marketforce.com/become-a-mystery-shopper',
-        services: [],
-        subtypes: ['other', 'mysteryshop'],
-      },
-      {
-        id: 'G0071',
-        gig: 'GBW',
-        description:
-          'GBW pays individuals to shop at globally recognized brands and provide feedback on the experience. They have organized over 14 million mystery shops for some of the largest brands.',
-        apppromo: '',
-        jobpromo: '',
-        apppromoterms: '',
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Trustpilot: Reviews for GBW Workers',
-            link: 'https://www.trustpilot.com/review/www.gapbuster.com',
-          },
-        ],
-        gigsite: 'https://gbw.solutions/becomeanevaluator',
-        services: [],
-        subtypes: ['other', 'mysteryshop'],
-      },
+      // {
+      //   id: 'G0033',
+      //   gig: 'Gigwalk',
+      //   description:
+      //     'Work for Gigwalk usually involves gathering data for companies about their products and stores. For example, you might be checking what is on the shelves in a particular shop, and whether it is correctly priced and labeled.',
+      //   apppromo: '',
+      //   jobpromo: '',
+      //   apppromoterms: '',
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'Indeed: Job Reviews for GigWalk Workers',
+      //       link: 'https://www.indeed.com/cmp/Gigwalk/reviews',
+      //     },
+      //   ],
+      //   gigsite: 'http://www.gigwalk.com/gigwalkers/',
+      //   services: [],
+      //   subtypes: ['other', 'mysteryshop'],
+      // },
+      // {
+      //   id: 'G0070',
+      //   gig: 'Market Force',
+      //   description:
+      //     'At Market Force, you will complete mystery shops for banks, restaurants, and stores. You get paid to provide feedback on your visits, which those companies then use to improve.',
+      //   apppromo: '',
+      //   jobpromo: '',
+      //   apppromoterms: '',
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'TrustPilot: Reviews for Market Force',
+      //       link: 'https://www.trustpilot.com/review/uk.marketforce.com',
+      //     },
+      //     {
+      //       title: 'Indeed: Job Reviews for Market Force Workers',
+      //       link: 'https://www.indeed.com/cmp/Market-Force/reviews',
+      //     },
+      //   ],
+      //   gigsite: 'https://www.marketforce.com/become-a-mystery-shopper',
+      //   services: [],
+      //   subtypes: ['other', 'mysteryshop'],
+      // },
+      // {
+      //   id: 'G0071',
+      //   gig: 'GBW',
+      //   description:
+      //     'GBW pays individuals to shop at globally recognized brands and provide feedback on the experience. They have organized over 14 million mystery shops for some of the largest brands.',
+      //   apppromo: '',
+      //   jobpromo: '',
+      //   apppromoterms: '',
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'Trustpilot: Reviews for GBW Workers',
+      //       link: 'https://www.trustpilot.com/review/www.gapbuster.com',
+      //     },
+      //   ],
+      //   gigsite: 'https://gbw.solutions/becomeanevaluator',
+      //   services: [],
+      //   subtypes: ['other', 'mysteryshop'],
+      // },
       {
         id: 'G0232',
         gig: 'SurveyJunkie',
@@ -2367,10 +2371,9 @@ export const initialState = {
           'Soothe helps you book a five-star massage to your home, hotel, office, or event in as little as an hour.',
         description:
           'Gig work for massage therapists, including deep tissue, sports, and couples massage work. Soothe advertises 2-3x industry standard pay and schedule flexibility.',
-        apppromo: 'Use Code ESEFM and Get $20 from NextWrk!',
+        apppromo: '',
         jobpromo: '',
-        apppromoterms:
-          "New users to Soothe will receive $20 in credit when they sign up with promo code ESEFM. This promotion is subject to Soothe's terms and conditions",
+        apppromoterms: '',
         jobpromoterms: '',
         resources: [
           {
@@ -2463,10 +2466,12 @@ export const initialState = {
           'Join celebs, influencers & friends in the most -friendly rental marketplace for luxury designer fashion. Your Wardrobe goals just became reality.',
         description:
           'Do you have a big or fashionable wardrobe? Monetize your closet with peer-to-peer fashion rentals. Lend designer pieces from your closet to fellow fashion lovers and get easy cash with this app!',
-        apppromo: 'Get a Free Wardrobe Rental from NextWrk!',
+        // apppromo: 'Get a Free Wardrobe Rental from NextWrk!',
+        apppromo: '',
         jobpromo: '',
-        apppromoterms:
-          "New users to Wardrobe will receive a free wardrobe rental when they sign up through the link provided on nextwrk.com. This promotion is subject to Wardrobe's terms and conditions",
+        apppromoterms: '',
+        // apppromoterms:
+        // "New users to Wardrobe will receive a free wardrobe rental when they sign up through the link provided on nextwrk.com. This promotion is subject to Wardrobe's terms and conditions",
         jobpromoterms: '',
         resources: [
           {
@@ -2978,31 +2983,31 @@ export const initialState = {
         services: ['S0042', 'S0044', 'S0043', 'S0045'],
         subtypes: ['software'],
       },
-      {
-        id: 'G0214',
-        gig: 'Outsourcely',
-        app:
-          'Outsourcely is a site that connects employers with remote workers. They are focussed on employers looking for more permanent staff as opposed to small short term projects.',
-        description:
-          'Outsourcely is a marketplace connecting freelance talent to businesses and individuals seeking it. The site distinguishes itself from rivals by not taking a cut from the pay of the workers themselves and by focussing on longer term projects as opposed to short term gigs, they even employ freelancers full time.',
-        apppromo: '',
-        jobpromo: '',
-        apppromoterms: '',
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Glassdoor: Reviews for Outsourcely Freelancers',
-            link:
-              'https://www.glassdoor.com/Reviews/Outsourcely-Reviews-E1591978.htm',
-          },
-        ],
-        gigsite: 'https://www.outsourcely.com/remote-workers',
-        appsite: 'https://www.outsourcely.com/startups-and-businesses',
-        pay:
-          'Each project has an advertised pay, Outsourcely takes no percentage.',
-        services: ['S0042', 'S0044', 'S0043', 'S0045'],
-        subtypes: ['software'],
-      },
+      // {
+      //   id: 'G0214',
+      //   gig: 'Outsourcely',
+      //   app:
+      //     'Outsourcely is a site that connects employers with remote workers. They are focussed on employers looking for more permanent staff as opposed to small short term projects.',
+      //   description:
+      //     'Outsourcely is a marketplace connecting freelance talent to businesses and individuals seeking it. The site distinguishes itself from rivals by not taking a cut from the pay of the workers themselves and by focussing on longer term projects as opposed to short term gigs, they even employ freelancers full time.',
+      //   apppromo: '',
+      //   jobpromo: '',
+      //   apppromoterms: '',
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'Glassdoor: Reviews for Outsourcely Freelancers',
+      //       link:
+      //         'https://www.glassdoor.com/Reviews/Outsourcely-Reviews-E1591978.htm',
+      //     },
+      //   ],
+      //   gigsite: 'https://www.outsourcely.com/remote-workers',
+      //   appsite: 'https://www.outsourcely.com/startups-and-businesses',
+      //   pay:
+      //     'Each project has an advertised pay, Outsourcely takes no percentage.',
+      //   services: ['S0042', 'S0044', 'S0043', 'S0045'],
+      //   subtypes: ['software'],
+      // },
       {
         id: 'G0215',
         gig: 'PeoplePerHour',
@@ -3299,40 +3304,40 @@ export const initialState = {
         ],
         subtypes: ['driving', 'grocery'],
       },
-      {
-        id: 'G0202',
-        gig: 'Minibar',
-        app:
-          'Shop Minibar Delivery for the best selection of wine, liquor, beer, and more - available in 30 to 60 minutes. Fast delivery and low prices!',
-        description:
-          'Minibar delivery provides on-demand delivery of wine, spirits, beer & mixers. If you live in a city you can start earning cash as a delivery driver.',
-        apppromo: 'Get $10 from NextWrk!',
-        jobpromo: '',
-        apppromoterms:
-          "New users to Minibar will receive $10 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Minibar's terms and conditions",
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Glassdoor: Job Reviews for Minibar Drivers',
-            link:
-              'https://www.glassdoor.com/Reviews/Minibar-Delivery-Reviews-E917096.htm',
-          },
-        ],
-        gigsite: 'https://minibardelivery.com/',
-        appsite: 'http://mbar.me/2pAXDEX',
-        services: [
-          'S0004',
-          'S0046',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['delivery', '21delivery'],
-      },
+      // {
+      //   id: 'G0202',
+      //   gig: 'Minibar',
+      //   app:
+      //     'Shop Minibar Delivery for the best selection of wine, liquor, beer, and more - available in 30 to 60 minutes. Fast delivery and low prices!',
+      //   description:
+      //     'Minibar delivery provides on-demand delivery of wine, spirits, beer & mixers. If you live in a city you can start earning cash as a delivery driver.',
+      //   apppromo: 'Get $10 from NextWrk!',
+      //   jobpromo: '',
+      //   apppromoterms:
+      //     "New users to Minibar will receive $10 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to Minibar's terms and conditions",
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'Glassdoor: Job Reviews for Minibar Drivers',
+      //       link:
+      //         'https://www.glassdoor.com/Reviews/Minibar-Delivery-Reviews-E917096.htm',
+      //     },
+      //   ],
+      //   gigsite: 'https://minibardelivery.com/',
+      //   appsite: 'http://mbar.me/2pAXDEX',
+      //   services: [
+      //     'S0004',
+      //     'S0046',
+      //     'S0005',
+      //     'S0006',
+      //     'S0030',
+      //     'S0031',
+      //     'S0039',
+      //     'S0040',
+      //     'S0037',
+      //   ],
+      //   subtypes: ['delivery', '21delivery'],
+      // },
       {
         id: 'G0143',
         gig: 'Skipcart',
@@ -3470,167 +3475,167 @@ export const initialState = {
         ],
         subtypes: ['driving', 'packagedelivery'],
       },
-      {
-        id: 'G0170',
-        gig: 'DeLiv',
-        description:
-          'DeLiv is a Same day delivery service helping retailers deliver their items to customers. They have a schedule where you can book hours and deliver packages for up to $22/hr. No passengers or food. No mess or stress.',
-        apppromo: '',
-        jobpromo: '',
-        apppromoterms: '',
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for DeLiv Drivers',
-            link: 'https://www.indeed.com/cmp/Deliv/reviews',
-          },
-        ],
-        gigsite: 'https://www.deliv.co/drivers/',
-        services: [
-          'S0004',
-          'S0046',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'packagedelivery'],
-      },
-      {
-        id: 'G0182',
-        gig: 'DispatchIt',
-        app:
-          'Dispatch is replacing the old courier industry by providing customers with real time tracking and accurate ETAs by leveraging technology and hard working drivers who get paid a fair wage.',
-        description:
-          'Dispatchit drivers provide reliable local deliveries to customers with real time ETAs and tracking. Dispatchit drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
-        apppromo: '',
-        jobpromo: '',
-        apppromoterms: '',
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Dispatchit Facebook Reviews',
-            link: 'https://www.facebook.com/pg/dispatchitinc/reviews',
-          },
-        ],
-        gigsite: 'https://www.dispatchit.com/drivers/',
-        services: [
-          'S0004',
-          'S0046',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'packagedelivery'],
-      },
-      {
-        id: 'G0189',
-        gig: 'DeliverThat',
-        app:
-          'DeliverThat is the industry leader for pre-scheduled catering delivery and setup.',
-        description:
-          'DeliverThat drivers deliver food from restaurants like QDoba, Zoes Kitchen, Boston Market and Firehouse, to customers. Delivery commissions start with a base amount, then increase based on distance and size.',
-        apppromo: '',
-        jobpromo: '',
-        apppromoterms: '',
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for DeliverThat Drivers',
-            link: 'https://www.indeed.com/cmp/Deliver-That/reviews',
-          },
-        ],
-        gigsite: 'https://www.ideliverthat.com/driver',
-        services: [
-          'S0004',
-          'S0046',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'fooddelivery'],
-      },
-      {
-        id: 'G0187',
-        gig: 'Burro',
-        app: 'Burro is an all in one delivery app for the Austin area.',
-        description:
-          'Deliver Craigslist items, make store deliveries even help people move. You can set a flexible schedule and they advertise "Drive for Burro and earn $45/hr with your pickup truck."',
-        apppromo: '',
-        jobpromo: '',
-        apppromoterms: '',
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Indeed: Job Reviews for Burro Drivers',
-            link: 'https://www.indeed.com/cmp/Burro/salaries/Delivery-Driver',
-          },
-        ],
-        gigsite: 'https://getburro.com/drivers.html',
-        services: [
-          'S0004',
-          'S0046',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'packagedelivery'],
-      },
-      {
-        id: 'G0205',
-        gig: 'Schlep',
-        description:
-          'The Uber for moving! Work a gig as a driver or a mover. Earn up to $1,000 a week, keep 100% of your tips and work on a flexible schedule',
-        apppromo: '',
-        jobpromo: '',
-        apppromoterms: '',
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Yelp: Reviews for Schlep',
-            link: 'https://www.yelp.com/biz/schlep-chicago',
-          },
-        ],
-        gigsite: 'https://www.schlep.it/#/',
-        services: [],
-        subtypes: ['rental', 'labor', 'mover'],
-      },
-      {
-        id: 'G0164',
-        gig: 'EasyMove',
-        app:
-          "Easymove connects you with professional, reliable, local movers anytime you need it. It's the smartest alternative to traditional movers, renting a truck and doing it yourself- their app connects you with local independent strong easymovers to help with moving, hauling and junk removal.",
-        description:
-          'Easymove is a delivery service offering to help users move bulky items from point A to point B. If you have a big car and can do some heavy lifting, they advertise you can make $2,500 a week as an Easymove partner.',
-        apppromo: '',
-        jobpromo: '',
-        apppromoterms: '',
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Trustpilot: Reviews for Easymove',
-            link: 'https://www.trustpilot.com/review/www.easymove.co.uk',
-          },
-        ],
-        gigsite: 'https://geteasymove.com/',
-        services: [],
-        subtypes: ['labor', 'mover'],
-      },
+      // {
+      //   id: 'G0170',
+      //   gig: 'DeLiv',
+      //   description:
+      //     'DeLiv is a Same day delivery service helping retailers deliver their items to customers. They have a schedule where you can book hours and deliver packages for up to $22/hr. No passengers or food. No mess or stress.',
+      //   apppromo: '',
+      //   jobpromo: '',
+      //   apppromoterms: '',
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'Indeed: Job Reviews for DeLiv Drivers',
+      //       link: 'https://www.indeed.com/cmp/Deliv/reviews',
+      //     },
+      //   ],
+      //   gigsite: 'https://www.deliv.co/drivers/',
+      //   services: [
+      //     'S0004',
+      //     'S0046',
+      //     'S0005',
+      //     'S0006',
+      //     'S0030',
+      //     'S0031',
+      //     'S0039',
+      //     'S0040',
+      //     'S0037',
+      //   ],
+      //   subtypes: ['driving', 'packagedelivery'],
+      // },
+      // {
+      //   id: 'G0182',
+      //   gig: 'DispatchIt',
+      //   app:
+      //     'Dispatch is replacing the old courier industry by providing customers with real time tracking and accurate ETAs by leveraging technology and hard working drivers who get paid a fair wage.',
+      //   description:
+      //     'Dispatchit drivers provide reliable local deliveries to customers with real time ETAs and tracking. Dispatchit drivers must be at least 23 years old, have a reliable car and vehicle insurance.',
+      //   apppromo: '',
+      //   jobpromo: '',
+      //   apppromoterms: '',
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'Dispatchit Facebook Reviews',
+      //       link: 'https://www.facebook.com/pg/dispatchitinc/reviews',
+      //     },
+      //   ],
+      //   gigsite: 'https://www.dispatchit.com/drivers/',
+      //   services: [
+      //     'S0004',
+      //     'S0046',
+      //     'S0005',
+      //     'S0006',
+      //     'S0030',
+      //     'S0031',
+      //     'S0039',
+      //     'S0040',
+      //     'S0037',
+      //   ],
+      //   subtypes: ['driving', 'packagedelivery'],
+      // },
+      // {
+      //   id: 'G0189',
+      //   gig: 'DeliverThat',
+      //   app:
+      //     'DeliverThat is the industry leader for pre-scheduled catering delivery and setup.',
+      //   description:
+      //     'DeliverThat drivers deliver food from restaurants like QDoba, Zoes Kitchen, Boston Market and Firehouse, to customers. Delivery commissions start with a base amount, then increase based on distance and size.',
+      //   apppromo: '',
+      //   jobpromo: '',
+      //   apppromoterms: '',
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'Indeed: Job Reviews for DeliverThat Drivers',
+      //       link: 'https://www.indeed.com/cmp/Deliver-That/reviews',
+      //     },
+      //   ],
+      //   gigsite: 'https://www.ideliverthat.com/driver',
+      //   services: [
+      //     'S0004',
+      //     'S0046',
+      //     'S0005',
+      //     'S0006',
+      //     'S0030',
+      //     'S0031',
+      //     'S0039',
+      //     'S0040',
+      //     'S0037',
+      //   ],
+      //   subtypes: ['driving', 'fooddelivery'],
+      // },
+      // {
+      //   id: 'G0187',
+      //   gig: 'Burro',
+      //   app: 'Burro is an all in one delivery app for the Austin area.',
+      //   description:
+      //     'Deliver Craigslist items, make store deliveries even help people move. You can set a flexible schedule and they advertise "Drive for Burro and earn $45/hr with your pickup truck."',
+      //   apppromo: '',
+      //   jobpromo: '',
+      //   apppromoterms: '',
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'Indeed: Job Reviews for Burro Drivers',
+      //       link: 'https://www.indeed.com/cmp/Burro/salaries/Delivery-Driver',
+      //     },
+      //   ],
+      //   gigsite: 'https://getburro.com/drivers.html',
+      //   services: [
+      //     'S0004',
+      //     'S0046',
+      //     'S0005',
+      //     'S0006',
+      //     'S0030',
+      //     'S0031',
+      //     'S0039',
+      //     'S0040',
+      //     'S0037',
+      //   ],
+      //   subtypes: ['driving', 'packagedelivery'],
+      // },
+      // {
+      //   id: 'G0205',
+      //   gig: 'Schlep',
+      //   description:
+      //     'The Uber for moving! Work a gig as a driver or a mover. Earn up to $1,000 a week, keep 100% of your tips and work on a flexible schedule',
+      //   apppromo: '',
+      //   jobpromo: '',
+      //   apppromoterms: '',
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'Yelp: Reviews for Schlep',
+      //       link: 'https://www.yelp.com/biz/schlep-chicago',
+      //     },
+      //   ],
+      //   gigsite: 'https://www.schlep.it/#/',
+      //   services: [],
+      //   subtypes: ['rental', 'labor', 'mover'],
+      // },
+      // {
+      //   id: 'G0164',
+      //   gig: 'EasyMove',
+      //   app:
+      //     "Easymove connects you with professional, reliable, local movers anytime you need it. It's the smartest alternative to traditional movers, renting a truck and doing it yourself- their app connects you with local independent strong easymovers to help with moving, hauling and junk removal.",
+      //   description:
+      //     'Easymove is a delivery service offering to help users move bulky items from point A to point B. If you have a big car and can do some heavy lifting, they advertise you can make $2,500 a week as an Easymove partner.',
+      //   apppromo: '',
+      //   jobpromo: '',
+      //   apppromoterms: '',
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'Trustpilot: Reviews for Easymove',
+      //       link: 'https://www.trustpilot.com/review/www.easymove.co.uk',
+      //     },
+      //   ],
+      //   gigsite: 'https://geteasymove.com/',
+      //   services: [],
+      //   subtypes: ['labor', 'mover'],
+      // },
       {
         id: 'G0234',
         gig: 'Twitch',
@@ -3891,17 +3896,17 @@ export const initialState = {
         terms: '',
         gigsite: 'https://scootermap.com/?sc_referral=62591ccf',
       },
-      {
-        id: 'S0041',
-        gig: 'Time Doctor',
-        description:
-          'ScooterMap puts all the scooters from all the brands into one convenient app, making it easier for chargers to locate new scooters and earn more money.',
-        indeed:
-          'https://apps.apple.com/us/app/scooter-map-all-the-scooters/id1437698355',
-        promo: '',
-        terms: '',
-        gigsite: 'https://staff.com',
-      },
+      // {
+      //   id: 'S0041',
+      //   gig: 'Time Doctor',
+      //   description:
+      //     'ScooterMap puts all the scooters from all the brands into one convenient app, making it easier for chargers to locate new scooters and earn more money.',
+      //   indeed:
+      //     'https://apps.apple.com/us/app/scooter-map-all-the-scooters/id1437698355',
+      //   promo: '',
+      //   terms: '',
+      //   gigsite: 'https://staff.com',
+      // },
       {
         id: 'S0042',
         gig: 'HubStaff',
@@ -3912,16 +3917,16 @@ export const initialState = {
         terms: '',
         gigsite: 'http://try.hbstf.co/Wrwrz',
       },
-      {
-        id: 'S0043',
-        gig: 'Box',
-        description:
-          'With Box, you get a single place to manage, secure, share and govern all of the content for your internal and external collaboration and processes.',
-        indeed: 'https://www.trustpilot.com/review/box.com',
-        promo: '',
-        terms: '',
-        gigsite: 'https://www.box.com/pricing',
-      },
+      // {
+      //   id: 'S0043',
+      //   gig: 'Box',
+      //   description:
+      //     'With Box, you get a single place to manage, secure, share and govern all of the content for your internal and external collaboration and processes.',
+      //   indeed: 'https://www.trustpilot.com/review/box.com',
+      //   promo: '',
+      //   terms: '',
+      //   gigsite: 'https://www.box.com/pricing',
+      // },
       {
         id: 'S0044',
         gig: 'G Suite',
@@ -3950,17 +3955,17 @@ export const initialState = {
         indeed: 'https://www.trustpilot.com/review/hyrecar.com',
         promo: '',
         terms: '',
-        gigsite: 'https://app.hyrecar.com/login?type=driver&form=signup',
+        gigsite: 'https://hyrecar.sjv.io/2vNbO',
       },
       {
         id: 'S0047',
         gig: 'Whistle',
         description:
-          'GPS trackers for dogs aren’t exactly new, but Whistle takes things to the next level by not only allowing you to track your furry friend’s location but also monitor their health, right down to their sleeping pattern.',
+          'While GPS trackers for dogs aren’t new, Whistle takes things to the next level by allowing you to also monitor your furry friends health, right down to their sleeping pattern.',
         indeed: 'https://www.trustpilot.com/review/whistle.com',
         promo: '',
         terms: '',
-        gigsite: 'https://www.whistle.com/',
+        gigsite: 'https://whistle.blihtq.net/NMqAK',
       },
       {
         id: 'S0048',
@@ -3972,16 +3977,16 @@ export const initialState = {
         terms: '',
         gigsite: 'https://www.adobe.com/creativecloud.html#',
       },
-      {
-        id: 'S0049',
-        gig: 'Hiscox',
-        description:
-          'Photographers love their cameras more than most people in their lives, so the idea of having their pride and joy stolen is more than they can deal with. Hiscox insures cameras and accessories, so you can stop worrying about losing them.',
-        indeed: 'https://www.trustpilot.com/review/www.hiscox.co.uk',
-        promo: '',
-        terms: '',
-        gigsite: 'https://www.hiscox.com/',
-      },
+      // {
+      //   id: 'S0049',
+      //   gig: 'Hiscox',
+      //   description:
+      //     'Photographers love their cameras more than most people in their lives, so the idea of having their pride and joy stolen is more than they can deal with. Hiscox insures cameras and accessories, so you can stop worrying about losing them.',
+      //   indeed: 'https://www.trustpilot.com/review/www.hiscox.co.uk',
+      //   promo: '',
+      //   terms: '',
+      //   gigsite: 'https://www.hiscox.com/',
+      // },
       {
         id: 'S0050',
         gig: 'Format',
@@ -4023,29 +4028,29 @@ export const initialState = {
         terms: '',
         gigsite: 'https://tribunk.com/',
       },
-      {
-        id: 'S0054',
-        gig: 'Root',
-        description:
-          'Root Insurance offers an app that tracks drivers and claims to save as much as 50 percent on average car insurance rates. They also offer renters insurance starting at $6/month.',
-        indeed: 'https://www.trustpilot.com/review/joinroot.com',
-        promo: '',
-        terms: '',
-        gigsite: 'https://www.joinroot.com/',
-      },
+      // {
+      //   id: 'S0054',
+      //   gig: 'Root',
+      //   description:
+      //     'Root Insurance offers an app that tracks drivers and claims to save as much as 50 percent on average car insurance rates. They also offer renters insurance starting at $6/month.',
+      //   indeed: 'https://www.trustpilot.com/review/joinroot.com',
+      //   promo: '',
+      //   terms: '',
+      //   gigsite: 'https://www.joinroot.com/',
+      // },
     ],
     // Deals
     deals: [
-      {
-        id: 'D0007',
-        gig: 'PrizePicks',
-        description:
-          'PrizePicks is the simplest Daily Fantasy Sports app on the market. Just pick an over/under and start winning.',
-        indeed: 'https://www.trustpilot.com/review/www.myprizepicks.com',
-        promo: 'Get a Free 2-Pick Entry to Win $25!',
-        terms: '',
-        gigsite: 'https://www.myprizepicks.com/',
-      },
+      // {
+      //   id: 'D0007',
+      //   gig: 'PrizePicks',
+      //   description:
+      //     'PrizePicks is the simplest Daily Fantasy Sports app on the market. Just pick an over/under and start winning.',
+      //   indeed: 'https://www.trustpilot.com/review/www.myprizepicks.com',
+      //   promo: 'Get a Free 2-Pick Entry to Win $25!',
+      //   terms: '',
+      //   gigsite: 'https://www.myprizepicks.com/',
+      // },
       {
         id: 'D0001',
         gig: 'Acorns',
@@ -4056,21 +4061,12 @@ export const initialState = {
         gigsite: 'https://acorns.com/invite/SGU9A3',
       },
       {
-        id: 'D0002',
-        gig: 'Robinhood',
-        description:
-          'Robinhood is a mobile app for trading stocks and options commission free.',
-        promo: 'Get a Free Stock from NextWrk!',
-        terms: '',
-        gigsite: 'https://join.robinhood.com/markf1248',
-      },
-      {
         id: 'D0003',
         gig: 'Rakuten',
         description:
           'Formerly Ebates, Rakuten gives you cashback for shopping at over 2,500 stores.',
         indeed: 'https://www.trustpilot.com/review/www.rakuten.com',
-        promo: 'Get $30 from NextWrk!',
+        promo: 'Get $10 from NextWrk!',
         terms:
           'To qualify for the promotion you must be a natural person (i.e., no businesses, legal entities or pets), be a new member to www.rakuten.com or www.ebates.com, consent to and comply with the General Terms and Conditions, and make a qualifying amount in purchases (subject to terms of promotion) that earn Cash Back through www.rakuten.com or www.ebates.com within ninety (90) days from sign-up. Subject to Rakuten terms and conditions.',
         gigsite: 'https://go.rakuten.com/MARKFO238',
@@ -4087,25 +4083,34 @@ export const initialState = {
         gigsite: 'https://cash.app/app/QXGKDDH',
       },
       {
-        id: 'D0005',
-        gig: 'Love With Food',
+        id: 'D0002',
+        gig: 'Robinhood',
         description:
-          'Love With Food is a snack-subscription service delivering a monthly curation of delicious, clean ingredient snacks.',
-        indeed: 'https://www.facebook.com/pg/lovewithfood/reviews/',
-        promo: 'Get 40% Off Your First Box!',
+          'Robinhood is a mobile app for trading stocks and options commission free.',
+        promo: 'Get a Free Stock from NextWrk!',
         terms: '',
-        gigsite: 'http://lovewithfood.com/invite?m=r&ref=4t6h',
+        gigsite: 'https://join.robinhood.com/markf1248',
       },
-      {
-        id: 'D0006',
-        gig: 'Craft Coffee',
-        description:
-          'Craft Coffee subscriptions offer the highest-quality, fresh-roasted coffees at the lowest prices delivered straight to your doorstep.',
-        indeed: 'https://www.yelp.com/biz/craft-coffee-williamsburg-2',
-        promo: 'Get 15% Off with Code 5pr-gs7!',
-        terms: '',
-        gigsite: 'https://www.craftcoffee.com/',
-      },
+      // {
+      //   id: 'D0005',
+      //   gig: 'Love With Food',
+      //   description:
+      //     'Love With Food is a snack-subscription service delivering a monthly curation of delicious, clean ingredient snacks.',
+      //   indeed: 'https://www.facebook.com/pg/lovewithfood/reviews/',
+      //   promo: 'Get 40% Off Your First Box!',
+      //   terms: '',
+      //   gigsite: 'http://lovewithfood.com/invite?m=r&ref=4t6h',
+      // },
+      // {
+      //   id: 'D0006',
+      //   gig: 'Craft Coffee',
+      //   description:
+      //     'Craft Coffee subscriptions offer the highest-quality, fresh-roasted coffees at the lowest prices delivered straight to your doorstep.',
+      //   indeed: 'https://www.yelp.com/biz/craft-coffee-williamsburg-2',
+      //   promo: 'Get 15% Off with Code 5pr-gs7!',
+      //   terms: '',
+      //   gigsite: 'https://www.craftcoffee.com/',
+      // },
       {
         id: 'D0008',
         gig: 'Coinbase',

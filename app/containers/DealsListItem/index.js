@@ -7,7 +7,7 @@
  * sign up website
  */
 
-import React, { useState, useCallback } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
@@ -15,7 +15,6 @@ import { createStructuredSelector } from 'reselect';
 import { makeSelectCurrentUser } from 'containers/App/selectors';
 
 import ListItem from 'components/ListItem';
-import Popup from 'components/PopupDeal';
 
 import P from './P';
 import Wrapper from './Wrapper';
@@ -32,22 +31,20 @@ export function DealsListItem(props) {
   } catch {
     logo = images(`./nw.png`);
   }
-  const [show, toggleShow] = useState(false);
-  const closePopup = useCallback(() => {
-    toggleShow(false);
-  }, [false]);
 
   const content = (
     <React.Fragment>
-      {show ? (
-        <Popup key={`popup-${item.id}`} close={closePopup} info={item} />
-      ) : null}
-      <Spacing onClick={() => toggleShow(!show)}>
-        <Wrapper>
-          <Header image={logo} name={item.gig} />
-          <P>{item.description}</P>
-          {item.promo ? <Promo promo={item.promo} /> : null}
-        </Wrapper>
+      <Spacing>
+        <a
+          href={item.gigsite}
+          style={{ textDecoration: 'none', color: `#000000` }}
+        >
+          <Wrapper>
+            <Header image={logo} name={item.gig} />
+            <P>{item.description}</P>
+            {item.promo ? <Promo promo={item.promo} /> : null}
+          </Wrapper>
+        </a>
       </Spacing>
     </React.Fragment>
   );

@@ -7,7 +7,7 @@ import Deal from 'containers/GigListItem/Deal';
 function Promo({ promo }) {
   return (
     <CenterText>
-      <hr /> <Deal>{promo}</Deal>
+      <hr style={{ border: '1px solid gray' }} /> <Deal>{promo}</Deal>
     </CenterText>
   );
 }

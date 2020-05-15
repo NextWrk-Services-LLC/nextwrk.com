@@ -23,20 +23,16 @@ function MobileBody() {
           <td>
             <H1>New Work</H1>
             <H3>
-              Thanks to the expansion of the internet and the explosion of the
-              gig economy, working for yourself is now easier and more viable
-              than ever. From charging scooters to professional remote
-              freelancing, there are opportunities for any individual with any
-              skill set to start earning on their own terms.
+              From charging scooters to professional remote freelancing, there
+              are opportunities for any individual with any skill set to start
+              earning on their own terms.
             </H3>
           </td>
         </tr>
         <tr>
           <td>
-            <H1>New Services</H1>
+            <H1>Relevant Services</H1>
             <H3>
-              Companies are constantly developing unique products and services
-              to make this new working model easier and more lucrative.
               Whichever avenues you decide to pursue, we connect you with all
               the right tools so you can make faster, easier money.
             </H3>
@@ -54,10 +50,10 @@ function MobileBody() {
             </a>
           </TdImg>
           <td>
-            <H1>Deals</H1>
+            <H1>Wallet Stuffers</H1>
             <H3>
               {
-                "Shopping around for what's right for you isn't discouraged. In fact, we've compiled and created exclusive deals for trying out new jobs, products and services. Sign up through NextWrk and ensure you are never leaving any money on the table."
+                "We've also compiled and created exclusive deals to reward you for trying out new jobs, products and services."
               }
             </H3>
           </td>

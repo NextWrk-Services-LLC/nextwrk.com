@@ -17,7 +17,7 @@ export function FilterForm() {
         <FilterSelect filter="rideshare" name="Rideshare" />
         <FilterSelect filter="packagedelivery" name="Item Delivery" />
         <FilterSelect filter="fooddelivery" name="Food Delivery" />
-        <FilterSelect filter="21delivery" name="21+ Delivery" />
+        {/* <FilterSelect filter="21delivery" name="21+ Delivery" /> */}
         <FilterSelect filter="grocery" name="Grocery Shopping" />
       </Ul>
       <FilterTitle title="Freelancing" />
@@ -48,7 +48,7 @@ export function FilterForm() {
         <FilterSelect filter="cleaning" name="Cleaning" />
         <FilterSelect filter="care" name="Child & Elder Care" />
         <FilterSelect filter="tech" name="Technical" />
-        <FilterSelect filter="mysteryshop" name="Mystery Shopping" />
+        {/* <FilterSelect filter="mysteryshop" name="Mystery Shopping" /> */}
         <FilterSelect filter="beauty" name="Beauty & Massage" />
         <FilterSelect filter="healthcare" name="Healthcare" />
         <FilterSelect filter="cuisine" name="Cuisine" />

@@ -47,7 +47,7 @@ function NavBar() {
                 <div>
                   <AttachMoneyIcon />
                 </div>
-                <div>Deals</div>
+                <div>Wallet Stuffers</div>
               </NavBarLink>
               <NavBarLink href="/services">
                 <div>
@@ -82,7 +82,7 @@ function NavBar() {
             </Li>
             <Li>
               <div style={{ marginBottom: '10px' }}>
-                <MobNav href="/deals">Deals</MobNav>
+                <MobNav href="/deals">Wallet Stuffers</MobNav>
               </div>
             </Li>
           </Ul>

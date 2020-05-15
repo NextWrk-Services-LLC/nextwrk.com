@@ -32,8 +32,6 @@ import PayInsights from './PayInsights';
 import Resources from './Resources';
 import FeaturedServices from './FeaturedServices';
 import BottomButtons from './BottomButtons';
-import AppPromo from './AppPromo';
-import JobPromo from './JobPromo';
 
 export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
   const info = allGigs.filter(obj => obj.id.includes(gigId))[0];
@@ -92,19 +90,6 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
             />
           ) : null}
           <BottomButtons info={info} />
-          {info.apppromoterms || info.jobpromoterms ? (
-            <React.Fragment>
-              <hr />
-              <div style={{ verticalAlign: 'bottom', marginTop: '50px' }}>
-                {info.apppromoterms ? (
-                  <AppPromo text={info.apppromoterms} />
-                ) : null}
-                {info.jobpromoterms ? (
-                  <JobPromo text={info.jobpromoterms} />
-                ) : null}
-              </div>
-            </React.Fragment>
-          ) : null}
         </BodyWrapper>
       </Inner>
     </div>
