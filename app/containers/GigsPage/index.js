@@ -104,7 +104,7 @@ export function GigsPage({ location, loading, error, gigs }) {
   const main = (
     <React.Fragment>
       <Wrapper>
-        <SearchImg src={search} alt="Search" />
+        <SearchImg src={search} alt="Search Icon Png" />
         <InputTop
           type="text"
           onChange={textChange}

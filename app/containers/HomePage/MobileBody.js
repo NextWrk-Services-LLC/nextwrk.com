@@ -17,7 +17,7 @@ function MobileBody() {
         <tr>
           <TdImg>
             <a href="/gigs">
-              <Img src={gig} alt="Gig Vector" />
+              <Img src={gig} alt="NextWrk New Work Png" />
             </a>
           </TdImg>
           <td>
@@ -39,14 +39,14 @@ function MobileBody() {
           </td>
           <TdImg>
             <a href="/services">
-              <Img src={services} alt="Services Vector" />
+              <Img src={services} alt="NextWrk Relevant Services Png" />
             </a>
           </TdImg>
         </tr>
         <tr>
           <TdImg>
             <a href="/deals">
-              <Img src={deal} alt="Deals Vector" />
+              <Img src={deal} alt="NextWrk Wallet Stuffers Png" />
             </a>
           </TdImg>
           <td>

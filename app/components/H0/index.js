@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const H0 = styled.h1`
   font-size: 42px;
   margin-bottom: 0.25em;
-  color: #368cc2;
+  color: #3b9ad5;
   font-weight: normal;
   @media (max-width: 768px) {
     font-size: 28px;

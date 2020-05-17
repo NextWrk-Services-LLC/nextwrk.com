@@ -62,7 +62,7 @@ const LoadingIndicator = () => (
                   height: '40px',
                 }}
                 src={logo}
-                alt="NextWrk Logo"
+                alt="NextWrk Icon Png"
               />
             </td>
           </tr>

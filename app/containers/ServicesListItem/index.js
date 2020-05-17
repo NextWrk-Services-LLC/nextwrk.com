@@ -54,7 +54,7 @@ export function ServicesListItem(props) {
             <tbody>
               <tr>
                 <td>
-                  <Img src={logo} alt="Company - Logo" />
+                  <Img src={logo} alt={`${item.gig} Logo Png`} />
                 </td>
                 <td>
                   <Title>

@@ -90,7 +90,7 @@ export function ServicesPage({ location, loading, error, services, gigs }) {
   const SearchFld = (
     <React.Fragment>
       <Wrapper>
-        <SearchImg src={search} alt="Search" />
+        <SearchImg src={search} alt="Search Icon Png" />
         <InputTop
           type="text"
           onChange={textChange}
@@ -120,7 +120,7 @@ export function ServicesPage({ location, loading, error, services, gigs }) {
           content="Gig workers need help too, and the market definitely realizes this. There are more and more services available to help gig workers improve and maximize their returns. NextWrk's Services Page exposees individuals to new services to ensure they're always a step ahead!"
         />
       </Helmet>
-      <Img src={servicesheader} alt="Services Page Header" />
+      <Img src={servicesheader} alt="NextWrk Services Page Header Png" />
       <BodySpacing>
         <CenterText>
           {gigId.length === 5 ? (

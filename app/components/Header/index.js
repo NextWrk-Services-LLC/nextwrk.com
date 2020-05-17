@@ -11,7 +11,7 @@ import Img from './Img';
 import Banner from './img/banner.png';
 
 function Header() {
-  return <Img src={Banner} alt="NextWrk - Logo" />;
+  return <Img src={Banner} alt="NextWrk Home Banner Png" />;
 }
 
 export default Header;

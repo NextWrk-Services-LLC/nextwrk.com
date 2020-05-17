@@ -13,7 +13,7 @@ function Header({ image, title }) {
       <tbody>
         <tr>
           <td>
-            <GigLogo src={image} alt="Logo" />
+            <GigLogo src={image} alt={`${title} Logo Png`} />
           </td>
         </tr>
         <tr>

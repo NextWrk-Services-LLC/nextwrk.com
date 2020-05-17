@@ -58,7 +58,7 @@ function PopupDeal({ close, info }) {
           <tbody>
             <tr>
               <TdImg>
-                <Img src={logo} alt="Company - Logo" />
+                <Img src={logo} alt={`${info.gig} Logo Png`} />
               </TdImg>
             </tr>
             <tr>

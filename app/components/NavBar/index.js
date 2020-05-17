@@ -35,7 +35,7 @@ function NavBar() {
       <Wrapper>
         <ContentWrapper>
           <LogoLink to="/">
-            <Img src={Logo} alt="NextWrk - Logo" />
+            <Img src={Logo} alt="NextWrk Icon Png" />
           </LogoLink>
           {isMobile ? (
             <NavBarLink onClick={() => toggleShow(!show)} href="#">

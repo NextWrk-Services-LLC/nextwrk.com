@@ -14,7 +14,7 @@ function Header({ image, name }) {
       <tbody>
         <tr>
           <TdImg>
-            <Img src={image} alt="Company - Logo" />
+            <Img src={image} alt={`${name} Logo Png`} />
           </TdImg>
           <td>
             <Title>

@@ -5,7 +5,7 @@
  *
  */
 
-import React, { memo } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
@@ -13,6 +13,7 @@ import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 
 import ServicesList from 'components/ServicesList';
+import GigsList from 'components/GigsList';
 import {
   makeSelectPathname,
   makeSelectGigs,
@@ -32,8 +33,20 @@ import PayInsights from './PayInsights';
 import Resources from './Resources';
 import FeaturedServices from './FeaturedServices';
 import BottomButtons from './BottomButtons';
+import Interested from './Interested';
 
 export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
+  const recommendations = ['G0208', 'G0004', 'G0177', 'G0232', 'G0169'];
+  let recs = recommendations;
+  let rec = allGigs.filter(obj =>
+    obj.id.includes(recs[Math.floor(Math.random() * recommendations.length)]),
+  );
+  if (recommendations.includes(gigId)) {
+    recs = recommendations.filter(obj => !obj.includes(gigId));
+    rec = allGigs.filter(obj =>
+      obj.id.includes(recs[Math.floor(Math.random() * recs.length)]),
+    );
+  }
   const info = allGigs.filter(obj => obj.id.includes(gigId))[0];
   const images = require.context('../../images/Logos', true);
   let logo = images(`./nw.png`);
@@ -42,6 +55,11 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
   } catch {
     logo = images(`./nw.png`);
   }
+
+  const [state] = useState({
+    filteredRec: recs,
+    recommended: rec,
+  });
 
   function getServices(target, pattern) {
     let value = 0;
@@ -92,6 +110,17 @@ export function FullGigPage({ gigId, loading, error, allGigs, allServices }) {
           <BottomButtons info={info} />
         </BodyWrapper>
       </Inner>
+      {state.recommended.length > 0 ? (
+        <Interested
+          item={
+            <GigsList
+              loading={loading}
+              error={error}
+              gigs={state.recommended}
+            />
+          }
+        />
+      ) : null}
     </div>
   );
 }
@@ -123,7 +152,4 @@ const withConnect = connect(
   mapDispatchToProps,
 );
 
-export default compose(
-  withConnect,
-  memo,
-)(FullGigPage);
+export default compose(withConnect)(FullGigPage);

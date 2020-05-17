@@ -63,23 +63,23 @@ function Footer() {
           </Ul>
           <SocialLink
             link="https://www.facebook.com/NextWrk-110063513968010"
-            content={<Img src={facebook} alt="NextWrk Facebook" />}
+            content={<Img src={facebook} alt="Facebook Logo Png" />}
           />
           <SocialLink
             link="https://www.instagram.com/nextwrkapp/"
-            content={<Img src={instagram} alt="NextWrk Instagram" />}
+            content={<Img src={instagram} alt="Instagram Logo Png" />}
           />
           <SocialLink
             link="https://www.linkedin.com/company/nextwrkapp"
-            content={<Img src={linkedin} alt="NextWrk Linkedin" />}
+            content={<Img src={linkedin} alt="Linkedin Logo Png" />}
           />
           <SocialLink
             link="https://www.youtube.com/channel/UCqY2NC8ksD_tkDLxJ_xvakA"
-            content={<Img src={youtube} alt="NextWrk YouTube" />}
+            content={<Img src={youtube} alt="YouTube Logo Png" />}
           />
           <SocialLink
             link="https://twitter.com/WrkNext"
-            content={<Img src={twitter} alt="NextWrk Twitter" />}
+            content={<Img src={twitter} alt="Twitter Logo Png" />}
           />
         </div>
       </Wrapper>

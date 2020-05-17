@@ -41,7 +41,7 @@ export function DealsPage({ loading, error, deals }) {
           content="Use wallet stuffers to maximize your returns! NextWrk has compiled and created exclusive deals to reward you for trying out new jobs, products and services."
         />
       </Helmet>
-      <Img src={dealsheader} alt="Deals Page Header" />
+      <Img src={dealsheader} alt=" NextWrk Wallet Stuffer Header Png" />
       <BodySpacing>
         <DealsList {...dealsProps} />
       </BodySpacing>

@@ -50,8 +50,8 @@ export const initialState = {
             link: 'https://www.indeed.com/cmp/Fiverr/reviews',
           },
         ],
-        gigsite: 'https://track.fiverr.com/visit/?bta=106560&nci=7416',
-        appsite: 'https://track.fiverr.com/visit/?bta=106560&nci=7416',
+        gigsite: 'https://tinyurl.com/y8ux5d44',
+        appsite: 'https://tinyurl.com/y8ux5d44',
         pay:
           'Fiverr takes a 20% commission for each successful transaction. Freelance projects start at $5 each, but you are free to charge whatever you see fit for your services.',
         services: ['S0042', 'S0044', 'S0043', 'S0048', 'S0049', 'S0050'],
@@ -97,9 +97,9 @@ export const initialState = {
         id: 'G0177',
         gig: 'Hyrecar',
         app:
-          'Rent a car to drive for Uber, Lyft and Food Delivery. On-demand car rentals, protection included! Drive for any ridesharing, delivery or on-demand companies.',
+          'HyreCar lets individuals rent cars to drive with Uber, Lyft, and food/package delivery companies. Cars are available for daily, weekly or monthly rentals, and HyreCar provides you with the protection you need. Simply meet with the car owner to get the keys, get on the road, and start earning.',
         description:
-          'HyreCar lets individuals rent out their cars to aspiring rideshare and/or delivery drivers without a ride. Because of this, your car is likely to rent quickly and for a long time.',
+          'HyreCar lets you turn your idle car into passive income. You set your own rules and they connect you with reliable, trustworthy drivers. Then just sit back and earn.',
         apppromo: '',
         jobpromo: '',
         apppromoterms: '',
@@ -110,7 +110,9 @@ export const initialState = {
             link: 'https://www.trustpilot.com/review/hyrecar.com',
           },
         ],
-        gigsite: 'https://hyrecar.sjv.io/2vNbO',
+        pay:
+          'Car owners set their own pricing and comission. HyreCar advertises you can earn up to $12,000 a year as an owner.',
+        gigsite: 'https://tinyurl.com/y9w9lyny',
         services: ['S0054'],
         subtypes: ['rental', 'car'],
       },
@@ -139,7 +141,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.lyft.com/drive-with-lyft',
-        appsite: 'https://www.lyft.com/i/FOSTER52621?utm_medium=p2pi_iacc',
+        appsite: 'https://tinyurl.com/ybwuk5hd',
         pay:
           'On average Lyft drivers can make about $17.50 an hour, but it differs depending on city',
         services: [
@@ -157,6 +159,27 @@ export const initialState = {
           'S0037',
         ],
         subtypes: ['driving', 'rideshare'],
+      },
+      {
+        id: 'G0232',
+        gig: 'SurveyJunkie',
+        description:
+          'Survey Junkie is a online survey platform that pays users for sharing their opinions in order to help brands deliver better products and services. Each survey is worth a certain number of points, which can be redeemed for cash or gift cards.',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
+        resources: [
+          {
+            title: 'TrustPilot: Reviews for SurveyJunkie',
+            link: 'https://www.trustpilot.com/review/www.surveyjunkie.com',
+          },
+        ],
+        pay:
+          'Most surveys equate to around 50 points, where one point equates to $0.01 when redeemed',
+        gigsite: 'https://www.surveyjunkie.com/',
+        services: [],
+        subtypes: ['quickbucks'],
       },
       {
         id: 'G0014',
@@ -284,8 +307,8 @@ export const initialState = {
             link: 'https://www.facebook.com/pg/Boatsetter/reviews/',
           },
         ],
-        gigsite: 'https://www.boatsetter.com/referral/o/sqxkrtk',
-        appsite: 'https://www.boatsetter.com/referral/r/sqxkrtk',
+        gigsite: 'https://tinyurl.com/y8fcd3qj',
+        appsite: 'https://tinyurl.com/yahj3537',
         services: [],
         subtypes: ['rental', 'boat'],
       },
@@ -315,8 +338,7 @@ export const initialState = {
             link: 'https://www.reddit.com/r/GetAround/',
           },
         ],
-        gigsite:
-          'https://www.getaround.com/invite/2c776f91-e44f-5695-bae1-784dd3b6ae18',
+        gigsite: 'https://tinyurl.com/yd32r3mq',
         pay:
           'According to Getaround, the average car owner makes about $6,000 a year',
         services: ['S0054'],
@@ -409,7 +431,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.uber.com/us/en/drive/',
-        appsite: 'https://www.uber.com/invite/burker45ue',
+        appsite: 'https://tinyurl.com/y7nngky6',
         pay:
           'Uber Drivers make between $12 and $22 an hour on average, depending on the city',
         services: [
@@ -433,7 +455,7 @@ export const initialState = {
         id: 'G0188',
         gig: 'Grabr',
         app:
-          'Grabr is a peer to peer delivery service focussed on international shipments',
+          'Use Grabr to shop overseas products. A trusted traveler can bring them to you anywhere in the world using their international p2p delivery platform.',
         description:
           'Earn money while traveling! Grabr lets travelers subsidize their trips by delivering a handful of items. You can earn $200+ every time you travel abroad.',
         apppromo: 'Get $9 from NextWrk!',
@@ -451,10 +473,8 @@ export const initialState = {
             link: 'https://www.producthunt.com/posts/grabr-2/reviews',
           },
         ],
-        gigsite:
-          'https://grabr.io/invitation/mark-foster?utm_campaign=web&utm_source=referral_program&utm_medium=copy_link',
-        appsite:
-          'https://grabr.io/invitation/mark-foster?utm_campaign=web&utm_source=referral_program&utm_medium=copy_link',
+        gigsite: 'https://tinyurl.com/ya4advl7',
+        appsite: 'https://tinyurl.com/ya4advl7',
         pay: 'Earn $200+ Every Time You Travel Abroad',
         services: [
           'S0004',
@@ -506,7 +526,7 @@ export const initialState = {
         id: 'G0191',
         gig: 'Outdoorsy',
         app:
-          'Outdoorsy is the largest and safest community-driven RV marketplace for renting RVs directly from local RV owners.',
+          'Outdoorsy is the largest and safest community-driven RV marketplace for renting RVs directly from local RV owners. They make it safe for RV owners to rent out their rigs and earn money, and they make is easy for travelers to rent great vehicles from dependable and knowledgeable owners.',
         description:
           'Outdoorsy renters rent out their RVs on their marketplace. Outdoorsy performs DMV checks on all drivers, provide 24/7 roadside assistance and have a dedicated customer support team.',
         apppromo: 'Get $50 from NextWrk!',
@@ -524,7 +544,7 @@ export const initialState = {
             link: 'https://www.reddit.com/r/outdoorsy/',
           },
         ],
-        gigsite: 'https://www.outdoorsy.com/invite/g6o1lb',
+        gigsite: 'https://tinyurl.com/yc2dd4tn',
         pay:
           'Depending on the RV, renters can earn anywhere between $100 and $300 per night.',
         services: [],
@@ -534,9 +554,9 @@ export const initialState = {
         id: 'G0194',
         gig: 'Riders Share',
         app:
-          'Riders Share is the largest motorcycle renter community, offering best in class insurance and flexible refunds.',
+          'Riders Share is the largest motorcycle renter community, offering best in class insurance and flexible refunds. Simply choose from the largest variety of bikes in the world, connect with the owner to confirm availability, pay through their trusted service, and enjoy the ride!',
         description:
-          'Riders Share renters rent out motorcycles on their marketplace. List your motorcycle for free and make an average of $150 per booking! All listings are protected by an A rated insurance provider.',
+          'Riders Share lets you turn your motorcycle into passive income. List your motorcycle for free on their marketplace and make an average of $150 per booking! All listings are protected by an A rated insurance provider.',
         apppromo: 'Get $25 from NextWrk!',
         jobpromo: '',
         apppromoterms:
@@ -548,8 +568,8 @@ export const initialState = {
             link: 'https://www.facebook.com/pg/ridersshare/reviews/',
           },
         ],
-        gigsite: 'https://www.riders-share.com/welcome/markf+QdETy',
-        pay: 'Renters earn an average of $150 per booking.',
+        gigsite: 'https://tinyurl.com/ybu537fp',
+        pay: 'Owners set their own prices and Riders Share takes a 25% cut.',
         services: ['S0054'],
         subtypes: ['rental', 'car'],
       },
@@ -557,7 +577,7 @@ export const initialState = {
         id: 'G0015',
         gig: 'Wag!',
         app:
-          'Wag! is one of the largest dog walking apps. They offer flexibility, secure payment through Stripe, and donate money from 30 minute walks to feed shelter dogs.',
+          'Wag! is one of the largest dog walking apps. They have a trusted record of experience with over 10M pet care services across 4,600 cities and counting. With over 150,000+ Pet Caregivers, they offer flexibility, secure payment through Stripe, and donate money from 30 minute walks to feed shelter dogs.',
         description:
           'Wag Walkers get paid to pick up dogs in their communities, walk them, and return them. You choose how many walks you want to do and where you want to walk. It is extremely personalized and you get to play with dogs all day!',
         apppromo: '',
@@ -579,6 +599,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://wagwalking.com/dog-walker',
+        appsite: 'https://wagwalking.com/',
         pay: 'Walkers earn around $17.50 per walk',
         services: ['S0047'],
         subtypes: ['labor', 'dog'],
@@ -610,7 +631,7 @@ export const initialState = {
         id: 'G0151',
         gig: 'GoShare',
         app:
-          'GoShare connects truck and van owners with people and businesses who need help moving, hauling, and delivering large items on demand.',
+          "Moving, hauling, and delivery help is just a tap away with GoShare's easy app. Get a truck or cargo van in less than an hour. GoShare connects truck and van owners with people and businesses who need help moving, hauling, and delivering large items on demand.",
         description:
           'GoShare hires movers and drivers for delivery, moving and hauling services. If you have a truck, cargo van or box truck this gig could be right for you. If you have no truck you can apply as a helper. Depending on your driving situation, this gig can prove very lucrative.',
         apppromo: 'Get $10 from NextWrk!',
@@ -638,7 +659,7 @@ export const initialState = {
         id: 'G0035',
         gig: 'HelloTech',
         app:
-          'HelloTech offers diagnostic solutions, support, installations and hands-on training for just about any technology need, including computer and printers, smart home devices, home theater and audio, Wi-Fi, TV mounting and much more.',
+          'HelloTech provides affordable, same-day on-site and 24/7 online tech support services such as computer repair, TV mounting, smart home installations, and much more.',
         description:
           'HelloTech workers help individuals set up and fix their technology. Have a plethora of technical knowledge? Wanna get paid to help those less technically advanced? You set your own schedule, and get paid weekly',
         apppromo: 'Get $10 from NextWrk!',
@@ -660,7 +681,8 @@ export const initialState = {
             link: 'https://www.reddit.com/r/HelloTech/',
           },
         ],
-        gigsite: 'http://fbuy.me/v/markfoster314',
+        appsite: 'https://tinyurl.com/y93k3qw3',
+        gigsite: 'https://us.hellotech.com/techs',
         pay: 'HelloTech workers earn an average of around $16/hr.',
         services: ['S0045'],
         subtypes: ['other', 'tech'],
@@ -669,7 +691,7 @@ export const initialState = {
         id: 'G0055',
         gig: 'YourMechanic',
         app:
-          "Skip the shops and dealers. YourMechanic's top-rated mobile mechanics will come to your home or office to service your car.",
+          "Skip the shops and dealers, YourMechanic's top-rated mobile mechanics will come to your home or office to service your car. Using their website and mobile apps, you can access the maintenance schedule of all your cars, get a fair and transparent price, book an appointment, make payments, access service history and get maintenance reminders. And since they don’t have the overhead cost of a shop, they are able to charge less while providing a convenient service.",
         description:
           'YourMechanic hires mechanics to offer at home services to users, and is a great way for people with auto repair skills to leverage the gig economy. You can make extra money providing car repairs and maintenance at the homes of clients.',
         apppromo: 'Get $10 from NextWrk!',
@@ -683,7 +705,8 @@ export const initialState = {
             link: 'https://www.trustpilot.com/review/yourmechanic.com',
           },
         ],
-        gigsite: 'https://www.yourmechanic.com/rl/IyhJRw1860682',
+        appsite: 'https://tinyurl.com/y84j9kx4',
+        gigsite: 'https://tinyurl.com/ycnsdzr7',
         pay: 'YourMechanic claims their professionals earn between $40-$50/hr.',
         services: ['S0045'],
         subtypes: ['labor'],
@@ -716,7 +739,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.zeel.com/apply',
-        appsite: 'https://www.zeel.com/invite/1XPH9',
+        appsite: 'https://tinyurl.com/y7dkrazy',
         pay: 'Zeel Massage Therapists earn an average of around $60/hr.',
         services: [],
         subtypes: ['other', 'beauty'],
@@ -725,7 +748,7 @@ export const initialState = {
         id: 'G0195',
         gig: 'CareLinx',
         app:
-          'CareLinx is a professional caregiver marketplace, connecting trusted and licensed caregivers with family in need of in-home care services.',
+          'CareLinx is a professional caregiver marketplace, connecting trusted and licensed caregivers with family in need of in-home care services. Their platform has more than 300,000 caregivers across the country.',
         description:
           'CareLinx hires Caregivers to provide care to nearby elders. They have a network of over 300,000 caregivers and offer flexible hours, great pay and professional development.',
         jobpromo: 'Get a Free Background Check!',
@@ -742,7 +765,8 @@ export const initialState = {
             link: 'https://www.indeed.com/cmp/Carelinx/reviews',
           },
         ],
-        gigsite: 'https://www.carelinx.com/p/nextwrs',
+        gigsite: 'https://tinyurl.com/yamdu3jv',
+        appsite: 'https://carelinx.com',
         pay: 'Caregivers/Housekeepers earn an average of around $11.40/hr.',
         services: [],
         subtypes: ['labor', 'care'],
@@ -811,7 +835,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://fleet.postmates.com/',
-        appsite: 'https://postmat.es/hPYaJSvSp6',
+        appsite: 'https://tinyurl.com/yddczr76',
         pay:
           'Postmates pay ranges from around $12/hr for Drivers to around $25/hr for Truck Drivers',
         services: [
@@ -899,8 +923,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://driver.grubhub.com/',
-        appsite:
-          'https://www.grubhub.com/referral/7d739b71-5658-11e9-88da-7f959f257d5e',
+        appsite: 'https://tinyurl.com/ya395ayq',
         pay: 'Grubhub Drivers typically make around $12 an hour',
         services: [
           'S0001',
@@ -982,7 +1005,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://apply.favordelivery.com/',
-        appsite: 'http://fv.rs/i/NEXTS5',
+        appsite: 'https://tinyurl.com/y764nxm2',
         pay: 'Favor provides a $9 per hour base pay.',
         services: [
           'S0004',
@@ -1001,7 +1024,7 @@ export const initialState = {
         id: 'G0169',
         gig: 'GoPuff',
         app:
-          'goPuff is the on-demand convenience store that delivers what you need, day or night. Use their app or site for fast delivery of snacks, drinks, ice cream & more!',
+          "GoPuff is convenience delivery for the digital age. Anything you're craving, just ran out of, or need in the last-minute - if you can find it in your local convenience store, GoPuff can deliver it to you.",
         description:
           'GoPuff drivers get paid to deliver snacks, drinks, personal care items and more to customers. Deliveries are always ready for the drivers to pick up, and delivery distances are optimized for short travel.',
         apppromo: 'Get $15 from NextWrk!',
@@ -1023,9 +1046,8 @@ export const initialState = {
             link: 'https://www.reddit.com/r/GoPuff/',
           },
         ],
-        gigsite:
-          'https://www.fountain.com/gopuff/apply/godrive-delivery-partner',
-        appsite: 'https://gopuff.com/r/GO12MBDRX',
+        gigsite: 'https://tinyurl.com/ycnz8xnc',
+        appsite: 'https://tinyurl.com/yavpyn6x',
         pay: 'Gopuff Drivers Average Approximately $17/hr',
         services: [
           'S0004',
@@ -1161,7 +1183,7 @@ export const initialState = {
         id: 'G0008',
         gig: 'Instacart',
         app:
-          'Instacart lets you shop from local grocery stores online, then sends a “personal shopper” to fulfill and deliver your order to you the same day.',
+          'Save yourself that trip to the market — Instacart delivers groceries in as little as an hour! They connect you with Personal Shoppers in your area to shop and deliver groceries from your favorite stores.',
         description:
           'Instacart Shoppers use their platform to shop and deliver orders, like groceries, for their customers.',
         apppromo: 'Get $10 from NextWrk!',
@@ -1184,7 +1206,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://shoppers.instacart.com/',
-        appsite: 'https://inst.cr/t/RG80ZG1XZXA1',
+        appsite: 'https://tinyurl.com/yae7q5s6',
         pay:
           'During busy shifts, shoppers can earn $20 or more an hour. Several say the minimum base pay is $10 an hour',
         services: [
@@ -1274,6 +1296,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.homeaway.com/lyp',
+        appsite: 'https://www.homeaway.com/',
         services: ['S0045', 'S0053'],
         subtypes: ['rental', 'home'],
       },
@@ -1295,6 +1318,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.onefinestay.com/list-your-home/',
+        appsite: 'https://www.onefinestay.com/',
         services: ['S0045'],
         subtypes: ['rental', 'home'],
       },
@@ -1320,6 +1344,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://help.vrbo.com/category/List_Your_Property',
+        appsite: 'https://www.vrbo.com/',
         services: ['S0045', 'S0053'],
         subtypes: ['rental', 'home'],
       },
@@ -1544,8 +1569,7 @@ export const initialState = {
             link: 'https://www.reddit.com/r/skipscooters/',
           },
         ],
-        gigsite:
-          'https://www.fountain.com/skip-scooters/apply/general-location-ranger',
+        gigsite: 'https://tinyurl.com/yav2dxcs',
         services: ['S0036'],
         subtypes: ['other', 'scooter'],
       },
@@ -1575,8 +1599,7 @@ export const initialState = {
             link: 'https://www.reddit.com/r/TaskRabbit/',
           },
         ],
-        gigsite:
-          'https://support.taskrabbit.com/hc/en-us/articles/360031918292-How-Do-I-Become-a-Tasker-',
+        gigsite: 'https://tinyurl.com/y6ugedju',
         appsite: 'https://www.taskrabbit.com/',
         services: [],
         subtypes: ['labor', 'handyman'],
@@ -1599,6 +1622,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.handy.com/apply',
+        appsite: 'https://www.handy.com/',
         services: [],
         subtypes: ['labor', 'handyman'],
       },
@@ -1623,6 +1647,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.getbellhops.com/being-a-bellhop/',
+        appsite: 'https://www.getbellhops.com/',
         services: [],
         subtypes: ['labor', 'mover'],
       },
@@ -1644,7 +1669,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://dolly.com/helpers/',
-        appsite: 'https://book.dolly.com/referred-by-friend/NS23231755651',
+        appsite: 'https://tinyurl.com/ycfngpy4',
         services: [],
         subtypes: ['labor', 'mover'],
       },
@@ -1666,7 +1691,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://lugg.com/become-a-lugger',
-
+        appsite: 'https://lugg.com/',
         services: [],
         subtypes: ['labor', 'mover'],
       },
@@ -1693,7 +1718,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://app.takl.com/providers/register',
-        appsite: 'https://m.takl.com/t/pc/1346385',
+        appsite: 'https://tinyurl.com/yc6jt5ur',
         services: [],
         subtypes: ['labor', 'handyman'],
       },
@@ -1906,7 +1931,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.taskeasy.com/contractors',
-
+        appsite: 'https://www.taskeasy.com/',
         services: ['S0045'],
         subtypes: ['labor', 'landscaping'],
       },
@@ -1933,7 +1958,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.lawnstarter.com/lawn-care-businesses',
-
+        appsite: 'https://www.lawnstarter.com/',
         services: ['S0045'],
         subtypes: ['labor', 'landscaping'],
       },
@@ -1955,7 +1980,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://order.plowzandmowz.com/provider-onboard',
-
+        appsite: 'https://www.plowzandmowz.com/',
         services: ['S0045'],
         subtypes: ['labor', 'landscaping'],
       },
@@ -1981,7 +2006,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://lawnlove.com/apply',
-
+        appsite: 'https://lawnlove.com/',
         services: ['S0045'],
         subtypes: ['labor', 'landscaping'],
       },
@@ -2008,6 +2033,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://veryable.app.link/pqxf1qmEN5',
+        appsite: 'https://veryableops.com/',
         services: ['S0045'],
         subtypes: ['labor'],
       },
@@ -2029,12 +2055,13 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.homeaglow.com/apply',
+        appsite: 'https://www.homeaglow.com/',
         services: [],
         subtypes: ['labor', 'cleaning'],
       },
       {
         id: 'G0023',
-        gig: 'Care',
+        gig: 'Care.com',
         app:
           "Care.com is the world's largest online destination for care. They connect families with caregivers and caring companies to help you be there for the ones you love.",
         description:
@@ -2076,6 +2103,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://uzurv.com/drivers/',
+        appsite: 'https://uzurv.com/',
         services: ['S0046'],
         subtypes: ['driving', 'rideshare'],
       },
@@ -2097,6 +2125,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.sittercity.com/sitter/account',
+        appsite: 'https://www.sittercity.com/',
         services: [],
         subtypes: ['labor', 'care'],
       },
@@ -2119,6 +2148,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.helpr-app.com/become-a-helpr-now',
+        appsite: 'https://www.helpr-app.com/',
         services: [],
         subtypes: ['labor', 'care'],
       },
@@ -2141,6 +2171,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.figure-eight.com/contributor/',
+        appsite: 'https://appen.com/',
         services: [],
         subtypes: ['other', 'tech'],
       },
@@ -2167,7 +2198,8 @@ export const initialState = {
           },
         ],
         pay: 'eBay takes a commission for each sale, 10% for most products',
-        gigsite: 'https://reg.ebay.com/reg/PartialReg',
+        gigsite: 'https://tinyurl.com/yc4fjwyd',
+        appsite: 'https://tinyurl.com/y6wfefa4',
         services: [],
         subtypes: ['clothes', 'textbook'],
       },
@@ -2219,6 +2251,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.etsy.com/join',
+        appsite: 'https://www.etsy.com/',
         services: [],
         subtypes: ['clothes'],
       },
@@ -2240,28 +2273,10 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.fancyhands.com/jobs',
+        appsite: 'https://www.fancyhands.com/',
         services: [],
         subtypes: ['other'],
       },
-      // {
-      //   id: 'G0033',
-      //   gig: 'Gigwalk',
-      //   description:
-      //     'Work for Gigwalk usually involves gathering data for companies about their products and stores. For example, you might be checking what is on the shelves in a particular shop, and whether it is correctly priced and labeled.',
-      //   apppromo: '',
-      //   jobpromo: '',
-      //   apppromoterms: '',
-      //   jobpromoterms: '',
-      //   resources: [
-      //     {
-      //       title: 'Indeed: Job Reviews for GigWalk Workers',
-      //       link: 'https://www.indeed.com/cmp/Gigwalk/reviews',
-      //     },
-      //   ],
-      //   gigsite: 'http://www.gigwalk.com/gigwalkers/',
-      //   services: [],
-      //   subtypes: ['other', 'mysteryshop'],
-      // },
       // {
       //   id: 'G0070',
       //   gig: 'Market Force',
@@ -2304,27 +2319,6 @@ export const initialState = {
       //   services: [],
       //   subtypes: ['other', 'mysteryshop'],
       // },
-      {
-        id: 'G0232',
-        gig: 'SurveyJunkie',
-        description:
-          'Survey Junkie is a online survey platform that pays users for sharing their opinions. Each survey is worth a certain number of points, which can be redeemed for cash or gift cards.',
-        apppromo: '',
-        jobpromo: '',
-        apppromoterms: '',
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'TrustPilot: Reviews for SurveyJunkie',
-            link: 'https://www.trustpilot.com/review/www.surveyjunkie.com',
-          },
-        ],
-        pay:
-          'Most surveys equate to around 50 points, where one point equates to $0.01 when redeemed',
-        gigsite: 'https://www.surveyjunkie.com/',
-        services: [],
-        subtypes: ['quickbucks'],
-      },
       {
         id: 'G0048',
         gig: 'Spare5',
@@ -2413,6 +2407,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://gopriv.com/pro',
+        appsite: 'https://gopriv.com/',
         services: [],
         subtypes: ['other', 'beauty'],
       },
@@ -2434,6 +2429,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://heal.com/medical-team/',
+        appsite: 'https://heal.com/',
         services: [],
         subtypes: ['other', 'healthcare'],
       },
@@ -2456,6 +2452,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.slingshothealth.com/providers/',
+        appsite: 'https://www.slingshothealth.com/',
         services: [],
         subtypes: ['other', 'healthcare'],
       },
@@ -2503,6 +2500,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://www.eatwith.com/landings/become-a-host',
+        appsite: 'https://www.eatwith.com/',
         services: [],
         subtypes: ['labor', 'cuisine'],
       },
@@ -2524,6 +2522,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://experiences.chefsfeed.com/browse/',
+        appsite: 'https://experiences.chefsfeed.com/browse/',
         services: [],
         subtypes: ['labor', 'cuisine'],
       },
@@ -2545,6 +2544,7 @@ export const initialState = {
           },
         ],
         gigsite: 'http://jobs.zifty.com/',
+        appsite: 'https://www.zifty.com/zifty/',
         services: [
           'S0004',
           'S0005',
@@ -2669,6 +2669,34 @@ export const initialState = {
           'S0037',
         ],
         subtypes: ['driving', 'rideshare'],
+      },
+      {
+        id: 'G0211',
+        gig: 'Toptal',
+        app:
+          'Toptal connects startups and businesses with the top talent from around the world. The company uniquely boasts that they can give you access to the top 3 percent of freelance talent all over the world, and do this by screening all applicants before they enter their freelancing talent pool.',
+        description:
+          'Toptal accepts the top 3% of software engineers, designers, PMOs and finance experts for remote freelance projects. Their screening process includes a timed algorithm test, language and personality test, technical screenings and a test project.',
+        apppromo: '',
+        jobpromo: '',
+        apppromoterms: '',
+        jobpromoterms: '',
+        resources: [
+          {
+            title: 'Trustpilot: Reviews for Toptal',
+            link: 'https://www.trustpilot.com/review/toptal.com',
+          },
+          {
+            title: 'Indeed: Reviews for Toptal Workers',
+            link: 'https://www.indeed.com/cmp/Toptal/reviews',
+          },
+        ],
+        gigsite: 'https://www.toptal.com/talent/apply',
+        appsite: 'https://tinyurl.com/y87rk3he',
+        pay:
+          'The commission and pay structure of Toptal is not public, but Toptal contracts out the labor to businesses for $60-$95+/hr.',
+        services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
+        subtypes: ['software', 'design'],
       },
       {
         id: 'G0220',
@@ -2820,35 +2848,6 @@ export const initialState = {
         gigsite: 'https://www.prestoexperts.com/',
         appsite: 'https://www.prestoexperts.com/',
         pay: '',
-        services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
-        subtypes: ['software', 'design'],
-      },
-      {
-        id: 'G0211',
-        gig: 'Toptal',
-        app:
-          'Toptal connects startups and businesses with the top talent from around the world. The company uniquely boasts that they can give you access to the top 3 percent of freelance talent all over the world. They do this by screening all applicants before they enter their freelancing talent pool.',
-        description:
-          'Toptal accepts the top 3% of software engineers, designers, PMOs and finance experts for remote freelance projects. Their screening process includes a timed algorithm test, language and personality test, technical screenings and a test project.',
-        apppromo: '',
-        jobpromo: '',
-        apppromoterms: '',
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'Trustpilot: Reviews for Toptal',
-            link: 'https://www.trustpilot.com/review/toptal.com',
-          },
-          {
-            title: 'Indeed: Reviews for Toptal Workers',
-            link: 'https://www.indeed.com/cmp/Toptal/reviews',
-          },
-        ],
-        gigsite: 'https://www.toptal.com/talent/apply',
-        appsite:
-          'https://www.toptal.com#book-nothing-but-uncanny-software-coders',
-        pay:
-          'The commission and pay structure of Toptal is not public, but Toptal contracts out the labor to businesses for $60-$95+/hr.',
         services: ['S0048', 'S0042', 'S0044', 'S0043', 'S0045'],
         subtypes: ['software', 'design'],
       },
@@ -3241,8 +3240,8 @@ export const initialState = {
             link: 'https://www.trustpilot.com/review/thredup.com',
           },
         ],
-        gigsite: 'http://www.thredup.com/r/IGBO2L',
-        appsite: 'http://www.thredup.com/r/5CP1KX',
+        gigsite: 'https://tinyurl.com/yapqlghd',
+        appsite: 'https://tinyurl.com/yaza2k6u',
         pay: '',
         services: [],
         subtypes: ['clothes'],
@@ -3292,6 +3291,7 @@ export const initialState = {
           },
         ],
         gigsite: 'https://shoppers.burpy.com/join-as-shopper',
+        appsite: 'https://www.burpy.com/',
         services: [
           'S0004',
           'S0046',
@@ -3440,42 +3440,42 @@ export const initialState = {
         ],
         subtypes: ['driving', 'packagedelivery'],
       },
-      {
-        id: 'G0157',
-        gig: 'TommyRun',
-        app:
-          'TommyRun is an app that allows you to order building materials and have them delivered within hours.',
-        description:
-          'TommyRunners deliver building materials to individuals in their communities. You need to own a truck or van and be willing to do some heavy lifting.',
-        indeed: 'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
-        apppromo: 'Get $25 from NextWrk!',
-        jobpromo: '',
-        apppromoterms:
-          "New users to TommyRun will receive $25 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to TommyRun's terms and conditions",
-        jobpromoterms: '',
-        resources: [
-          {
-            title: 'TommyRun Reviews',
-            link:
-              'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
-          },
-        ],
-        gigsite: 'https://tommyrun.app.link/vanKPpCzN5',
-        appsite: 'https://tommyrun.app.link/vanKPpCzN5',
-        pay: 'Average between $12 and $20/hr',
-        services: [
-          'S0004',
-          'S0046',
-          'S0005',
-          'S0006',
-          'S0030',
-          'S0031',
-          'S0039',
-          'S0040',
-          'S0037',
-        ],
-        subtypes: ['driving', 'packagedelivery'],
-      },
+      // {
+      //   id: 'G0157',
+      //   gig: 'TommyRun',
+      //   app:
+      //     'TommyRun is an app that allows you to order building materials and have them delivered within hours.',
+      //   description:
+      //     'TommyRunners deliver building materials to individuals in their communities. You need to own a truck or van and be willing to do some heavy lifting.',
+      //   indeed: 'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
+      //   apppromo: 'Get $25 from NextWrk!',
+      //   jobpromo: '',
+      //   apppromoterms:
+      //     "New users to TommyRun will receive $25 in credit when they sign up through the link provided on nextwrk.com. This promotion is subject to TommyRun's terms and conditions",
+      //   jobpromoterms: '',
+      //   resources: [
+      //     {
+      //       title: 'TommyRun Reviews',
+      //       link:
+      //         'https://appgrooves.com/app/tommyrun-driver-by-tommy-run-llc-1',
+      //     },
+      //   ],
+      //   gigsite: 'https://tommyrun.app.link/vanKPpCzN5',
+      //   appsite: 'https://tommyrun.app.link/vanKPpCzN5',
+      //   pay: 'Average between $12 and $20/hr',
+      //   services: [
+      //     'S0004',
+      //     'S0046',
+      //     'S0005',
+      //     'S0006',
+      //     'S0030',
+      //     'S0031',
+      //     'S0039',
+      //     'S0040',
+      //     'S0037',
+      //   ],
+      //   subtypes: ['driving', 'packagedelivery'],
+      // },
       // {
       //   id: 'G0170',
       //   gig: 'DeLiv',
@@ -3683,7 +3683,7 @@ export const initialState = {
           },
         ],
         pay: '',
-        appsite: 'https://www.decluttr.com/start-selling/',
+        appsite: 'https://www.decluttr.com',
         gigsite: 'https://www.decluttr.com/start-selling/',
         services: ['S0051', 'S0052'],
         subtypes: ['textbook'],
@@ -3762,6 +3762,16 @@ export const initialState = {
     // Services
     services: [
       {
+        id: 'S0046',
+        gig: 'HyreCar',
+        description:
+          'HyreCar lets individuals rent cars to drive with Uber, Lyft, and food/package delivery companies. Cars are available for daily, weekly or monthly rentals, and HyreCar provides you with the protection you need. Simply meet with the car owner to get the keys, get on the road, and start earning.',
+        indeed: 'https://www.trustpilot.com/review/hyrecar.com',
+        promo: '',
+        terms: '',
+        gigsite: 'https://tinyurl.com/y9w9lyny',
+      },
+      {
         id: 'S0001',
         gig: 'Gridwise',
         description:
@@ -3770,7 +3780,7 @@ export const initialState = {
           'https://appgrooves.com/app/gridwise-earn-more-by-driving-smarter-by-swerv-technologies-llc/negative',
         promo: 'Free Download on IOS and Android!',
         terms: '',
-        gigsite: 'https://gridwise.io/',
+        gigsite: 'https://tinyurl.com/yapuh545',
       },
       {
         id: 'S0002',
@@ -3813,7 +3823,7 @@ export const initialState = {
         indeed: 'https://reviews.financesonline.com/p/triplog/',
         promo: 'Free 30 Day Trial!',
         terms: '',
-        gigsite: 'http://trplg.co/389373',
+        gigsite: 'https://tinyurl.com/ybygq3ng',
       },
       {
         id: 'S0006',
@@ -3895,7 +3905,7 @@ export const initialState = {
           'https://apps.apple.com/us/app/scooter-map-all-the-scooters/id1437698355',
         promo: '',
         terms: '',
-        gigsite: 'https://scootermap.com/?sc_referral=62591ccf',
+        gigsite: 'https://tinyurl.com/yau3pteh',
       },
       // {
       //   id: 'S0041',
@@ -3916,7 +3926,7 @@ export const initialState = {
         indeed: 'https://www.trustpilot.com/review/hubstaff.com',
         promo: 'Get Started for Free!',
         terms: '',
-        gigsite: 'http://try.hbstf.co/Wrwrz',
+        gigsite: 'https://tinyurl.com/ybxw3z3t',
       },
       // {
       //   id: 'S0043',
@@ -3949,16 +3959,6 @@ export const initialState = {
         gigsite: 'https://signup.freeagent.com/signup',
       },
       {
-        id: 'S0046',
-        gig: 'HyreCar',
-        description:
-          "Looking to be a rideshare or delivery driver but don't have a car? HyreCar lets you rent a car by the hour to drive for Uber, Lyft, Postmates, or whatever you want.",
-        indeed: 'https://www.trustpilot.com/review/hyrecar.com',
-        promo: '',
-        terms: '',
-        gigsite: 'https://hyrecar.sjv.io/2vNbO',
-      },
-      {
         id: 'S0047',
         gig: 'Whistle',
         description:
@@ -3966,7 +3966,7 @@ export const initialState = {
         indeed: 'https://www.trustpilot.com/review/whistle.com',
         promo: '',
         terms: '',
-        gigsite: 'https://whistle.blihtq.net/NMqAK',
+        gigsite: 'https://tinyurl.com/ya3oozqn',
       },
       {
         id: 'S0048',
@@ -4056,41 +4056,41 @@ export const initialState = {
         id: 'D0001',
         gig: 'Acorns',
         description:
-          'Acorns automatically invests your spare change into a portfolio built by experts.',
+          'Acorns automatically invests your spare change into a portfolio built by experts. Join almost 4000000 people saving and investing every day.',
         promo: 'Get $5 from NextWrk!',
         terms: '',
-        gigsite: 'https://acorns.com/invite/SGU9A3',
+        gigsite: 'https://tinyurl.com/y83tdkg7',
       },
       {
         id: 'D0003',
         gig: 'Rakuten',
         description:
-          'Formerly Ebates, Rakuten gives you cashback for shopping at over 2,500 stores.',
+          'Formerly Ebates, Rakuten gives you cashback for shopping at over 2,500 stores. Rakuten also has a shopping marketplace for electronics, clothing, games, sporting goods, and more.',
         indeed: 'https://www.trustpilot.com/review/www.rakuten.com',
         promo: 'Get $10 from NextWrk!',
         terms:
           'To qualify for the promotion you must be a natural person (i.e., no businesses, legal entities or pets), be a new member to www.rakuten.com or www.ebates.com, consent to and comply with the General Terms and Conditions, and make a qualifying amount in purchases (subject to terms of promotion) that earn Cash Back through www.rakuten.com or www.ebates.com within ninety (90) days from sign-up. Subject to Rakuten terms and conditions.',
-        gigsite: 'https://go.rakuten.com/MARKFO238',
+        gigsite: 'https://tinyurl.com/ycgfgyco',
       },
       {
         id: 'D0004',
         gig: 'Cash App',
         description:
-          'Cash App is an app for sending and receiving money fast and easy.',
+          'The Cash App, by Square, is a payment app that allows for direct peer-to-peer payment via your mobile device.',
         indeed: 'https://apps.apple.com/us/app/cash-app/id711923939',
         promo: 'Get $5 from NextWrk!',
         terms:
           'Send $5 or more from a newly linked debit card within 14 days of opening an account to qualify for the promotion. Promotion is subject to Cash App terms and conditions.',
-        gigsite: 'https://cash.app/app/QXGKDDH',
+        gigsite: 'https://tinyurl.com/yauqphaa',
       },
       {
         id: 'D0002',
         gig: 'Robinhood',
         description:
-          'Robinhood is a mobile app for trading stocks and options commission free.',
+          'Robinhood, a pioneer of commission-free investing, gives you more ways to make your money work harder.',
         promo: 'Get a Free Stock from NextWrk!',
         terms: '',
-        gigsite: 'https://join.robinhood.com/markf1248',
+        gigsite: 'https://tinyurl.com/yamlwbt3',
       },
       // {
       //   id: 'D0005',
@@ -4121,7 +4121,7 @@ export const initialState = {
         promo: 'Get $10 in BTC from NextWrk!',
         terms:
           'Visit coinbase.com/trade and initiate a buy or sell of $100 USD or more within 180 days of opening your account and receive a 10 USD bonus when the order completes. Orders can take up to 4 business days to complete. Promotion subject to Coinbase terms and conditions.',
-        gigsite: 'https://coinbase.com/join/foster_h9u?src=ios-sms',
+        gigsite: 'https://tinyurl.com/y8q55mhd',
       },
     ],
   },

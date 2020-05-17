@@ -73,7 +73,7 @@ const makeSelectSelectedGig = () =>
 const makeSelectFeatured = () =>
   createSelector(
     selectGlobal,
-    globalState => globalState.componentData.gigs.slice(0, 4),
+    globalState => globalState.componentData.gigs.slice(0, 5),
   );
 
 export {

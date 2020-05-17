@@ -18,17 +18,17 @@ function Body() {
         <tr>
           <CenterTd>
             <a href="/gigs">
-              <Img src={gig} alt="Gig Vector" />
+              <Img src={gig} alt="NextWrk New Work Png" />
             </a>
           </CenterTd>
           <CenterTd>
             <a href="/services">
-              <Img src={services} alt="Services Vector" />
+              <Img src={services} alt="NextWrk Relevant Services Png" />
             </a>
           </CenterTd>
           <td style={{ textAlign: 'center' }}>
             <a href="/deals">
-              <Img src={deal} alt="Deals Vector" />
+              <Img src={deal} alt="NextWrk Wallet Stuffers Png" />
             </a>
           </td>
         </tr>
